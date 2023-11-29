@@ -1,5 +1,5 @@
 <template>
-  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" :class="iconClass" :style="innerStyle" @click="onClick"><ellipse cx="14" cy="10" rx="10" ry="5" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></ellipse><path d="M4 10v7c0 2.761 4.477 5 10 5s10-2.239 10-5v-7" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4 17v7c0 2.761 4.477 5 10 5s10-2.239 10-5v-7" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4 24v7c0 2.761 4.477 5 10 5s10-2.239 10-5v-7" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4 31v7c0 2.761 4.477 5 10 5s10-2.239 10-5v-7" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><ellipse cx="34" cy="24" rx="10" ry="5" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></ellipse><path d="M24 24v7c0 2.761 4.477 5 10 5s10-2.239 10-5v-7" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M24 31v7c0 2.761 4.477 5 10 5s10-2.239 10-5v-7" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" :class="iconClass" :style="innerStyle" @click="onClick"><ellipse cx="14" cy="10" rx="10" ry="5" :stroke="color" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></ellipse><path d="M4 10v7c0 2.761 4.477 5 10 5s10-2.239 10-5v-7" :stroke="color" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4 17v7c0 2.761 4.477 5 10 5s10-2.239 10-5v-7" :stroke="color" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4 24v7c0 2.761 4.477 5 10 5s10-2.239 10-5v-7" :stroke="color" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4 31v7c0 2.761 4.477 5 10 5s10-2.239 10-5v-7" :stroke="color" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><ellipse cx="34" cy="24" rx="10" ry="5" :stroke="color" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></ellipse><path d="M24 24v7c0 2.761 4.477 5 10 5s10-2.239 10-5v-7" :stroke="color" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M24 31v7c0 2.761 4.477 5 10 5s10-2.239 10-5v-7" :stroke="color" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
 </template>
 
 <script lang="ts">
@@ -10,6 +10,8 @@ export default defineComponent({
   props: {
     /** 图标尺寸 */
     size: { type: String },
+    /** 颜色 */
+    color: { type: String, default: "#333" },
     /** 旋转角度 */
     rotate: { type: Number },
     /** 是否旋转 */

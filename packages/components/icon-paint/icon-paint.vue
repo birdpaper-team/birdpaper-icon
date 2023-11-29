@@ -1,5 +1,5 @@
 <template>
-  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" :class="iconClass" :style="innerStyle" @click="onClick"><path d="m14.99 22.61 9.9 9.9M14.99 22.61l-8.486 8.486a7 7 0 0 0 0 9.9v0a7 7 0 0 0 9.9 0l8.485-8.486M14.99 32.51l-4.243 4.243" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="m24.89 32.51 14.907-6.432c2.687-1.16 3.808-4.38 2.085-6.745-4.164-5.717-9.777-10.73-13.918-13.797-2.29-1.696-5.33-.64-6.46 1.975l-6.514 15.1 9.9 9.9Z" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" :class="iconClass" :style="innerStyle" @click="onClick"><path d="m14.99 22.61 9.9 9.9M14.99 22.61l-8.486 8.486a7 7 0 0 0 0 9.9v0a7 7 0 0 0 9.9 0l8.485-8.486M14.99 32.51l-4.243 4.243" :stroke="color" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="m24.89 32.51 14.907-6.432c2.687-1.16 3.808-4.38 2.085-6.745-4.164-5.717-9.777-10.73-13.918-13.797-2.29-1.696-5.33-.64-6.46 1.975l-6.514 15.1 9.9 9.9Z" :stroke="color" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
 </template>
 
 <script lang="ts">
@@ -10,6 +10,8 @@ export default defineComponent({
   props: {
     /** 图标尺寸 */
     size: { type: String },
+    /** 颜色 */
+    color: { type: String, default: "#333" },
     /** 旋转角度 */
     rotate: { type: Number },
     /** 是否旋转 */

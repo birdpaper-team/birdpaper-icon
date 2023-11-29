@@ -1,5 +1,5 @@
 <template>
-  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" :class="iconClass" :style="innerStyle" @click="onClick"><g clip-path="url(#a)" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 24s2.5-4.5 3-9-1-8-1-8l5-3s1 6 1 9"></path><path d="M6 43C4 41.5 4 36.09 8 33c4-3.09 4.186-2.283 9-6S34 4 34 4l4.5 3.5-12.19 16.24c-2.984 3.977-3.758 9.313-6.26 13.61C18.102 40.7 16 42 14 43s-6 1.5-8 0Z"></path><path d="M23 30s3-2 7-4 13-2 13-2l-3-7s-8 0-11 3"></path></g><defs><clipPath id="a"><path fill="#333" d="M0 0h48v48H0z"></path></clipPath></defs></svg>
+  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" :class="iconClass" :style="innerStyle" @click="onClick"><g clip-path="url(#a)" :stroke="color" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 24s2.5-4.5 3-9-1-8-1-8l5-3s1 6 1 9"></path><path d="M6 43C4 41.5 4 36.09 8 33c4-3.09 4.186-2.283 9-6S34 4 34 4l4.5 3.5-12.19 16.24c-2.984 3.977-3.758 9.313-6.26 13.61C18.102 40.7 16 42 14 43s-6 1.5-8 0Z"></path><path d="M23 30s3-2 7-4 13-2 13-2l-3-7s-8 0-11 3"></path></g><defs><clipPath id="a"><path :fill="color" d="M0 0h48v48H0z"></path></clipPath></defs></svg>
 </template>
 
 <script lang="ts">
@@ -10,6 +10,8 @@ export default defineComponent({
   props: {
     /** 图标尺寸 */
     size: { type: String },
+    /** 颜色 */
+    color: { type: String, default: "#333" },
     /** 旋转角度 */
     rotate: { type: Number },
     /** 是否旋转 */

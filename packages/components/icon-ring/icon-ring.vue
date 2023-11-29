@@ -1,5 +1,5 @@
 <template>
-  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" :class="iconClass" :style="innerStyle" @click="onClick"><path d="M24 11.619c2.093 0 3.79-1.706 3.79-3.81C27.79 5.707 26.093 4 24 4s-3.79 1.706-3.79 3.81c0 2.103 1.697 3.809 3.79 3.809ZM9.79 40.19c2.092 0 3.789-1.705 3.789-3.809s-1.697-3.81-3.79-3.81C7.697 32.572 6 34.278 6 36.382s1.697 3.81 3.79 3.81ZM38.21 40.19c2.093 0 3.79-1.705 3.79-3.809s-1.697-3.81-3.79-3.81-3.79 1.706-3.79 3.81 1.697 3.81 3.79 3.81Z" stroke="#333" stroke-width="4" stroke-linejoin="round"></path><path d="M33.143 10.314A18.105 18.105 0 0 1 42 25.904c0 .578-.027 1.148-.08 1.711v0M31.014 42.575A17.863 17.863 0 0 1 24 44c-2.488 0-4.858-.507-7.014-1.425M6.08 27.615a18.416 18.416 0 0 1-.08-1.71 18.105 18.105 0 0 1 8.857-15.59" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" :class="iconClass" :style="innerStyle" @click="onClick"><path d="M24 11.619c2.093 0 3.79-1.706 3.79-3.81C27.79 5.707 26.093 4 24 4s-3.79 1.706-3.79 3.81c0 2.103 1.697 3.809 3.79 3.809ZM9.79 40.19c2.092 0 3.789-1.705 3.789-3.809s-1.697-3.81-3.79-3.81C7.697 32.572 6 34.278 6 36.382s1.697 3.81 3.79 3.81ZM38.21 40.19c2.093 0 3.79-1.705 3.79-3.809s-1.697-3.81-3.79-3.81-3.79 1.706-3.79 3.81 1.697 3.81 3.79 3.81Z" :stroke="color" stroke-width="4" stroke-linejoin="round"></path><path d="M33.143 10.314A18.105 18.105 0 0 1 42 25.904c0 .578-.027 1.148-.08 1.711v0M31.014 42.575A17.863 17.863 0 0 1 24 44c-2.488 0-4.858-.507-7.014-1.425M6.08 27.615a18.416 18.416 0 0 1-.08-1.71 18.105 18.105 0 0 1 8.857-15.59" :stroke="color" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
 </template>
 
 <script lang="ts">
@@ -10,6 +10,8 @@ export default defineComponent({
   props: {
     /** 图标尺寸 */
     size: { type: String },
+    /** 颜色 */
+    color: { type: String, default: "#333" },
     /** 旋转角度 */
     rotate: { type: Number },
     /** 是否旋转 */

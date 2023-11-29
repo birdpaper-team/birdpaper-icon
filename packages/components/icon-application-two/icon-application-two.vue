@@ -1,5 +1,5 @@
 <template>
-  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" :class="iconClass" :style="innerStyle" @click="onClick"><circle cx="34.5" cy="13.5" r="6.5" stroke="#333" stroke-width="4"></circle><circle cx="34.5" cy="34.5" r="6.5" stroke="#333" stroke-width="4"></circle><circle cx="13.5" cy="13.5" r="6.5" stroke="#333" stroke-width="4"></circle><circle cx="13.5" cy="34.5" r="6.5" stroke="#333" stroke-width="4"></circle></svg>
+  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" :class="iconClass" :style="innerStyle" @click="onClick"><circle cx="34.5" cy="13.5" r="6.5" :stroke="color" stroke-width="4"></circle><circle cx="34.5" cy="34.5" r="6.5" :stroke="color" stroke-width="4"></circle><circle cx="13.5" cy="13.5" r="6.5" :stroke="color" stroke-width="4"></circle><circle cx="13.5" cy="34.5" r="6.5" :stroke="color" stroke-width="4"></circle></svg>
 </template>
 
 <script lang="ts">
@@ -10,6 +10,8 @@ export default defineComponent({
   props: {
     /** 图标尺寸 */
     size: { type: String },
+    /** 颜色 */
+    color: { type: String, default: "#333" },
     /** 旋转角度 */
     rotate: { type: Number },
     /** 是否旋转 */

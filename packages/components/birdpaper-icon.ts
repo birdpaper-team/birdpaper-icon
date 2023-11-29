@@ -520,7 +520,7 @@ import IconCommunication from './icon-communication';
 import IconCommuterBag from './icon-commuter-bag';
 import IconCompassOne from './icon-compass-one';
 import IconCompass from './icon-compass';
-import IconComponents from './icon-components';
+import IconComponent from './icon-component';
 import IconComposition from './icon-composition';
 import IconCompression from './icon-compression';
 import IconComputerOne from './icon-computer-one';
@@ -3180,7 +3180,7 @@ const icons: Record<string, Plugin> = {
   IconCommuterBag,
   IconCompassOne,
   IconCompass,
-  IconComponents,
+  IconComponent,
   IconComposition,
   IconCompression,
   IconComputerOne,

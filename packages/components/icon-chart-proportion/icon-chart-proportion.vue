@@ -1,5 +1,5 @@
 <template>
-  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" :class="iconClass" :style="innerStyle" @click="onClick"><path d="M16.345 5.518a20.029 20.029 0 0 0-6.487 4.34A19.938 19.938 0 0 0 4 24c0 11.046 8.954 20 20 20v0a19.937 19.937 0 0 0 14.142-5.858 20.026 20.026 0 0 0 4.34-6.487" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M24 24h20c0-11.046-8.954-20-20-20v20Z" stroke="#333" stroke-width="4" stroke-linejoin="round"></path></svg>
+  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" :class="iconClass" :style="innerStyle" @click="onClick"><path d="M16.345 5.518a20.029 20.029 0 0 0-6.487 4.34A19.938 19.938 0 0 0 4 24c0 11.046 8.954 20 20 20v0a19.937 19.937 0 0 0 14.142-5.858 20.026 20.026 0 0 0 4.34-6.487" :stroke="color" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M24 24h20c0-11.046-8.954-20-20-20v20Z" :stroke="color" stroke-width="4" stroke-linejoin="round"></path></svg>
 </template>
 
 <script lang="ts">
@@ -10,6 +10,8 @@ export default defineComponent({
   props: {
     /** 图标尺寸 */
     size: { type: String },
+    /** 颜色 */
+    color: { type: String, default: "#333" },
     /** 旋转角度 */
     rotate: { type: Number },
     /** 是否旋转 */

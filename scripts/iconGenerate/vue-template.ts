@@ -21,6 +21,8 @@ export default defineComponent({
   props: {
     /** 图标尺寸 */
     size: { type: String },
+    /** 颜色 */
+    color: { type: String, default: "#333" },
     /** 旋转角度 */
     rotate: { type: Number },
     /** 是否旋转 */
@@ -67,7 +69,7 @@ const ${componentName} = Object.assign(_${componentName}, {
   }
 });
 
-export default ${componentName};`
+export default ${componentName};`;
 };
 
 export const getBpVueIcon = ({ imports, components }: { imports: string[]; components: string[] }) =>

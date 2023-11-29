@@ -1,5 +1,5 @@
 <template>
-  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" :class="iconClass" :style="innerStyle" @click="onClick"><path d="M12 40c0-7.18 5.373-13 12-13s12 5.82 12 13" stroke="#333" stroke-width="4" stroke-linecap="round"></path><path d="M13 37c0 1 2.5 2 4 1s1.96-3.505 3.5-3.074C22.04 35.357 22 38.5 24 40s5.5 1 7-1.5-.08-3.175 1.061-4.797c.76-1.081 1.73-.816 1.939-.703" stroke="#333" stroke-width="4" stroke-linecap="round"></path><path d="M23 21h2M32.151 22.47l1.696 1.06M14.151 23.53l1.697-1.06M39.059 28.134l1 1.732M8.059 29.866l1-1.732M41.895 37.006l.209 1.989M4.895 38.995l.209-1.99" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M42 10 9 18" stroke="#333" stroke-width="4" stroke-linecap="round"></path><path d="m16 7 13 6-12 3-5-7 4-2ZM9 18l-3-4" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" :class="iconClass" :style="innerStyle" @click="onClick"><path d="M12 40c0-7.18 5.373-13 12-13s12 5.82 12 13" :stroke="color" stroke-width="4" stroke-linecap="round"></path><path d="M13 37c0 1 2.5 2 4 1s1.96-3.505 3.5-3.074C22.04 35.357 22 38.5 24 40s5.5 1 7-1.5-.08-3.175 1.061-4.797c.76-1.081 1.73-.816 1.939-.703" :stroke="color" stroke-width="4" stroke-linecap="round"></path><path d="M23 21h2M32.151 22.47l1.696 1.06M14.151 23.53l1.697-1.06M39.059 28.134l1 1.732M8.059 29.866l1-1.732M41.895 37.006l.209 1.989M4.895 38.995l.209-1.99" :stroke="color" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M42 10 9 18" :stroke="color" stroke-width="4" stroke-linecap="round"></path><path d="m16 7 13 6-12 3-5-7 4-2ZM9 18l-3-4" :stroke="color" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
 </template>
 
 <script lang="ts">
@@ -10,6 +10,8 @@ export default defineComponent({
   props: {
     /** 图标尺寸 */
     size: { type: String },
+    /** 颜色 */
+    color: { type: String, default: "#333" },
     /** 旋转角度 */
     rotate: { type: Number },
     /** 是否旋转 */

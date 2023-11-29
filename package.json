@@ -1,6 +1,6 @@
 {
   "name": "birdpaper-icon",
-  "version": "0.0.1",
+  "version": "0.0.8",
   "description": "基于 Remix icon 生成的 Vue3 图标组件库",
   "scripts": {
     "generate": "pnpm run -C packages generate",
@@ -16,7 +16,7 @@
   ],
   "author": "木亦Sam",
   "license": "MIT",
-  "main": "lib/index.js",
+  "main": "es/index.js",
   "module": "es/index.js",
   "types": "dist/index.d.ts",
   "sideEffects": [

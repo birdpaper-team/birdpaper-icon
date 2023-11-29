@@ -1,36 +1,32 @@
-// https://github.com/svg/svgo
-
-import { OptimizeOptions } from 'svgo';
+import { OptimizeOptions } from "svgo";
 
 const options: OptimizeOptions = {
   plugins: [
     {
-      name: 'preset-default',
+      name: "preset-default",
       params: {
         overrides: {
           removeViewBox: false,
         },
       },
     },
-    'removeStyleElement',
-    'removeScriptElement',
-    'removeDimensions',
+    "removeStyleElement",
+    "removeScriptElement",
+    "removeDimensions",
     {
-      name: 'removeAttrs',
+      name: "removeAttrs",
       params: {
-        attrs: [
-          'class',
-          'style',
-        ],
+        attrs: ["class", "style"],
       },
     },
     {
-      name: 'addAttributesToSVGElement',
+      name: "addAttributesToSVGElement",
+      // @ts-ignore
       params: {
         attributes: [
-          { ':class': 'iconClass' },
-          { ':style': 'innerStyle' },
-          { '@click': 'onClick' },
+          { ":class": "iconClass" },
+          { ":style": "innerStyle" },
+          { "@click": "onClick" },
         ],
       },
     },

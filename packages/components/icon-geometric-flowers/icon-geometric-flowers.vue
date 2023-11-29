@@ -1,5 +1,5 @@
 <template>
-  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" :class="iconClass" :style="innerStyle" @click="onClick"><path d="M28.312 27.832c3.374-3.375 1.246-10.972-4.752-16.97-5.998-6-13.596-8.127-16.97-4.753-3.375 3.374-1.247 10.973 4.751 16.97 5.999 6 13.597 8.127 16.97 4.753Z" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M28.312 19.262c3.374 3.374 1.246 10.972-4.752 16.97-5.998 6-13.596 8.127-16.97 4.752-3.375-3.374-1.247-10.972 4.751-16.97 5.999-5.999 13.597-8.126 16.97-4.752Z" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M19.688 27.832c-3.374-3.375-1.246-10.972 4.752-16.97 5.998-6 13.596-8.127 16.97-4.753 3.375 3.374 1.247 10.973-4.751 16.97-5.999 6-13.597 8.127-16.97 4.753Z" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M19.688 19.262c-3.374 3.374-1.246 10.972 4.752 16.97 5.998 6 13.596 8.127 16.97 4.752 3.375-3.374 1.247-10.972-4.751-16.97-5.999-5.999-13.597-8.126-16.97-4.752Z" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" :class="iconClass" :style="innerStyle" @click="onClick"><path d="M28.312 27.832c3.374-3.375 1.246-10.972-4.752-16.97-5.998-6-13.596-8.127-16.97-4.753-3.375 3.374-1.247 10.973 4.751 16.97 5.999 6 13.597 8.127 16.97 4.753Z" :stroke="color" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M28.312 19.262c3.374 3.374 1.246 10.972-4.752 16.97-5.998 6-13.596 8.127-16.97 4.752-3.375-3.374-1.247-10.972 4.751-16.97 5.999-5.999 13.597-8.126 16.97-4.752Z" :stroke="color" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M19.688 27.832c-3.374-3.375-1.246-10.972 4.752-16.97 5.998-6 13.596-8.127 16.97-4.753 3.375 3.374 1.247 10.973-4.751 16.97-5.999 6-13.597 8.127-16.97 4.753Z" :stroke="color" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M19.688 19.262c-3.374 3.374-1.246 10.972 4.752 16.97 5.998 6 13.596 8.127 16.97 4.752 3.375-3.374 1.247-10.972-4.751-16.97-5.999-5.999-13.597-8.126-16.97-4.752Z" :stroke="color" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
 </template>
 
 <script lang="ts">
@@ -10,6 +10,8 @@ export default defineComponent({
   props: {
     /** 图标尺寸 */
     size: { type: String },
+    /** 颜色 */
+    color: { type: String, default: "#333" },
     /** 旋转角度 */
     rotate: { type: Number },
     /** 是否旋转 */

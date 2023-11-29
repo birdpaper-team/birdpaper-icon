@@ -523,7 +523,7 @@ declare module 'vue' {
     IconCommuterBag: typeof import('birdpaper-icon/components')['IconCommuterBag'];
     IconCompassOne: typeof import('birdpaper-icon/components')['IconCompassOne'];
     IconCompass: typeof import('birdpaper-icon/components')['IconCompass'];
-    IconComponents: typeof import('birdpaper-icon/components')['IconComponents'];
+    IconComponent: typeof import('birdpaper-icon/components')['IconComponent'];
     IconComposition: typeof import('birdpaper-icon/components')['IconComposition'];
     IconCompression: typeof import('birdpaper-icon/components')['IconCompression'];
     IconComputerOne: typeof import('birdpaper-icon/components')['IconComputerOne'];

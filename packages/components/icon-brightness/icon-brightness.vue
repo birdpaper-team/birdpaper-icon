@@ -1,5 +1,5 @@
 <template>
-  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" :class="iconClass" :style="innerStyle" @click="onClick"><path d="M24.02 35.353c6.076 0 11-4.924 11-11 0-6.075-4.924-11-11-11-6.075 0-11 4.925-11 11 0 6.076 4.925 11 11 11Z" stroke="#333" stroke-width="4" stroke-linejoin="round"></path><path d="m38.96 9.01-2.46 2.474M11.067 36.745l-2.046 2.059M24 41.353v3M44 23.354h-4M37.532 36.336 40 38.804" stroke="#333" stroke-width="4" stroke-linecap="round"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M24.02 17.354a7 7 0 1 0 0 14" fill="#333"></path><path d="M4 24.354h4M10.044 9.01l2.053 2.053M24 3.354v4" stroke="#333" stroke-width="4" stroke-linecap="round"></path></svg>
+  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" :class="iconClass" :style="innerStyle" @click="onClick"><path d="M24.02 35.353c6.076 0 11-4.924 11-11 0-6.075-4.924-11-11-11-6.075 0-11 4.925-11 11 0 6.076 4.925 11 11 11Z" :stroke="color" stroke-width="4" stroke-linejoin="round"></path><path d="m38.96 9.01-2.46 2.474M11.067 36.745l-2.046 2.059M24 41.353v3M44 23.354h-4M37.532 36.336 40 38.804" :stroke="color" stroke-width="4" stroke-linecap="round"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M24.02 17.354a7 7 0 1 0 0 14" :fill="color"></path><path d="M4 24.354h4M10.044 9.01l2.053 2.053M24 3.354v4" :stroke="color" stroke-width="4" stroke-linecap="round"></path></svg>
 </template>
 
 <script lang="ts">
@@ -10,6 +10,8 @@ export default defineComponent({
   props: {
     /** 图标尺寸 */
     size: { type: String },
+    /** 颜色 */
+    color: { type: String, default: "#333" },
     /** 旋转角度 */
     rotate: { type: Number },
     /** 是否旋转 */

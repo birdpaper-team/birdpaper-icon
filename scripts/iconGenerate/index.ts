@@ -45,6 +45,10 @@ export function getIconComponents(): IconData[] {
   }
 }
 
+function replaceAll(string: string, search: string, replace: string) {
+  return string.split(search).join(replace);
+}
+
 /**
  * 构建 Icon 的 Vue 组件
  * @param iconList IconData[]
@@ -62,12 +66,15 @@ export async function generateIconComponent(iconList: IconData[]) {
       const { data } = optimizedSvg;
       const svgElement = JSDOM.fragment(data).firstElementChild;
       if (svgElement) {
+        let str = replaceAll(svgElement.outerHTML, 'fill="#333"', ':fill="color"');
+        str = replaceAll(str, 'stroke="#333"', ':stroke="color"');
+
         fs.outputFile(
           path.resolve(paths.icon, `${item.name}/${item.name}.vue`),
           getIconVueComponent({
             name: item.name,
             componentName: item.componentName,
-            svgHtml: svgElement.outerHTML,
+            svgHtml: str,
           }),
           (err: any) => {
             if (err) {

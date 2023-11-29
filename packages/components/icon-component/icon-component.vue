@@ -1,15 +1,17 @@
 <template>
-  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" :class="iconClass" :style="innerStyle" @click="onClick"><path d="m17 11 7-7 7 7-7 7-7-7ZM30 25l7-7 7 7-7 7-7-7ZM17 37l7-7 7 7-7 7-7-7ZM4 24l7-7 7 7-7 7-7-7Z" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" :class="iconClass" :style="innerStyle" @click="onClick"><path d="m17 11 7-7 7 7-7 7-7-7ZM30 25l7-7 7 7-7 7-7-7ZM17 37l7-7 7 7-7 7-7-7ZM4 24l7-7 7 7-7 7-7-7Z" :stroke="color" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
 </template>
 
 <script lang="ts">
 import { defineComponent, computed, CSSProperties } from 'vue';
 
 export default defineComponent({
-  name: 'IconComponents',
+  name: 'IconComponent',
   props: {
     /** 图标尺寸 */
     size: { type: String },
+    /** 颜色 */
+    color: { type: String, default: "#333" },
     /** 旋转角度 */
     rotate: { type: Number },
     /** 是否旋转 */
@@ -21,7 +23,7 @@ export default defineComponent({
   setup(props, { emit }) {
     const name = 'bp-icon';
 
-    const iconClass = computed(() => [name, `${name}-components`, { [`${name}-spin`]: props.spin }]);
+    const iconClass = computed(() => [name, `${name}-component`, { [`${name}-spin`]: props.spin }]);
 
     const innerStyle = computed(() => {
       const styles: CSSProperties = {};

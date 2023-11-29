@@ -8,11 +8,6 @@ async function run({ umd = false }) {
   await fs.emptyDir(path.resolve(process.cwd(), "../es"));
   await fs.emptyDir(path.resolve(process.cwd(), "../lib"));
   await build(config);
-
-  if (umd) {
-    await fs.emptyDir(path.resolve(process.cwd(), "../dist"));
-    await build(getUmdConfig());
-  }
 }
 
 export default run;

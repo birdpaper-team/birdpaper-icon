@@ -1,5 +1,5 @@
 <template>
-  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" :class="iconClass" :style="innerStyle" @click="onClick"><path d="M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4 4 12.954 4 24s8.954 20 20 20Z" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="m30.093 6.5-6.024 4.359v4.359l7.745 6.102 4.302-1.743 2.581-6.974M18.046 6.5l6.023 4.359v4.359l-7.744 6.102-4.302-1.743-2.582-6.974" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="m6 22.192 6.023-2.615 4.303 1.743 2.581 9.59-2.581 3.487H8.58" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16.325 40.5v-6.103l2.582-3.487h10.325l2.582 3.487V40.5" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M39.558 34.397h-7.744l-2.582-3.487 2.582-9.59 4.302-1.743L43 23.064" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" :class="iconClass" :style="innerStyle" @click="onClick"><path d="M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4 4 12.954 4 24s8.954 20 20 20Z" :stroke="color" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="m30.093 6.5-6.024 4.359v4.359l7.745 6.102 4.302-1.743 2.581-6.974M18.046 6.5l6.023 4.359v4.359l-7.744 6.102-4.302-1.743-2.582-6.974" :stroke="color" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="m6 22.192 6.023-2.615 4.303 1.743 2.581 9.59-2.581 3.487H8.58" :stroke="color" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16.325 40.5v-6.103l2.582-3.487h10.325l2.582 3.487V40.5" :stroke="color" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M39.558 34.397h-7.744l-2.582-3.487 2.582-9.59 4.302-1.743L43 23.064" :stroke="color" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
 </template>
 
 <script lang="ts">
@@ -10,6 +10,8 @@ export default defineComponent({
   props: {
     /** 图标尺寸 */
     size: { type: String },
+    /** 颜色 */
+    color: { type: String, default: "#333" },
     /** 旋转角度 */
     rotate: { type: Number },
     /** 是否旋转 */

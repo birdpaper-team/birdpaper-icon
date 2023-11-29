@@ -520,7 +520,7 @@ export { default as IconCommunication } from './icon-communication';
 export { default as IconCommuterBag } from './icon-commuter-bag';
 export { default as IconCompassOne } from './icon-compass-one';
 export { default as IconCompass } from './icon-compass';
-export { default as IconComponents } from './icon-components';
+export { default as IconComponent } from './icon-component';
 export { default as IconComposition } from './icon-composition';
 export { default as IconCompression } from './icon-compression';
 export { default as IconComputerOne } from './icon-computer-one';
