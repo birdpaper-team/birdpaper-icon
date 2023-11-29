@@ -97,7 +97,7 @@ export default BpVueIcon;
 export const getIndex = ({ exports }: { exports: string[] }) =>
   // language=TypeScript
   // prettier-ignore
-  `export { default } from './birdpaper-ui-icon';
+  `export { default } from './birdpaper-icon';
 ${exports.join('\n')}
 export type {} from './icon-components';
 `;

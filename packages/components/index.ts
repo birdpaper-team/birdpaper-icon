@@ -1,4 +1,4 @@
-export { default } from './birdpaper-ui-icon';
+export { default } from './birdpaper-icon';
 export { default as IconCodeSLine } from './icon-code-s-line';
 export { default as IconCodeSSlashLine } from './icon-code-s-slash-line';
 export { default as IconCopyleftLine } from './icon-copyleft-line';

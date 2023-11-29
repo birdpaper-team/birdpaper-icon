@@ -1,12 +1,12 @@
 {
   "name": "birdpaper-icon",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "基于 Remix icon 生成的 Vue3 图标组件库",
-  "main": "index.js",
   "scripts": {
     "generate": "pnpm run -C packages generate",
     "scripts:dev": "pnpm run -C scripts dev",
-    "scripts:build": "pnpm run -C scripts build"
+    "scripts:build": "pnpm run -C scripts build",
+    "build": "pnpm run -C packages build"
   },
   "keywords": [
     "Remix icon",
@@ -15,5 +15,23 @@
     "Vue3"
   ],
   "author": "木亦Sam",
-  "license": "MIT"
+  "license": "MIT",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "dist/index.d.ts",
+  "sideEffects": [
+    "dist/*",
+    "es/**/style/*",
+    "lib/**/style/*",
+    "*.less"
+  ],
+  "files": [
+    "dist",
+    "es",
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/birdpaper-team/birdpaper-ui"
+  }
 }

@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "图标组件",
   "scripts": {
-    "generate": "icon-scripts icon:generate"
+    "generate": "icon-scripts icon:generate",
+    "build": "icon-scripts build:components -u"
   },
   "dependencies": {
     "vite": "^4.2.1",

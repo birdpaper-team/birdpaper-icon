@@ -4,6 +4,7 @@ import path from "path";
 import fs from "fs-extra";
 import { Command } from "commander";
 import { getIconComponents, generateIconComponent, buildIconIndex, buildType } from "./iconGenerate";
+import buildComponent from "./buildComponent";
 
 const program = new Command();
 
@@ -20,6 +21,14 @@ program
     await generateIconComponent(data);
     buildIconIndex(data);
     buildType(data);
+  });
+
+program
+  .command("build:components")
+  .description("build:components...")
+  .option("-u, --umd", "build with UMD file")
+  .action(async ({ umd }) => {
+    await buildComponent({ umd });
   });
 
 program.parse(process.argv);
