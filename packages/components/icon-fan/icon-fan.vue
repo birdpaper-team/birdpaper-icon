@@ -1,0 +1,46 @@
+<template>
+  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" :class="iconClass" :style="innerStyle" @click="onClick"><path d="M24 31v5m-9.987-8.245-9.986-3.244a21 21 0 0 1 39.945 0l-9.986 3.244H14.013Zm0 0a10.5 10.5 0 0 1 3.815-5.25l-3.815 5.25Zm0 0L24 31l-9.987-3.245Zm3.815-5.25A10.5 10.5 0 0 1 24 20.5l-6.172 2.005Zm0 0L24 31l-6.172-8.495ZM24 20.5a10.5 10.5 0 0 1 6.171 2.005L24 20.5Zm0 0V31 20.5Zm6.171 2.005a10.5 10.5 0 0 1 3.815 5.25l-3.815-5.25Zm0 0L24 31l6.171-8.495Zm3.815 5.25L24 31l9.986-3.245Z" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+</template>
+
+<script lang="ts">
+import { defineComponent, computed, CSSProperties } from 'vue';
+
+export default defineComponent({
+  name: 'IconFan',
+  props: {
+    /** 图标尺寸 */
+    size: { type: String },
+    /** 旋转角度 */
+    rotate: { type: Number },
+    /** 是否旋转 */
+    spin: { type: Boolean },
+  },
+  emits: {
+    click: (ev: MouseEvent) => true,
+  },
+  setup(props, { emit }) {
+    const name = 'bp-icon';
+
+    const iconClass = computed(() => [name, `${name}-fan`, { [`${name}-spin`]: props.spin }]);
+
+    const innerStyle = computed(() => {
+      const styles: CSSProperties = {};
+        props.size && (styles.width = props.size);
+        props.size && (styles.height = props.size);
+        props.rotate && (styles.transform = `rotate(${props.rotate}deg)`);
+
+        return styles;
+    });
+
+    const onClick = (ev: MouseEvent) => {
+      emit('click', ev);
+    };
+
+    return {
+      iconClass,
+      innerStyle,
+      onClick,
+    };
+  }
+});
+</script>
