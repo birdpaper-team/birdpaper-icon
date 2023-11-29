@@ -11,7 +11,7 @@ const root = process.cwd();
 /** SVG 资源路径 */
 const svgIconCwd = resolvePath(root, "./svg");
 const paths = {
-  icon: resolvePath("./components/icon"),
+  icon: resolvePath("./components"),
 };
 
 interface IconData {
@@ -50,7 +50,7 @@ export function getIconComponents(): IconData[] {
  * @param iconList IconData[]
  */
 export async function generateIconComponent(iconList: IconData[]) {
-  await fs.emptyDir(path.resolve(root, "components/icon"));
+  await fs.emptyDir(path.resolve(root, "components"));
 
   for (let i = 0; i < iconList.length; i++) {
     const item = iconList[i];
@@ -91,7 +91,7 @@ export async function generateIconComponent(iconList: IconData[]) {
 }
 
 /**
- * 构建 Icon 集合 birdpaper-ui-icon.ts && index.ts
+ * 构建 Icon 集合 birdpaper-icon.ts && index.ts
  * @param data IconData[]
  */
 export function buildIconIndex(data: IconData[]) {
@@ -108,7 +108,7 @@ export function buildIconIndex(data: IconData[]) {
   const bpContent = getBpVueIcon({ imports, components });
   const indexContent = getIndex({ exports });
 
-  fs.outputFile(path.resolve(paths.icon, "birdpaper-ui-icon.ts"), bpContent, err => {
+  fs.outputFile(path.resolve(paths.icon, "birdpaper-icon.ts"), bpContent, err => {
     if (err) {
       console.log(`Build BpVueIcon Failed: ${err}`);
       return;
@@ -132,7 +132,7 @@ export function buildIconIndex(data: IconData[]) {
 export function buildType(data: IconData[]) {
   const exports = [];
   for (const item of data) {
-    exports.push(`${item.componentName}: typeof import('birdpaper-ui/components/icon')['${item.componentName}'];`);
+    exports.push(`${item.componentName}: typeof import('birdpaper-icon/components')['${item.componentName}'];`);
   }
 
   const typeContent = getType({ exports });

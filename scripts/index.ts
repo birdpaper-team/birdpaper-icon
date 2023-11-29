@@ -10,7 +10,7 @@ const program = new Command();
 const packageContent = fs.readFileSync(path.resolve(__dirname, "../package.json"), "utf8");
 const packageData: any = JSON.parse(packageContent);
 
-program.version(packageData.version).name("bp-vue-scripts").usage("command [options]");
+program.version(packageData.version).name("icon-scripts").usage("command [options]");
 
 program
   .command("icon:generate")
