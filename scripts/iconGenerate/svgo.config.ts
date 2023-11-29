@@ -26,6 +26,7 @@ const options: OptimizeOptions = {
         attributes: [
           { ":class": "iconClass" },
           { ":style": "innerStyle" },
+          { ":fill": "fill" },
           { "@click": "onClick" },
         ],
       },

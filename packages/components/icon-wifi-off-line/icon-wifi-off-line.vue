@@ -1,0 +1,48 @@
+<template>
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" :class="iconClass" :style="innerStyle" :fill="fill" @click="onClick"><path d="M12 18c.714 0 1.37.25 1.886.667L12 21l-1.886-2.333A2.988 2.988 0 0 1 12 18ZM2.808 1.394 20.485 19.07l-1.414 1.414-5.18-5.18a5.995 5.995 0 0 0-1.89-.305c-1.43 0-2.74.5-3.771 1.332l-1.256-1.556a7.963 7.963 0 0 1 4.622-1.766L9 10.414a10.967 10.967 0 0 0-3.912 2.029L3.83 10.887A12.985 12.985 0 0 1 7.416 8.83L5.132 6.545a16.01 16.01 0 0 0-3.185 2.007L.689 6.997c.915-.74 1.903-1.391 2.952-1.942L1.393 2.808l1.415-1.414ZM14.5 10.286l-2.284-2.283L12 8c3.095 0 5.937 1.082 8.17 2.887l-1.258 1.556a10.96 10.96 0 0 0-4.412-2.157ZM12 3c4.285 0 8.22 1.497 11.31 3.997l-1.257 1.555A15.933 15.933 0 0 0 12 5c-.878 0-1.74.07-2.58.207L7.726 3.511c1.37-.334 2.802-.51 4.275-.51Z"></path></svg>
+</template>
+
+<script lang="ts">
+import { defineComponent, computed, CSSProperties } from 'vue';
+
+export default defineComponent({
+  name: 'IconWifiOffLine',
+  props: {
+    /** 图标尺寸 */
+    size: { type: String },
+    /** 颜色 */
+    fill: { type: String, default: "#333" },
+    /** 旋转角度 */
+    rotate: { type: Number },
+    /** 是否旋转 */
+    spin: { type: Boolean },
+  },
+  emits: {
+    click: (ev: MouseEvent) => true,
+  },
+  setup(props, { emit }) {
+    const name = 'bp-icon';
+
+    const iconClass = computed(() => [name, `${name}-wifi-off-line`, { [`${name}-spin`]: props.spin }]);
+
+    const innerStyle = computed(() => {
+      const styles: CSSProperties = {};
+        props.size && (styles.width = props.size);
+        props.size && (styles.height = props.size);
+        props.rotate && (styles.transform = `rotate(${props.rotate}deg)`);
+
+        return styles;
+    });
+
+    const onClick = (ev: MouseEvent) => {
+      emit('click', ev);
+    };
+
+    return {
+      iconClass,
+      innerStyle,
+      onClick,
+    };
+  }
+});
+</script>

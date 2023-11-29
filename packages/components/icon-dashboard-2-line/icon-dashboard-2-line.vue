@@ -1,0 +1,48 @@
+<template>
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" :class="iconClass" :style="innerStyle" :fill="fill" @click="onClick"><path d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2Zm0 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16Zm0 1c1.018 0 1.985.217 2.858.608L13.295 7.17a5 5 0 0 0-4.83 8.366L7.05 16.95l-.156-.161A7 7 0 0 1 12 5Zm6.392 4.143c.39.872.608 1.84.608 2.857a6.978 6.978 0 0 1-2.05 4.95l-1.414-1.414a5.008 5.008 0 0 0 1.295-4.83l1.561-1.563Zm-2.15-2.8 1.415 1.414-3.725 3.726A2.003 2.003 0 0 1 12 14a2 2 0 1 1 .517-3.932l3.726-3.725Z"></path></svg>
+</template>
+
+<script lang="ts">
+import { defineComponent, computed, CSSProperties } from 'vue';
+
+export default defineComponent({
+  name: 'IconDashboard2Line',
+  props: {
+    /** 图标尺寸 */
+    size: { type: String },
+    /** 颜色 */
+    fill: { type: String, default: "#333" },
+    /** 旋转角度 */
+    rotate: { type: Number },
+    /** 是否旋转 */
+    spin: { type: Boolean },
+  },
+  emits: {
+    click: (ev: MouseEvent) => true,
+  },
+  setup(props, { emit }) {
+    const name = 'bp-icon';
+
+    const iconClass = computed(() => [name, `${name}-dashboard-2-line`, { [`${name}-spin`]: props.spin }]);
+
+    const innerStyle = computed(() => {
+      const styles: CSSProperties = {};
+        props.size && (styles.width = props.size);
+        props.size && (styles.height = props.size);
+        props.rotate && (styles.transform = `rotate(${props.rotate}deg)`);
+
+        return styles;
+    });
+
+    const onClick = (ev: MouseEvent) => {
+      emit('click', ev);
+    };
+
+    return {
+      iconClass,
+      innerStyle,
+      onClick,
+    };
+  }
+});
+</script>

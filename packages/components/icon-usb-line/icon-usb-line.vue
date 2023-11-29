@@ -1,0 +1,48 @@
+<template>
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" :class="iconClass" :style="innerStyle" :fill="fill" @click="onClick"><path d="m12 1 3 5h-2v7.381l3-1.499-.001-.882H15V7h4v4h-1.001L18 13.118l-5 2.5v1.553A3.001 3.001 0 0 1 12 23a3 3 0 0 1-1.31-5.7L6 14l-.001-2.268a2 2 0 1 1 2.001 0V13l3 2.086V6H9l3-5Zm0 18a1 1 0 1 0 0 2 1 1 0 0 0 0-2Z"></path></svg>
+</template>
+
+<script lang="ts">
+import { defineComponent, computed, CSSProperties } from 'vue';
+
+export default defineComponent({
+  name: 'IconUsbLine',
+  props: {
+    /** 图标尺寸 */
+    size: { type: String },
+    /** 颜色 */
+    fill: { type: String, default: "#333" },
+    /** 旋转角度 */
+    rotate: { type: Number },
+    /** 是否旋转 */
+    spin: { type: Boolean },
+  },
+  emits: {
+    click: (ev: MouseEvent) => true,
+  },
+  setup(props, { emit }) {
+    const name = 'bp-icon';
+
+    const iconClass = computed(() => [name, `${name}-usb-line`, { [`${name}-spin`]: props.spin }]);
+
+    const innerStyle = computed(() => {
+      const styles: CSSProperties = {};
+        props.size && (styles.width = props.size);
+        props.size && (styles.height = props.size);
+        props.rotate && (styles.transform = `rotate(${props.rotate}deg)`);
+
+        return styles;
+    });
+
+    const onClick = (ev: MouseEvent) => {
+      emit('click', ev);
+    };
+
+    return {
+      iconClass,
+      innerStyle,
+      onClick,
+    };
+  }
+});
+</script>

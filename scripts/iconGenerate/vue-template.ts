@@ -22,7 +22,7 @@ export default defineComponent({
     /** 图标尺寸 */
     size: { type: String },
     /** 颜色 */
-    color: { type: String, default: "#333" },
+    fill: { type: String, default: "#333" },
     /** 旋转角度 */
     rotate: { type: Number },
     /** 是否旋转 */

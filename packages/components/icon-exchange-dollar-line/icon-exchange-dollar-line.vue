@@ -1,0 +1,48 @@
+<template>
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" :class="iconClass" :style="innerStyle" :fill="fill" @click="onClick"><path d="M19.379 15.106A8.001 8.001 0 0 0 8.035 5.056l-.993-1.737a9.996 9.996 0 0 1 9.962.023c4.49 2.593 6.21 8.143 4.118 12.77l1.341.775-4.165 2.214-.165-4.714 1.246.719ZM4.629 8.9a8.001 8.001 0 0 0 11.345 10.05l.992 1.737a9.995 9.995 0 0 1-9.962-.024C2.514 18.07.794 12.52 2.887 7.893L1.545 7.12 5.71 4.905l.165 4.714-1.245-.72Zm3.875 5.103h5.5a.5.5 0 1 0 0-1h-4a2.5 2.5 0 1 1 0-5h1v-1h2v1h2.5v2h-5.5a.5.5 0 0 0 0 1h4a2.5 2.5 0 0 1 0 5h-1v1h-2v-1h-2.5v-2Z"></path></svg>
+</template>
+
+<script lang="ts">
+import { defineComponent, computed, CSSProperties } from 'vue';
+
+export default defineComponent({
+  name: 'IconExchangeDollarLine',
+  props: {
+    /** 图标尺寸 */
+    size: { type: String },
+    /** 颜色 */
+    fill: { type: String, default: "#333" },
+    /** 旋转角度 */
+    rotate: { type: Number },
+    /** 是否旋转 */
+    spin: { type: Boolean },
+  },
+  emits: {
+    click: (ev: MouseEvent) => true,
+  },
+  setup(props, { emit }) {
+    const name = 'bp-icon';
+
+    const iconClass = computed(() => [name, `${name}-exchange-dollar-line`, { [`${name}-spin`]: props.spin }]);
+
+    const innerStyle = computed(() => {
+      const styles: CSSProperties = {};
+        props.size && (styles.width = props.size);
+        props.size && (styles.height = props.size);
+        props.rotate && (styles.transform = `rotate(${props.rotate}deg)`);
+
+        return styles;
+    });
+
+    const onClick = (ev: MouseEvent) => {
+      emit('click', ev);
+    };
+
+    return {
+      iconClass,
+      innerStyle,
+      onClick,
+    };
+  }
+});
+</script>

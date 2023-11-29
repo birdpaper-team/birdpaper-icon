@@ -1,0 +1,48 @@
+<template>
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" :class="iconClass" :style="innerStyle" :fill="fill" @click="onClick"><path d="M21.948 10.112a1.5 1.5 0 0 1-1.06 1.837L5.22 16.147a1 1 0 0 1-1.133-.48l-2.623-4.725 1.449-.389 2.468 2.445 5.095-1.365-4.51-7.074 1.931-.518 6.952 6.42 5.26-1.41a1.5 1.5 0 0 1 1.838 1.061ZM3.999 19h16v2H4v-2Z"></path></svg>
+</template>
+
+<script lang="ts">
+import { defineComponent, computed, CSSProperties } from 'vue';
+
+export default defineComponent({
+  name: 'IconFlightTakeoffFill',
+  props: {
+    /** 图标尺寸 */
+    size: { type: String },
+    /** 颜色 */
+    fill: { type: String, default: "#333" },
+    /** 旋转角度 */
+    rotate: { type: Number },
+    /** 是否旋转 */
+    spin: { type: Boolean },
+  },
+  emits: {
+    click: (ev: MouseEvent) => true,
+  },
+  setup(props, { emit }) {
+    const name = 'bp-icon';
+
+    const iconClass = computed(() => [name, `${name}-flight-takeoff-fill`, { [`${name}-spin`]: props.spin }]);
+
+    const innerStyle = computed(() => {
+      const styles: CSSProperties = {};
+        props.size && (styles.width = props.size);
+        props.size && (styles.height = props.size);
+        props.rotate && (styles.transform = `rotate(${props.rotate}deg)`);
+
+        return styles;
+    });
+
+    const onClick = (ev: MouseEvent) => {
+      emit('click', ev);
+    };
+
+    return {
+      iconClass,
+      innerStyle,
+      onClick,
+    };
+  }
+});
+</script>

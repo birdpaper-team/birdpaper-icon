@@ -1,5322 +1,5202 @@
 import type { App, Plugin } from 'vue';
-import IconACane from './icon-a-cane';
-import IconAbdominal from './icon-abdominal';
-import IconAbnormal from './icon-abnormal';
-import IconAcceleration from './icon-acceleration';
-import IconAcceptEmail from './icon-accept-email';
-import IconAcoustic from './icon-acoustic';
-import IconActivitySource from './icon-activity-source';
-import IconAdProduct from './icon-ad-product';
-import IconAd from './icon-ad';
-import IconAddComputer from './icon-add-computer';
-import IconAddFour from './icon-add-four';
-import IconAddItem from './icon-add-item';
-import IconAddMode from './icon-add-mode';
-import IconAddMusic from './icon-add-music';
-import IconAddOne from './icon-add-one';
-import IconAddPic from './icon-add-pic';
-import IconAddPicture from './icon-add-picture';
-import IconAddPrint from './icon-add-print';
-import IconAddSubset from './icon-add-subset';
-import IconAddSubtract from './icon-add-subtract';
-import IconAddTextTwo from './icon-add-text-two';
-import IconAddText from './icon-add-text';
-import IconAddThree from './icon-add-three';
-import IconAddTwo from './icon-add-two';
-import IconAddUser from './icon-add-user';
-import IconAddWeb from './icon-add-web';
-import IconAdd from './icon-add';
-import IconAddressBook from './icon-address-book';
-import IconAdjacentItem from './icon-adjacent-item';
-import IconAdjustment from './icon-adjustment';
-import IconAdobeIllustrate from './icon-adobe-illustrate';
-import IconAdobeIndesign from './icon-adobe-indesign';
-import IconAdobeLightroom from './icon-adobe-lightroom';
-import IconAdobePhotoshop from './icon-adobe-photoshop';
-import IconAfferentFour from './icon-afferent-four';
-import IconAfferentThree from './icon-afferent-three';
-import IconAfferentTwo from './icon-afferent-two';
-import IconAfferent from './icon-afferent';
-import IconAfroPick from './icon-afro-pick';
-import IconAgreement from './icon-agreement';
-import IconAiming from './icon-aiming';
-import IconAirBike from './icon-air-bike';
-import IconAirConditioning from './icon-air-conditioning';
-import IconAirplaneWindowOne from './icon-airplane-window-one';
-import IconAirplaneWindow from './icon-airplane-window';
-import IconAirplane from './icon-airplane';
-import IconAirplay from './icon-airplay';
-import IconAirpods from './icon-airpods';
-import IconAlarmClock from './icon-alarm-clock';
-import IconAlarm from './icon-alarm';
-import IconAlignBottomTwo from './icon-align-bottom-two';
+import IconArrowDownCircleFill from './icon-arrow-down-circle-fill';
+import IconArrowDownCircleLine from './icon-arrow-down-circle-line';
+import IconArrowDownDoubleFill from './icon-arrow-down-double-fill';
+import IconArrowDownDoubleLine from './icon-arrow-down-double-line';
+import IconArrowDownFill from './icon-arrow-down-fill';
+import IconArrowDownLine from './icon-arrow-down-line';
+import IconArrowDownSFill from './icon-arrow-down-s-fill';
+import IconArrowDownSLine from './icon-arrow-down-s-line';
+import IconArrowDropDownFill from './icon-arrow-drop-down-fill';
+import IconArrowDropDownLine from './icon-arrow-drop-down-line';
+import IconArrowDropLeftFill from './icon-arrow-drop-left-fill';
+import IconArrowDropLeftLine from './icon-arrow-drop-left-line';
+import IconArrowDropRightFill from './icon-arrow-drop-right-fill';
+import IconArrowDropRightLine from './icon-arrow-drop-right-line';
+import IconArrowDropUpFill from './icon-arrow-drop-up-fill';
+import IconArrowDropUpLine from './icon-arrow-drop-up-line';
+import IconArrowGoBackFill from './icon-arrow-go-back-fill';
+import IconArrowGoBackLine from './icon-arrow-go-back-line';
+import IconArrowGoForwardFill from './icon-arrow-go-forward-fill';
+import IconArrowGoForwardLine from './icon-arrow-go-forward-line';
+import IconArrowLeftCircleFill from './icon-arrow-left-circle-fill';
+import IconArrowLeftCircleLine from './icon-arrow-left-circle-line';
+import IconArrowLeftDoubleFill from './icon-arrow-left-double-fill';
+import IconArrowLeftDoubleLine from './icon-arrow-left-double-line';
+import IconArrowLeftDownFill from './icon-arrow-left-down-fill';
+import IconArrowLeftDownLine from './icon-arrow-left-down-line';
+import IconArrowLeftFill from './icon-arrow-left-fill';
+import IconArrowLeftLine from './icon-arrow-left-line';
+import IconArrowLeftRightFill from './icon-arrow-left-right-fill';
+import IconArrowLeftRightLine from './icon-arrow-left-right-line';
+import IconArrowLeftSFill from './icon-arrow-left-s-fill';
+import IconArrowLeftSLine from './icon-arrow-left-s-line';
+import IconArrowLeftUpFill from './icon-arrow-left-up-fill';
+import IconArrowLeftUpLine from './icon-arrow-left-up-line';
+import IconArrowRightCircleFill from './icon-arrow-right-circle-fill';
+import IconArrowRightCircleLine from './icon-arrow-right-circle-line';
+import IconArrowRightDoubleFill from './icon-arrow-right-double-fill';
+import IconArrowRightDoubleLine from './icon-arrow-right-double-line';
+import IconArrowRightDownFill from './icon-arrow-right-down-fill';
+import IconArrowRightDownLine from './icon-arrow-right-down-line';
+import IconArrowRightFill from './icon-arrow-right-fill';
+import IconArrowRightLine from './icon-arrow-right-line';
+import IconArrowRightSFill from './icon-arrow-right-s-fill';
+import IconArrowRightSLine from './icon-arrow-right-s-line';
+import IconArrowRightUpFill from './icon-arrow-right-up-fill';
+import IconArrowRightUpLine from './icon-arrow-right-up-line';
+import IconArrowTurnBackFill from './icon-arrow-turn-back-fill';
+import IconArrowTurnBackLine from './icon-arrow-turn-back-line';
+import IconArrowTurnForwardFill from './icon-arrow-turn-forward-fill';
+import IconArrowTurnForwardLine from './icon-arrow-turn-forward-line';
+import IconArrowUpCircleFill from './icon-arrow-up-circle-fill';
+import IconArrowUpCircleLine from './icon-arrow-up-circle-line';
+import IconArrowUpDoubleFill from './icon-arrow-up-double-fill';
+import IconArrowUpDoubleLine from './icon-arrow-up-double-line';
+import IconArrowUpDownFill from './icon-arrow-up-down-fill';
+import IconArrowUpDownLine from './icon-arrow-up-down-line';
+import IconArrowUpFill from './icon-arrow-up-fill';
+import IconArrowUpLine from './icon-arrow-up-line';
+import IconArrowUpSFill from './icon-arrow-up-s-fill';
+import IconArrowUpSLine from './icon-arrow-up-s-line';
+import IconContractLeftFill from './icon-contract-left-fill';
+import IconContractLeftLine from './icon-contract-left-line';
+import IconContractLeftRightFill from './icon-contract-left-right-fill';
+import IconContractLeftRightLine from './icon-contract-left-right-line';
+import IconContractRightFill from './icon-contract-right-fill';
+import IconContractRightLine from './icon-contract-right-line';
+import IconContractUpDownFill from './icon-contract-up-down-fill';
+import IconContractUpDownLine from './icon-contract-up-down-line';
+import IconCornerDownLeftFill from './icon-corner-down-left-fill';
+import IconCornerDownLeftLine from './icon-corner-down-left-line';
+import IconCornerDownRightFill from './icon-corner-down-right-fill';
+import IconCornerDownRightLine from './icon-corner-down-right-line';
+import IconCornerLeftDownFill from './icon-corner-left-down-fill';
+import IconCornerLeftDownLine from './icon-corner-left-down-line';
+import IconCornerLeftUpFill from './icon-corner-left-up-fill';
+import IconCornerLeftUpLine from './icon-corner-left-up-line';
+import IconCornerRightDownFill from './icon-corner-right-down-fill';
+import IconCornerRightDownLine from './icon-corner-right-down-line';
+import IconCornerRightUpFill from './icon-corner-right-up-fill';
+import IconCornerRightUpLine from './icon-corner-right-up-line';
+import IconCornerUpLeftDoubleFill from './icon-corner-up-left-double-fill';
+import IconCornerUpLeftDoubleLine from './icon-corner-up-left-double-line';
+import IconCornerUpLeftFill from './icon-corner-up-left-fill';
+import IconCornerUpLeftLine from './icon-corner-up-left-line';
+import IconCornerUpRightDoubleFill from './icon-corner-up-right-double-fill';
+import IconCornerUpRightDoubleLine from './icon-corner-up-right-double-line';
+import IconCornerUpRightFill from './icon-corner-up-right-fill';
+import IconCornerUpRightLine from './icon-corner-up-right-line';
+import IconDragMove2Fill from './icon-drag-move-2-fill';
+import IconDragMove2Line from './icon-drag-move-2-line';
+import IconDragMoveFill from './icon-drag-move-fill';
+import IconDragMoveLine from './icon-drag-move-line';
+import IconExpandLeftFill from './icon-expand-left-fill';
+import IconExpandLeftLine from './icon-expand-left-line';
+import IconExpandLeftRightFill from './icon-expand-left-right-fill';
+import IconExpandLeftRightLine from './icon-expand-left-right-line';
+import IconExpandRightFill from './icon-expand-right-fill';
+import IconExpandRightLine from './icon-expand-right-line';
+import IconExpandUpDownFill from './icon-expand-up-down-fill';
+import IconExpandUpDownLine from './icon-expand-up-down-line';
+import IconSkipDownFill from './icon-skip-down-fill';
+import IconSkipDownLine from './icon-skip-down-line';
+import IconSkipLeftFill from './icon-skip-left-fill';
+import IconSkipLeftLine from './icon-skip-left-line';
+import IconSkipRightFill from './icon-skip-right-fill';
+import IconSkipRightLine from './icon-skip-right-line';
+import IconSkipUpFill from './icon-skip-up-fill';
+import IconSkipUpLine from './icon-skip-up-line';
+import IconAncientGateFill from './icon-ancient-gate-fill';
+import IconAncientGateLine from './icon-ancient-gate-line';
+import IconAncientPavilionFill from './icon-ancient-pavilion-fill';
+import IconAncientPavilionLine from './icon-ancient-pavilion-line';
+import IconBankFill from './icon-bank-fill';
+import IconBankLine from './icon-bank-line';
+import IconBuilding2Fill from './icon-building-2-fill';
+import IconBuilding2Line from './icon-building-2-line';
+import IconBuilding3Fill from './icon-building-3-fill';
+import IconBuilding3Line from './icon-building-3-line';
+import IconBuilding4Fill from './icon-building-4-fill';
+import IconBuilding4Line from './icon-building-4-line';
+import IconBuildingFill from './icon-building-fill';
+import IconBuildingLine from './icon-building-line';
+import IconCommunityFill from './icon-community-fill';
+import IconCommunityLine from './icon-community-line';
+import IconGovernmentFill from './icon-government-fill';
+import IconGovernmentLine from './icon-government-line';
+import IconHome2Fill from './icon-home-2-fill';
+import IconHome2Line from './icon-home-2-line';
+import IconHome3Fill from './icon-home-3-fill';
+import IconHome3Line from './icon-home-3-line';
+import IconHome4Fill from './icon-home-4-fill';
+import IconHome4Line from './icon-home-4-line';
+import IconHome5Fill from './icon-home-5-fill';
+import IconHome5Line from './icon-home-5-line';
+import IconHome6Fill from './icon-home-6-fill';
+import IconHome6Line from './icon-home-6-line';
+import IconHome7Fill from './icon-home-7-fill';
+import IconHome7Line from './icon-home-7-line';
+import IconHome8Fill from './icon-home-8-fill';
+import IconHome8Line from './icon-home-8-line';
+import IconHomeFill from './icon-home-fill';
+import IconHomeGearFill from './icon-home-gear-fill';
+import IconHomeGearLine from './icon-home-gear-line';
+import IconHomeHeartFill from './icon-home-heart-fill';
+import IconHomeHeartLine from './icon-home-heart-line';
+import IconHomeLine from './icon-home-line';
+import IconHomeOfficeFill from './icon-home-office-fill';
+import IconHomeOfficeLine from './icon-home-office-line';
+import IconHomeSmile2Fill from './icon-home-smile-2-fill';
+import IconHomeSmile2Line from './icon-home-smile-2-line';
+import IconHomeSmileFill from './icon-home-smile-fill';
+import IconHomeSmileLine from './icon-home-smile-line';
+import IconHomeWifiFill from './icon-home-wifi-fill';
+import IconHomeWifiLine from './icon-home-wifi-line';
+import IconHospitalFill from './icon-hospital-fill';
+import IconHospitalLine from './icon-hospital-line';
+import IconHotelFill from './icon-hotel-fill';
+import IconHotelLine from './icon-hotel-line';
+import IconSchoolFill from './icon-school-fill';
+import IconSchoolLine from './icon-school-line';
+import IconStore2Fill from './icon-store-2-fill';
+import IconStore2Line from './icon-store-2-line';
+import IconStore3Fill from './icon-store-3-fill';
+import IconStore3Line from './icon-store-3-line';
+import IconStoreFill from './icon-store-fill';
+import IconStoreLine from './icon-store-line';
+import IconTentFill from './icon-tent-fill';
+import IconTentLine from './icon-tent-line';
+import IconAdvertisementFill from './icon-advertisement-fill';
+import IconAdvertisementLine from './icon-advertisement-line';
+import IconArchive2Fill from './icon-archive-2-fill';
+import IconArchive2Line from './icon-archive-2-line';
+import IconArchiveDrawerFill from './icon-archive-drawer-fill';
+import IconArchiveDrawerLine from './icon-archive-drawer-line';
+import IconArchiveFill from './icon-archive-fill';
+import IconArchiveLine from './icon-archive-line';
+import IconAtFill from './icon-at-fill';
+import IconAtLine from './icon-at-line';
+import IconAttachmentFill from './icon-attachment-fill';
+import IconAttachmentLine from './icon-attachment-line';
+import IconAwardFill from './icon-award-fill';
+import IconAwardLine from './icon-award-line';
+import IconBarChart2Fill from './icon-bar-chart-2-fill';
+import IconBarChart2Line from './icon-bar-chart-2-line';
+import IconBarChartBoxFill from './icon-bar-chart-box-fill';
+import IconBarChartBoxLine from './icon-bar-chart-box-line';
+import IconBarChartFill from './icon-bar-chart-fill';
+import IconBarChartGroupedFill from './icon-bar-chart-grouped-fill';
+import IconBarChartGroupedLine from './icon-bar-chart-grouped-line';
+import IconBarChartHorizontalFill from './icon-bar-chart-horizontal-fill';
+import IconBarChartHorizontalLine from './icon-bar-chart-horizontal-line';
+import IconBarChartLine from './icon-bar-chart-line';
+import IconBookmark2Fill from './icon-bookmark-2-fill';
+import IconBookmark2Line from './icon-bookmark-2-line';
+import IconBookmark3Fill from './icon-bookmark-3-fill';
+import IconBookmark3Line from './icon-bookmark-3-line';
+import IconBookmarkFill from './icon-bookmark-fill';
+import IconBookmarkLine from './icon-bookmark-line';
+import IconBriefcase2Fill from './icon-briefcase-2-fill';
+import IconBriefcase2Line from './icon-briefcase-2-line';
+import IconBriefcase3Fill from './icon-briefcase-3-fill';
+import IconBriefcase3Line from './icon-briefcase-3-line';
+import IconBriefcase4Fill from './icon-briefcase-4-fill';
+import IconBriefcase4Line from './icon-briefcase-4-line';
+import IconBriefcase5Fill from './icon-briefcase-5-fill';
+import IconBriefcase5Line from './icon-briefcase-5-line';
+import IconBriefcaseFill from './icon-briefcase-fill';
+import IconBriefcaseLine from './icon-briefcase-line';
+import IconBubbleChartFill from './icon-bubble-chart-fill';
+import IconBubbleChartLine from './icon-bubble-chart-line';
+import IconCalculatorFill from './icon-calculator-fill';
+import IconCalculatorLine from './icon-calculator-line';
+import IconCalendar2Fill from './icon-calendar-2-fill';
+import IconCalendar2Line from './icon-calendar-2-line';
+import IconCalendarCheckFill from './icon-calendar-check-fill';
+import IconCalendarCheckLine from './icon-calendar-check-line';
+import IconCalendarCloseFill from './icon-calendar-close-fill';
+import IconCalendarCloseLine from './icon-calendar-close-line';
+import IconCalendarEventFill from './icon-calendar-event-fill';
+import IconCalendarEventLine from './icon-calendar-event-line';
+import IconCalendarFill from './icon-calendar-fill';
+import IconCalendarLine from './icon-calendar-line';
+import IconCalendarScheduleFill from './icon-calendar-schedule-fill';
+import IconCalendarScheduleLine from './icon-calendar-schedule-line';
+import IconCalendarTodoFill from './icon-calendar-todo-fill';
+import IconCalendarTodoLine from './icon-calendar-todo-line';
+import IconCloudFill from './icon-cloud-fill';
+import IconCloudLine from './icon-cloud-line';
+import IconCloudOffFill from './icon-cloud-off-fill';
+import IconCloudOffLine from './icon-cloud-off-line';
+import IconCopyleftFill from './icon-copyleft-fill';
+import IconCopyleftLine from './icon-copyleft-line';
+import IconCopyrightFill from './icon-copyright-fill';
+import IconCopyrightLine from './icon-copyright-line';
+import IconCreativeCommonsByFill from './icon-creative-commons-by-fill';
+import IconCreativeCommonsByLine from './icon-creative-commons-by-line';
+import IconCreativeCommonsFill from './icon-creative-commons-fill';
+import IconCreativeCommonsLine from './icon-creative-commons-line';
+import IconCreativeCommonsNcFill from './icon-creative-commons-nc-fill';
+import IconCreativeCommonsNcLine from './icon-creative-commons-nc-line';
+import IconCreativeCommonsNdFill from './icon-creative-commons-nd-fill';
+import IconCreativeCommonsNdLine from './icon-creative-commons-nd-line';
+import IconCreativeCommonsSaFill from './icon-creative-commons-sa-fill';
+import IconCreativeCommonsSaLine from './icon-creative-commons-sa-line';
+import IconCreativeCommonsZeroFill from './icon-creative-commons-zero-fill';
+import IconCreativeCommonsZeroLine from './icon-creative-commons-zero-line';
+import IconCustomerService2Fill from './icon-customer-service-2-fill';
+import IconCustomerService2Line from './icon-customer-service-2-line';
+import IconCustomerServiceFill from './icon-customer-service-fill';
+import IconCustomerServiceLine from './icon-customer-service-line';
+import IconDonutChartFill from './icon-donut-chart-fill';
+import IconDonutChartLine from './icon-donut-chart-line';
+import IconFlag2Fill from './icon-flag-2-fill';
+import IconFlag2Line from './icon-flag-2-line';
+import IconFlagFill from './icon-flag-fill';
+import IconFlagLine from './icon-flag-line';
+import IconGlobalFill from './icon-global-fill';
+import IconGlobalLine from './icon-global-line';
+import IconHonourFill from './icon-honour-fill';
+import IconHonourLine from './icon-honour-line';
+import IconInbox2Fill from './icon-inbox-2-fill';
+import IconInbox2Line from './icon-inbox-2-line';
+import IconInboxArchiveFill from './icon-inbox-archive-fill';
+import IconInboxArchiveLine from './icon-inbox-archive-line';
+import IconInboxFill from './icon-inbox-fill';
+import IconInboxLine from './icon-inbox-line';
+import IconInboxUnarchiveFill from './icon-inbox-unarchive-fill';
+import IconInboxUnarchiveLine from './icon-inbox-unarchive-line';
+import IconLineChartFill from './icon-line-chart-fill';
+import IconLineChartLine from './icon-line-chart-line';
+import IconLinksFill from './icon-links-fill';
+import IconLinksLine from './icon-links-line';
+import IconMailAddFill from './icon-mail-add-fill';
+import IconMailAddLine from './icon-mail-add-line';
+import IconMailCheckFill from './icon-mail-check-fill';
+import IconMailCheckLine from './icon-mail-check-line';
+import IconMailCloseFill from './icon-mail-close-fill';
+import IconMailCloseLine from './icon-mail-close-line';
+import IconMailDownloadFill from './icon-mail-download-fill';
+import IconMailDownloadLine from './icon-mail-download-line';
+import IconMailFill from './icon-mail-fill';
+import IconMailForbidFill from './icon-mail-forbid-fill';
+import IconMailForbidLine from './icon-mail-forbid-line';
+import IconMailLine from './icon-mail-line';
+import IconMailLockFill from './icon-mail-lock-fill';
+import IconMailLockLine from './icon-mail-lock-line';
+import IconMailOpenFill from './icon-mail-open-fill';
+import IconMailOpenLine from './icon-mail-open-line';
+import IconMailSendFill from './icon-mail-send-fill';
+import IconMailSendLine from './icon-mail-send-line';
+import IconMailSettingsFill from './icon-mail-settings-fill';
+import IconMailSettingsLine from './icon-mail-settings-line';
+import IconMailStarFill from './icon-mail-star-fill';
+import IconMailStarLine from './icon-mail-star-line';
+import IconMailUnreadFill from './icon-mail-unread-fill';
+import IconMailUnreadLine from './icon-mail-unread-line';
+import IconMailVolumeFill from './icon-mail-volume-fill';
+import IconMailVolumeLine from './icon-mail-volume-line';
+import IconMedal2Fill from './icon-medal-2-fill';
+import IconMedal2Line from './icon-medal-2-line';
+import IconMedalFill from './icon-medal-fill';
+import IconMedalLine from './icon-medal-line';
+import IconMegaphoneFill from './icon-megaphone-fill';
+import IconMegaphoneLine from './icon-megaphone-line';
+import IconPassExpiredFill from './icon-pass-expired-fill';
+import IconPassExpiredLine from './icon-pass-expired-line';
+import IconPassPendingFill from './icon-pass-pending-fill';
+import IconPassPendingLine from './icon-pass-pending-line';
+import IconPassValidFill from './icon-pass-valid-fill';
+import IconPassValidLine from './icon-pass-valid-line';
+import IconPieChart2Fill from './icon-pie-chart-2-fill';
+import IconPieChart2Line from './icon-pie-chart-2-line';
+import IconPieChartBoxFill from './icon-pie-chart-box-fill';
+import IconPieChartBoxLine from './icon-pie-chart-box-line';
+import IconPieChartFill from './icon-pie-chart-fill';
+import IconPieChartLine from './icon-pie-chart-line';
+import IconPresentationFill from './icon-presentation-fill';
+import IconPresentationLine from './icon-presentation-line';
+import IconPrinterCloudFill from './icon-printer-cloud-fill';
+import IconPrinterCloudLine from './icon-printer-cloud-line';
+import IconPrinterFill from './icon-printer-fill';
+import IconPrinterLine from './icon-printer-line';
+import IconProfileFill from './icon-profile-fill';
+import IconProfileLine from './icon-profile-line';
+import IconProjector2Fill from './icon-projector-2-fill';
+import IconProjector2Line from './icon-projector-2-line';
+import IconProjectorFill from './icon-projector-fill';
+import IconProjectorLine from './icon-projector-line';
+import IconRecordMailFill from './icon-record-mail-fill';
+import IconRecordMailLine from './icon-record-mail-line';
+import IconRegisteredFill from './icon-registered-fill';
+import IconRegisteredLine from './icon-registered-line';
+import IconReplyAllFill from './icon-reply-all-fill';
+import IconReplyAllLine from './icon-reply-all-line';
+import IconReplyFill from './icon-reply-fill';
+import IconReplyLine from './icon-reply-line';
+import IconSendPlane2Fill from './icon-send-plane-2-fill';
+import IconSendPlane2Line from './icon-send-plane-2-line';
+import IconSendPlaneFill from './icon-send-plane-fill';
+import IconSendPlaneLine from './icon-send-plane-line';
+import IconSeoFill from './icon-seo-fill';
+import IconSeoLine from './icon-seo-line';
+import IconServiceFill from './icon-service-fill';
+import IconServiceLine from './icon-service-line';
+import IconShakeHandsFill from './icon-shake-hands-fill';
+import IconShakeHandsLine from './icon-shake-hands-line';
+import IconSlideshow2Fill from './icon-slideshow-2-fill';
+import IconSlideshow2Line from './icon-slideshow-2-line';
+import IconSlideshow3Fill from './icon-slideshow-3-fill';
+import IconSlideshow3Line from './icon-slideshow-3-line';
+import IconSlideshow4Fill from './icon-slideshow-4-fill';
+import IconSlideshow4Line from './icon-slideshow-4-line';
+import IconSlideshowFill from './icon-slideshow-fill';
+import IconSlideshowLine from './icon-slideshow-line';
+import IconStackFill from './icon-stack-fill';
+import IconStackLine from './icon-stack-line';
+import IconTrademarkFill from './icon-trademark-fill';
+import IconTrademarkLine from './icon-trademark-line';
+import IconVerifiedBadgeFill from './icon-verified-badge-fill';
+import IconVerifiedBadgeLine from './icon-verified-badge-line';
+import IconWindow2Fill from './icon-window-2-fill';
+import IconWindow2Line from './icon-window-2-line';
+import IconWindowFill from './icon-window-fill';
+import IconWindowLine from './icon-window-line';
+import IconChat1Fill from './icon-chat-1-fill';
+import IconChat1Line from './icon-chat-1-line';
+import IconChat2Fill from './icon-chat-2-fill';
+import IconChat2Line from './icon-chat-2-line';
+import IconChat3Fill from './icon-chat-3-fill';
+import IconChat3Line from './icon-chat-3-line';
+import IconChat4Fill from './icon-chat-4-fill';
+import IconChat4Line from './icon-chat-4-line';
+import IconChatCheckFill from './icon-chat-check-fill';
+import IconChatCheckLine from './icon-chat-check-line';
+import IconChatDeleteFill from './icon-chat-delete-fill';
+import IconChatDeleteLine from './icon-chat-delete-line';
+import IconChatDownloadFill from './icon-chat-download-fill';
+import IconChatDownloadLine from './icon-chat-download-line';
+import IconChatFollowUpFill from './icon-chat-follow-up-fill';
+import IconChatFollowUpLine from './icon-chat-follow-up-line';
+import IconChatForwardFill from './icon-chat-forward-fill';
+import IconChatForwardLine from './icon-chat-forward-line';
+import IconChatHeartFill from './icon-chat-heart-fill';
+import IconChatHeartLine from './icon-chat-heart-line';
+import IconChatHistoryFill from './icon-chat-history-fill';
+import IconChatHistoryLine from './icon-chat-history-line';
+import IconChatNewFill from './icon-chat-new-fill';
+import IconChatNewLine from './icon-chat-new-line';
+import IconChatOffFill from './icon-chat-off-fill';
+import IconChatOffLine from './icon-chat-off-line';
+import IconChatPollFill from './icon-chat-poll-fill';
+import IconChatPollLine from './icon-chat-poll-line';
+import IconChatPrivateFill from './icon-chat-private-fill';
+import IconChatPrivateLine from './icon-chat-private-line';
+import IconChatQuoteFill from './icon-chat-quote-fill';
+import IconChatQuoteLine from './icon-chat-quote-line';
+import IconChatSettingsFill from './icon-chat-settings-fill';
+import IconChatSettingsLine from './icon-chat-settings-line';
+import IconChatSmile2Fill from './icon-chat-smile-2-fill';
+import IconChatSmile2Line from './icon-chat-smile-2-line';
+import IconChatSmile3Fill from './icon-chat-smile-3-fill';
+import IconChatSmile3Line from './icon-chat-smile-3-line';
+import IconChatSmileFill from './icon-chat-smile-fill';
+import IconChatSmileLine from './icon-chat-smile-line';
+import IconChatUploadFill from './icon-chat-upload-fill';
+import IconChatUploadLine from './icon-chat-upload-line';
+import IconChatVoiceFill from './icon-chat-voice-fill';
+import IconChatVoiceLine from './icon-chat-voice-line';
+import IconDiscussFill from './icon-discuss-fill';
+import IconDiscussLine from './icon-discuss-line';
+import IconEmojiStickerFill from './icon-emoji-sticker-fill';
+import IconEmojiStickerLine from './icon-emoji-sticker-line';
+import IconFeedbackFill from './icon-feedback-fill';
+import IconFeedbackLine from './icon-feedback-line';
+import IconMessage2Fill from './icon-message-2-fill';
+import IconMessage2Line from './icon-message-2-line';
+import IconMessage3Fill from './icon-message-3-fill';
+import IconMessage3Line from './icon-message-3-line';
+import IconMessageFill from './icon-message-fill';
+import IconMessageLine from './icon-message-line';
+import IconQuestionAnswerFill from './icon-question-answer-fill';
+import IconQuestionAnswerLine from './icon-question-answer-line';
+import IconQuestionnaireFill from './icon-questionnaire-fill';
+import IconQuestionnaireLine from './icon-questionnaire-line';
+import IconSpeakFill from './icon-speak-fill';
+import IconSpeakLine from './icon-speak-line';
+import IconVideoChatFill from './icon-video-chat-fill';
+import IconVideoChatLine from './icon-video-chat-line';
+import IconAnticlockwise2Fill from './icon-anticlockwise-2-fill';
+import IconAnticlockwise2Line from './icon-anticlockwise-2-line';
+import IconAnticlockwiseFill from './icon-anticlockwise-fill';
+import IconAnticlockwiseLine from './icon-anticlockwise-line';
+import IconArtboard2Fill from './icon-artboard-2-fill';
+import IconArtboard2Line from './icon-artboard-2-line';
+import IconArtboardFill from './icon-artboard-fill';
+import IconArtboardLine from './icon-artboard-line';
+import IconBallPenFill from './icon-ball-pen-fill';
+import IconBallPenLine from './icon-ball-pen-line';
+import IconBlurOffFill from './icon-blur-off-fill';
+import IconBlurOffLine from './icon-blur-off-line';
+import IconBrush2Fill from './icon-brush-2-fill';
+import IconBrush2Line from './icon-brush-2-line';
+import IconBrush3Fill from './icon-brush-3-fill';
+import IconBrush3Line from './icon-brush-3-line';
+import IconBrush4Fill from './icon-brush-4-fill';
+import IconBrush4Line from './icon-brush-4-line';
+import IconBrushFill from './icon-brush-fill';
+import IconBrushLine from './icon-brush-line';
+import IconCircleFill from './icon-circle-fill';
+import IconCircleLine from './icon-circle-line';
+import IconClockwise2Fill from './icon-clockwise-2-fill';
+import IconClockwise2Line from './icon-clockwise-2-line';
+import IconClockwiseFill from './icon-clockwise-fill';
+import IconClockwiseLine from './icon-clockwise-line';
+import IconCollageFill from './icon-collage-fill';
+import IconCollageLine from './icon-collage-line';
+import IconCompasses2Fill from './icon-compasses-2-fill';
+import IconCompasses2Line from './icon-compasses-2-line';
+import IconCompassesFill from './icon-compasses-fill';
+import IconCompassesLine from './icon-compasses-line';
+import IconContrast2Fill from './icon-contrast-2-fill';
+import IconContrast2Line from './icon-contrast-2-line';
+import IconContrastDrop2Fill from './icon-contrast-drop-2-fill';
+import IconContrastDrop2Line from './icon-contrast-drop-2-line';
+import IconContrastDropFill from './icon-contrast-drop-fill';
+import IconContrastDropLine from './icon-contrast-drop-line';
+import IconContrastFill from './icon-contrast-fill';
+import IconContrastLine from './icon-contrast-line';
+import IconCrop2Fill from './icon-crop-2-fill';
+import IconCrop2Line from './icon-crop-2-line';
+import IconCropFill from './icon-crop-fill';
+import IconCropLine from './icon-crop-line';
+import IconCrosshair2Fill from './icon-crosshair-2-fill';
+import IconCrosshair2Line from './icon-crosshair-2-line';
+import IconCrosshairFill from './icon-crosshair-fill';
+import IconCrosshairLine from './icon-crosshair-line';
+import IconDragDropFill from './icon-drag-drop-fill';
+import IconDragDropLine from './icon-drag-drop-line';
+import IconDropFill from './icon-drop-fill';
+import IconDropLine from './icon-drop-line';
+import IconEdit2Fill from './icon-edit-2-fill';
+import IconEdit2Line from './icon-edit-2-line';
+import IconEditBoxFill from './icon-edit-box-fill';
+import IconEditBoxLine from './icon-edit-box-line';
+import IconEditCircleFill from './icon-edit-circle-fill';
+import IconEditCircleLine from './icon-edit-circle-line';
+import IconEditFill from './icon-edit-fill';
+import IconEditLine from './icon-edit-line';
+import IconEraserFill from './icon-eraser-fill';
+import IconEraserLine from './icon-eraser-line';
+import IconFocus2Fill from './icon-focus-2-fill';
+import IconFocus2Line from './icon-focus-2-line';
+import IconFocus3Fill from './icon-focus-3-fill';
+import IconFocus3Line from './icon-focus-3-line';
+import IconFocusFill from './icon-focus-fill';
+import IconFocusLine from './icon-focus-line';
+import IconGridFill from './icon-grid-fill';
+import IconGridLine from './icon-grid-line';
+import IconHammerFill from './icon-hammer-fill';
+import IconHammerLine from './icon-hammer-line';
+import IconHexagonFill from './icon-hexagon-fill';
+import IconHexagonLine from './icon-hexagon-line';
+import IconInkBottleFill from './icon-ink-bottle-fill';
+import IconInkBottleLine from './icon-ink-bottle-line';
+import IconInputMethodFill from './icon-input-method-fill';
+import IconInputMethodLine from './icon-input-method-line';
+import IconLayout2Fill from './icon-layout-2-fill';
+import IconLayout2Line from './icon-layout-2-line';
+import IconLayout3Fill from './icon-layout-3-fill';
+import IconLayout3Line from './icon-layout-3-line';
+import IconLayout4Fill from './icon-layout-4-fill';
+import IconLayout4Line from './icon-layout-4-line';
+import IconLayout5Fill from './icon-layout-5-fill';
+import IconLayout5Line from './icon-layout-5-line';
+import IconLayout6Fill from './icon-layout-6-fill';
+import IconLayout6Line from './icon-layout-6-line';
+import IconLayoutBottom2Fill from './icon-layout-bottom-2-fill';
+import IconLayoutBottom2Line from './icon-layout-bottom-2-line';
+import IconLayoutBottomFill from './icon-layout-bottom-fill';
+import IconLayoutBottomLine from './icon-layout-bottom-line';
+import IconLayoutColumnFill from './icon-layout-column-fill';
+import IconLayoutColumnLine from './icon-layout-column-line';
+import IconLayoutFill from './icon-layout-fill';
+import IconLayoutGridFill from './icon-layout-grid-fill';
+import IconLayoutGridLine from './icon-layout-grid-line';
+import IconLayoutLeft2Fill from './icon-layout-left-2-fill';
+import IconLayoutLeft2Line from './icon-layout-left-2-line';
+import IconLayoutLeftFill from './icon-layout-left-fill';
+import IconLayoutLeftLine from './icon-layout-left-line';
+import IconLayoutLine from './icon-layout-line';
+import IconLayoutMasonryFill from './icon-layout-masonry-fill';
+import IconLayoutMasonryLine from './icon-layout-masonry-line';
+import IconLayoutRight2Fill from './icon-layout-right-2-fill';
+import IconLayoutRight2Line from './icon-layout-right-2-line';
+import IconLayoutRightFill from './icon-layout-right-fill';
+import IconLayoutRightLine from './icon-layout-right-line';
+import IconLayoutRowFill from './icon-layout-row-fill';
+import IconLayoutRowLine from './icon-layout-row-line';
+import IconLayoutTop2Fill from './icon-layout-top-2-fill';
+import IconLayoutTop2Line from './icon-layout-top-2-line';
+import IconLayoutTopFill from './icon-layout-top-fill';
+import IconLayoutTopLine from './icon-layout-top-line';
+import IconMagicFill from './icon-magic-fill';
+import IconMagicLine from './icon-magic-line';
+import IconMarkPenFill from './icon-mark-pen-fill';
+import IconMarkPenLine from './icon-mark-pen-line';
+import IconMarkupFill from './icon-markup-fill';
+import IconMarkupLine from './icon-markup-line';
+import IconOctagonFill from './icon-octagon-fill';
+import IconOctagonLine from './icon-octagon-line';
+import IconPaintBrushFill from './icon-paint-brush-fill';
+import IconPaintBrushLine from './icon-paint-brush-line';
+import IconPaintFill from './icon-paint-fill';
+import IconPaintLine from './icon-paint-line';
+import IconPaletteFill from './icon-palette-fill';
+import IconPaletteLine from './icon-palette-line';
+import IconPantoneFill from './icon-pantone-fill';
+import IconPantoneLine from './icon-pantone-line';
+import IconPenNibFill from './icon-pen-nib-fill';
+import IconPenNibLine from './icon-pen-nib-line';
+import IconPencilFill from './icon-pencil-fill';
+import IconPencilLine from './icon-pencil-line';
+import IconPencilRuler2Fill from './icon-pencil-ruler-2-fill';
+import IconPencilRuler2Line from './icon-pencil-ruler-2-line';
+import IconPencilRulerFill from './icon-pencil-ruler-fill';
+import IconPencilRulerLine from './icon-pencil-ruler-line';
+import IconPentagonFill from './icon-pentagon-fill';
+import IconPentagonLine from './icon-pentagon-line';
+import IconQuillPenFill from './icon-quill-pen-fill';
+import IconQuillPenLine from './icon-quill-pen-line';
+import IconRectangleFill from './icon-rectangle-fill';
+import IconRectangleLine from './icon-rectangle-line';
+import IconRuler2Fill from './icon-ruler-2-fill';
+import IconRuler2Line from './icon-ruler-2-line';
+import IconRulerFill from './icon-ruler-fill';
+import IconRulerLine from './icon-ruler-line';
+import IconScissors2Fill from './icon-scissors-2-fill';
+import IconScissors2Line from './icon-scissors-2-line';
+import IconScissorsCutFill from './icon-scissors-cut-fill';
+import IconScissorsCutLine from './icon-scissors-cut-line';
+import IconScissorsFill from './icon-scissors-fill';
+import IconScissorsLine from './icon-scissors-line';
+import IconScreenshot2Fill from './icon-screenshot-2-fill';
+import IconScreenshot2Line from './icon-screenshot-2-line';
+import IconScreenshotFill from './icon-screenshot-fill';
+import IconScreenshotLine from './icon-screenshot-line';
+import IconShape2Fill from './icon-shape-2-fill';
+import IconShape2Line from './icon-shape-2-line';
+import IconShapeFill from './icon-shape-fill';
+import IconShapeLine from './icon-shape-line';
+import IconShapesFill from './icon-shapes-fill';
+import IconShapesLine from './icon-shapes-line';
+import IconSipFill from './icon-sip-fill';
+import IconSipLine from './icon-sip-line';
+import IconSliceFill from './icon-slice-fill';
+import IconSliceLine from './icon-slice-line';
+import IconSquareFill from './icon-square-fill';
+import IconSquareLine from './icon-square-line';
+import IconTBoxFill from './icon-t-box-fill';
+import IconTBoxLine from './icon-t-box-line';
+import IconTableAltFill from './icon-table-alt-fill';
+import IconTableAltLine from './icon-table-alt-line';
+import IconTableFill from './icon-table-fill';
+import IconTableLine from './icon-table-line';
+import IconToolsFill from './icon-tools-fill';
+import IconToolsLine from './icon-tools-line';
+import IconTriangleFill from './icon-triangle-fill';
+import IconTriangleLine from './icon-triangle-line';
+import IconBracesFill from './icon-braces-fill';
+import IconBracesLine from './icon-braces-line';
+import IconBracketsFill from './icon-brackets-fill';
+import IconBracketsLine from './icon-brackets-line';
+import IconBug2Fill from './icon-bug-2-fill';
+import IconBug2Line from './icon-bug-2-line';
+import IconBugFill from './icon-bug-fill';
+import IconBugLine from './icon-bug-line';
+import IconCodeBoxFill from './icon-code-box-fill';
+import IconCodeBoxLine from './icon-code-box-line';
+import IconCodeFill from './icon-code-fill';
+import IconCodeLine from './icon-code-line';
+import IconCodeSFill from './icon-code-s-fill';
+import IconCodeSLine from './icon-code-s-line';
+import IconCodeSSlashFill from './icon-code-s-slash-fill';
+import IconCodeSSlashLine from './icon-code-s-slash-line';
+import IconCommandFill from './icon-command-fill';
+import IconCommandLine from './icon-command-line';
+import IconCss3Fill from './icon-css3-fill';
+import IconCss3Line from './icon-css3-line';
+import IconCursorFill from './icon-cursor-fill';
+import IconCursorLine from './icon-cursor-line';
+import IconGitBranchFill from './icon-git-branch-fill';
+import IconGitBranchLine from './icon-git-branch-line';
+import IconGitClosePullRequestFill from './icon-git-close-pull-request-fill';
+import IconGitClosePullRequestLine from './icon-git-close-pull-request-line';
+import IconGitCommitFill from './icon-git-commit-fill';
+import IconGitCommitLine from './icon-git-commit-line';
+import IconGitMergeFill from './icon-git-merge-fill';
+import IconGitMergeLine from './icon-git-merge-line';
+import IconGitPullRequestFill from './icon-git-pull-request-fill';
+import IconGitPullRequestLine from './icon-git-pull-request-line';
+import IconGitRepositoryCommitsFill from './icon-git-repository-commits-fill';
+import IconGitRepositoryCommitsLine from './icon-git-repository-commits-line';
+import IconGitRepositoryFill from './icon-git-repository-fill';
+import IconGitRepositoryLine from './icon-git-repository-line';
+import IconGitRepositoryPrivateFill from './icon-git-repository-private-fill';
+import IconGitRepositoryPrivateLine from './icon-git-repository-private-line';
+import IconHtml5Fill from './icon-html5-fill';
+import IconHtml5Line from './icon-html5-line';
+import IconJavascriptFill from './icon-javascript-fill';
+import IconJavascriptLine from './icon-javascript-line';
+import IconParenthesesFill from './icon-parentheses-fill';
+import IconParenthesesLine from './icon-parentheses-line';
+import IconTerminalBoxFill from './icon-terminal-box-fill';
+import IconTerminalBoxLine from './icon-terminal-box-line';
+import IconTerminalFill from './icon-terminal-fill';
+import IconTerminalLine from './icon-terminal-line';
+import IconTerminalWindowFill from './icon-terminal-window-fill';
+import IconTerminalWindowLine from './icon-terminal-window-line';
+import IconAirplayFill from './icon-airplay-fill';
+import IconAirplayLine from './icon-airplay-line';
+import IconBarcodeBoxFill from './icon-barcode-box-fill';
+import IconBarcodeBoxLine from './icon-barcode-box-line';
+import IconBarcodeFill from './icon-barcode-fill';
+import IconBarcodeLine from './icon-barcode-line';
+import IconBaseStationFill from './icon-base-station-fill';
+import IconBaseStationLine from './icon-base-station-line';
+import IconBattery2ChargeFill from './icon-battery-2-charge-fill';
+import IconBattery2ChargeLine from './icon-battery-2-charge-line';
+import IconBattery2Fill from './icon-battery-2-fill';
+import IconBattery2Line from './icon-battery-2-line';
+import IconBatteryChargeFill from './icon-battery-charge-fill';
+import IconBatteryChargeLine from './icon-battery-charge-line';
+import IconBatteryFill from './icon-battery-fill';
+import IconBatteryLine from './icon-battery-line';
+import IconBatteryLowFill from './icon-battery-low-fill';
+import IconBatteryLowLine from './icon-battery-low-line';
+import IconBatterySaverFill from './icon-battery-saver-fill';
+import IconBatterySaverLine from './icon-battery-saver-line';
+import IconBatteryShareFill from './icon-battery-share-fill';
+import IconBatteryShareLine from './icon-battery-share-line';
+import IconBluetoothConnectFill from './icon-bluetooth-connect-fill';
+import IconBluetoothConnectLine from './icon-bluetooth-connect-line';
+import IconBluetoothFill from './icon-bluetooth-fill';
+import IconBluetoothLine from './icon-bluetooth-line';
+import IconCastFill from './icon-cast-fill';
+import IconCastLine from './icon-cast-line';
+import IconCellphoneFill from './icon-cellphone-fill';
+import IconCellphoneLine from './icon-cellphone-line';
+import IconComputerFill from './icon-computer-fill';
+import IconComputerLine from './icon-computer-line';
+import IconCpuFill from './icon-cpu-fill';
+import IconCpuLine from './icon-cpu-line';
+import IconDashboard2Fill from './icon-dashboard-2-fill';
+import IconDashboard2Line from './icon-dashboard-2-line';
+import IconDashboard3Fill from './icon-dashboard-3-fill';
+import IconDashboard3Line from './icon-dashboard-3-line';
+import IconDatabase2Fill from './icon-database-2-fill';
+import IconDatabase2Line from './icon-database-2-line';
+import IconDatabaseFill from './icon-database-fill';
+import IconDatabaseLine from './icon-database-line';
+import IconDeviceFill from './icon-device-fill';
+import IconDeviceLine from './icon-device-line';
+import IconDeviceRecoverFill from './icon-device-recover-fill';
+import IconDeviceRecoverLine from './icon-device-recover-line';
+import IconDualSim1Fill from './icon-dual-sim-1-fill';
+import IconDualSim1Line from './icon-dual-sim-1-line';
+import IconDualSim2Fill from './icon-dual-sim-2-fill';
+import IconDualSim2Line from './icon-dual-sim-2-line';
+import IconFingerprint2Fill from './icon-fingerprint-2-fill';
+import IconFingerprint2Line from './icon-fingerprint-2-line';
+import IconFingerprintFill from './icon-fingerprint-fill';
+import IconFingerprintLine from './icon-fingerprint-line';
+import IconGamepadFill from './icon-gamepad-fill';
+import IconGamepadLine from './icon-gamepad-line';
+import IconGpsFill from './icon-gps-fill';
+import IconGpsLine from './icon-gps-line';
+import IconGradienterFill from './icon-gradienter-fill';
+import IconGradienterLine from './icon-gradienter-line';
+import IconHardDrive2Fill from './icon-hard-drive-2-fill';
+import IconHardDrive2Line from './icon-hard-drive-2-line';
+import IconHardDrive3Fill from './icon-hard-drive-3-fill';
+import IconHardDrive3Line from './icon-hard-drive-3-line';
+import IconHardDriveFill from './icon-hard-drive-fill';
+import IconHardDriveLine from './icon-hard-drive-line';
+import IconHotspotFill from './icon-hotspot-fill';
+import IconHotspotLine from './icon-hotspot-line';
+import IconInstallFill from './icon-install-fill';
+import IconInstallLine from './icon-install-line';
+import IconInstanceFill from './icon-instance-fill';
+import IconInstanceLine from './icon-instance-line';
+import IconKeyboardBoxFill from './icon-keyboard-box-fill';
+import IconKeyboardBoxLine from './icon-keyboard-box-line';
+import IconKeyboardFill from './icon-keyboard-fill';
+import IconKeyboardLine from './icon-keyboard-line';
+import IconMacFill from './icon-mac-fill';
+import IconMacLine from './icon-mac-line';
+import IconMacbookFill from './icon-macbook-fill';
+import IconMacbookLine from './icon-macbook-line';
+import IconMouseFill from './icon-mouse-fill';
+import IconMouseLine from './icon-mouse-line';
+import IconPhoneFill from './icon-phone-fill';
+import IconPhoneFindFill from './icon-phone-find-fill';
+import IconPhoneFindLine from './icon-phone-find-line';
+import IconPhoneLine from './icon-phone-line';
+import IconPhoneLockFill from './icon-phone-lock-fill';
+import IconPhoneLockLine from './icon-phone-lock-line';
+import IconQrCodeFill from './icon-qr-code-fill';
+import IconQrCodeLine from './icon-qr-code-line';
+import IconQrScan2Fill from './icon-qr-scan-2-fill';
+import IconQrScan2Line from './icon-qr-scan-2-line';
+import IconQrScanFill from './icon-qr-scan-fill';
+import IconQrScanLine from './icon-qr-scan-line';
+import IconRadarFill from './icon-radar-fill';
+import IconRadarLine from './icon-radar-line';
+import IconRemoteControl2Fill from './icon-remote-control-2-fill';
+import IconRemoteControl2Line from './icon-remote-control-2-line';
+import IconRemoteControlFill from './icon-remote-control-fill';
+import IconRemoteControlLine from './icon-remote-control-line';
+import IconRestartFill from './icon-restart-fill';
+import IconRestartLine from './icon-restart-line';
+import IconRfidFill from './icon-rfid-fill';
+import IconRfidLine from './icon-rfid-line';
+import IconRotateLockFill from './icon-rotate-lock-fill';
+import IconRotateLockLine from './icon-rotate-lock-line';
+import IconRouterFill from './icon-router-fill';
+import IconRouterLine from './icon-router-line';
+import IconRssFill from './icon-rss-fill';
+import IconRssLine from './icon-rss-line';
+import IconSave2Fill from './icon-save-2-fill';
+import IconSave2Line from './icon-save-2-line';
+import IconSave3Fill from './icon-save-3-fill';
+import IconSave3Line from './icon-save-3-line';
+import IconSaveFill from './icon-save-fill';
+import IconSaveLine from './icon-save-line';
+import IconScan2Fill from './icon-scan-2-fill';
+import IconScan2Line from './icon-scan-2-line';
+import IconScanFill from './icon-scan-fill';
+import IconScanLine from './icon-scan-line';
+import IconSdCardFill from './icon-sd-card-fill';
+import IconSdCardLine from './icon-sd-card-line';
+import IconSdCardMiniFill from './icon-sd-card-mini-fill';
+import IconSdCardMiniLine from './icon-sd-card-mini-line';
+import IconSensorFill from './icon-sensor-fill';
+import IconSensorLine from './icon-sensor-line';
+import IconServerFill from './icon-server-fill';
+import IconServerLine from './icon-server-line';
+import IconShutDownFill from './icon-shut-down-fill';
+import IconShutDownLine from './icon-shut-down-line';
+import IconSignalWifi1Fill from './icon-signal-wifi-1-fill';
+import IconSignalWifi1Line from './icon-signal-wifi-1-line';
+import IconSignalWifi2Fill from './icon-signal-wifi-2-fill';
+import IconSignalWifi2Line from './icon-signal-wifi-2-line';
+import IconSignalWifi3Fill from './icon-signal-wifi-3-fill';
+import IconSignalWifi3Line from './icon-signal-wifi-3-line';
+import IconSignalWifiErrorFill from './icon-signal-wifi-error-fill';
+import IconSignalWifiErrorLine from './icon-signal-wifi-error-line';
+import IconSignalWifiFill from './icon-signal-wifi-fill';
+import IconSignalWifiLine from './icon-signal-wifi-line';
+import IconSignalWifiOffFill from './icon-signal-wifi-off-fill';
+import IconSignalWifiOffLine from './icon-signal-wifi-off-line';
+import IconSimCard2Fill from './icon-sim-card-2-fill';
+import IconSimCard2Line from './icon-sim-card-2-line';
+import IconSimCardFill from './icon-sim-card-fill';
+import IconSimCardLine from './icon-sim-card-line';
+import IconSmartphoneFill from './icon-smartphone-fill';
+import IconSmartphoneLine from './icon-smartphone-line';
+import IconTabletFill from './icon-tablet-fill';
+import IconTabletLine from './icon-tablet-line';
+import IconTv2Fill from './icon-tv-2-fill';
+import IconTv2Line from './icon-tv-2-line';
+import IconTvFill from './icon-tv-fill';
+import IconTvLine from './icon-tv-line';
+import IconUDiskFill from './icon-u-disk-fill';
+import IconUDiskLine from './icon-u-disk-line';
+import IconUninstallFill from './icon-uninstall-fill';
+import IconUninstallLine from './icon-uninstall-line';
+import IconUsbFill from './icon-usb-fill';
+import IconUsbLine from './icon-usb-line';
+import IconWifiFill from './icon-wifi-fill';
+import IconWifiLine from './icon-wifi-line';
+import IconWifiOffFill from './icon-wifi-off-fill';
+import IconWifiOffLine from './icon-wifi-off-line';
+import IconWirelessChargingFill from './icon-wireless-charging-fill';
+import IconWirelessChargingLine from './icon-wireless-charging-line';
+import IconArticleFill from './icon-article-fill';
+import IconArticleLine from './icon-article-line';
+import IconBillFill from './icon-bill-fill';
+import IconBillLine from './icon-bill-line';
+import IconBook2Fill from './icon-book-2-fill';
+import IconBook2Line from './icon-book-2-line';
+import IconBook3Fill from './icon-book-3-fill';
+import IconBook3Line from './icon-book-3-line';
+import IconBookFill from './icon-book-fill';
+import IconBookLine from './icon-book-line';
+import IconBookMarkFill from './icon-book-mark-fill';
+import IconBookMarkLine from './icon-book-mark-line';
+import IconBookOpenFill from './icon-book-open-fill';
+import IconBookOpenLine from './icon-book-open-line';
+import IconBookReadFill from './icon-book-read-fill';
+import IconBookReadLine from './icon-book-read-line';
+import IconBookletFill from './icon-booklet-fill';
+import IconBookletLine from './icon-booklet-line';
+import IconClipboardFill from './icon-clipboard-fill';
+import IconClipboardLine from './icon-clipboard-line';
+import IconContactsBook2Fill from './icon-contacts-book-2-fill';
+import IconContactsBook2Line from './icon-contacts-book-2-line';
+import IconContactsBookFill from './icon-contacts-book-fill';
+import IconContactsBookLine from './icon-contacts-book-line';
+import IconContactsBookUploadFill from './icon-contacts-book-upload-fill';
+import IconContactsBookUploadLine from './icon-contacts-book-upload-line';
+import IconDraftFill from './icon-draft-fill';
+import IconDraftLine from './icon-draft-line';
+import IconFile2Fill from './icon-file-2-fill';
+import IconFile2Line from './icon-file-2-line';
+import IconFile3Fill from './icon-file-3-fill';
+import IconFile3Line from './icon-file-3-line';
+import IconFile4Fill from './icon-file-4-fill';
+import IconFile4Line from './icon-file-4-line';
+import IconFileAddFill from './icon-file-add-fill';
+import IconFileAddLine from './icon-file-add-line';
+import IconFileChart2Fill from './icon-file-chart-2-fill';
+import IconFileChart2Line from './icon-file-chart-2-line';
+import IconFileChartFill from './icon-file-chart-fill';
+import IconFileChartLine from './icon-file-chart-line';
+import IconFileCloseFill from './icon-file-close-fill';
+import IconFileCloseLine from './icon-file-close-line';
+import IconFileCloudFill from './icon-file-cloud-fill';
+import IconFileCloudLine from './icon-file-cloud-line';
+import IconFileCodeFill from './icon-file-code-fill';
+import IconFileCodeLine from './icon-file-code-line';
+import IconFileCopy2Fill from './icon-file-copy-2-fill';
+import IconFileCopy2Line from './icon-file-copy-2-line';
+import IconFileCopyFill from './icon-file-copy-fill';
+import IconFileCopyLine from './icon-file-copy-line';
+import IconFileDamageFill from './icon-file-damage-fill';
+import IconFileDamageLine from './icon-file-damage-line';
+import IconFileDownloadFill from './icon-file-download-fill';
+import IconFileDownloadLine from './icon-file-download-line';
+import IconFileEditFill from './icon-file-edit-fill';
+import IconFileEditLine from './icon-file-edit-line';
+import IconFileExcel2Fill from './icon-file-excel-2-fill';
+import IconFileExcel2Line from './icon-file-excel-2-line';
+import IconFileExcelFill from './icon-file-excel-fill';
+import IconFileExcelLine from './icon-file-excel-line';
+import IconFileFill from './icon-file-fill';
+import IconFileForbidFill from './icon-file-forbid-fill';
+import IconFileForbidLine from './icon-file-forbid-line';
+import IconFileGifFill from './icon-file-gif-fill';
+import IconFileGifLine from './icon-file-gif-line';
+import IconFileHistoryFill from './icon-file-history-fill';
+import IconFileHistoryLine from './icon-file-history-line';
+import IconFileHwpFill from './icon-file-hwp-fill';
+import IconFileHwpLine from './icon-file-hwp-line';
+import IconFileImageFill from './icon-file-image-fill';
+import IconFileImageLine from './icon-file-image-line';
+import IconFileInfoFill from './icon-file-info-fill';
+import IconFileInfoLine from './icon-file-info-line';
+import IconFileLine from './icon-file-line';
+import IconFileList2Fill from './icon-file-list-2-fill';
+import IconFileList2Line from './icon-file-list-2-line';
+import IconFileList3Fill from './icon-file-list-3-fill';
+import IconFileList3Line from './icon-file-list-3-line';
+import IconFileListFill from './icon-file-list-fill';
+import IconFileListLine from './icon-file-list-line';
+import IconFileLockFill from './icon-file-lock-fill';
+import IconFileLockLine from './icon-file-lock-line';
+import IconFileMarkFill from './icon-file-mark-fill';
+import IconFileMarkLine from './icon-file-mark-line';
+import IconFileMusicFill from './icon-file-music-fill';
+import IconFileMusicLine from './icon-file-music-line';
+import IconFilePaper2Fill from './icon-file-paper-2-fill';
+import IconFilePaper2Line from './icon-file-paper-2-line';
+import IconFilePaperFill from './icon-file-paper-fill';
+import IconFilePaperLine from './icon-file-paper-line';
+import IconFilePdf2Fill from './icon-file-pdf-2-fill';
+import IconFilePdf2Line from './icon-file-pdf-2-line';
+import IconFilePdfFill from './icon-file-pdf-fill';
+import IconFilePdfLine from './icon-file-pdf-line';
+import IconFilePpt2Fill from './icon-file-ppt-2-fill';
+import IconFilePpt2Line from './icon-file-ppt-2-line';
+import IconFilePptFill from './icon-file-ppt-fill';
+import IconFilePptLine from './icon-file-ppt-line';
+import IconFileReduceFill from './icon-file-reduce-fill';
+import IconFileReduceLine from './icon-file-reduce-line';
+import IconFileSearchFill from './icon-file-search-fill';
+import IconFileSearchLine from './icon-file-search-line';
+import IconFileSettingsFill from './icon-file-settings-fill';
+import IconFileSettingsLine from './icon-file-settings-line';
+import IconFileShield2Fill from './icon-file-shield-2-fill';
+import IconFileShield2Line from './icon-file-shield-2-line';
+import IconFileShieldFill from './icon-file-shield-fill';
+import IconFileShieldLine from './icon-file-shield-line';
+import IconFileShredFill from './icon-file-shred-fill';
+import IconFileShredLine from './icon-file-shred-line';
+import IconFileTextFill from './icon-file-text-fill';
+import IconFileTextLine from './icon-file-text-line';
+import IconFileTransferFill from './icon-file-transfer-fill';
+import IconFileTransferLine from './icon-file-transfer-line';
+import IconFileUnknowFill from './icon-file-unknow-fill';
+import IconFileUnknowLine from './icon-file-unknow-line';
+import IconFileUploadFill from './icon-file-upload-fill';
+import IconFileUploadLine from './icon-file-upload-line';
+import IconFileUserFill from './icon-file-user-fill';
+import IconFileUserLine from './icon-file-user-line';
+import IconFileVideoFill from './icon-file-video-fill';
+import IconFileVideoLine from './icon-file-video-line';
+import IconFileWarningFill from './icon-file-warning-fill';
+import IconFileWarningLine from './icon-file-warning-line';
+import IconFileWord2Fill from './icon-file-word-2-fill';
+import IconFileWord2Line from './icon-file-word-2-line';
+import IconFileWordFill from './icon-file-word-fill';
+import IconFileWordLine from './icon-file-word-line';
+import IconFileZipFill from './icon-file-zip-fill';
+import IconFileZipLine from './icon-file-zip-line';
+import IconFolder2Fill from './icon-folder-2-fill';
+import IconFolder2Line from './icon-folder-2-line';
+import IconFolder3Fill from './icon-folder-3-fill';
+import IconFolder3Line from './icon-folder-3-line';
+import IconFolder4Fill from './icon-folder-4-fill';
+import IconFolder4Line from './icon-folder-4-line';
+import IconFolder5Fill from './icon-folder-5-fill';
+import IconFolder5Line from './icon-folder-5-line';
+import IconFolderAddFill from './icon-folder-add-fill';
+import IconFolderAddLine from './icon-folder-add-line';
+import IconFolderChart2Fill from './icon-folder-chart-2-fill';
+import IconFolderChart2Line from './icon-folder-chart-2-line';
+import IconFolderChartFill from './icon-folder-chart-fill';
+import IconFolderChartLine from './icon-folder-chart-line';
+import IconFolderDownloadFill from './icon-folder-download-fill';
+import IconFolderDownloadLine from './icon-folder-download-line';
+import IconFolderFill from './icon-folder-fill';
+import IconFolderForbidFill from './icon-folder-forbid-fill';
+import IconFolderForbidLine from './icon-folder-forbid-line';
+import IconFolderHistoryFill from './icon-folder-history-fill';
+import IconFolderHistoryLine from './icon-folder-history-line';
+import IconFolderImageFill from './icon-folder-image-fill';
+import IconFolderImageLine from './icon-folder-image-line';
+import IconFolderInfoFill from './icon-folder-info-fill';
+import IconFolderInfoLine from './icon-folder-info-line';
+import IconFolderKeyholeFill from './icon-folder-keyhole-fill';
+import IconFolderKeyholeLine from './icon-folder-keyhole-line';
+import IconFolderLine from './icon-folder-line';
+import IconFolderLockFill from './icon-folder-lock-fill';
+import IconFolderLockLine from './icon-folder-lock-line';
+import IconFolderMusicFill from './icon-folder-music-fill';
+import IconFolderMusicLine from './icon-folder-music-line';
+import IconFolderOpenFill from './icon-folder-open-fill';
+import IconFolderOpenLine from './icon-folder-open-line';
+import IconFolderReceivedFill from './icon-folder-received-fill';
+import IconFolderReceivedLine from './icon-folder-received-line';
+import IconFolderReduceFill from './icon-folder-reduce-fill';
+import IconFolderReduceLine from './icon-folder-reduce-line';
+import IconFolderSettingsFill from './icon-folder-settings-fill';
+import IconFolderSettingsLine from './icon-folder-settings-line';
+import IconFolderSharedFill from './icon-folder-shared-fill';
+import IconFolderSharedLine from './icon-folder-shared-line';
+import IconFolderShield2Fill from './icon-folder-shield-2-fill';
+import IconFolderShield2Line from './icon-folder-shield-2-line';
+import IconFolderShieldFill from './icon-folder-shield-fill';
+import IconFolderShieldLine from './icon-folder-shield-line';
+import IconFolderTransferFill from './icon-folder-transfer-fill';
+import IconFolderTransferLine from './icon-folder-transfer-line';
+import IconFolderUnknowFill from './icon-folder-unknow-fill';
+import IconFolderUnknowLine from './icon-folder-unknow-line';
+import IconFolderUploadFill from './icon-folder-upload-fill';
+import IconFolderUploadLine from './icon-folder-upload-line';
+import IconFolderUserFill from './icon-folder-user-fill';
+import IconFolderUserLine from './icon-folder-user-line';
+import IconFolderVideoFill from './icon-folder-video-fill';
+import IconFolderVideoLine from './icon-folder-video-line';
+import IconFolderWarningFill from './icon-folder-warning-fill';
+import IconFolderWarningLine from './icon-folder-warning-line';
+import IconFolderZipFill from './icon-folder-zip-fill';
+import IconFolderZipLine from './icon-folder-zip-line';
+import IconFoldersFill from './icon-folders-fill';
+import IconFoldersLine from './icon-folders-line';
+import IconKeynoteFill from './icon-keynote-fill';
+import IconKeynoteLine from './icon-keynote-line';
+import IconMarkdownFill from './icon-markdown-fill';
+import IconMarkdownLine from './icon-markdown-line';
+import IconNewsFill from './icon-news-fill';
+import IconNewsLine from './icon-news-line';
+import IconNewspaperFill from './icon-newspaper-fill';
+import IconNewspaperLine from './icon-newspaper-line';
+import IconNumbersFill from './icon-numbers-fill';
+import IconNumbersLine from './icon-numbers-line';
+import IconPagesFill from './icon-pages-fill';
+import IconPagesLine from './icon-pages-line';
+import IconStickyNote2Fill from './icon-sticky-note-2-fill';
+import IconStickyNote2Line from './icon-sticky-note-2-line';
+import IconStickyNoteFill from './icon-sticky-note-fill';
+import IconStickyNoteLine from './icon-sticky-note-line';
+import IconSurveyFill from './icon-survey-fill';
+import IconSurveyLine from './icon-survey-line';
+import IconTaskFill from './icon-task-fill';
+import IconTaskLine from './icon-task-line';
+import IconTodoFill from './icon-todo-fill';
+import IconTodoLine from './icon-todo-line';
+import IconAB from './icon-a-b';
+import IconAiGenerate from './icon-ai-generate';
 import IconAlignBottom from './icon-align-bottom';
-import IconAlignHorizontalCenterTwo from './icon-align-horizontal-center-two';
-import IconAlignHorizontally from './icon-align-horizontally';
-import IconAlignLeftOne from './icon-align-left-one';
-import IconAlignLeftTwo from './icon-align-left-two';
+import IconAlignCenter from './icon-align-center';
+import IconAlignJustify from './icon-align-justify';
 import IconAlignLeft from './icon-align-left';
-import IconAlignRightOne from './icon-align-right-one';
-import IconAlignRightTwo from './icon-align-right-two';
 import IconAlignRight from './icon-align-right';
-import IconAlignTextBothOne from './icon-align-text-both-one';
-import IconAlignTextBoth from './icon-align-text-both';
-import IconAlignTextBottomOne from './icon-align-text-bottom-one';
-import IconAlignTextBottom from './icon-align-text-bottom';
-import IconAlignTextCenterOne from './icon-align-text-center-one';
-import IconAlignTextCenter from './icon-align-text-center';
-import IconAlignTextLeftOne from './icon-align-text-left-one';
-import IconAlignTextLeft from './icon-align-text-left';
-import IconAlignTextMiddleOne from './icon-align-text-middle-one';
-import IconAlignTextMiddle from './icon-align-text-middle';
-import IconAlignTextRightOne from './icon-align-text-right-one';
-import IconAlignTextRight from './icon-align-text-right';
-import IconAlignTextTopOne from './icon-align-text-top-one';
-import IconAlignTextTop from './icon-align-text-top';
-import IconAlignTopTwo from './icon-align-top-two';
 import IconAlignTop from './icon-align-top';
-import IconAlignVerticalCenterTwo from './icon-align-vertical-center-two';
 import IconAlignVertically from './icon-align-vertically';
-import IconAlignmentBottomCenter from './icon-alignment-bottom-center';
-import IconAlignmentBottomLeft from './icon-alignment-bottom-left';
-import IconAlignmentBottomRight from './icon-alignment-bottom-right';
-import IconAlignmentHorizontalBottom from './icon-alignment-horizontal-bottom';
-import IconAlignmentHorizontalCenter from './icon-alignment-horizontal-center';
-import IconAlignmentHorizontalTop from './icon-alignment-horizontal-top';
-import IconAlignmentLeftBottom from './icon-alignment-left-bottom';
-import IconAlignmentLeftCenter from './icon-alignment-left-center';
-import IconAlignmentLeftTop from './icon-alignment-left-top';
-import IconAlignmentRightBottom from './icon-alignment-right-bottom';
-import IconAlignmentRightCenter from './icon-alignment-right-center';
-import IconAlignmentRightTop from './icon-alignment-right-top';
-import IconAlignmentTopCenter from './icon-alignment-top-center';
-import IconAlignmentTopLeft from './icon-alignment-top-left';
-import IconAlignmentTopRight from './icon-alignment-top-right';
-import IconAlignmentVerticalCenter from './icon-alignment-vertical-center';
-import IconAlignmentVerticalLeft from './icon-alignment-vertical-left';
-import IconAlignmentVerticalRight from './icon-alignment-vertical-right';
-import IconAlipay from './icon-alipay';
-import IconAllApplication from './icon-all-application';
-import IconAlphabeticalSortingTwo from './icon-alphabetical-sorting-two';
-import IconAlphabeticalSorting from './icon-alphabetical-sorting';
-import IconAmbulance from './icon-ambulance';
-import IconAnalysis from './icon-analysis';
-import IconAnchorOne from './icon-anchor-one';
-import IconAnchorRound from './icon-anchor-round';
-import IconAnchorSqure from './icon-anchor-squre';
-import IconAnchorTwo from './icon-anchor-two';
-import IconAnchor from './icon-anchor';
-import IconAndroid from './icon-android';
-import IconAngryFace from './icon-angry-face';
-import IconAnguishedFace from './icon-anguished-face';
-import IconAnnouncement from './icon-announcement';
-import IconAntiCorrosion from './icon-anti-corrosion';
-import IconAperturePriority from './icon-aperture-priority';
-import IconApiApp from './icon-api-app';
-import IconApi from './icon-api';
-import IconAppStore from './icon-app-store';
-import IconAppSwitch from './icon-app-switch';
-import IconAppleOne from './icon-apple-one';
-import IconApple from './icon-apple';
-import IconAppletClosed from './icon-applet-closed';
-import IconApplicationEffect from './icon-application-effect';
-import IconApplicationMenu from './icon-application-menu';
-import IconApplicationOne from './icon-application-one';
-import IconApplicationTwo from './icon-application-two';
-import IconApplication from './icon-application';
-import IconAppointment from './icon-appointment';
-import IconAquarius from './icon-aquarius';
-import IconArcDeTriomphe from './icon-arc-de-triomphe';
-import IconArchersBow from './icon-archers-bow';
-import IconArchery from './icon-archery';
-import IconAreaMap from './icon-area-map';
-import IconArena from './icon-arena';
-import IconAries from './icon-aries';
-import IconArithmeticButtons from './icon-arithmetic-buttons';
-import IconArithmeticOne from './icon-arithmetic-one';
-import IconArithmetic from './icon-arithmetic';
-import IconArrowCircleDown from './icon-arrow-circle-down';
-import IconArrowCircleLeft from './icon-arrow-circle-left';
-import IconArrowCircleRight from './icon-arrow-circle-right';
-import IconArrowCircleUp from './icon-arrow-circle-up';
-import IconArrowDown from './icon-arrow-down';
-import IconArrowKeys from './icon-arrow-keys';
-import IconArrowLeftDown from './icon-arrow-left-down';
-import IconArrowLeftUp from './icon-arrow-left-up';
-import IconArrowLeft from './icon-arrow-left';
-import IconArrowRightDown from './icon-arrow-right-down';
-import IconArrowRightUp from './icon-arrow-right-up';
-import IconArrowRight from './icon-arrow-right';
-import IconArrowUp from './icon-arrow-up';
-import IconAssemblyLine from './icon-assembly-line';
-import IconAssociation from './icon-association';
-import IconAsteriskKey from './icon-asterisk-key';
 import IconAsterisk from './icon-asterisk';
-import IconAstonishedFace from './icon-astonished-face';
-import IconAtSign from './icon-at-sign';
-import IconAttention from './icon-attention';
-import IconAudioFile from './icon-audio-file';
-import IconAudit from './icon-audit';
-import IconAutoFocus from './icon-auto-focus';
-import IconAutoHeightOne from './icon-auto-height-one';
-import IconAutoLineHeight from './icon-auto-line-height';
-import IconAutoLineWidth from './icon-auto-line-width';
-import IconAutoWidthOne from './icon-auto-width-one';
-import IconAutoWidth from './icon-auto-width';
-import IconAvatar from './icon-avatar';
-import IconAverage from './icon-average';
-import IconAviation from './icon-aviation';
-import IconAvocadoOne from './icon-avocado-one';
-import IconAvocado from './icon-avocado';
-import IconBabyApp from './icon-baby-app';
-import IconBabyBottle from './icon-baby-bottle';
-import IconBabyCarSeat from './icon-baby-car-seat';
-import IconBabyFeet from './icon-baby-feet';
-import IconBabyMeal from './icon-baby-meal';
-import IconBabyMobile from './icon-baby-mobile';
-import IconBabyOne from './icon-baby-one';
-import IconBabyPants from './icon-baby-pants';
-import IconBabySling from './icon-baby-sling';
-import IconBabyTaste from './icon-baby-taste';
-import IconBaby from './icon-baby';
-import IconBachelorCapOne from './icon-bachelor-cap-one';
-import IconBachelorCapTwo from './icon-bachelor-cap-two';
-import IconBachelorCap from './icon-bachelor-cap';
-import IconBackOne from './icon-back-one';
-import IconBack from './icon-back';
-import IconBackgroundColor from './icon-background-color';
-import IconBackpack from './icon-backpack';
-import IconBadOne from './icon-bad-one';
-import IconBadTwo from './icon-bad-two';
-import IconBad from './icon-bad';
-import IconBadgeTwo from './icon-badge-two';
-import IconBadge from './icon-badge';
-import IconBadminton from './icon-badminton';
-import IconBaggageDelay from './icon-baggage-delay';
-import IconBalanceOne from './icon-balance-one';
-import IconBalanceTwo from './icon-balance-two';
-import IconBalance from './icon-balance';
-import IconBanana from './icon-banana';
-import IconBankCardOne from './icon-bank-card-one';
-import IconBankCardTwo from './icon-bank-card-two';
-import IconBankCard from './icon-bank-card';
-import IconBankTransfer from './icon-bank-transfer';
-import IconBank from './icon-bank';
-import IconBaokemeng from './icon-baokemeng';
-import IconBarCode from './icon-bar-code';
-import IconBarbecue from './icon-barbecue';
-import IconBarberBrush from './icon-barber-brush';
-import IconBarberClippers from './icon-barber-clippers';
-import IconBaseballBat from './icon-baseball-bat';
-import IconBaseballCap from './icon-baseball-cap';
-import IconBaseball from './icon-baseball';
-import IconBasketballClothes from './icon-basketball-clothes';
-import IconBasketballOne from './icon-basketball-one';
-import IconBasketballStand from './icon-basketball-stand';
-import IconBasketball from './icon-basketball';
-import IconBat from './icon-bat';
-import IconBatteryCharge from './icon-battery-charge';
-import IconBatteryEmpty from './icon-battery-empty';
-import IconBatteryFailure from './icon-battery-failure';
-import IconBatteryFull from './icon-battery-full';
-import IconBatteryStorage from './icon-battery-storage';
-import IconBatteryTips from './icon-battery-tips';
-import IconBatteryWorkingOne from './icon-battery-working-one';
-import IconBatteryWorking from './icon-battery-working';
-import IconBeachUmbrella from './icon-beach-umbrella';
-import IconBear from './icon-bear';
-import IconBeautyInstrument from './icon-beauty-instrument';
-import IconBeauty from './icon-beauty';
-import IconBedsideTwo from './icon-bedside-two';
-import IconBedside from './icon-bedside';
-import IconBee from './icon-bee';
-import IconBeerMug from './icon-beer-mug';
-import IconBeer from './icon-beer';
-import IconBehance from './icon-behance';
-import IconBellRing from './icon-bell-ring';
-import IconBelt from './icon-belt';
-import IconBenz from './icon-benz';
-import IconBezierCurve from './icon-bezier-curve';
-import IconBib from './icon-bib';
-import IconBigClock from './icon-big-clock';
-import IconBigX from './icon-big-x';
-import IconBike from './icon-bike';
-import IconBill from './icon-bill';
-import IconBird from './icon-bird';
-import IconBirthdayCake from './icon-birthday-cake';
-import IconBitcoin from './icon-bitcoin';
-import IconBlackEight from './icon-black-eight';
-import IconBlackboard from './icon-blackboard';
-import IconBlade from './icon-blade';
-import IconBless from './icon-bless';
-import IconBlockEight from './icon-block-eight';
-import IconBlockFive from './icon-block-five';
-import IconBlockFour from './icon-block-four';
-import IconBlockNine from './icon-block-nine';
-import IconBlockOne from './icon-block-one';
-import IconBlockSeven from './icon-block-seven';
-import IconBlockSix from './icon-block-six';
-import IconBlockTen from './icon-block-ten';
-import IconBlockThree from './icon-block-three';
-import IconBlockTwo from './icon-block-two';
-import IconBlock from './icon-block';
-import IconBlockchain from './icon-blockchain';
-import IconBlocksAndArrows from './icon-blocks-and-arrows';
-import IconBloom from './icon-bloom';
-import IconBlossom from './icon-blossom';
-import IconBluetooth from './icon-bluetooth';
-import IconBoiler from './icon-boiler';
-import IconBoltOne from './icon-bolt-one';
-import IconBone from './icon-bone';
-import IconBookOne from './icon-book-one';
-import IconBookOpen from './icon-book-open';
-import IconBook from './icon-book';
-import IconBookmarkOne from './icon-bookmark-one';
-import IconBookmarkThree from './icon-bookmark-three';
-import IconBookmark from './icon-bookmark';
-import IconBookshelf from './icon-bookshelf';
-import IconBoosterCarSeat from './icon-booster-car-seat';
-import IconBooth from './icon-booth';
-import IconBoots from './icon-boots';
-import IconBottleOne from './icon-bottle-one';
-import IconBottleThree from './icon-bottle-three';
-import IconBottleTwo from './icon-bottle-two';
-import IconBottle from './icon-bottle';
-import IconBottomBarOne from './icon-bottom-bar-one';
-import IconBottomBar from './icon-bottom-bar';
-import IconBow from './icon-bow';
-import IconBowlOne from './icon-bowl-one';
-import IconBowl from './icon-bowl';
-import IconBowling from './icon-bowling';
-import IconBox from './icon-box';
-import IconBoxingOne from './icon-boxing-one';
-import IconBoxing from './icon-boxing';
-import IconBoyOne from './icon-boy-one';
-import IconBoyStroller from './icon-boy-stroller';
-import IconBoyTwo from './icon-boy-two';
-import IconBoy from './icon-boy';
-import IconBrain from './icon-brain';
-import IconBrakePads from './icon-brake-pads';
-import IconBranchOne from './icon-branch-one';
-import IconBranchTwo from './icon-branch-two';
-import IconBranch from './icon-branch';
-import IconBrdigeThree from './icon-brdige-three';
-import IconBreadMachine from './icon-bread-machine';
-import IconBreadOne from './icon-bread-one';
-import IconBread from './icon-bread';
-import IconBreastPump from './icon-breast-pump';
-import IconBridgeOne from './icon-bridge-one';
-import IconBridgeTwo from './icon-bridge-two';
-import IconBriefcase from './icon-briefcase';
-import IconBrightness from './icon-brightness';
+import IconAttachment2 from './icon-attachment-2';
+import IconBold from './icon-bold';
 import IconBringForward from './icon-bring-forward';
-import IconBringToFrontOne from './icon-bring-to-front-one';
 import IconBringToFront from './icon-bring-to-front';
-import IconBroadcastOne from './icon-broadcast-one';
-import IconBroadcastRadio from './icon-broadcast-radio';
-import IconBroadcast from './icon-broadcast';
-import IconBrowserChrome from './icon-browser-chrome';
-import IconBrowserSafari from './icon-browser-safari';
-import IconBrowser from './icon-browser';
-import IconBubbleChart from './icon-bubble-chart';
-import IconBug from './icon-bug';
-import IconBuildingFour from './icon-building-four';
-import IconBuildingOne from './icon-building-one';
-import IconBuildingThree from './icon-building-three';
-import IconBuildingTwo from './icon-building-two';
-import IconBulletMap from './icon-bullet-map';
-import IconBusOne from './icon-bus-one';
-import IconBusTwo from './icon-bus-two';
-import IconBus from './icon-bus';
-import IconButterfly from './icon-butterfly';
-import IconBuy from './icon-buy';
-import IconBydesign from './icon-bydesign';
-import IconBye from './icon-bye';
-import IconBytedanceApplets from './icon-bytedance-applets';
-import IconBytedanceMiniApp from './icon-bytedance-mini-app';
-import IconBytedance from './icon-bytedance';
-import IconCableCar from './icon-cable-car';
-import IconCactus from './icon-cactus';
-import IconCakeFive from './icon-cake-five';
-import IconCakeFour from './icon-cake-four';
-import IconCakeOne from './icon-cake-one';
-import IconCakeThree from './icon-cake-three';
-import IconCakeTwo from './icon-cake-two';
-import IconCake from './icon-cake';
-import IconCalculatorOne from './icon-calculator-one';
-import IconCalculator from './icon-calculator';
-import IconCalendarDot from './icon-calendar-dot';
-import IconCalendarThirtyTwo from './icon-calendar-thirty-two';
-import IconCalendarThirty from './icon-calendar-thirty';
-import IconCalendarThree from './icon-calendar-three';
-import IconCalendar from './icon-calendar';
-import IconCameraFive from './icon-camera-five';
-import IconCameraFour from './icon-camera-four';
-import IconCameraOne from './icon-camera-one';
-import IconCameraThree from './icon-camera-three';
-import IconCameraTwo from './icon-camera-two';
-import IconCamera from './icon-camera';
-import IconCamp from './icon-camp';
-import IconCancer from './icon-cancer';
-import IconCandy from './icon-candy';
-import IconCannedFruit from './icon-canned-fruit';
-import IconCapricornus from './icon-capricornus';
-import IconCarBattery from './icon-car-battery';
-import IconCar from './icon-car';
-import IconCardTwo from './icon-card-two';
-import IconCardioelectric from './icon-cardioelectric';
-import IconCarouselVideo from './icon-carousel-video';
-import IconCarousel from './icon-carousel';
-import IconCarrot from './icon-carrot';
-import IconCastScreen from './icon-cast-screen';
-import IconCastle from './icon-castle';
-import IconCat from './icon-cat';
-import IconCategoryManagement from './icon-category-management';
-import IconCattleZodiac from './icon-cattle-zodiac';
-import IconCattle from './icon-cattle';
-import IconCaution from './icon-caution';
-import IconCc from './icon-cc';
-import IconCd from './icon-cd';
-import IconCeMarking from './icon-ce-marking';
-import IconCell from './icon-cell';
-import IconCenterAlignment from './icon-center-alignment';
-import IconCertificate from './icon-certificate';
-import IconChafingDishOne from './icon-chafing-dish-one';
-import IconChafingDish from './icon-chafing-dish';
-import IconChairOne from './icon-chair-one';
-import IconChair from './icon-chair';
-import IconChangeDateSort from './icon-change-date-sort';
-import IconChange from './icon-change';
-import IconChargingTreasure from './icon-charging-treasure';
-import IconChartGraph from './icon-chart-graph';
-import IconChartHistogramOne from './icon-chart-histogram-one';
-import IconChartHistogramTwo from './icon-chart-histogram-two';
-import IconChartHistogram from './icon-chart-histogram';
-import IconChartLineArea from './icon-chart-line-area';
-import IconChartLine from './icon-chart-line';
-import IconChartPieOne from './icon-chart-pie-one';
-import IconChartPie from './icon-chart-pie';
-import IconChartProportion from './icon-chart-proportion';
-import IconChartRing from './icon-chart-ring';
-import IconChartScatter from './icon-chart-scatter';
-import IconChartStock from './icon-chart-stock';
-import IconCheckCorrect from './icon-check-correct';
-import IconCheckIn from './icon-check-in';
-import IconCheckOne from './icon-check-one';
-import IconCheckSmall from './icon-check-small';
-import IconCheck from './icon-check';
-import IconCheckbox from './icon-checkbox';
-import IconCheckerboard from './icon-checkerboard';
-import IconChecklist from './icon-checklist';
-import IconCheese from './icon-cheese';
-import IconChefHatOne from './icon-chef-hat-one';
-import IconChefHat from './icon-chef-hat';
-import IconCherry from './icon-cherry';
-import IconChessOne from './icon-chess-one';
-import IconChess from './icon-chess';
-import IconChest from './icon-chest';
-import IconChickenLeg from './icon-chicken-leg';
-import IconChickenZodiac from './icon-chicken-zodiac';
-import IconChicken from './icon-chicken';
-import IconChildWithPacifier from './icon-child-with-pacifier';
-import IconChildrenCap from './icon-children-cap';
-import IconChildrenPyramid from './icon-children-pyramid';
-import IconChili from './icon-chili';
-import IconChimney from './icon-chimney';
-import IconChineseOne from './icon-chinese-one';
-import IconChinesePavilion from './icon-chinese-pavilion';
-import IconChinese from './icon-chinese';
-import IconChip from './icon-chip';
-import IconChoppingBoard from './icon-chopping-board';
-import IconChopsticksFork from './icon-chopsticks-fork';
-import IconChristmasTreeOne from './icon-christmas-tree-one';
-import IconChristmasTree from './icon-christmas-tree';
-import IconChurchOne from './icon-church-one';
-import IconChurchTwo from './icon-church-two';
-import IconCircleDoubleDown from './icon-circle-double-down';
-import IconCircleDoubleLeft from './icon-circle-double-left';
-import IconCircleDoubleRight from './icon-circle-double-right';
-import IconCircleDoubleUp from './icon-circle-double-up';
-import IconCircleFiveLine from './icon-circle-five-line';
-import IconCircleFourLine from './icon-circle-four-line';
-import IconCircleFour from './icon-circle-four';
-import IconCircleHouse from './icon-circle-house';
-import IconCircleLeftDown from './icon-circle-left-down';
-import IconCircleLeftUp from './icon-circle-left-up';
-import IconCircleRightDown from './icon-circle-right-down';
-import IconCircleRightUp from './icon-circle-right-up';
-import IconCircleThree from './icon-circle-three';
-import IconCircleTwoLine from './icon-circle-two-line';
-import IconCirclesAndTriangles from './icon-circles-and-triangles';
-import IconCirclesSeven from './icon-circles-seven';
-import IconCircularConnection from './icon-circular-connection';
-import IconCircus from './icon-circus';
-import IconCityGate from './icon-city-gate';
-import IconCityOne from './icon-city-one';
-import IconCity from './icon-city';
-import IconClap from './icon-clap';
-import IconClassroom from './icon-classroom';
-import IconClearFormat from './icon-clear-format';
-import IconClear from './icon-clear';
-import IconClickTapTwo from './icon-click-tap-two';
-import IconClickTap from './icon-click-tap';
-import IconClickToFold from './icon-click-to-fold';
-import IconClick from './icon-click';
-import IconClipboard from './icon-clipboard';
-import IconClockTower from './icon-clock-tower';
-import IconCloseOne from './icon-close-one';
-import IconCloseRemind from './icon-close-remind';
-import IconCloseSmall from './icon-close-small';
-import IconCloseWifi from './icon-close-wifi';
-import IconClose from './icon-close';
-import IconClothesBriefs from './icon-clothes-briefs';
-import IconClothesCardigan from './icon-clothes-cardigan';
-import IconClothesCrewNeck from './icon-clothes-crew-neck';
-import IconClothesDiapers from './icon-clothes-diapers';
-import IconClothesGlovesTwo from './icon-clothes-gloves-two';
-import IconClothesGloves from './icon-clothes-gloves';
-import IconClothesHoodie from './icon-clothes-hoodie';
-import IconClothesPantsShort from './icon-clothes-pants-short';
-import IconClothesPantsSweat from './icon-clothes-pants-sweat';
-import IconClothesPants from './icon-clothes-pants';
-import IconClothesShortSleeve from './icon-clothes-short-sleeve';
-import IconClothesSkates from './icon-clothes-skates';
-import IconClothesSuit from './icon-clothes-suit';
-import IconClothesSweater from './icon-clothes-sweater';
-import IconClothesTurtleneck from './icon-clothes-turtleneck';
-import IconClothesWindbreaker from './icon-clothes-windbreaker';
-import IconCloudStorage from './icon-cloud-storage';
-import IconCloudyNight from './icon-cloudy-night';
-import IconCloudy from './icon-cloudy';
-import IconClue from './icon-clue';
-import IconCoatHanger from './icon-coat-hanger';
-import IconCocktail from './icon-cocktail';
-import IconCoconutTree from './icon-coconut-tree';
-import IconCodeBrackets from './icon-code-brackets';
-import IconCodeComputer from './icon-code-computer';
-import IconCodeDownload from './icon-code-download';
-import IconCodeLaptop from './icon-code-laptop';
-import IconCodeOne from './icon-code-one';
-import IconCode from './icon-code';
-import IconCoffeeMachine from './icon-coffee-machine';
-import IconCola from './icon-cola';
-import IconCollapseTextInput from './icon-collapse-text-input';
-import IconCollectComputer from './icon-collect-computer';
-import IconCollectLaptop from './icon-collect-laptop';
-import IconCollectPicture from './icon-collect-picture';
-import IconCollectionFiles from './icon-collection-files';
-import IconCollectionRecords from './icon-collection-records';
-import IconColorCard from './icon-color-card';
-import IconColorFilter from './icon-color-filter';
-import IconColumn from './icon-column';
-import IconComb from './icon-comb';
-import IconCome from './icon-come';
-import IconCommand from './icon-command';
-import IconCommentOne from './icon-comment-one';
-import IconComment from './icon-comment';
-import IconComments from './icon-comments';
-import IconCommodity from './icon-commodity';
-import IconCommunication from './icon-communication';
-import IconCommuterBag from './icon-commuter-bag';
-import IconCompassOne from './icon-compass-one';
-import IconCompass from './icon-compass';
-import IconComponent from './icon-component';
-import IconComposition from './icon-composition';
-import IconCompression from './icon-compression';
-import IconComputerOne from './icon-computer-one';
-import IconComputer from './icon-computer';
-import IconConceptSharing from './icon-concept-sharing';
-import IconConcern from './icon-concern';
-import IconConditioner from './icon-conditioner';
-import IconCone from './icon-cone';
-import IconCones from './icon-cones';
-import IconConfig from './icon-config';
-import IconConfoundedFace from './icon-confounded-face';
-import IconConfusedFace from './icon-confused-face';
-import IconConnectAddressOne from './icon-connect-address-one';
-import IconConnectAddressTwo from './icon-connect-address-two';
-import IconConnect from './icon-connect';
-import IconConnectionArrow from './icon-connection-arrow';
-import IconConnectionBox from './icon-connection-box';
-import IconConnectionPointTwo from './icon-connection-point-two';
-import IconConnectionPoint from './icon-connection-point';
-import IconConnection from './icon-connection';
-import IconConsignment from './icon-consignment';
-import IconConsume from './icon-consume';
-import IconContrastViewCircle from './icon-contrast-view-circle';
-import IconContrastView from './icon-contrast-view';
-import IconContrast from './icon-contrast';
-import IconControl from './icon-control';
-import IconConvergingGateway from './icon-converging-gateway';
-import IconCook from './icon-cook';
-import IconCookingPot from './icon-cooking-pot';
-import IconCooking from './icon-cooking';
-import IconCool from './icon-cool';
-import IconCooperativeHandshake from './icon-cooperative-handshake';
-import IconCoordinateSystem from './icon-coordinate-system';
-import IconCopyLink from './icon-copy-link';
-import IconCopyOne from './icon-copy-one';
-import IconCopy from './icon-copy';
-import IconCopyright from './icon-copyright';
-import IconCornerDownLeft from './icon-corner-down-left';
-import IconCornerDownRight from './icon-corner-down-right';
-import IconCornerLeftDown from './icon-corner-left-down';
-import IconCornerLeftUp from './icon-corner-left-up';
-import IconCornerRightDown from './icon-corner-right-down';
-import IconCornerRightUp from './icon-corner-right-up';
-import IconCornerUpLeft from './icon-corner-up-left';
-import IconCornerUpRight from './icon-corner-up-right';
-import IconCoronavirus from './icon-coronavirus';
-import IconCorrect from './icon-correct';
-import IconCosmeticBrush from './icon-cosmetic-brush';
-import IconCoupon from './icon-coupon';
-import IconCourt from './icon-court';
-import IconCpu from './icon-cpu';
-import IconCrab from './icon-crab';
-import IconCreationDateSort from './icon-creation-date-sort';
-import IconCreative from './icon-creative';
-import IconCredit from './icon-credit';
-import IconCrib from './icon-crib';
-import IconCroissant from './icon-croissant';
-import IconCrossRingTwo from './icon-cross-ring-two';
-import IconCrossRing from './icon-cross-ring';
-import IconCrossSociety from './icon-cross-society';
-import IconCrownThree from './icon-crown-three';
-import IconCrownTwo from './icon-crown-two';
-import IconCrown from './icon-crown';
-import IconCruise from './icon-cruise';
-import IconCryingBaby from './icon-crying-baby';
-import IconCubeFive from './icon-cube-five';
-import IconCubeFour from './icon-cube-four';
-import IconCubeThree from './icon-cube-three';
-import IconCubeTwo from './icon-cube-two';
-import IconCube from './icon-cube';
-import IconCupFour from './icon-cup-four';
-import IconCupOne from './icon-cup-one';
-import IconCup from './icon-cup';
-import IconCurling from './icon-curling';
-import IconCurrency from './icon-currency';
-import IconCurveAdjustment from './icon-curve-adjustment';
-import IconCustomer from './icon-customer';
-import IconCuttingOne from './icon-cutting-one';
-import IconCutting from './icon-cutting';
-import IconCuvette from './icon-cuvette';
-import IconCycleArrow from './icon-cycle-arrow';
-import IconCycleMovement from './icon-cycle-movement';
-import IconCycleOne from './icon-cycle-one';
-import IconCycle from './icon-cycle';
-import IconCylinder from './icon-cylinder';
-import IconDamageMap from './icon-damage-map';
-import IconDarkMode from './icon-dark-mode';
-import IconDashboardCar from './icon-dashboard-car';
-import IconDashboardOne from './icon-dashboard-one';
-import IconDashboardTwo from './icon-dashboard-two';
-import IconDashboard from './icon-dashboard';
-import IconDataAll from './icon-data-all';
-import IconDataArrival from './icon-data-arrival';
-import IconDataDisplay from './icon-data-display';
-import IconDataFile from './icon-data-file';
-import IconDataFour from './icon-data-four';
-import IconDataLock from './icon-data-lock';
-import IconDataNull from './icon-data-null';
-import IconDataOne from './icon-data-one';
-import IconDataScreen from './icon-data-screen';
-import IconDataServer from './icon-data-server';
-import IconDataSheet from './icon-data-sheet';
-import IconDataSwitching from './icon-data-switching';
-import IconDataThree from './icon-data-three';
-import IconDataTwo from './icon-data-two';
-import IconDataUser from './icon-data-user';
-import IconData from './icon-data';
-import IconDatabaseAlert from './icon-database-alert';
-import IconDatabaseCode from './icon-database-code';
-import IconDatabaseConfig from './icon-database-config';
-import IconDatabaseDownload from './icon-database-download';
-import IconDatabaseEnter from './icon-database-enter';
-import IconDatabaseFail from './icon-database-fail';
-import IconDatabaseFirst from './icon-database-first';
-import IconDatabaseForbid from './icon-database-forbid';
-import IconDatabaseLock from './icon-database-lock';
-import IconDatabaseNetworkPoint from './icon-database-network-point';
-import IconDatabaseNetwork from './icon-database-network';
-import IconDatabasePoint from './icon-database-point';
-import IconDatabasePosition from './icon-database-position';
-import IconDatabasePower from './icon-database-power';
-import IconDatabaseProportion from './icon-database-proportion';
-import IconDatabaseSearch from './icon-database-search';
-import IconDatabaseSetting from './icon-database-setting';
-import IconDatabaseSuccess from './icon-database-success';
-import IconDatabaseSync from './icon-database-sync';
-import IconDatabaseTime from './icon-database-time';
-import IconDateComesBack from './icon-date-comes-back';
-import IconDeadlineSort from './icon-deadline-sort';
-import IconDeathStar from './icon-death-star';
-import IconDeeplink from './icon-deeplink';
-import IconDeer from './icon-deer';
-import IconDegreeHat from './icon-degree-hat';
-import IconDeleteFive from './icon-delete-five';
-import IconDeleteFour from './icon-delete-four';
-import IconDeleteKey from './icon-delete-key';
-import IconDeleteMode from './icon-delete-mode';
-import IconDeleteOne from './icon-delete-one';
-import IconDeleteThemes from './icon-delete-themes';
-import IconDeleteThree from './icon-delete-three';
-import IconDeleteTwo from './icon-delete-two';
-import IconDelete from './icon-delete';
-import IconDelivery from './icon-delivery';
-import IconDeposit from './icon-deposit';
-import IconDescend from './icon-descend';
-import IconDeskLampOne from './icon-desk-lamp-one';
-import IconDeskLamp from './icon-desk-lamp';
-import IconDetection from './icon-detection';
-import IconDevices from './icon-devices';
-import IconDiamondNecklace from './icon-diamond-necklace';
-import IconDiamondOne from './icon-diamond-one';
-import IconDiamondRing from './icon-diamond-ring';
-import IconDiamondThree from './icon-diamond-three';
-import IconDiamondTwo from './icon-diamond-two';
-import IconDiamond from './icon-diamond';
-import IconDiamonds from './icon-diamonds';
-import IconDianziqian from './icon-dianziqian';
-import IconDiapersOne from './icon-diapers-one';
-import IconDifferenceSet from './icon-difference-set';
-import IconDigitalWatches from './icon-digital-watches';
-import IconDirectionAdjustmentThree from './icon-direction-adjustment-three';
-import IconDirectionAdjustmentTwo from './icon-direction-adjustment-two';
-import IconDirectionAdjustment from './icon-direction-adjustment';
-import IconDirection from './icon-direction';
-import IconDisabaledWeb from './icon-disabaled-web';
-import IconDisabledComputer from './icon-disabled-computer';
-import IconDisabledLaptop from './icon-disabled-laptop';
-import IconDisabledPicture from './icon-disabled-picture';
-import IconDisappointedFace from './icon-disappointed-face';
-import IconDiscoveryIndex from './icon-discovery-index';
-import IconDiskOne from './icon-disk-one';
-import IconDiskTwo from './icon-disk-two';
-import IconDisk from './icon-disk';
-import IconDislikeTwo from './icon-dislike-two';
-import IconDislike from './icon-dislike';
-import IconDisplay from './icon-display';
-import IconDistortion from './icon-distortion';
-import IconDistraughtFace from './icon-distraught-face';
-import IconDistributeHorizontalSpacing from './icon-distribute-horizontal-spacing';
-import IconDistributeHorizontally from './icon-distribute-horizontally';
-import IconDistributeVerticalSpacing from './icon-distribute-vertical-spacing';
-import IconDistributeVertically from './icon-distribute-vertically';
-import IconDividingLineOne from './icon-dividing-line-one';
-import IconDividingLine from './icon-dividing-line';
-import IconDivingBottle from './icon-diving-bottle';
-import IconDivingSuit from './icon-diving-suit';
-import IconDiving from './icon-diving';
-import IconDivision from './icon-division';
-import IconDizzyFace from './icon-dizzy-face';
-import IconDocAdd from './icon-doc-add';
-import IconDocDetail from './icon-doc-detail';
-import IconDocFail from './icon-doc-fail';
-import IconDocSearchTwo from './icon-doc-search-two';
-import IconDocSearch from './icon-doc-search';
-import IconDocSuccess from './icon-doc-success';
-import IconDocumentFolder from './icon-document-folder';
-import IconDogZodiac from './icon-dog-zodiac';
-import IconDog from './icon-dog';
-import IconDollar from './icon-dollar';
-import IconDolphin from './icon-dolphin';
-import IconDomeLight from './icon-dome-light';
-import IconDome from './icon-dome';
-import IconDoneAll from './icon-done-all';
-import IconDongchedi from './icon-dongchedi';
-import IconDoorHandle from './icon-door-handle';
-import IconDot from './icon-dot';
-import IconDoubleBed from './icon-double-bed';
-import IconDoubleDown from './icon-double-down';
-import IconDoubleLeft from './icon-double-left';
-import IconDoubleRight from './icon-double-right';
-import IconDoubleUp from './icon-double-up';
-import IconDoughnut from './icon-doughnut';
-import IconDownC from './icon-down-c';
-import IconDownOne from './icon-down-one';
-import IconDownPicture from './icon-down-picture';
-import IconDownSmall from './icon-down-small';
-import IconDownSquare from './icon-down-square';
-import IconDownTwo from './icon-down-two';
-import IconDown from './icon-down';
-import IconDownloadComputer from './icon-download-computer';
-import IconDownloadFour from './icon-download-four';
-import IconDownloadLaptop from './icon-download-laptop';
-import IconDownloadOne from './icon-download-one';
-import IconDownloadThree from './icon-download-three';
-import IconDownloadTwo from './icon-download-two';
-import IconDownloadWeb from './icon-download-web';
-import IconDownload from './icon-download';
-import IconDrag from './icon-drag';
-import IconDragonZodiac from './icon-dragon-zodiac';
-import IconDribble from './icon-dribble';
-import IconDrink from './icon-drink';
-import IconDroneOne from './icon-drone-one';
-import IconDrone from './icon-drone';
-import IconDropDownList from './icon-drop-down-list';
-import IconDropShadowDown from './icon-drop-shadow-down';
-import IconDropShadowLeft from './icon-drop-shadow-left';
-import IconDropShadowRight from './icon-drop-shadow-right';
-import IconDropShadowUp from './icon-drop-shadow-up';
-import IconDropbox from './icon-dropbox';
-import IconDrumstick from './icon-drumstick';
-import IconDubai from './icon-dubai';
-import IconDuck from './icon-duck';
-import IconDumbbelLine from './icon-dumbbel-line';
-import IconDumbbell from './icon-dumbbell';
-import IconDvi from './icon-dvi';
-import IconEagle from './icon-eagle';
-import IconEarth from './icon-earth';
-import IconEasy from './icon-easy';
-import IconEcg from './icon-ecg';
-import IconEditMovie from './icon-edit-movie';
-import IconEditName from './icon-edit-name';
-import IconEditOne from './icon-edit-one';
-import IconEditTwo from './icon-edit-two';
-import IconEdit from './icon-edit';
-import IconEditing from './icon-editing';
-import IconEditor from './icon-editor';
-import IconEeg from './icon-eeg';
-import IconEffects from './icon-effects';
-import IconEfferentFour from './icon-efferent-four';
-import IconEfferentThree from './icon-efferent-three';
-import IconEggOne from './icon-egg-one';
-import IconEgg from './icon-egg';
-import IconEggplant from './icon-eggplant';
-import IconEiffelTower from './icon-eiffel-tower';
-import IconEightKey from './icon-eight-key';
-import IconElectricDrill from './icon-electric-drill';
-import IconElectricIron from './icon-electric-iron';
-import IconElectricWave from './icon-electric-wave';
-import IconElectrocardiogram from './icon-electrocardiogram';
-import IconElectronicDoorLock from './icon-electronic-door-lock';
-import IconElectronicLocksClose from './icon-electronic-locks-close';
-import IconElectronicLocksOpen from './icon-electronic-locks-open';
-import IconElectronicPen from './icon-electronic-pen';
-import IconElephant from './icon-elephant';
-import IconElevator from './icon-elevator';
-import IconEmailBlock from './icon-email-block';
-import IconEmailDelect from './icon-email-delect';
-import IconEmailDown from './icon-email-down';
-import IconEmailFail from './icon-email-fail';
-import IconEmailLock from './icon-email-lock';
-import IconEmailPush from './icon-email-push';
-import IconEmailSearch from './icon-email-search';
-import IconEmailSecurity from './icon-email-security';
-import IconEmailSuccessfully from './icon-email-successfully';
-import IconEmotionHappy from './icon-emotion-happy';
-import IconEmotionUnhappy from './icon-emotion-unhappy';
-import IconEmpty from './icon-empty';
-import IconEndTimeSort from './icon-end-time-sort';
-import IconEndless from './icon-endless';
-import IconEndocrine from './icon-endocrine';
-import IconEndpointDisplacement from './icon-endpoint-displacement';
-import IconEndpointFlat from './icon-endpoint-flat';
-import IconEndpointRound from './icon-endpoint-round';
-import IconEndpointSquare from './icon-endpoint-square';
-import IconEnergySocket from './icon-energy-socket';
-import IconEngineeringBrand from './icon-engineering-brand';
-import IconEngineeringVehicle from './icon-engineering-vehicle';
-import IconEnglishMustache from './icon-english-mustache';
-import IconEnglish from './icon-english';
-import IconEnquire from './icon-enquire';
-import IconEnterKeyOne from './icon-enter-key-one';
-import IconEnterKey from './icon-enter-key';
-import IconEnterTheKeyboard from './icon-enter-the-keyboard';
-import IconEntertainment from './icon-entertainment';
-import IconEnvelopeOne from './icon-envelope-one';
-import IconEnvelope from './icon-envelope';
-import IconEqualRatio from './icon-equal-ratio';
-import IconEqualizer from './icon-equalizer';
-import IconErase from './icon-erase';
-import IconErrorComputer from './icon-error-computer';
-import IconErrorPicture from './icon-error-picture';
-import IconErrorPrompt from './icon-error-prompt';
-import IconError from './icon-error';
-import IconEscalators from './icon-escalators';
-import IconEthernetOff from './icon-ethernet-off';
-import IconEthernetOn from './icon-ethernet-on';
-import IconEveryUser from './icon-every-user';
-import IconExcelOne from './icon-excel-one';
-import IconExcel from './icon-excel';
-import IconExchangeFour from './icon-exchange-four';
-import IconExchangeOne from './icon-exchange-one';
-import IconExchangeThree from './icon-exchange-three';
-import IconExchangeTwo from './icon-exchange-two';
-import IconExchange from './icon-exchange';
-import IconExcludeSelection from './icon-exclude-selection';
-import IconExclusiveGateway from './icon-exclusive-gateway';
-import IconExpandDownOne from './icon-expand-down-one';
-import IconExpandDown from './icon-expand-down';
-import IconExpandLeftAndRight from './icon-expand-left-and-right';
-import IconExpandLeft from './icon-expand-left';
-import IconExpandRight from './icon-expand-right';
-import IconExpandTextInput from './icon-expand-text-input';
-import IconExpandUp from './icon-expand-up';
-import IconExpensesOne from './icon-expenses-one';
-import IconExpenses from './icon-expenses';
-import IconExperimentOne from './icon-experiment-one';
-import IconExperiment from './icon-experiment';
-import IconExport from './icon-export';
-import IconExpressDelivery from './icon-express-delivery';
-import IconExpressionlessFace from './icon-expressionless-face';
-import IconExtend from './icon-extend';
-import IconExternalTransmission from './icon-external-transmission';
-import IconEyebrow from './icon-eyebrow';
-import IconEyes from './icon-eyes';
-import IconFEightKey from './icon-f-eight-key';
-import IconFFiveKey from './icon-f-five-key';
-import IconFFourKey from './icon-f-four-key';
-import IconFNKey from './icon-f-n-key';
-import IconFNineKey from './icon-f-nine-key';
-import IconFOneKey from './icon-f-one-key';
-import IconFSevenKey from './icon-f-seven-key';
-import IconFSixKey from './icon-f-six-key';
-import IconFThreeKey from './icon-f-three-key';
-import IconFTwoKey from './icon-f-two-key';
-import IconFZeroKey from './icon-f-zero-key';
-import IconFacePowder from './icon-face-powder';
-import IconFaceRecognition from './icon-face-recognition';
-import IconFaceWithSmilingOpenEyes from './icon-face-with-smiling-open-eyes';
-import IconFaceWithoutMouth from './icon-face-without-mouth';
-import IconFacebookOne from './icon-facebook-one';
-import IconFacebook from './icon-facebook';
-import IconFacetime from './icon-facetime';
-import IconFaceu from './icon-faceu';
-import IconFacialCleanser from './icon-facial-cleanser';
-import IconFacialMask from './icon-facial-mask';
-import IconFactoryBuilding from './icon-factory-building';
-import IconFailPicture from './icon-fail-picture';
-import IconFamily from './icon-family';
-import IconFan from './icon-fan';
-import IconFanqiexiaoshuo from './icon-fanqiexiaoshuo';
-import IconFeelgoodOne from './icon-feelgood-one';
-import IconFeelgood from './icon-feelgood';
-import IconFeiyu from './icon-feiyu';
-import IconFemale from './icon-female';
-import IconFenceOne from './icon-fence-one';
-import IconFenceTwo from './icon-fence-two';
-import IconFerrisWheel from './icon-ferris-wheel';
-import IconFigmaComponent from './icon-figma-component';
-import IconFigmaFlattenSelection from './icon-figma-flatten-selection';
-import IconFigmaMask from './icon-figma-mask';
-import IconFigmaResetInstance from './icon-figma-reset-instance';
-import IconFigma from './icon-figma';
-import IconFileAdditionOne from './icon-file-addition-one';
-import IconFileAddition from './icon-file-addition';
-import IconFileCabinet from './icon-file-cabinet';
-import IconFileCodeOne from './icon-file-code-one';
-import IconFileCode from './icon-file-code';
-import IconFileCollectionOne from './icon-file-collection-one';
-import IconFileCollection from './icon-file-collection';
-import IconFileConversionOne from './icon-file-conversion-one';
-import IconFileConversion from './icon-file-conversion';
-import IconFileDateOne from './icon-file-date-one';
-import IconFileDate from './icon-file-date';
-import IconFileDisplayOne from './icon-file-display-one';
-import IconFileDisplay from './icon-file-display';
-import IconFileDoc from './icon-file-doc';
-import IconFileEditingOne from './icon-file-editing-one';
-import IconFileEditing from './icon-file-editing';
-import IconFileExcel from './icon-file-excel';
-import IconFileFailedOne from './icon-file-failed-one';
-import IconFileFailed from './icon-file-failed';
-import IconFileFocusOne from './icon-file-focus-one';
-import IconFileFocus from './icon-file-focus';
-import IconFileGif from './icon-file-gif';
-import IconFileHashOne from './icon-file-hash-one';
-import IconFileHash from './icon-file-hash';
-import IconFileHidingOne from './icon-file-hiding-one';
-import IconFileHiding from './icon-file-hiding';
-import IconFileJpg from './icon-file-jpg';
-import IconFileLockOne from './icon-file-lock-one';
-import IconFileLock from './icon-file-lock';
-import IconFileMusicOne from './icon-file-music-one';
-import IconFileMusic from './icon-file-music';
-import IconFilePdfOne from './icon-file-pdf-one';
-import IconFilePdf from './icon-file-pdf';
-import IconFilePpt from './icon-file-ppt';
-import IconFileProtectionOne from './icon-file-protection-one';
-import IconFileProtection from './icon-file-protection';
-import IconFileQualityOne from './icon-file-quality-one';
-import IconFileQuality from './icon-file-quality';
-import IconFileQuestion from './icon-file-question';
-import IconFileRemovalOne from './icon-file-removal-one';
-import IconFileRemoval from './icon-file-removal';
-import IconFileSearchOne from './icon-file-search-one';
-import IconFileSearchTwo from './icon-file-search-two';
-import IconFileSearch from './icon-file-search';
-import IconFileSettingsOne from './icon-file-settings-one';
-import IconFileSettings from './icon-file-settings';
-import IconFileStaffOne from './icon-file-staff-one';
-import IconFileStaff from './icon-file-staff';
-import IconFileSuccessOne from './icon-file-success-one';
-import IconFileSuccess from './icon-file-success';
-import IconFileTextOne from './icon-file-text-one';
-import IconFileText from './icon-file-text';
-import IconFileTipsOne from './icon-file-tips-one';
-import IconFileTips from './icon-file-tips';
-import IconFileTxtOne from './icon-file-txt-one';
-import IconFileTxt from './icon-file-txt';
-import IconFileWithdrawalOne from './icon-file-withdrawal-one';
-import IconFileWithdrawal from './icon-file-withdrawal';
-import IconFileWord from './icon-file-word';
-import IconFileZip from './icon-file-zip';
-import IconFill from './icon-fill';
-import IconFilm from './icon-film';
-import IconFilterOne from './icon-filter-one';
-import IconFilter from './icon-filter';
-import IconFinance from './icon-finance';
-import IconFinancingOne from './icon-financing-one';
-import IconFinancingTwo from './icon-financing-two';
-import IconFinancing from './icon-financing';
-import IconFindOne from './icon-find-one';
-import IconFind from './icon-find';
-import IconFingernail from './icon-fingernail';
-import IconFingerprintThree from './icon-fingerprint-three';
-import IconFingerprintTwo from './icon-fingerprint-two';
-import IconFingerprint from './icon-fingerprint';
-import IconFireExtinguisherOne from './icon-fire-extinguisher-one';
-import IconFireExtinguisher from './icon-fire-extinguisher';
-import IconFireTwo from './icon-fire-two';
-import IconFire from './icon-fire';
-import IconFireworks from './icon-fireworks';
-import IconFirstAidKit from './icon-first-aid-kit';
-import IconFirst from './icon-first';
-import IconFishOne from './icon-fish-one';
-import IconFish from './icon-fish';
-import IconFishing from './icon-fishing';
-import IconFist from './icon-fist';
-import IconFitness from './icon-fitness';
-import IconFiveEllipses from './icon-five-ellipses';
-import IconFiveFive from './icon-five-five';
-import IconFiveKey from './icon-five-key';
-import IconFiveStarBadge from './icon-five-star-badge';
-import IconFive from './icon-five';
-import IconFlag from './icon-flag';
-import IconFlashPayment from './icon-flash-payment';
-import IconFlashlamp from './icon-flashlamp';
-import IconFlashlight from './icon-flashlight';
-import IconFlask from './icon-flask';
-import IconFlightAirflow from './icon-flight-airflow';
-import IconFlightSafety from './icon-flight-safety';
-import IconFlipCamera from './icon-flip-camera';
-import IconFlipHorizontally from './icon-flip-horizontally';
-import IconFlipVertically from './icon-flip-vertically';
-import IconFlirt from './icon-flirt';
-import IconFloat from './icon-float';
-import IconFloorTile from './icon-floor-tile';
-import IconFm from './icon-fm';
-import IconFocusOne from './icon-focus-one';
-import IconFocus from './icon-focus';
-import IconFog from './icon-fog';
-import IconFoldUpOne from './icon-fold-up-one';
-import IconFolderBlockOne from './icon-folder-block-one';
-import IconFolderBlock from './icon-folder-block';
-import IconFolderClose from './icon-folder-close';
-import IconFolderCodeOne from './icon-folder-code-one';
-import IconFolderCode from './icon-folder-code';
-import IconFolderConversionOne from './icon-folder-conversion-one';
-import IconFolderConversion from './icon-folder-conversion';
-import IconFolderDownload from './icon-folder-download';
-import IconFolderFailedOne from './icon-folder-failed-one';
-import IconFolderFailed from './icon-folder-failed';
-import IconFolderFocusOne from './icon-folder-focus-one';
-import IconFolderFocus from './icon-folder-focus';
-import IconFolderLockOne from './icon-folder-lock-one';
-import IconFolderLock from './icon-folder-lock';
-import IconFolderMinus from './icon-folder-minus';
-import IconFolderMusicOne from './icon-folder-music-one';
-import IconFolderMusic from './icon-folder-music';
-import IconFolderOne from './icon-folder-one';
-import IconFolderOpen from './icon-folder-open';
-import IconFolderPlus from './icon-folder-plus';
-import IconFolderProtectionOne from './icon-folder-protection-one';
-import IconFolderProtection from './icon-folder-protection';
-import IconFolderQualityOne from './icon-folder-quality-one';
-import IconFolderQuality from './icon-folder-quality';
-import IconFolderSearchOne from './icon-folder-search-one';
-import IconFolderSearch from './icon-folder-search';
-import IconFolderSettingsOne from './icon-folder-settings-one';
-import IconFolderSettings from './icon-folder-settings';
-import IconFolderSuccessOne from './icon-folder-success-one';
-import IconFolderSuccess from './icon-folder-success';
-import IconFolderUpload from './icon-folder-upload';
-import IconFolderWithdrawalOne from './icon-folder-withdrawal-one';
-import IconFolderWithdrawal from './icon-folder-withdrawal';
-import IconFolder from './icon-folder';
-import IconFollowUpDateSort from './icon-follow-up-date-sort';
-import IconFontSearch from './icon-font-search';
-import IconFontSizeTwo from './icon-font-size-two';
+import IconCodeView from './icon-code-view';
+import IconDeleteColumn from './icon-delete-column';
+import IconDeleteRow from './icon-delete-row';
+import IconDoubleQuotesL from './icon-double-quotes-l';
+import IconDoubleQuotesR from './icon-double-quotes-r';
+import IconDraggable from './icon-draggable';
+import IconDropdownList from './icon-dropdown-list';
+import IconEmphasisCn from './icon-emphasis-cn';
+import IconEmphasis from './icon-emphasis';
+import IconEnglishInput from './icon-english-input';
+import IconFlowChart from './icon-flow-chart';
+import IconFontColor from './icon-font-color';
+import IconFontFamily from './icon-font-family';
+import IconFontMono from './icon-font-mono';
+import IconFontSansSerif from './icon-font-sans-serif';
+import IconFontSans from './icon-font-sans';
+import IconFontSize2 from './icon-font-size-2';
 import IconFontSize from './icon-font-size';
-import IconFoot from './icon-foot';
-import IconFootball from './icon-football';
-import IconForbid from './icon-forbid';
-import IconForkSpoon from './icon-fork-spoon';
-import IconFork from './icon-fork';
-import IconFormOne from './icon-form-one';
-import IconForm from './icon-form';
-import IconFormatBrush from './icon-format-brush';
-import IconFormat from './icon-format';
-import IconFormula from './icon-formula';
-import IconFoundationMakeup from './icon-foundation-makeup';
-import IconFourArrows from './icon-four-arrows';
-import IconFourFour from './icon-four-four';
-import IconFourKey from './icon-four-key';
-import IconFourLeaves from './icon-four-leaves';
-import IconFourPointConnection from './icon-four-point-connection';
-import IconFourRoundPointConnection from './icon-four-round-point-connection';
-import IconFour from './icon-four';
-import IconFoursquare from './icon-foursquare';
-import IconFreezeColumn from './icon-freeze-column';
-import IconFreezeLine from './icon-freeze-line';
-import IconFreezingLineColumn from './icon-freezing-line-column';
-import IconFrenchFries from './icon-french-fries';
-import IconFriendsCircle from './icon-friends-circle';
-import IconFrigate from './icon-frigate';
-import IconFrog from './icon-frog';
-import IconFrowningFaceWhitOpenMouth from './icon-frowning-face-whit-open-mouth';
-import IconFruiter from './icon-fruiter';
-import IconFullDressLonguette from './icon-full-dress-longuette';
-import IconFullScreenOne from './icon-full-screen-one';
-import IconFullScreenPlay from './icon-full-screen-play';
-import IconFullScreenTwo from './icon-full-screen-two';
-import IconFullScreen from './icon-full-screen';
-import IconFullSelection from './icon-full-selection';
-import IconFullwidth from './icon-fullwidth';
-import IconFunds from './icon-funds';
-import IconFutureBuildOne from './icon-future-build-one';
-import IconFutureBuildThree from './icon-future-build-three';
-import IconFutureBuildTwo from './icon-future-build-two';
-import IconGameConsoleOne from './icon-game-console-one';
-import IconGameConsole from './icon-game-console';
-import IconGameEmoji from './icon-game-emoji';
-import IconGameHandle from './icon-game-handle';
-import IconGamePs from './icon-game-ps';
-import IconGameThree from './icon-game-three';
-import IconGameTwo from './icon-game-two';
-import IconGame from './icon-game';
-import IconGamepad from './icon-gamepad';
-import IconGarage from './icon-garage';
-import IconGarlic from './icon-garlic';
-import IconGas from './icon-gas';
-import IconGastrointestinal from './icon-gastrointestinal';
-import IconGateMachine from './icon-gate-machine';
-import IconGate from './icon-gate';
-import IconGauze from './icon-gauze';
-import IconGavel from './icon-gavel';
-import IconGemini from './icon-gemini';
-import IconGeneralBranch from './icon-general-branch';
-import IconGeometricFlowers from './icon-geometric-flowers';
-import IconGerms from './icon-germs';
-import IconGhost from './icon-ghost';
-import IconGiftBag from './icon-gift-bag';
-import IconGiftBox from './icon-gift-box';
-import IconGift from './icon-gift';
-import IconGirlOne from './icon-girl-one';
-import IconGirlTwo from './icon-girl-two';
-import IconGirl from './icon-girl';
-import IconGithubOne from './icon-github-one';
-import IconGithub from './icon-github';
-import IconGitlab from './icon-gitlab';
-import IconGlassesOne from './icon-glasses-one';
-import IconGlassesThree from './icon-glasses-three';
-import IconGlasses from './icon-glasses';
-import IconGlobe from './icon-globe';
-import IconGlove from './icon-glove';
-import IconGoAhead from './icon-go-ahead';
-import IconGoEnd from './icon-go-end';
-import IconGoOn from './icon-go-on';
-import IconGoStart from './icon-go-start';
-import IconGobletCracking from './icon-goblet-cracking';
-import IconGobletFull from './icon-goblet-full';
-import IconGobletOne from './icon-goblet-one';
-import IconGoblet from './icon-goblet';
-import IconGoldMedalTwo from './icon-gold-medal-two';
-import IconGoldMedal from './icon-gold-medal';
-import IconGolfCourse from './icon-golf-course';
-import IconGongfu from './icon-gongfu';
-import IconGoodOne from './icon-good-one';
-import IconGoodTwo from './icon-good-two';
-import IconGood from './icon-good';
-import IconGoogleAds from './icon-google-ads';
-import IconGoogle from './icon-google';
-import IconGopro from './icon-gopro';
-import IconGps from './icon-gps';
-import IconGraphicDesignTwo from './icon-graphic-design-two';
-import IconGraphicDesign from './icon-graphic-design';
-import IconGraphicStitchingFour from './icon-graphic-stitching-four';
-import IconGraphicStitchingThree from './icon-graphic-stitching-three';
-import IconGraphicStitching from './icon-graphic-stitching';
-import IconGreatWall from './icon-great-wall';
-import IconGreenHouse from './icon-green-house';
-import IconGreenNewEnergy from './icon-green-new-energy';
-import IconGridFour from './icon-grid-four';
-import IconGridNine from './icon-grid-nine';
-import IconGridSixteen from './icon-grid-sixteen';
-import IconGridThree from './icon-grid-three';
-import IconGridTwo from './icon-grid-two';
-import IconGrimacingFace from './icon-grimacing-face';
-import IconGrinningFaceWithOpenMouth from './icon-grinning-face-with-open-mouth';
-import IconGrinningFaceWithSquintingEyes from './icon-grinning-face-with-squinting-eyes';
-import IconGrinningFaceWithTightlyClosedEyesOpenMouth from './icon-grinning-face-with-tightly-closed-eyes-open-mouth';
-import IconGrinningFaceWithTightlyClosedEyes from './icon-grinning-face-with-tightly-closed-eyes';
-import IconGrinningFace from './icon-grinning-face';
-import IconGroup from './icon-group';
-import IconGuideBoard from './icon-guide-board';
-import IconGymnasticsOne from './icon-gymnastics-one';
-import IconGymnastics from './icon-gymnastics';
-import IconH from './icon-h';
-import IconH1 from './icon-h1';
-import IconH2 from './icon-h2';
-import IconH3 from './icon-h3';
-import IconHairBrush from './icon-hair-brush';
-import IconHairClip from './icon-hair-clip';
-import IconHairDryerOne from './icon-hair-dryer-one';
-import IconHairDryer from './icon-hair-dryer';
-import IconHalo from './icon-halo';
-import IconHamburgerButton from './icon-hamburger-button';
-import IconHamburgerOne from './icon-hamburger-one';
-import IconHamburger from './icon-hamburger';
-import IconHammerAndAnvil from './icon-hammer-and-anvil';
-import IconHandCream from './icon-hand-cream';
-import IconHandDown from './icon-hand-down';
-import IconHandDrag from './icon-hand-drag';
-import IconHandLeft from './icon-hand-left';
-import IconHandPaintedPlate from './icon-hand-painted-plate';
-import IconHandRight from './icon-hand-right';
-import IconHandUp from './icon-hand-up';
-import IconHandbag from './icon-handbag';
-import IconHandheld from './icon-handheld';
-import IconHandleA from './icon-handle-a';
-import IconHandleB from './icon-handle-b';
-import IconHandleC from './icon-handle-c';
-import IconHandleDown from './icon-handle-down';
-import IconHandleLeft from './icon-handle-left';
-import IconHandleRight from './icon-handle-right';
-import IconHandleRound from './icon-handle-round';
-import IconHandleSquare from './icon-handle-square';
-import IconHandleTriangle from './icon-handle-triangle';
-import IconHandleUp from './icon-handle-up';
-import IconHandleX from './icon-handle-x';
-import IconHandleY from './icon-handle-y';
-import IconHandleZ from './icon-handle-z';
-import IconHands from './icon-hands';
-import IconHandwashingFluid from './icon-handwashing-fluid';
-import IconHandwashing from './icon-handwashing';
-import IconHanfuChineseStyle from './icon-hanfu-chinese-style';
-import IconHangerOne from './icon-hanger-one';
-import IconHangerTwo from './icon-hanger-two';
-import IconHanger from './icon-hanger';
-import IconHardDiskOne from './icon-hard-disk-one';
-import IconHardDisk from './icon-hard-disk';
-import IconHarm from './icon-harm';
-import IconHashtagKey from './icon-hashtag-key';
-import IconHat from './icon-hat';
-import IconHdd from './icon-hdd';
-import IconHdmiCable from './icon-hdmi-cable';
-import IconHdmiConnector from './icon-hdmi-connector';
-import IconHeadphoneSound from './icon-headphone-sound';
-import IconHeadsetOne from './icon-headset-one';
-import IconHeadsetTwo from './icon-headset-two';
-import IconHeadset from './icon-headset';
-import IconHeadwear from './icon-headwear';
-import IconHealthProducts from './icon-health-products';
-import IconHealth from './icon-health';
-import IconHealthyRecognition from './icon-healthy-recognition';
-import IconHeartBallon from './icon-heart-ballon';
-import IconHeartRate from './icon-heart-rate';
-import IconHeart from './icon-heart';
-import IconHeartbeat from './icon-heartbeat';
-import IconHeaterResistor from './icon-heater-resistor';
-import IconHeavyMetal from './icon-heavy-metal';
-import IconHeavyRain from './icon-heavy-rain';
-import IconHeavyWind from './icon-heavy-wind';
-import IconHelmetOne from './icon-helmet-one';
-import IconHelmet from './icon-helmet';
-import IconHelp from './icon-help';
-import IconHelpcenter from './icon-helpcenter';
-import IconHexagonOne from './icon-hexagon-one';
-import IconHexagonStrip from './icon-hexagon-strip';
-import IconHexagonal from './icon-hexagonal';
-import IconHi from './icon-hi';
-import IconHighHeeledShoes from './icon-high-heeled-shoes';
-import IconHighLight from './icon-high-light';
-import IconHighSpeedRail from './icon-high-speed-rail';
-import IconHippo from './icon-hippo';
-import IconHistogram from './icon-histogram';
-import IconHistoryQuery from './icon-history-query';
-import IconHistory from './icon-history';
-import IconHockey from './icon-hockey';
-import IconHoldInterface from './icon-hold-interface';
-import IconHoldSeeds from './icon-hold-seeds';
-import IconHold from './icon-hold';
-import IconHoldingHands from './icon-holding-hands';
-import IconHolySword from './icon-holy-sword';
-import IconHomeTwo from './icon-home-two';
-import IconHome from './icon-home';
-import IconHomestay from './icon-homestay';
-import IconHoneyOne from './icon-honey-one';
-import IconHoney from './icon-honey';
-import IconHorizontalSpacingBetweenItems from './icon-horizontal-spacing-between-items';
-import IconHorizontalTidyUp from './icon-horizontal-tidy-up';
-import IconHorizontallyCentered from './icon-horizontally-centered';
-import IconHorseZodiac from './icon-horse-zodiac';
-import IconHospitalBed from './icon-hospital-bed';
-import IconHospitalFour from './icon-hospital-four';
-import IconHospitalThree from './icon-hospital-three';
-import IconHospitalTwo from './icon-hospital-two';
-import IconHospital from './icon-hospital';
-import IconHotAirBalloon from './icon-hot-air-balloon';
-import IconHotPotOne from './icon-hot-pot-one';
-import IconHotPot from './icon-hot-pot';
-import IconHotelDoNotClean from './icon-hotel-do-not-clean';
-import IconHotelPleaseClean from './icon-hotel-please-clean';
-import IconHotel from './icon-hotel';
-import IconHourglassFull from './icon-hourglass-full';
-import IconHourglassNull from './icon-hourglass-null';
-import IconHourglass from './icon-hourglass';
-import IconHtmlFive from './icon-html-five';
-import IconHuntingGear from './icon-hunting-gear';
-import IconHuoshanzhibo from './icon-huoshanzhibo';
-import IconIMac from './icon-i-mac';
-import IconIcecreamFive from './icon-icecream-five';
-import IconIcecreamFour from './icon-icecream-four';
-import IconIcecreamOne from './icon-icecream-one';
-import IconIcecreamThree from './icon-icecream-three';
-import IconIcecreamTwo from './icon-icecream-two';
-import IconIcecream from './icon-icecream';
-import IconIdCardH from './icon-id-card-h';
-import IconIdCardV from './icon-id-card-v';
-import IconIdCard from './icon-id-card';
-import IconImageFiles from './icon-image-files';
-import IconImbalance from './icon-imbalance';
-import IconImportAndExport from './icon-import-and-export';
-import IconInFlight from './icon-in-flight';
-import IconInboxDownloadR from './icon-inbox-download-r';
-import IconInboxIn from './icon-inbox-in';
-import IconInboxOut from './icon-inbox-out';
-import IconInboxR from './icon-inbox-r';
-import IconInboxSuccessR from './icon-inbox-success-r';
-import IconInboxSuccess from './icon-inbox-success';
-import IconInboxUploadR from './icon-inbox-upload-r';
-import IconInbox from './icon-inbox';
-import IconInclusiveGateway from './icon-inclusive-gateway';
-import IconIncomeOne from './icon-income-one';
-import IconIncome from './icon-income';
-import IconIncoming from './icon-incoming';
-import IconIncreaseTheScale from './icon-increase-the-scale';
-import IconIncrease from './icon-increase';
-import IconIndentLeft from './icon-indent-left';
-import IconIndentRight from './icon-indent-right';
-import IconIndexFinger from './icon-index-finger';
-import IconInductionLock from './icon-induction-lock';
-import IconIndustrialScales from './icon-industrial-scales';
-import IconInfo from './icon-info';
-import IconInfusion from './icon-infusion';
-import IconInjection from './icon-injection';
-import IconInline from './icon-inline';
-import IconInnerShadowBottomLeft from './icon-inner-shadow-bottom-left';
-import IconInnerShadowBottomRight from './icon-inner-shadow-bottom-right';
-import IconInnerShadowDown from './icon-inner-shadow-down';
-import IconInnerShadowLeft from './icon-inner-shadow-left';
-import IconInnerShadowRight from './icon-inner-shadow-right';
-import IconInnerShadowTopLeft from './icon-inner-shadow-top-left';
-import IconInnerShadowTopRight from './icon-inner-shadow-top-right';
-import IconInnerShadowUp from './icon-inner-shadow-up';
-import IconInsertCard from './icon-insert-card';
-import IconInsertTable from './icon-insert-table';
-import IconInspection from './icon-inspection';
-import IconInstagramOne from './icon-instagram-one';
-import IconInstagram from './icon-instagram';
-import IconInstall from './icon-install';
-import IconInstruction from './icon-instruction';
-import IconIntercom from './icon-intercom';
-import IconIntermediateMode from './icon-intermediate-mode';
-import IconInternalData from './icon-internal-data';
-import IconInternalExpansion from './icon-internal-expansion';
-import IconInternalReduction from './icon-internal-reduction';
-import IconInternalTransmission from './icon-internal-transmission';
-import IconInternational from './icon-international';
-import IconIntersectSelection from './icon-intersect-selection';
-import IconIntersection from './icon-intersection';
-import IconInvalidFiles from './icon-invalid-files';
-import IconInvertCamera from './icon-invert-camera';
-import IconInvertLeft from './icon-invert-left';
-import IconInvertRight from './icon-invert-right';
-import IconIosFaceRecognition from './icon-ios-face-recognition';
-import IconIpadOne from './icon-ipad-one';
-import IconIpad from './icon-ipad';
-import IconIphone from './icon-iphone';
-import IconIpo from './icon-ipo';
-import IconIronDisable from './icon-iron-disable';
-import IconIronThree from './icon-iron-three';
-import IconIronTwo from './icon-iron-two';
-import IconIron from './icon-iron';
-import IconIwatchOne from './icon-iwatch-one';
-import IconIwatchTwo from './icon-iwatch-two';
-import IconIwatch from './icon-iwatch';
-import IconJewelry from './icon-jewelry';
-import IconJinritoutiao from './icon-jinritoutiao';
-import IconJourney from './icon-journey';
-import IconJoystick from './icon-joystick';
-import IconJuice from './icon-juice';
-import IconJump from './icon-jump';
-import IconKagiMap from './icon-kagi-map';
-import IconKettleOne from './icon-kettle-one';
-import IconKettle from './icon-kettle';
-import IconKeyOne from './icon-key-one';
-import IconKeyTwo from './icon-key-two';
-import IconKey from './icon-key';
-import IconKeyboardOne from './icon-keyboard-one';
-import IconKeyboard from './icon-keyboard';
-import IconKeyhole from './icon-keyhole';
-import IconKeyline from './icon-keyline';
-import IconKitchenKnife from './icon-kitchen-knife';
-import IconKnifeFork from './icon-knife-fork';
-import IconKoalaBear from './icon-koala-bear';
-import IconKungfu from './icon-kungfu';
-import IconLabel from './icon-label';
-import IconLadderOne from './icon-ladder-one';
-import IconLadder from './icon-ladder';
-import IconLamp from './icon-lamp';
-import IconLandSurveying from './icon-land-surveying';
-import IconLanding from './icon-landing';
-import IconLandscape from './icon-landscape';
-import IconLaptopComputer from './icon-laptop-computer';
-import IconLaptopOne from './icon-laptop-one';
-import IconLaptop from './icon-laptop';
-import IconLarkOne from './icon-lark-one';
-import IconLark from './icon-lark';
-import IconLatticePattern from './icon-lattice-pattern';
-import IconLayers from './icon-layers';
-import IconLayoutFive from './icon-layout-five';
-import IconLayoutFour from './icon-layout-four';
-import IconLayoutOne from './icon-layout-one';
-import IconLayoutThree from './icon-layout-three';
-import IconLayoutTwo from './icon-layout-two';
-import IconLeaf from './icon-leaf';
-import IconLeavesOne from './icon-leaves-one';
-import IconLeavesTwo from './icon-leaves-two';
-import IconLeaves from './icon-leaves';
-import IconLedDiode from './icon-led-diode';
-import IconLeftAlignment from './icon-left-alignment';
-import IconLeftAndRightBranch from './icon-left-and-right-branch';
-import IconLeftBar from './icon-left-bar';
-import IconLeftBranch from './icon-left-branch';
-import IconLeftC from './icon-left-c';
-import IconLeftExpand from './icon-left-expand';
-import IconLeftOne from './icon-left-one';
-import IconLeftSmallDown from './icon-left-small-down';
-import IconLeftSmallUp from './icon-left-small-up';
-import IconLeftSmall from './icon-left-small';
-import IconLeftSquare from './icon-left-square';
-import IconLeftTwo from './icon-left-two';
-import IconLeft from './icon-left';
-import IconLemon from './icon-lemon';
-import IconLensAlignment from './icon-lens-alignment';
-import IconLeo from './icon-leo';
-import IconLevelAdjustment from './icon-level-adjustment';
-import IconLevelEightTitle from './icon-level-eight-title';
-import IconLevelFiveTitle from './icon-level-five-title';
-import IconLevelFourTitle from './icon-level-four-title';
-import IconLevelNineTitle from './icon-level-nine-title';
-import IconLevelSevenTitle from './icon-level-seven-title';
-import IconLevelSixTitle from './icon-level-six-title';
-import IconLevel from './icon-level';
-import IconLibra from './icon-libra';
-import IconLifebuoy from './icon-lifebuoy';
-import IconLightHouse from './icon-light-house';
-import IconLightMember from './icon-light-member';
-import IconLightRain from './icon-light-rain';
-import IconLight from './icon-light';
-import IconLightning from './icon-lightning';
-import IconLike from './icon-like';
-import IconLincoln from './icon-lincoln';
-import IconLinkBreak from './icon-link-break';
-import IconLinkCloudFaild from './icon-link-cloud-faild';
-import IconLinkCloudSucess from './icon-link-cloud-sucess';
-import IconLinkCloud from './icon-link-cloud';
-import IconLinkFour from './icon-link-four';
-import IconLinkIn from './icon-link-in';
-import IconLinkInterrupt from './icon-link-interrupt';
-import IconLinkLeft from './icon-link-left';
-import IconLinkOne from './icon-link-one';
-import IconLinkOut from './icon-link-out';
-import IconLinkRight from './icon-link-right';
-import IconLinkThree from './icon-link-three';
-import IconLinkTwo from './icon-link-two';
+import IconFormatClear from './icon-format-clear';
+import IconFunctions from './icon-functions';
+import IconH1 from './icon-h-1';
+import IconH2 from './icon-h-2';
+import IconH3 from './icon-h-3';
+import IconH4 from './icon-h-4';
+import IconH5 from './icon-h-5';
+import IconH6 from './icon-h-6';
+import IconHashtag from './icon-hashtag';
+import IconHeading from './icon-heading';
+import IconIndentDecrease from './icon-indent-decrease';
+import IconIndentIncrease from './icon-indent-increase';
+import IconInfoI from './icon-info-i';
+import IconInputCursorMove from './icon-input-cursor-move';
+import IconInsertColumnLeft from './icon-insert-column-left';
+import IconInsertColumnRight from './icon-insert-column-right';
+import IconInsertRowBottom from './icon-insert-row-bottom';
+import IconInsertRowTop from './icon-insert-row-top';
+import IconItalic from './icon-italic';
+import IconLineHeight from './icon-line-height';
+import IconLinkM from './icon-link-m';
+import IconLinkUnlinkM from './icon-link-unlink-m';
+import IconLinkUnlink from './icon-link-unlink';
 import IconLink from './icon-link';
-import IconLipGloss from './icon-lip-gloss';
-import IconLipTattoo from './icon-lip-tattoo';
-import IconLipstickOne from './icon-lipstick-one';
-import IconLipstick from './icon-lipstick';
-import IconLiqueur from './icon-liqueur';
-import IconListAdd from './icon-list-add';
-import IconListAlphabet from './icon-list-alphabet';
-import IconListBottom from './icon-list-bottom';
-import IconListCheckbox from './icon-list-checkbox';
-import IconListFail from './icon-list-fail';
-import IconListMiddle from './icon-list-middle';
-import IconListNumbers from './icon-list-numbers';
-import IconListOne from './icon-list-one';
-import IconListSuccess from './icon-list-success';
-import IconListTop from './icon-list-top';
-import IconListTwo from './icon-list-two';
-import IconListView from './icon-list-view';
-import IconList from './icon-list';
-import IconLoadingFour from './icon-loading-four';
-import IconLoadingOne from './icon-loading-one';
-import IconLoadingThree from './icon-loading-three';
-import IconLoadingTwo from './icon-loading-two';
-import IconLoading from './icon-loading';
-import IconLocalPin from './icon-local-pin';
-import IconLocalTwo from './icon-local-two';
-import IconLocal from './icon-local';
-import IconLockOne from './icon-lock-one';
-import IconLock from './icon-lock';
-import IconLockingComputer from './icon-locking-computer';
-import IconLockingLaptop from './icon-locking-laptop';
-import IconLockingPicture from './icon-locking-picture';
-import IconLockingWeb from './icon-locking-web';
-import IconLog from './icon-log';
-import IconLogin from './icon-login';
-import IconLogout from './icon-logout';
-import IconLollipop from './icon-lollipop';
-import IconLoopOnce from './icon-loop-once';
-import IconLotion from './icon-lotion';
-import IconLotus from './icon-lotus';
-import IconLoudlyCryingFaceWhitOpenMouth from './icon-loudly-crying-face-whit-open-mouth';
-import IconLoudlyCryingFace from './icon-loudly-crying-face';
-import IconLoveAndHelp from './icon-love-and-help';
-import IconLowerBranch from './icon-lower-branch';
-import IconLuggage from './icon-luggage';
-import IconLuminous from './icon-luminous';
-import IconLung from './icon-lung';
-import IconMacFinder from './icon-mac-finder';
-import IconMacadamiaNut from './icon-macadamia-nut';
-import IconMagicHat from './icon-magic-hat';
-import IconMagicWand from './icon-magic-wand';
-import IconMagic from './icon-magic';
-import IconMagnet from './icon-magnet';
-import IconMailDownload from './icon-mail-download';
-import IconMailEdit from './icon-mail-edit';
-import IconMailOpen from './icon-mail-open';
-import IconMailPackage from './icon-mail-package';
-import IconMailReview from './icon-mail-review';
-import IconMailUnpacking from './icon-mail-unpacking';
-import IconMail from './icon-mail';
-import IconMaillOne from './icon-maill-one';
-import IconMakeups from './icon-makeups';
-import IconMale from './icon-male';
-import IconMallBag from './icon-mall-bag';
-import IconManualGear from './icon-manual-gear';
-import IconManyToMany from './icon-many-to-many';
-import IconMapDistance from './icon-map-distance';
-import IconMapDraw from './icon-map-draw';
-import IconMapRoadTwo from './icon-map-road-two';
-import IconMapRoad from './icon-map-road';
-import IconMapTwo from './icon-map-two';
-import IconMarginOne from './icon-margin-one';
-import IconMargin from './icon-margin';
-import IconMark from './icon-mark';
-import IconMarketAnalysis from './icon-market-analysis';
-import IconMarket from './icon-market';
-import IconMascara from './icon-mascara';
-import IconMaskOne from './icon-mask-one';
-import IconMaskTwo from './icon-mask-two';
-import IconMask from './icon-mask';
-import IconMaslowPyramids from './icon-maslow-pyramids';
-import IconMassageChairOne from './icon-massage-chair-one';
-import IconMassageChair from './icon-massage-chair';
-import IconMassageTable from './icon-massage-table';
-import IconMaster from './icon-master';
-import IconMaterialThree from './icon-material-three';
-import IconMaterialTwo from './icon-material-two';
-import IconMaterial from './icon-material';
-import IconMaximum from './icon-maximum';
-import IconMaya from './icon-maya';
-import IconMayuraGesture from './icon-mayura-gesture';
-import IconMe from './icon-me';
-import IconMeasuringCup from './icon-measuring-cup';
-import IconMedalOne from './icon-medal-one';
-import IconMediaeditor from './icon-mediaeditor';
-import IconMedicalBox from './icon-medical-box';
-import IconMedicalFiles from './icon-medical-files';
-import IconMedicalMark from './icon-medical-mark';
-import IconMedicationTime from './icon-medication-time';
-import IconMedicineBottleOne from './icon-medicine-bottle-one';
-import IconMedicineBottle from './icon-medicine-bottle';
-import IconMedicineChest from './icon-medicine-chest';
-import IconMemoryCardOne from './icon-memory-card-one';
-import IconMemoryCard from './icon-memory-card';
-import IconMemoryOne from './icon-memory-one';
-import IconMemory from './icon-memory';
-import IconMenJacket from './icon-men-jacket';
-import IconMenuFoldOne from './icon-menu-fold-one';
-import IconMenuFold from './icon-menu-fold';
-import IconMenuUnfoldOne from './icon-menu-unfold-one';
-import IconMenuUnfold from './icon-menu-unfold';
-import IconMergeCells from './icon-merge-cells';
-import IconMerge from './icon-merge';
-import IconMessageEmoji from './icon-message-emoji';
-import IconMessageFailed from './icon-message-failed';
-import IconMessageOne from './icon-message-one';
-import IconMessagePrivacy from './icon-message-privacy';
-import IconMessageSearch from './icon-message-search';
-import IconMessageSecurity from './icon-message-security';
-import IconMessageSent from './icon-message-sent';
-import IconMessageSuccess from './icon-message-success';
-import IconMessageUnread from './icon-message-unread';
-import IconMessage from './icon-message';
-import IconMessagesOne from './icon-messages-one';
-import IconMessages from './icon-messages';
-import IconMicroSd from './icon-micro-sd';
-import IconMicroSlrCamera from './icon-micro-slr-camera';
-import IconMicrophoneOne from './icon-microphone-one';
-import IconMicrophone from './icon-microphone';
-import IconMicroscopeOne from './icon-microscope-one';
-import IconMicroscope from './icon-microscope';
-import IconMicrowaveOven from './icon-microwave-oven';
-import IconMicrowaves from './icon-microwaves';
-import IconMiddleFinger from './icon-middle-finger';
-import IconMilkOne from './icon-milk-one';
-import IconMilk from './icon-milk';
-import IconMin from './icon-min';
-import IconMindMapping from './icon-mind-mapping';
-import IconMindmapList from './icon-mindmap-list';
-import IconMindmapMap from './icon-mindmap-map';
-import IconMiniSdCard from './icon-mini-sd-card';
-import IconMinusTheBottom from './icon-minus-the-bottom';
-import IconMinusTheTop from './icon-minus-the-top';
-import IconMinus from './icon-minus';
-import IconMirrorOne from './icon-mirror-one';
-import IconMirrorTwo from './icon-mirror-two';
-import IconMirror from './icon-mirror';
-import IconMisalignedSemicircle from './icon-misaligned-semicircle';
-import IconMitsubishi from './icon-mitsubishi';
-import IconModifyTwo from './icon-modify-two';
-import IconModify from './icon-modify';
-import IconMonitorCamera from './icon-monitor-camera';
-import IconMonitorOff from './icon-monitor-off';
-import IconMonitorOne from './icon-monitor-one';
-import IconMonitorTwo from './icon-monitor-two';
-import IconMonitor from './icon-monitor';
-import IconMonkeyZodiac from './icon-monkey-zodiac';
-import IconMonkey from './icon-monkey';
-import IconMonumentOne from './icon-monument-one';
-import IconMonumentTwo from './icon-monument-two';
-import IconMoon from './icon-moon';
-import IconMoreApp from './icon-more-app';
-import IconMoreFour from './icon-more-four';
-import IconMoreOne from './icon-more-one';
-import IconMoreThree from './icon-more-three';
-import IconMoreTwo from './icon-more-two';
-import IconMore from './icon-more';
-import IconMosaic from './icon-mosaic';
-import IconMountain from './icon-mountain';
-import IconMounted from './icon-mounted';
-import IconMouseOne from './icon-mouse-one';
-import IconMouseZodiac from './icon-mouse-zodiac';
-import IconMouse from './icon-mouse';
-import IconMouth from './icon-mouth';
-import IconMoveInOne from './icon-move-in-one';
-import IconMoveIn from './icon-move-in';
-import IconMoveOne from './icon-move-one';
-import IconMove from './icon-move';
-import IconMovieBoard from './icon-movie-board';
-import IconMovie from './icon-movie';
-import IconMovingPicture from './icon-moving-picture';
-import IconMultiCircular from './icon-multi-circular';
-import IconMultiFunctionKnife from './icon-multi-function-knife';
-import IconMultiPictureCarousel from './icon-multi-picture-carousel';
-import IconMultiRectangle from './icon-multi-rectangle';
-import IconMultiRing from './icon-multi-ring';
-import IconMultiTriangularFour from './icon-multi-triangular-four';
-import IconMultiTriangularThree from './icon-multi-triangular-three';
-import IconMultiTriangularTwo from './icon-multi-triangular-two';
-import IconMultiTriangular from './icon-multi-triangular';
-import IconMulticast from './icon-multicast';
-import IconMultilayerSphere from './icon-multilayer-sphere';
-import IconMuscle from './icon-muscle';
-import IconMuseumOne from './icon-museum-one';
-import IconMuseumTwo from './icon-museum-two';
-import IconMusicCd from './icon-music-cd';
-import IconMusicList from './icon-music-list';
-import IconMusicMenu from './icon-music-menu';
-import IconMusicOne from './icon-music-one';
-import IconMusicRhythm from './icon-music-rhythm';
-import IconMusic from './icon-music';
-import IconMute from './icon-mute';
-import IconNailPolishOne from './icon-nail-polish-one';
-import IconNailPolish from './icon-nail-polish';
-import IconNasal from './icon-nasal';
-import IconNaturalMode from './icon-natural-mode';
-import IconNavigation from './icon-navigation';
-import IconNecktie from './icon-necktie';
-import IconNeedle from './icon-needle';
-import IconNegativeDynamics from './icon-negative-dynamics';
-import IconNestedArrows from './icon-nested-arrows';
-import IconNests from './icon-nests';
-import IconNetworkDrive from './icon-network-drive';
-import IconNetworkTree from './icon-network-tree';
-import IconNeural from './icon-neural';
-import IconNeutralFace from './icon-neutral-face';
-import IconNewAfferent from './icon-new-afferent';
-import IconNewComputer from './icon-new-computer';
-import IconNewDianziqian from './icon-new-dianziqian';
-import IconNewEfferent from './icon-new-efferent';
-import IconNewLark from './icon-new-lark';
-import IconNewPicture from './icon-new-picture';
-import IconNewlybuild from './icon-newlybuild';
-import IconNewspaperFolding from './icon-newspaper-folding';
-import IconNext from './icon-next';
-import IconNineKey from './icon-nine-key';
-import IconNinePointsConnected from './icon-nine-points-connected';
-import IconNintendoSwitch from './icon-nintendo-switch';
-import IconNmr from './icon-nmr';
-import IconNoShooting from './icon-no-shooting';
-import IconNodeFlat from './icon-node-flat';
-import IconNodeRound from './icon-node-round';
-import IconNodeSquare from './icon-node-square';
-import IconNoodles from './icon-noodles';
-import IconNotebookAndPen from './icon-notebook-and-pen';
-import IconNotebookOne from './icon-notebook-one';
-import IconNotebook from './icon-notebook';
-import IconNotepad from './icon-notepad';
-import IconNotes from './icon-notes';
-import IconNuclearPlant from './icon-nuclear-plant';
-import IconNurseCap from './icon-nurse-cap';
-import IconNut from './icon-nut';
-import IconNutrition from './icon-nutrition';
-import IconOceanengine from './icon-oceanengine';
-import IconOctagon from './icon-octagon';
-import IconOffScreenOne from './icon-off-screen-one';
-import IconOffScreenTwo from './icon-off-screen-two';
-import IconOffScreen from './icon-off-screen';
-import IconOilIndustry from './icon-oil-industry';
-import IconOkay from './icon-okay';
-import IconOneKey from './icon-one-key';
-import IconOneOne from './icon-one-one';
-import IconOneThirdRotation from './icon-one-third-rotation';
-import IconOneToMany from './icon-one-to-many';
-import IconOneToOne from './icon-one-to-one';
-import IconOne from './icon-one';
-import IconOnesies from './icon-onesies';
-import IconOnlineMeeting from './icon-online-meeting';
-import IconOpenAnAccount from './icon-open-an-account';
-import IconOpenDoor from './icon-open-door';
-import IconOpenOne from './icon-open-one';
-import IconOpen from './icon-open';
-import IconOptimize from './icon-optimize';
-import IconOptional from './icon-optional';
-import IconOrangeOne from './icon-orange-one';
-import IconOrangeStation from './icon-orange-station';
-import IconOrange from './icon-orange';
-import IconOrder from './icon-order';
-import IconOrderedList from './icon-ordered-list';
-import IconOrthopedic from './icon-orthopedic';
-import IconOscillator from './icon-oscillator';
-import IconOther from './icon-other';
-import IconOutbound from './icon-outbound';
-import IconOutdoor from './icon-outdoor';
-import IconOutgoing from './icon-outgoing';
-import IconOvalLoveTwo from './icon-oval-love-two';
-import IconOvalLove from './icon-oval-love';
-import IconOvalOne from './icon-oval-one';
-import IconOvenTray from './icon-oven-tray';
-import IconOven from './icon-oven';
-import IconOverallReduction from './icon-overall-reduction';
-import IconOwl from './icon-owl';
-import IconPacifier from './icon-pacifier';
-import IconPad from './icon-pad';
-import IconPageTemplate from './icon-page-template';
-import IconPage from './icon-page';
-import IconPagoda from './icon-pagoda';
-import IconPaint from './icon-paint';
-import IconPaintedEggshell from './icon-painted-eggshell';
-import IconPaintedScreen from './icon-painted-screen';
-import IconPalace from './icon-palace';
-import IconPalm from './icon-palm';
-import IconPanda from './icon-panda';
-import IconPangle from './icon-pangle';
-import IconPanoramaHorizontal from './icon-panorama-horizontal';
-import IconPanties from './icon-panties';
-import IconPaperMoneyTwo from './icon-paper-money-two';
-import IconPaperMoney from './icon-paper-money';
-import IconPaperShip from './icon-paper-ship';
-import IconPaperclip from './icon-paperclip';
-import IconParabola from './icon-parabola';
-import IconParachute from './icon-parachute';
-import IconParagraphAlphabet from './icon-paragraph-alphabet';
-import IconParagraphBreakTwo from './icon-paragraph-break-two';
-import IconParagraphBreak from './icon-paragraph-break';
-import IconParagraphCut from './icon-paragraph-cut';
-import IconParagraphRectangle from './icon-paragraph-rectangle';
-import IconParagraphRound from './icon-paragraph-round';
-import IconParagraphTriangle from './icon-paragraph-triangle';
-import IconParagraphUnfold from './icon-paragraph-unfold';
-import IconParallelGateway from './icon-parallel-gateway';
-import IconParallelogram from './icon-parallelogram';
-import IconParentingBook from './icon-parenting-book';
-import IconParking from './icon-parking';
-import IconPartyBalloon from './icon-party-balloon';
-import IconPassportOne from './icon-passport-one';
-import IconPassport from './icon-passport';
-import IconPauseOne from './icon-pause-one';
-import IconPause from './icon-pause';
-import IconPayCodeOne from './icon-pay-code-one';
-import IconPayCodeTwo from './icon-pay-code-two';
-import IconPayCode from './icon-pay-code';
-import IconPaymentMethod from './icon-payment-method';
-import IconPaypal from './icon-paypal';
-import IconPeach from './icon-peach';
-import IconPear from './icon-pear';
-import IconPearlOfTheOrient from './icon-pearl-of-the-orient';
-import IconPeas from './icon-peas';
-import IconPencil from './icon-pencil';
-import IconPennant from './icon-pennant';
-import IconPentagonOne from './icon-pentagon-one';
-import IconPeopleBottomCard from './icon-people-bottom-card';
-import IconPeopleBottom from './icon-people-bottom';
-import IconPeopleDeleteOne from './icon-people-delete-one';
-import IconPeopleDelete from './icon-people-delete';
-import IconPeopleDownload from './icon-people-download';
-import IconPeopleLeft from './icon-people-left';
-import IconPeopleMinusOne from './icon-people-minus-one';
-import IconPeopleMinus from './icon-people-minus';
-import IconPeoplePlusOne from './icon-people-plus-one';
-import IconPeoplePlus from './icon-people-plus';
-import IconPeopleRight from './icon-people-right';
-import IconPeopleSafeOne from './icon-people-safe-one';
-import IconPeopleSafe from './icon-people-safe';
-import IconPeopleSearchOne from './icon-people-search-one';
-import IconPeopleSearch from './icon-people-search';
-import IconPeopleSpeak from './icon-people-speak';
-import IconPeopleTopCard from './icon-people-top-card';
-import IconPeopleTop from './icon-people-top';
-import IconPeopleUnknown from './icon-people-unknown';
-import IconPeopleUpload from './icon-people-upload';
-import IconPeople from './icon-people';
-import IconPeoplesTwo from './icon-peoples-two';
-import IconPeoples from './icon-peoples';
-import IconPercentage from './icon-percentage';
-import IconPerformance from './icon-performance';
-import IconPerfume from './icon-perfume';
-import IconPerfumerBottle from './icon-perfumer-bottle';
-import IconPeriod from './icon-period';
-import IconPermissions from './icon-permissions';
-import IconPersonalCollection from './icon-personal-collection';
-import IconPersonalPrivacy from './icon-personal-privacy';
-import IconPerspective from './icon-perspective';
-import IconPesticide from './icon-pesticide';
-import IconPetrol from './icon-petrol';
-import IconPhoneBooth from './icon-phone-booth';
-import IconPhoneCall from './icon-phone-call';
-import IconPhoneIncomingOne from './icon-phone-incoming-one';
-import IconPhoneIncoming from './icon-phone-incoming';
-import IconPhoneMissed from './icon-phone-missed';
-import IconPhoneOff from './icon-phone-off';
-import IconPhoneOne from './icon-phone-one';
-import IconPhoneOutgoingOne from './icon-phone-outgoing-one';
-import IconPhoneOutgoing from './icon-phone-outgoing';
-import IconPhoneTelephone from './icon-phone-telephone';
-import IconPhoneTwo from './icon-phone-two';
-import IconPhoneVideoCall from './icon-phone-video-call';
-import IconPhone from './icon-phone';
-import IconPhonograph from './icon-phonograph';
-import IconPhotograph from './icon-photograph';
-import IconPiano from './icon-piano';
-import IconPicOne from './icon-pic-one';
-import IconPic from './icon-pic';
-import IconPictureAlbum from './icon-picture-album';
-import IconPictureOne from './icon-picture-one';
-import IconPicture from './icon-picture';
-import IconPieFive from './icon-pie-five';
-import IconPieFour from './icon-pie-four';
-import IconPieOne from './icon-pie-one';
-import IconPieSeven from './icon-pie-seven';
-import IconPieSix from './icon-pie-six';
-import IconPieThree from './icon-pie-three';
-import IconPieTwo from './icon-pie-two';
-import IconPie from './icon-pie';
-import IconPigZodiac from './icon-pig-zodiac';
-import IconPig from './icon-pig';
-import IconPigeon from './icon-pigeon';
-import IconPill from './icon-pill';
-import IconPills from './icon-pills';
-import IconPin from './icon-pin';
-import IconPineapple from './icon-pineapple';
-import IconPinwheel from './icon-pinwheel';
-import IconPisces from './icon-pisces';
-import IconPivotTable from './icon-pivot-table';
-import IconPlan from './icon-plan';
-import IconPlanet from './icon-planet';
-import IconPlasticSurgery from './icon-plastic-surgery';
-import IconPlatte from './icon-platte';
-import IconPlayBasketball from './icon-play-basketball';
-import IconPlayCycle from './icon-play-cycle';
-import IconPlayOnce from './icon-play-once';
-import IconPlayOne from './icon-play-one';
-import IconPlayTwo from './icon-play-two';
-import IconPlayVolleyball from './icon-play-volleyball';
-import IconPlayWrong from './icon-play-wrong';
-import IconPlay from './icon-play';
-import IconPlaybackProgress from './icon-playback-progress';
-import IconPlugOne from './icon-plug-one';
-import IconPlug from './icon-plug';
-import IconPlusCross from './icon-plus-cross';
-import IconPlus from './icon-plus';
-import IconPointOut from './icon-point-out';
-import IconPoint from './icon-point';
-import IconPokeballOne from './icon-pokeball-one';
-import IconPoker from './icon-poker';
-import IconPopcornOne from './icon-popcorn-one';
-import IconPopcorn from './icon-popcorn';
-import IconPositiveDynamics from './icon-positive-dynamics';
-import IconPot from './icon-pot';
-import IconPotentiometer from './icon-potentiometer';
-import IconPoundSign from './icon-pound-sign';
-import IconPound from './icon-pound';
-import IconPoutingFace from './icon-pouting-face';
-import IconPowder from './icon-powder';
-import IconPowerSupplyOne from './icon-power-supply-one';
-import IconPowerSupply from './icon-power-supply';
-import IconPower from './icon-power';
-import IconPowerpoint from './icon-powerpoint';
-import IconPpt from './icon-ppt';
-import IconPregnantWomen from './icon-pregnant-women';
-import IconPreschool from './icon-preschool';
-import IconPrescription from './icon-prescription';
-import IconPress from './icon-press';
-import IconPreviewCloseOne from './icon-preview-close-one';
-import IconPreviewClose from './icon-preview-close';
-import IconPreviewOpen from './icon-preview-open';
-import IconPrinterOne from './icon-printer-one';
-import IconPrinterTwo from './icon-printer-two';
-import IconPrinter from './icon-printer';
-import IconPrison from './icon-prison';
-import IconProcessLine from './icon-process-line';
-import IconProjectorOne from './icon-projector-one';
-import IconProjectorThree from './icon-projector-three';
-import IconProjectorTwo from './icon-projector-two';
-import IconProjector from './icon-projector';
-import IconProportionalScaling from './icon-proportional-scaling';
-import IconProtect from './icon-protect';
-import IconProtection from './icon-protection';
-import IconPublicToilet from './icon-public-toilet';
-import IconPullDoor from './icon-pull-door';
-import IconPullRequests from './icon-pull-requests';
-import IconPumpkin from './icon-pumpkin';
-import IconPureNatural from './icon-pure-natural';
-import IconPushDoor from './icon-push-door';
-import IconPushpin from './icon-pushpin';
-import IconPuzzle from './icon-puzzle';
-import IconPyramidOne from './icon-pyramid-one';
-import IconPyramid from './icon-pyramid';
-import IconQingniaoClue from './icon-qingniao-clue';
-import IconQiyehao from './icon-qiyehao';
-import IconQuadrangularPyramid from './icon-quadrangular-pyramid';
-import IconQuadrilateral from './icon-quadrilateral';
-import IconQuote from './icon-quote';
-import IconRabbitZodiac from './icon-rabbit-zodiac';
-import IconRabbit from './icon-rabbit';
-import IconRadarChart from './icon-radar-chart';
-import IconRadarThree from './icon-radar-three';
-import IconRadarTwo from './icon-radar-two';
-import IconRadar from './icon-radar';
-import IconRadiation from './icon-radiation';
-import IconRadioNanny from './icon-radio-nanny';
-import IconRadioOne from './icon-radio-one';
-import IconRadioTwo from './icon-radio-two';
-import IconRadio from './icon-radio';
-import IconRadishOne from './icon-radish-one';
-import IconRadish from './icon-radish';
-import IconRailway from './icon-railway';
-import IconRankingList from './icon-ranking-list';
-import IconRanking from './icon-ranking';
-import IconRattleOne from './icon-rattle-one';
-import IconRattle from './icon-rattle';
-import IconRazor from './icon-razor';
-import IconReadBook from './icon-read-book';
-import IconReceive from './icon-receive';
-import IconReceiver from './icon-receiver';
-import IconRecentViewsSort from './icon-recent-views-sort';
-import IconRecordDisc from './icon-record-disc';
-import IconRecordPlayer from './icon-record-player';
-import IconRecord from './icon-record';
-import IconRectangleOne from './icon-rectangle-one';
-import IconRectangleSmall from './icon-rectangle-small';
-import IconRectangleTear from './icon-rectangle-tear';
-import IconRectangleX from './icon-rectangle-x';
-import IconRectangle from './icon-rectangle';
-import IconRectangularCircularConnection from './icon-rectangular-circular-connection';
-import IconRectangularCircularSeparation from './icon-rectangular-circular-separation';
-import IconRectangularVertebra from './icon-rectangular-vertebra';
-import IconRecycleBin from './icon-recycle-bin';
-import IconRecyclingPool from './icon-recycling-pool';
-import IconRecycling from './icon-recycling';
-import IconRedCross from './icon-red-cross';
-import IconRedEnvelope from './icon-red-envelope';
-import IconRedEnvelopes from './icon-red-envelopes';
-import IconRedo from './icon-redo';
-import IconReduceDecimalPlaces from './icon-reduce-decimal-places';
-import IconReduceOne from './icon-reduce-one';
-import IconReduceTwo from './icon-reduce-two';
-import IconReduceUser from './icon-reduce-user';
-import IconReduce from './icon-reduce';
-import IconReel from './icon-reel';
-import IconRefraction from './icon-refraction';
-import IconRefreshOne from './icon-refresh-one';
-import IconRefresh from './icon-refresh';
-import IconRefrigerator from './icon-refrigerator';
-import IconReject from './icon-reject';
-import IconRelationalGraph from './icon-relational-graph';
-import IconRelievedFace from './icon-relieved-face';
-import IconReload from './icon-reload';
-import IconRemindDisable from './icon-remind-disable';
-import IconRemind from './icon-remind';
-import IconRemoteControlOne from './icon-remote-control-one';
-import IconRemoteControl from './icon-remote-control';
-import IconRenal from './icon-renal';
-import IconRenault from './icon-renault';
-import IconRepair from './icon-repair';
-import IconReplayFive from './icon-replay-five';
-import IconReplayMusic from './icon-replay-music';
-import IconReport from './icon-report';
-import IconRepositioning from './icon-repositioning';
-import IconResistor from './icon-resistor';
-import IconRespect from './icon-respect';
-import IconResting from './icon-resting';
-import IconRetroBag from './icon-retro-bag';
-import IconReturn from './icon-return';
-import IconReverseLensOne from './icon-reverse-lens-one';
-import IconReverseLens from './icon-reverse-lens';
-import IconReverseOperationIn from './icon-reverse-operation-in';
-import IconReverseOperationOut from './icon-reverse-operation-out';
-import IconReverseRotation from './icon-reverse-rotation';
-import IconRice from './icon-rice';
-import IconRidingOne from './icon-riding-one';
-import IconRiding from './icon-riding';
-import IconRightAngle from './icon-right-angle';
-import IconRightBar from './icon-right-bar';
-import IconRightBranchOne from './icon-right-branch-one';
-import IconRightBranchTwo from './icon-right-branch-two';
-import IconRightBranch from './icon-right-branch';
-import IconRightC from './icon-right-c';
-import IconRightExpand from './icon-right-expand';
-import IconRightOne from './icon-right-one';
-import IconRightRun from './icon-right-run';
-import IconRightSmallDown from './icon-right-small-down';
-import IconRightSmallUp from './icon-right-small-up';
-import IconRightSmall from './icon-right-small';
-import IconRightSquare from './icon-right-square';
-import IconRightTwo from './icon-right-two';
-import IconRightUser from './icon-right-user';
-import IconRight from './icon-right';
-import IconRingOne from './icon-ring-one';
-import IconRing from './icon-ring';
-import IconRings from './icon-rings';
-import IconRipple from './icon-ripple';
-import IconRoadCone from './icon-road-cone';
-import IconRoadOne from './icon-road-one';
-import IconRoadSignBoth from './icon-road-sign-both';
-import IconRoadSign from './icon-road-sign';
-import IconRoad from './icon-road';
-import IconRobotOne from './icon-robot-one';
-import IconRobotTwo from './icon-robot-two';
-import IconRobot from './icon-robot';
-import IconRockGesture from './icon-rock-gesture';
-import IconRock from './icon-rock';
-import IconRocketOne from './icon-rocket-one';
-import IconRocket from './icon-rocket';
-import IconRockingHorse from './icon-rocking-horse';
-import IconRollerskates from './icon-rollerskates';
-import IconRomper from './icon-romper';
-import IconRopeSkippingOne from './icon-rope-skipping-one';
-import IconRopeSkipping from './icon-rope-skipping';
-import IconRotateOne from './icon-rotate-one';
-import IconRotate from './icon-rotate';
-import IconRotatingAdd from './icon-rotating-add';
-import IconRotatingForward from './icon-rotating-forward';
-import IconRotationHorizontal from './icon-rotation-horizontal';
-import IconRotationOne from './icon-rotation-one';
-import IconRotationVertical from './icon-rotation-vertical';
-import IconRotation from './icon-rotation';
-import IconRoundCaliper from './icon-round-caliper';
-import IconRoundDistortion from './icon-round-distortion';
-import IconRoundMask from './icon-round-mask';
-import IconRoundSocket from './icon-round-socket';
-import IconRoundTrip from './icon-round-trip';
-import IconRound from './icon-round';
-import IconRouterOne from './icon-router-one';
-import IconRouter from './icon-router';
-import IconRowHeight from './icon-row-height';
-import IconRowing from './icon-rowing';
-import IconRsMale from './icon-rs-male';
-import IconRss from './icon-rss';
-import IconRugbyOne from './icon-rugby-one';
-import IconRugby from './icon-rugby';
-import IconRuleTwo from './icon-rule-two';
-import IconRulerOne from './icon-ruler-one';
-import IconRuler from './icon-ruler';
-import IconRunLeft from './icon-run-left';
-import IconSTurnDown from './icon-s-turn-down';
-import IconSTurnLeft from './icon-s-turn-left';
-import IconSTurnRight from './icon-s-turn-right';
-import IconSTurnUp from './icon-s-turn-up';
-import IconSafeRetrieval from './icon-safe-retrieval';
-import IconSagittarius from './icon-sagittarius';
-import IconSailboatOne from './icon-sailboat-one';
-import IconSailboat from './icon-sailboat';
-import IconSailing from './icon-sailing';
-import IconSalesReport from './icon-sales-report';
-import IconSandals from './icon-sandals';
-import IconSandstorm from './icon-sandstorm';
-import IconSandwichOne from './icon-sandwich-one';
-import IconSandwich from './icon-sandwich';
-import IconSapling from './icon-sapling';
-import IconSaveOne from './icon-save-one';
-import IconSave from './icon-save';
-import IconScaleOne from './icon-scale-one';
-import IconScale from './icon-scale';
-import IconScallion from './icon-scallion';
-import IconScanCode from './icon-scan-code';
-import IconScanSetting from './icon-scan-setting';
-import IconScan from './icon-scan';
-import IconScanningTwo from './icon-scanning-two';
-import IconScanning from './icon-scanning';
-import IconScatterAlignment from './icon-scatter-alignment';
-import IconSchedule from './icon-schedule';
-import IconSchool from './icon-school';
-import IconScissors from './icon-scissors';
-import IconScoreboard from './icon-scoreboard';
-import IconScorpio from './icon-scorpio';
-import IconScreenRotation from './icon-screen-rotation';
-import IconScreenshotOne from './icon-screenshot-one';
-import IconScreenshotTwo from './icon-screenshot-two';
-import IconScreenshot from './icon-screenshot';
-import IconScrewdriver from './icon-screwdriver';
-import IconSdCard from './icon-sd-card';
-import IconSd from './icon-sd';
-import IconSeal from './icon-seal';
-import IconSearch from './icon-search';
-import IconSeat from './icon-seat';
-import IconSecurityStall from './icon-security-stall';
-import IconSecurity from './icon-security';
-import IconSeedling from './icon-seedling';
-import IconSelectedFocus from './icon-selected-focus';
-import IconSelected from './icon-selected';
-import IconSelfie from './icon-selfie';
+import IconListCheck2 from './icon-list-check-2';
+import IconListCheck3 from './icon-list-check-3';
+import IconListCheck from './icon-list-check';
+import IconListIndefinite from './icon-list-indefinite';
+import IconListOrdered2 from './icon-list-ordered-2';
+import IconListOrdered from './icon-list-ordered';
+import IconListRadio from './icon-list-radio';
+import IconListUnordered from './icon-list-unordered';
+import IconMergeCellsHorizontal from './icon-merge-cells-horizontal';
+import IconMergeCellsVertical from './icon-merge-cells-vertical';
+import IconMindMap from './icon-mind-map';
+import IconNodeTree from './icon-node-tree';
+import IconNumber0 from './icon-number-0';
+import IconNumber1 from './icon-number-1';
+import IconNumber2 from './icon-number-2';
+import IconNumber3 from './icon-number-3';
+import IconNumber4 from './icon-number-4';
+import IconNumber5 from './icon-number-5';
+import IconNumber6 from './icon-number-6';
+import IconNumber7 from './icon-number-7';
+import IconNumber8 from './icon-number-8';
+import IconNumber9 from './icon-number-9';
+import IconOmega from './icon-omega';
+import IconOrganizationChart from './icon-organization-chart';
+import IconOverline from './icon-overline';
+import IconPageSeparator from './icon-page-separator';
+import IconParagraph from './icon-paragraph';
+import IconPinyinInput from './icon-pinyin-input';
+import IconQuestionMark from './icon-question-mark';
+import IconQuoteText from './icon-quote-text';
+import IconRoundedCorner from './icon-rounded-corner';
 import IconSendBackward from './icon-send-backward';
-import IconSendEmail from './icon-send-email';
-import IconSendOne from './icon-send-one';
 import IconSendToBack from './icon-send-to-back';
-import IconSend from './icon-send';
-import IconSentToBack from './icon-sent-to-back';
-import IconSeoFolder from './icon-seo-folder';
-import IconSeo from './icon-seo';
-import IconServer from './icon-server';
-import IconSetOff from './icon-set-off';
-import IconSettingComputer from './icon-setting-computer';
-import IconSettingConfig from './icon-setting-config';
-import IconSettingLaptop from './icon-setting-laptop';
-import IconSettingOne from './icon-setting-one';
-import IconSettingThree from './icon-setting-three';
-import IconSettingTwo from './icon-setting-two';
-import IconSettingWeb from './icon-setting-web';
-import IconSetting from './icon-setting';
-import IconSevenKey from './icon-seven-key';
-import IconShade from './icon-shade';
-import IconShake from './icon-shake';
-import IconShareOne from './icon-share-one';
-import IconShareSys from './icon-share-sys';
-import IconShareThree from './icon-share-three';
-import IconShareTwo from './icon-share-two';
-import IconShare from './icon-share';
-import IconShaverOne from './icon-shaver-one';
-import IconShaver from './icon-shaver';
-import IconShaving from './icon-shaving';
-import IconSheepZodiac from './icon-sheep-zodiac';
-import IconShieldAdd from './icon-shield-add';
-import IconShield from './icon-shield';
-import IconShip from './icon-ship';
-import IconShop from './icon-shop';
-import IconShoppingBagOne from './icon-shopping-bag-one';
-import IconShoppingBag from './icon-shopping-bag';
-import IconShoppingCartAdd from './icon-shopping-cart-add';
-import IconShoppingCartDel from './icon-shopping-cart-del';
-import IconShoppingCartOne from './icon-shopping-cart-one';
-import IconShoppingCartTwo from './icon-shopping-cart-two';
-import IconShoppingCart from './icon-shopping-cart';
-import IconShoppingMall from './icon-shopping-mall';
-import IconShopping from './icon-shopping';
-import IconShortSkirt from './icon-short-skirt';
-import IconShorts from './icon-shorts';
-import IconShoulderBag from './icon-shoulder-bag';
-import IconShovelOne from './icon-shovel-one';
-import IconShovel from './icon-shovel';
-import IconShowerHead from './icon-shower-head';
-import IconShrimp from './icon-shrimp';
-import IconShuffleOne from './icon-shuffle-one';
-import IconShuffle from './icon-shuffle';
-import IconShutterPriority from './icon-shutter-priority';
-import IconSickbed from './icon-sickbed';
-import IconSignalOne from './icon-signal-one';
-import IconSignalStrength from './icon-signal-strength';
-import IconSignalTowerOne from './icon-signal-tower-one';
-import IconSignalTower from './icon-signal-tower';
-import IconSignal from './icon-signal';
-import IconSimCard from './icon-sim-card';
-import IconSim from './icon-sim';
-import IconSingleBed from './icon-single-bed';
-import IconSinusoid from './icon-sinusoid';
-import IconSippyCup from './icon-sippy-cup';
-import IconSixCircularConnection from './icon-six-circular-connection';
-import IconSixKey from './icon-six-key';
-import IconSixPoints from './icon-six-points';
-import IconSix from './icon-six';
-import IconSkate from './icon-skate';
-import IconSkates from './icon-skates';
-import IconSkating from './icon-skating';
-import IconSketch from './icon-sketch';
-import IconSkiingNordic from './icon-skiing-nordic';
-import IconSkull from './icon-skull';
-import IconSlave from './icon-slave';
-import IconSleaves from './icon-sleaves';
-import IconSleepOne from './icon-sleep-one';
-import IconSleepTwo from './icon-sleep-two';
-import IconSleep from './icon-sleep';
-import IconSlideTwo from './icon-slide-two';
-import IconSlide from './icon-slide';
-import IconSlidingHorizontal from './icon-sliding-horizontal';
-import IconSlidingVertical from './icon-sliding-vertical';
-import IconSlightlyFrowningFaceWhitOpenMouth from './icon-slightly-frowning-face-whit-open-mouth';
-import IconSlightlySmilingFace from './icon-slightly-smiling-face';
-import IconSlippersOne from './icon-slippers-one';
-import IconSlippers from './icon-slippers';
-import IconSlyFaceWhitSmile from './icon-sly-face-whit-smile';
-import IconSmartOptimization from './icon-smart-optimization';
-import IconSmilingFaceWithSquintingEyes from './icon-smiling-face-with-squinting-eyes';
-import IconSmilingFace from './icon-smiling-face';
-import IconSnacks from './icon-snacks';
-import IconSnakeZodiac from './icon-snake-zodiac';
-import IconSnow from './icon-snow';
-import IconSnowflake from './icon-snowflake';
-import IconSnowman from './icon-snowman';
-import IconSoapBubble from './icon-soap-bubble';
-import IconSoccerOne from './icon-soccer-one';
-import IconSoccer from './icon-soccer';
-import IconSocks from './icon-socks';
-import IconSofaTwo from './icon-sofa-two';
-import IconSofa from './icon-sofa';
-import IconSoftball from './icon-softball';
-import IconSolarEnergyOne from './icon-solar-energy-one';
-import IconSolarEnergy from './icon-solar-energy';
-import IconSolidStateDisk from './icon-solid-state-disk';
-import IconSorcererHat from './icon-sorcerer-hat';
-import IconSortAmountDown from './icon-sort-amount-down';
-import IconSortAmountUp from './icon-sort-amount-up';
-import IconSortFour from './icon-sort-four';
-import IconSortOne from './icon-sort-one';
-import IconSortThree from './icon-sort-three';
-import IconSortTwo from './icon-sort-two';
-import IconSort from './icon-sort';
-import IconSoundOne from './icon-sound-one';
-import IconSoundWave from './icon-sound-wave';
-import IconSound from './icon-sound';
-import IconSourceCode from './icon-source-code';
-import IconSoybeanMilkMaker from './icon-soybean-milk-maker';
-import IconSpaCandle from './icon-spa-candle';
-import IconSpaceColony from './icon-space-colony';
-import IconSpanner from './icon-spanner';
-import IconSpeakerOne from './icon-speaker-one';
-import IconSpeaker from './icon-speaker';
-import IconSpeedOne from './icon-speed-one';
-import IconSpeed from './icon-speed';
-import IconSperm from './icon-sperm';
-import IconSphere from './icon-sphere';
-import IconSpiderMan from './icon-spider-man';
-import IconSpikedshoes from './icon-spikedshoes';
-import IconSpinningTop from './icon-spinning-top';
-import IconSplitBranch from './icon-split-branch';
-import IconSplitCells from './icon-split-cells';
-import IconSplitTurnDownLeft from './icon-split-turn-down-left';
-import IconSplitTurnDownRight from './icon-split-turn-down-right';
-import IconSplit from './icon-split';
-import IconSpoon from './icon-spoon';
-import IconSport from './icon-sport';
-import IconSporting from './icon-sporting';
-import IconSquareSmall from './icon-square-small';
-import IconSquare from './icon-square';
-import IconSsd from './icon-ssd';
-import IconStackLight from './icon-stack-light';
-import IconStamp from './icon-stamp';
-import IconStandUp from './icon-stand-up';
-import IconStapler from './icon-stapler';
-import IconStarOne from './icon-star-one';
-import IconStar from './icon-star';
-import IconStartTimeSort from './icon-start-time-sort';
-import IconSteeringWheel from './icon-steering-wheel';
-import IconSteoller from './icon-steoller';
-import IconStereoNesting from './icon-stereo-nesting';
-import IconStereoOne from './icon-stereo-one';
-import IconStereoPerspective from './icon-stereo-perspective';
-import IconStethoscope from './icon-stethoscope';
-import IconStickers from './icon-stickers';
-import IconStockMarket from './icon-stock-market';
-import IconStopwatchStart from './icon-stopwatch-start';
-import IconStopwatch from './icon-stopwatch';
-import IconStorageCardOne from './icon-storage-card-one';
-import IconStorageCardTwo from './icon-storage-card-two';
-import IconStraightRazor from './icon-straight-razor';
-import IconStrawHat from './icon-straw-hat';
-import IconStretchingOne from './icon-stretching-one';
-import IconStretching from './icon-stretching';
+import IconSeparator from './icon-separator';
+import IconSingleQuotesL from './icon-single-quotes-l';
+import IconSingleQuotesR from './icon-single-quotes-r';
+import IconSketching from './icon-sketching';
+import IconSlashCommands2 from './icon-slash-commands-2';
+import IconSlashCommands from './icon-slash-commands';
+import IconSortAsc from './icon-sort-asc';
+import IconSortDesc from './icon-sort-desc';
+import IconSpace from './icon-space';
+import IconSplitCellsHorizontal from './icon-split-cells-horizontal';
+import IconSplitCellsVertical from './icon-split-cells-vertical';
+import IconStrikethrough2 from './icon-strikethrough-2';
 import IconStrikethrough from './icon-strikethrough';
-import IconStrongbox from './icon-strongbox';
-import IconSubtractSelectionOne from './icon-subtract-selection-one';
-import IconSubtractSelection from './icon-subtract-selection';
-import IconSubway from './icon-subway';
-import IconSuccessPicture from './icon-success-picture';
-import IconSuccess from './icon-success';
-import IconSum from './icon-sum';
-import IconSunHat from './icon-sun-hat';
-import IconSunOne from './icon-sun-one';
-import IconSun from './icon-sun';
-import IconSunbath from './icon-sunbath';
-import IconSunny from './icon-sunny';
-import IconSunrise from './icon-sunrise';
-import IconSunset from './icon-sunset';
-import IconSunshade from './icon-sunshade';
-import IconSurprisedFaceWithOpenBigMouth from './icon-surprised-face-with-open-big-mouth';
-import IconSurprisedFaceWithOpenMouth from './icon-surprised-face-with-open-mouth';
-import IconSurveillanceCamerasOne from './icon-surveillance-cameras-one';
-import IconSurveillanceCamerasTwo from './icon-surveillance-cameras-two';
-import IconSurveillanceCameras from './icon-surveillance-cameras';
-import IconSwallow from './icon-swallow';
-import IconSweater from './icon-sweater';
-import IconSwimmingPool from './icon-swimming-pool';
-import IconSwimmingRing from './icon-swimming-ring';
-import IconSwimsuit from './icon-swimsuit';
-import IconSwing from './icon-swing';
-import IconSwipe from './icon-swipe';
-import IconSwitchButton from './icon-switch-button';
-import IconSwitchContrast from './icon-switch-contrast';
-import IconSwitchNintendo from './icon-switch-nintendo';
-import IconSwitchOne from './icon-switch-one';
-import IconSwitchThemes from './icon-switch-themes';
-import IconSwitchTrack from './icon-switch-track';
-import IconSwitch from './icon-switch';
-import IconSwitchingDone from './icon-switching-done';
-import IconSymbolDoubleX from './icon-symbol-double-x';
-import IconSymbol from './icon-symbol';
-import IconSymmetry from './icon-symmetry';
-import IconSync from './icon-sync';
-import IconSystem from './icon-system';
-import IconTShirt from './icon-t-shirt';
-import IconTableFile from './icon-table-file';
-import IconTableLamp from './icon-table-lamp';
-import IconTableReport from './icon-table-report';
-import IconTable from './icon-table';
-import IconTabletennis from './icon-tabletennis';
-import IconTagOne from './icon-tag-one';
-import IconTag from './icon-tag';
-import IconTailoringTwo from './icon-tailoring-two';
-import IconTailoring from './icon-tailoring';
-import IconTajMahal from './icon-taj-mahal';
-import IconTakeOffOne from './icon-take-off-one';
-import IconTakeOff from './icon-take-off';
-import IconTaobao from './icon-taobao';
-import IconTapeMeasure from './icon-tape-measure';
-import IconTape from './icon-tape';
-import IconTargetOne from './icon-target-one';
-import IconTargetTwo from './icon-target-two';
-import IconTarget from './icon-target';
-import IconTaurus from './icon-taurus';
-import IconTaxi from './icon-taxi';
-import IconTeaDrink from './icon-tea-drink';
-import IconTea from './icon-tea';
-import IconTeapot from './icon-teapot';
-import IconTeeth from './icon-teeth';
-import IconTelegram from './icon-telegram';
-import IconTelescope from './icon-telescope';
-import IconTencentQq from './icon-tencent-qq';
-import IconTennis from './icon-tennis';
-import IconTentBanner from './icon-tent-banner';
-import IconTent from './icon-tent';
-import IconTerminal from './icon-terminal';
-import IconTerminationFile from './icon-termination-file';
-import IconTerrace from './icon-terrace';
-import IconTestTube from './icon-test-tube';
-import IconTextBold from './icon-text-bold';
-import IconTextItalic from './icon-text-italic';
-import IconTextMessage from './icon-text-message';
-import IconTextRecognition from './icon-text-recognition';
-import IconTextRotationDown from './icon-text-rotation-down';
-import IconTextRotationLeft from './icon-text-rotation-left';
-import IconTextRotationNone from './icon-text-rotation-none';
-import IconTextRotationUp from './icon-text-rotation-up';
-import IconTextStyleOne from './icon-text-style-one';
-import IconTextStyle from './icon-text-style';
-import IconTextUnderline from './icon-text-underline';
-import IconTextWrapOverflow from './icon-text-wrap-overflow';
-import IconTextWrapTruncation from './icon-text-wrap-truncation';
+import IconSubscript2 from './icon-subscript-2';
+import IconSubscript from './icon-subscript';
+import IconSuperscript2 from './icon-superscript-2';
+import IconSuperscript from './icon-superscript';
+import IconTable2 from './icon-table-2';
+import IconTextDirectionL from './icon-text-direction-l';
+import IconTextDirectionR from './icon-text-direction-r';
+import IconTextSpacing from './icon-text-spacing';
+import IconTextWrap from './icon-text-wrap';
 import IconText from './icon-text';
-import IconTextarea from './icon-textarea';
-import IconTextureTwo from './icon-texture-two';
-import IconTexture from './icon-texture';
-import IconTheSingleShoulderBag from './icon-the-single-shoulder-bag';
-import IconTheater from './icon-theater';
-import IconTheme from './icon-theme';
-import IconThermometerOne from './icon-thermometer-one';
-import IconThermometer from './icon-thermometer';
-import IconThermosCup from './icon-thermos-cup';
-import IconThin from './icon-thin';
-import IconThinkingProblem from './icon-thinking-problem';
-import IconThreeDGlasses from './icon-three-d-glasses';
-import IconThreeHexagons from './icon-three-hexagons';
-import IconThreeKey from './icon-three-key';
-import IconThreeSlashes from './icon-three-slashes';
-import IconThreeThree from './icon-three-three';
-import IconThreeTriangles from './icon-three-triangles';
-import IconThree from './icon-three';
-import IconThumbsDown from './icon-thumbs-down';
-import IconThumbsUp from './icon-thumbs-up';
-import IconThunderbolt from './icon-thunderbolt';
-import IconThunderstormOne from './icon-thunderstorm-one';
-import IconThunderstorm from './icon-thunderstorm';
-import IconTicketOne from './icon-ticket-one';
-import IconTicket from './icon-ticket';
-import IconTicketsChecked from './icon-tickets-checked';
-import IconTicketsOne from './icon-tickets-one';
-import IconTicketsTwo from './icon-tickets-two';
-import IconTigerZodiac from './icon-tiger-zodiac';
-import IconTiktok from './icon-tiktok';
-import IconTime from './icon-time';
-import IconTimedMail from './icon-timed-mail';
-import IconTimeline from './icon-timeline';
-import IconTimer from './icon-timer';
-import IconTipsOne from './icon-tips-one';
-import IconTips from './icon-tips';
-import IconTireSwing from './icon-tire-swing';
-import IconTitleLevel from './icon-title-level';
-import IconToBottomOne from './icon-to-bottom-one';
-import IconToBottom from './icon-to-bottom';
-import IconToLeft from './icon-to-left';
-import IconToRight from './icon-to-right';
-import IconToTopOne from './icon-to-top-one';
-import IconToTop from './icon-to-top';
-import IconToilet from './icon-toilet';
-import IconTomato from './icon-tomato';
-import IconTool from './icon-tool';
-import IconToolkit from './icon-toolkit';
-import IconTopBar from './icon-top-bar';
-import IconTopbuzz from './icon-topbuzz';
-import IconTopicDiscussion from './icon-topic-discussion';
-import IconTopic from './icon-topic';
-import IconTorch from './icon-torch';
-import IconTourBus from './icon-tour-bus';
-import IconTowel from './icon-towel';
-import IconTowerOfBabel from './icon-tower-of-babel';
-import IconTowerOfPisa from './icon-tower-of-pisa';
-import IconTower from './icon-tower';
-import IconToxins from './icon-toxins';
-import IconTrace from './icon-trace';
-import IconTrademark from './icon-trademark';
-import IconTraditionalChineseMedicine from './icon-traditional-chinese-medicine';
-import IconTrain from './icon-train';
-import IconTransactionOrder from './icon-transaction-order';
-import IconTransaction from './icon-transaction';
-import IconTransferData from './icon-transfer-data';
-import IconTransfer from './icon-transfer';
-import IconTransform from './icon-transform';
+import IconTranslate2 from './icon-translate-2';
 import IconTranslate from './icon-translate';
-import IconTranslation from './icon-translation';
-import IconTransport from './icon-transport';
-import IconTransporter from './icon-transporter';
-import IconTrapezoid from './icon-trapezoid';
-import IconTray from './icon-tray';
-import IconTreadmillOne from './icon-treadmill-one';
-import IconTreadmillTwo from './icon-treadmill-two';
-import IconTreadmill from './icon-treadmill';
-import IconTreasureChest from './icon-treasure-chest';
-import IconTreeDiagram from './icon-tree-diagram';
-import IconTreeList from './icon-tree-list';
-import IconTreeOne from './icon-tree-one';
-import IconTreeTwo from './icon-tree-two';
-import IconTree from './icon-tree';
-import IconTrendTwo from './icon-trend-two';
-import IconTrend from './icon-trend';
-import IconTrendingDown from './icon-trending-down';
-import IconTrendingUp from './icon-trending-up';
-import IconTriangleRoundRectangle from './icon-triangle-round-rectangle';
-import IconTriangleRuler from './icon-triangle-ruler';
-import IconTriangle from './icon-triangle';
-import IconTriangularPyramid from './icon-triangular-pyramid';
-import IconTrophy from './icon-trophy';
-import IconTrousersBellBottoms from './icon-trousers-bell-bottoms';
-import IconTruck from './icon-truck';
-import IconTrumpet from './icon-trumpet';
-import IconTrunk from './icon-trunk';
-import IconTub from './icon-tub';
-import IconTuchong from './icon-tuchong';
-import IconTumblr from './icon-tumblr';
-import IconTurkey from './icon-turkey';
-import IconTurnAround from './icon-turn-around';
-import IconTurnOffBluetooth from './icon-turn-off-bluetooth';
-import IconTurnOn from './icon-turn-on';
-import IconTvOne from './icon-tv-one';
-import IconTv from './icon-tv';
-import IconTwitter from './icon-twitter';
-import IconTwoDimensionalCodeOne from './icon-two-dimensional-code-one';
-import IconTwoDimensionalCodeTwo from './icon-two-dimensional-code-two';
-import IconTwoDimensionalCode from './icon-two-dimensional-code';
-import IconTwoEllipses from './icon-two-ellipses';
-import IconTwoFingers from './icon-two-fingers';
-import IconTwoHands from './icon-two-hands';
-import IconTwoKey from './icon-two-key';
-import IconTwoSemicircles from './icon-two-semicircles';
-import IconTwoTrianglesTwo from './icon-two-triangles-two';
-import IconTwoTriangles from './icon-two-triangles';
-import IconTwoTwo from './icon-two-two';
-import IconTwo from './icon-two';
-import IconTypeDrive from './icon-type-drive';
-import IconUDisk from './icon-u-disk';
-import IconUTurnDown from './icon-u-turn-down';
-import IconUTurnLeft from './icon-u-turn-left';
-import IconUTurnRight from './icon-u-turn-right';
-import IconUTurnUp from './icon-u-turn-up';
-import IconUlikecam from './icon-ulikecam';
-import IconUmbrellaOne from './icon-umbrella-one';
-import IconUmbrellaTwo from './icon-umbrella-two';
-import IconUmbrella from './icon-umbrella';
-import IconUndo from './icon-undo';
-import IconUngroup from './icon-ungroup';
-import IconUnicast from './icon-unicast';
-import IconUnionSelection from './icon-union-selection';
-import IconUniversal from './icon-universal';
-import IconUnlike from './icon-unlike';
-import IconUnlink from './icon-unlink';
-import IconUnlockOne from './icon-unlock-one';
-import IconUnlock from './icon-unlock';
-import IconUnorderedList from './icon-unordered-list';
-import IconUpAndDown from './icon-up-and-down';
-import IconUpC from './icon-up-c';
-import IconUpOne from './icon-up-one';
-import IconUpSmall from './icon-up-small';
-import IconUpSquare from './icon-up-square';
-import IconUpTwo from './icon-up-two';
-import IconUp from './icon-up';
-import IconUpdateRotation from './icon-update-rotation';
-import IconUploadComputer from './icon-upload-computer';
-import IconUploadLaptop from './icon-upload-laptop';
-import IconUploadLogs from './icon-upload-logs';
-import IconUploadOne from './icon-upload-one';
-import IconUploadPicture from './icon-upload-picture';
-import IconUploadThree from './icon-upload-three';
-import IconUploadTwo from './icon-upload-two';
-import IconUploadWeb from './icon-upload-web';
-import IconUpload from './icon-upload';
-import IconUpsideDownFace from './icon-upside-down-face';
-import IconUsbMemoryStick from './icon-usb-memory-stick';
-import IconUsbMicroOne from './icon-usb-micro-one';
-import IconUsbMicroTwo from './icon-usb-micro-two';
-import IconUsbOne from './icon-usb-one';
-import IconUsbTypeC from './icon-usb-type-c';
-import IconUsb from './icon-usb';
-import IconUserBusiness from './icon-user-business';
-import IconUserPositioning from './icon-user-positioning';
-import IconUserToUserTransmission from './icon-user-to-user-transmission';
-import IconUser from './icon-user';
-import IconUterus from './icon-uterus';
-import IconVacation from './icon-vacation';
-import IconVacuumCleaner from './icon-vacuum-cleaner';
-import IconVegetableBasket from './icon-vegetable-basket';
-import IconVegetables from './icon-vegetables';
-import IconVerticalSpacingBetweenItems from './icon-vertical-spacing-between-items';
-import IconVerticalTidyUp from './icon-vertical-tidy-up';
-import IconVerticalTimeline from './icon-vertical-timeline';
-import IconVerticallyCentered from './icon-vertically-centered';
-import IconVest from './icon-vest';
-import IconVial from './icon-vial';
-import IconViciaFaba from './icon-vicia-faba';
-import IconVideoConference from './icon-video-conference';
-import IconVideoFile from './icon-video-file';
-import IconVideoOne from './icon-video-one';
-import IconVideoTwo from './icon-video-two';
-import IconVideo from './icon-video';
-import IconVideocameraOne from './icon-videocamera-one';
-import IconVideocamera from './icon-videocamera';
-import IconViencharts from './icon-viencharts';
-import IconViewGridCard from './icon-view-grid-card';
-import IconViewGridDetail from './icon-view-grid-detail';
-import IconViewGridList from './icon-view-grid-list';
-import IconViewList from './icon-view-list';
-import IconViewfinder from './icon-viewfinder';
-import IconVigo from './icon-vigo';
-import IconVipOne from './icon-vip-one';
-import IconVip from './icon-vip';
-import IconVirgo from './icon-virgo';
-import IconVirtualRealityGlasses from './icon-virtual-reality-glasses';
-import IconVoiceInput from './icon-voice-input';
-import IconVoiceMessage from './icon-voice-message';
-import IconVoiceOff from './icon-voice-off';
-import IconVoiceOne from './icon-voice-one';
-import IconVoice from './icon-voice';
-import IconVoicemail from './icon-voicemail';
-import IconVolkswagen from './icon-volkswagen';
-import IconVolleyball from './icon-volleyball';
-import IconVolumeDown from './icon-volume-down';
-import IconVolumeMute from './icon-volume-mute';
-import IconVolumeNotice from './icon-volume-notice';
-import IconVolumeSmall from './icon-volume-small';
-import IconVolumeUp from './icon-volume-up';
-import IconVrGlasses from './icon-vr-glasses';
-import IconWaistline from './icon-waistline';
-import IconWalletOne from './icon-wallet-one';
-import IconWalletThree from './icon-wallet-three';
-import IconWalletTwo from './icon-wallet-two';
-import IconWallet from './icon-wallet';
-import IconWarehousing from './icon-warehousing';
-import IconWashingMachineOne from './icon-washing-machine-one';
-import IconWashingMachine from './icon-washing-machine';
-import IconWatchOne from './icon-watch-one';
-import IconWatch from './icon-watch';
-import IconWaterLevel from './icon-water-level';
-import IconWaterNo from './icon-water-no';
-import IconWaterRateTwo from './icon-water-rate-two';
-import IconWaterRate from './icon-water-rate';
-import IconWater from './icon-water';
-import IconWaterfallsH from './icon-waterfalls-h';
-import IconWaterfallsV from './icon-waterfalls-v';
-import IconWatermelonOne from './icon-watermelon-one';
-import IconWatermelon from './icon-watermelon';
-import IconWaterpoloOne from './icon-waterpolo-one';
-import IconWaterpolo from './icon-waterpolo';
-import IconWavesLeft from './icon-waves-left';
-import IconWavesRight from './icon-waves-right';
-import IconWaves from './icon-waves';
-import IconWearyFace from './icon-weary-face';
-import IconWebPage from './icon-web-page';
-import IconWebcam from './icon-webcam';
-import IconWechat from './icon-wechat';
-import IconWeibo from './icon-weibo';
-import IconWeight from './icon-weight';
-import IconWeightlifting from './icon-weightlifting';
-import IconWeixinCardsOffers from './icon-weixin-cards-offers';
-import IconWeixinFavorites from './icon-weixin-favorites';
-import IconWeixinGames from './icon-weixin-games';
-import IconWeixinMarket from './icon-weixin-market';
-import IconWeixinMiniApp from './icon-weixin-mini-app';
-import IconWeixinPeopleNearby from './icon-weixin-people-nearby';
-import IconWeixinScan from './icon-weixin-scan';
-import IconWeixinSearch from './icon-weixin-search';
-import IconWeixinShake from './icon-weixin-shake';
-import IconWeixinTopStories from './icon-weixin-top-stories';
-import IconWhale from './icon-whale';
-import IconWheelchair from './icon-wheelchair';
-import IconWhirlwind from './icon-whirlwind';
-import IconWhistling from './icon-whistling';
-import IconWholeSiteAccelerator from './icon-whole-site-accelerator';
-import IconWifi from './icon-wifi';
-import IconWindTurbine from './icon-wind-turbine';
-import IconWind from './icon-wind';
-import IconWindmillOne from './icon-windmill-one';
-import IconWindmillTwo from './icon-windmill-two';
-import IconWindmill from './icon-windmill';
-import IconWindows from './icon-windows';
-import IconWingsuitFlying from './icon-wingsuit-flying';
-import IconWinkingFaceWithOpenEyes from './icon-winking-face-with-open-eyes';
-import IconWinkingFace from './icon-winking-face';
-import IconWoman from './icon-woman';
-import IconWomenCoat from './icon-women-coat';
-import IconWomen from './icon-women';
-import IconWoolenHat from './icon-woolen-hat';
-import IconWord from './icon-word';
-import IconWorkbench from './icon-workbench';
-import IconWorker from './icon-worker';
-import IconWorld from './icon-world';
-import IconWorriedFace from './icon-worried-face';
-import IconWrite from './icon-write';
-import IconWritingFluently from './icon-writing-fluently';
-import IconWrongUser from './icon-wrong-user';
-import IconXiaoduHome from './icon-xiaodu-home';
-import IconXiaodu from './icon-xiaodu';
-import IconXigua from './icon-xigua';
-import IconXingfuli from './icon-xingfuli';
-import IconXingtu from './icon-xingtu';
-import IconYep from './icon-yep';
-import IconYoutobe from './icon-youtobe';
-import IconYoutube from './icon-youtube';
-import IconZeroKey from './icon-zero-key';
-import IconZijinyunying from './icon-zijinyunying';
-import IconZip from './icon-zip';
-import IconZoomIn from './icon-zoom-in';
-import IconZoomInternal from './icon-zoom-internal';
-import IconZoomOut from './icon-zoom-out';
-import IconZoom from './icon-zoom';
+import IconUnderline from './icon-underline';
+import IconWubiInput from './icon-wubi-input';
+import Icon24HoursFill from './icon-24-hours-fill';
+import Icon24HoursLine from './icon-24-hours-line';
+import IconAuctionFill from './icon-auction-fill';
+import IconAuctionLine from './icon-auction-line';
+import IconBankCard2Fill from './icon-bank-card-2-fill';
+import IconBankCard2Line from './icon-bank-card-2-line';
+import IconBankCardFill from './icon-bank-card-fill';
+import IconBankCardLine from './icon-bank-card-line';
+import IconBitCoinFill from './icon-bit-coin-fill';
+import IconBitCoinLine from './icon-bit-coin-line';
+import IconBnbFill from './icon-bnb-fill';
+import IconBnbLine from './icon-bnb-line';
+import IconBtcFill from './icon-btc-fill';
+import IconBtcLine from './icon-btc-line';
+import IconCashFill from './icon-cash-fill';
+import IconCashLine from './icon-cash-line';
+import IconCoinFill from './icon-coin-fill';
+import IconCoinLine from './icon-coin-line';
+import IconCoinsFill from './icon-coins-fill';
+import IconCoinsLine from './icon-coins-line';
+import IconCopperCoinFill from './icon-copper-coin-fill';
+import IconCopperCoinLine from './icon-copper-coin-line';
+import IconCopperDiamondFill from './icon-copper-diamond-fill';
+import IconCopperDiamondLine from './icon-copper-diamond-line';
+import IconCoupon2Fill from './icon-coupon-2-fill';
+import IconCoupon2Line from './icon-coupon-2-line';
+import IconCoupon3Fill from './icon-coupon-3-fill';
+import IconCoupon3Line from './icon-coupon-3-line';
+import IconCoupon4Fill from './icon-coupon-4-fill';
+import IconCoupon4Line from './icon-coupon-4-line';
+import IconCoupon5Fill from './icon-coupon-5-fill';
+import IconCoupon5Line from './icon-coupon-5-line';
+import IconCouponFill from './icon-coupon-fill';
+import IconCouponLine from './icon-coupon-line';
+import IconCurrencyFill from './icon-currency-fill';
+import IconCurrencyLine from './icon-currency-line';
+import IconEthFill from './icon-eth-fill';
+import IconEthLine from './icon-eth-line';
+import IconExchangeBoxFill from './icon-exchange-box-fill';
+import IconExchangeBoxLine from './icon-exchange-box-line';
+import IconExchangeCnyFill from './icon-exchange-cny-fill';
+import IconExchangeCnyLine from './icon-exchange-cny-line';
+import IconExchangeDollarFill from './icon-exchange-dollar-fill';
+import IconExchangeDollarLine from './icon-exchange-dollar-line';
+import IconExchangeFill from './icon-exchange-fill';
+import IconExchangeFundsFill from './icon-exchange-funds-fill';
+import IconExchangeFundsLine from './icon-exchange-funds-line';
+import IconExchangeLine from './icon-exchange-line';
+import IconFundsBoxFill from './icon-funds-box-fill';
+import IconFundsBoxLine from './icon-funds-box-line';
+import IconFundsFill from './icon-funds-fill';
+import IconFundsLine from './icon-funds-line';
+import IconGift2Fill from './icon-gift-2-fill';
+import IconGift2Line from './icon-gift-2-line';
+import IconGiftFill from './icon-gift-fill';
+import IconGiftLine from './icon-gift-line';
+import IconHandCoinFill from './icon-hand-coin-fill';
+import IconHandCoinLine from './icon-hand-coin-line';
+import IconHandHeartFill from './icon-hand-heart-fill';
+import IconHandHeartLine from './icon-hand-heart-line';
+import IconIncreaseDecreaseFill from './icon-increase-decrease-fill';
+import IconIncreaseDecreaseLine from './icon-increase-decrease-line';
+import IconMoneyCnyBoxFill from './icon-money-cny-box-fill';
+import IconMoneyCnyBoxLine from './icon-money-cny-box-line';
+import IconMoneyCnyCircleFill from './icon-money-cny-circle-fill';
+import IconMoneyCnyCircleLine from './icon-money-cny-circle-line';
+import IconMoneyDollarBoxFill from './icon-money-dollar-box-fill';
+import IconMoneyDollarBoxLine from './icon-money-dollar-box-line';
+import IconMoneyDollarCircleFill from './icon-money-dollar-circle-fill';
+import IconMoneyDollarCircleLine from './icon-money-dollar-circle-line';
+import IconMoneyEuroBoxFill from './icon-money-euro-box-fill';
+import IconMoneyEuroBoxLine from './icon-money-euro-box-line';
+import IconMoneyEuroCircleFill from './icon-money-euro-circle-fill';
+import IconMoneyEuroCircleLine from './icon-money-euro-circle-line';
+import IconMoneyPoundBoxFill from './icon-money-pound-box-fill';
+import IconMoneyPoundBoxLine from './icon-money-pound-box-line';
+import IconMoneyPoundCircleFill from './icon-money-pound-circle-fill';
+import IconMoneyPoundCircleLine from './icon-money-pound-circle-line';
+import IconMoneyRupeeCircleFill from './icon-money-rupee-circle-fill';
+import IconMoneyRupeeCircleLine from './icon-money-rupee-circle-line';
+import IconNftFill from './icon-nft-fill';
+import IconNftLine from './icon-nft-line';
+import IconP2pFill from './icon-p2p-fill';
+import IconP2pLine from './icon-p2p-line';
+import IconPercentFill from './icon-percent-fill';
+import IconPercentLine from './icon-percent-line';
+import IconPriceTag2Fill from './icon-price-tag-2-fill';
+import IconPriceTag2Line from './icon-price-tag-2-line';
+import IconPriceTag3Fill from './icon-price-tag-3-fill';
+import IconPriceTag3Line from './icon-price-tag-3-line';
+import IconPriceTagFill from './icon-price-tag-fill';
+import IconPriceTagLine from './icon-price-tag-line';
+import IconRedPacketFill from './icon-red-packet-fill';
+import IconRedPacketLine from './icon-red-packet-line';
+import IconRefund2Fill from './icon-refund-2-fill';
+import IconRefund2Line from './icon-refund-2-line';
+import IconRefundFill from './icon-refund-fill';
+import IconRefundLine from './icon-refund-line';
+import IconSafe2Fill from './icon-safe-2-fill';
+import IconSafe2Line from './icon-safe-2-line';
+import IconSafeFill from './icon-safe-fill';
+import IconSafeLine from './icon-safe-line';
+import IconSecurePaymentFill from './icon-secure-payment-fill';
+import IconSecurePaymentLine from './icon-secure-payment-line';
+import IconShoppingBag2Fill from './icon-shopping-bag-2-fill';
+import IconShoppingBag2Line from './icon-shopping-bag-2-line';
+import IconShoppingBag3Fill from './icon-shopping-bag-3-fill';
+import IconShoppingBag3Line from './icon-shopping-bag-3-line';
+import IconShoppingBagFill from './icon-shopping-bag-fill';
+import IconShoppingBagLine from './icon-shopping-bag-line';
+import IconShoppingBasket2Fill from './icon-shopping-basket-2-fill';
+import IconShoppingBasket2Line from './icon-shopping-basket-2-line';
+import IconShoppingBasketFill from './icon-shopping-basket-fill';
+import IconShoppingBasketLine from './icon-shopping-basket-line';
+import IconShoppingCart2Fill from './icon-shopping-cart-2-fill';
+import IconShoppingCart2Line from './icon-shopping-cart-2-line';
+import IconShoppingCartFill from './icon-shopping-cart-fill';
+import IconShoppingCartLine from './icon-shopping-cart-line';
+import IconStockFill from './icon-stock-fill';
+import IconStockLine from './icon-stock-line';
+import IconSwapBoxFill from './icon-swap-box-fill';
+import IconSwapBoxLine from './icon-swap-box-line';
+import IconSwapFill from './icon-swap-fill';
+import IconSwapLine from './icon-swap-line';
+import IconTicket2Fill from './icon-ticket-2-fill';
+import IconTicket2Line from './icon-ticket-2-line';
+import IconTicketFill from './icon-ticket-fill';
+import IconTicketLine from './icon-ticket-line';
+import IconTokenSwapFill from './icon-token-swap-fill';
+import IconTokenSwapLine from './icon-token-swap-line';
+import IconTrophyFill from './icon-trophy-fill';
+import IconTrophyLine from './icon-trophy-line';
+import IconVipCrown2Fill from './icon-vip-crown-2-fill';
+import IconVipCrown2Line from './icon-vip-crown-2-line';
+import IconVipCrownFill from './icon-vip-crown-fill';
+import IconVipCrownLine from './icon-vip-crown-line';
+import IconVipDiamondFill from './icon-vip-diamond-fill';
+import IconVipDiamondLine from './icon-vip-diamond-line';
+import IconVipFill from './icon-vip-fill';
+import IconVipLine from './icon-vip-line';
+import IconWallet2Fill from './icon-wallet-2-fill';
+import IconWallet2Line from './icon-wallet-2-line';
+import IconWallet3Fill from './icon-wallet-3-fill';
+import IconWallet3Line from './icon-wallet-3-line';
+import IconWalletFill from './icon-wallet-fill';
+import IconWalletLine from './icon-wallet-line';
+import IconWaterFlashFill from './icon-water-flash-fill';
+import IconWaterFlashLine from './icon-water-flash-line';
+import IconXrpFill from './icon-xrp-fill';
+import IconXrpLine from './icon-xrp-line';
+import IconXtzFill from './icon-xtz-fill';
+import IconXtzLine from './icon-xtz-line';
+import IconBeerFill from './icon-beer-fill';
+import IconBeerLine from './icon-beer-line';
+import IconBreadFill from './icon-bread-fill';
+import IconBreadLine from './icon-bread-line';
+import IconCake2Fill from './icon-cake-2-fill';
+import IconCake2Line from './icon-cake-2-line';
+import IconCake3Fill from './icon-cake-3-fill';
+import IconCake3Line from './icon-cake-3-line';
+import IconCakeFill from './icon-cake-fill';
+import IconCakeLine from './icon-cake-line';
+import IconCupFill from './icon-cup-fill';
+import IconCupLine from './icon-cup-line';
+import IconDrinksFill from './icon-drinks-fill';
+import IconDrinksLine from './icon-drinks-line';
+import IconGobletFill from './icon-goblet-fill';
+import IconGobletLine from './icon-goblet-line';
+import IconKnifeBloodFill from './icon-knife-blood-fill';
+import IconKnifeBloodLine from './icon-knife-blood-line';
+import IconKnifeFill from './icon-knife-fill';
+import IconKnifeLine from './icon-knife-line';
+import IconRestaurant2Fill from './icon-restaurant-2-fill';
+import IconRestaurant2Line from './icon-restaurant-2-line';
+import IconRestaurantFill from './icon-restaurant-fill';
+import IconRestaurantLine from './icon-restaurant-line';
+import IconBrainFill from './icon-brain-fill';
+import IconBrainLine from './icon-brain-line';
+import IconCapsuleFill from './icon-capsule-fill';
+import IconCapsuleLine from './icon-capsule-line';
+import IconDislikeFill from './icon-dislike-fill';
+import IconDislikeLine from './icon-dislike-line';
+import IconDossierFill from './icon-dossier-fill';
+import IconDossierLine from './icon-dossier-line';
+import IconEmpathizeFill from './icon-empathize-fill';
+import IconEmpathizeLine from './icon-empathize-line';
+import IconFirstAidKitFill from './icon-first-aid-kit-fill';
+import IconFirstAidKitLine from './icon-first-aid-kit-line';
+import IconFlaskFill from './icon-flask-fill';
+import IconFlaskLine from './icon-flask-line';
+import IconHandSanitizerFill from './icon-hand-sanitizer-fill';
+import IconHandSanitizerLine from './icon-hand-sanitizer-line';
+import IconHealthBookFill from './icon-health-book-fill';
+import IconHealthBookLine from './icon-health-book-line';
+import IconHeart2Fill from './icon-heart-2-fill';
+import IconHeart2Line from './icon-heart-2-line';
+import IconHeart3Fill from './icon-heart-3-fill';
+import IconHeart3Line from './icon-heart-3-line';
+import IconHeartAddFill from './icon-heart-add-fill';
+import IconHeartAddLine from './icon-heart-add-line';
+import IconHeartFill from './icon-heart-fill';
+import IconHeartLine from './icon-heart-line';
+import IconHeartPulseFill from './icon-heart-pulse-fill';
+import IconHeartPulseLine from './icon-heart-pulse-line';
+import IconHeartsFill from './icon-hearts-fill';
+import IconHeartsLine from './icon-hearts-line';
+import IconInfraredThermometerFill from './icon-infrared-thermometer-fill';
+import IconInfraredThermometerLine from './icon-infrared-thermometer-line';
+import IconLungsFill from './icon-lungs-fill';
+import IconLungsLine from './icon-lungs-line';
+import IconMedicineBottleFill from './icon-medicine-bottle-fill';
+import IconMedicineBottleLine from './icon-medicine-bottle-line';
+import IconMentalHealthFill from './icon-mental-health-fill';
+import IconMentalHealthLine from './icon-mental-health-line';
+import IconMicroscopeFill from './icon-microscope-fill';
+import IconMicroscopeLine from './icon-microscope-line';
+import IconNurseFill from './icon-nurse-fill';
+import IconNurseLine from './icon-nurse-line';
+import IconPsychotherapyFill from './icon-psychotherapy-fill';
+import IconPsychotherapyLine from './icon-psychotherapy-line';
+import IconPulseFill from './icon-pulse-fill';
+import IconPulseLine from './icon-pulse-line';
+import IconRestTimeFill from './icon-rest-time-fill';
+import IconRestTimeLine from './icon-rest-time-line';
+import IconStethoscopeFill from './icon-stethoscope-fill';
+import IconStethoscopeLine from './icon-stethoscope-line';
+import IconSurgicalMaskFill from './icon-surgical-mask-fill';
+import IconSurgicalMaskLine from './icon-surgical-mask-line';
+import IconSyringeFill from './icon-syringe-fill';
+import IconSyringeLine from './icon-syringe-line';
+import IconTestTubeFill from './icon-test-tube-fill';
+import IconTestTubeLine from './icon-test-tube-line';
+import IconThermometerFill from './icon-thermometer-fill';
+import IconThermometerLine from './icon-thermometer-line';
+import IconVirusFill from './icon-virus-fill';
+import IconVirusLine from './icon-virus-line';
+import IconZzzFill from './icon-zzz-fill';
+import IconZzzLine from './icon-zzz-line';
+import IconAlipayFill from './icon-alipay-fill';
+import IconAlipayLine from './icon-alipay-line';
+import IconAmazonFill from './icon-amazon-fill';
+import IconAmazonLine from './icon-amazon-line';
+import IconAndroidFill from './icon-android-fill';
+import IconAndroidLine from './icon-android-line';
+import IconAngularjsFill from './icon-angularjs-fill';
+import IconAngularjsLine from './icon-angularjs-line';
+import IconAppStoreFill from './icon-app-store-fill';
+import IconAppStoreLine from './icon-app-store-line';
+import IconAppleFill from './icon-apple-fill';
+import IconAppleLine from './icon-apple-line';
+import IconBaiduFill from './icon-baidu-fill';
+import IconBaiduLine from './icon-baidu-line';
+import IconBardFill from './icon-bard-fill';
+import IconBardLine from './icon-bard-line';
+import IconBehanceFill from './icon-behance-fill';
+import IconBehanceLine from './icon-behance-line';
+import IconBilibiliFill from './icon-bilibili-fill';
+import IconBilibiliLine from './icon-bilibili-line';
+import IconBlenderFill from './icon-blender-fill';
+import IconBlenderLine from './icon-blender-line';
+import IconBootstrapFill from './icon-bootstrap-fill';
+import IconBootstrapLine from './icon-bootstrap-line';
+import IconCentosFill from './icon-centos-fill';
+import IconCentosLine from './icon-centos-line';
+import IconChromeFill from './icon-chrome-fill';
+import IconChromeLine from './icon-chrome-line';
+import IconCodepenFill from './icon-codepen-fill';
+import IconCodepenLine from './icon-codepen-line';
+import IconCopilotFill from './icon-copilot-fill';
+import IconCopilotLine from './icon-copilot-line';
+import IconCoreosFill from './icon-coreos-fill';
+import IconCoreosLine from './icon-coreos-line';
+import IconDingdingFill from './icon-dingding-fill';
+import IconDingdingLine from './icon-dingding-line';
+import IconDiscordFill from './icon-discord-fill';
+import IconDiscordLine from './icon-discord-line';
+import IconDisqusFill from './icon-disqus-fill';
+import IconDisqusLine from './icon-disqus-line';
+import IconDoubanFill from './icon-douban-fill';
+import IconDoubanLine from './icon-douban-line';
+import IconDribbbleFill from './icon-dribbble-fill';
+import IconDribbbleLine from './icon-dribbble-line';
+import IconDriveFill from './icon-drive-fill';
+import IconDriveLine from './icon-drive-line';
+import IconDropboxFill from './icon-dropbox-fill';
+import IconDropboxLine from './icon-dropbox-line';
+import IconEdgeFill from './icon-edge-fill';
+import IconEdgeLine from './icon-edge-line';
+import IconEdgeNewFill from './icon-edge-new-fill';
+import IconEdgeNewLine from './icon-edge-new-line';
+import IconEvernoteFill from './icon-evernote-fill';
+import IconEvernoteLine from './icon-evernote-line';
+import IconFacebookBoxFill from './icon-facebook-box-fill';
+import IconFacebookBoxLine from './icon-facebook-box-line';
+import IconFacebookCircleFill from './icon-facebook-circle-fill';
+import IconFacebookCircleLine from './icon-facebook-circle-line';
+import IconFacebookFill from './icon-facebook-fill';
+import IconFacebookLine from './icon-facebook-line';
+import IconFinderFill from './icon-finder-fill';
+import IconFinderLine from './icon-finder-line';
+import IconFirefoxFill from './icon-firefox-fill';
+import IconFirefoxLine from './icon-firefox-line';
+import IconFlickrFill from './icon-flickr-fill';
+import IconFlickrLine from './icon-flickr-line';
+import IconFlutterFill from './icon-flutter-fill';
+import IconFlutterLine from './icon-flutter-line';
+import IconGatsbyFill from './icon-gatsby-fill';
+import IconGatsbyLine from './icon-gatsby-line';
+import IconGithubFill from './icon-github-fill';
+import IconGithubLine from './icon-github-line';
+import IconGitlabFill from './icon-gitlab-fill';
+import IconGitlabLine from './icon-gitlab-line';
+import IconGoogleFill from './icon-google-fill';
+import IconGoogleLine from './icon-google-line';
+import IconGooglePlayFill from './icon-google-play-fill';
+import IconGooglePlayLine from './icon-google-play-line';
+import IconHonorOfKingsFill from './icon-honor-of-kings-fill';
+import IconHonorOfKingsLine from './icon-honor-of-kings-line';
+import IconIeFill from './icon-ie-fill';
+import IconIeLine from './icon-ie-line';
+import IconInstagramFill from './icon-instagram-fill';
+import IconInstagramLine from './icon-instagram-line';
+import IconInvisionFill from './icon-invision-fill';
+import IconInvisionLine from './icon-invision-line';
+import IconKakaoTalkFill from './icon-kakao-talk-fill';
+import IconKakaoTalkLine from './icon-kakao-talk-line';
+import IconKickFill from './icon-kick-fill';
+import IconKickLine from './icon-kick-line';
+import IconLineFill from './icon-line-fill';
+import IconLineLine from './icon-line-line';
+import IconLinkedinBoxFill from './icon-linkedin-box-fill';
+import IconLinkedinBoxLine from './icon-linkedin-box-line';
+import IconLinkedinFill from './icon-linkedin-fill';
+import IconLinkedinLine from './icon-linkedin-line';
+import IconMastercardFill from './icon-mastercard-fill';
+import IconMastercardLine from './icon-mastercard-line';
+import IconMastodonFill from './icon-mastodon-fill';
+import IconMastodonLine from './icon-mastodon-line';
+import IconMediumFill from './icon-medium-fill';
+import IconMediumLine from './icon-medium-line';
+import IconMessengerFill from './icon-messenger-fill';
+import IconMessengerLine from './icon-messenger-line';
+import IconMetaFill from './icon-meta-fill';
+import IconMetaLine from './icon-meta-line';
+import IconMicrosoftFill from './icon-microsoft-fill';
+import IconMicrosoftLine from './icon-microsoft-line';
+import IconMicrosoftLoopFill from './icon-microsoft-loop-fill';
+import IconMicrosoftLoopLine from './icon-microsoft-loop-line';
+import IconMiniProgramFill from './icon-mini-program-fill';
+import IconMiniProgramLine from './icon-mini-program-line';
+import IconNeteaseCloudMusicFill from './icon-netease-cloud-music-fill';
+import IconNeteaseCloudMusicLine from './icon-netease-cloud-music-line';
+import IconNetflixFill from './icon-netflix-fill';
+import IconNetflixLine from './icon-netflix-line';
+import IconNotionFill from './icon-notion-fill';
+import IconNotionLine from './icon-notion-line';
+import IconNpmjsFill from './icon-npmjs-fill';
+import IconNpmjsLine from './icon-npmjs-line';
+import IconOpenSourceFill from './icon-open-source-fill';
+import IconOpenSourceLine from './icon-open-source-line';
+import IconOpenaiFill from './icon-openai-fill';
+import IconOpenaiLine from './icon-openai-line';
+import IconOpenbaseFill from './icon-openbase-fill';
+import IconOpenbaseLine from './icon-openbase-line';
+import IconOperaFill from './icon-opera-fill';
+import IconOperaLine from './icon-opera-line';
+import IconPatreonFill from './icon-patreon-fill';
+import IconPatreonLine from './icon-patreon-line';
+import IconPaypalFill from './icon-paypal-fill';
+import IconPaypalLine from './icon-paypal-line';
+import IconPinterestFill from './icon-pinterest-fill';
+import IconPinterestLine from './icon-pinterest-line';
+import IconPixelfedFill from './icon-pixelfed-fill';
+import IconPixelfedLine from './icon-pixelfed-line';
+import IconPlaystationFill from './icon-playstation-fill';
+import IconPlaystationLine from './icon-playstation-line';
+import IconProductHuntFill from './icon-product-hunt-fill';
+import IconProductHuntLine from './icon-product-hunt-line';
+import IconQqFill from './icon-qq-fill';
+import IconQqLine from './icon-qq-line';
+import IconReactjsFill from './icon-reactjs-fill';
+import IconReactjsLine from './icon-reactjs-line';
+import IconRedditFill from './icon-reddit-fill';
+import IconRedditLine from './icon-reddit-line';
+import IconRemixiconFill from './icon-remixicon-fill';
+import IconRemixiconLine from './icon-remixicon-line';
+import IconSafariFill from './icon-safari-fill';
+import IconSafariLine from './icon-safari-line';
+import IconSkypeFill from './icon-skype-fill';
+import IconSkypeLine from './icon-skype-line';
+import IconSlackFill from './icon-slack-fill';
+import IconSlackLine from './icon-slack-line';
+import IconSnapchatFill from './icon-snapchat-fill';
+import IconSnapchatLine from './icon-snapchat-line';
+import IconSoundcloudFill from './icon-soundcloud-fill';
+import IconSoundcloudLine from './icon-soundcloud-line';
+import IconSpectrumFill from './icon-spectrum-fill';
+import IconSpectrumLine from './icon-spectrum-line';
+import IconSpotifyFill from './icon-spotify-fill';
+import IconSpotifyLine from './icon-spotify-line';
+import IconStackOverflowFill from './icon-stack-overflow-fill';
+import IconStackOverflowLine from './icon-stack-overflow-line';
+import IconStackshareFill from './icon-stackshare-fill';
+import IconStackshareLine from './icon-stackshare-line';
+import IconSteamFill from './icon-steam-fill';
+import IconSteamLine from './icon-steam-line';
+import IconSupabaseFill from './icon-supabase-fill';
+import IconSupabaseLine from './icon-supabase-line';
+import IconSvelteFill from './icon-svelte-fill';
+import IconSvelteLine from './icon-svelte-line';
+import IconSwitchFill from './icon-switch-fill';
+import IconSwitchLine from './icon-switch-line';
+import IconTaobaoFill from './icon-taobao-fill';
+import IconTaobaoLine from './icon-taobao-line';
+import IconTelegramFill from './icon-telegram-fill';
+import IconTelegramLine from './icon-telegram-line';
+import IconThreadsFill from './icon-threads-fill';
+import IconThreadsLine from './icon-threads-line';
+import IconTiktokFill from './icon-tiktok-fill';
+import IconTiktokLine from './icon-tiktok-line';
+import IconTrelloFill from './icon-trello-fill';
+import IconTrelloLine from './icon-trello-line';
+import IconTumblrFill from './icon-tumblr-fill';
+import IconTumblrLine from './icon-tumblr-line';
+import IconTwitchFill from './icon-twitch-fill';
+import IconTwitchLine from './icon-twitch-line';
+import IconTwitterFill from './icon-twitter-fill';
+import IconTwitterLine from './icon-twitter-line';
+import IconTwitterXFill from './icon-twitter-x-fill';
+import IconTwitterXLine from './icon-twitter-x-line';
+import IconUbuntuFill from './icon-ubuntu-fill';
+import IconUbuntuLine from './icon-ubuntu-line';
+import IconUnsplashFill from './icon-unsplash-fill';
+import IconUnsplashLine from './icon-unsplash-line';
+import IconVimeoFill from './icon-vimeo-fill';
+import IconVimeoLine from './icon-vimeo-line';
+import IconVisaFill from './icon-visa-fill';
+import IconVisaLine from './icon-visa-line';
+import IconVkFill from './icon-vk-fill';
+import IconVkLine from './icon-vk-line';
+import IconVuejsFill from './icon-vuejs-fill';
+import IconVuejsLine from './icon-vuejs-line';
+import IconWechat2Fill from './icon-wechat-2-fill';
+import IconWechat2Line from './icon-wechat-2-line';
+import IconWechatChannelsFill from './icon-wechat-channels-fill';
+import IconWechatChannelsLine from './icon-wechat-channels-line';
+import IconWechatFill from './icon-wechat-fill';
+import IconWechatLine from './icon-wechat-line';
+import IconWechatPayFill from './icon-wechat-pay-fill';
+import IconWechatPayLine from './icon-wechat-pay-line';
+import IconWeiboFill from './icon-weibo-fill';
+import IconWeiboLine from './icon-weibo-line';
+import IconWhatsappFill from './icon-whatsapp-fill';
+import IconWhatsappLine from './icon-whatsapp-line';
+import IconWindowsFill from './icon-windows-fill';
+import IconWindowsLine from './icon-windows-line';
+import IconWordpressFill from './icon-wordpress-fill';
+import IconWordpressLine from './icon-wordpress-line';
+import IconXboxFill from './icon-xbox-fill';
+import IconXboxLine from './icon-xbox-line';
+import IconXingFill from './icon-xing-fill';
+import IconXingLine from './icon-xing-line';
+import IconYoutubeFill from './icon-youtube-fill';
+import IconYoutubeLine from './icon-youtube-line';
+import IconYuqueFill from './icon-yuque-fill';
+import IconYuqueLine from './icon-yuque-line';
+import IconZcoolFill from './icon-zcool-fill';
+import IconZcoolLine from './icon-zcool-line';
+import IconZhihuFill from './icon-zhihu-fill';
+import IconZhihuLine from './icon-zhihu-line';
+import IconAnchorFill from './icon-anchor-fill';
+import IconAnchorLine from './icon-anchor-line';
+import IconBarricadeFill from './icon-barricade-fill';
+import IconBarricadeLine from './icon-barricade-line';
+import IconBikeFill from './icon-bike-fill';
+import IconBikeLine from './icon-bike-line';
+import IconBus2Fill from './icon-bus-2-fill';
+import IconBus2Line from './icon-bus-2-line';
+import IconBusFill from './icon-bus-fill';
+import IconBusLine from './icon-bus-line';
+import IconBusWifiFill from './icon-bus-wifi-fill';
+import IconBusWifiLine from './icon-bus-wifi-line';
+import IconCarFill from './icon-car-fill';
+import IconCarLine from './icon-car-line';
+import IconCarWashingFill from './icon-car-washing-fill';
+import IconCarWashingLine from './icon-car-washing-line';
+import IconCaravanFill from './icon-caravan-fill';
+import IconCaravanLine from './icon-caravan-line';
+import IconChargingPile2Fill from './icon-charging-pile-2-fill';
+import IconChargingPile2Line from './icon-charging-pile-2-line';
+import IconChargingPileFill from './icon-charging-pile-fill';
+import IconChargingPileLine from './icon-charging-pile-line';
+import IconChinaRailwayFill from './icon-china-railway-fill';
+import IconChinaRailwayLine from './icon-china-railway-line';
+import IconCompass2Fill from './icon-compass-2-fill';
+import IconCompass2Line from './icon-compass-2-line';
+import IconCompass3Fill from './icon-compass-3-fill';
+import IconCompass3Line from './icon-compass-3-line';
+import IconCompass4Fill from './icon-compass-4-fill';
+import IconCompass4Line from './icon-compass-4-line';
+import IconCompassDiscoverFill from './icon-compass-discover-fill';
+import IconCompassDiscoverLine from './icon-compass-discover-line';
+import IconCompassFill from './icon-compass-fill';
+import IconCompassLine from './icon-compass-line';
+import IconDirectionFill from './icon-direction-fill';
+import IconDirectionLine from './icon-direction-line';
+import IconEBike2Fill from './icon-e-bike-2-fill';
+import IconEBike2Line from './icon-e-bike-2-line';
+import IconEBikeFill from './icon-e-bike-fill';
+import IconEBikeLine from './icon-e-bike-line';
+import IconEarthFill from './icon-earth-fill';
+import IconEarthLine from './icon-earth-line';
+import IconFlightLandFill from './icon-flight-land-fill';
+import IconFlightLandLine from './icon-flight-land-line';
+import IconFlightTakeoffFill from './icon-flight-takeoff-fill';
+import IconFlightTakeoffLine from './icon-flight-takeoff-line';
+import IconFootprintFill from './icon-footprint-fill';
+import IconFootprintLine from './icon-footprint-line';
+import IconGasStationFill from './icon-gas-station-fill';
+import IconGasStationLine from './icon-gas-station-line';
+import IconGlobeFill from './icon-globe-fill';
+import IconGlobeLine from './icon-globe-line';
+import IconGuideFill from './icon-guide-fill';
+import IconGuideLine from './icon-guide-line';
+import IconHotelBedFill from './icon-hotel-bed-fill';
+import IconHotelBedLine from './icon-hotel-bed-line';
+import IconLifebuoyFill from './icon-lifebuoy-fill';
+import IconLifebuoyLine from './icon-lifebuoy-line';
+import IconLuggageCartFill from './icon-luggage-cart-fill';
+import IconLuggageCartLine from './icon-luggage-cart-line';
+import IconLuggageDepositFill from './icon-luggage-deposit-fill';
+import IconLuggageDepositLine from './icon-luggage-deposit-line';
+import IconMap2Fill from './icon-map-2-fill';
+import IconMap2Line from './icon-map-2-line';
+import IconMapFill from './icon-map-fill';
+import IconMapLine from './icon-map-line';
+import IconMapPin2Fill from './icon-map-pin-2-fill';
+import IconMapPin2Line from './icon-map-pin-2-line';
+import IconMapPin3Fill from './icon-map-pin-3-fill';
+import IconMapPin3Line from './icon-map-pin-3-line';
+import IconMapPin4Fill from './icon-map-pin-4-fill';
+import IconMapPin4Line from './icon-map-pin-4-line';
+import IconMapPin5Fill from './icon-map-pin-5-fill';
+import IconMapPin5Line from './icon-map-pin-5-line';
+import IconMapPinAddFill from './icon-map-pin-add-fill';
+import IconMapPinAddLine from './icon-map-pin-add-line';
+import IconMapPinFill from './icon-map-pin-fill';
+import IconMapPinLine from './icon-map-pin-line';
+import IconMapPinRangeFill from './icon-map-pin-range-fill';
+import IconMapPinRangeLine from './icon-map-pin-range-line';
+import IconMapPinTimeFill from './icon-map-pin-time-fill';
+import IconMapPinTimeLine from './icon-map-pin-time-line';
+import IconMapPinUserFill from './icon-map-pin-user-fill';
+import IconMapPinUserLine from './icon-map-pin-user-line';
+import IconMotorbikeFill from './icon-motorbike-fill';
+import IconMotorbikeLine from './icon-motorbike-line';
+import IconNavigationFill from './icon-navigation-fill';
+import IconNavigationLine from './icon-navigation-line';
+import IconOilFill from './icon-oil-fill';
+import IconOilLine from './icon-oil-line';
+import IconParkingBoxFill from './icon-parking-box-fill';
+import IconParkingBoxLine from './icon-parking-box-line';
+import IconParkingFill from './icon-parking-fill';
+import IconParkingLine from './icon-parking-line';
+import IconPassportFill from './icon-passport-fill';
+import IconPassportLine from './icon-passport-line';
+import IconPinDistanceFill from './icon-pin-distance-fill';
+import IconPinDistanceLine from './icon-pin-distance-line';
+import IconPlaneFill from './icon-plane-fill';
+import IconPlaneLine from './icon-plane-line';
+import IconPlanetFill from './icon-planet-fill';
+import IconPlanetLine from './icon-planet-line';
+import IconPoliceCarFill from './icon-police-car-fill';
+import IconPoliceCarLine from './icon-police-car-line';
+import IconPushpin2Fill from './icon-pushpin-2-fill';
+import IconPushpin2Line from './icon-pushpin-2-line';
+import IconPushpinFill from './icon-pushpin-fill';
+import IconPushpinLine from './icon-pushpin-line';
+import IconRidingFill from './icon-riding-fill';
+import IconRidingLine from './icon-riding-line';
+import IconRoadMapFill from './icon-road-map-fill';
+import IconRoadMapLine from './icon-road-map-line';
+import IconRoadsterFill from './icon-roadster-fill';
+import IconRoadsterLine from './icon-roadster-line';
+import IconRocket2Fill from './icon-rocket-2-fill';
+import IconRocket2Line from './icon-rocket-2-line';
+import IconRocketFill from './icon-rocket-fill';
+import IconRocketLine from './icon-rocket-line';
+import IconRouteFill from './icon-route-fill';
+import IconRouteLine from './icon-route-line';
+import IconRunFill from './icon-run-fill';
+import IconRunLine from './icon-run-line';
+import IconSailboatFill from './icon-sailboat-fill';
+import IconSailboatLine from './icon-sailboat-line';
+import IconShip2Fill from './icon-ship-2-fill';
+import IconShip2Line from './icon-ship-2-line';
+import IconShipFill from './icon-ship-fill';
+import IconShipLine from './icon-ship-line';
+import IconSignalTowerFill from './icon-signal-tower-fill';
+import IconSignalTowerLine from './icon-signal-tower-line';
+import IconSpaceShipFill from './icon-space-ship-fill';
+import IconSpaceShipLine from './icon-space-ship-line';
+import IconSteering2Fill from './icon-steering-2-fill';
+import IconSteering2Line from './icon-steering-2-line';
+import IconSteeringFill from './icon-steering-fill';
+import IconSteeringLine from './icon-steering-line';
+import IconSubwayFill from './icon-subway-fill';
+import IconSubwayLine from './icon-subway-line';
+import IconSubwayWifiFill from './icon-subway-wifi-fill';
+import IconSubwayWifiLine from './icon-subway-wifi-line';
+import IconSuitcase2Fill from './icon-suitcase-2-fill';
+import IconSuitcase2Line from './icon-suitcase-2-line';
+import IconSuitcase3Fill from './icon-suitcase-3-fill';
+import IconSuitcase3Line from './icon-suitcase-3-line';
+import IconSuitcaseFill from './icon-suitcase-fill';
+import IconSuitcaseLine from './icon-suitcase-line';
+import IconTakeawayFill from './icon-takeaway-fill';
+import IconTakeawayLine from './icon-takeaway-line';
+import IconTaxiFill from './icon-taxi-fill';
+import IconTaxiLine from './icon-taxi-line';
+import IconTaxiWifiFill from './icon-taxi-wifi-fill';
+import IconTaxiWifiLine from './icon-taxi-wifi-line';
+import IconTrafficLightFill from './icon-traffic-light-fill';
+import IconTrafficLightLine from './icon-traffic-light-line';
+import IconTrainFill from './icon-train-fill';
+import IconTrainLine from './icon-train-line';
+import IconTrainWifiFill from './icon-train-wifi-fill';
+import IconTrainWifiLine from './icon-train-wifi-line';
+import IconTreasureMapFill from './icon-treasure-map-fill';
+import IconTreasureMapLine from './icon-treasure-map-line';
+import IconTruckFill from './icon-truck-fill';
+import IconTruckLine from './icon-truck-line';
+import IconUnpinFill from './icon-unpin-fill';
+import IconUnpinLine from './icon-unpin-line';
+import IconWalkFill from './icon-walk-fill';
+import IconWalkLine from './icon-walk-line';
+import Icon4kFill from './icon-4k-fill';
+import Icon4kLine from './icon-4k-line';
+import IconAlbumFill from './icon-album-fill';
+import IconAlbumLine from './icon-album-line';
+import IconAspectRatioFill from './icon-aspect-ratio-fill';
+import IconAspectRatioLine from './icon-aspect-ratio-line';
+import IconBroadcastFill from './icon-broadcast-fill';
+import IconBroadcastLine from './icon-broadcast-line';
+import IconCamera2Fill from './icon-camera-2-fill';
+import IconCamera2Line from './icon-camera-2-line';
+import IconCamera3Fill from './icon-camera-3-fill';
+import IconCamera3Line from './icon-camera-3-line';
+import IconCameraFill from './icon-camera-fill';
+import IconCameraLensFill from './icon-camera-lens-fill';
+import IconCameraLensLine from './icon-camera-lens-line';
+import IconCameraLine from './icon-camera-line';
+import IconCameraOffFill from './icon-camera-off-fill';
+import IconCameraOffLine from './icon-camera-off-line';
+import IconCameraSwitchFill from './icon-camera-switch-fill';
+import IconCameraSwitchLine from './icon-camera-switch-line';
+import IconClapperboardFill from './icon-clapperboard-fill';
+import IconClapperboardLine from './icon-clapperboard-line';
+import IconClosedCaptioningFill from './icon-closed-captioning-fill';
+import IconClosedCaptioningLine from './icon-closed-captioning-line';
+import IconDiscFill from './icon-disc-fill';
+import IconDiscLine from './icon-disc-line';
+import IconDvFill from './icon-dv-fill';
+import IconDvLine from './icon-dv-line';
+import IconDvdFill from './icon-dvd-fill';
+import IconDvdLine from './icon-dvd-line';
+import IconEjectFill from './icon-eject-fill';
+import IconEjectLine from './icon-eject-line';
+import IconEqualizer2Fill from './icon-equalizer-2-fill';
+import IconEqualizer2Line from './icon-equalizer-2-line';
+import IconEqualizer3Fill from './icon-equalizer-3-fill';
+import IconEqualizer3Line from './icon-equalizer-3-line';
+import IconEqualizerFill from './icon-equalizer-fill';
+import IconEqualizerLine from './icon-equalizer-line';
+import IconFilmFill from './icon-film-fill';
+import IconFilmLine from './icon-film-line';
+import IconForward10Fill from './icon-forward-10-fill';
+import IconForward10Line from './icon-forward-10-line';
+import IconForward15Fill from './icon-forward-15-fill';
+import IconForward15Line from './icon-forward-15-line';
+import IconForward30Fill from './icon-forward-30-fill';
+import IconForward30Line from './icon-forward-30-line';
+import IconForward5Fill from './icon-forward-5-fill';
+import IconForward5Line from './icon-forward-5-line';
+import IconFullscreenExitFill from './icon-fullscreen-exit-fill';
+import IconFullscreenExitLine from './icon-fullscreen-exit-line';
+import IconFullscreenFill from './icon-fullscreen-fill';
+import IconFullscreenLine from './icon-fullscreen-line';
+import IconGalleryFill from './icon-gallery-fill';
+import IconGalleryLine from './icon-gallery-line';
+import IconGalleryUploadFill from './icon-gallery-upload-fill';
+import IconGalleryUploadLine from './icon-gallery-upload-line';
+import IconHdFill from './icon-hd-fill';
+import IconHdLine from './icon-hd-line';
+import IconHeadphoneFill from './icon-headphone-fill';
+import IconHeadphoneLine from './icon-headphone-line';
+import IconHqFill from './icon-hq-fill';
+import IconHqLine from './icon-hq-line';
+import IconImage2Fill from './icon-image-2-fill';
+import IconImage2Line from './icon-image-2-line';
+import IconImageAddFill from './icon-image-add-fill';
+import IconImageAddLine from './icon-image-add-line';
+import IconImageCircleFill from './icon-image-circle-fill';
+import IconImageCircleLine from './icon-image-circle-line';
+import IconImageEditFill from './icon-image-edit-fill';
+import IconImageEditLine from './icon-image-edit-line';
+import IconImageFill from './icon-image-fill';
+import IconImageLine from './icon-image-line';
+import IconLandscapeFill from './icon-landscape-fill';
+import IconLandscapeLine from './icon-landscape-line';
+import IconLiveFill from './icon-live-fill';
+import IconLiveLine from './icon-live-line';
+import IconMemoriesFill from './icon-memories-fill';
+import IconMemoriesLine from './icon-memories-line';
+import IconMic2Fill from './icon-mic-2-fill';
+import IconMic2Line from './icon-mic-2-line';
+import IconMicFill from './icon-mic-fill';
+import IconMicLine from './icon-mic-line';
+import IconMicOffFill from './icon-mic-off-fill';
+import IconMicOffLine from './icon-mic-off-line';
+import IconMovie2Fill from './icon-movie-2-fill';
+import IconMovie2Line from './icon-movie-2-line';
+import IconMovieFill from './icon-movie-fill';
+import IconMovieLine from './icon-movie-line';
+import IconMusic2Fill from './icon-music-2-fill';
+import IconMusic2Line from './icon-music-2-line';
+import IconMusicFill from './icon-music-fill';
+import IconMusicLine from './icon-music-line';
+import IconMvFill from './icon-mv-fill';
+import IconMvLine from './icon-mv-line';
+import IconNotification2Fill from './icon-notification-2-fill';
+import IconNotification2Line from './icon-notification-2-line';
+import IconNotification3Fill from './icon-notification-3-fill';
+import IconNotification3Line from './icon-notification-3-line';
+import IconNotification4Fill from './icon-notification-4-fill';
+import IconNotification4Line from './icon-notification-4-line';
+import IconNotificationFill from './icon-notification-fill';
+import IconNotificationLine from './icon-notification-line';
+import IconNotificationOffFill from './icon-notification-off-fill';
+import IconNotificationOffLine from './icon-notification-off-line';
+import IconOrderPlayFill from './icon-order-play-fill';
+import IconOrderPlayLine from './icon-order-play-line';
+import IconPauseCircleFill from './icon-pause-circle-fill';
+import IconPauseCircleLine from './icon-pause-circle-line';
+import IconPauseFill from './icon-pause-fill';
+import IconPauseLine from './icon-pause-line';
+import IconPauseMiniFill from './icon-pause-mini-fill';
+import IconPauseMiniLine from './icon-pause-mini-line';
+import IconPhoneCameraFill from './icon-phone-camera-fill';
+import IconPhoneCameraLine from './icon-phone-camera-line';
+import IconPictureInPicture2Fill from './icon-picture-in-picture-2-fill';
+import IconPictureInPicture2Line from './icon-picture-in-picture-2-line';
+import IconPictureInPictureExitFill from './icon-picture-in-picture-exit-fill';
+import IconPictureInPictureExitLine from './icon-picture-in-picture-exit-line';
+import IconPictureInPictureFill from './icon-picture-in-picture-fill';
+import IconPictureInPictureLine from './icon-picture-in-picture-line';
+import IconPlayCircleFill from './icon-play-circle-fill';
+import IconPlayCircleLine from './icon-play-circle-line';
+import IconPlayFill from './icon-play-fill';
+import IconPlayLine from './icon-play-line';
+import IconPlayList2Fill from './icon-play-list-2-fill';
+import IconPlayList2Line from './icon-play-list-2-line';
+import IconPlayListAddFill from './icon-play-list-add-fill';
+import IconPlayListAddLine from './icon-play-list-add-line';
+import IconPlayListFill from './icon-play-list-fill';
+import IconPlayListLine from './icon-play-list-line';
+import IconPlayMiniFill from './icon-play-mini-fill';
+import IconPlayMiniLine from './icon-play-mini-line';
+import IconPolaroid2Fill from './icon-polaroid-2-fill';
+import IconPolaroid2Line from './icon-polaroid-2-line';
+import IconPolaroidFill from './icon-polaroid-fill';
+import IconPolaroidLine from './icon-polaroid-line';
+import IconRadio2Fill from './icon-radio-2-fill';
+import IconRadio2Line from './icon-radio-2-line';
+import IconRadioFill from './icon-radio-fill';
+import IconRadioLine from './icon-radio-line';
+import IconRecordCircleFill from './icon-record-circle-fill';
+import IconRecordCircleLine from './icon-record-circle-line';
+import IconRepeat2Fill from './icon-repeat-2-fill';
+import IconRepeat2Line from './icon-repeat-2-line';
+import IconRepeatFill from './icon-repeat-fill';
+import IconRepeatLine from './icon-repeat-line';
+import IconRepeatOneFill from './icon-repeat-one-fill';
+import IconRepeatOneLine from './icon-repeat-one-line';
+import IconReplay10Fill from './icon-replay-10-fill';
+import IconReplay10Line from './icon-replay-10-line';
+import IconReplay15Fill from './icon-replay-15-fill';
+import IconReplay15Line from './icon-replay-15-line';
+import IconReplay30Fill from './icon-replay-30-fill';
+import IconReplay30Line from './icon-replay-30-line';
+import IconReplay5Fill from './icon-replay-5-fill';
+import IconReplay5Line from './icon-replay-5-line';
+import IconRewindFill from './icon-rewind-fill';
+import IconRewindLine from './icon-rewind-line';
+import IconRewindMiniFill from './icon-rewind-mini-fill';
+import IconRewindMiniLine from './icon-rewind-mini-line';
+import IconRhythmFill from './icon-rhythm-fill';
+import IconRhythmLine from './icon-rhythm-line';
+import IconShuffleFill from './icon-shuffle-fill';
+import IconShuffleLine from './icon-shuffle-line';
+import IconSkipBackFill from './icon-skip-back-fill';
+import IconSkipBackLine from './icon-skip-back-line';
+import IconSkipBackMiniFill from './icon-skip-back-mini-fill';
+import IconSkipBackMiniLine from './icon-skip-back-mini-line';
+import IconSkipForwardFill from './icon-skip-forward-fill';
+import IconSkipForwardLine from './icon-skip-forward-line';
+import IconSkipForwardMiniFill from './icon-skip-forward-mini-fill';
+import IconSkipForwardMiniLine from './icon-skip-forward-mini-line';
+import IconSlowDownFill from './icon-slow-down-fill';
+import IconSlowDownLine from './icon-slow-down-line';
+import IconSoundModuleFill from './icon-sound-module-fill';
+import IconSoundModuleLine from './icon-sound-module-line';
+import IconSpeaker2Fill from './icon-speaker-2-fill';
+import IconSpeaker2Line from './icon-speaker-2-line';
+import IconSpeaker3Fill from './icon-speaker-3-fill';
+import IconSpeaker3Line from './icon-speaker-3-line';
+import IconSpeakerFill from './icon-speaker-fill';
+import IconSpeakerLine from './icon-speaker-line';
+import IconSpeedFill from './icon-speed-fill';
+import IconSpeedLine from './icon-speed-line';
+import IconSpeedMiniFill from './icon-speed-mini-fill';
+import IconSpeedMiniLine from './icon-speed-mini-line';
+import IconSpeedUpFill from './icon-speed-up-fill';
+import IconSpeedUpLine from './icon-speed-up-line';
+import IconStopCircleFill from './icon-stop-circle-fill';
+import IconStopCircleLine from './icon-stop-circle-line';
+import IconStopFill from './icon-stop-fill';
+import IconStopLine from './icon-stop-line';
+import IconStopMiniFill from './icon-stop-mini-fill';
+import IconStopMiniLine from './icon-stop-mini-line';
+import IconSurroundSoundFill from './icon-surround-sound-fill';
+import IconSurroundSoundLine from './icon-surround-sound-line';
+import IconTapeFill from './icon-tape-fill';
+import IconTapeLine from './icon-tape-line';
+import IconVideoAddFill from './icon-video-add-fill';
+import IconVideoAddLine from './icon-video-add-line';
+import IconVideoDownloadFill from './icon-video-download-fill';
+import IconVideoDownloadLine from './icon-video-download-line';
+import IconVideoFill from './icon-video-fill';
+import IconVideoLine from './icon-video-line';
+import IconVideoUploadFill from './icon-video-upload-fill';
+import IconVideoUploadLine from './icon-video-upload-line';
+import IconVidicon2Fill from './icon-vidicon-2-fill';
+import IconVidicon2Line from './icon-vidicon-2-line';
+import IconVidiconFill from './icon-vidicon-fill';
+import IconVidiconLine from './icon-vidicon-line';
+import IconVoiceprintFill from './icon-voiceprint-fill';
+import IconVoiceprintLine from './icon-voiceprint-line';
+import IconVolumeDownFill from './icon-volume-down-fill';
+import IconVolumeDownLine from './icon-volume-down-line';
+import IconVolumeMuteFill from './icon-volume-mute-fill';
+import IconVolumeMuteLine from './icon-volume-mute-line';
+import IconVolumeOffVibrateFill from './icon-volume-off-vibrate-fill';
+import IconVolumeOffVibrateLine from './icon-volume-off-vibrate-line';
+import IconVolumeUpFill from './icon-volume-up-fill';
+import IconVolumeUpLine from './icon-volume-up-line';
+import IconVolumeVibrateFill from './icon-volume-vibrate-fill';
+import IconVolumeVibrateLine from './icon-volume-vibrate-line';
+import IconWebcamFill from './icon-webcam-fill';
+import IconWebcamLine from './icon-webcam-line';
+import IconArmchairFill from './icon-armchair-fill';
+import IconArmchairLine from './icon-armchair-line';
+import IconBasketballFill from './icon-basketball-fill';
+import IconBasketballLine from './icon-basketball-line';
+import IconBellFill from './icon-bell-fill';
+import IconBellLine from './icon-bell-line';
+import IconBilliardsFill from './icon-billiards-fill';
+import IconBilliardsLine from './icon-billiards-line';
+import IconBox1Fill from './icon-box-1-fill';
+import IconBox1Line from './icon-box-1-line';
+import IconBox2Fill from './icon-box-2-fill';
+import IconBox2Line from './icon-box-2-line';
+import IconBox3Fill from './icon-box-3-fill';
+import IconBox3Line from './icon-box-3-line';
+import IconBoxingFill from './icon-boxing-fill';
+import IconBoxingLine from './icon-boxing-line';
+import IconCactusFill from './icon-cactus-fill';
+import IconCactusLine from './icon-cactus-line';
+import IconCandleFill from './icon-candle-fill';
+import IconCandleLine from './icon-candle-line';
+import IconCharacterRecognitionFill from './icon-character-recognition-fill';
+import IconCharacterRecognitionLine from './icon-character-recognition-line';
+import IconCrossFill from './icon-cross-fill';
+import IconCrossLine from './icon-cross-line';
+import IconDice1Fill from './icon-dice-1-fill';
+import IconDice1Line from './icon-dice-1-line';
+import IconDice2Fill from './icon-dice-2-fill';
+import IconDice2Line from './icon-dice-2-line';
+import IconDice3Fill from './icon-dice-3-fill';
+import IconDice3Line from './icon-dice-3-line';
+import IconDice4Fill from './icon-dice-4-fill';
+import IconDice4Line from './icon-dice-4-line';
+import IconDice5Fill from './icon-dice-5-fill';
+import IconDice5Line from './icon-dice-5-line';
+import IconDice6Fill from './icon-dice-6-fill';
+import IconDice6Line from './icon-dice-6-line';
+import IconDiceFill from './icon-dice-fill';
+import IconDiceLine from './icon-dice-line';
+import IconDoorClosedFill from './icon-door-closed-fill';
+import IconDoorClosedLine from './icon-door-closed-line';
+import IconDoorFill from './icon-door-fill';
+import IconDoorLine from './icon-door-line';
+import IconDoorLockBoxFill from './icon-door-lock-box-fill';
+import IconDoorLockBoxLine from './icon-door-lock-box-line';
+import IconDoorLockFill from './icon-door-lock-fill';
+import IconDoorLockLine from './icon-door-lock-line';
+import IconDoorOpenFill from './icon-door-open-fill';
+import IconDoorOpenLine from './icon-door-open-line';
+import IconFlowerFill from './icon-flower-fill';
+import IconFlowerLine from './icon-flower-line';
+import IconFootballFill from './icon-football-fill';
+import IconFootballLine from './icon-football-line';
+import IconFridgeFill from './icon-fridge-fill';
+import IconFridgeLine from './icon-fridge-line';
+import IconGameFill from './icon-game-fill';
+import IconGameLine from './icon-game-line';
+import IconGlasses2Fill from './icon-glasses-2-fill';
+import IconGlasses2Line from './icon-glasses-2-line';
+import IconGlassesFill from './icon-glasses-fill';
+import IconGlassesLine from './icon-glasses-line';
+import IconGogglesFill from './icon-goggles-fill';
+import IconGogglesLine from './icon-goggles-line';
+import IconGraduationCapFill from './icon-graduation-cap-fill';
+import IconGraduationCapLine from './icon-graduation-cap-line';
+import IconHandbagFill from './icon-handbag-fill';
+import IconHandbagLine from './icon-handbag-line';
+import IconInfinityFill from './icon-infinity-fill';
+import IconInfinityLine from './icon-infinity-line';
+import IconKey2Fill from './icon-key-2-fill';
+import IconKey2Line from './icon-key-2-line';
+import IconKeyFill from './icon-key-fill';
+import IconKeyLine from './icon-key-line';
+import IconLeafFill from './icon-leaf-fill';
+import IconLeafLine from './icon-leaf-line';
+import IconLightbulbFill from './icon-lightbulb-fill';
+import IconLightbulbFlashFill from './icon-lightbulb-flash-fill';
+import IconLightbulbFlashLine from './icon-lightbulb-flash-line';
+import IconLightbulbLine from './icon-lightbulb-line';
+import IconOutlet2Fill from './icon-outlet-2-fill';
+import IconOutlet2Line from './icon-outlet-2-line';
+import IconOutletFill from './icon-outlet-fill';
+import IconOutletLine from './icon-outlet-line';
+import IconPingPongFill from './icon-ping-pong-fill';
+import IconPingPongLine from './icon-ping-pong-line';
+import IconPlantFill from './icon-plant-fill';
+import IconPlantLine from './icon-plant-line';
+import IconPlug2Fill from './icon-plug-2-fill';
+import IconPlug2Line from './icon-plug-2-line';
+import IconPlugFill from './icon-plug-fill';
+import IconPlugLine from './icon-plug-line';
+import IconRecycleFill from './icon-recycle-fill';
+import IconRecycleLine from './icon-recycle-line';
+import IconReservedFill from './icon-reserved-fill';
+import IconReservedLine from './icon-reserved-line';
+import IconScales2Fill from './icon-scales-2-fill';
+import IconScales2Line from './icon-scales-2-line';
+import IconScales3Fill from './icon-scales-3-fill';
+import IconScales3Line from './icon-scales-3-line';
+import IconScalesFill from './icon-scales-fill';
+import IconScalesLine from './icon-scales-line';
+import IconSeedlingFill from './icon-seedling-fill';
+import IconSeedlingLine from './icon-seedling-line';
+import IconShirtFill from './icon-shirt-fill';
+import IconShirtLine from './icon-shirt-line';
+import IconSofaFill from './icon-sofa-fill';
+import IconSofaLine from './icon-sofa-line';
+import IconSwordFill from './icon-sword-fill';
+import IconSwordLine from './icon-sword-line';
+import IconTShirt2Fill from './icon-t-shirt-2-fill';
+import IconTShirt2Line from './icon-t-shirt-2-line';
+import IconTShirtAirFill from './icon-t-shirt-air-fill';
+import IconTShirtAirLine from './icon-t-shirt-air-line';
+import IconTShirtFill from './icon-t-shirt-fill';
+import IconTShirtLine from './icon-t-shirt-line';
+import IconTreeFill from './icon-tree-fill';
+import IconTreeLine from './icon-tree-line';
+import IconUmbrellaFill from './icon-umbrella-fill';
+import IconUmbrellaLine from './icon-umbrella-line';
+import IconVoiceRecognitionFill from './icon-voice-recognition-fill';
+import IconVoiceRecognitionLine from './icon-voice-recognition-line';
+import IconWheelchairFill from './icon-wheelchair-fill';
+import IconWheelchairLine from './icon-wheelchair-line';
+import IconAddBoxFill from './icon-add-box-fill';
+import IconAddBoxLine from './icon-add-box-line';
+import IconAddCircleFill from './icon-add-circle-fill';
+import IconAddCircleLine from './icon-add-circle-line';
+import IconAddFill from './icon-add-fill';
+import IconAddLine from './icon-add-line';
+import IconAlarmFill from './icon-alarm-fill';
+import IconAlarmLine from './icon-alarm-line';
+import IconAlarmWarningFill from './icon-alarm-warning-fill';
+import IconAlarmWarningLine from './icon-alarm-warning-line';
+import IconAlertFill from './icon-alert-fill';
+import IconAlertLine from './icon-alert-line';
+import IconApps2Fill from './icon-apps-2-fill';
+import IconApps2Line from './icon-apps-2-line';
+import IconAppsFill from './icon-apps-fill';
+import IconAppsLine from './icon-apps-line';
+import IconCheckDoubleFill from './icon-check-double-fill';
+import IconCheckDoubleLine from './icon-check-double-line';
+import IconCheckFill from './icon-check-fill';
+import IconCheckLine from './icon-check-line';
+import IconCheckboxBlankCircleFill from './icon-checkbox-blank-circle-fill';
+import IconCheckboxBlankCircleLine from './icon-checkbox-blank-circle-line';
+import IconCheckboxBlankFill from './icon-checkbox-blank-fill';
+import IconCheckboxBlankLine from './icon-checkbox-blank-line';
+import IconCheckboxCircleFill from './icon-checkbox-circle-fill';
+import IconCheckboxCircleLine from './icon-checkbox-circle-line';
+import IconCheckboxFill from './icon-checkbox-fill';
+import IconCheckboxIndeterminateFill from './icon-checkbox-indeterminate-fill';
+import IconCheckboxIndeterminateLine from './icon-checkbox-indeterminate-line';
+import IconCheckboxLine from './icon-checkbox-line';
+import IconCheckboxMultipleBlankFill from './icon-checkbox-multiple-blank-fill';
+import IconCheckboxMultipleBlankLine from './icon-checkbox-multiple-blank-line';
+import IconCheckboxMultipleFill from './icon-checkbox-multiple-fill';
+import IconCheckboxMultipleLine from './icon-checkbox-multiple-line';
+import IconCloseCircleFill from './icon-close-circle-fill';
+import IconCloseCircleLine from './icon-close-circle-line';
+import IconCloseFill from './icon-close-fill';
+import IconCloseLine from './icon-close-line';
+import IconDashboardFill from './icon-dashboard-fill';
+import IconDashboardLine from './icon-dashboard-line';
+import IconDeleteBack2Fill from './icon-delete-back-2-fill';
+import IconDeleteBack2Line from './icon-delete-back-2-line';
+import IconDeleteBackFill from './icon-delete-back-fill';
+import IconDeleteBackLine from './icon-delete-back-line';
+import IconDeleteBin2Fill from './icon-delete-bin-2-fill';
+import IconDeleteBin2Line from './icon-delete-bin-2-line';
+import IconDeleteBin3Fill from './icon-delete-bin-3-fill';
+import IconDeleteBin3Line from './icon-delete-bin-3-line';
+import IconDeleteBin4Fill from './icon-delete-bin-4-fill';
+import IconDeleteBin4Line from './icon-delete-bin-4-line';
+import IconDeleteBin5Fill from './icon-delete-bin-5-fill';
+import IconDeleteBin5Line from './icon-delete-bin-5-line';
+import IconDeleteBin6Fill from './icon-delete-bin-6-fill';
+import IconDeleteBin6Line from './icon-delete-bin-6-line';
+import IconDeleteBin7Fill from './icon-delete-bin-7-fill';
+import IconDeleteBin7Line from './icon-delete-bin-7-line';
+import IconDeleteBinFill from './icon-delete-bin-fill';
+import IconDeleteBinLine from './icon-delete-bin-line';
+import IconDivideFill from './icon-divide-fill';
+import IconDivideLine from './icon-divide-line';
+import IconDownload2Fill from './icon-download-2-fill';
+import IconDownload2Line from './icon-download-2-line';
+import IconDownloadCloud2Fill from './icon-download-cloud-2-fill';
+import IconDownloadCloud2Line from './icon-download-cloud-2-line';
+import IconDownloadCloudFill from './icon-download-cloud-fill';
+import IconDownloadCloudLine from './icon-download-cloud-line';
+import IconDownloadFill from './icon-download-fill';
+import IconDownloadLine from './icon-download-line';
+import IconEqualFill from './icon-equal-fill';
+import IconEqualLine from './icon-equal-line';
+import IconErrorWarningFill from './icon-error-warning-fill';
+import IconErrorWarningLine from './icon-error-warning-line';
+import IconExternalLinkFill from './icon-external-link-fill';
+import IconExternalLinkLine from './icon-external-link-line';
+import IconEye2Fill from './icon-eye-2-fill';
+import IconEye2Line from './icon-eye-2-line';
+import IconEyeCloseFill from './icon-eye-close-fill';
+import IconEyeCloseLine from './icon-eye-close-line';
+import IconEyeFill from './icon-eye-fill';
+import IconEyeLine from './icon-eye-line';
+import IconEyeOffFill from './icon-eye-off-fill';
+import IconEyeOffLine from './icon-eye-off-line';
+import IconFilter2Fill from './icon-filter-2-fill';
+import IconFilter2Line from './icon-filter-2-line';
+import IconFilter3Fill from './icon-filter-3-fill';
+import IconFilter3Line from './icon-filter-3-line';
+import IconFilterFill from './icon-filter-fill';
+import IconFilterLine from './icon-filter-line';
+import IconFilterOffFill from './icon-filter-off-fill';
+import IconFilterOffLine from './icon-filter-off-line';
+import IconFindReplaceFill from './icon-find-replace-fill';
+import IconFindReplaceLine from './icon-find-replace-line';
+import IconForbid2Fill from './icon-forbid-2-fill';
+import IconForbid2Line from './icon-forbid-2-line';
+import IconForbidFill from './icon-forbid-fill';
+import IconForbidLine from './icon-forbid-line';
+import IconFunctionFill from './icon-function-fill';
+import IconFunctionLine from './icon-function-line';
+import IconHistoryFill from './icon-history-fill';
+import IconHistoryLine from './icon-history-line';
+import IconHourglass2Fill from './icon-hourglass-2-fill';
+import IconHourglass2Line from './icon-hourglass-2-line';
+import IconHourglassFill from './icon-hourglass-fill';
+import IconHourglassLine from './icon-hourglass-line';
+import IconIndeterminateCircleFill from './icon-indeterminate-circle-fill';
+import IconIndeterminateCircleLine from './icon-indeterminate-circle-line';
+import IconInformationFill from './icon-information-fill';
+import IconInformationLine from './icon-information-line';
+import IconListSettingsFill from './icon-list-settings-fill';
+import IconListSettingsLine from './icon-list-settings-line';
+import IconLoader2Fill from './icon-loader-2-fill';
+import IconLoader2Line from './icon-loader-2-line';
+import IconLoader3Fill from './icon-loader-3-fill';
+import IconLoader3Line from './icon-loader-3-line';
+import IconLoader4Fill from './icon-loader-4-fill';
+import IconLoader4Line from './icon-loader-4-line';
+import IconLoader5Fill from './icon-loader-5-fill';
+import IconLoader5Line from './icon-loader-5-line';
+import IconLoaderFill from './icon-loader-fill';
+import IconLoaderLine from './icon-loader-line';
+import IconLock2Fill from './icon-lock-2-fill';
+import IconLock2Line from './icon-lock-2-line';
+import IconLockFill from './icon-lock-fill';
+import IconLockLine from './icon-lock-line';
+import IconLockPasswordFill from './icon-lock-password-fill';
+import IconLockPasswordLine from './icon-lock-password-line';
+import IconLockUnlockFill from './icon-lock-unlock-fill';
+import IconLockUnlockLine from './icon-lock-unlock-line';
+import IconLoginBoxFill from './icon-login-box-fill';
+import IconLoginBoxLine from './icon-login-box-line';
+import IconLoginCircleFill from './icon-login-circle-fill';
+import IconLoginCircleLine from './icon-login-circle-line';
+import IconLogoutBoxFill from './icon-logout-box-fill';
+import IconLogoutBoxLine from './icon-logout-box-line';
+import IconLogoutBoxRFill from './icon-logout-box-r-fill';
+import IconLogoutBoxRLine from './icon-logout-box-r-line';
+import IconLogoutCircleFill from './icon-logout-circle-fill';
+import IconLogoutCircleLine from './icon-logout-circle-line';
+import IconLogoutCircleRFill from './icon-logout-circle-r-fill';
+import IconLogoutCircleRLine from './icon-logout-circle-r-line';
+import IconLoopLeftFill from './icon-loop-left-fill';
+import IconLoopLeftLine from './icon-loop-left-line';
+import IconLoopRightFill from './icon-loop-right-fill';
+import IconLoopRightLine from './icon-loop-right-line';
+import IconMenu2Fill from './icon-menu-2-fill';
+import IconMenu2Line from './icon-menu-2-line';
+import IconMenu3Fill from './icon-menu-3-fill';
+import IconMenu3Line from './icon-menu-3-line';
+import IconMenu4Fill from './icon-menu-4-fill';
+import IconMenu4Line from './icon-menu-4-line';
+import IconMenu5Fill from './icon-menu-5-fill';
+import IconMenu5Line from './icon-menu-5-line';
+import IconMenuAddFill from './icon-menu-add-fill';
+import IconMenuAddLine from './icon-menu-add-line';
+import IconMenuFill from './icon-menu-fill';
+import IconMenuFoldFill from './icon-menu-fold-fill';
+import IconMenuFoldLine from './icon-menu-fold-line';
+import IconMenuLine from './icon-menu-line';
+import IconMenuSearchFill from './icon-menu-search-fill';
+import IconMenuSearchLine from './icon-menu-search-line';
+import IconMenuUnfoldFill from './icon-menu-unfold-fill';
+import IconMenuUnfoldLine from './icon-menu-unfold-line';
+import IconMore2Fill from './icon-more-2-fill';
+import IconMore2Line from './icon-more-2-line';
+import IconMoreFill from './icon-more-fill';
+import IconMoreLine from './icon-more-line';
+import IconNotificationBadgeFill from './icon-notification-badge-fill';
+import IconNotificationBadgeLine from './icon-notification-badge-line';
+import IconProhibitedFill from './icon-prohibited-fill';
+import IconProhibitedLine from './icon-prohibited-line';
+import IconQuestionFill from './icon-question-fill';
+import IconQuestionLine from './icon-question-line';
+import IconRadioButtonFill from './icon-radio-button-fill';
+import IconRadioButtonLine from './icon-radio-button-line';
+import IconRefreshFill from './icon-refresh-fill';
+import IconRefreshLine from './icon-refresh-line';
+import IconSearch2Fill from './icon-search-2-fill';
+import IconSearch2Line from './icon-search-2-line';
+import IconSearchEyeFill from './icon-search-eye-fill';
+import IconSearchEyeLine from './icon-search-eye-line';
+import IconSearchFill from './icon-search-fill';
+import IconSearchLine from './icon-search-line';
+import IconSettings2Fill from './icon-settings-2-fill';
+import IconSettings2Line from './icon-settings-2-line';
+import IconSettings3Fill from './icon-settings-3-fill';
+import IconSettings3Line from './icon-settings-3-line';
+import IconSettings4Fill from './icon-settings-4-fill';
+import IconSettings4Line from './icon-settings-4-line';
+import IconSettings5Fill from './icon-settings-5-fill';
+import IconSettings5Line from './icon-settings-5-line';
+import IconSettings6Fill from './icon-settings-6-fill';
+import IconSettings6Line from './icon-settings-6-line';
+import IconSettingsFill from './icon-settings-fill';
+import IconSettingsLine from './icon-settings-line';
+import IconShare2Fill from './icon-share-2-fill';
+import IconShare2Line from './icon-share-2-line';
+import IconShareBoxFill from './icon-share-box-fill';
+import IconShareBoxLine from './icon-share-box-line';
+import IconShareCircleFill from './icon-share-circle-fill';
+import IconShareCircleLine from './icon-share-circle-line';
+import IconShareFill from './icon-share-fill';
+import IconShareForward2Fill from './icon-share-forward-2-fill';
+import IconShareForward2Line from './icon-share-forward-2-line';
+import IconShareForwardBoxFill from './icon-share-forward-box-fill';
+import IconShareForwardBoxLine from './icon-share-forward-box-line';
+import IconShareForwardFill from './icon-share-forward-fill';
+import IconShareForwardLine from './icon-share-forward-line';
+import IconShareLine from './icon-share-line';
+import IconShieldCheckFill from './icon-shield-check-fill';
+import IconShieldCheckLine from './icon-shield-check-line';
+import IconShieldCrossFill from './icon-shield-cross-fill';
+import IconShieldCrossLine from './icon-shield-cross-line';
+import IconShieldFill from './icon-shield-fill';
+import IconShieldFlashFill from './icon-shield-flash-fill';
+import IconShieldFlashLine from './icon-shield-flash-line';
+import IconShieldKeyholeFill from './icon-shield-keyhole-fill';
+import IconShieldKeyholeLine from './icon-shield-keyhole-line';
+import IconShieldLine from './icon-shield-line';
+import IconShieldStarFill from './icon-shield-star-fill';
+import IconShieldStarLine from './icon-shield-star-line';
+import IconShieldUserFill from './icon-shield-user-fill';
+import IconShieldUserLine from './icon-shield-user-line';
+import IconSideBarFill from './icon-side-bar-fill';
+import IconSideBarLine from './icon-side-bar-line';
+import IconSpam2Fill from './icon-spam-2-fill';
+import IconSpam2Line from './icon-spam-2-line';
+import IconSpam3Fill from './icon-spam-3-fill';
+import IconSpam3Line from './icon-spam-3-line';
+import IconSpamFill from './icon-spam-fill';
+import IconSpamLine from './icon-spam-line';
+import IconStarFill from './icon-star-fill';
+import IconStarHalfFill from './icon-star-half-fill';
+import IconStarHalfLine from './icon-star-half-line';
+import IconStarHalfSFill from './icon-star-half-s-fill';
+import IconStarHalfSLine from './icon-star-half-s-line';
+import IconStarLine from './icon-star-line';
+import IconStarSFill from './icon-star-s-fill';
+import IconStarSLine from './icon-star-s-line';
+import IconSubtractFill from './icon-subtract-fill';
+import IconSubtractLine from './icon-subtract-line';
+import IconThumbDownFill from './icon-thumb-down-fill';
+import IconThumbDownLine from './icon-thumb-down-line';
+import IconThumbUpFill from './icon-thumb-up-fill';
+import IconThumbUpLine from './icon-thumb-up-line';
+import IconTimeFill from './icon-time-fill';
+import IconTimeLine from './icon-time-line';
+import IconTimer2Fill from './icon-timer-2-fill';
+import IconTimer2Line from './icon-timer-2-line';
+import IconTimerFill from './icon-timer-fill';
+import IconTimerFlashFill from './icon-timer-flash-fill';
+import IconTimerFlashLine from './icon-timer-flash-line';
+import IconTimerLine from './icon-timer-line';
+import IconToggleFill from './icon-toggle-fill';
+import IconToggleLine from './icon-toggle-line';
+import IconUpload2Fill from './icon-upload-2-fill';
+import IconUpload2Line from './icon-upload-2-line';
+import IconUploadCloud2Fill from './icon-upload-cloud-2-fill';
+import IconUploadCloud2Line from './icon-upload-cloud-2-line';
+import IconUploadCloudFill from './icon-upload-cloud-fill';
+import IconUploadCloudLine from './icon-upload-cloud-line';
+import IconUploadFill from './icon-upload-fill';
+import IconUploadLine from './icon-upload-line';
+import IconZoomInFill from './icon-zoom-in-fill';
+import IconZoomInLine from './icon-zoom-in-line';
+import IconZoomOutFill from './icon-zoom-out-fill';
+import IconZoomOutLine from './icon-zoom-out-line';
+import IconAccountBoxFill from './icon-account-box-fill';
+import IconAccountBoxLine from './icon-account-box-line';
+import IconAccountCircleFill from './icon-account-circle-fill';
+import IconAccountCircleLine from './icon-account-circle-line';
+import IconAccountPinBoxFill from './icon-account-pin-box-fill';
+import IconAccountPinBoxLine from './icon-account-pin-box-line';
+import IconAccountPinCircleFill from './icon-account-pin-circle-fill';
+import IconAccountPinCircleLine from './icon-account-pin-circle-line';
+import IconAdminFill from './icon-admin-fill';
+import IconAdminLine from './icon-admin-line';
+import IconAliensFill from './icon-aliens-fill';
+import IconAliensLine from './icon-aliens-line';
+import IconBearSmileFill from './icon-bear-smile-fill';
+import IconBearSmileLine from './icon-bear-smile-line';
+import IconBodyScanFill from './icon-body-scan-fill';
+import IconBodyScanLine from './icon-body-scan-line';
+import IconContactsFill from './icon-contacts-fill';
+import IconContactsLine from './icon-contacts-line';
+import IconCriminalFill from './icon-criminal-fill';
+import IconCriminalLine from './icon-criminal-line';
+import IconEmotion2Fill from './icon-emotion-2-fill';
+import IconEmotion2Line from './icon-emotion-2-line';
+import IconEmotionFill from './icon-emotion-fill';
+import IconEmotionHappyFill from './icon-emotion-happy-fill';
+import IconEmotionHappyLine from './icon-emotion-happy-line';
+import IconEmotionLaughFill from './icon-emotion-laugh-fill';
+import IconEmotionLaughLine from './icon-emotion-laugh-line';
+import IconEmotionLine from './icon-emotion-line';
+import IconEmotionNormalFill from './icon-emotion-normal-fill';
+import IconEmotionNormalLine from './icon-emotion-normal-line';
+import IconEmotionSadFill from './icon-emotion-sad-fill';
+import IconEmotionSadLine from './icon-emotion-sad-line';
+import IconEmotionUnhappyFill from './icon-emotion-unhappy-fill';
+import IconEmotionUnhappyLine from './icon-emotion-unhappy-line';
+import IconGenderlessFill from './icon-genderless-fill';
+import IconGenderlessLine from './icon-genderless-line';
+import IconGhost2Fill from './icon-ghost-2-fill';
+import IconGhost2Line from './icon-ghost-2-line';
+import IconGhostFill from './icon-ghost-fill';
+import IconGhostLine from './icon-ghost-line';
+import IconGhostSmileFill from './icon-ghost-smile-fill';
+import IconGhostSmileLine from './icon-ghost-smile-line';
+import IconGroup2Fill from './icon-group-2-fill';
+import IconGroup2Line from './icon-group-2-line';
+import IconGroupFill from './icon-group-fill';
+import IconGroupLine from './icon-group-line';
+import IconMenFill from './icon-men-fill';
+import IconMenLine from './icon-men-line';
+import IconMickeyFill from './icon-mickey-fill';
+import IconMickeyLine from './icon-mickey-line';
+import IconOpenArmFill from './icon-open-arm-fill';
+import IconOpenArmLine from './icon-open-arm-line';
+import IconParentFill from './icon-parent-fill';
+import IconParentLine from './icon-parent-line';
+import IconRobot2Fill from './icon-robot-2-fill';
+import IconRobot2Line from './icon-robot-2-line';
+import IconRobot3Fill from './icon-robot-3-fill';
+import IconRobot3Line from './icon-robot-3-line';
+import IconRobotFill from './icon-robot-fill';
+import IconRobotLine from './icon-robot-line';
+import IconSkull2Fill from './icon-skull-2-fill';
+import IconSkull2Line from './icon-skull-2-line';
+import IconSkullFill from './icon-skull-fill';
+import IconSkullLine from './icon-skull-line';
+import IconSpyFill from './icon-spy-fill';
+import IconSpyLine from './icon-spy-line';
+import IconStarSmileFill from './icon-star-smile-fill';
+import IconStarSmileLine from './icon-star-smile-line';
+import IconTeamFill from './icon-team-fill';
+import IconTeamLine from './icon-team-line';
+import IconTravestiFill from './icon-travesti-fill';
+import IconTravestiLine from './icon-travesti-line';
+import IconUser2Fill from './icon-user-2-fill';
+import IconUser2Line from './icon-user-2-line';
+import IconUser3Fill from './icon-user-3-fill';
+import IconUser3Line from './icon-user-3-line';
+import IconUser4Fill from './icon-user-4-fill';
+import IconUser4Line from './icon-user-4-line';
+import IconUser5Fill from './icon-user-5-fill';
+import IconUser5Line from './icon-user-5-line';
+import IconUser6Fill from './icon-user-6-fill';
+import IconUser6Line from './icon-user-6-line';
+import IconUserAddFill from './icon-user-add-fill';
+import IconUserAddLine from './icon-user-add-line';
+import IconUserFill from './icon-user-fill';
+import IconUserFollowFill from './icon-user-follow-fill';
+import IconUserFollowLine from './icon-user-follow-line';
+import IconUserForbidFill from './icon-user-forbid-fill';
+import IconUserForbidLine from './icon-user-forbid-line';
+import IconUserHeartFill from './icon-user-heart-fill';
+import IconUserHeartLine from './icon-user-heart-line';
+import IconUserLine from './icon-user-line';
+import IconUserLocationFill from './icon-user-location-fill';
+import IconUserLocationLine from './icon-user-location-line';
+import IconUserReceived2Fill from './icon-user-received-2-fill';
+import IconUserReceived2Line from './icon-user-received-2-line';
+import IconUserReceivedFill from './icon-user-received-fill';
+import IconUserReceivedLine from './icon-user-received-line';
+import IconUserSearchFill from './icon-user-search-fill';
+import IconUserSearchLine from './icon-user-search-line';
+import IconUserSettingsFill from './icon-user-settings-fill';
+import IconUserSettingsLine from './icon-user-settings-line';
+import IconUserShared2Fill from './icon-user-shared-2-fill';
+import IconUserShared2Line from './icon-user-shared-2-line';
+import IconUserSharedFill from './icon-user-shared-fill';
+import IconUserSharedLine from './icon-user-shared-line';
+import IconUserSmileFill from './icon-user-smile-fill';
+import IconUserSmileLine from './icon-user-smile-line';
+import IconUserStarFill from './icon-user-star-fill';
+import IconUserStarLine from './icon-user-star-line';
+import IconUserUnfollowFill from './icon-user-unfollow-fill';
+import IconUserUnfollowLine from './icon-user-unfollow-line';
+import IconUserVoiceFill from './icon-user-voice-fill';
+import IconUserVoiceLine from './icon-user-voice-line';
+import IconWomenFill from './icon-women-fill';
+import IconWomenLine from './icon-women-line';
+import IconBlazeFill from './icon-blaze-fill';
+import IconBlazeLine from './icon-blaze-line';
+import IconCelsiusFill from './icon-celsius-fill';
+import IconCelsiusLine from './icon-celsius-line';
+import IconCloudWindyFill from './icon-cloud-windy-fill';
+import IconCloudWindyLine from './icon-cloud-windy-line';
+import IconCloudy2Fill from './icon-cloudy-2-fill';
+import IconCloudy2Line from './icon-cloudy-2-line';
+import IconCloudyFill from './icon-cloudy-fill';
+import IconCloudyLine from './icon-cloudy-line';
+import IconDrizzleFill from './icon-drizzle-fill';
+import IconDrizzleLine from './icon-drizzle-line';
+import IconEarthquakeFill from './icon-earthquake-fill';
+import IconEarthquakeLine from './icon-earthquake-line';
+import IconFahrenheitFill from './icon-fahrenheit-fill';
+import IconFahrenheitLine from './icon-fahrenheit-line';
+import IconFireFill from './icon-fire-fill';
+import IconFireLine from './icon-fire-line';
+import IconFlashlightFill from './icon-flashlight-fill';
+import IconFlashlightLine from './icon-flashlight-line';
+import IconFloodFill from './icon-flood-fill';
+import IconFloodLine from './icon-flood-line';
+import IconFoggyFill from './icon-foggy-fill';
+import IconFoggyLine from './icon-foggy-line';
+import IconHailFill from './icon-hail-fill';
+import IconHailLine from './icon-hail-line';
+import IconHaze2Fill from './icon-haze-2-fill';
+import IconHaze2Line from './icon-haze-2-line';
+import IconHazeFill from './icon-haze-fill';
+import IconHazeLine from './icon-haze-line';
+import IconHeavyShowersFill from './icon-heavy-showers-fill';
+import IconHeavyShowersLine from './icon-heavy-showers-line';
+import IconMeteorFill from './icon-meteor-fill';
+import IconMeteorLine from './icon-meteor-line';
+import IconMistFill from './icon-mist-fill';
+import IconMistLine from './icon-mist-line';
+import IconMoonClearFill from './icon-moon-clear-fill';
+import IconMoonClearLine from './icon-moon-clear-line';
+import IconMoonCloudyFill from './icon-moon-cloudy-fill';
+import IconMoonCloudyLine from './icon-moon-cloudy-line';
+import IconMoonFill from './icon-moon-fill';
+import IconMoonFoggyFill from './icon-moon-foggy-fill';
+import IconMoonFoggyLine from './icon-moon-foggy-line';
+import IconMoonLine from './icon-moon-line';
+import IconRainbowFill from './icon-rainbow-fill';
+import IconRainbowLine from './icon-rainbow-line';
+import IconRainyFill from './icon-rainy-fill';
+import IconRainyLine from './icon-rainy-line';
+import IconShining2Fill from './icon-shining-2-fill';
+import IconShining2Line from './icon-shining-2-line';
+import IconShiningFill from './icon-shining-fill';
+import IconShiningLine from './icon-shining-line';
+import IconShowersFill from './icon-showers-fill';
+import IconShowersLine from './icon-showers-line';
+import IconSnowyFill from './icon-snowy-fill';
+import IconSnowyLine from './icon-snowy-line';
+import IconSparkling2Fill from './icon-sparkling-2-fill';
+import IconSparkling2Line from './icon-sparkling-2-line';
+import IconSparklingFill from './icon-sparkling-fill';
+import IconSparklingLine from './icon-sparkling-line';
+import IconSunCloudyFill from './icon-sun-cloudy-fill';
+import IconSunCloudyLine from './icon-sun-cloudy-line';
+import IconSunFill from './icon-sun-fill';
+import IconSunFoggyFill from './icon-sun-foggy-fill';
+import IconSunFoggyLine from './icon-sun-foggy-line';
+import IconSunLine from './icon-sun-line';
+import IconTempColdFill from './icon-temp-cold-fill';
+import IconTempColdLine from './icon-temp-cold-line';
+import IconTempHotFill from './icon-temp-hot-fill';
+import IconTempHotLine from './icon-temp-hot-line';
+import IconThunderstormsFill from './icon-thunderstorms-fill';
+import IconThunderstormsLine from './icon-thunderstorms-line';
+import IconTornadoFill from './icon-tornado-fill';
+import IconTornadoLine from './icon-tornado-line';
+import IconTyphoonFill from './icon-typhoon-fill';
+import IconTyphoonLine from './icon-typhoon-line';
+import IconWaterPercentFill from './icon-water-percent-fill';
+import IconWaterPercentLine from './icon-water-percent-line';
+import IconWindyFill from './icon-windy-fill';
+import IconWindyLine from './icon-windy-line';
 
 const icons: Record<string, Plugin> = {
-  IconACane,
-  IconAbdominal,
-  IconAbnormal,
-  IconAcceleration,
-  IconAcceptEmail,
-  IconAcoustic,
-  IconActivitySource,
-  IconAdProduct,
-  IconAd,
-  IconAddComputer,
-  IconAddFour,
-  IconAddItem,
-  IconAddMode,
-  IconAddMusic,
-  IconAddOne,
-  IconAddPic,
-  IconAddPicture,
-  IconAddPrint,
-  IconAddSubset,
-  IconAddSubtract,
-  IconAddTextTwo,
-  IconAddText,
-  IconAddThree,
-  IconAddTwo,
-  IconAddUser,
-  IconAddWeb,
-  IconAdd,
-  IconAddressBook,
-  IconAdjacentItem,
-  IconAdjustment,
-  IconAdobeIllustrate,
-  IconAdobeIndesign,
-  IconAdobeLightroom,
-  IconAdobePhotoshop,
-  IconAfferentFour,
-  IconAfferentThree,
-  IconAfferentTwo,
-  IconAfferent,
-  IconAfroPick,
-  IconAgreement,
-  IconAiming,
-  IconAirBike,
-  IconAirConditioning,
-  IconAirplaneWindowOne,
-  IconAirplaneWindow,
-  IconAirplane,
-  IconAirplay,
-  IconAirpods,
-  IconAlarmClock,
-  IconAlarm,
-  IconAlignBottomTwo,
+  IconArrowDownCircleFill,
+  IconArrowDownCircleLine,
+  IconArrowDownDoubleFill,
+  IconArrowDownDoubleLine,
+  IconArrowDownFill,
+  IconArrowDownLine,
+  IconArrowDownSFill,
+  IconArrowDownSLine,
+  IconArrowDropDownFill,
+  IconArrowDropDownLine,
+  IconArrowDropLeftFill,
+  IconArrowDropLeftLine,
+  IconArrowDropRightFill,
+  IconArrowDropRightLine,
+  IconArrowDropUpFill,
+  IconArrowDropUpLine,
+  IconArrowGoBackFill,
+  IconArrowGoBackLine,
+  IconArrowGoForwardFill,
+  IconArrowGoForwardLine,
+  IconArrowLeftCircleFill,
+  IconArrowLeftCircleLine,
+  IconArrowLeftDoubleFill,
+  IconArrowLeftDoubleLine,
+  IconArrowLeftDownFill,
+  IconArrowLeftDownLine,
+  IconArrowLeftFill,
+  IconArrowLeftLine,
+  IconArrowLeftRightFill,
+  IconArrowLeftRightLine,
+  IconArrowLeftSFill,
+  IconArrowLeftSLine,
+  IconArrowLeftUpFill,
+  IconArrowLeftUpLine,
+  IconArrowRightCircleFill,
+  IconArrowRightCircleLine,
+  IconArrowRightDoubleFill,
+  IconArrowRightDoubleLine,
+  IconArrowRightDownFill,
+  IconArrowRightDownLine,
+  IconArrowRightFill,
+  IconArrowRightLine,
+  IconArrowRightSFill,
+  IconArrowRightSLine,
+  IconArrowRightUpFill,
+  IconArrowRightUpLine,
+  IconArrowTurnBackFill,
+  IconArrowTurnBackLine,
+  IconArrowTurnForwardFill,
+  IconArrowTurnForwardLine,
+  IconArrowUpCircleFill,
+  IconArrowUpCircleLine,
+  IconArrowUpDoubleFill,
+  IconArrowUpDoubleLine,
+  IconArrowUpDownFill,
+  IconArrowUpDownLine,
+  IconArrowUpFill,
+  IconArrowUpLine,
+  IconArrowUpSFill,
+  IconArrowUpSLine,
+  IconContractLeftFill,
+  IconContractLeftLine,
+  IconContractLeftRightFill,
+  IconContractLeftRightLine,
+  IconContractRightFill,
+  IconContractRightLine,
+  IconContractUpDownFill,
+  IconContractUpDownLine,
+  IconCornerDownLeftFill,
+  IconCornerDownLeftLine,
+  IconCornerDownRightFill,
+  IconCornerDownRightLine,
+  IconCornerLeftDownFill,
+  IconCornerLeftDownLine,
+  IconCornerLeftUpFill,
+  IconCornerLeftUpLine,
+  IconCornerRightDownFill,
+  IconCornerRightDownLine,
+  IconCornerRightUpFill,
+  IconCornerRightUpLine,
+  IconCornerUpLeftDoubleFill,
+  IconCornerUpLeftDoubleLine,
+  IconCornerUpLeftFill,
+  IconCornerUpLeftLine,
+  IconCornerUpRightDoubleFill,
+  IconCornerUpRightDoubleLine,
+  IconCornerUpRightFill,
+  IconCornerUpRightLine,
+  IconDragMove2Fill,
+  IconDragMove2Line,
+  IconDragMoveFill,
+  IconDragMoveLine,
+  IconExpandLeftFill,
+  IconExpandLeftLine,
+  IconExpandLeftRightFill,
+  IconExpandLeftRightLine,
+  IconExpandRightFill,
+  IconExpandRightLine,
+  IconExpandUpDownFill,
+  IconExpandUpDownLine,
+  IconSkipDownFill,
+  IconSkipDownLine,
+  IconSkipLeftFill,
+  IconSkipLeftLine,
+  IconSkipRightFill,
+  IconSkipRightLine,
+  IconSkipUpFill,
+  IconSkipUpLine,
+  IconAncientGateFill,
+  IconAncientGateLine,
+  IconAncientPavilionFill,
+  IconAncientPavilionLine,
+  IconBankFill,
+  IconBankLine,
+  IconBuilding2Fill,
+  IconBuilding2Line,
+  IconBuilding3Fill,
+  IconBuilding3Line,
+  IconBuilding4Fill,
+  IconBuilding4Line,
+  IconBuildingFill,
+  IconBuildingLine,
+  IconCommunityFill,
+  IconCommunityLine,
+  IconGovernmentFill,
+  IconGovernmentLine,
+  IconHome2Fill,
+  IconHome2Line,
+  IconHome3Fill,
+  IconHome3Line,
+  IconHome4Fill,
+  IconHome4Line,
+  IconHome5Fill,
+  IconHome5Line,
+  IconHome6Fill,
+  IconHome6Line,
+  IconHome7Fill,
+  IconHome7Line,
+  IconHome8Fill,
+  IconHome8Line,
+  IconHomeFill,
+  IconHomeGearFill,
+  IconHomeGearLine,
+  IconHomeHeartFill,
+  IconHomeHeartLine,
+  IconHomeLine,
+  IconHomeOfficeFill,
+  IconHomeOfficeLine,
+  IconHomeSmile2Fill,
+  IconHomeSmile2Line,
+  IconHomeSmileFill,
+  IconHomeSmileLine,
+  IconHomeWifiFill,
+  IconHomeWifiLine,
+  IconHospitalFill,
+  IconHospitalLine,
+  IconHotelFill,
+  IconHotelLine,
+  IconSchoolFill,
+  IconSchoolLine,
+  IconStore2Fill,
+  IconStore2Line,
+  IconStore3Fill,
+  IconStore3Line,
+  IconStoreFill,
+  IconStoreLine,
+  IconTentFill,
+  IconTentLine,
+  IconAdvertisementFill,
+  IconAdvertisementLine,
+  IconArchive2Fill,
+  IconArchive2Line,
+  IconArchiveDrawerFill,
+  IconArchiveDrawerLine,
+  IconArchiveFill,
+  IconArchiveLine,
+  IconAtFill,
+  IconAtLine,
+  IconAttachmentFill,
+  IconAttachmentLine,
+  IconAwardFill,
+  IconAwardLine,
+  IconBarChart2Fill,
+  IconBarChart2Line,
+  IconBarChartBoxFill,
+  IconBarChartBoxLine,
+  IconBarChartFill,
+  IconBarChartGroupedFill,
+  IconBarChartGroupedLine,
+  IconBarChartHorizontalFill,
+  IconBarChartHorizontalLine,
+  IconBarChartLine,
+  IconBookmark2Fill,
+  IconBookmark2Line,
+  IconBookmark3Fill,
+  IconBookmark3Line,
+  IconBookmarkFill,
+  IconBookmarkLine,
+  IconBriefcase2Fill,
+  IconBriefcase2Line,
+  IconBriefcase3Fill,
+  IconBriefcase3Line,
+  IconBriefcase4Fill,
+  IconBriefcase4Line,
+  IconBriefcase5Fill,
+  IconBriefcase5Line,
+  IconBriefcaseFill,
+  IconBriefcaseLine,
+  IconBubbleChartFill,
+  IconBubbleChartLine,
+  IconCalculatorFill,
+  IconCalculatorLine,
+  IconCalendar2Fill,
+  IconCalendar2Line,
+  IconCalendarCheckFill,
+  IconCalendarCheckLine,
+  IconCalendarCloseFill,
+  IconCalendarCloseLine,
+  IconCalendarEventFill,
+  IconCalendarEventLine,
+  IconCalendarFill,
+  IconCalendarLine,
+  IconCalendarScheduleFill,
+  IconCalendarScheduleLine,
+  IconCalendarTodoFill,
+  IconCalendarTodoLine,
+  IconCloudFill,
+  IconCloudLine,
+  IconCloudOffFill,
+  IconCloudOffLine,
+  IconCopyleftFill,
+  IconCopyleftLine,
+  IconCopyrightFill,
+  IconCopyrightLine,
+  IconCreativeCommonsByFill,
+  IconCreativeCommonsByLine,
+  IconCreativeCommonsFill,
+  IconCreativeCommonsLine,
+  IconCreativeCommonsNcFill,
+  IconCreativeCommonsNcLine,
+  IconCreativeCommonsNdFill,
+  IconCreativeCommonsNdLine,
+  IconCreativeCommonsSaFill,
+  IconCreativeCommonsSaLine,
+  IconCreativeCommonsZeroFill,
+  IconCreativeCommonsZeroLine,
+  IconCustomerService2Fill,
+  IconCustomerService2Line,
+  IconCustomerServiceFill,
+  IconCustomerServiceLine,
+  IconDonutChartFill,
+  IconDonutChartLine,
+  IconFlag2Fill,
+  IconFlag2Line,
+  IconFlagFill,
+  IconFlagLine,
+  IconGlobalFill,
+  IconGlobalLine,
+  IconHonourFill,
+  IconHonourLine,
+  IconInbox2Fill,
+  IconInbox2Line,
+  IconInboxArchiveFill,
+  IconInboxArchiveLine,
+  IconInboxFill,
+  IconInboxLine,
+  IconInboxUnarchiveFill,
+  IconInboxUnarchiveLine,
+  IconLineChartFill,
+  IconLineChartLine,
+  IconLinksFill,
+  IconLinksLine,
+  IconMailAddFill,
+  IconMailAddLine,
+  IconMailCheckFill,
+  IconMailCheckLine,
+  IconMailCloseFill,
+  IconMailCloseLine,
+  IconMailDownloadFill,
+  IconMailDownloadLine,
+  IconMailFill,
+  IconMailForbidFill,
+  IconMailForbidLine,
+  IconMailLine,
+  IconMailLockFill,
+  IconMailLockLine,
+  IconMailOpenFill,
+  IconMailOpenLine,
+  IconMailSendFill,
+  IconMailSendLine,
+  IconMailSettingsFill,
+  IconMailSettingsLine,
+  IconMailStarFill,
+  IconMailStarLine,
+  IconMailUnreadFill,
+  IconMailUnreadLine,
+  IconMailVolumeFill,
+  IconMailVolumeLine,
+  IconMedal2Fill,
+  IconMedal2Line,
+  IconMedalFill,
+  IconMedalLine,
+  IconMegaphoneFill,
+  IconMegaphoneLine,
+  IconPassExpiredFill,
+  IconPassExpiredLine,
+  IconPassPendingFill,
+  IconPassPendingLine,
+  IconPassValidFill,
+  IconPassValidLine,
+  IconPieChart2Fill,
+  IconPieChart2Line,
+  IconPieChartBoxFill,
+  IconPieChartBoxLine,
+  IconPieChartFill,
+  IconPieChartLine,
+  IconPresentationFill,
+  IconPresentationLine,
+  IconPrinterCloudFill,
+  IconPrinterCloudLine,
+  IconPrinterFill,
+  IconPrinterLine,
+  IconProfileFill,
+  IconProfileLine,
+  IconProjector2Fill,
+  IconProjector2Line,
+  IconProjectorFill,
+  IconProjectorLine,
+  IconRecordMailFill,
+  IconRecordMailLine,
+  IconRegisteredFill,
+  IconRegisteredLine,
+  IconReplyAllFill,
+  IconReplyAllLine,
+  IconReplyFill,
+  IconReplyLine,
+  IconSendPlane2Fill,
+  IconSendPlane2Line,
+  IconSendPlaneFill,
+  IconSendPlaneLine,
+  IconSeoFill,
+  IconSeoLine,
+  IconServiceFill,
+  IconServiceLine,
+  IconShakeHandsFill,
+  IconShakeHandsLine,
+  IconSlideshow2Fill,
+  IconSlideshow2Line,
+  IconSlideshow3Fill,
+  IconSlideshow3Line,
+  IconSlideshow4Fill,
+  IconSlideshow4Line,
+  IconSlideshowFill,
+  IconSlideshowLine,
+  IconStackFill,
+  IconStackLine,
+  IconTrademarkFill,
+  IconTrademarkLine,
+  IconVerifiedBadgeFill,
+  IconVerifiedBadgeLine,
+  IconWindow2Fill,
+  IconWindow2Line,
+  IconWindowFill,
+  IconWindowLine,
+  IconChat1Fill,
+  IconChat1Line,
+  IconChat2Fill,
+  IconChat2Line,
+  IconChat3Fill,
+  IconChat3Line,
+  IconChat4Fill,
+  IconChat4Line,
+  IconChatCheckFill,
+  IconChatCheckLine,
+  IconChatDeleteFill,
+  IconChatDeleteLine,
+  IconChatDownloadFill,
+  IconChatDownloadLine,
+  IconChatFollowUpFill,
+  IconChatFollowUpLine,
+  IconChatForwardFill,
+  IconChatForwardLine,
+  IconChatHeartFill,
+  IconChatHeartLine,
+  IconChatHistoryFill,
+  IconChatHistoryLine,
+  IconChatNewFill,
+  IconChatNewLine,
+  IconChatOffFill,
+  IconChatOffLine,
+  IconChatPollFill,
+  IconChatPollLine,
+  IconChatPrivateFill,
+  IconChatPrivateLine,
+  IconChatQuoteFill,
+  IconChatQuoteLine,
+  IconChatSettingsFill,
+  IconChatSettingsLine,
+  IconChatSmile2Fill,
+  IconChatSmile2Line,
+  IconChatSmile3Fill,
+  IconChatSmile3Line,
+  IconChatSmileFill,
+  IconChatSmileLine,
+  IconChatUploadFill,
+  IconChatUploadLine,
+  IconChatVoiceFill,
+  IconChatVoiceLine,
+  IconDiscussFill,
+  IconDiscussLine,
+  IconEmojiStickerFill,
+  IconEmojiStickerLine,
+  IconFeedbackFill,
+  IconFeedbackLine,
+  IconMessage2Fill,
+  IconMessage2Line,
+  IconMessage3Fill,
+  IconMessage3Line,
+  IconMessageFill,
+  IconMessageLine,
+  IconQuestionAnswerFill,
+  IconQuestionAnswerLine,
+  IconQuestionnaireFill,
+  IconQuestionnaireLine,
+  IconSpeakFill,
+  IconSpeakLine,
+  IconVideoChatFill,
+  IconVideoChatLine,
+  IconAnticlockwise2Fill,
+  IconAnticlockwise2Line,
+  IconAnticlockwiseFill,
+  IconAnticlockwiseLine,
+  IconArtboard2Fill,
+  IconArtboard2Line,
+  IconArtboardFill,
+  IconArtboardLine,
+  IconBallPenFill,
+  IconBallPenLine,
+  IconBlurOffFill,
+  IconBlurOffLine,
+  IconBrush2Fill,
+  IconBrush2Line,
+  IconBrush3Fill,
+  IconBrush3Line,
+  IconBrush4Fill,
+  IconBrush4Line,
+  IconBrushFill,
+  IconBrushLine,
+  IconCircleFill,
+  IconCircleLine,
+  IconClockwise2Fill,
+  IconClockwise2Line,
+  IconClockwiseFill,
+  IconClockwiseLine,
+  IconCollageFill,
+  IconCollageLine,
+  IconCompasses2Fill,
+  IconCompasses2Line,
+  IconCompassesFill,
+  IconCompassesLine,
+  IconContrast2Fill,
+  IconContrast2Line,
+  IconContrastDrop2Fill,
+  IconContrastDrop2Line,
+  IconContrastDropFill,
+  IconContrastDropLine,
+  IconContrastFill,
+  IconContrastLine,
+  IconCrop2Fill,
+  IconCrop2Line,
+  IconCropFill,
+  IconCropLine,
+  IconCrosshair2Fill,
+  IconCrosshair2Line,
+  IconCrosshairFill,
+  IconCrosshairLine,
+  IconDragDropFill,
+  IconDragDropLine,
+  IconDropFill,
+  IconDropLine,
+  IconEdit2Fill,
+  IconEdit2Line,
+  IconEditBoxFill,
+  IconEditBoxLine,
+  IconEditCircleFill,
+  IconEditCircleLine,
+  IconEditFill,
+  IconEditLine,
+  IconEraserFill,
+  IconEraserLine,
+  IconFocus2Fill,
+  IconFocus2Line,
+  IconFocus3Fill,
+  IconFocus3Line,
+  IconFocusFill,
+  IconFocusLine,
+  IconGridFill,
+  IconGridLine,
+  IconHammerFill,
+  IconHammerLine,
+  IconHexagonFill,
+  IconHexagonLine,
+  IconInkBottleFill,
+  IconInkBottleLine,
+  IconInputMethodFill,
+  IconInputMethodLine,
+  IconLayout2Fill,
+  IconLayout2Line,
+  IconLayout3Fill,
+  IconLayout3Line,
+  IconLayout4Fill,
+  IconLayout4Line,
+  IconLayout5Fill,
+  IconLayout5Line,
+  IconLayout6Fill,
+  IconLayout6Line,
+  IconLayoutBottom2Fill,
+  IconLayoutBottom2Line,
+  IconLayoutBottomFill,
+  IconLayoutBottomLine,
+  IconLayoutColumnFill,
+  IconLayoutColumnLine,
+  IconLayoutFill,
+  IconLayoutGridFill,
+  IconLayoutGridLine,
+  IconLayoutLeft2Fill,
+  IconLayoutLeft2Line,
+  IconLayoutLeftFill,
+  IconLayoutLeftLine,
+  IconLayoutLine,
+  IconLayoutMasonryFill,
+  IconLayoutMasonryLine,
+  IconLayoutRight2Fill,
+  IconLayoutRight2Line,
+  IconLayoutRightFill,
+  IconLayoutRightLine,
+  IconLayoutRowFill,
+  IconLayoutRowLine,
+  IconLayoutTop2Fill,
+  IconLayoutTop2Line,
+  IconLayoutTopFill,
+  IconLayoutTopLine,
+  IconMagicFill,
+  IconMagicLine,
+  IconMarkPenFill,
+  IconMarkPenLine,
+  IconMarkupFill,
+  IconMarkupLine,
+  IconOctagonFill,
+  IconOctagonLine,
+  IconPaintBrushFill,
+  IconPaintBrushLine,
+  IconPaintFill,
+  IconPaintLine,
+  IconPaletteFill,
+  IconPaletteLine,
+  IconPantoneFill,
+  IconPantoneLine,
+  IconPenNibFill,
+  IconPenNibLine,
+  IconPencilFill,
+  IconPencilLine,
+  IconPencilRuler2Fill,
+  IconPencilRuler2Line,
+  IconPencilRulerFill,
+  IconPencilRulerLine,
+  IconPentagonFill,
+  IconPentagonLine,
+  IconQuillPenFill,
+  IconQuillPenLine,
+  IconRectangleFill,
+  IconRectangleLine,
+  IconRuler2Fill,
+  IconRuler2Line,
+  IconRulerFill,
+  IconRulerLine,
+  IconScissors2Fill,
+  IconScissors2Line,
+  IconScissorsCutFill,
+  IconScissorsCutLine,
+  IconScissorsFill,
+  IconScissorsLine,
+  IconScreenshot2Fill,
+  IconScreenshot2Line,
+  IconScreenshotFill,
+  IconScreenshotLine,
+  IconShape2Fill,
+  IconShape2Line,
+  IconShapeFill,
+  IconShapeLine,
+  IconShapesFill,
+  IconShapesLine,
+  IconSipFill,
+  IconSipLine,
+  IconSliceFill,
+  IconSliceLine,
+  IconSquareFill,
+  IconSquareLine,
+  IconTBoxFill,
+  IconTBoxLine,
+  IconTableAltFill,
+  IconTableAltLine,
+  IconTableFill,
+  IconTableLine,
+  IconToolsFill,
+  IconToolsLine,
+  IconTriangleFill,
+  IconTriangleLine,
+  IconBracesFill,
+  IconBracesLine,
+  IconBracketsFill,
+  IconBracketsLine,
+  IconBug2Fill,
+  IconBug2Line,
+  IconBugFill,
+  IconBugLine,
+  IconCodeBoxFill,
+  IconCodeBoxLine,
+  IconCodeFill,
+  IconCodeLine,
+  IconCodeSFill,
+  IconCodeSLine,
+  IconCodeSSlashFill,
+  IconCodeSSlashLine,
+  IconCommandFill,
+  IconCommandLine,
+  IconCss3Fill,
+  IconCss3Line,
+  IconCursorFill,
+  IconCursorLine,
+  IconGitBranchFill,
+  IconGitBranchLine,
+  IconGitClosePullRequestFill,
+  IconGitClosePullRequestLine,
+  IconGitCommitFill,
+  IconGitCommitLine,
+  IconGitMergeFill,
+  IconGitMergeLine,
+  IconGitPullRequestFill,
+  IconGitPullRequestLine,
+  IconGitRepositoryCommitsFill,
+  IconGitRepositoryCommitsLine,
+  IconGitRepositoryFill,
+  IconGitRepositoryLine,
+  IconGitRepositoryPrivateFill,
+  IconGitRepositoryPrivateLine,
+  IconHtml5Fill,
+  IconHtml5Line,
+  IconJavascriptFill,
+  IconJavascriptLine,
+  IconParenthesesFill,
+  IconParenthesesLine,
+  IconTerminalBoxFill,
+  IconTerminalBoxLine,
+  IconTerminalFill,
+  IconTerminalLine,
+  IconTerminalWindowFill,
+  IconTerminalWindowLine,
+  IconAirplayFill,
+  IconAirplayLine,
+  IconBarcodeBoxFill,
+  IconBarcodeBoxLine,
+  IconBarcodeFill,
+  IconBarcodeLine,
+  IconBaseStationFill,
+  IconBaseStationLine,
+  IconBattery2ChargeFill,
+  IconBattery2ChargeLine,
+  IconBattery2Fill,
+  IconBattery2Line,
+  IconBatteryChargeFill,
+  IconBatteryChargeLine,
+  IconBatteryFill,
+  IconBatteryLine,
+  IconBatteryLowFill,
+  IconBatteryLowLine,
+  IconBatterySaverFill,
+  IconBatterySaverLine,
+  IconBatteryShareFill,
+  IconBatteryShareLine,
+  IconBluetoothConnectFill,
+  IconBluetoothConnectLine,
+  IconBluetoothFill,
+  IconBluetoothLine,
+  IconCastFill,
+  IconCastLine,
+  IconCellphoneFill,
+  IconCellphoneLine,
+  IconComputerFill,
+  IconComputerLine,
+  IconCpuFill,
+  IconCpuLine,
+  IconDashboard2Fill,
+  IconDashboard2Line,
+  IconDashboard3Fill,
+  IconDashboard3Line,
+  IconDatabase2Fill,
+  IconDatabase2Line,
+  IconDatabaseFill,
+  IconDatabaseLine,
+  IconDeviceFill,
+  IconDeviceLine,
+  IconDeviceRecoverFill,
+  IconDeviceRecoverLine,
+  IconDualSim1Fill,
+  IconDualSim1Line,
+  IconDualSim2Fill,
+  IconDualSim2Line,
+  IconFingerprint2Fill,
+  IconFingerprint2Line,
+  IconFingerprintFill,
+  IconFingerprintLine,
+  IconGamepadFill,
+  IconGamepadLine,
+  IconGpsFill,
+  IconGpsLine,
+  IconGradienterFill,
+  IconGradienterLine,
+  IconHardDrive2Fill,
+  IconHardDrive2Line,
+  IconHardDrive3Fill,
+  IconHardDrive3Line,
+  IconHardDriveFill,
+  IconHardDriveLine,
+  IconHotspotFill,
+  IconHotspotLine,
+  IconInstallFill,
+  IconInstallLine,
+  IconInstanceFill,
+  IconInstanceLine,
+  IconKeyboardBoxFill,
+  IconKeyboardBoxLine,
+  IconKeyboardFill,
+  IconKeyboardLine,
+  IconMacFill,
+  IconMacLine,
+  IconMacbookFill,
+  IconMacbookLine,
+  IconMouseFill,
+  IconMouseLine,
+  IconPhoneFill,
+  IconPhoneFindFill,
+  IconPhoneFindLine,
+  IconPhoneLine,
+  IconPhoneLockFill,
+  IconPhoneLockLine,
+  IconQrCodeFill,
+  IconQrCodeLine,
+  IconQrScan2Fill,
+  IconQrScan2Line,
+  IconQrScanFill,
+  IconQrScanLine,
+  IconRadarFill,
+  IconRadarLine,
+  IconRemoteControl2Fill,
+  IconRemoteControl2Line,
+  IconRemoteControlFill,
+  IconRemoteControlLine,
+  IconRestartFill,
+  IconRestartLine,
+  IconRfidFill,
+  IconRfidLine,
+  IconRotateLockFill,
+  IconRotateLockLine,
+  IconRouterFill,
+  IconRouterLine,
+  IconRssFill,
+  IconRssLine,
+  IconSave2Fill,
+  IconSave2Line,
+  IconSave3Fill,
+  IconSave3Line,
+  IconSaveFill,
+  IconSaveLine,
+  IconScan2Fill,
+  IconScan2Line,
+  IconScanFill,
+  IconScanLine,
+  IconSdCardFill,
+  IconSdCardLine,
+  IconSdCardMiniFill,
+  IconSdCardMiniLine,
+  IconSensorFill,
+  IconSensorLine,
+  IconServerFill,
+  IconServerLine,
+  IconShutDownFill,
+  IconShutDownLine,
+  IconSignalWifi1Fill,
+  IconSignalWifi1Line,
+  IconSignalWifi2Fill,
+  IconSignalWifi2Line,
+  IconSignalWifi3Fill,
+  IconSignalWifi3Line,
+  IconSignalWifiErrorFill,
+  IconSignalWifiErrorLine,
+  IconSignalWifiFill,
+  IconSignalWifiLine,
+  IconSignalWifiOffFill,
+  IconSignalWifiOffLine,
+  IconSimCard2Fill,
+  IconSimCard2Line,
+  IconSimCardFill,
+  IconSimCardLine,
+  IconSmartphoneFill,
+  IconSmartphoneLine,
+  IconTabletFill,
+  IconTabletLine,
+  IconTv2Fill,
+  IconTv2Line,
+  IconTvFill,
+  IconTvLine,
+  IconUDiskFill,
+  IconUDiskLine,
+  IconUninstallFill,
+  IconUninstallLine,
+  IconUsbFill,
+  IconUsbLine,
+  IconWifiFill,
+  IconWifiLine,
+  IconWifiOffFill,
+  IconWifiOffLine,
+  IconWirelessChargingFill,
+  IconWirelessChargingLine,
+  IconArticleFill,
+  IconArticleLine,
+  IconBillFill,
+  IconBillLine,
+  IconBook2Fill,
+  IconBook2Line,
+  IconBook3Fill,
+  IconBook3Line,
+  IconBookFill,
+  IconBookLine,
+  IconBookMarkFill,
+  IconBookMarkLine,
+  IconBookOpenFill,
+  IconBookOpenLine,
+  IconBookReadFill,
+  IconBookReadLine,
+  IconBookletFill,
+  IconBookletLine,
+  IconClipboardFill,
+  IconClipboardLine,
+  IconContactsBook2Fill,
+  IconContactsBook2Line,
+  IconContactsBookFill,
+  IconContactsBookLine,
+  IconContactsBookUploadFill,
+  IconContactsBookUploadLine,
+  IconDraftFill,
+  IconDraftLine,
+  IconFile2Fill,
+  IconFile2Line,
+  IconFile3Fill,
+  IconFile3Line,
+  IconFile4Fill,
+  IconFile4Line,
+  IconFileAddFill,
+  IconFileAddLine,
+  IconFileChart2Fill,
+  IconFileChart2Line,
+  IconFileChartFill,
+  IconFileChartLine,
+  IconFileCloseFill,
+  IconFileCloseLine,
+  IconFileCloudFill,
+  IconFileCloudLine,
+  IconFileCodeFill,
+  IconFileCodeLine,
+  IconFileCopy2Fill,
+  IconFileCopy2Line,
+  IconFileCopyFill,
+  IconFileCopyLine,
+  IconFileDamageFill,
+  IconFileDamageLine,
+  IconFileDownloadFill,
+  IconFileDownloadLine,
+  IconFileEditFill,
+  IconFileEditLine,
+  IconFileExcel2Fill,
+  IconFileExcel2Line,
+  IconFileExcelFill,
+  IconFileExcelLine,
+  IconFileFill,
+  IconFileForbidFill,
+  IconFileForbidLine,
+  IconFileGifFill,
+  IconFileGifLine,
+  IconFileHistoryFill,
+  IconFileHistoryLine,
+  IconFileHwpFill,
+  IconFileHwpLine,
+  IconFileImageFill,
+  IconFileImageLine,
+  IconFileInfoFill,
+  IconFileInfoLine,
+  IconFileLine,
+  IconFileList2Fill,
+  IconFileList2Line,
+  IconFileList3Fill,
+  IconFileList3Line,
+  IconFileListFill,
+  IconFileListLine,
+  IconFileLockFill,
+  IconFileLockLine,
+  IconFileMarkFill,
+  IconFileMarkLine,
+  IconFileMusicFill,
+  IconFileMusicLine,
+  IconFilePaper2Fill,
+  IconFilePaper2Line,
+  IconFilePaperFill,
+  IconFilePaperLine,
+  IconFilePdf2Fill,
+  IconFilePdf2Line,
+  IconFilePdfFill,
+  IconFilePdfLine,
+  IconFilePpt2Fill,
+  IconFilePpt2Line,
+  IconFilePptFill,
+  IconFilePptLine,
+  IconFileReduceFill,
+  IconFileReduceLine,
+  IconFileSearchFill,
+  IconFileSearchLine,
+  IconFileSettingsFill,
+  IconFileSettingsLine,
+  IconFileShield2Fill,
+  IconFileShield2Line,
+  IconFileShieldFill,
+  IconFileShieldLine,
+  IconFileShredFill,
+  IconFileShredLine,
+  IconFileTextFill,
+  IconFileTextLine,
+  IconFileTransferFill,
+  IconFileTransferLine,
+  IconFileUnknowFill,
+  IconFileUnknowLine,
+  IconFileUploadFill,
+  IconFileUploadLine,
+  IconFileUserFill,
+  IconFileUserLine,
+  IconFileVideoFill,
+  IconFileVideoLine,
+  IconFileWarningFill,
+  IconFileWarningLine,
+  IconFileWord2Fill,
+  IconFileWord2Line,
+  IconFileWordFill,
+  IconFileWordLine,
+  IconFileZipFill,
+  IconFileZipLine,
+  IconFolder2Fill,
+  IconFolder2Line,
+  IconFolder3Fill,
+  IconFolder3Line,
+  IconFolder4Fill,
+  IconFolder4Line,
+  IconFolder5Fill,
+  IconFolder5Line,
+  IconFolderAddFill,
+  IconFolderAddLine,
+  IconFolderChart2Fill,
+  IconFolderChart2Line,
+  IconFolderChartFill,
+  IconFolderChartLine,
+  IconFolderDownloadFill,
+  IconFolderDownloadLine,
+  IconFolderFill,
+  IconFolderForbidFill,
+  IconFolderForbidLine,
+  IconFolderHistoryFill,
+  IconFolderHistoryLine,
+  IconFolderImageFill,
+  IconFolderImageLine,
+  IconFolderInfoFill,
+  IconFolderInfoLine,
+  IconFolderKeyholeFill,
+  IconFolderKeyholeLine,
+  IconFolderLine,
+  IconFolderLockFill,
+  IconFolderLockLine,
+  IconFolderMusicFill,
+  IconFolderMusicLine,
+  IconFolderOpenFill,
+  IconFolderOpenLine,
+  IconFolderReceivedFill,
+  IconFolderReceivedLine,
+  IconFolderReduceFill,
+  IconFolderReduceLine,
+  IconFolderSettingsFill,
+  IconFolderSettingsLine,
+  IconFolderSharedFill,
+  IconFolderSharedLine,
+  IconFolderShield2Fill,
+  IconFolderShield2Line,
+  IconFolderShieldFill,
+  IconFolderShieldLine,
+  IconFolderTransferFill,
+  IconFolderTransferLine,
+  IconFolderUnknowFill,
+  IconFolderUnknowLine,
+  IconFolderUploadFill,
+  IconFolderUploadLine,
+  IconFolderUserFill,
+  IconFolderUserLine,
+  IconFolderVideoFill,
+  IconFolderVideoLine,
+  IconFolderWarningFill,
+  IconFolderWarningLine,
+  IconFolderZipFill,
+  IconFolderZipLine,
+  IconFoldersFill,
+  IconFoldersLine,
+  IconKeynoteFill,
+  IconKeynoteLine,
+  IconMarkdownFill,
+  IconMarkdownLine,
+  IconNewsFill,
+  IconNewsLine,
+  IconNewspaperFill,
+  IconNewspaperLine,
+  IconNumbersFill,
+  IconNumbersLine,
+  IconPagesFill,
+  IconPagesLine,
+  IconStickyNote2Fill,
+  IconStickyNote2Line,
+  IconStickyNoteFill,
+  IconStickyNoteLine,
+  IconSurveyFill,
+  IconSurveyLine,
+  IconTaskFill,
+  IconTaskLine,
+  IconTodoFill,
+  IconTodoLine,
+  IconAB,
+  IconAiGenerate,
   IconAlignBottom,
-  IconAlignHorizontalCenterTwo,
-  IconAlignHorizontally,
-  IconAlignLeftOne,
-  IconAlignLeftTwo,
+  IconAlignCenter,
+  IconAlignJustify,
   IconAlignLeft,
-  IconAlignRightOne,
-  IconAlignRightTwo,
   IconAlignRight,
-  IconAlignTextBothOne,
-  IconAlignTextBoth,
-  IconAlignTextBottomOne,
-  IconAlignTextBottom,
-  IconAlignTextCenterOne,
-  IconAlignTextCenter,
-  IconAlignTextLeftOne,
-  IconAlignTextLeft,
-  IconAlignTextMiddleOne,
-  IconAlignTextMiddle,
-  IconAlignTextRightOne,
-  IconAlignTextRight,
-  IconAlignTextTopOne,
-  IconAlignTextTop,
-  IconAlignTopTwo,
   IconAlignTop,
-  IconAlignVerticalCenterTwo,
   IconAlignVertically,
-  IconAlignmentBottomCenter,
-  IconAlignmentBottomLeft,
-  IconAlignmentBottomRight,
-  IconAlignmentHorizontalBottom,
-  IconAlignmentHorizontalCenter,
-  IconAlignmentHorizontalTop,
-  IconAlignmentLeftBottom,
-  IconAlignmentLeftCenter,
-  IconAlignmentLeftTop,
-  IconAlignmentRightBottom,
-  IconAlignmentRightCenter,
-  IconAlignmentRightTop,
-  IconAlignmentTopCenter,
-  IconAlignmentTopLeft,
-  IconAlignmentTopRight,
-  IconAlignmentVerticalCenter,
-  IconAlignmentVerticalLeft,
-  IconAlignmentVerticalRight,
-  IconAlipay,
-  IconAllApplication,
-  IconAlphabeticalSortingTwo,
-  IconAlphabeticalSorting,
-  IconAmbulance,
-  IconAnalysis,
-  IconAnchorOne,
-  IconAnchorRound,
-  IconAnchorSqure,
-  IconAnchorTwo,
-  IconAnchor,
-  IconAndroid,
-  IconAngryFace,
-  IconAnguishedFace,
-  IconAnnouncement,
-  IconAntiCorrosion,
-  IconAperturePriority,
-  IconApiApp,
-  IconApi,
-  IconAppStore,
-  IconAppSwitch,
-  IconAppleOne,
-  IconApple,
-  IconAppletClosed,
-  IconApplicationEffect,
-  IconApplicationMenu,
-  IconApplicationOne,
-  IconApplicationTwo,
-  IconApplication,
-  IconAppointment,
-  IconAquarius,
-  IconArcDeTriomphe,
-  IconArchersBow,
-  IconArchery,
-  IconAreaMap,
-  IconArena,
-  IconAries,
-  IconArithmeticButtons,
-  IconArithmeticOne,
-  IconArithmetic,
-  IconArrowCircleDown,
-  IconArrowCircleLeft,
-  IconArrowCircleRight,
-  IconArrowCircleUp,
-  IconArrowDown,
-  IconArrowKeys,
-  IconArrowLeftDown,
-  IconArrowLeftUp,
-  IconArrowLeft,
-  IconArrowRightDown,
-  IconArrowRightUp,
-  IconArrowRight,
-  IconArrowUp,
-  IconAssemblyLine,
-  IconAssociation,
-  IconAsteriskKey,
   IconAsterisk,
-  IconAstonishedFace,
-  IconAtSign,
-  IconAttention,
-  IconAudioFile,
-  IconAudit,
-  IconAutoFocus,
-  IconAutoHeightOne,
-  IconAutoLineHeight,
-  IconAutoLineWidth,
-  IconAutoWidthOne,
-  IconAutoWidth,
-  IconAvatar,
-  IconAverage,
-  IconAviation,
-  IconAvocadoOne,
-  IconAvocado,
-  IconBabyApp,
-  IconBabyBottle,
-  IconBabyCarSeat,
-  IconBabyFeet,
-  IconBabyMeal,
-  IconBabyMobile,
-  IconBabyOne,
-  IconBabyPants,
-  IconBabySling,
-  IconBabyTaste,
-  IconBaby,
-  IconBachelorCapOne,
-  IconBachelorCapTwo,
-  IconBachelorCap,
-  IconBackOne,
-  IconBack,
-  IconBackgroundColor,
-  IconBackpack,
-  IconBadOne,
-  IconBadTwo,
-  IconBad,
-  IconBadgeTwo,
-  IconBadge,
-  IconBadminton,
-  IconBaggageDelay,
-  IconBalanceOne,
-  IconBalanceTwo,
-  IconBalance,
-  IconBanana,
-  IconBankCardOne,
-  IconBankCardTwo,
-  IconBankCard,
-  IconBankTransfer,
-  IconBank,
-  IconBaokemeng,
-  IconBarCode,
-  IconBarbecue,
-  IconBarberBrush,
-  IconBarberClippers,
-  IconBaseballBat,
-  IconBaseballCap,
-  IconBaseball,
-  IconBasketballClothes,
-  IconBasketballOne,
-  IconBasketballStand,
-  IconBasketball,
-  IconBat,
-  IconBatteryCharge,
-  IconBatteryEmpty,
-  IconBatteryFailure,
-  IconBatteryFull,
-  IconBatteryStorage,
-  IconBatteryTips,
-  IconBatteryWorkingOne,
-  IconBatteryWorking,
-  IconBeachUmbrella,
-  IconBear,
-  IconBeautyInstrument,
-  IconBeauty,
-  IconBedsideTwo,
-  IconBedside,
-  IconBee,
-  IconBeerMug,
-  IconBeer,
-  IconBehance,
-  IconBellRing,
-  IconBelt,
-  IconBenz,
-  IconBezierCurve,
-  IconBib,
-  IconBigClock,
-  IconBigX,
-  IconBike,
-  IconBill,
-  IconBird,
-  IconBirthdayCake,
-  IconBitcoin,
-  IconBlackEight,
-  IconBlackboard,
-  IconBlade,
-  IconBless,
-  IconBlockEight,
-  IconBlockFive,
-  IconBlockFour,
-  IconBlockNine,
-  IconBlockOne,
-  IconBlockSeven,
-  IconBlockSix,
-  IconBlockTen,
-  IconBlockThree,
-  IconBlockTwo,
-  IconBlock,
-  IconBlockchain,
-  IconBlocksAndArrows,
-  IconBloom,
-  IconBlossom,
-  IconBluetooth,
-  IconBoiler,
-  IconBoltOne,
-  IconBone,
-  IconBookOne,
-  IconBookOpen,
-  IconBook,
-  IconBookmarkOne,
-  IconBookmarkThree,
-  IconBookmark,
-  IconBookshelf,
-  IconBoosterCarSeat,
-  IconBooth,
-  IconBoots,
-  IconBottleOne,
-  IconBottleThree,
-  IconBottleTwo,
-  IconBottle,
-  IconBottomBarOne,
-  IconBottomBar,
-  IconBow,
-  IconBowlOne,
-  IconBowl,
-  IconBowling,
-  IconBox,
-  IconBoxingOne,
-  IconBoxing,
-  IconBoyOne,
-  IconBoyStroller,
-  IconBoyTwo,
-  IconBoy,
-  IconBrain,
-  IconBrakePads,
-  IconBranchOne,
-  IconBranchTwo,
-  IconBranch,
-  IconBrdigeThree,
-  IconBreadMachine,
-  IconBreadOne,
-  IconBread,
-  IconBreastPump,
-  IconBridgeOne,
-  IconBridgeTwo,
-  IconBriefcase,
-  IconBrightness,
+  IconAttachment2,
+  IconBold,
   IconBringForward,
-  IconBringToFrontOne,
   IconBringToFront,
-  IconBroadcastOne,
-  IconBroadcastRadio,
-  IconBroadcast,
-  IconBrowserChrome,
-  IconBrowserSafari,
-  IconBrowser,
-  IconBubbleChart,
-  IconBug,
-  IconBuildingFour,
-  IconBuildingOne,
-  IconBuildingThree,
-  IconBuildingTwo,
-  IconBulletMap,
-  IconBusOne,
-  IconBusTwo,
-  IconBus,
-  IconButterfly,
-  IconBuy,
-  IconBydesign,
-  IconBye,
-  IconBytedanceApplets,
-  IconBytedanceMiniApp,
-  IconBytedance,
-  IconCableCar,
-  IconCactus,
-  IconCakeFive,
-  IconCakeFour,
-  IconCakeOne,
-  IconCakeThree,
-  IconCakeTwo,
-  IconCake,
-  IconCalculatorOne,
-  IconCalculator,
-  IconCalendarDot,
-  IconCalendarThirtyTwo,
-  IconCalendarThirty,
-  IconCalendarThree,
-  IconCalendar,
-  IconCameraFive,
-  IconCameraFour,
-  IconCameraOne,
-  IconCameraThree,
-  IconCameraTwo,
-  IconCamera,
-  IconCamp,
-  IconCancer,
-  IconCandy,
-  IconCannedFruit,
-  IconCapricornus,
-  IconCarBattery,
-  IconCar,
-  IconCardTwo,
-  IconCardioelectric,
-  IconCarouselVideo,
-  IconCarousel,
-  IconCarrot,
-  IconCastScreen,
-  IconCastle,
-  IconCat,
-  IconCategoryManagement,
-  IconCattleZodiac,
-  IconCattle,
-  IconCaution,
-  IconCc,
-  IconCd,
-  IconCeMarking,
-  IconCell,
-  IconCenterAlignment,
-  IconCertificate,
-  IconChafingDishOne,
-  IconChafingDish,
-  IconChairOne,
-  IconChair,
-  IconChangeDateSort,
-  IconChange,
-  IconChargingTreasure,
-  IconChartGraph,
-  IconChartHistogramOne,
-  IconChartHistogramTwo,
-  IconChartHistogram,
-  IconChartLineArea,
-  IconChartLine,
-  IconChartPieOne,
-  IconChartPie,
-  IconChartProportion,
-  IconChartRing,
-  IconChartScatter,
-  IconChartStock,
-  IconCheckCorrect,
-  IconCheckIn,
-  IconCheckOne,
-  IconCheckSmall,
-  IconCheck,
-  IconCheckbox,
-  IconCheckerboard,
-  IconChecklist,
-  IconCheese,
-  IconChefHatOne,
-  IconChefHat,
-  IconCherry,
-  IconChessOne,
-  IconChess,
-  IconChest,
-  IconChickenLeg,
-  IconChickenZodiac,
-  IconChicken,
-  IconChildWithPacifier,
-  IconChildrenCap,
-  IconChildrenPyramid,
-  IconChili,
-  IconChimney,
-  IconChineseOne,
-  IconChinesePavilion,
-  IconChinese,
-  IconChip,
-  IconChoppingBoard,
-  IconChopsticksFork,
-  IconChristmasTreeOne,
-  IconChristmasTree,
-  IconChurchOne,
-  IconChurchTwo,
-  IconCircleDoubleDown,
-  IconCircleDoubleLeft,
-  IconCircleDoubleRight,
-  IconCircleDoubleUp,
-  IconCircleFiveLine,
-  IconCircleFourLine,
-  IconCircleFour,
-  IconCircleHouse,
-  IconCircleLeftDown,
-  IconCircleLeftUp,
-  IconCircleRightDown,
-  IconCircleRightUp,
-  IconCircleThree,
-  IconCircleTwoLine,
-  IconCirclesAndTriangles,
-  IconCirclesSeven,
-  IconCircularConnection,
-  IconCircus,
-  IconCityGate,
-  IconCityOne,
-  IconCity,
-  IconClap,
-  IconClassroom,
-  IconClearFormat,
-  IconClear,
-  IconClickTapTwo,
-  IconClickTap,
-  IconClickToFold,
-  IconClick,
-  IconClipboard,
-  IconClockTower,
-  IconCloseOne,
-  IconCloseRemind,
-  IconCloseSmall,
-  IconCloseWifi,
-  IconClose,
-  IconClothesBriefs,
-  IconClothesCardigan,
-  IconClothesCrewNeck,
-  IconClothesDiapers,
-  IconClothesGlovesTwo,
-  IconClothesGloves,
-  IconClothesHoodie,
-  IconClothesPantsShort,
-  IconClothesPantsSweat,
-  IconClothesPants,
-  IconClothesShortSleeve,
-  IconClothesSkates,
-  IconClothesSuit,
-  IconClothesSweater,
-  IconClothesTurtleneck,
-  IconClothesWindbreaker,
-  IconCloudStorage,
-  IconCloudyNight,
-  IconCloudy,
-  IconClue,
-  IconCoatHanger,
-  IconCocktail,
-  IconCoconutTree,
-  IconCodeBrackets,
-  IconCodeComputer,
-  IconCodeDownload,
-  IconCodeLaptop,
-  IconCodeOne,
-  IconCode,
-  IconCoffeeMachine,
-  IconCola,
-  IconCollapseTextInput,
-  IconCollectComputer,
-  IconCollectLaptop,
-  IconCollectPicture,
-  IconCollectionFiles,
-  IconCollectionRecords,
-  IconColorCard,
-  IconColorFilter,
-  IconColumn,
-  IconComb,
-  IconCome,
-  IconCommand,
-  IconCommentOne,
-  IconComment,
-  IconComments,
-  IconCommodity,
-  IconCommunication,
-  IconCommuterBag,
-  IconCompassOne,
-  IconCompass,
-  IconComponent,
-  IconComposition,
-  IconCompression,
-  IconComputerOne,
-  IconComputer,
-  IconConceptSharing,
-  IconConcern,
-  IconConditioner,
-  IconCone,
-  IconCones,
-  IconConfig,
-  IconConfoundedFace,
-  IconConfusedFace,
-  IconConnectAddressOne,
-  IconConnectAddressTwo,
-  IconConnect,
-  IconConnectionArrow,
-  IconConnectionBox,
-  IconConnectionPointTwo,
-  IconConnectionPoint,
-  IconConnection,
-  IconConsignment,
-  IconConsume,
-  IconContrastViewCircle,
-  IconContrastView,
-  IconContrast,
-  IconControl,
-  IconConvergingGateway,
-  IconCook,
-  IconCookingPot,
-  IconCooking,
-  IconCool,
-  IconCooperativeHandshake,
-  IconCoordinateSystem,
-  IconCopyLink,
-  IconCopyOne,
-  IconCopy,
-  IconCopyright,
-  IconCornerDownLeft,
-  IconCornerDownRight,
-  IconCornerLeftDown,
-  IconCornerLeftUp,
-  IconCornerRightDown,
-  IconCornerRightUp,
-  IconCornerUpLeft,
-  IconCornerUpRight,
-  IconCoronavirus,
-  IconCorrect,
-  IconCosmeticBrush,
-  IconCoupon,
-  IconCourt,
-  IconCpu,
-  IconCrab,
-  IconCreationDateSort,
-  IconCreative,
-  IconCredit,
-  IconCrib,
-  IconCroissant,
-  IconCrossRingTwo,
-  IconCrossRing,
-  IconCrossSociety,
-  IconCrownThree,
-  IconCrownTwo,
-  IconCrown,
-  IconCruise,
-  IconCryingBaby,
-  IconCubeFive,
-  IconCubeFour,
-  IconCubeThree,
-  IconCubeTwo,
-  IconCube,
-  IconCupFour,
-  IconCupOne,
-  IconCup,
-  IconCurling,
-  IconCurrency,
-  IconCurveAdjustment,
-  IconCustomer,
-  IconCuttingOne,
-  IconCutting,
-  IconCuvette,
-  IconCycleArrow,
-  IconCycleMovement,
-  IconCycleOne,
-  IconCycle,
-  IconCylinder,
-  IconDamageMap,
-  IconDarkMode,
-  IconDashboardCar,
-  IconDashboardOne,
-  IconDashboardTwo,
-  IconDashboard,
-  IconDataAll,
-  IconDataArrival,
-  IconDataDisplay,
-  IconDataFile,
-  IconDataFour,
-  IconDataLock,
-  IconDataNull,
-  IconDataOne,
-  IconDataScreen,
-  IconDataServer,
-  IconDataSheet,
-  IconDataSwitching,
-  IconDataThree,
-  IconDataTwo,
-  IconDataUser,
-  IconData,
-  IconDatabaseAlert,
-  IconDatabaseCode,
-  IconDatabaseConfig,
-  IconDatabaseDownload,
-  IconDatabaseEnter,
-  IconDatabaseFail,
-  IconDatabaseFirst,
-  IconDatabaseForbid,
-  IconDatabaseLock,
-  IconDatabaseNetworkPoint,
-  IconDatabaseNetwork,
-  IconDatabasePoint,
-  IconDatabasePosition,
-  IconDatabasePower,
-  IconDatabaseProportion,
-  IconDatabaseSearch,
-  IconDatabaseSetting,
-  IconDatabaseSuccess,
-  IconDatabaseSync,
-  IconDatabaseTime,
-  IconDateComesBack,
-  IconDeadlineSort,
-  IconDeathStar,
-  IconDeeplink,
-  IconDeer,
-  IconDegreeHat,
-  IconDeleteFive,
-  IconDeleteFour,
-  IconDeleteKey,
-  IconDeleteMode,
-  IconDeleteOne,
-  IconDeleteThemes,
-  IconDeleteThree,
-  IconDeleteTwo,
-  IconDelete,
-  IconDelivery,
-  IconDeposit,
-  IconDescend,
-  IconDeskLampOne,
-  IconDeskLamp,
-  IconDetection,
-  IconDevices,
-  IconDiamondNecklace,
-  IconDiamondOne,
-  IconDiamondRing,
-  IconDiamondThree,
-  IconDiamondTwo,
-  IconDiamond,
-  IconDiamonds,
-  IconDianziqian,
-  IconDiapersOne,
-  IconDifferenceSet,
-  IconDigitalWatches,
-  IconDirectionAdjustmentThree,
-  IconDirectionAdjustmentTwo,
-  IconDirectionAdjustment,
-  IconDirection,
-  IconDisabaledWeb,
-  IconDisabledComputer,
-  IconDisabledLaptop,
-  IconDisabledPicture,
-  IconDisappointedFace,
-  IconDiscoveryIndex,
-  IconDiskOne,
-  IconDiskTwo,
-  IconDisk,
-  IconDislikeTwo,
-  IconDislike,
-  IconDisplay,
-  IconDistortion,
-  IconDistraughtFace,
-  IconDistributeHorizontalSpacing,
-  IconDistributeHorizontally,
-  IconDistributeVerticalSpacing,
-  IconDistributeVertically,
-  IconDividingLineOne,
-  IconDividingLine,
-  IconDivingBottle,
-  IconDivingSuit,
-  IconDiving,
-  IconDivision,
-  IconDizzyFace,
-  IconDocAdd,
-  IconDocDetail,
-  IconDocFail,
-  IconDocSearchTwo,
-  IconDocSearch,
-  IconDocSuccess,
-  IconDocumentFolder,
-  IconDogZodiac,
-  IconDog,
-  IconDollar,
-  IconDolphin,
-  IconDomeLight,
-  IconDome,
-  IconDoneAll,
-  IconDongchedi,
-  IconDoorHandle,
-  IconDot,
-  IconDoubleBed,
-  IconDoubleDown,
-  IconDoubleLeft,
-  IconDoubleRight,
-  IconDoubleUp,
-  IconDoughnut,
-  IconDownC,
-  IconDownOne,
-  IconDownPicture,
-  IconDownSmall,
-  IconDownSquare,
-  IconDownTwo,
-  IconDown,
-  IconDownloadComputer,
-  IconDownloadFour,
-  IconDownloadLaptop,
-  IconDownloadOne,
-  IconDownloadThree,
-  IconDownloadTwo,
-  IconDownloadWeb,
-  IconDownload,
-  IconDrag,
-  IconDragonZodiac,
-  IconDribble,
-  IconDrink,
-  IconDroneOne,
-  IconDrone,
-  IconDropDownList,
-  IconDropShadowDown,
-  IconDropShadowLeft,
-  IconDropShadowRight,
-  IconDropShadowUp,
-  IconDropbox,
-  IconDrumstick,
-  IconDubai,
-  IconDuck,
-  IconDumbbelLine,
-  IconDumbbell,
-  IconDvi,
-  IconEagle,
-  IconEarth,
-  IconEasy,
-  IconEcg,
-  IconEditMovie,
-  IconEditName,
-  IconEditOne,
-  IconEditTwo,
-  IconEdit,
-  IconEditing,
-  IconEditor,
-  IconEeg,
-  IconEffects,
-  IconEfferentFour,
-  IconEfferentThree,
-  IconEggOne,
-  IconEgg,
-  IconEggplant,
-  IconEiffelTower,
-  IconEightKey,
-  IconElectricDrill,
-  IconElectricIron,
-  IconElectricWave,
-  IconElectrocardiogram,
-  IconElectronicDoorLock,
-  IconElectronicLocksClose,
-  IconElectronicLocksOpen,
-  IconElectronicPen,
-  IconElephant,
-  IconElevator,
-  IconEmailBlock,
-  IconEmailDelect,
-  IconEmailDown,
-  IconEmailFail,
-  IconEmailLock,
-  IconEmailPush,
-  IconEmailSearch,
-  IconEmailSecurity,
-  IconEmailSuccessfully,
-  IconEmotionHappy,
-  IconEmotionUnhappy,
-  IconEmpty,
-  IconEndTimeSort,
-  IconEndless,
-  IconEndocrine,
-  IconEndpointDisplacement,
-  IconEndpointFlat,
-  IconEndpointRound,
-  IconEndpointSquare,
-  IconEnergySocket,
-  IconEngineeringBrand,
-  IconEngineeringVehicle,
-  IconEnglishMustache,
-  IconEnglish,
-  IconEnquire,
-  IconEnterKeyOne,
-  IconEnterKey,
-  IconEnterTheKeyboard,
-  IconEntertainment,
-  IconEnvelopeOne,
-  IconEnvelope,
-  IconEqualRatio,
-  IconEqualizer,
-  IconErase,
-  IconErrorComputer,
-  IconErrorPicture,
-  IconErrorPrompt,
-  IconError,
-  IconEscalators,
-  IconEthernetOff,
-  IconEthernetOn,
-  IconEveryUser,
-  IconExcelOne,
-  IconExcel,
-  IconExchangeFour,
-  IconExchangeOne,
-  IconExchangeThree,
-  IconExchangeTwo,
-  IconExchange,
-  IconExcludeSelection,
-  IconExclusiveGateway,
-  IconExpandDownOne,
-  IconExpandDown,
-  IconExpandLeftAndRight,
-  IconExpandLeft,
-  IconExpandRight,
-  IconExpandTextInput,
-  IconExpandUp,
-  IconExpensesOne,
-  IconExpenses,
-  IconExperimentOne,
-  IconExperiment,
-  IconExport,
-  IconExpressDelivery,
-  IconExpressionlessFace,
-  IconExtend,
-  IconExternalTransmission,
-  IconEyebrow,
-  IconEyes,
-  IconFEightKey,
-  IconFFiveKey,
-  IconFFourKey,
-  IconFNKey,
-  IconFNineKey,
-  IconFOneKey,
-  IconFSevenKey,
-  IconFSixKey,
-  IconFThreeKey,
-  IconFTwoKey,
-  IconFZeroKey,
-  IconFacePowder,
-  IconFaceRecognition,
-  IconFaceWithSmilingOpenEyes,
-  IconFaceWithoutMouth,
-  IconFacebookOne,
-  IconFacebook,
-  IconFacetime,
-  IconFaceu,
-  IconFacialCleanser,
-  IconFacialMask,
-  IconFactoryBuilding,
-  IconFailPicture,
-  IconFamily,
-  IconFan,
-  IconFanqiexiaoshuo,
-  IconFeelgoodOne,
-  IconFeelgood,
-  IconFeiyu,
-  IconFemale,
-  IconFenceOne,
-  IconFenceTwo,
-  IconFerrisWheel,
-  IconFigmaComponent,
-  IconFigmaFlattenSelection,
-  IconFigmaMask,
-  IconFigmaResetInstance,
-  IconFigma,
-  IconFileAdditionOne,
-  IconFileAddition,
-  IconFileCabinet,
-  IconFileCodeOne,
-  IconFileCode,
-  IconFileCollectionOne,
-  IconFileCollection,
-  IconFileConversionOne,
-  IconFileConversion,
-  IconFileDateOne,
-  IconFileDate,
-  IconFileDisplayOne,
-  IconFileDisplay,
-  IconFileDoc,
-  IconFileEditingOne,
-  IconFileEditing,
-  IconFileExcel,
-  IconFileFailedOne,
-  IconFileFailed,
-  IconFileFocusOne,
-  IconFileFocus,
-  IconFileGif,
-  IconFileHashOne,
-  IconFileHash,
-  IconFileHidingOne,
-  IconFileHiding,
-  IconFileJpg,
-  IconFileLockOne,
-  IconFileLock,
-  IconFileMusicOne,
-  IconFileMusic,
-  IconFilePdfOne,
-  IconFilePdf,
-  IconFilePpt,
-  IconFileProtectionOne,
-  IconFileProtection,
-  IconFileQualityOne,
-  IconFileQuality,
-  IconFileQuestion,
-  IconFileRemovalOne,
-  IconFileRemoval,
-  IconFileSearchOne,
-  IconFileSearchTwo,
-  IconFileSearch,
-  IconFileSettingsOne,
-  IconFileSettings,
-  IconFileStaffOne,
-  IconFileStaff,
-  IconFileSuccessOne,
-  IconFileSuccess,
-  IconFileTextOne,
-  IconFileText,
-  IconFileTipsOne,
-  IconFileTips,
-  IconFileTxtOne,
-  IconFileTxt,
-  IconFileWithdrawalOne,
-  IconFileWithdrawal,
-  IconFileWord,
-  IconFileZip,
-  IconFill,
-  IconFilm,
-  IconFilterOne,
-  IconFilter,
-  IconFinance,
-  IconFinancingOne,
-  IconFinancingTwo,
-  IconFinancing,
-  IconFindOne,
-  IconFind,
-  IconFingernail,
-  IconFingerprintThree,
-  IconFingerprintTwo,
-  IconFingerprint,
-  IconFireExtinguisherOne,
-  IconFireExtinguisher,
-  IconFireTwo,
-  IconFire,
-  IconFireworks,
-  IconFirstAidKit,
-  IconFirst,
-  IconFishOne,
-  IconFish,
-  IconFishing,
-  IconFist,
-  IconFitness,
-  IconFiveEllipses,
-  IconFiveFive,
-  IconFiveKey,
-  IconFiveStarBadge,
-  IconFive,
-  IconFlag,
-  IconFlashPayment,
-  IconFlashlamp,
-  IconFlashlight,
-  IconFlask,
-  IconFlightAirflow,
-  IconFlightSafety,
-  IconFlipCamera,
-  IconFlipHorizontally,
-  IconFlipVertically,
-  IconFlirt,
-  IconFloat,
-  IconFloorTile,
-  IconFm,
-  IconFocusOne,
-  IconFocus,
-  IconFog,
-  IconFoldUpOne,
-  IconFolderBlockOne,
-  IconFolderBlock,
-  IconFolderClose,
-  IconFolderCodeOne,
-  IconFolderCode,
-  IconFolderConversionOne,
-  IconFolderConversion,
-  IconFolderDownload,
-  IconFolderFailedOne,
-  IconFolderFailed,
-  IconFolderFocusOne,
-  IconFolderFocus,
-  IconFolderLockOne,
-  IconFolderLock,
-  IconFolderMinus,
-  IconFolderMusicOne,
-  IconFolderMusic,
-  IconFolderOne,
-  IconFolderOpen,
-  IconFolderPlus,
-  IconFolderProtectionOne,
-  IconFolderProtection,
-  IconFolderQualityOne,
-  IconFolderQuality,
-  IconFolderSearchOne,
-  IconFolderSearch,
-  IconFolderSettingsOne,
-  IconFolderSettings,
-  IconFolderSuccessOne,
-  IconFolderSuccess,
-  IconFolderUpload,
-  IconFolderWithdrawalOne,
-  IconFolderWithdrawal,
-  IconFolder,
-  IconFollowUpDateSort,
-  IconFontSearch,
-  IconFontSizeTwo,
+  IconCodeView,
+  IconDeleteColumn,
+  IconDeleteRow,
+  IconDoubleQuotesL,
+  IconDoubleQuotesR,
+  IconDraggable,
+  IconDropdownList,
+  IconEmphasisCn,
+  IconEmphasis,
+  IconEnglishInput,
+  IconFlowChart,
+  IconFontColor,
+  IconFontFamily,
+  IconFontMono,
+  IconFontSansSerif,
+  IconFontSans,
+  IconFontSize2,
   IconFontSize,
-  IconFoot,
-  IconFootball,
-  IconForbid,
-  IconForkSpoon,
-  IconFork,
-  IconFormOne,
-  IconForm,
-  IconFormatBrush,
-  IconFormat,
-  IconFormula,
-  IconFoundationMakeup,
-  IconFourArrows,
-  IconFourFour,
-  IconFourKey,
-  IconFourLeaves,
-  IconFourPointConnection,
-  IconFourRoundPointConnection,
-  IconFour,
-  IconFoursquare,
-  IconFreezeColumn,
-  IconFreezeLine,
-  IconFreezingLineColumn,
-  IconFrenchFries,
-  IconFriendsCircle,
-  IconFrigate,
-  IconFrog,
-  IconFrowningFaceWhitOpenMouth,
-  IconFruiter,
-  IconFullDressLonguette,
-  IconFullScreenOne,
-  IconFullScreenPlay,
-  IconFullScreenTwo,
-  IconFullScreen,
-  IconFullSelection,
-  IconFullwidth,
-  IconFunds,
-  IconFutureBuildOne,
-  IconFutureBuildThree,
-  IconFutureBuildTwo,
-  IconGameConsoleOne,
-  IconGameConsole,
-  IconGameEmoji,
-  IconGameHandle,
-  IconGamePs,
-  IconGameThree,
-  IconGameTwo,
-  IconGame,
-  IconGamepad,
-  IconGarage,
-  IconGarlic,
-  IconGas,
-  IconGastrointestinal,
-  IconGateMachine,
-  IconGate,
-  IconGauze,
-  IconGavel,
-  IconGemini,
-  IconGeneralBranch,
-  IconGeometricFlowers,
-  IconGerms,
-  IconGhost,
-  IconGiftBag,
-  IconGiftBox,
-  IconGift,
-  IconGirlOne,
-  IconGirlTwo,
-  IconGirl,
-  IconGithubOne,
-  IconGithub,
-  IconGitlab,
-  IconGlassesOne,
-  IconGlassesThree,
-  IconGlasses,
-  IconGlobe,
-  IconGlove,
-  IconGoAhead,
-  IconGoEnd,
-  IconGoOn,
-  IconGoStart,
-  IconGobletCracking,
-  IconGobletFull,
-  IconGobletOne,
-  IconGoblet,
-  IconGoldMedalTwo,
-  IconGoldMedal,
-  IconGolfCourse,
-  IconGongfu,
-  IconGoodOne,
-  IconGoodTwo,
-  IconGood,
-  IconGoogleAds,
-  IconGoogle,
-  IconGopro,
-  IconGps,
-  IconGraphicDesignTwo,
-  IconGraphicDesign,
-  IconGraphicStitchingFour,
-  IconGraphicStitchingThree,
-  IconGraphicStitching,
-  IconGreatWall,
-  IconGreenHouse,
-  IconGreenNewEnergy,
-  IconGridFour,
-  IconGridNine,
-  IconGridSixteen,
-  IconGridThree,
-  IconGridTwo,
-  IconGrimacingFace,
-  IconGrinningFaceWithOpenMouth,
-  IconGrinningFaceWithSquintingEyes,
-  IconGrinningFaceWithTightlyClosedEyesOpenMouth,
-  IconGrinningFaceWithTightlyClosedEyes,
-  IconGrinningFace,
-  IconGroup,
-  IconGuideBoard,
-  IconGymnasticsOne,
-  IconGymnastics,
-  IconH,
+  IconFormatClear,
+  IconFunctions,
   IconH1,
   IconH2,
   IconH3,
-  IconHairBrush,
-  IconHairClip,
-  IconHairDryerOne,
-  IconHairDryer,
-  IconHalo,
-  IconHamburgerButton,
-  IconHamburgerOne,
-  IconHamburger,
-  IconHammerAndAnvil,
-  IconHandCream,
-  IconHandDown,
-  IconHandDrag,
-  IconHandLeft,
-  IconHandPaintedPlate,
-  IconHandRight,
-  IconHandUp,
-  IconHandbag,
-  IconHandheld,
-  IconHandleA,
-  IconHandleB,
-  IconHandleC,
-  IconHandleDown,
-  IconHandleLeft,
-  IconHandleRight,
-  IconHandleRound,
-  IconHandleSquare,
-  IconHandleTriangle,
-  IconHandleUp,
-  IconHandleX,
-  IconHandleY,
-  IconHandleZ,
-  IconHands,
-  IconHandwashingFluid,
-  IconHandwashing,
-  IconHanfuChineseStyle,
-  IconHangerOne,
-  IconHangerTwo,
-  IconHanger,
-  IconHardDiskOne,
-  IconHardDisk,
-  IconHarm,
-  IconHashtagKey,
-  IconHat,
-  IconHdd,
-  IconHdmiCable,
-  IconHdmiConnector,
-  IconHeadphoneSound,
-  IconHeadsetOne,
-  IconHeadsetTwo,
-  IconHeadset,
-  IconHeadwear,
-  IconHealthProducts,
-  IconHealth,
-  IconHealthyRecognition,
-  IconHeartBallon,
-  IconHeartRate,
-  IconHeart,
-  IconHeartbeat,
-  IconHeaterResistor,
-  IconHeavyMetal,
-  IconHeavyRain,
-  IconHeavyWind,
-  IconHelmetOne,
-  IconHelmet,
-  IconHelp,
-  IconHelpcenter,
-  IconHexagonOne,
-  IconHexagonStrip,
-  IconHexagonal,
-  IconHi,
-  IconHighHeeledShoes,
-  IconHighLight,
-  IconHighSpeedRail,
-  IconHippo,
-  IconHistogram,
-  IconHistoryQuery,
-  IconHistory,
-  IconHockey,
-  IconHoldInterface,
-  IconHoldSeeds,
-  IconHold,
-  IconHoldingHands,
-  IconHolySword,
-  IconHomeTwo,
-  IconHome,
-  IconHomestay,
-  IconHoneyOne,
-  IconHoney,
-  IconHorizontalSpacingBetweenItems,
-  IconHorizontalTidyUp,
-  IconHorizontallyCentered,
-  IconHorseZodiac,
-  IconHospitalBed,
-  IconHospitalFour,
-  IconHospitalThree,
-  IconHospitalTwo,
-  IconHospital,
-  IconHotAirBalloon,
-  IconHotPotOne,
-  IconHotPot,
-  IconHotelDoNotClean,
-  IconHotelPleaseClean,
-  IconHotel,
-  IconHourglassFull,
-  IconHourglassNull,
-  IconHourglass,
-  IconHtmlFive,
-  IconHuntingGear,
-  IconHuoshanzhibo,
-  IconIMac,
-  IconIcecreamFive,
-  IconIcecreamFour,
-  IconIcecreamOne,
-  IconIcecreamThree,
-  IconIcecreamTwo,
-  IconIcecream,
-  IconIdCardH,
-  IconIdCardV,
-  IconIdCard,
-  IconImageFiles,
-  IconImbalance,
-  IconImportAndExport,
-  IconInFlight,
-  IconInboxDownloadR,
-  IconInboxIn,
-  IconInboxOut,
-  IconInboxR,
-  IconInboxSuccessR,
-  IconInboxSuccess,
-  IconInboxUploadR,
-  IconInbox,
-  IconInclusiveGateway,
-  IconIncomeOne,
-  IconIncome,
-  IconIncoming,
-  IconIncreaseTheScale,
-  IconIncrease,
-  IconIndentLeft,
-  IconIndentRight,
-  IconIndexFinger,
-  IconInductionLock,
-  IconIndustrialScales,
-  IconInfo,
-  IconInfusion,
-  IconInjection,
-  IconInline,
-  IconInnerShadowBottomLeft,
-  IconInnerShadowBottomRight,
-  IconInnerShadowDown,
-  IconInnerShadowLeft,
-  IconInnerShadowRight,
-  IconInnerShadowTopLeft,
-  IconInnerShadowTopRight,
-  IconInnerShadowUp,
-  IconInsertCard,
-  IconInsertTable,
-  IconInspection,
-  IconInstagramOne,
-  IconInstagram,
-  IconInstall,
-  IconInstruction,
-  IconIntercom,
-  IconIntermediateMode,
-  IconInternalData,
-  IconInternalExpansion,
-  IconInternalReduction,
-  IconInternalTransmission,
-  IconInternational,
-  IconIntersectSelection,
-  IconIntersection,
-  IconInvalidFiles,
-  IconInvertCamera,
-  IconInvertLeft,
-  IconInvertRight,
-  IconIosFaceRecognition,
-  IconIpadOne,
-  IconIpad,
-  IconIphone,
-  IconIpo,
-  IconIronDisable,
-  IconIronThree,
-  IconIronTwo,
-  IconIron,
-  IconIwatchOne,
-  IconIwatchTwo,
-  IconIwatch,
-  IconJewelry,
-  IconJinritoutiao,
-  IconJourney,
-  IconJoystick,
-  IconJuice,
-  IconJump,
-  IconKagiMap,
-  IconKettleOne,
-  IconKettle,
-  IconKeyOne,
-  IconKeyTwo,
-  IconKey,
-  IconKeyboardOne,
-  IconKeyboard,
-  IconKeyhole,
-  IconKeyline,
-  IconKitchenKnife,
-  IconKnifeFork,
-  IconKoalaBear,
-  IconKungfu,
-  IconLabel,
-  IconLadderOne,
-  IconLadder,
-  IconLamp,
-  IconLandSurveying,
-  IconLanding,
-  IconLandscape,
-  IconLaptopComputer,
-  IconLaptopOne,
-  IconLaptop,
-  IconLarkOne,
-  IconLark,
-  IconLatticePattern,
-  IconLayers,
-  IconLayoutFive,
-  IconLayoutFour,
-  IconLayoutOne,
-  IconLayoutThree,
-  IconLayoutTwo,
-  IconLeaf,
-  IconLeavesOne,
-  IconLeavesTwo,
-  IconLeaves,
-  IconLedDiode,
-  IconLeftAlignment,
-  IconLeftAndRightBranch,
-  IconLeftBar,
-  IconLeftBranch,
-  IconLeftC,
-  IconLeftExpand,
-  IconLeftOne,
-  IconLeftSmallDown,
-  IconLeftSmallUp,
-  IconLeftSmall,
-  IconLeftSquare,
-  IconLeftTwo,
-  IconLeft,
-  IconLemon,
-  IconLensAlignment,
-  IconLeo,
-  IconLevelAdjustment,
-  IconLevelEightTitle,
-  IconLevelFiveTitle,
-  IconLevelFourTitle,
-  IconLevelNineTitle,
-  IconLevelSevenTitle,
-  IconLevelSixTitle,
-  IconLevel,
-  IconLibra,
-  IconLifebuoy,
-  IconLightHouse,
-  IconLightMember,
-  IconLightRain,
-  IconLight,
-  IconLightning,
-  IconLike,
-  IconLincoln,
-  IconLinkBreak,
-  IconLinkCloudFaild,
-  IconLinkCloudSucess,
-  IconLinkCloud,
-  IconLinkFour,
-  IconLinkIn,
-  IconLinkInterrupt,
-  IconLinkLeft,
-  IconLinkOne,
-  IconLinkOut,
-  IconLinkRight,
-  IconLinkThree,
-  IconLinkTwo,
+  IconH4,
+  IconH5,
+  IconH6,
+  IconHashtag,
+  IconHeading,
+  IconIndentDecrease,
+  IconIndentIncrease,
+  IconInfoI,
+  IconInputCursorMove,
+  IconInsertColumnLeft,
+  IconInsertColumnRight,
+  IconInsertRowBottom,
+  IconInsertRowTop,
+  IconItalic,
+  IconLineHeight,
+  IconLinkM,
+  IconLinkUnlinkM,
+  IconLinkUnlink,
   IconLink,
-  IconLipGloss,
-  IconLipTattoo,
-  IconLipstickOne,
-  IconLipstick,
-  IconLiqueur,
-  IconListAdd,
-  IconListAlphabet,
-  IconListBottom,
-  IconListCheckbox,
-  IconListFail,
-  IconListMiddle,
-  IconListNumbers,
-  IconListOne,
-  IconListSuccess,
-  IconListTop,
-  IconListTwo,
-  IconListView,
-  IconList,
-  IconLoadingFour,
-  IconLoadingOne,
-  IconLoadingThree,
-  IconLoadingTwo,
-  IconLoading,
-  IconLocalPin,
-  IconLocalTwo,
-  IconLocal,
-  IconLockOne,
-  IconLock,
-  IconLockingComputer,
-  IconLockingLaptop,
-  IconLockingPicture,
-  IconLockingWeb,
-  IconLog,
-  IconLogin,
-  IconLogout,
-  IconLollipop,
-  IconLoopOnce,
-  IconLotion,
-  IconLotus,
-  IconLoudlyCryingFaceWhitOpenMouth,
-  IconLoudlyCryingFace,
-  IconLoveAndHelp,
-  IconLowerBranch,
-  IconLuggage,
-  IconLuminous,
-  IconLung,
-  IconMacFinder,
-  IconMacadamiaNut,
-  IconMagicHat,
-  IconMagicWand,
-  IconMagic,
-  IconMagnet,
-  IconMailDownload,
-  IconMailEdit,
-  IconMailOpen,
-  IconMailPackage,
-  IconMailReview,
-  IconMailUnpacking,
-  IconMail,
-  IconMaillOne,
-  IconMakeups,
-  IconMale,
-  IconMallBag,
-  IconManualGear,
-  IconManyToMany,
-  IconMapDistance,
-  IconMapDraw,
-  IconMapRoadTwo,
-  IconMapRoad,
-  IconMapTwo,
-  IconMarginOne,
-  IconMargin,
-  IconMark,
-  IconMarketAnalysis,
-  IconMarket,
-  IconMascara,
-  IconMaskOne,
-  IconMaskTwo,
-  IconMask,
-  IconMaslowPyramids,
-  IconMassageChairOne,
-  IconMassageChair,
-  IconMassageTable,
-  IconMaster,
-  IconMaterialThree,
-  IconMaterialTwo,
-  IconMaterial,
-  IconMaximum,
-  IconMaya,
-  IconMayuraGesture,
-  IconMe,
-  IconMeasuringCup,
-  IconMedalOne,
-  IconMediaeditor,
-  IconMedicalBox,
-  IconMedicalFiles,
-  IconMedicalMark,
-  IconMedicationTime,
-  IconMedicineBottleOne,
-  IconMedicineBottle,
-  IconMedicineChest,
-  IconMemoryCardOne,
-  IconMemoryCard,
-  IconMemoryOne,
-  IconMemory,
-  IconMenJacket,
-  IconMenuFoldOne,
-  IconMenuFold,
-  IconMenuUnfoldOne,
-  IconMenuUnfold,
-  IconMergeCells,
-  IconMerge,
-  IconMessageEmoji,
-  IconMessageFailed,
-  IconMessageOne,
-  IconMessagePrivacy,
-  IconMessageSearch,
-  IconMessageSecurity,
-  IconMessageSent,
-  IconMessageSuccess,
-  IconMessageUnread,
-  IconMessage,
-  IconMessagesOne,
-  IconMessages,
-  IconMicroSd,
-  IconMicroSlrCamera,
-  IconMicrophoneOne,
-  IconMicrophone,
-  IconMicroscopeOne,
-  IconMicroscope,
-  IconMicrowaveOven,
-  IconMicrowaves,
-  IconMiddleFinger,
-  IconMilkOne,
-  IconMilk,
-  IconMin,
-  IconMindMapping,
-  IconMindmapList,
-  IconMindmapMap,
-  IconMiniSdCard,
-  IconMinusTheBottom,
-  IconMinusTheTop,
-  IconMinus,
-  IconMirrorOne,
-  IconMirrorTwo,
-  IconMirror,
-  IconMisalignedSemicircle,
-  IconMitsubishi,
-  IconModifyTwo,
-  IconModify,
-  IconMonitorCamera,
-  IconMonitorOff,
-  IconMonitorOne,
-  IconMonitorTwo,
-  IconMonitor,
-  IconMonkeyZodiac,
-  IconMonkey,
-  IconMonumentOne,
-  IconMonumentTwo,
-  IconMoon,
-  IconMoreApp,
-  IconMoreFour,
-  IconMoreOne,
-  IconMoreThree,
-  IconMoreTwo,
-  IconMore,
-  IconMosaic,
-  IconMountain,
-  IconMounted,
-  IconMouseOne,
-  IconMouseZodiac,
-  IconMouse,
-  IconMouth,
-  IconMoveInOne,
-  IconMoveIn,
-  IconMoveOne,
-  IconMove,
-  IconMovieBoard,
-  IconMovie,
-  IconMovingPicture,
-  IconMultiCircular,
-  IconMultiFunctionKnife,
-  IconMultiPictureCarousel,
-  IconMultiRectangle,
-  IconMultiRing,
-  IconMultiTriangularFour,
-  IconMultiTriangularThree,
-  IconMultiTriangularTwo,
-  IconMultiTriangular,
-  IconMulticast,
-  IconMultilayerSphere,
-  IconMuscle,
-  IconMuseumOne,
-  IconMuseumTwo,
-  IconMusicCd,
-  IconMusicList,
-  IconMusicMenu,
-  IconMusicOne,
-  IconMusicRhythm,
-  IconMusic,
-  IconMute,
-  IconNailPolishOne,
-  IconNailPolish,
-  IconNasal,
-  IconNaturalMode,
-  IconNavigation,
-  IconNecktie,
-  IconNeedle,
-  IconNegativeDynamics,
-  IconNestedArrows,
-  IconNests,
-  IconNetworkDrive,
-  IconNetworkTree,
-  IconNeural,
-  IconNeutralFace,
-  IconNewAfferent,
-  IconNewComputer,
-  IconNewDianziqian,
-  IconNewEfferent,
-  IconNewLark,
-  IconNewPicture,
-  IconNewlybuild,
-  IconNewspaperFolding,
-  IconNext,
-  IconNineKey,
-  IconNinePointsConnected,
-  IconNintendoSwitch,
-  IconNmr,
-  IconNoShooting,
-  IconNodeFlat,
-  IconNodeRound,
-  IconNodeSquare,
-  IconNoodles,
-  IconNotebookAndPen,
-  IconNotebookOne,
-  IconNotebook,
-  IconNotepad,
-  IconNotes,
-  IconNuclearPlant,
-  IconNurseCap,
-  IconNut,
-  IconNutrition,
-  IconOceanengine,
-  IconOctagon,
-  IconOffScreenOne,
-  IconOffScreenTwo,
-  IconOffScreen,
-  IconOilIndustry,
-  IconOkay,
-  IconOneKey,
-  IconOneOne,
-  IconOneThirdRotation,
-  IconOneToMany,
-  IconOneToOne,
-  IconOne,
-  IconOnesies,
-  IconOnlineMeeting,
-  IconOpenAnAccount,
-  IconOpenDoor,
-  IconOpenOne,
-  IconOpen,
-  IconOptimize,
-  IconOptional,
-  IconOrangeOne,
-  IconOrangeStation,
-  IconOrange,
-  IconOrder,
-  IconOrderedList,
-  IconOrthopedic,
-  IconOscillator,
-  IconOther,
-  IconOutbound,
-  IconOutdoor,
-  IconOutgoing,
-  IconOvalLoveTwo,
-  IconOvalLove,
-  IconOvalOne,
-  IconOvenTray,
-  IconOven,
-  IconOverallReduction,
-  IconOwl,
-  IconPacifier,
-  IconPad,
-  IconPageTemplate,
-  IconPage,
-  IconPagoda,
-  IconPaint,
-  IconPaintedEggshell,
-  IconPaintedScreen,
-  IconPalace,
-  IconPalm,
-  IconPanda,
-  IconPangle,
-  IconPanoramaHorizontal,
-  IconPanties,
-  IconPaperMoneyTwo,
-  IconPaperMoney,
-  IconPaperShip,
-  IconPaperclip,
-  IconParabola,
-  IconParachute,
-  IconParagraphAlphabet,
-  IconParagraphBreakTwo,
-  IconParagraphBreak,
-  IconParagraphCut,
-  IconParagraphRectangle,
-  IconParagraphRound,
-  IconParagraphTriangle,
-  IconParagraphUnfold,
-  IconParallelGateway,
-  IconParallelogram,
-  IconParentingBook,
-  IconParking,
-  IconPartyBalloon,
-  IconPassportOne,
-  IconPassport,
-  IconPauseOne,
-  IconPause,
-  IconPayCodeOne,
-  IconPayCodeTwo,
-  IconPayCode,
-  IconPaymentMethod,
-  IconPaypal,
-  IconPeach,
-  IconPear,
-  IconPearlOfTheOrient,
-  IconPeas,
-  IconPencil,
-  IconPennant,
-  IconPentagonOne,
-  IconPeopleBottomCard,
-  IconPeopleBottom,
-  IconPeopleDeleteOne,
-  IconPeopleDelete,
-  IconPeopleDownload,
-  IconPeopleLeft,
-  IconPeopleMinusOne,
-  IconPeopleMinus,
-  IconPeoplePlusOne,
-  IconPeoplePlus,
-  IconPeopleRight,
-  IconPeopleSafeOne,
-  IconPeopleSafe,
-  IconPeopleSearchOne,
-  IconPeopleSearch,
-  IconPeopleSpeak,
-  IconPeopleTopCard,
-  IconPeopleTop,
-  IconPeopleUnknown,
-  IconPeopleUpload,
-  IconPeople,
-  IconPeoplesTwo,
-  IconPeoples,
-  IconPercentage,
-  IconPerformance,
-  IconPerfume,
-  IconPerfumerBottle,
-  IconPeriod,
-  IconPermissions,
-  IconPersonalCollection,
-  IconPersonalPrivacy,
-  IconPerspective,
-  IconPesticide,
-  IconPetrol,
-  IconPhoneBooth,
-  IconPhoneCall,
-  IconPhoneIncomingOne,
-  IconPhoneIncoming,
-  IconPhoneMissed,
-  IconPhoneOff,
-  IconPhoneOne,
-  IconPhoneOutgoingOne,
-  IconPhoneOutgoing,
-  IconPhoneTelephone,
-  IconPhoneTwo,
-  IconPhoneVideoCall,
-  IconPhone,
-  IconPhonograph,
-  IconPhotograph,
-  IconPiano,
-  IconPicOne,
-  IconPic,
-  IconPictureAlbum,
-  IconPictureOne,
-  IconPicture,
-  IconPieFive,
-  IconPieFour,
-  IconPieOne,
-  IconPieSeven,
-  IconPieSix,
-  IconPieThree,
-  IconPieTwo,
-  IconPie,
-  IconPigZodiac,
-  IconPig,
-  IconPigeon,
-  IconPill,
-  IconPills,
-  IconPin,
-  IconPineapple,
-  IconPinwheel,
-  IconPisces,
-  IconPivotTable,
-  IconPlan,
-  IconPlanet,
-  IconPlasticSurgery,
-  IconPlatte,
-  IconPlayBasketball,
-  IconPlayCycle,
-  IconPlayOnce,
-  IconPlayOne,
-  IconPlayTwo,
-  IconPlayVolleyball,
-  IconPlayWrong,
-  IconPlay,
-  IconPlaybackProgress,
-  IconPlugOne,
-  IconPlug,
-  IconPlusCross,
-  IconPlus,
-  IconPointOut,
-  IconPoint,
-  IconPokeballOne,
-  IconPoker,
-  IconPopcornOne,
-  IconPopcorn,
-  IconPositiveDynamics,
-  IconPot,
-  IconPotentiometer,
-  IconPoundSign,
-  IconPound,
-  IconPoutingFace,
-  IconPowder,
-  IconPowerSupplyOne,
-  IconPowerSupply,
-  IconPower,
-  IconPowerpoint,
-  IconPpt,
-  IconPregnantWomen,
-  IconPreschool,
-  IconPrescription,
-  IconPress,
-  IconPreviewCloseOne,
-  IconPreviewClose,
-  IconPreviewOpen,
-  IconPrinterOne,
-  IconPrinterTwo,
-  IconPrinter,
-  IconPrison,
-  IconProcessLine,
-  IconProjectorOne,
-  IconProjectorThree,
-  IconProjectorTwo,
-  IconProjector,
-  IconProportionalScaling,
-  IconProtect,
-  IconProtection,
-  IconPublicToilet,
-  IconPullDoor,
-  IconPullRequests,
-  IconPumpkin,
-  IconPureNatural,
-  IconPushDoor,
-  IconPushpin,
-  IconPuzzle,
-  IconPyramidOne,
-  IconPyramid,
-  IconQingniaoClue,
-  IconQiyehao,
-  IconQuadrangularPyramid,
-  IconQuadrilateral,
-  IconQuote,
-  IconRabbitZodiac,
-  IconRabbit,
-  IconRadarChart,
-  IconRadarThree,
-  IconRadarTwo,
-  IconRadar,
-  IconRadiation,
-  IconRadioNanny,
-  IconRadioOne,
-  IconRadioTwo,
-  IconRadio,
-  IconRadishOne,
-  IconRadish,
-  IconRailway,
-  IconRankingList,
-  IconRanking,
-  IconRattleOne,
-  IconRattle,
-  IconRazor,
-  IconReadBook,
-  IconReceive,
-  IconReceiver,
-  IconRecentViewsSort,
-  IconRecordDisc,
-  IconRecordPlayer,
-  IconRecord,
-  IconRectangleOne,
-  IconRectangleSmall,
-  IconRectangleTear,
-  IconRectangleX,
-  IconRectangle,
-  IconRectangularCircularConnection,
-  IconRectangularCircularSeparation,
-  IconRectangularVertebra,
-  IconRecycleBin,
-  IconRecyclingPool,
-  IconRecycling,
-  IconRedCross,
-  IconRedEnvelope,
-  IconRedEnvelopes,
-  IconRedo,
-  IconReduceDecimalPlaces,
-  IconReduceOne,
-  IconReduceTwo,
-  IconReduceUser,
-  IconReduce,
-  IconReel,
-  IconRefraction,
-  IconRefreshOne,
-  IconRefresh,
-  IconRefrigerator,
-  IconReject,
-  IconRelationalGraph,
-  IconRelievedFace,
-  IconReload,
-  IconRemindDisable,
-  IconRemind,
-  IconRemoteControlOne,
-  IconRemoteControl,
-  IconRenal,
-  IconRenault,
-  IconRepair,
-  IconReplayFive,
-  IconReplayMusic,
-  IconReport,
-  IconRepositioning,
-  IconResistor,
-  IconRespect,
-  IconResting,
-  IconRetroBag,
-  IconReturn,
-  IconReverseLensOne,
-  IconReverseLens,
-  IconReverseOperationIn,
-  IconReverseOperationOut,
-  IconReverseRotation,
-  IconRice,
-  IconRidingOne,
-  IconRiding,
-  IconRightAngle,
-  IconRightBar,
-  IconRightBranchOne,
-  IconRightBranchTwo,
-  IconRightBranch,
-  IconRightC,
-  IconRightExpand,
-  IconRightOne,
-  IconRightRun,
-  IconRightSmallDown,
-  IconRightSmallUp,
-  IconRightSmall,
-  IconRightSquare,
-  IconRightTwo,
-  IconRightUser,
-  IconRight,
-  IconRingOne,
-  IconRing,
-  IconRings,
-  IconRipple,
-  IconRoadCone,
-  IconRoadOne,
-  IconRoadSignBoth,
-  IconRoadSign,
-  IconRoad,
-  IconRobotOne,
-  IconRobotTwo,
-  IconRobot,
-  IconRockGesture,
-  IconRock,
-  IconRocketOne,
-  IconRocket,
-  IconRockingHorse,
-  IconRollerskates,
-  IconRomper,
-  IconRopeSkippingOne,
-  IconRopeSkipping,
-  IconRotateOne,
-  IconRotate,
-  IconRotatingAdd,
-  IconRotatingForward,
-  IconRotationHorizontal,
-  IconRotationOne,
-  IconRotationVertical,
-  IconRotation,
-  IconRoundCaliper,
-  IconRoundDistortion,
-  IconRoundMask,
-  IconRoundSocket,
-  IconRoundTrip,
-  IconRound,
-  IconRouterOne,
-  IconRouter,
-  IconRowHeight,
-  IconRowing,
-  IconRsMale,
-  IconRss,
-  IconRugbyOne,
-  IconRugby,
-  IconRuleTwo,
-  IconRulerOne,
-  IconRuler,
-  IconRunLeft,
-  IconSTurnDown,
-  IconSTurnLeft,
-  IconSTurnRight,
-  IconSTurnUp,
-  IconSafeRetrieval,
-  IconSagittarius,
-  IconSailboatOne,
-  IconSailboat,
-  IconSailing,
-  IconSalesReport,
-  IconSandals,
-  IconSandstorm,
-  IconSandwichOne,
-  IconSandwich,
-  IconSapling,
-  IconSaveOne,
-  IconSave,
-  IconScaleOne,
-  IconScale,
-  IconScallion,
-  IconScanCode,
-  IconScanSetting,
-  IconScan,
-  IconScanningTwo,
-  IconScanning,
-  IconScatterAlignment,
-  IconSchedule,
-  IconSchool,
-  IconScissors,
-  IconScoreboard,
-  IconScorpio,
-  IconScreenRotation,
-  IconScreenshotOne,
-  IconScreenshotTwo,
-  IconScreenshot,
-  IconScrewdriver,
-  IconSdCard,
-  IconSd,
-  IconSeal,
-  IconSearch,
-  IconSeat,
-  IconSecurityStall,
-  IconSecurity,
-  IconSeedling,
-  IconSelectedFocus,
-  IconSelected,
-  IconSelfie,
+  IconListCheck2,
+  IconListCheck3,
+  IconListCheck,
+  IconListIndefinite,
+  IconListOrdered2,
+  IconListOrdered,
+  IconListRadio,
+  IconListUnordered,
+  IconMergeCellsHorizontal,
+  IconMergeCellsVertical,
+  IconMindMap,
+  IconNodeTree,
+  IconNumber0,
+  IconNumber1,
+  IconNumber2,
+  IconNumber3,
+  IconNumber4,
+  IconNumber5,
+  IconNumber6,
+  IconNumber7,
+  IconNumber8,
+  IconNumber9,
+  IconOmega,
+  IconOrganizationChart,
+  IconOverline,
+  IconPageSeparator,
+  IconParagraph,
+  IconPinyinInput,
+  IconQuestionMark,
+  IconQuoteText,
+  IconRoundedCorner,
   IconSendBackward,
-  IconSendEmail,
-  IconSendOne,
   IconSendToBack,
-  IconSend,
-  IconSentToBack,
-  IconSeoFolder,
-  IconSeo,
-  IconServer,
-  IconSetOff,
-  IconSettingComputer,
-  IconSettingConfig,
-  IconSettingLaptop,
-  IconSettingOne,
-  IconSettingThree,
-  IconSettingTwo,
-  IconSettingWeb,
-  IconSetting,
-  IconSevenKey,
-  IconShade,
-  IconShake,
-  IconShareOne,
-  IconShareSys,
-  IconShareThree,
-  IconShareTwo,
-  IconShare,
-  IconShaverOne,
-  IconShaver,
-  IconShaving,
-  IconSheepZodiac,
-  IconShieldAdd,
-  IconShield,
-  IconShip,
-  IconShop,
-  IconShoppingBagOne,
-  IconShoppingBag,
-  IconShoppingCartAdd,
-  IconShoppingCartDel,
-  IconShoppingCartOne,
-  IconShoppingCartTwo,
-  IconShoppingCart,
-  IconShoppingMall,
-  IconShopping,
-  IconShortSkirt,
-  IconShorts,
-  IconShoulderBag,
-  IconShovelOne,
-  IconShovel,
-  IconShowerHead,
-  IconShrimp,
-  IconShuffleOne,
-  IconShuffle,
-  IconShutterPriority,
-  IconSickbed,
-  IconSignalOne,
-  IconSignalStrength,
-  IconSignalTowerOne,
-  IconSignalTower,
-  IconSignal,
-  IconSimCard,
-  IconSim,
-  IconSingleBed,
-  IconSinusoid,
-  IconSippyCup,
-  IconSixCircularConnection,
-  IconSixKey,
-  IconSixPoints,
-  IconSix,
-  IconSkate,
-  IconSkates,
-  IconSkating,
-  IconSketch,
-  IconSkiingNordic,
-  IconSkull,
-  IconSlave,
-  IconSleaves,
-  IconSleepOne,
-  IconSleepTwo,
-  IconSleep,
-  IconSlideTwo,
-  IconSlide,
-  IconSlidingHorizontal,
-  IconSlidingVertical,
-  IconSlightlyFrowningFaceWhitOpenMouth,
-  IconSlightlySmilingFace,
-  IconSlippersOne,
-  IconSlippers,
-  IconSlyFaceWhitSmile,
-  IconSmartOptimization,
-  IconSmilingFaceWithSquintingEyes,
-  IconSmilingFace,
-  IconSnacks,
-  IconSnakeZodiac,
-  IconSnow,
-  IconSnowflake,
-  IconSnowman,
-  IconSoapBubble,
-  IconSoccerOne,
-  IconSoccer,
-  IconSocks,
-  IconSofaTwo,
-  IconSofa,
-  IconSoftball,
-  IconSolarEnergyOne,
-  IconSolarEnergy,
-  IconSolidStateDisk,
-  IconSorcererHat,
-  IconSortAmountDown,
-  IconSortAmountUp,
-  IconSortFour,
-  IconSortOne,
-  IconSortThree,
-  IconSortTwo,
-  IconSort,
-  IconSoundOne,
-  IconSoundWave,
-  IconSound,
-  IconSourceCode,
-  IconSoybeanMilkMaker,
-  IconSpaCandle,
-  IconSpaceColony,
-  IconSpanner,
-  IconSpeakerOne,
-  IconSpeaker,
-  IconSpeedOne,
-  IconSpeed,
-  IconSperm,
-  IconSphere,
-  IconSpiderMan,
-  IconSpikedshoes,
-  IconSpinningTop,
-  IconSplitBranch,
-  IconSplitCells,
-  IconSplitTurnDownLeft,
-  IconSplitTurnDownRight,
-  IconSplit,
-  IconSpoon,
-  IconSport,
-  IconSporting,
-  IconSquareSmall,
-  IconSquare,
-  IconSsd,
-  IconStackLight,
-  IconStamp,
-  IconStandUp,
-  IconStapler,
-  IconStarOne,
-  IconStar,
-  IconStartTimeSort,
-  IconSteeringWheel,
-  IconSteoller,
-  IconStereoNesting,
-  IconStereoOne,
-  IconStereoPerspective,
-  IconStethoscope,
-  IconStickers,
-  IconStockMarket,
-  IconStopwatchStart,
-  IconStopwatch,
-  IconStorageCardOne,
-  IconStorageCardTwo,
-  IconStraightRazor,
-  IconStrawHat,
-  IconStretchingOne,
-  IconStretching,
+  IconSeparator,
+  IconSingleQuotesL,
+  IconSingleQuotesR,
+  IconSketching,
+  IconSlashCommands2,
+  IconSlashCommands,
+  IconSortAsc,
+  IconSortDesc,
+  IconSpace,
+  IconSplitCellsHorizontal,
+  IconSplitCellsVertical,
+  IconStrikethrough2,
   IconStrikethrough,
-  IconStrongbox,
-  IconSubtractSelectionOne,
-  IconSubtractSelection,
-  IconSubway,
-  IconSuccessPicture,
-  IconSuccess,
-  IconSum,
-  IconSunHat,
-  IconSunOne,
-  IconSun,
-  IconSunbath,
-  IconSunny,
-  IconSunrise,
-  IconSunset,
-  IconSunshade,
-  IconSurprisedFaceWithOpenBigMouth,
-  IconSurprisedFaceWithOpenMouth,
-  IconSurveillanceCamerasOne,
-  IconSurveillanceCamerasTwo,
-  IconSurveillanceCameras,
-  IconSwallow,
-  IconSweater,
-  IconSwimmingPool,
-  IconSwimmingRing,
-  IconSwimsuit,
-  IconSwing,
-  IconSwipe,
-  IconSwitchButton,
-  IconSwitchContrast,
-  IconSwitchNintendo,
-  IconSwitchOne,
-  IconSwitchThemes,
-  IconSwitchTrack,
-  IconSwitch,
-  IconSwitchingDone,
-  IconSymbolDoubleX,
-  IconSymbol,
-  IconSymmetry,
-  IconSync,
-  IconSystem,
-  IconTShirt,
-  IconTableFile,
-  IconTableLamp,
-  IconTableReport,
-  IconTable,
-  IconTabletennis,
-  IconTagOne,
-  IconTag,
-  IconTailoringTwo,
-  IconTailoring,
-  IconTajMahal,
-  IconTakeOffOne,
-  IconTakeOff,
-  IconTaobao,
-  IconTapeMeasure,
-  IconTape,
-  IconTargetOne,
-  IconTargetTwo,
-  IconTarget,
-  IconTaurus,
-  IconTaxi,
-  IconTeaDrink,
-  IconTea,
-  IconTeapot,
-  IconTeeth,
-  IconTelegram,
-  IconTelescope,
-  IconTencentQq,
-  IconTennis,
-  IconTentBanner,
-  IconTent,
-  IconTerminal,
-  IconTerminationFile,
-  IconTerrace,
-  IconTestTube,
-  IconTextBold,
-  IconTextItalic,
-  IconTextMessage,
-  IconTextRecognition,
-  IconTextRotationDown,
-  IconTextRotationLeft,
-  IconTextRotationNone,
-  IconTextRotationUp,
-  IconTextStyleOne,
-  IconTextStyle,
-  IconTextUnderline,
-  IconTextWrapOverflow,
-  IconTextWrapTruncation,
+  IconSubscript2,
+  IconSubscript,
+  IconSuperscript2,
+  IconSuperscript,
+  IconTable2,
+  IconTextDirectionL,
+  IconTextDirectionR,
+  IconTextSpacing,
+  IconTextWrap,
   IconText,
-  IconTextarea,
-  IconTextureTwo,
-  IconTexture,
-  IconTheSingleShoulderBag,
-  IconTheater,
-  IconTheme,
-  IconThermometerOne,
-  IconThermometer,
-  IconThermosCup,
-  IconThin,
-  IconThinkingProblem,
-  IconThreeDGlasses,
-  IconThreeHexagons,
-  IconThreeKey,
-  IconThreeSlashes,
-  IconThreeThree,
-  IconThreeTriangles,
-  IconThree,
-  IconThumbsDown,
-  IconThumbsUp,
-  IconThunderbolt,
-  IconThunderstormOne,
-  IconThunderstorm,
-  IconTicketOne,
-  IconTicket,
-  IconTicketsChecked,
-  IconTicketsOne,
-  IconTicketsTwo,
-  IconTigerZodiac,
-  IconTiktok,
-  IconTime,
-  IconTimedMail,
-  IconTimeline,
-  IconTimer,
-  IconTipsOne,
-  IconTips,
-  IconTireSwing,
-  IconTitleLevel,
-  IconToBottomOne,
-  IconToBottom,
-  IconToLeft,
-  IconToRight,
-  IconToTopOne,
-  IconToTop,
-  IconToilet,
-  IconTomato,
-  IconTool,
-  IconToolkit,
-  IconTopBar,
-  IconTopbuzz,
-  IconTopicDiscussion,
-  IconTopic,
-  IconTorch,
-  IconTourBus,
-  IconTowel,
-  IconTowerOfBabel,
-  IconTowerOfPisa,
-  IconTower,
-  IconToxins,
-  IconTrace,
-  IconTrademark,
-  IconTraditionalChineseMedicine,
-  IconTrain,
-  IconTransactionOrder,
-  IconTransaction,
-  IconTransferData,
-  IconTransfer,
-  IconTransform,
+  IconTranslate2,
   IconTranslate,
-  IconTranslation,
-  IconTransport,
-  IconTransporter,
-  IconTrapezoid,
-  IconTray,
-  IconTreadmillOne,
-  IconTreadmillTwo,
-  IconTreadmill,
-  IconTreasureChest,
-  IconTreeDiagram,
-  IconTreeList,
-  IconTreeOne,
-  IconTreeTwo,
-  IconTree,
-  IconTrendTwo,
-  IconTrend,
-  IconTrendingDown,
-  IconTrendingUp,
-  IconTriangleRoundRectangle,
-  IconTriangleRuler,
-  IconTriangle,
-  IconTriangularPyramid,
-  IconTrophy,
-  IconTrousersBellBottoms,
-  IconTruck,
-  IconTrumpet,
-  IconTrunk,
-  IconTub,
-  IconTuchong,
-  IconTumblr,
-  IconTurkey,
-  IconTurnAround,
-  IconTurnOffBluetooth,
-  IconTurnOn,
-  IconTvOne,
-  IconTv,
-  IconTwitter,
-  IconTwoDimensionalCodeOne,
-  IconTwoDimensionalCodeTwo,
-  IconTwoDimensionalCode,
-  IconTwoEllipses,
-  IconTwoFingers,
-  IconTwoHands,
-  IconTwoKey,
-  IconTwoSemicircles,
-  IconTwoTrianglesTwo,
-  IconTwoTriangles,
-  IconTwoTwo,
-  IconTwo,
-  IconTypeDrive,
-  IconUDisk,
-  IconUTurnDown,
-  IconUTurnLeft,
-  IconUTurnRight,
-  IconUTurnUp,
-  IconUlikecam,
-  IconUmbrellaOne,
-  IconUmbrellaTwo,
-  IconUmbrella,
-  IconUndo,
-  IconUngroup,
-  IconUnicast,
-  IconUnionSelection,
-  IconUniversal,
-  IconUnlike,
-  IconUnlink,
-  IconUnlockOne,
-  IconUnlock,
-  IconUnorderedList,
-  IconUpAndDown,
-  IconUpC,
-  IconUpOne,
-  IconUpSmall,
-  IconUpSquare,
-  IconUpTwo,
-  IconUp,
-  IconUpdateRotation,
-  IconUploadComputer,
-  IconUploadLaptop,
-  IconUploadLogs,
-  IconUploadOne,
-  IconUploadPicture,
-  IconUploadThree,
-  IconUploadTwo,
-  IconUploadWeb,
-  IconUpload,
-  IconUpsideDownFace,
-  IconUsbMemoryStick,
-  IconUsbMicroOne,
-  IconUsbMicroTwo,
-  IconUsbOne,
-  IconUsbTypeC,
-  IconUsb,
-  IconUserBusiness,
-  IconUserPositioning,
-  IconUserToUserTransmission,
-  IconUser,
-  IconUterus,
-  IconVacation,
-  IconVacuumCleaner,
-  IconVegetableBasket,
-  IconVegetables,
-  IconVerticalSpacingBetweenItems,
-  IconVerticalTidyUp,
-  IconVerticalTimeline,
-  IconVerticallyCentered,
-  IconVest,
-  IconVial,
-  IconViciaFaba,
-  IconVideoConference,
-  IconVideoFile,
-  IconVideoOne,
-  IconVideoTwo,
-  IconVideo,
-  IconVideocameraOne,
-  IconVideocamera,
-  IconViencharts,
-  IconViewGridCard,
-  IconViewGridDetail,
-  IconViewGridList,
-  IconViewList,
-  IconViewfinder,
-  IconVigo,
-  IconVipOne,
-  IconVip,
-  IconVirgo,
-  IconVirtualRealityGlasses,
-  IconVoiceInput,
-  IconVoiceMessage,
-  IconVoiceOff,
-  IconVoiceOne,
-  IconVoice,
-  IconVoicemail,
-  IconVolkswagen,
-  IconVolleyball,
-  IconVolumeDown,
-  IconVolumeMute,
-  IconVolumeNotice,
-  IconVolumeSmall,
-  IconVolumeUp,
-  IconVrGlasses,
-  IconWaistline,
-  IconWalletOne,
-  IconWalletThree,
-  IconWalletTwo,
-  IconWallet,
-  IconWarehousing,
-  IconWashingMachineOne,
-  IconWashingMachine,
-  IconWatchOne,
-  IconWatch,
-  IconWaterLevel,
-  IconWaterNo,
-  IconWaterRateTwo,
-  IconWaterRate,
-  IconWater,
-  IconWaterfallsH,
-  IconWaterfallsV,
-  IconWatermelonOne,
-  IconWatermelon,
-  IconWaterpoloOne,
-  IconWaterpolo,
-  IconWavesLeft,
-  IconWavesRight,
-  IconWaves,
-  IconWearyFace,
-  IconWebPage,
-  IconWebcam,
-  IconWechat,
-  IconWeibo,
-  IconWeight,
-  IconWeightlifting,
-  IconWeixinCardsOffers,
-  IconWeixinFavorites,
-  IconWeixinGames,
-  IconWeixinMarket,
-  IconWeixinMiniApp,
-  IconWeixinPeopleNearby,
-  IconWeixinScan,
-  IconWeixinSearch,
-  IconWeixinShake,
-  IconWeixinTopStories,
-  IconWhale,
-  IconWheelchair,
-  IconWhirlwind,
-  IconWhistling,
-  IconWholeSiteAccelerator,
-  IconWifi,
-  IconWindTurbine,
-  IconWind,
-  IconWindmillOne,
-  IconWindmillTwo,
-  IconWindmill,
-  IconWindows,
-  IconWingsuitFlying,
-  IconWinkingFaceWithOpenEyes,
-  IconWinkingFace,
-  IconWoman,
-  IconWomenCoat,
-  IconWomen,
-  IconWoolenHat,
-  IconWord,
-  IconWorkbench,
-  IconWorker,
-  IconWorld,
-  IconWorriedFace,
-  IconWrite,
-  IconWritingFluently,
-  IconWrongUser,
-  IconXiaoduHome,
-  IconXiaodu,
-  IconXigua,
-  IconXingfuli,
-  IconXingtu,
-  IconYep,
-  IconYoutobe,
-  IconYoutube,
-  IconZeroKey,
-  IconZijinyunying,
-  IconZip,
-  IconZoomIn,
-  IconZoomInternal,
-  IconZoomOut,
-  IconZoom
+  IconUnderline,
+  IconWubiInput,
+  Icon24HoursFill,
+  Icon24HoursLine,
+  IconAuctionFill,
+  IconAuctionLine,
+  IconBankCard2Fill,
+  IconBankCard2Line,
+  IconBankCardFill,
+  IconBankCardLine,
+  IconBitCoinFill,
+  IconBitCoinLine,
+  IconBnbFill,
+  IconBnbLine,
+  IconBtcFill,
+  IconBtcLine,
+  IconCashFill,
+  IconCashLine,
+  IconCoinFill,
+  IconCoinLine,
+  IconCoinsFill,
+  IconCoinsLine,
+  IconCopperCoinFill,
+  IconCopperCoinLine,
+  IconCopperDiamondFill,
+  IconCopperDiamondLine,
+  IconCoupon2Fill,
+  IconCoupon2Line,
+  IconCoupon3Fill,
+  IconCoupon3Line,
+  IconCoupon4Fill,
+  IconCoupon4Line,
+  IconCoupon5Fill,
+  IconCoupon5Line,
+  IconCouponFill,
+  IconCouponLine,
+  IconCurrencyFill,
+  IconCurrencyLine,
+  IconEthFill,
+  IconEthLine,
+  IconExchangeBoxFill,
+  IconExchangeBoxLine,
+  IconExchangeCnyFill,
+  IconExchangeCnyLine,
+  IconExchangeDollarFill,
+  IconExchangeDollarLine,
+  IconExchangeFill,
+  IconExchangeFundsFill,
+  IconExchangeFundsLine,
+  IconExchangeLine,
+  IconFundsBoxFill,
+  IconFundsBoxLine,
+  IconFundsFill,
+  IconFundsLine,
+  IconGift2Fill,
+  IconGift2Line,
+  IconGiftFill,
+  IconGiftLine,
+  IconHandCoinFill,
+  IconHandCoinLine,
+  IconHandHeartFill,
+  IconHandHeartLine,
+  IconIncreaseDecreaseFill,
+  IconIncreaseDecreaseLine,
+  IconMoneyCnyBoxFill,
+  IconMoneyCnyBoxLine,
+  IconMoneyCnyCircleFill,
+  IconMoneyCnyCircleLine,
+  IconMoneyDollarBoxFill,
+  IconMoneyDollarBoxLine,
+  IconMoneyDollarCircleFill,
+  IconMoneyDollarCircleLine,
+  IconMoneyEuroBoxFill,
+  IconMoneyEuroBoxLine,
+  IconMoneyEuroCircleFill,
+  IconMoneyEuroCircleLine,
+  IconMoneyPoundBoxFill,
+  IconMoneyPoundBoxLine,
+  IconMoneyPoundCircleFill,
+  IconMoneyPoundCircleLine,
+  IconMoneyRupeeCircleFill,
+  IconMoneyRupeeCircleLine,
+  IconNftFill,
+  IconNftLine,
+  IconP2pFill,
+  IconP2pLine,
+  IconPercentFill,
+  IconPercentLine,
+  IconPriceTag2Fill,
+  IconPriceTag2Line,
+  IconPriceTag3Fill,
+  IconPriceTag3Line,
+  IconPriceTagFill,
+  IconPriceTagLine,
+  IconRedPacketFill,
+  IconRedPacketLine,
+  IconRefund2Fill,
+  IconRefund2Line,
+  IconRefundFill,
+  IconRefundLine,
+  IconSafe2Fill,
+  IconSafe2Line,
+  IconSafeFill,
+  IconSafeLine,
+  IconSecurePaymentFill,
+  IconSecurePaymentLine,
+  IconShoppingBag2Fill,
+  IconShoppingBag2Line,
+  IconShoppingBag3Fill,
+  IconShoppingBag3Line,
+  IconShoppingBagFill,
+  IconShoppingBagLine,
+  IconShoppingBasket2Fill,
+  IconShoppingBasket2Line,
+  IconShoppingBasketFill,
+  IconShoppingBasketLine,
+  IconShoppingCart2Fill,
+  IconShoppingCart2Line,
+  IconShoppingCartFill,
+  IconShoppingCartLine,
+  IconStockFill,
+  IconStockLine,
+  IconSwapBoxFill,
+  IconSwapBoxLine,
+  IconSwapFill,
+  IconSwapLine,
+  IconTicket2Fill,
+  IconTicket2Line,
+  IconTicketFill,
+  IconTicketLine,
+  IconTokenSwapFill,
+  IconTokenSwapLine,
+  IconTrophyFill,
+  IconTrophyLine,
+  IconVipCrown2Fill,
+  IconVipCrown2Line,
+  IconVipCrownFill,
+  IconVipCrownLine,
+  IconVipDiamondFill,
+  IconVipDiamondLine,
+  IconVipFill,
+  IconVipLine,
+  IconWallet2Fill,
+  IconWallet2Line,
+  IconWallet3Fill,
+  IconWallet3Line,
+  IconWalletFill,
+  IconWalletLine,
+  IconWaterFlashFill,
+  IconWaterFlashLine,
+  IconXrpFill,
+  IconXrpLine,
+  IconXtzFill,
+  IconXtzLine,
+  IconBeerFill,
+  IconBeerLine,
+  IconBreadFill,
+  IconBreadLine,
+  IconCake2Fill,
+  IconCake2Line,
+  IconCake3Fill,
+  IconCake3Line,
+  IconCakeFill,
+  IconCakeLine,
+  IconCupFill,
+  IconCupLine,
+  IconDrinksFill,
+  IconDrinksLine,
+  IconGobletFill,
+  IconGobletLine,
+  IconKnifeBloodFill,
+  IconKnifeBloodLine,
+  IconKnifeFill,
+  IconKnifeLine,
+  IconRestaurant2Fill,
+  IconRestaurant2Line,
+  IconRestaurantFill,
+  IconRestaurantLine,
+  IconBrainFill,
+  IconBrainLine,
+  IconCapsuleFill,
+  IconCapsuleLine,
+  IconDislikeFill,
+  IconDislikeLine,
+  IconDossierFill,
+  IconDossierLine,
+  IconEmpathizeFill,
+  IconEmpathizeLine,
+  IconFirstAidKitFill,
+  IconFirstAidKitLine,
+  IconFlaskFill,
+  IconFlaskLine,
+  IconHandSanitizerFill,
+  IconHandSanitizerLine,
+  IconHealthBookFill,
+  IconHealthBookLine,
+  IconHeart2Fill,
+  IconHeart2Line,
+  IconHeart3Fill,
+  IconHeart3Line,
+  IconHeartAddFill,
+  IconHeartAddLine,
+  IconHeartFill,
+  IconHeartLine,
+  IconHeartPulseFill,
+  IconHeartPulseLine,
+  IconHeartsFill,
+  IconHeartsLine,
+  IconInfraredThermometerFill,
+  IconInfraredThermometerLine,
+  IconLungsFill,
+  IconLungsLine,
+  IconMedicineBottleFill,
+  IconMedicineBottleLine,
+  IconMentalHealthFill,
+  IconMentalHealthLine,
+  IconMicroscopeFill,
+  IconMicroscopeLine,
+  IconNurseFill,
+  IconNurseLine,
+  IconPsychotherapyFill,
+  IconPsychotherapyLine,
+  IconPulseFill,
+  IconPulseLine,
+  IconRestTimeFill,
+  IconRestTimeLine,
+  IconStethoscopeFill,
+  IconStethoscopeLine,
+  IconSurgicalMaskFill,
+  IconSurgicalMaskLine,
+  IconSyringeFill,
+  IconSyringeLine,
+  IconTestTubeFill,
+  IconTestTubeLine,
+  IconThermometerFill,
+  IconThermometerLine,
+  IconVirusFill,
+  IconVirusLine,
+  IconZzzFill,
+  IconZzzLine,
+  IconAlipayFill,
+  IconAlipayLine,
+  IconAmazonFill,
+  IconAmazonLine,
+  IconAndroidFill,
+  IconAndroidLine,
+  IconAngularjsFill,
+  IconAngularjsLine,
+  IconAppStoreFill,
+  IconAppStoreLine,
+  IconAppleFill,
+  IconAppleLine,
+  IconBaiduFill,
+  IconBaiduLine,
+  IconBardFill,
+  IconBardLine,
+  IconBehanceFill,
+  IconBehanceLine,
+  IconBilibiliFill,
+  IconBilibiliLine,
+  IconBlenderFill,
+  IconBlenderLine,
+  IconBootstrapFill,
+  IconBootstrapLine,
+  IconCentosFill,
+  IconCentosLine,
+  IconChromeFill,
+  IconChromeLine,
+  IconCodepenFill,
+  IconCodepenLine,
+  IconCopilotFill,
+  IconCopilotLine,
+  IconCoreosFill,
+  IconCoreosLine,
+  IconDingdingFill,
+  IconDingdingLine,
+  IconDiscordFill,
+  IconDiscordLine,
+  IconDisqusFill,
+  IconDisqusLine,
+  IconDoubanFill,
+  IconDoubanLine,
+  IconDribbbleFill,
+  IconDribbbleLine,
+  IconDriveFill,
+  IconDriveLine,
+  IconDropboxFill,
+  IconDropboxLine,
+  IconEdgeFill,
+  IconEdgeLine,
+  IconEdgeNewFill,
+  IconEdgeNewLine,
+  IconEvernoteFill,
+  IconEvernoteLine,
+  IconFacebookBoxFill,
+  IconFacebookBoxLine,
+  IconFacebookCircleFill,
+  IconFacebookCircleLine,
+  IconFacebookFill,
+  IconFacebookLine,
+  IconFinderFill,
+  IconFinderLine,
+  IconFirefoxFill,
+  IconFirefoxLine,
+  IconFlickrFill,
+  IconFlickrLine,
+  IconFlutterFill,
+  IconFlutterLine,
+  IconGatsbyFill,
+  IconGatsbyLine,
+  IconGithubFill,
+  IconGithubLine,
+  IconGitlabFill,
+  IconGitlabLine,
+  IconGoogleFill,
+  IconGoogleLine,
+  IconGooglePlayFill,
+  IconGooglePlayLine,
+  IconHonorOfKingsFill,
+  IconHonorOfKingsLine,
+  IconIeFill,
+  IconIeLine,
+  IconInstagramFill,
+  IconInstagramLine,
+  IconInvisionFill,
+  IconInvisionLine,
+  IconKakaoTalkFill,
+  IconKakaoTalkLine,
+  IconKickFill,
+  IconKickLine,
+  IconLineFill,
+  IconLineLine,
+  IconLinkedinBoxFill,
+  IconLinkedinBoxLine,
+  IconLinkedinFill,
+  IconLinkedinLine,
+  IconMastercardFill,
+  IconMastercardLine,
+  IconMastodonFill,
+  IconMastodonLine,
+  IconMediumFill,
+  IconMediumLine,
+  IconMessengerFill,
+  IconMessengerLine,
+  IconMetaFill,
+  IconMetaLine,
+  IconMicrosoftFill,
+  IconMicrosoftLine,
+  IconMicrosoftLoopFill,
+  IconMicrosoftLoopLine,
+  IconMiniProgramFill,
+  IconMiniProgramLine,
+  IconNeteaseCloudMusicFill,
+  IconNeteaseCloudMusicLine,
+  IconNetflixFill,
+  IconNetflixLine,
+  IconNotionFill,
+  IconNotionLine,
+  IconNpmjsFill,
+  IconNpmjsLine,
+  IconOpenSourceFill,
+  IconOpenSourceLine,
+  IconOpenaiFill,
+  IconOpenaiLine,
+  IconOpenbaseFill,
+  IconOpenbaseLine,
+  IconOperaFill,
+  IconOperaLine,
+  IconPatreonFill,
+  IconPatreonLine,
+  IconPaypalFill,
+  IconPaypalLine,
+  IconPinterestFill,
+  IconPinterestLine,
+  IconPixelfedFill,
+  IconPixelfedLine,
+  IconPlaystationFill,
+  IconPlaystationLine,
+  IconProductHuntFill,
+  IconProductHuntLine,
+  IconQqFill,
+  IconQqLine,
+  IconReactjsFill,
+  IconReactjsLine,
+  IconRedditFill,
+  IconRedditLine,
+  IconRemixiconFill,
+  IconRemixiconLine,
+  IconSafariFill,
+  IconSafariLine,
+  IconSkypeFill,
+  IconSkypeLine,
+  IconSlackFill,
+  IconSlackLine,
+  IconSnapchatFill,
+  IconSnapchatLine,
+  IconSoundcloudFill,
+  IconSoundcloudLine,
+  IconSpectrumFill,
+  IconSpectrumLine,
+  IconSpotifyFill,
+  IconSpotifyLine,
+  IconStackOverflowFill,
+  IconStackOverflowLine,
+  IconStackshareFill,
+  IconStackshareLine,
+  IconSteamFill,
+  IconSteamLine,
+  IconSupabaseFill,
+  IconSupabaseLine,
+  IconSvelteFill,
+  IconSvelteLine,
+  IconSwitchFill,
+  IconSwitchLine,
+  IconTaobaoFill,
+  IconTaobaoLine,
+  IconTelegramFill,
+  IconTelegramLine,
+  IconThreadsFill,
+  IconThreadsLine,
+  IconTiktokFill,
+  IconTiktokLine,
+  IconTrelloFill,
+  IconTrelloLine,
+  IconTumblrFill,
+  IconTumblrLine,
+  IconTwitchFill,
+  IconTwitchLine,
+  IconTwitterFill,
+  IconTwitterLine,
+  IconTwitterXFill,
+  IconTwitterXLine,
+  IconUbuntuFill,
+  IconUbuntuLine,
+  IconUnsplashFill,
+  IconUnsplashLine,
+  IconVimeoFill,
+  IconVimeoLine,
+  IconVisaFill,
+  IconVisaLine,
+  IconVkFill,
+  IconVkLine,
+  IconVuejsFill,
+  IconVuejsLine,
+  IconWechat2Fill,
+  IconWechat2Line,
+  IconWechatChannelsFill,
+  IconWechatChannelsLine,
+  IconWechatFill,
+  IconWechatLine,
+  IconWechatPayFill,
+  IconWechatPayLine,
+  IconWeiboFill,
+  IconWeiboLine,
+  IconWhatsappFill,
+  IconWhatsappLine,
+  IconWindowsFill,
+  IconWindowsLine,
+  IconWordpressFill,
+  IconWordpressLine,
+  IconXboxFill,
+  IconXboxLine,
+  IconXingFill,
+  IconXingLine,
+  IconYoutubeFill,
+  IconYoutubeLine,
+  IconYuqueFill,
+  IconYuqueLine,
+  IconZcoolFill,
+  IconZcoolLine,
+  IconZhihuFill,
+  IconZhihuLine,
+  IconAnchorFill,
+  IconAnchorLine,
+  IconBarricadeFill,
+  IconBarricadeLine,
+  IconBikeFill,
+  IconBikeLine,
+  IconBus2Fill,
+  IconBus2Line,
+  IconBusFill,
+  IconBusLine,
+  IconBusWifiFill,
+  IconBusWifiLine,
+  IconCarFill,
+  IconCarLine,
+  IconCarWashingFill,
+  IconCarWashingLine,
+  IconCaravanFill,
+  IconCaravanLine,
+  IconChargingPile2Fill,
+  IconChargingPile2Line,
+  IconChargingPileFill,
+  IconChargingPileLine,
+  IconChinaRailwayFill,
+  IconChinaRailwayLine,
+  IconCompass2Fill,
+  IconCompass2Line,
+  IconCompass3Fill,
+  IconCompass3Line,
+  IconCompass4Fill,
+  IconCompass4Line,
+  IconCompassDiscoverFill,
+  IconCompassDiscoverLine,
+  IconCompassFill,
+  IconCompassLine,
+  IconDirectionFill,
+  IconDirectionLine,
+  IconEBike2Fill,
+  IconEBike2Line,
+  IconEBikeFill,
+  IconEBikeLine,
+  IconEarthFill,
+  IconEarthLine,
+  IconFlightLandFill,
+  IconFlightLandLine,
+  IconFlightTakeoffFill,
+  IconFlightTakeoffLine,
+  IconFootprintFill,
+  IconFootprintLine,
+  IconGasStationFill,
+  IconGasStationLine,
+  IconGlobeFill,
+  IconGlobeLine,
+  IconGuideFill,
+  IconGuideLine,
+  IconHotelBedFill,
+  IconHotelBedLine,
+  IconLifebuoyFill,
+  IconLifebuoyLine,
+  IconLuggageCartFill,
+  IconLuggageCartLine,
+  IconLuggageDepositFill,
+  IconLuggageDepositLine,
+  IconMap2Fill,
+  IconMap2Line,
+  IconMapFill,
+  IconMapLine,
+  IconMapPin2Fill,
+  IconMapPin2Line,
+  IconMapPin3Fill,
+  IconMapPin3Line,
+  IconMapPin4Fill,
+  IconMapPin4Line,
+  IconMapPin5Fill,
+  IconMapPin5Line,
+  IconMapPinAddFill,
+  IconMapPinAddLine,
+  IconMapPinFill,
+  IconMapPinLine,
+  IconMapPinRangeFill,
+  IconMapPinRangeLine,
+  IconMapPinTimeFill,
+  IconMapPinTimeLine,
+  IconMapPinUserFill,
+  IconMapPinUserLine,
+  IconMotorbikeFill,
+  IconMotorbikeLine,
+  IconNavigationFill,
+  IconNavigationLine,
+  IconOilFill,
+  IconOilLine,
+  IconParkingBoxFill,
+  IconParkingBoxLine,
+  IconParkingFill,
+  IconParkingLine,
+  IconPassportFill,
+  IconPassportLine,
+  IconPinDistanceFill,
+  IconPinDistanceLine,
+  IconPlaneFill,
+  IconPlaneLine,
+  IconPlanetFill,
+  IconPlanetLine,
+  IconPoliceCarFill,
+  IconPoliceCarLine,
+  IconPushpin2Fill,
+  IconPushpin2Line,
+  IconPushpinFill,
+  IconPushpinLine,
+  IconRidingFill,
+  IconRidingLine,
+  IconRoadMapFill,
+  IconRoadMapLine,
+  IconRoadsterFill,
+  IconRoadsterLine,
+  IconRocket2Fill,
+  IconRocket2Line,
+  IconRocketFill,
+  IconRocketLine,
+  IconRouteFill,
+  IconRouteLine,
+  IconRunFill,
+  IconRunLine,
+  IconSailboatFill,
+  IconSailboatLine,
+  IconShip2Fill,
+  IconShip2Line,
+  IconShipFill,
+  IconShipLine,
+  IconSignalTowerFill,
+  IconSignalTowerLine,
+  IconSpaceShipFill,
+  IconSpaceShipLine,
+  IconSteering2Fill,
+  IconSteering2Line,
+  IconSteeringFill,
+  IconSteeringLine,
+  IconSubwayFill,
+  IconSubwayLine,
+  IconSubwayWifiFill,
+  IconSubwayWifiLine,
+  IconSuitcase2Fill,
+  IconSuitcase2Line,
+  IconSuitcase3Fill,
+  IconSuitcase3Line,
+  IconSuitcaseFill,
+  IconSuitcaseLine,
+  IconTakeawayFill,
+  IconTakeawayLine,
+  IconTaxiFill,
+  IconTaxiLine,
+  IconTaxiWifiFill,
+  IconTaxiWifiLine,
+  IconTrafficLightFill,
+  IconTrafficLightLine,
+  IconTrainFill,
+  IconTrainLine,
+  IconTrainWifiFill,
+  IconTrainWifiLine,
+  IconTreasureMapFill,
+  IconTreasureMapLine,
+  IconTruckFill,
+  IconTruckLine,
+  IconUnpinFill,
+  IconUnpinLine,
+  IconWalkFill,
+  IconWalkLine,
+  Icon4kFill,
+  Icon4kLine,
+  IconAlbumFill,
+  IconAlbumLine,
+  IconAspectRatioFill,
+  IconAspectRatioLine,
+  IconBroadcastFill,
+  IconBroadcastLine,
+  IconCamera2Fill,
+  IconCamera2Line,
+  IconCamera3Fill,
+  IconCamera3Line,
+  IconCameraFill,
+  IconCameraLensFill,
+  IconCameraLensLine,
+  IconCameraLine,
+  IconCameraOffFill,
+  IconCameraOffLine,
+  IconCameraSwitchFill,
+  IconCameraSwitchLine,
+  IconClapperboardFill,
+  IconClapperboardLine,
+  IconClosedCaptioningFill,
+  IconClosedCaptioningLine,
+  IconDiscFill,
+  IconDiscLine,
+  IconDvFill,
+  IconDvLine,
+  IconDvdFill,
+  IconDvdLine,
+  IconEjectFill,
+  IconEjectLine,
+  IconEqualizer2Fill,
+  IconEqualizer2Line,
+  IconEqualizer3Fill,
+  IconEqualizer3Line,
+  IconEqualizerFill,
+  IconEqualizerLine,
+  IconFilmFill,
+  IconFilmLine,
+  IconForward10Fill,
+  IconForward10Line,
+  IconForward15Fill,
+  IconForward15Line,
+  IconForward30Fill,
+  IconForward30Line,
+  IconForward5Fill,
+  IconForward5Line,
+  IconFullscreenExitFill,
+  IconFullscreenExitLine,
+  IconFullscreenFill,
+  IconFullscreenLine,
+  IconGalleryFill,
+  IconGalleryLine,
+  IconGalleryUploadFill,
+  IconGalleryUploadLine,
+  IconHdFill,
+  IconHdLine,
+  IconHeadphoneFill,
+  IconHeadphoneLine,
+  IconHqFill,
+  IconHqLine,
+  IconImage2Fill,
+  IconImage2Line,
+  IconImageAddFill,
+  IconImageAddLine,
+  IconImageCircleFill,
+  IconImageCircleLine,
+  IconImageEditFill,
+  IconImageEditLine,
+  IconImageFill,
+  IconImageLine,
+  IconLandscapeFill,
+  IconLandscapeLine,
+  IconLiveFill,
+  IconLiveLine,
+  IconMemoriesFill,
+  IconMemoriesLine,
+  IconMic2Fill,
+  IconMic2Line,
+  IconMicFill,
+  IconMicLine,
+  IconMicOffFill,
+  IconMicOffLine,
+  IconMovie2Fill,
+  IconMovie2Line,
+  IconMovieFill,
+  IconMovieLine,
+  IconMusic2Fill,
+  IconMusic2Line,
+  IconMusicFill,
+  IconMusicLine,
+  IconMvFill,
+  IconMvLine,
+  IconNotification2Fill,
+  IconNotification2Line,
+  IconNotification3Fill,
+  IconNotification3Line,
+  IconNotification4Fill,
+  IconNotification4Line,
+  IconNotificationFill,
+  IconNotificationLine,
+  IconNotificationOffFill,
+  IconNotificationOffLine,
+  IconOrderPlayFill,
+  IconOrderPlayLine,
+  IconPauseCircleFill,
+  IconPauseCircleLine,
+  IconPauseFill,
+  IconPauseLine,
+  IconPauseMiniFill,
+  IconPauseMiniLine,
+  IconPhoneCameraFill,
+  IconPhoneCameraLine,
+  IconPictureInPicture2Fill,
+  IconPictureInPicture2Line,
+  IconPictureInPictureExitFill,
+  IconPictureInPictureExitLine,
+  IconPictureInPictureFill,
+  IconPictureInPictureLine,
+  IconPlayCircleFill,
+  IconPlayCircleLine,
+  IconPlayFill,
+  IconPlayLine,
+  IconPlayList2Fill,
+  IconPlayList2Line,
+  IconPlayListAddFill,
+  IconPlayListAddLine,
+  IconPlayListFill,
+  IconPlayListLine,
+  IconPlayMiniFill,
+  IconPlayMiniLine,
+  IconPolaroid2Fill,
+  IconPolaroid2Line,
+  IconPolaroidFill,
+  IconPolaroidLine,
+  IconRadio2Fill,
+  IconRadio2Line,
+  IconRadioFill,
+  IconRadioLine,
+  IconRecordCircleFill,
+  IconRecordCircleLine,
+  IconRepeat2Fill,
+  IconRepeat2Line,
+  IconRepeatFill,
+  IconRepeatLine,
+  IconRepeatOneFill,
+  IconRepeatOneLine,
+  IconReplay10Fill,
+  IconReplay10Line,
+  IconReplay15Fill,
+  IconReplay15Line,
+  IconReplay30Fill,
+  IconReplay30Line,
+  IconReplay5Fill,
+  IconReplay5Line,
+  IconRewindFill,
+  IconRewindLine,
+  IconRewindMiniFill,
+  IconRewindMiniLine,
+  IconRhythmFill,
+  IconRhythmLine,
+  IconShuffleFill,
+  IconShuffleLine,
+  IconSkipBackFill,
+  IconSkipBackLine,
+  IconSkipBackMiniFill,
+  IconSkipBackMiniLine,
+  IconSkipForwardFill,
+  IconSkipForwardLine,
+  IconSkipForwardMiniFill,
+  IconSkipForwardMiniLine,
+  IconSlowDownFill,
+  IconSlowDownLine,
+  IconSoundModuleFill,
+  IconSoundModuleLine,
+  IconSpeaker2Fill,
+  IconSpeaker2Line,
+  IconSpeaker3Fill,
+  IconSpeaker3Line,
+  IconSpeakerFill,
+  IconSpeakerLine,
+  IconSpeedFill,
+  IconSpeedLine,
+  IconSpeedMiniFill,
+  IconSpeedMiniLine,
+  IconSpeedUpFill,
+  IconSpeedUpLine,
+  IconStopCircleFill,
+  IconStopCircleLine,
+  IconStopFill,
+  IconStopLine,
+  IconStopMiniFill,
+  IconStopMiniLine,
+  IconSurroundSoundFill,
+  IconSurroundSoundLine,
+  IconTapeFill,
+  IconTapeLine,
+  IconVideoAddFill,
+  IconVideoAddLine,
+  IconVideoDownloadFill,
+  IconVideoDownloadLine,
+  IconVideoFill,
+  IconVideoLine,
+  IconVideoUploadFill,
+  IconVideoUploadLine,
+  IconVidicon2Fill,
+  IconVidicon2Line,
+  IconVidiconFill,
+  IconVidiconLine,
+  IconVoiceprintFill,
+  IconVoiceprintLine,
+  IconVolumeDownFill,
+  IconVolumeDownLine,
+  IconVolumeMuteFill,
+  IconVolumeMuteLine,
+  IconVolumeOffVibrateFill,
+  IconVolumeOffVibrateLine,
+  IconVolumeUpFill,
+  IconVolumeUpLine,
+  IconVolumeVibrateFill,
+  IconVolumeVibrateLine,
+  IconWebcamFill,
+  IconWebcamLine,
+  IconArmchairFill,
+  IconArmchairLine,
+  IconBasketballFill,
+  IconBasketballLine,
+  IconBellFill,
+  IconBellLine,
+  IconBilliardsFill,
+  IconBilliardsLine,
+  IconBox1Fill,
+  IconBox1Line,
+  IconBox2Fill,
+  IconBox2Line,
+  IconBox3Fill,
+  IconBox3Line,
+  IconBoxingFill,
+  IconBoxingLine,
+  IconCactusFill,
+  IconCactusLine,
+  IconCandleFill,
+  IconCandleLine,
+  IconCharacterRecognitionFill,
+  IconCharacterRecognitionLine,
+  IconCrossFill,
+  IconCrossLine,
+  IconDice1Fill,
+  IconDice1Line,
+  IconDice2Fill,
+  IconDice2Line,
+  IconDice3Fill,
+  IconDice3Line,
+  IconDice4Fill,
+  IconDice4Line,
+  IconDice5Fill,
+  IconDice5Line,
+  IconDice6Fill,
+  IconDice6Line,
+  IconDiceFill,
+  IconDiceLine,
+  IconDoorClosedFill,
+  IconDoorClosedLine,
+  IconDoorFill,
+  IconDoorLine,
+  IconDoorLockBoxFill,
+  IconDoorLockBoxLine,
+  IconDoorLockFill,
+  IconDoorLockLine,
+  IconDoorOpenFill,
+  IconDoorOpenLine,
+  IconFlowerFill,
+  IconFlowerLine,
+  IconFootballFill,
+  IconFootballLine,
+  IconFridgeFill,
+  IconFridgeLine,
+  IconGameFill,
+  IconGameLine,
+  IconGlasses2Fill,
+  IconGlasses2Line,
+  IconGlassesFill,
+  IconGlassesLine,
+  IconGogglesFill,
+  IconGogglesLine,
+  IconGraduationCapFill,
+  IconGraduationCapLine,
+  IconHandbagFill,
+  IconHandbagLine,
+  IconInfinityFill,
+  IconInfinityLine,
+  IconKey2Fill,
+  IconKey2Line,
+  IconKeyFill,
+  IconKeyLine,
+  IconLeafFill,
+  IconLeafLine,
+  IconLightbulbFill,
+  IconLightbulbFlashFill,
+  IconLightbulbFlashLine,
+  IconLightbulbLine,
+  IconOutlet2Fill,
+  IconOutlet2Line,
+  IconOutletFill,
+  IconOutletLine,
+  IconPingPongFill,
+  IconPingPongLine,
+  IconPlantFill,
+  IconPlantLine,
+  IconPlug2Fill,
+  IconPlug2Line,
+  IconPlugFill,
+  IconPlugLine,
+  IconRecycleFill,
+  IconRecycleLine,
+  IconReservedFill,
+  IconReservedLine,
+  IconScales2Fill,
+  IconScales2Line,
+  IconScales3Fill,
+  IconScales3Line,
+  IconScalesFill,
+  IconScalesLine,
+  IconSeedlingFill,
+  IconSeedlingLine,
+  IconShirtFill,
+  IconShirtLine,
+  IconSofaFill,
+  IconSofaLine,
+  IconSwordFill,
+  IconSwordLine,
+  IconTShirt2Fill,
+  IconTShirt2Line,
+  IconTShirtAirFill,
+  IconTShirtAirLine,
+  IconTShirtFill,
+  IconTShirtLine,
+  IconTreeFill,
+  IconTreeLine,
+  IconUmbrellaFill,
+  IconUmbrellaLine,
+  IconVoiceRecognitionFill,
+  IconVoiceRecognitionLine,
+  IconWheelchairFill,
+  IconWheelchairLine,
+  IconAddBoxFill,
+  IconAddBoxLine,
+  IconAddCircleFill,
+  IconAddCircleLine,
+  IconAddFill,
+  IconAddLine,
+  IconAlarmFill,
+  IconAlarmLine,
+  IconAlarmWarningFill,
+  IconAlarmWarningLine,
+  IconAlertFill,
+  IconAlertLine,
+  IconApps2Fill,
+  IconApps2Line,
+  IconAppsFill,
+  IconAppsLine,
+  IconCheckDoubleFill,
+  IconCheckDoubleLine,
+  IconCheckFill,
+  IconCheckLine,
+  IconCheckboxBlankCircleFill,
+  IconCheckboxBlankCircleLine,
+  IconCheckboxBlankFill,
+  IconCheckboxBlankLine,
+  IconCheckboxCircleFill,
+  IconCheckboxCircleLine,
+  IconCheckboxFill,
+  IconCheckboxIndeterminateFill,
+  IconCheckboxIndeterminateLine,
+  IconCheckboxLine,
+  IconCheckboxMultipleBlankFill,
+  IconCheckboxMultipleBlankLine,
+  IconCheckboxMultipleFill,
+  IconCheckboxMultipleLine,
+  IconCloseCircleFill,
+  IconCloseCircleLine,
+  IconCloseFill,
+  IconCloseLine,
+  IconDashboardFill,
+  IconDashboardLine,
+  IconDeleteBack2Fill,
+  IconDeleteBack2Line,
+  IconDeleteBackFill,
+  IconDeleteBackLine,
+  IconDeleteBin2Fill,
+  IconDeleteBin2Line,
+  IconDeleteBin3Fill,
+  IconDeleteBin3Line,
+  IconDeleteBin4Fill,
+  IconDeleteBin4Line,
+  IconDeleteBin5Fill,
+  IconDeleteBin5Line,
+  IconDeleteBin6Fill,
+  IconDeleteBin6Line,
+  IconDeleteBin7Fill,
+  IconDeleteBin7Line,
+  IconDeleteBinFill,
+  IconDeleteBinLine,
+  IconDivideFill,
+  IconDivideLine,
+  IconDownload2Fill,
+  IconDownload2Line,
+  IconDownloadCloud2Fill,
+  IconDownloadCloud2Line,
+  IconDownloadCloudFill,
+  IconDownloadCloudLine,
+  IconDownloadFill,
+  IconDownloadLine,
+  IconEqualFill,
+  IconEqualLine,
+  IconErrorWarningFill,
+  IconErrorWarningLine,
+  IconExternalLinkFill,
+  IconExternalLinkLine,
+  IconEye2Fill,
+  IconEye2Line,
+  IconEyeCloseFill,
+  IconEyeCloseLine,
+  IconEyeFill,
+  IconEyeLine,
+  IconEyeOffFill,
+  IconEyeOffLine,
+  IconFilter2Fill,
+  IconFilter2Line,
+  IconFilter3Fill,
+  IconFilter3Line,
+  IconFilterFill,
+  IconFilterLine,
+  IconFilterOffFill,
+  IconFilterOffLine,
+  IconFindReplaceFill,
+  IconFindReplaceLine,
+  IconForbid2Fill,
+  IconForbid2Line,
+  IconForbidFill,
+  IconForbidLine,
+  IconFunctionFill,
+  IconFunctionLine,
+  IconHistoryFill,
+  IconHistoryLine,
+  IconHourglass2Fill,
+  IconHourglass2Line,
+  IconHourglassFill,
+  IconHourglassLine,
+  IconIndeterminateCircleFill,
+  IconIndeterminateCircleLine,
+  IconInformationFill,
+  IconInformationLine,
+  IconListSettingsFill,
+  IconListSettingsLine,
+  IconLoader2Fill,
+  IconLoader2Line,
+  IconLoader3Fill,
+  IconLoader3Line,
+  IconLoader4Fill,
+  IconLoader4Line,
+  IconLoader5Fill,
+  IconLoader5Line,
+  IconLoaderFill,
+  IconLoaderLine,
+  IconLock2Fill,
+  IconLock2Line,
+  IconLockFill,
+  IconLockLine,
+  IconLockPasswordFill,
+  IconLockPasswordLine,
+  IconLockUnlockFill,
+  IconLockUnlockLine,
+  IconLoginBoxFill,
+  IconLoginBoxLine,
+  IconLoginCircleFill,
+  IconLoginCircleLine,
+  IconLogoutBoxFill,
+  IconLogoutBoxLine,
+  IconLogoutBoxRFill,
+  IconLogoutBoxRLine,
+  IconLogoutCircleFill,
+  IconLogoutCircleLine,
+  IconLogoutCircleRFill,
+  IconLogoutCircleRLine,
+  IconLoopLeftFill,
+  IconLoopLeftLine,
+  IconLoopRightFill,
+  IconLoopRightLine,
+  IconMenu2Fill,
+  IconMenu2Line,
+  IconMenu3Fill,
+  IconMenu3Line,
+  IconMenu4Fill,
+  IconMenu4Line,
+  IconMenu5Fill,
+  IconMenu5Line,
+  IconMenuAddFill,
+  IconMenuAddLine,
+  IconMenuFill,
+  IconMenuFoldFill,
+  IconMenuFoldLine,
+  IconMenuLine,
+  IconMenuSearchFill,
+  IconMenuSearchLine,
+  IconMenuUnfoldFill,
+  IconMenuUnfoldLine,
+  IconMore2Fill,
+  IconMore2Line,
+  IconMoreFill,
+  IconMoreLine,
+  IconNotificationBadgeFill,
+  IconNotificationBadgeLine,
+  IconProhibitedFill,
+  IconProhibitedLine,
+  IconQuestionFill,
+  IconQuestionLine,
+  IconRadioButtonFill,
+  IconRadioButtonLine,
+  IconRefreshFill,
+  IconRefreshLine,
+  IconSearch2Fill,
+  IconSearch2Line,
+  IconSearchEyeFill,
+  IconSearchEyeLine,
+  IconSearchFill,
+  IconSearchLine,
+  IconSettings2Fill,
+  IconSettings2Line,
+  IconSettings3Fill,
+  IconSettings3Line,
+  IconSettings4Fill,
+  IconSettings4Line,
+  IconSettings5Fill,
+  IconSettings5Line,
+  IconSettings6Fill,
+  IconSettings6Line,
+  IconSettingsFill,
+  IconSettingsLine,
+  IconShare2Fill,
+  IconShare2Line,
+  IconShareBoxFill,
+  IconShareBoxLine,
+  IconShareCircleFill,
+  IconShareCircleLine,
+  IconShareFill,
+  IconShareForward2Fill,
+  IconShareForward2Line,
+  IconShareForwardBoxFill,
+  IconShareForwardBoxLine,
+  IconShareForwardFill,
+  IconShareForwardLine,
+  IconShareLine,
+  IconShieldCheckFill,
+  IconShieldCheckLine,
+  IconShieldCrossFill,
+  IconShieldCrossLine,
+  IconShieldFill,
+  IconShieldFlashFill,
+  IconShieldFlashLine,
+  IconShieldKeyholeFill,
+  IconShieldKeyholeLine,
+  IconShieldLine,
+  IconShieldStarFill,
+  IconShieldStarLine,
+  IconShieldUserFill,
+  IconShieldUserLine,
+  IconSideBarFill,
+  IconSideBarLine,
+  IconSpam2Fill,
+  IconSpam2Line,
+  IconSpam3Fill,
+  IconSpam3Line,
+  IconSpamFill,
+  IconSpamLine,
+  IconStarFill,
+  IconStarHalfFill,
+  IconStarHalfLine,
+  IconStarHalfSFill,
+  IconStarHalfSLine,
+  IconStarLine,
+  IconStarSFill,
+  IconStarSLine,
+  IconSubtractFill,
+  IconSubtractLine,
+  IconThumbDownFill,
+  IconThumbDownLine,
+  IconThumbUpFill,
+  IconThumbUpLine,
+  IconTimeFill,
+  IconTimeLine,
+  IconTimer2Fill,
+  IconTimer2Line,
+  IconTimerFill,
+  IconTimerFlashFill,
+  IconTimerFlashLine,
+  IconTimerLine,
+  IconToggleFill,
+  IconToggleLine,
+  IconUpload2Fill,
+  IconUpload2Line,
+  IconUploadCloud2Fill,
+  IconUploadCloud2Line,
+  IconUploadCloudFill,
+  IconUploadCloudLine,
+  IconUploadFill,
+  IconUploadLine,
+  IconZoomInFill,
+  IconZoomInLine,
+  IconZoomOutFill,
+  IconZoomOutLine,
+  IconAccountBoxFill,
+  IconAccountBoxLine,
+  IconAccountCircleFill,
+  IconAccountCircleLine,
+  IconAccountPinBoxFill,
+  IconAccountPinBoxLine,
+  IconAccountPinCircleFill,
+  IconAccountPinCircleLine,
+  IconAdminFill,
+  IconAdminLine,
+  IconAliensFill,
+  IconAliensLine,
+  IconBearSmileFill,
+  IconBearSmileLine,
+  IconBodyScanFill,
+  IconBodyScanLine,
+  IconContactsFill,
+  IconContactsLine,
+  IconCriminalFill,
+  IconCriminalLine,
+  IconEmotion2Fill,
+  IconEmotion2Line,
+  IconEmotionFill,
+  IconEmotionHappyFill,
+  IconEmotionHappyLine,
+  IconEmotionLaughFill,
+  IconEmotionLaughLine,
+  IconEmotionLine,
+  IconEmotionNormalFill,
+  IconEmotionNormalLine,
+  IconEmotionSadFill,
+  IconEmotionSadLine,
+  IconEmotionUnhappyFill,
+  IconEmotionUnhappyLine,
+  IconGenderlessFill,
+  IconGenderlessLine,
+  IconGhost2Fill,
+  IconGhost2Line,
+  IconGhostFill,
+  IconGhostLine,
+  IconGhostSmileFill,
+  IconGhostSmileLine,
+  IconGroup2Fill,
+  IconGroup2Line,
+  IconGroupFill,
+  IconGroupLine,
+  IconMenFill,
+  IconMenLine,
+  IconMickeyFill,
+  IconMickeyLine,
+  IconOpenArmFill,
+  IconOpenArmLine,
+  IconParentFill,
+  IconParentLine,
+  IconRobot2Fill,
+  IconRobot2Line,
+  IconRobot3Fill,
+  IconRobot3Line,
+  IconRobotFill,
+  IconRobotLine,
+  IconSkull2Fill,
+  IconSkull2Line,
+  IconSkullFill,
+  IconSkullLine,
+  IconSpyFill,
+  IconSpyLine,
+  IconStarSmileFill,
+  IconStarSmileLine,
+  IconTeamFill,
+  IconTeamLine,
+  IconTravestiFill,
+  IconTravestiLine,
+  IconUser2Fill,
+  IconUser2Line,
+  IconUser3Fill,
+  IconUser3Line,
+  IconUser4Fill,
+  IconUser4Line,
+  IconUser5Fill,
+  IconUser5Line,
+  IconUser6Fill,
+  IconUser6Line,
+  IconUserAddFill,
+  IconUserAddLine,
+  IconUserFill,
+  IconUserFollowFill,
+  IconUserFollowLine,
+  IconUserForbidFill,
+  IconUserForbidLine,
+  IconUserHeartFill,
+  IconUserHeartLine,
+  IconUserLine,
+  IconUserLocationFill,
+  IconUserLocationLine,
+  IconUserReceived2Fill,
+  IconUserReceived2Line,
+  IconUserReceivedFill,
+  IconUserReceivedLine,
+  IconUserSearchFill,
+  IconUserSearchLine,
+  IconUserSettingsFill,
+  IconUserSettingsLine,
+  IconUserShared2Fill,
+  IconUserShared2Line,
+  IconUserSharedFill,
+  IconUserSharedLine,
+  IconUserSmileFill,
+  IconUserSmileLine,
+  IconUserStarFill,
+  IconUserStarLine,
+  IconUserUnfollowFill,
+  IconUserUnfollowLine,
+  IconUserVoiceFill,
+  IconUserVoiceLine,
+  IconWomenFill,
+  IconWomenLine,
+  IconBlazeFill,
+  IconBlazeLine,
+  IconCelsiusFill,
+  IconCelsiusLine,
+  IconCloudWindyFill,
+  IconCloudWindyLine,
+  IconCloudy2Fill,
+  IconCloudy2Line,
+  IconCloudyFill,
+  IconCloudyLine,
+  IconDrizzleFill,
+  IconDrizzleLine,
+  IconEarthquakeFill,
+  IconEarthquakeLine,
+  IconFahrenheitFill,
+  IconFahrenheitLine,
+  IconFireFill,
+  IconFireLine,
+  IconFlashlightFill,
+  IconFlashlightLine,
+  IconFloodFill,
+  IconFloodLine,
+  IconFoggyFill,
+  IconFoggyLine,
+  IconHailFill,
+  IconHailLine,
+  IconHaze2Fill,
+  IconHaze2Line,
+  IconHazeFill,
+  IconHazeLine,
+  IconHeavyShowersFill,
+  IconHeavyShowersLine,
+  IconMeteorFill,
+  IconMeteorLine,
+  IconMistFill,
+  IconMistLine,
+  IconMoonClearFill,
+  IconMoonClearLine,
+  IconMoonCloudyFill,
+  IconMoonCloudyLine,
+  IconMoonFill,
+  IconMoonFoggyFill,
+  IconMoonFoggyLine,
+  IconMoonLine,
+  IconRainbowFill,
+  IconRainbowLine,
+  IconRainyFill,
+  IconRainyLine,
+  IconShining2Fill,
+  IconShining2Line,
+  IconShiningFill,
+  IconShiningLine,
+  IconShowersFill,
+  IconShowersLine,
+  IconSnowyFill,
+  IconSnowyLine,
+  IconSparkling2Fill,
+  IconSparkling2Line,
+  IconSparklingFill,
+  IconSparklingLine,
+  IconSunCloudyFill,
+  IconSunCloudyLine,
+  IconSunFill,
+  IconSunFoggyFill,
+  IconSunFoggyLine,
+  IconSunLine,
+  IconTempColdFill,
+  IconTempColdLine,
+  IconTempHotFill,
+  IconTempHotLine,
+  IconThunderstormsFill,
+  IconThunderstormsLine,
+  IconTornadoFill,
+  IconTornadoLine,
+  IconTyphoonFill,
+  IconTyphoonLine,
+  IconWaterPercentFill,
+  IconWaterPercentLine,
+  IconWindyFill,
+  IconWindyLine
 };
 
 const install = (app: App) => {

@@ -1,0 +1,48 @@
+<template>
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" :class="iconClass" :style="innerStyle" :fill="fill" @click="onClick"><path d="M17.173 14H14.5v1.375c.55-.222 1.153-.491 1.812-.81l-.082-.239.942-.327Zm.828-.288.12-.041c.641 1.85 1.034 3.011 1.185 3.5l-1.912.589c-.073-.24-.216-.672-.427-1.292-6.081 2.884-8.671 2.054-9.008-1.908l1.993-.17c.1 1.166.344 1.622.897 1.753.393.093.94.063 1.652-.105V14h-3.5v-2h.513l-1.167-1.39c1.043-.876 1.858-1.83 2.449-2.863a41.29 41.29 0 0 0-1.552.434 13.953 13.953 0 0 1-1.754 2.11L6.09 8.86c1.273-1.247 2.333-2.909 3.176-4.994l1.854.75c-.153.379-.313.746-.48 1.101 3.702-.935 7.275-1.317 9.138-.68 1.223.418 1.919 1.392 2.188 2.585.17.755.313 2.688.313 5.122 0 2.808-.056 3.771-.34 4.622-.298.89-.697 1.418-1.408 1.984-.657.523-1.553.764-2.645.823-.673.038-1.368.003-2.095-.079-.119-.013-.234-.027-.354-.043l-.242-.032.264-1.983a70.813 70.813 0 0 0 .556.07c.625.071 1.216.1 1.762.07.714-.039 1.245-.181 1.508-.39.426-.34.591-.558.756-1.053.186-.555.238-1.449.238-3.989 0-2.298-.134-4.102-.265-4.683-.13-.576-.41-.97-.883-1.131-1.207-.413-3.801-.194-6.652.416l.615.262c-.13.303-.273.6-.43.89h5.337v2h-3.5V12h3.5v1.713Zm-5.5-3.213h-1.208A13.678 13.678 0 0 1 9.799 12h2.702v-1.5Zm-10.038-.438L3.54 8.376c1.062.679 2.935 2.427 3.338 3.162 1.239 2.26.198 4.175-3.122 7.997l-1.51-1.312c2.687-3.094 3.5-4.59 2.878-5.724-.214-.39-1.857-1.923-2.661-2.438ZM5.14 7.583c-1.048 0-1.882-.762-1.886-1.693 0-.94.838-1.702 1.886-1.702 1.04 0 1.883.758 1.883 1.702 0 .935-.843 1.693-1.883 1.693Z"></path></svg>
+</template>
+
+<script lang="ts">
+import { defineComponent, computed, CSSProperties } from 'vue';
+
+export default defineComponent({
+  name: 'IconTaobaoLine',
+  props: {
+    /** 图标尺寸 */
+    size: { type: String },
+    /** 颜色 */
+    fill: { type: String, default: "#333" },
+    /** 旋转角度 */
+    rotate: { type: Number },
+    /** 是否旋转 */
+    spin: { type: Boolean },
+  },
+  emits: {
+    click: (ev: MouseEvent) => true,
+  },
+  setup(props, { emit }) {
+    const name = 'bp-icon';
+
+    const iconClass = computed(() => [name, `${name}-taobao-line`, { [`${name}-spin`]: props.spin }]);
+
+    const innerStyle = computed(() => {
+      const styles: CSSProperties = {};
+        props.size && (styles.width = props.size);
+        props.size && (styles.height = props.size);
+        props.rotate && (styles.transform = `rotate(${props.rotate}deg)`);
+
+        return styles;
+    });
+
+    const onClick = (ev: MouseEvent) => {
+      emit('click', ev);
+    };
+
+    return {
+      iconClass,
+      innerStyle,
+      onClick,
+    };
+  }
+});
+</script>
