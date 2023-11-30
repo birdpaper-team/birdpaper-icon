@@ -1,6 +1,6 @@
 {
   "name": "birdpaper-icon",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "基于 Remix icon 生成的 Vue3 图标组件库",
   "scripts": {
     "generate": "pnpm run -C packages generate",
@@ -19,6 +19,7 @@
   "main": "es/index.js",
   "module": "es/index.js",
   "types": "dist/index.d.ts",
+  "type": "module",
   "sideEffects": [
     "dist/*",
     "es/**/style/*",
@@ -30,8 +31,9 @@
     "es",
     "lib"
   ],
+  "homepage": "https://www.birdpaper.design/guide/icon",
   "repository": {
     "type": "git",
-    "url": "https://github.com/birdpaper-team/birdpaper-ui"
+    "url": "https://github.com/birdpaper-team/birdpaper-icon"
   }
 }

@@ -9,9 +9,9 @@ export default defineComponent({
   name: 'IconTrainWifiFill',
   props: {
     /** 图标尺寸 */
-    size: { type: String },
+    size: { type: String, default: "18px" },
     /** 颜色 */
-    fill: { type: String, default: "#333" },
+    fill: { type: String, default: "#595959" },
     /** 旋转角度 */
     rotate: { type: Number },
     /** 是否旋转 */
