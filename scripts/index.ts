@@ -5,6 +5,7 @@ import fs from "fs-extra";
 import { Command } from "commander";
 import { getIconComponents, generateIconComponent, buildIconIndex, buildType } from "./iconGenerate";
 import buildComponent from "./buildComponent";
+import buildStyle from "./buildStyle";
 
 const program = new Command();
 
@@ -21,6 +22,13 @@ program
     await generateIconComponent(data);
     buildIconIndex(data);
     buildType(data);
+  });
+
+program
+  .command("build:style")
+  .description("build:style...")
+  .action(async () => {
+    await buildStyle();
   });
 
 program

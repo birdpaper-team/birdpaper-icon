@@ -1,12 +1,14 @@
 {
   "name": "birdpaper-icon",
-  "version": "0.0.9",
+  "version": "0.0.11",
   "description": "基于 Remix icon 生成的 Vue3 图标组件库",
   "scripts": {
     "generate": "pnpm run -C packages generate",
     "scripts:dev": "pnpm run -C scripts dev",
     "scripts:build": "pnpm run -C scripts build",
-    "build": "pnpm run -C packages build"
+    "build:components": "pnpm run -C packages build:components",
+    "build:style": "pnpm run -C packages build:style",
+    "build": "npm run build:components && npm run build:style"
   },
   "keywords": [
     "Remix icon",

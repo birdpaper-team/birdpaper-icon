@@ -4,7 +4,8 @@
   "description": "图标组件",
   "scripts": {
     "generate": "icon-scripts icon:generate",
-    "build": "icon-scripts build:components -u"
+    "build:style": "icon-scripts build:style",
+    "build:components": "icon-scripts build:components -u"
   },
   "dependencies": {
     "vite": "^4.2.1",
