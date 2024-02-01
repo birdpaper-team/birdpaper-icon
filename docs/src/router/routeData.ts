@@ -9,13 +9,11 @@ interface RouteItem {
   alias?: string;
   /** 页面路径 */
   path: string;
-  /** 是否需要鉴权 */
-  isAuth: boolean;
 }
 
 /** 应用路由 */
 const appPages: RouteItem[] = [
-  { title: "主页", name: "home-index", page: "home/index", path: "/", isAuth: false },
+  { title: "主页", name: "home-index", page: "home/index", path: "/" },
 ];
 
 export { appPages };
