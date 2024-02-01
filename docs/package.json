@@ -2,7 +2,6 @@
   "name": "docs",
   "version": "1.0.0",
   "description": "birdpaper-icon docs",
-  "main": "index.ts",
   "scripts": {
     "dev": "vite --host --mode dev",
     "build": "vite build --mode prod",
@@ -20,8 +19,10 @@
   },
   "devDependencies": {
     "@types/node": "^18.13.0",
+    "@vitejs/plugin-vue": "^4.2.0",
     "less": "^4.1.3",
-    "less-loader": "^11.1.0"
+    "less-loader": "^11.1.0",
+    "vite-plugin-compression": "^0.5.1"
   },
   "keywords": [],
   "author": "木亦Sam",
