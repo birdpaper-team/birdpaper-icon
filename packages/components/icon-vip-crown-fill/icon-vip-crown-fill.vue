@@ -1,5 +1,5 @@
 <template>
-  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" :class="iconClass" :style="innerStyle" :fill="fill" @click="onClick"><path d="M2.005 19h20v2h-20v-2Zm0-14 5 3 5-6 5 6 5-3v12h-20V5Z"></path></svg>
+  <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" :class="iconClass" :style="innerStyle" :fill="fill" @click="onClick"><path d="M2.005 19h20v2h-20v-2Zm0-14 5 3 5-6 5 6 5-3v12h-20V5Z"></path></svg>
 </template>
 
 <script lang="ts">

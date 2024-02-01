@@ -7,6 +7,8 @@ import IconArrowDownFill from './icon-arrow-down-fill';
 import IconArrowDownLine from './icon-arrow-down-line';
 import IconArrowDownSFill from './icon-arrow-down-s-fill';
 import IconArrowDownSLine from './icon-arrow-down-s-line';
+import IconArrowDownWideFill from './icon-arrow-down-wide-fill';
+import IconArrowDownWideLine from './icon-arrow-down-wide-line';
 import IconArrowDropDownFill from './icon-arrow-drop-down-fill';
 import IconArrowDropDownLine from './icon-arrow-drop-down-line';
 import IconArrowDropLeftFill from './icon-arrow-drop-left-fill';
@@ -33,6 +35,8 @@ import IconArrowLeftSFill from './icon-arrow-left-s-fill';
 import IconArrowLeftSLine from './icon-arrow-left-s-line';
 import IconArrowLeftUpFill from './icon-arrow-left-up-fill';
 import IconArrowLeftUpLine from './icon-arrow-left-up-line';
+import IconArrowLeftWideFill from './icon-arrow-left-wide-fill';
+import IconArrowLeftWideLine from './icon-arrow-left-wide-line';
 import IconArrowRightCircleFill from './icon-arrow-right-circle-fill';
 import IconArrowRightCircleLine from './icon-arrow-right-circle-line';
 import IconArrowRightDoubleFill from './icon-arrow-right-double-fill';
@@ -45,6 +49,8 @@ import IconArrowRightSFill from './icon-arrow-right-s-fill';
 import IconArrowRightSLine from './icon-arrow-right-s-line';
 import IconArrowRightUpFill from './icon-arrow-right-up-fill';
 import IconArrowRightUpLine from './icon-arrow-right-up-line';
+import IconArrowRightWideFill from './icon-arrow-right-wide-fill';
+import IconArrowRightWideLine from './icon-arrow-right-wide-line';
 import IconArrowTurnBackFill from './icon-arrow-turn-back-fill';
 import IconArrowTurnBackLine from './icon-arrow-turn-back-line';
 import IconArrowTurnForwardFill from './icon-arrow-turn-forward-fill';
@@ -59,6 +65,8 @@ import IconArrowUpFill from './icon-arrow-up-fill';
 import IconArrowUpLine from './icon-arrow-up-line';
 import IconArrowUpSFill from './icon-arrow-up-s-fill';
 import IconArrowUpSLine from './icon-arrow-up-s-line';
+import IconArrowUpWideFill from './icon-arrow-up-wide-fill';
+import IconArrowUpWideLine from './icon-arrow-up-wide-line';
 import IconContractLeftFill from './icon-contract-left-fill';
 import IconContractLeftLine from './icon-contract-left-line';
 import IconContractLeftRightFill from './icon-contract-left-right-fill';
@@ -91,6 +99,8 @@ import IconDragMove2Fill from './icon-drag-move-2-fill';
 import IconDragMove2Line from './icon-drag-move-2-line';
 import IconDragMoveFill from './icon-drag-move-fill';
 import IconDragMoveLine from './icon-drag-move-line';
+import IconExpandHeightFill from './icon-expand-height-fill';
+import IconExpandHeightLine from './icon-expand-height-line';
 import IconExpandLeftFill from './icon-expand-left-fill';
 import IconExpandLeftLine from './icon-expand-left-line';
 import IconExpandLeftRightFill from './icon-expand-left-right-fill';
@@ -99,6 +109,10 @@ import IconExpandRightFill from './icon-expand-right-fill';
 import IconExpandRightLine from './icon-expand-right-line';
 import IconExpandUpDownFill from './icon-expand-up-down-fill';
 import IconExpandUpDownLine from './icon-expand-up-down-line';
+import IconExpandWidthFill from './icon-expand-width-fill';
+import IconExpandWidthLine from './icon-expand-width-line';
+import IconScrollToBottomFill from './icon-scroll-to-bottom-fill';
+import IconScrollToBottomLine from './icon-scroll-to-bottom-line';
 import IconSkipDownFill from './icon-skip-down-fill';
 import IconSkipDownLine from './icon-skip-down-line';
 import IconSkipLeftFill from './icon-skip-left-fill';
@@ -175,6 +189,8 @@ import IconArchiveDrawerFill from './icon-archive-drawer-fill';
 import IconArchiveDrawerLine from './icon-archive-drawer-line';
 import IconArchiveFill from './icon-archive-fill';
 import IconArchiveLine from './icon-archive-line';
+import IconArchiveStackFill from './icon-archive-stack-fill';
+import IconArchiveStackLine from './icon-archive-stack-line';
 import IconAtFill from './icon-at-fill';
 import IconAtLine from './icon-at-line';
 import IconAttachmentFill from './icon-attachment-fill';
@@ -403,6 +419,8 @@ import IconChatSmile3Fill from './icon-chat-smile-3-fill';
 import IconChatSmile3Line from './icon-chat-smile-3-line';
 import IconChatSmileFill from './icon-chat-smile-fill';
 import IconChatSmileLine from './icon-chat-smile-line';
+import IconChatThreadFill from './icon-chat-thread-fill';
+import IconChatThreadLine from './icon-chat-thread-line';
 import IconChatUploadFill from './icon-chat-upload-fill';
 import IconChatUploadLine from './icon-chat-upload-line';
 import IconChatVoiceFill from './icon-chat-voice-fill';
@@ -455,6 +473,8 @@ import IconClockwiseFill from './icon-clockwise-fill';
 import IconClockwiseLine from './icon-clockwise-line';
 import IconCollageFill from './icon-collage-fill';
 import IconCollageLine from './icon-collage-line';
+import IconColorFilterFill from './icon-color-filter-fill';
+import IconColorFilterLine from './icon-color-filter-line';
 import IconCompasses2Fill from './icon-compasses-2-fill';
 import IconCompasses2Line from './icon-compasses-2-line';
 import IconCompassesFill from './icon-compasses-fill';
@@ -585,6 +605,8 @@ import IconScreenshot2Fill from './icon-screenshot-2-fill';
 import IconScreenshot2Line from './icon-screenshot-2-line';
 import IconScreenshotFill from './icon-screenshot-fill';
 import IconScreenshotLine from './icon-screenshot-line';
+import IconShadowFill from './icon-shadow-fill';
+import IconShadowLine from './icon-shadow-line';
 import IconShape2Fill from './icon-shape-2-fill';
 import IconShape2Line from './icon-shape-2-line';
 import IconShapeFill from './icon-shape-fill';
@@ -635,8 +657,12 @@ import IconGitClosePullRequestFill from './icon-git-close-pull-request-fill';
 import IconGitClosePullRequestLine from './icon-git-close-pull-request-line';
 import IconGitCommitFill from './icon-git-commit-fill';
 import IconGitCommitLine from './icon-git-commit-line';
+import IconGitForkFill from './icon-git-fork-fill';
+import IconGitForkLine from './icon-git-fork-line';
 import IconGitMergeFill from './icon-git-merge-fill';
 import IconGitMergeLine from './icon-git-merge-line';
+import IconGitPrDraftFill from './icon-git-pr-draft-fill';
+import IconGitPrDraftLine from './icon-git-pr-draft-line';
 import IconGitPullRequestFill from './icon-git-pull-request-fill';
 import IconGitPullRequestLine from './icon-git-pull-request-line';
 import IconGitRepositoryCommitsFill from './icon-git-repository-commits-fill';
@@ -651,6 +677,10 @@ import IconJavascriptFill from './icon-javascript-fill';
 import IconJavascriptLine from './icon-javascript-line';
 import IconParenthesesFill from './icon-parentheses-fill';
 import IconParenthesesLine from './icon-parentheses-line';
+import IconPuzzle2Fill from './icon-puzzle-2-fill';
+import IconPuzzle2Line from './icon-puzzle-2-line';
+import IconPuzzleFill from './icon-puzzle-fill';
+import IconPuzzleLine from './icon-puzzle-line';
 import IconTerminalBoxFill from './icon-terminal-box-fill';
 import IconTerminalBoxLine from './icon-terminal-box-line';
 import IconTerminalFill from './icon-terminal-fill';
@@ -753,6 +783,10 @@ import IconQrScanFill from './icon-qr-scan-fill';
 import IconQrScanLine from './icon-qr-scan-line';
 import IconRadarFill from './icon-radar-fill';
 import IconRadarLine from './icon-radar-line';
+import IconRam2Fill from './icon-ram-2-fill';
+import IconRam2Line from './icon-ram-2-line';
+import IconRamFill from './icon-ram-fill';
+import IconRamLine from './icon-ram-line';
 import IconRemoteControl2Fill from './icon-remote-control-2-fill';
 import IconRemoteControl2Line from './icon-remote-control-2-line';
 import IconRemoteControlFill from './icon-remote-control-fill';
@@ -833,8 +867,8 @@ import IconBook3Fill from './icon-book-3-fill';
 import IconBook3Line from './icon-book-3-line';
 import IconBookFill from './icon-book-fill';
 import IconBookLine from './icon-book-line';
-import IconBookMarkFill from './icon-book-mark-fill';
-import IconBookMarkLine from './icon-book-mark-line';
+import IconBookMarkedFill from './icon-book-marked-fill';
+import IconBookMarkedLine from './icon-book-marked-line';
 import IconBookOpenFill from './icon-book-open-fill';
 import IconBookOpenLine from './icon-book-open-line';
 import IconBookReadFill from './icon-book-read-fill';
@@ -845,10 +879,14 @@ import IconClipboardFill from './icon-clipboard-fill';
 import IconClipboardLine from './icon-clipboard-line';
 import IconContactsBook2Fill from './icon-contacts-book-2-fill';
 import IconContactsBook2Line from './icon-contacts-book-2-line';
+import IconContactsBook3Fill from './icon-contacts-book-3-fill';
+import IconContactsBook3Line from './icon-contacts-book-3-line';
 import IconContactsBookFill from './icon-contacts-book-fill';
 import IconContactsBookLine from './icon-contacts-book-line';
 import IconContactsBookUploadFill from './icon-contacts-book-upload-fill';
 import IconContactsBookUploadLine from './icon-contacts-book-upload-line';
+import IconContractFill from './icon-contract-fill';
+import IconContractLine from './icon-contract-line';
 import IconDraftFill from './icon-draft-fill';
 import IconDraftLine from './icon-draft-line';
 import IconFile2Fill from './icon-file-2-fill';
@@ -863,6 +901,8 @@ import IconFileChart2Fill from './icon-file-chart-2-fill';
 import IconFileChart2Line from './icon-file-chart-2-line';
 import IconFileChartFill from './icon-file-chart-fill';
 import IconFileChartLine from './icon-file-chart-line';
+import IconFileCheckFill from './icon-file-check-fill';
+import IconFileCheckLine from './icon-file-check-line';
 import IconFileCloseFill from './icon-file-close-fill';
 import IconFileCloseLine from './icon-file-close-line';
 import IconFileCloudFill from './icon-file-cloud-fill';
@@ -905,8 +945,8 @@ import IconFileListFill from './icon-file-list-fill';
 import IconFileListLine from './icon-file-list-line';
 import IconFileLockFill from './icon-file-lock-fill';
 import IconFileLockLine from './icon-file-lock-line';
-import IconFileMarkFill from './icon-file-mark-fill';
-import IconFileMarkLine from './icon-file-mark-line';
+import IconFileMarkedFill from './icon-file-marked-fill';
+import IconFileMarkedLine from './icon-file-marked-line';
 import IconFileMusicFill from './icon-file-music-fill';
 import IconFileMusicLine from './icon-file-music-line';
 import IconFilePaper2Fill from './icon-file-paper-2-fill';
@@ -961,12 +1001,20 @@ import IconFolder4Fill from './icon-folder-4-fill';
 import IconFolder4Line from './icon-folder-4-line';
 import IconFolder5Fill from './icon-folder-5-fill';
 import IconFolder5Line from './icon-folder-5-line';
+import IconFolder6Fill from './icon-folder-6-fill';
+import IconFolder6Line from './icon-folder-6-line';
 import IconFolderAddFill from './icon-folder-add-fill';
 import IconFolderAddLine from './icon-folder-add-line';
 import IconFolderChart2Fill from './icon-folder-chart-2-fill';
 import IconFolderChart2Line from './icon-folder-chart-2-line';
 import IconFolderChartFill from './icon-folder-chart-fill';
 import IconFolderChartLine from './icon-folder-chart-line';
+import IconFolderCheckFill from './icon-folder-check-fill';
+import IconFolderCheckLine from './icon-folder-check-line';
+import IconFolderCloseFill from './icon-folder-close-fill';
+import IconFolderCloseLine from './icon-folder-close-line';
+import IconFolderCloudFill from './icon-folder-cloud-fill';
+import IconFolderCloudLine from './icon-folder-cloud-line';
 import IconFolderDownloadFill from './icon-folder-download-fill';
 import IconFolderDownloadLine from './icon-folder-download-line';
 import IconFolderFill from './icon-folder-fill';
@@ -1027,8 +1075,12 @@ import IconNumbersFill from './icon-numbers-fill';
 import IconNumbersLine from './icon-numbers-line';
 import IconPagesFill from './icon-pages-fill';
 import IconPagesLine from './icon-pages-line';
+import IconReceiptFill from './icon-receipt-fill';
+import IconReceiptLine from './icon-receipt-line';
 import IconStickyNote2Fill from './icon-sticky-note-2-fill';
 import IconStickyNote2Line from './icon-sticky-note-2-line';
+import IconStickyNoteAddFill from './icon-sticky-note-add-fill';
+import IconStickyNoteAddLine from './icon-sticky-note-add-line';
 import IconStickyNoteFill from './icon-sticky-note-fill';
 import IconStickyNoteLine from './icon-sticky-note-line';
 import IconSurveyFill from './icon-survey-fill';
@@ -1051,6 +1103,9 @@ import IconAttachment2 from './icon-attachment-2';
 import IconBold from './icon-bold';
 import IconBringForward from './icon-bring-forward';
 import IconBringToFront from './icon-bring-to-front';
+import IconCalendarView from './icon-calendar-view';
+import IconCarouselView from './icon-carousel-view';
+import IconCodeBlock from './icon-code-block';
 import IconCodeView from './icon-code-view';
 import IconDeleteColumn from './icon-delete-column';
 import IconDeleteRow from './icon-delete-row';
@@ -1062,6 +1117,7 @@ import IconEmphasisCn from './icon-emphasis-cn';
 import IconEmphasis from './icon-emphasis';
 import IconEnglishInput from './icon-english-input';
 import IconFlowChart from './icon-flow-chart';
+import IconFocusMode from './icon-focus-mode';
 import IconFontColor from './icon-font-color';
 import IconFontFamily from './icon-font-family';
 import IconFontMono from './icon-font-mono';
@@ -1071,23 +1127,29 @@ import IconFontSize2 from './icon-font-size-2';
 import IconFontSize from './icon-font-size';
 import IconFormatClear from './icon-format-clear';
 import IconFunctions from './icon-functions';
+import IconGalleryView2 from './icon-gallery-view-2';
+import IconGalleryView from './icon-gallery-view';
 import IconH1 from './icon-h-1';
 import IconH2 from './icon-h-2';
 import IconH3 from './icon-h-3';
 import IconH4 from './icon-h-4';
 import IconH5 from './icon-h-5';
 import IconH6 from './icon-h-6';
+import IconHand from './icon-hand';
 import IconHashtag from './icon-hashtag';
 import IconHeading from './icon-heading';
 import IconIndentDecrease from './icon-indent-decrease';
 import IconIndentIncrease from './icon-indent-increase';
 import IconInfoI from './icon-info-i';
 import IconInputCursorMove from './icon-input-cursor-move';
+import IconInputField from './icon-input-field';
 import IconInsertColumnLeft from './icon-insert-column-left';
 import IconInsertColumnRight from './icon-insert-column-right';
 import IconInsertRowBottom from './icon-insert-row-bottom';
 import IconInsertRowTop from './icon-insert-row-top';
 import IconItalic from './icon-italic';
+import IconKanbanView2 from './icon-kanban-view-2';
+import IconKanbanView from './icon-kanban-view';
 import IconLineHeight from './icon-line-height';
 import IconLinkM from './icon-link-m';
 import IconLinkUnlinkM from './icon-link-unlink-m';
@@ -1101,6 +1163,7 @@ import IconListOrdered2 from './icon-list-ordered-2';
 import IconListOrdered from './icon-list-ordered';
 import IconListRadio from './icon-list-radio';
 import IconListUnordered from './icon-list-unordered';
+import IconListView from './icon-list-view';
 import IconMergeCellsHorizontal from './icon-merge-cells-horizontal';
 import IconMergeCellsVertical from './icon-merge-cells-vertical';
 import IconMindMap from './icon-mind-map';
@@ -1132,11 +1195,17 @@ import IconSingleQuotesR from './icon-single-quotes-r';
 import IconSketching from './icon-sketching';
 import IconSlashCommands2 from './icon-slash-commands-2';
 import IconSlashCommands from './icon-slash-commands';
+import IconSlideshowView from './icon-slideshow-view';
+import IconSortAlphabetAsc from './icon-sort-alphabet-asc';
+import IconSortAlphabetDesc from './icon-sort-alphabet-desc';
 import IconSortAsc from './icon-sort-asc';
 import IconSortDesc from './icon-sort-desc';
+import IconSortNumberAsc from './icon-sort-number-asc';
+import IconSortNumberDesc from './icon-sort-number-desc';
 import IconSpace from './icon-space';
 import IconSplitCellsHorizontal from './icon-split-cells-horizontal';
 import IconSplitCellsVertical from './icon-split-cells-vertical';
+import IconStackedView from './icon-stacked-view';
 import IconStrikethrough2 from './icon-strikethrough-2';
 import IconStrikethrough from './icon-strikethrough';
 import IconSubscript2 from './icon-subscript-2';
@@ -1144,11 +1213,16 @@ import IconSubscript from './icon-subscript';
 import IconSuperscript2 from './icon-superscript-2';
 import IconSuperscript from './icon-superscript';
 import IconTable2 from './icon-table-2';
+import IconTable3 from './icon-table-3';
+import IconTableView from './icon-table-view';
+import IconTextBlock from './icon-text-block';
 import IconTextDirectionL from './icon-text-direction-l';
 import IconTextDirectionR from './icon-text-direction-r';
+import IconTextSnippet from './icon-text-snippet';
 import IconTextSpacing from './icon-text-spacing';
 import IconTextWrap from './icon-text-wrap';
 import IconText from './icon-text';
+import IconTimelineView from './icon-timeline-view';
 import IconTranslate2 from './icon-translate-2';
 import IconTranslate from './icon-translate';
 import IconUnderline from './icon-underline';
@@ -1189,8 +1263,12 @@ import IconCouponFill from './icon-coupon-fill';
 import IconCouponLine from './icon-coupon-line';
 import IconCurrencyFill from './icon-currency-fill';
 import IconCurrencyLine from './icon-currency-line';
+import IconDiscountPercentFill from './icon-discount-percent-fill';
+import IconDiscountPercentLine from './icon-discount-percent-line';
 import IconEthFill from './icon-eth-fill';
 import IconEthLine from './icon-eth-line';
+import IconExchange2Fill from './icon-exchange-2-fill';
+import IconExchange2Line from './icon-exchange-2-line';
 import IconExchangeBoxFill from './icon-exchange-box-fill';
 import IconExchangeBoxLine from './icon-exchange-box-line';
 import IconExchangeCnyFill from './icon-exchange-cny-fill';
@@ -1273,6 +1351,10 @@ import IconShoppingCartFill from './icon-shopping-cart-fill';
 import IconShoppingCartLine from './icon-shopping-cart-line';
 import IconStockFill from './icon-stock-fill';
 import IconStockLine from './icon-stock-line';
+import IconSwap2Fill from './icon-swap-2-fill';
+import IconSwap2Line from './icon-swap-2-line';
+import IconSwap3Fill from './icon-swap-3-fill';
+import IconSwap3Line from './icon-swap-3-line';
 import IconSwapBoxFill from './icon-swap-box-fill';
 import IconSwapBoxLine from './icon-swap-box-line';
 import IconSwapFill from './icon-swap-fill';
@@ -1307,6 +1389,8 @@ import IconXtzFill from './icon-xtz-fill';
 import IconXtzLine from './icon-xtz-line';
 import IconBeerFill from './icon-beer-fill';
 import IconBeerLine from './icon-beer-line';
+import IconBowlFill from './icon-bowl-fill';
+import IconBowlLine from './icon-bowl-line';
 import IconBreadFill from './icon-bread-fill';
 import IconBreadLine from './icon-bread-line';
 import IconCake2Fill from './icon-cake-2-fill';
@@ -1317,6 +1401,8 @@ import IconCakeFill from './icon-cake-fill';
 import IconCakeLine from './icon-cake-line';
 import IconCupFill from './icon-cup-fill';
 import IconCupLine from './icon-cup-line';
+import IconDrinks2Fill from './icon-drinks-2-fill';
+import IconDrinks2Line from './icon-drinks-2-line';
 import IconDrinksFill from './icon-drinks-fill';
 import IconDrinksLine from './icon-drinks-line';
 import IconGobletFill from './icon-goblet-fill';
@@ -1413,6 +1499,10 @@ import IconBilibiliFill from './icon-bilibili-fill';
 import IconBilibiliLine from './icon-bilibili-line';
 import IconBlenderFill from './icon-blender-fill';
 import IconBlenderLine from './icon-blender-line';
+import IconBloggerFill from './icon-blogger-fill';
+import IconBloggerLine from './icon-blogger-line';
+import IconBlueskyFill from './icon-bluesky-fill';
+import IconBlueskyLine from './icon-bluesky-line';
 import IconBootstrapFill from './icon-bootstrap-fill';
 import IconBootstrapLine from './icon-bootstrap-line';
 import IconCentosFill from './icon-centos-fill';
@@ -1459,6 +1549,8 @@ import IconFlickrFill from './icon-flickr-fill';
 import IconFlickrLine from './icon-flickr-line';
 import IconFlutterFill from './icon-flutter-fill';
 import IconFlutterLine from './icon-flutter-line';
+import IconFriendicaFill from './icon-friendica-fill';
+import IconFriendicaLine from './icon-friendica-line';
 import IconGatsbyFill from './icon-gatsby-fill';
 import IconGatsbyLine from './icon-gatsby-line';
 import IconGithubFill from './icon-github-fill';
@@ -1537,6 +1629,8 @@ import IconReactjsFill from './icon-reactjs-fill';
 import IconReactjsLine from './icon-reactjs-line';
 import IconRedditFill from './icon-reddit-fill';
 import IconRedditLine from './icon-reddit-line';
+import IconRemixRunFill from './icon-remix-run-fill';
+import IconRemixRunLine from './icon-remix-run-line';
 import IconRemixiconFill from './icon-remixicon-fill';
 import IconRemixiconLine from './icon-remixicon-line';
 import IconSafariFill from './icon-safari-fill';
@@ -1753,6 +1847,8 @@ import IconShipFill from './icon-ship-fill';
 import IconShipLine from './icon-ship-line';
 import IconSignalTowerFill from './icon-signal-tower-fill';
 import IconSignalTowerLine from './icon-signal-tower-line';
+import IconSignpostFill from './icon-signpost-fill';
+import IconSignpostLine from './icon-signpost-line';
 import IconSpaceShipFill from './icon-space-ship-fill';
 import IconSpaceShipLine from './icon-space-ship-line';
 import IconSteering2Fill from './icon-steering-2-fill';
@@ -1775,6 +1871,8 @@ import IconTaxiFill from './icon-taxi-fill';
 import IconTaxiLine from './icon-taxi-line';
 import IconTaxiWifiFill from './icon-taxi-wifi-fill';
 import IconTaxiWifiLine from './icon-taxi-wifi-line';
+import IconTimeZoneFill from './icon-time-zone-fill';
+import IconTimeZoneLine from './icon-time-zone-line';
 import IconTrafficLightFill from './icon-traffic-light-fill';
 import IconTrafficLightLine from './icon-traffic-light-line';
 import IconTrainFill from './icon-train-fill';
@@ -1837,6 +1935,10 @@ import IconForward30Fill from './icon-forward-30-fill';
 import IconForward30Line from './icon-forward-30-line';
 import IconForward5Fill from './icon-forward-5-fill';
 import IconForward5Line from './icon-forward-5-line';
+import IconForwardEndFill from './icon-forward-end-fill';
+import IconForwardEndLine from './icon-forward-end-line';
+import IconForwardEndMiniFill from './icon-forward-end-mini-fill';
+import IconForwardEndMiniLine from './icon-forward-end-mini-line';
 import IconFullscreenExitFill from './icon-fullscreen-exit-fill';
 import IconFullscreenExitLine from './icon-fullscreen-exit-line';
 import IconFullscreenFill from './icon-fullscreen-fill';
@@ -1921,6 +2023,10 @@ import IconPlayListFill from './icon-play-list-fill';
 import IconPlayListLine from './icon-play-list-line';
 import IconPlayMiniFill from './icon-play-mini-fill';
 import IconPlayMiniLine from './icon-play-mini-line';
+import IconPlayReverseFill from './icon-play-reverse-fill';
+import IconPlayReverseLine from './icon-play-reverse-line';
+import IconPlayReverseMiniFill from './icon-play-reverse-mini-fill';
+import IconPlayReverseMiniLine from './icon-play-reverse-mini-line';
 import IconPolaroid2Fill from './icon-polaroid-2-fill';
 import IconPolaroid2Line from './icon-polaroid-2-line';
 import IconPolaroidFill from './icon-polaroid-fill';
@@ -1949,6 +2055,10 @@ import IconRewindFill from './icon-rewind-fill';
 import IconRewindLine from './icon-rewind-line';
 import IconRewindMiniFill from './icon-rewind-mini-fill';
 import IconRewindMiniLine from './icon-rewind-mini-line';
+import IconRewindStartFill from './icon-rewind-start-fill';
+import IconRewindStartLine from './icon-rewind-start-line';
+import IconRewindStartMiniFill from './icon-rewind-start-mini-fill';
+import IconRewindStartMiniLine from './icon-rewind-start-mini-line';
 import IconRhythmFill from './icon-rhythm-fill';
 import IconRhythmLine from './icon-rhythm-line';
 import IconShuffleFill from './icon-shuffle-fill';
@@ -2207,6 +2317,8 @@ import IconEqualFill from './icon-equal-fill';
 import IconEqualLine from './icon-equal-line';
 import IconErrorWarningFill from './icon-error-warning-fill';
 import IconErrorWarningLine from './icon-error-warning-line';
+import IconExportFill from './icon-export-fill';
+import IconExportLine from './icon-export-line';
 import IconExternalLinkFill from './icon-external-link-fill';
 import IconExternalLinkLine from './icon-external-link-line';
 import IconEye2Fill from './icon-eye-2-fill';
@@ -2239,8 +2351,12 @@ import IconHourglass2Fill from './icon-hourglass-2-fill';
 import IconHourglass2Line from './icon-hourglass-2-line';
 import IconHourglassFill from './icon-hourglass-fill';
 import IconHourglassLine from './icon-hourglass-line';
+import IconImportFill from './icon-import-fill';
+import IconImportLine from './icon-import-line';
 import IconIndeterminateCircleFill from './icon-indeterminate-circle-fill';
 import IconIndeterminateCircleLine from './icon-indeterminate-circle-line';
+import IconInformation2Fill from './icon-information-2-fill';
+import IconInformation2Line from './icon-information-2-line';
 import IconInformationFill from './icon-information-fill';
 import IconInformationLine from './icon-information-line';
 import IconListSettingsFill from './icon-list-settings-fill';
@@ -2261,6 +2377,8 @@ import IconLockFill from './icon-lock-fill';
 import IconLockLine from './icon-lock-line';
 import IconLockPasswordFill from './icon-lock-password-fill';
 import IconLockPasswordLine from './icon-lock-password-line';
+import IconLockStarFill from './icon-lock-star-fill';
+import IconLockStarLine from './icon-lock-star-line';
 import IconLockUnlockFill from './icon-lock-unlock-fill';
 import IconLockUnlockLine from './icon-lock-unlock-line';
 import IconLoginBoxFill from './icon-login-box-fill';
@@ -2303,6 +2421,22 @@ import IconMoreFill from './icon-more-fill';
 import IconMoreLine from './icon-more-line';
 import IconNotificationBadgeFill from './icon-notification-badge-fill';
 import IconNotificationBadgeLine from './icon-notification-badge-line';
+import IconProgress1Fill from './icon-progress-1-fill';
+import IconProgress1Line from './icon-progress-1-line';
+import IconProgress2Fill from './icon-progress-2-fill';
+import IconProgress2Line from './icon-progress-2-line';
+import IconProgress3Fill from './icon-progress-3-fill';
+import IconProgress3Line from './icon-progress-3-line';
+import IconProgress4Fill from './icon-progress-4-fill';
+import IconProgress4Line from './icon-progress-4-line';
+import IconProgress5Fill from './icon-progress-5-fill';
+import IconProgress5Line from './icon-progress-5-line';
+import IconProgress6Fill from './icon-progress-6-fill';
+import IconProgress6Line from './icon-progress-6-line';
+import IconProgress7Fill from './icon-progress-7-fill';
+import IconProgress7Line from './icon-progress-7-line';
+import IconProgress8Fill from './icon-progress-8-fill';
+import IconProgress8Line from './icon-progress-8-line';
 import IconProhibitedFill from './icon-prohibited-fill';
 import IconProhibitedLine from './icon-prohibited-line';
 import IconQuestionFill from './icon-question-fill';
@@ -2359,6 +2493,10 @@ import IconShieldUserFill from './icon-shield-user-fill';
 import IconShieldUserLine from './icon-shield-user-line';
 import IconSideBarFill from './icon-side-bar-fill';
 import IconSideBarLine from './icon-side-bar-line';
+import IconSidebarFoldFill from './icon-sidebar-fold-fill';
+import IconSidebarFoldLine from './icon-sidebar-fold-line';
+import IconSidebarUnfoldFill from './icon-sidebar-unfold-fill';
+import IconSidebarUnfoldLine from './icon-sidebar-unfold-line';
 import IconSpam2Fill from './icon-spam-2-fill';
 import IconSpam2Line from './icon-spam-2-line';
 import IconSpam3Fill from './icon-spam-3-fill';
@@ -2607,6 +2745,8 @@ const icons: Record<string, Plugin> = {
   IconArrowDownLine,
   IconArrowDownSFill,
   IconArrowDownSLine,
+  IconArrowDownWideFill,
+  IconArrowDownWideLine,
   IconArrowDropDownFill,
   IconArrowDropDownLine,
   IconArrowDropLeftFill,
@@ -2633,6 +2773,8 @@ const icons: Record<string, Plugin> = {
   IconArrowLeftSLine,
   IconArrowLeftUpFill,
   IconArrowLeftUpLine,
+  IconArrowLeftWideFill,
+  IconArrowLeftWideLine,
   IconArrowRightCircleFill,
   IconArrowRightCircleLine,
   IconArrowRightDoubleFill,
@@ -2645,6 +2787,8 @@ const icons: Record<string, Plugin> = {
   IconArrowRightSLine,
   IconArrowRightUpFill,
   IconArrowRightUpLine,
+  IconArrowRightWideFill,
+  IconArrowRightWideLine,
   IconArrowTurnBackFill,
   IconArrowTurnBackLine,
   IconArrowTurnForwardFill,
@@ -2659,6 +2803,8 @@ const icons: Record<string, Plugin> = {
   IconArrowUpLine,
   IconArrowUpSFill,
   IconArrowUpSLine,
+  IconArrowUpWideFill,
+  IconArrowUpWideLine,
   IconContractLeftFill,
   IconContractLeftLine,
   IconContractLeftRightFill,
@@ -2691,6 +2837,8 @@ const icons: Record<string, Plugin> = {
   IconDragMove2Line,
   IconDragMoveFill,
   IconDragMoveLine,
+  IconExpandHeightFill,
+  IconExpandHeightLine,
   IconExpandLeftFill,
   IconExpandLeftLine,
   IconExpandLeftRightFill,
@@ -2699,6 +2847,10 @@ const icons: Record<string, Plugin> = {
   IconExpandRightLine,
   IconExpandUpDownFill,
   IconExpandUpDownLine,
+  IconExpandWidthFill,
+  IconExpandWidthLine,
+  IconScrollToBottomFill,
+  IconScrollToBottomLine,
   IconSkipDownFill,
   IconSkipDownLine,
   IconSkipLeftFill,
@@ -2775,6 +2927,8 @@ const icons: Record<string, Plugin> = {
   IconArchiveDrawerLine,
   IconArchiveFill,
   IconArchiveLine,
+  IconArchiveStackFill,
+  IconArchiveStackLine,
   IconAtFill,
   IconAtLine,
   IconAttachmentFill,
@@ -3003,6 +3157,8 @@ const icons: Record<string, Plugin> = {
   IconChatSmile3Line,
   IconChatSmileFill,
   IconChatSmileLine,
+  IconChatThreadFill,
+  IconChatThreadLine,
   IconChatUploadFill,
   IconChatUploadLine,
   IconChatVoiceFill,
@@ -3055,6 +3211,8 @@ const icons: Record<string, Plugin> = {
   IconClockwiseLine,
   IconCollageFill,
   IconCollageLine,
+  IconColorFilterFill,
+  IconColorFilterLine,
   IconCompasses2Fill,
   IconCompasses2Line,
   IconCompassesFill,
@@ -3185,6 +3343,8 @@ const icons: Record<string, Plugin> = {
   IconScreenshot2Line,
   IconScreenshotFill,
   IconScreenshotLine,
+  IconShadowFill,
+  IconShadowLine,
   IconShape2Fill,
   IconShape2Line,
   IconShapeFill,
@@ -3235,8 +3395,12 @@ const icons: Record<string, Plugin> = {
   IconGitClosePullRequestLine,
   IconGitCommitFill,
   IconGitCommitLine,
+  IconGitForkFill,
+  IconGitForkLine,
   IconGitMergeFill,
   IconGitMergeLine,
+  IconGitPrDraftFill,
+  IconGitPrDraftLine,
   IconGitPullRequestFill,
   IconGitPullRequestLine,
   IconGitRepositoryCommitsFill,
@@ -3251,6 +3415,10 @@ const icons: Record<string, Plugin> = {
   IconJavascriptLine,
   IconParenthesesFill,
   IconParenthesesLine,
+  IconPuzzle2Fill,
+  IconPuzzle2Line,
+  IconPuzzleFill,
+  IconPuzzleLine,
   IconTerminalBoxFill,
   IconTerminalBoxLine,
   IconTerminalFill,
@@ -3353,6 +3521,10 @@ const icons: Record<string, Plugin> = {
   IconQrScanLine,
   IconRadarFill,
   IconRadarLine,
+  IconRam2Fill,
+  IconRam2Line,
+  IconRamFill,
+  IconRamLine,
   IconRemoteControl2Fill,
   IconRemoteControl2Line,
   IconRemoteControlFill,
@@ -3433,8 +3605,8 @@ const icons: Record<string, Plugin> = {
   IconBook3Line,
   IconBookFill,
   IconBookLine,
-  IconBookMarkFill,
-  IconBookMarkLine,
+  IconBookMarkedFill,
+  IconBookMarkedLine,
   IconBookOpenFill,
   IconBookOpenLine,
   IconBookReadFill,
@@ -3445,10 +3617,14 @@ const icons: Record<string, Plugin> = {
   IconClipboardLine,
   IconContactsBook2Fill,
   IconContactsBook2Line,
+  IconContactsBook3Fill,
+  IconContactsBook3Line,
   IconContactsBookFill,
   IconContactsBookLine,
   IconContactsBookUploadFill,
   IconContactsBookUploadLine,
+  IconContractFill,
+  IconContractLine,
   IconDraftFill,
   IconDraftLine,
   IconFile2Fill,
@@ -3463,6 +3639,8 @@ const icons: Record<string, Plugin> = {
   IconFileChart2Line,
   IconFileChartFill,
   IconFileChartLine,
+  IconFileCheckFill,
+  IconFileCheckLine,
   IconFileCloseFill,
   IconFileCloseLine,
   IconFileCloudFill,
@@ -3505,8 +3683,8 @@ const icons: Record<string, Plugin> = {
   IconFileListLine,
   IconFileLockFill,
   IconFileLockLine,
-  IconFileMarkFill,
-  IconFileMarkLine,
+  IconFileMarkedFill,
+  IconFileMarkedLine,
   IconFileMusicFill,
   IconFileMusicLine,
   IconFilePaper2Fill,
@@ -3561,12 +3739,20 @@ const icons: Record<string, Plugin> = {
   IconFolder4Line,
   IconFolder5Fill,
   IconFolder5Line,
+  IconFolder6Fill,
+  IconFolder6Line,
   IconFolderAddFill,
   IconFolderAddLine,
   IconFolderChart2Fill,
   IconFolderChart2Line,
   IconFolderChartFill,
   IconFolderChartLine,
+  IconFolderCheckFill,
+  IconFolderCheckLine,
+  IconFolderCloseFill,
+  IconFolderCloseLine,
+  IconFolderCloudFill,
+  IconFolderCloudLine,
   IconFolderDownloadFill,
   IconFolderDownloadLine,
   IconFolderFill,
@@ -3627,8 +3813,12 @@ const icons: Record<string, Plugin> = {
   IconNumbersLine,
   IconPagesFill,
   IconPagesLine,
+  IconReceiptFill,
+  IconReceiptLine,
   IconStickyNote2Fill,
   IconStickyNote2Line,
+  IconStickyNoteAddFill,
+  IconStickyNoteAddLine,
   IconStickyNoteFill,
   IconStickyNoteLine,
   IconSurveyFill,
@@ -3651,6 +3841,9 @@ const icons: Record<string, Plugin> = {
   IconBold,
   IconBringForward,
   IconBringToFront,
+  IconCalendarView,
+  IconCarouselView,
+  IconCodeBlock,
   IconCodeView,
   IconDeleteColumn,
   IconDeleteRow,
@@ -3662,6 +3855,7 @@ const icons: Record<string, Plugin> = {
   IconEmphasis,
   IconEnglishInput,
   IconFlowChart,
+  IconFocusMode,
   IconFontColor,
   IconFontFamily,
   IconFontMono,
@@ -3671,23 +3865,29 @@ const icons: Record<string, Plugin> = {
   IconFontSize,
   IconFormatClear,
   IconFunctions,
+  IconGalleryView2,
+  IconGalleryView,
   IconH1,
   IconH2,
   IconH3,
   IconH4,
   IconH5,
   IconH6,
+  IconHand,
   IconHashtag,
   IconHeading,
   IconIndentDecrease,
   IconIndentIncrease,
   IconInfoI,
   IconInputCursorMove,
+  IconInputField,
   IconInsertColumnLeft,
   IconInsertColumnRight,
   IconInsertRowBottom,
   IconInsertRowTop,
   IconItalic,
+  IconKanbanView2,
+  IconKanbanView,
   IconLineHeight,
   IconLinkM,
   IconLinkUnlinkM,
@@ -3701,6 +3901,7 @@ const icons: Record<string, Plugin> = {
   IconListOrdered,
   IconListRadio,
   IconListUnordered,
+  IconListView,
   IconMergeCellsHorizontal,
   IconMergeCellsVertical,
   IconMindMap,
@@ -3732,11 +3933,17 @@ const icons: Record<string, Plugin> = {
   IconSketching,
   IconSlashCommands2,
   IconSlashCommands,
+  IconSlideshowView,
+  IconSortAlphabetAsc,
+  IconSortAlphabetDesc,
   IconSortAsc,
   IconSortDesc,
+  IconSortNumberAsc,
+  IconSortNumberDesc,
   IconSpace,
   IconSplitCellsHorizontal,
   IconSplitCellsVertical,
+  IconStackedView,
   IconStrikethrough2,
   IconStrikethrough,
   IconSubscript2,
@@ -3744,11 +3951,16 @@ const icons: Record<string, Plugin> = {
   IconSuperscript2,
   IconSuperscript,
   IconTable2,
+  IconTable3,
+  IconTableView,
+  IconTextBlock,
   IconTextDirectionL,
   IconTextDirectionR,
+  IconTextSnippet,
   IconTextSpacing,
   IconTextWrap,
   IconText,
+  IconTimelineView,
   IconTranslate2,
   IconTranslate,
   IconUnderline,
@@ -3789,8 +4001,12 @@ const icons: Record<string, Plugin> = {
   IconCouponLine,
   IconCurrencyFill,
   IconCurrencyLine,
+  IconDiscountPercentFill,
+  IconDiscountPercentLine,
   IconEthFill,
   IconEthLine,
+  IconExchange2Fill,
+  IconExchange2Line,
   IconExchangeBoxFill,
   IconExchangeBoxLine,
   IconExchangeCnyFill,
@@ -3873,6 +4089,10 @@ const icons: Record<string, Plugin> = {
   IconShoppingCartLine,
   IconStockFill,
   IconStockLine,
+  IconSwap2Fill,
+  IconSwap2Line,
+  IconSwap3Fill,
+  IconSwap3Line,
   IconSwapBoxFill,
   IconSwapBoxLine,
   IconSwapFill,
@@ -3907,6 +4127,8 @@ const icons: Record<string, Plugin> = {
   IconXtzLine,
   IconBeerFill,
   IconBeerLine,
+  IconBowlFill,
+  IconBowlLine,
   IconBreadFill,
   IconBreadLine,
   IconCake2Fill,
@@ -3917,6 +4139,8 @@ const icons: Record<string, Plugin> = {
   IconCakeLine,
   IconCupFill,
   IconCupLine,
+  IconDrinks2Fill,
+  IconDrinks2Line,
   IconDrinksFill,
   IconDrinksLine,
   IconGobletFill,
@@ -4013,6 +4237,10 @@ const icons: Record<string, Plugin> = {
   IconBilibiliLine,
   IconBlenderFill,
   IconBlenderLine,
+  IconBloggerFill,
+  IconBloggerLine,
+  IconBlueskyFill,
+  IconBlueskyLine,
   IconBootstrapFill,
   IconBootstrapLine,
   IconCentosFill,
@@ -4059,6 +4287,8 @@ const icons: Record<string, Plugin> = {
   IconFlickrLine,
   IconFlutterFill,
   IconFlutterLine,
+  IconFriendicaFill,
+  IconFriendicaLine,
   IconGatsbyFill,
   IconGatsbyLine,
   IconGithubFill,
@@ -4137,6 +4367,8 @@ const icons: Record<string, Plugin> = {
   IconReactjsLine,
   IconRedditFill,
   IconRedditLine,
+  IconRemixRunFill,
+  IconRemixRunLine,
   IconRemixiconFill,
   IconRemixiconLine,
   IconSafariFill,
@@ -4353,6 +4585,8 @@ const icons: Record<string, Plugin> = {
   IconShipLine,
   IconSignalTowerFill,
   IconSignalTowerLine,
+  IconSignpostFill,
+  IconSignpostLine,
   IconSpaceShipFill,
   IconSpaceShipLine,
   IconSteering2Fill,
@@ -4375,6 +4609,8 @@ const icons: Record<string, Plugin> = {
   IconTaxiLine,
   IconTaxiWifiFill,
   IconTaxiWifiLine,
+  IconTimeZoneFill,
+  IconTimeZoneLine,
   IconTrafficLightFill,
   IconTrafficLightLine,
   IconTrainFill,
@@ -4437,6 +4673,10 @@ const icons: Record<string, Plugin> = {
   IconForward30Line,
   IconForward5Fill,
   IconForward5Line,
+  IconForwardEndFill,
+  IconForwardEndLine,
+  IconForwardEndMiniFill,
+  IconForwardEndMiniLine,
   IconFullscreenExitFill,
   IconFullscreenExitLine,
   IconFullscreenFill,
@@ -4521,6 +4761,10 @@ const icons: Record<string, Plugin> = {
   IconPlayListLine,
   IconPlayMiniFill,
   IconPlayMiniLine,
+  IconPlayReverseFill,
+  IconPlayReverseLine,
+  IconPlayReverseMiniFill,
+  IconPlayReverseMiniLine,
   IconPolaroid2Fill,
   IconPolaroid2Line,
   IconPolaroidFill,
@@ -4549,6 +4793,10 @@ const icons: Record<string, Plugin> = {
   IconRewindLine,
   IconRewindMiniFill,
   IconRewindMiniLine,
+  IconRewindStartFill,
+  IconRewindStartLine,
+  IconRewindStartMiniFill,
+  IconRewindStartMiniLine,
   IconRhythmFill,
   IconRhythmLine,
   IconShuffleFill,
@@ -4807,6 +5055,8 @@ const icons: Record<string, Plugin> = {
   IconEqualLine,
   IconErrorWarningFill,
   IconErrorWarningLine,
+  IconExportFill,
+  IconExportLine,
   IconExternalLinkFill,
   IconExternalLinkLine,
   IconEye2Fill,
@@ -4839,8 +5089,12 @@ const icons: Record<string, Plugin> = {
   IconHourglass2Line,
   IconHourglassFill,
   IconHourglassLine,
+  IconImportFill,
+  IconImportLine,
   IconIndeterminateCircleFill,
   IconIndeterminateCircleLine,
+  IconInformation2Fill,
+  IconInformation2Line,
   IconInformationFill,
   IconInformationLine,
   IconListSettingsFill,
@@ -4861,6 +5115,8 @@ const icons: Record<string, Plugin> = {
   IconLockLine,
   IconLockPasswordFill,
   IconLockPasswordLine,
+  IconLockStarFill,
+  IconLockStarLine,
   IconLockUnlockFill,
   IconLockUnlockLine,
   IconLoginBoxFill,
@@ -4903,6 +5159,22 @@ const icons: Record<string, Plugin> = {
   IconMoreLine,
   IconNotificationBadgeFill,
   IconNotificationBadgeLine,
+  IconProgress1Fill,
+  IconProgress1Line,
+  IconProgress2Fill,
+  IconProgress2Line,
+  IconProgress3Fill,
+  IconProgress3Line,
+  IconProgress4Fill,
+  IconProgress4Line,
+  IconProgress5Fill,
+  IconProgress5Line,
+  IconProgress6Fill,
+  IconProgress6Line,
+  IconProgress7Fill,
+  IconProgress7Line,
+  IconProgress8Fill,
+  IconProgress8Line,
   IconProhibitedFill,
   IconProhibitedLine,
   IconQuestionFill,
@@ -4959,6 +5231,10 @@ const icons: Record<string, Plugin> = {
   IconShieldUserLine,
   IconSideBarFill,
   IconSideBarLine,
+  IconSidebarFoldFill,
+  IconSidebarFoldLine,
+  IconSidebarUnfoldFill,
+  IconSidebarUnfoldLine,
   IconSpam2Fill,
   IconSpam2Line,
   IconSpam3Fill,
