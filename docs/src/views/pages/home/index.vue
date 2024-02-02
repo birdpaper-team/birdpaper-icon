@@ -1,5 +1,5 @@
 <template>
-  <div>birdpaper-icon</div>
+  <!-- <div>birdpaper-icon</div> -->
 </template>
 
 <script setup lang="ts">
