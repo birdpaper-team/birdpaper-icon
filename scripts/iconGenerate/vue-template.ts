@@ -72,7 +72,15 @@ const ${componentName} = Object.assign(_${componentName}, {
 export default ${componentName};`;
 };
 
-export const getBpVueIcon = ({ imports, components }: { imports: string[]; components: string[] }) =>
+export const getBpVueIcon = ({
+  imports,
+  components,
+  iconType,
+}: {
+  imports: string[];
+  components: string[];
+  iconType: string[];
+}) =>
   // language=TypeScript
   // prettier-ignore
   `import type { App, Plugin } from 'vue';
@@ -90,6 +98,7 @@ const install = (app: App) => {
 
 const BpVueIcon = {
   ...icons,
+  iconType: [${iconType.map(item=>`"${item}"`)}],
   install
 };
 

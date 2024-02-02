@@ -18,10 +18,10 @@ program
   .command("icon:generate")
   .description("icon:generate...")
   .action(async () => {
-    const data = getIconComponents();
-    await generateIconComponent(data);
-    buildIconIndex(data);
-    buildType(data);
+    const { iconList, iconType } = getIconComponents();
+    await generateIconComponent(iconList);
+    buildIconIndex(iconList, iconType);
+    buildType(iconList);
   });
 
 program

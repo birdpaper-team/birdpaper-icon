@@ -5483,6 +5483,7 @@ const install = (app: App) => {
 
 const BpVueIcon = {
   ...icons,
+  iconType: ["Arrows","Buildings","Business","Communication","Design","Development","Device","Document","Editor","Finance","Food","Health & Medical","Logos","Map","Media","Others","System","User & Faces","Weather"],
   install
 };
 
