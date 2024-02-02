@@ -13,7 +13,7 @@
         <ul :class="`${name}-route-inner`">
           <li :class="[`${name}-route-item`, `${v.type}`]" v-for="v in routes">
             <span v-if="v.type === 'text-link'">{{ v.title }}</span>
-            <component v-if="v.type === 'icon-link'" :is="v.icon"></component>
+            <component v-if="v.type === 'icon-link'" :is="v.icon" size="20"></component>
             <div v-if="v.type === 'separator'"></div>
           </li>
         </ul>
