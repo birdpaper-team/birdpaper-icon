@@ -105,12 +105,13 @@ const BpVueIcon = {
 export default BpVueIcon;
 `;
 
-export const getIndex = ({ exports }: { exports: string[] }) =>
+export const getIndex = ({ exports, iconType }: { exports: string[]; iconType: string[] }) =>
   // language=TypeScript
   // prettier-ignore
   `export { default } from './birdpaper-icon';
 ${exports.join('\n')}
 export type {} from './icon-components';
+export const iconType = [${iconType.map(item=>`"${item}"`)}];
 `;
 
 export const getType = ({ exports }: { exports: string[] }) =>

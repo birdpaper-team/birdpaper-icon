@@ -119,7 +119,7 @@ export function buildIconIndex(data: IconData[], iconType: string[]) {
   }
 
   const bpContent = getBpVueIcon({ imports, components, iconType });
-  const indexContent = getIndex({ exports });
+  const indexContent = getIndex({ exports, iconType });
 
   fs.outputFile(path.resolve(paths.icon, "birdpaper-icon.ts"), bpContent, err => {
     if (err) {
