@@ -1,0 +1,39 @@
+.home-page {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &-banner {
+    width: 100%;
+    height: 300px;
+    border-bottom: 1px solid @gary-4;
+
+    &-inner-content {
+      width: 1200px;
+    }
+  }
+
+  &-search {
+    position: relative;
+    top: -36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    &-cotainer {
+      width: 1200px;
+      padding: 0 20px;
+    }
+
+    &-inner {
+      height: 72px;
+      border: 1px solid @gary-3;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      background-color: @gary-1;
+    }
+  }
+}

@@ -8,8 +8,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "birdpaper-icon": "workspace:^",
     "birdpaper-ui": "^2.1.14",
-    "birdpaper-icon": "workspace:packages@*",
     "vite": "^4.2.1",
     "vite-plugin-vue-setup-extend": "^0.4.0",
     "vue": "^3.3.2",

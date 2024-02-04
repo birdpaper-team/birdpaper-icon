@@ -2735,5 +2735,5 @@ export { default as IconWaterPercentFill } from './icon-water-percent-fill';
 export { default as IconWaterPercentLine } from './icon-water-percent-line';
 export { default as IconWindyFill } from './icon-windy-fill';
 export { default as IconWindyLine } from './icon-windy-line';
-export type {} from './icon-components';
+// export type {} from './icon-components';
 export const iconType = ["Arrows","Buildings","Business","Communication","Design","Development","Device","Document","Editor","Finance","Food","Health & Medical","Logos","Map","Media","Others","System","User & Faces","Weather"];
