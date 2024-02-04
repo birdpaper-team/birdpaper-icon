@@ -30,7 +30,7 @@
 
     &-inner {
       display: flex;
-      height: 68px;
+      height: 66px;
       border: 1px solid @gary-3;
       border-radius: 8px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -49,8 +49,9 @@
         height: 100%;
         background-color: @gary-3;
         border-radius: 6px;
-        padding: 0 20px;
+        padding: 0 18px;
         cursor: pointer;
+        transition: all 0.2s ease;
         .font-quick;
         .no-select;
 
@@ -58,14 +59,63 @@
           font-size: 16px;
           font-weight: bold;
           color: @gary-8;
-          letter-spacing: .4px;
+          letter-spacing: 0.4px;
+          transition: all 0.2s ease;
+        }
+
+        .bp-icon {
+          fill: @gary-6;
+          transition: all 0.2s ease;
+        }
+
+        &:hover {
+          background-color: @primary-0;
+          transition: all 0.2s ease;
+
+          span {
+            color: @gary-9;
+            transition: all 0.2s ease;
+          }
+
+          .bp-icon {
+            fill: @primary-6;
+            transition: all 0.2s ease;
+          }
         }
       }
     }
 
     &-input {
       flex: 1;
-      // background-color: @primary-2;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 10px;
+
+      &-icon {
+        width: 40px;
+
+        .bp-icon {
+          position: relative;
+          top: 2px;
+          fill: @gary-6;
+        }
+      }
+
+      &-inner {
+        flex: 1;
+        width: 100%;
+        height: 100%;
+
+        input {
+          width: 100%;
+          height: 100%;
+          font-size: 18px;
+          color: @gary-10;
+          .font-quick;
+          .no-select;
+        }
+      }
     }
   }
 }
