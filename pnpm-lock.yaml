@@ -11,8 +11,8 @@ importers:
   docs:
     dependencies:
       birdpaper-icon:
-        specifier: workspace:^
-        version: link:..
+        specifier: workspace:packages@*
+        version: link:../packages
       birdpaper-ui:
         specifier: ^2.1.14
         version: 2.1.14
