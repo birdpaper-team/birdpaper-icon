@@ -38,8 +38,14 @@
     }
 
     &-select {
+      display: flex;
       width: 220px;
+      height: 100%;
       padding: 10px 16px;
+
+      .bp-trigger {
+        width: 100%;
+      }
 
       &-container {
         display: flex;
@@ -112,9 +118,84 @@
           height: 100%;
           font-size: 18px;
           color: @gary-10;
+          font-weight: 500;
+          letter-spacing: 0.4px;
           .font-quick;
           .no-select;
         }
+
+        .bp-input-placeholder {
+          color: @gary-6;
+          font-weight: 400;
+        }
+
+        input::placeholder {
+          .bp-input-placeholder;
+        }
+
+        input::-webkit-input-placeholder {
+          .bp-input-placeholder;
+        }
+
+        input::-moz-placeholder {
+          .bp-input-placeholder;
+        }
+
+        input::-moz-placeholder {
+          .bp-input-placeholder;
+        }
+
+        input::-ms-input-placeholder {
+          .bp-input-placeholder;
+        }
+
+        input::-ms-input-placeholder {
+          .bp-input-placeholder;
+        }
+      }
+    }
+  }
+}
+
+.icon-select-trigger {
+  width: 220px;
+  max-height: 400px;
+  padding: 10px;
+  background-color: @gary-1;
+  border: 1px solid @gary-3;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow-y: hidden !important;
+
+  &:hover {
+    overflow-y: auto !important;
+  }
+
+  &-item {
+    list-style: none;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 24px;
+    border-radius: 4px;
+    cursor: pointer;
+
+    span {
+      font-size: 14px;
+      font-weight: bold;
+      color: @gary-9;
+      letter-spacing: 0.4px;
+      transition: all 0.2s ease;
+      .font-quick;
+      .no-select;
+    }
+
+    &:hover {
+      background-color: @gary-2;
+      transition: all 0.2s ease;
+
+      span {
+        color: @gary-10;
+        transition: all 0.2s ease;
       }
     }
   }

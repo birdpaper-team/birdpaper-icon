@@ -8,10 +8,24 @@
         <div :class="`${name}-search-inner`">
           <!-- 类型选择器 -->
           <div :class="`${name}-search-select`">
-            <div :class="`${name}-search-select-container`">
-              <span>All Icons</span>
-              <IconArrowDownSLine size="20" />
-            </div>
+            <bp-trigger v-model="typeSelectVisible" position="bottom" :popup-offset="20">
+              <div :class="`${name}-search-select-container`">
+                <span>All Icons</span>
+                <IconArrowDownSLine size="20" />
+              </div>
+              <template #content>
+                <div class="icon-select-trigger">
+                  <ul>
+                    <li class="icon-select-trigger-item">
+                      <span>All Icons</span>
+                    </li>
+                    <li v-for="v in iconType" class="icon-select-trigger-item">
+                      <span>{{ v }}</span>
+                    </li>
+                  </ul>
+                </div>
+              </template>
+            </bp-trigger>
           </div>
 
           <div :class="`${name}-search-input`">
@@ -30,6 +44,9 @@
 
 <script setup lang="ts">
 import allIcons, { iconType, IconArrowDownSLine, IconSearch2Line } from "birdpaper-icon";
+import { ref } from "vue";
 
 const name = "home-page";
+
+const typeSelectVisible = ref<boolean>(false);
 </script>
