@@ -75,18 +75,22 @@
         }
 
         &:hover {
-          background-color: @primary-0;
+          .trigger-active;
+        }
+      }
+
+      .trigger-active {
+        background-color: @primary-0;
+        transition: all 0.2s ease;
+
+        span {
+          color: @gary-9;
           transition: all 0.2s ease;
+        }
 
-          span {
-            color: @gary-9;
-            transition: all 0.2s ease;
-          }
-
-          .bp-icon {
-            fill: @primary-6;
-            transition: all 0.2s ease;
-          }
+        .bp-icon {
+          fill: @primary-6;
+          transition: all 0.2s ease;
         }
       }
     }

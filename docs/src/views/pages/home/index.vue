@@ -8,8 +8,8 @@
         <div :class="`${name}-search-inner`">
           <!-- 类型选择器 -->
           <div :class="`${name}-search-select`">
-            <bp-trigger v-model="typeSelectVisible" position="bottom" :popup-offset="20">
-              <div :class="`${name}-search-select-container`">
+            <bp-trigger v-model.popupVisible="typeSelectVisible" position="bottom" :popup-offset="20">
+              <div :class="[`${name}-search-select-container`, { 'trigger-active': typeSelectVisible }]">
                 <span>All Icons</span>
                 <IconArrowDownSLine size="20" />
               </div>
