@@ -19,9 +19,9 @@ program
   .description("icon:generate...")
   .action(async () => {
     const { iconList, iconType } = getIconComponents();
-    await generateIconComponent(iconList);
-    buildIconIndex(iconList, iconType);
-    buildType(iconList);
+    // await generateIconComponent(iconList);
+    // buildIconIndex(iconList, iconType);
+    // buildType(iconList);
   });
 
 program

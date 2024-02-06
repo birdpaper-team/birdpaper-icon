@@ -36,6 +36,16 @@ export function getIconComponents(): { iconList: IconData[]; iconType: string[] 
       return splitArr[splitArr.length - 2];
     });
 
+    let iconInfo: { name: string; count: number }[] = [];
+
+    for (let i = 0; i < iconType.length; i++) {
+      const element = iconType[i];
+      iconInfo.push({
+        name: element,
+        count: getCount(`${svgIconCwd}/${element}/`),
+      });
+    }
+
     for (const filePath of files) {
       const name = `icon-${path.basename(filePath, ".svg")}`;
       iconList.push({
@@ -50,6 +60,17 @@ export function getIconComponents(): { iconList: IconData[]; iconType: string[] 
     console.log("[ error ]-getIconComponents", error);
     return { iconList: [], iconType: [] };
   }
+}
+
+function getCount(dir: string) {
+  const folders = fs.readdirSync(dir);
+  let fileNum = 0;
+
+  folders.forEach(iitem => {
+    fileNum += 1;
+  });
+
+  return fileNum;
 }
 
 function replaceAll(string: string, search: string, replace: string) {
