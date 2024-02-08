@@ -45,7 +45,6 @@ export function getIconComponents(): { iconList: IconData[]; iconType: string[] 
         list: getIconsByDir(`${svgIconCwd}/${element}/`),
       });
     }
-    console.log("[ iconInfo ]-44", iconInfo);
 
     for (const filePath of files) {
       const name = `icon-${path.basename(filePath, ".svg")}`;
@@ -85,7 +84,6 @@ export async function generateIconComponent(iconList: IconData[]) {
   for (let i = 0; i < iconList.length; i++) {
     const item = iconList[i];
     const svgFile = fs.readFileSync(item.path, "utf8");
-
     const optimizedSvg = optimize(svgFile, { path: item.path, ...svgoConfig });
 
     if ("data" in optimizedSvg) {
