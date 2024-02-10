@@ -35,7 +35,6 @@ export function getIconComponents(): { iconList: IconData[]; iconType: string[] 
       const splitArr = item.split("/");
       return splitArr[splitArr.length - 2];
     });
-
     let iconInfo: { name: string; list: string[] }[] = [];
 
     for (let i = 0; i < iconType.length; i++) {
