@@ -8,7 +8,6 @@ import buildComponent from "./buildComponent";
 import buildStyle from "./buildStyle";
 
 const program = new Command();
-
 const packageContent = fs.readFileSync(path.resolve(__dirname, "../package.json"), "utf8");
 const packageData: any = JSON.parse(packageContent);
 
