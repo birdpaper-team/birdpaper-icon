@@ -7,7 +7,7 @@
           src="https://cos.birdpaper.design/birdpaper-icon/public/birdpaper-icon_logo_text.png"
           alt="BirdpaperICON"
         />
-        <span :class="`${name}-logo-version`">v0.1.0</span>
+        <span :class="`${name}-logo-version`">v0.1.0-beat</span>
       </div>
       <div :class="`${name}-route`">
         <ul :class="`${name}-route-inner`">
