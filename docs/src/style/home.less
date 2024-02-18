@@ -266,14 +266,24 @@
     padding: 16px;
     transition: all 0.2s ease;
     cursor: pointer;
+    transition: all 0.2s ease;
 
     &:hover {
       background-color: @gary-2;
       border: 1px solid @gary-3;
+      transition: all 0.2s ease;
+
+      .bp-icon {
+        fill: @primary-6;
+        transform: scale(1.2);
+        transition: all 0.2s ease;
+      }
     }
 
     .bp-icon {
       fill: @gary-9;
+      transform: scale(1);
+      transition: all 0.2s ease;
     }
 
     &-name {

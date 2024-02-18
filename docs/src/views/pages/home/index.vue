@@ -37,7 +37,7 @@
               <IconSearch2Line size="22" />
             </div>
             <div :class="`${name}-search-input-inner`">
-              <input type="text" :placeholder="`Search ${Object.keys(allIcons).length - 2} Icons.`" />
+              <input type="text" :placeholder="`Search ${Object.keys(allIcons).length - 3} Icons.`" />
             </div>
           </div>
         </div>
