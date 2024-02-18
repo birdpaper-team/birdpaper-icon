@@ -24,7 +24,11 @@ interface IconData {
  * 获取需要转换的 Icon 列表
  * @returns IconData[]
  */
-export function getIconComponents(): { iconList: IconData[]; iconType: string[] } {
+export function getIconComponents(): {
+  iconList: IconData[];
+  iconType: string[];
+  iconInfo: { name: string; list: string[] }[];
+} {
   try {
     const iconList: IconData[] = [];
     let iconType = glob.sync(`${svgIconCwd}/**/`, { cwd: svgIconCwd, absolute: true });
@@ -54,10 +58,10 @@ export function getIconComponents(): { iconList: IconData[]; iconType: string[] 
       });
     }
 
-    return { iconList, iconType };
+    return { iconList, iconType, iconInfo };
   } catch (error) {
     console.log("[ error ]-getIconComponents", error);
-    return { iconList: [], iconType: [] };
+    return { iconList: [], iconType: [], iconInfo: [] };
   }
 }
 
@@ -123,7 +127,7 @@ export async function generateIconComponent(iconList: IconData[]) {
  * 构建 Icon 集合 birdpaper-icon.ts && index.ts
  * @param data IconData[]
  */
-export function buildIconIndex(data: IconData[], iconType: string[]) {
+export function buildIconIndex(data: IconData[], iconType: string[], iconInfo: { name: string; list: string[] }[]) {
   const imports: string[] = [];
   const exports: string[] = [];
   const components: string[] = [];
@@ -134,8 +138,8 @@ export function buildIconIndex(data: IconData[], iconType: string[]) {
     exports.push(`export { default as ${item.componentName} } from './${item.name}';`);
   }
 
-  const bpContent = getBpVueIcon({ imports, components, iconType });
-  const indexContent = getIndex({ exports, iconType });
+  const bpContent = getBpVueIcon({ imports, components, iconType, iconInfo });
+  const indexContent = getIndex({ exports, iconType, iconInfo });
 
   fs.outputFile(path.resolve(paths.icon, "birdpaper-icon.ts"), bpContent, err => {
     if (err) {

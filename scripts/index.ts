@@ -17,9 +17,9 @@ program
   .command("icon:generate")
   .description("icon:generate...")
   .action(async () => {
-    const { iconList, iconType } = getIconComponents();
+    const { iconList, iconType,iconInfo } = getIconComponents();
     await generateIconComponent(iconList);
-    buildIconIndex(iconList, iconType);
+    buildIconIndex(iconList, iconType, iconInfo);
     buildType(iconList);
   });
 
@@ -34,8 +34,8 @@ program
   .command("build:components")
   .description("build:components...")
   .option("-u, --umd", "build with UMD file")
-  .action(async ({ umd }) => {
-    await buildComponent({ umd });
+  .action(async () => {
+    await buildComponent();
   });
 
 program.parse(process.argv);
