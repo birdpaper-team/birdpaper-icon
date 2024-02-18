@@ -20,8 +20,11 @@
                     <li class="icon-select-trigger-item">
                       <span>All Icons</span>
                     </li>
-                    <li v-for="v in iconType" class="icon-select-trigger-item">
-                      <span>{{ v }}</span>
+                    <li v-for="v in iconInfo" class="icon-select-trigger-item">
+                      <p class="icon-select-trigger-item-inner">
+                        <span>{{ v.name }}</span>
+                        <span class="icons-length">{{ v.list.length }}</span>
+                      </p>
                     </li>
                   </ul>
                 </div>
@@ -40,12 +43,18 @@
         </div>
       </div>
     </div>
+    <div :class="`${name}-icons`">
+      <div :class="`${name}-icons-container`">
+        <icon-group v-for="v in iconInfo" :all-icons="allIcons" :group-info="v"></icon-group>
+      </div>
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import allIcons, { iconType, IconArrowDownSLine, IconSearch2Line, IconSubtractLine } from "birdpaper-icon";
+import allIcons, { iconInfo, IconArrowDownSLine, IconSearch2Line, IconSubtractLine } from "birdpaper-icon";
 import { ref } from "vue";
+import IconGroup from "./components/icon-group.vue";
 
 const name = "home-page";
 
