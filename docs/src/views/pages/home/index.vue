@@ -9,7 +9,7 @@
           <!-- 类型选择器 -->
           <type-selector></type-selector>
           <!-- 查询框 -->
-          <search-input></search-input>
+          <search-input v-model="searchKey"></search-input>
         </div>
       </div>
     </div>
@@ -26,6 +26,9 @@ import allIcons, { iconInfo } from "birdpaper-icon";
 import iconGroup from "./components/icon-group.vue";
 import typeSelector from "./components/type-selector.vue";
 import searchInput from "./components/search-input.vue";
+import { ref } from "vue";
 
 const name = "home-page";
+
+const searchKey = ref<string>("");
 </script>
