@@ -16,12 +16,14 @@
   }
 
   &-search {
-    position: relative;
-    top: -36px;
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-top: -36px;
+    z-index: 99;
 
     &-cotainer {
       width: 1200px;
@@ -165,6 +167,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    padding-top: 36px;
 
     &-cotainer {
       width: 1200px;
@@ -257,7 +260,7 @@
     justify-content: center;
     flex-direction: column;
     flex-wrap: nowrap;
-    width: 120px;
+    width: 128px;
     height: 100px;
     box-sizing: border-box;
     background-color: @gary-1;
