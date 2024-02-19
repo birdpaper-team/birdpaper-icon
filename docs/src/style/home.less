@@ -111,6 +111,14 @@
           position: relative;
           top: 2px;
           fill: @gary-6;
+          transition: all 0.2s ease;
+        }
+      }
+
+      .search-active {
+        .bp-icon {
+          fill: @primary-6;
+          transition: all 0.2s ease;
         }
       }
 
@@ -240,12 +248,27 @@
   }
 
   &-title {
+    display: flex;
+    align-items: center;
     padding: 0 28px;
-    color: @gary-9;
-    font-size: 20px;
-    font-weight: bold;
     margin-bottom: 20px;
     .font-quick;
+
+    p {
+      color: @gary-9;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    span {
+      color: @gary-7;
+      font-size: 13px;
+      background-color: @gary-3;
+      padding: 1px 12px;
+      border-radius: 4px;
+      margin-left: 8px;
+      letter-spacing: 1px;
+    }
   }
 
   &-container {

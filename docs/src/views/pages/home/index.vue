@@ -15,7 +15,7 @@
     </div>
     <div :class="`${name}-icons`">
       <div :class="`${name}-icons-container`">
-        <icon-group v-for="v in iconInfo" :all-icons="allIcons" :group-info="v"></icon-group>
+        <icon-group v-for="v in searchIcons" :all-icons="allIcons" :group-info="v"></icon-group>
       </div>
     </div>
   </div>
@@ -26,9 +26,18 @@ import allIcons, { iconInfo } from "birdpaper-icon";
 import iconGroup from "./components/icon-group.vue";
 import typeSelector from "./components/type-selector.vue";
 import searchInput from "./components/search-input.vue";
-import { ref } from "vue";
+import { ref, computed } from "vue";
+import { deepClone } from "@/utils/helper";
 
 const name = "home-page";
 
 const searchKey = ref<string>("");
+const searchIcons = computed(() => {
+  const rawIcons = deepClone(iconInfo);
+
+  for (let i = 0; i < rawIcons.length; i++) {
+    rawIcons[i].list = rawIcons[i].list.filter(item => item.includes(searchKey.value));
+  }
+  return rawIcons;
+});
 </script>

@@ -1,6 +1,9 @@
 <template>
-  <div :class="name">
-    <p :class="`${name}-title`">{{ groupInfo.name }}</p>
+  <div :class="name" v-if="groupInfo.list.length > 0">
+    <div :class="`${name}-title`">
+      <p>{{ groupInfo.name }}</p>
+      <span>{{ groupInfo.list.length }}</span>
+    </div>
     <div :class="`${name}-container`">
       <div :class="`${name}-item`" v-for="icon in groupInfo.list">
         <component :is="allIcons[`Icon${toPascalCase(icon)}`]" size="22"></component>
