@@ -238,13 +238,23 @@
       }
     }
   }
+
+  .active {
+    background-color: @gary-2;
+    transition: all 0.2s ease;
+
+    span {
+      color: @primary-7;
+      transition: all 0.2s ease;
+    }
+  }
 }
 
 .home-icon-group {
   .no-select;
 
-  &:not(:first-child) {
-    margin-top: 40px;
+  &:not(:last-child) {
+    margin-bottom: 40px;
   }
 
   &-title {

@@ -1,6 +1,6 @@
 <template>
   <div :class="name" v-if="groupInfo.list.length > 0">
-    <div :class="`${name}-title`">
+    <div :class="`${name}-title`" :id="groupInfo.name">
       <p>{{ groupInfo.name }}</p>
       <span>{{ groupInfo.list.length }}</span>
     </div>

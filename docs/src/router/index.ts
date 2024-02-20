@@ -1,4 +1,4 @@
-import { createRouter as _createRouter, createWebHashHistory } from "vue-router";
+import { createRouter as _createRouter, createMemoryHistory } from "vue-router";
 import { appPages } from "./routeData";
 import Layout from "@/views/pages/layout/index";
 
@@ -23,7 +23,7 @@ routes[0].children = appRoutes;
 
 export function createRouter() {
   return _createRouter({
-    history: createWebHashHistory(),
+    history: createMemoryHistory(),
     routes,
   });
 }
