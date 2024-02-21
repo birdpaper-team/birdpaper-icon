@@ -5,7 +5,7 @@
       <span>{{ groupInfo.list.length }}</span>
     </div>
 
-    <div :class="`${name}-container`">
+    <div :class="`${name}-container`" :id="`${groupInfo.name}-container`">
       <div :class="`${name}-item`" v-for="icon in groupInfo.list">
         <component :is="allIcons[`Icon${toPascalCase(icon)}`]" size="22"></component>
         <span :class="`${name}-item-name`">{{ splitIconName(icon) }}</span>

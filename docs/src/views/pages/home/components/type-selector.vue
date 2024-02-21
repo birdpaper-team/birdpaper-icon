@@ -10,7 +10,7 @@
         <div class="icon-select-trigger">
           <ul>
             <li
-              v-for="v in typeLilst"
+              v-for="v in typeList"
               :class="['icon-select-trigger-item', { active: model === v.name }]"
               @click="handleSelect(v.name)"
             >
@@ -27,14 +27,15 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
+import { onBeforeMount, onMounted, ref } from "vue";
 import { iconInfo, IconArrowDownSLine, IconSubtractLine } from "birdpaper-icon";
+import { isInViewport, throttle } from "@/utils/helper";
 
 const model = defineModel({ type: String, default: "" });
 
 const name = "home-page-search-select";
 const triggerVisible = ref<boolean>(false);
-const typeLilst = [
+const typeList = [
   {
     name: "All Icons",
     list: [],
@@ -43,6 +44,7 @@ const typeLilst = [
 ];
 
 const handleSelect = (name: string) => {
+  cancelListenScroll();
   model.value = name;
   var targetElement = document.getElementById(name);
 
@@ -51,11 +53,48 @@ const handleSelect = (name: string) => {
     // 将页面滚动到目标元素位置
     targetElement.scrollIntoView({
       behavior: "smooth",
-      block: "center",
+      block: "start",
     });
-  } else {
-    console.log("未找到指定的ID！");
   }
   triggerVisible.value = false;
+
+  setTimeout(() => {
+    listenScroll();
+  }, 800);
 };
+
+const setCurrentType = () => {
+  const rect = document.getElementById("All Icons").getBoundingClientRect();
+  if (rect.top >= 0) {
+    model.value = "All Icons";
+    return;
+  }
+  for (let i = 0; i < typeList.length; i++) {
+    const element = typeList[i];
+    const el = document.getElementById(`${element.name}-container`);
+    if (el) {
+      if (isInViewport(el)) {
+        model.value = element.name;
+        return;
+      }
+    }
+  }
+};
+
+const throttleFn = throttle(setCurrentType, 100);
+const listenScroll = () => {
+  window.addEventListener("scroll", throttleFn);
+};
+
+const cancelListenScroll = () => {
+  window.removeEventListener("scroll", throttleFn);
+};
+
+onMounted(() => {
+  listenScroll();
+});
+
+onBeforeMount(() => {
+  cancelListenScroll;
+});
 </script>

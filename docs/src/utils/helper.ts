@@ -60,3 +60,36 @@ export const deepClone = <T>(tSource: T, tTarget?: any | T): T => {
   }
   return tTarget as T;
 };
+
+/**
+ * 判断元素是否在可是区域内
+ * @param element
+ * @returns
+ */
+export const isInViewport = (element: Element | any) => {
+  var rect = element.getBoundingClientRect();
+
+  const viewPortHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+  const offsetTop = element.offsetTop;
+  const scollTop = document.documentElement.scrollTop;
+  const top = offsetTop - scollTop;
+  return top <= viewPortHeight && rect.bottom > 0;
+};
+
+/**
+ * 函数节流
+ * @param func
+ * @param time
+ * @param immediate
+ * @returns
+ */
+export function throttle<T extends (...args: any[]) => any>(fn: T, delay: number): T {
+  let lastCall: number | null = null;
+  return function (this: ThisParameterType<T>, ...args: Parameters<T>): ReturnType<T> | void {
+    const now = Date.now();
+    if (!lastCall || now - lastCall >= delay) {
+      lastCall = now;
+      return fn.apply(this, args);
+    }
+  } as T;
+}
