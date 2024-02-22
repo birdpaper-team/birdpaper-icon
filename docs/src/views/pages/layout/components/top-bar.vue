@@ -9,7 +9,7 @@
         />
         <span :class="`${name}-logo-version`">v0.1.0-beat</span>
       </div>
-      <div :class="`${name}-route`">
+      <!-- <div :class="`${name}-route`">
         <ul :class="`${name}-route-inner`">
           <li :class="[`${name}-route-item`, `${v.type}`]" v-for="v in routes">
             <span v-if="v.type === 'text-link'">{{ v.title }}</span>
@@ -17,7 +17,7 @@
             <div v-if="v.type === 'separator'"></div>
           </li>
         </ul>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -35,23 +35,23 @@ interface RouteItem {
 }
 
 const routes: RouteItem[] = [
-  {
-    title: "文档",
-    name: "document",
-    type: "text-link",
-  },
-  {
-    title: "许可",
-    name: "license",
-    type: "text-link",
-  },
-  {
-    type: "separator",
-  },
-  {
-    icon: IconGithubFill as unknown as Comment,
-    name: "github",
-    type: "icon-link",
-  },
+  // {
+  //   title: "文档",
+  //   name: "document",
+  //   type: "text-link",
+  // },
+  // {
+  //   title: "许可",
+  //   name: "license",
+  //   type: "text-link",
+  // },
+  // {
+  //   type: "separator",
+  // },
+  // {
+  //   icon: IconGithubFill as unknown as Comment,
+  //   name: "github",
+  //   type: "icon-link",
+  // },
 ];
 </script>

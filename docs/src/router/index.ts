@@ -16,7 +16,7 @@ for (let i = 0; i < appPages.length; i++) {
     name,
     path,
     component: modules[`../views/pages/${page}.vue`],
-    meta: { title: `${title}` },
+    meta: { title: `${title} Birdpaper Icon - Vue3 Icon Component Library.` },
   });
 }
 routes[0].children = appRoutes;

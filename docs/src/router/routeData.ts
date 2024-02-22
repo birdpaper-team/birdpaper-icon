@@ -13,7 +13,7 @@ interface RouteItem {
 
 /** 应用路由 */
 const appPages: RouteItem[] = [
-  { title: "主页", name: "home-index", page: "home/index", path: "/" },
+  { title: "", name: "home-index", page: "home/index", path: "/" },
 ];
 
 export { appPages };

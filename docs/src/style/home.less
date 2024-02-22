@@ -11,8 +11,9 @@
     align-items: center;
     width: 100%;
     background-color: @gary-2;
-    height: 300px;
+    height: 320px;
     border-bottom: 1px solid @gary-4;
+    padding-bottom: 40px;
 
     &-content {
       width: 1200px;
@@ -34,7 +35,7 @@
         font-size: 16px;
         font-weight: 500;
         color: @gary-8;
-        letter-spacing: .4px;
+        letter-spacing: 0.4px;
         .font-quick;
 
         img {
@@ -42,14 +43,18 @@
           top: 5px;
           height: 20px;
           opacity: 1;
-          transition: all .2s ease;
+          transition: all 0.2s ease;
           cursor: pointer;
 
-          &:hover{
-            opacity: .6;
-            transition: all .2s ease;
+          &:hover {
+            opacity: 0.6;
+            transition: all 0.2s ease;
           }
         }
+      }
+
+      &-option {
+        margin-top: 20px;
       }
     }
   }

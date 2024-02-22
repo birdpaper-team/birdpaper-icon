@@ -12,6 +12,9 @@
             thanks to the Remix Design team.
           </p>
         </div>
+        <div :class="`${name}-banner-content-option`">
+          <bp-button :icon="IconGithubFill">Github</bp-button>
+        </div>
       </div>
     </div>
     <div :class="`${name}-search`">
@@ -34,7 +37,7 @@
 </template>
 
 <script setup lang="ts">
-import allIcons, { iconInfo } from "birdpaper-icon";
+import allIcons, { iconInfo, IconGithubFill } from "birdpaper-icon";
 import iconGroup from "./components/icon-group.vue";
 import typeSelector from "./components/type-selector.vue";
 import searchInput from "./components/search-input.vue";
@@ -56,7 +59,5 @@ const searchIcons = computed(() => {
 });
 
 const remixHomePage = "https://remixicon.cn";
-const linkToRemix = () => {
-  window.open(remixHomePage);
-};
+const linkToRemix = () => window.open(remixHomePage);
 </script>
