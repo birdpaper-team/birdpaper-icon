@@ -6,12 +6,51 @@
   flex-direction: column;
 
   &-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+    background-color: @gary-2;
     height: 300px;
     border-bottom: 1px solid @gary-4;
 
-    &-inner-content {
+    &-content {
       width: 1200px;
+      padding: 0 20px;
+      .no-select;
+
+      &-title {
+        font-size: 34px;
+        color: @gary-10;
+        letter-spacing: 1px;
+        font-weight: 500;
+        .font-quick;
+      }
+
+      &-remark {
+        width: 760px;
+        margin-top: 20px;
+        line-height: 1.8;
+        font-size: 16px;
+        font-weight: 500;
+        color: @gary-8;
+        letter-spacing: .4px;
+        .font-quick;
+
+        img {
+          position: relative;
+          top: 5px;
+          height: 20px;
+          opacity: 1;
+          transition: all .2s ease;
+          cursor: pointer;
+
+          &:hover{
+            opacity: .6;
+            transition: all .2s ease;
+          }
+        }
+      }
     }
   }
 

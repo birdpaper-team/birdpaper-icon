@@ -1,7 +1,18 @@
 <template>
   <div :class="name">
     <div :class="`${name}-banner`">
-      <div :class="`${name}-banner-content`"></div>
+      <div :class="`${name}-banner-content`">
+        <div :class="`${name}-banner-content-title`">
+          <p>Vue3 Icon Component Library.</p>
+        </div>
+        <div :class="`${name}-banner-content-remark`">
+          <p>
+            This is an open source Vue3 component based on the excellent Icon library -
+            <img :src="remixLogo" @click="linkToRemix" /> second development, for learning and reference use only,
+            thanks to the Remix Design team.
+          </p>
+        </div>
+      </div>
     </div>
     <div :class="`${name}-search`">
       <div :class="`${name}-search-cotainer`">
@@ -29,10 +40,10 @@ import typeSelector from "./components/type-selector.vue";
 import searchInput from "./components/search-input.vue";
 import { ref, computed } from "vue";
 import { deepClone } from "@/utils/helper";
+import remixLogo from "@/assets/remix-logo.svg";
 
 const name = "home-page";
-
-const currentType = ref<string>('All Icons');
+const currentType = ref<string>("All Icons");
 
 const searchKey = ref<string>("");
 const searchIcons = computed(() => {
@@ -43,4 +54,9 @@ const searchIcons = computed(() => {
   }
   return rawIcons;
 });
+
+const remixHomePage = "https://remixicon.cn";
+const linkToRemix = () => {
+  window.open(remixHomePage);
+};
 </script>
