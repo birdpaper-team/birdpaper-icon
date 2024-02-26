@@ -8,12 +8,17 @@
         <div :class="`${name}-banner-content-remark`">
           <p>
             This is an open source Vue3 component based on the excellent Icon library -
-            <img :src="remixLogo" @click="linkToRemix" /> second development, for learning and reference use only,
+            <img :src="remixLogo" @click="linkTo('remix')" /> second development, for learning and reference use only,
             thanks to the Remix Design team.
           </p>
         </div>
         <div :class="`${name}-banner-content-option`">
-          <bp-button :icon="IconGithubFill">Github</bp-button>
+          <bp-space>
+            <bp-button type="primary" status="primary" :icon="IconGithubFill" @click="linkTo('github')">
+              Github
+            </bp-button>
+            <bp-button :icon="IconNpmjsFill" @click="linkTo('npm')">npm</bp-button>
+          </bp-space>
         </div>
       </div>
     </div>
@@ -37,7 +42,7 @@
 </template>
 
 <script setup lang="ts">
-import allIcons, { iconInfo, IconGithubFill } from "birdpaper-icon";
+import allIcons, { iconInfo, IconGithubFill, IconNpmjsFill } from "birdpaper-icon";
 import iconGroup from "./components/icon-group.vue";
 import typeSelector from "./components/type-selector.vue";
 import searchInput from "./components/search-input.vue";
@@ -58,6 +63,10 @@ const searchIcons = computed(() => {
   return rawIcons;
 });
 
-const remixHomePage = "https://remixicon.cn";
-const linkToRemix = () => window.open(remixHomePage);
+const homeUrlMap = {
+  remix: "https://remixicon.cn",
+  github: "https://github.com/birdpaper-team/birdpaper-icon",
+  npm: "https://www.npmjs.com/package/birdpaper-icon",
+};
+const linkTo = (type: string) => window.open(homeUrlMap[type]);
 </script>
