@@ -6,17 +6,20 @@
     </div>
 
     <div :class="`${name}-container`" :id="`${groupInfo.name}-container`">
-      <div :class="`${name}-item`" v-for="icon in groupInfo.list">
+      <div :class="`${name}-item`" v-for="icon in groupInfo.list" @click="handleClick(icon)">
         <component :is="allIcons[`Icon${toPascalCase(icon)}`]" size="22"></component>
         <span :class="`${name}-item-name`">{{ splitIconName(icon) }}</span>
       </div>
     </div>
   </div>
+
+  <icon-detail ref="iconDetailRef"></icon-detail>
 </template>
 
 <script setup lang="ts">
 import { toPascalCase } from "@/utils/helper";
-import { PropType } from "vue";
+import { PropType, ref } from "vue";
+import iconDetail from "./icon-detail.vue";
 
 const props = defineProps({
   allIcons: { type: Object, default: () => {} },
@@ -30,5 +33,10 @@ const splitIconName = (name: string) => {
   strArr.splice(strArr.length - 1, 1);
 
   return strArr.join("-");
+};
+
+const iconDetailRef = ref();
+const handleClick = (icon: string) => {
+  iconDetailRef.value.open(icon);
 };
 </script>
