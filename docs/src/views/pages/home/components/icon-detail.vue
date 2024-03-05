@@ -21,7 +21,11 @@
       </div>
     </div>
     <template #footer>
-      <!-- <div class="icon-modal-footer">123</div> -->
+      <div class="icon-modal-footer">
+        <div>
+          <span>Design By Remix Icon</span>
+        </div>
+      </div>
     </template>
   </bp-modal>
 </template>
