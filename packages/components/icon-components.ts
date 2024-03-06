@@ -2,6 +2,7 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
+    IconArrowDownCircleFill2: typeof import('birdpaper-icon/components')['IconArrowDownCircleFill2'];
     IconArrowDownCircleFill: typeof import('birdpaper-icon/components')['IconArrowDownCircleFill'];
     IconArrowDownCircleLine: typeof import('birdpaper-icon/components')['IconArrowDownCircleLine'];
     IconArrowDownDoubleFill: typeof import('birdpaper-icon/components')['IconArrowDownDoubleFill'];
@@ -70,6 +71,10 @@ declare module 'vue' {
     IconArrowUpSLine: typeof import('birdpaper-icon/components')['IconArrowUpSLine'];
     IconArrowUpWideFill: typeof import('birdpaper-icon/components')['IconArrowUpWideFill'];
     IconArrowUpWideLine: typeof import('birdpaper-icon/components')['IconArrowUpWideLine'];
+    IconCollapseDiagonal2Fill: typeof import('birdpaper-icon/components')['IconCollapseDiagonal2Fill'];
+    IconCollapseDiagonal2Line: typeof import('birdpaper-icon/components')['IconCollapseDiagonal2Line'];
+    IconCollapseDiagonalFill: typeof import('birdpaper-icon/components')['IconCollapseDiagonalFill'];
+    IconCollapseDiagonalLine: typeof import('birdpaper-icon/components')['IconCollapseDiagonalLine'];
     IconContractLeftFill: typeof import('birdpaper-icon/components')['IconContractLeftFill'];
     IconContractLeftLine: typeof import('birdpaper-icon/components')['IconContractLeftLine'];
     IconContractLeftRightFill: typeof import('birdpaper-icon/components')['IconContractLeftRightFill'];
@@ -102,6 +107,10 @@ declare module 'vue' {
     IconDragMove2Line: typeof import('birdpaper-icon/components')['IconDragMove2Line'];
     IconDragMoveFill: typeof import('birdpaper-icon/components')['IconDragMoveFill'];
     IconDragMoveLine: typeof import('birdpaper-icon/components')['IconDragMoveLine'];
+    IconExpandDiagonal2Fill: typeof import('birdpaper-icon/components')['IconExpandDiagonal2Fill'];
+    IconExpandDiagonal2Line: typeof import('birdpaper-icon/components')['IconExpandDiagonal2Line'];
+    IconExpandDiagonalFill: typeof import('birdpaper-icon/components')['IconExpandDiagonalFill'];
+    IconExpandDiagonalLine: typeof import('birdpaper-icon/components')['IconExpandDiagonalLine'];
     IconExpandHeightFill: typeof import('birdpaper-icon/components')['IconExpandHeightFill'];
     IconExpandHeightLine: typeof import('birdpaper-icon/components')['IconExpandHeightLine'];
     IconExpandLeftFill: typeof import('birdpaper-icon/components')['IconExpandLeftFill'];
@@ -278,6 +287,8 @@ declare module 'vue' {
     IconGlobalLine: typeof import('birdpaper-icon/components')['IconGlobalLine'];
     IconHonourFill: typeof import('birdpaper-icon/components')['IconHonourFill'];
     IconHonourLine: typeof import('birdpaper-icon/components')['IconHonourLine'];
+    IconIdCardFill: typeof import('birdpaper-icon/components')['IconIdCardFill'];
+    IconIdCardLine: typeof import('birdpaper-icon/components')['IconIdCardLine'];
     IconInbox2Fill: typeof import('birdpaper-icon/components')['IconInbox2Fill'];
     IconInbox2Line: typeof import('birdpaper-icon/components')['IconInbox2Line'];
     IconInboxArchiveFill: typeof import('birdpaper-icon/components')['IconInboxArchiveFill'];
@@ -382,6 +393,7 @@ declare module 'vue' {
     IconWindow2Line: typeof import('birdpaper-icon/components')['IconWindow2Line'];
     IconWindowFill: typeof import('birdpaper-icon/components')['IconWindowFill'];
     IconWindowLine: typeof import('birdpaper-icon/components')['IconWindowLine'];
+    IconChat1Fill2: typeof import('birdpaper-icon/components')['IconChat1Fill2'];
     IconChat1Fill: typeof import('birdpaper-icon/components')['IconChat1Fill'];
     IconChat1Line: typeof import('birdpaper-icon/components')['IconChat1Line'];
     IconChat2Fill: typeof import('birdpaper-icon/components')['IconChat2Fill'];
@@ -448,6 +460,18 @@ declare module 'vue' {
     IconSpeakLine: typeof import('birdpaper-icon/components')['IconSpeakLine'];
     IconVideoChatFill: typeof import('birdpaper-icon/components')['IconVideoChatFill'];
     IconVideoChatLine: typeof import('birdpaper-icon/components')['IconVideoChatLine'];
+    IconAlignItemBottomFill: typeof import('birdpaper-icon/components')['IconAlignItemBottomFill'];
+    IconAlignItemBottomLine: typeof import('birdpaper-icon/components')['IconAlignItemBottomLine'];
+    IconAlignItemHorizontalCenterFill: typeof import('birdpaper-icon/components')['IconAlignItemHorizontalCenterFill'];
+    IconAlignItemHorizontalCenterLine: typeof import('birdpaper-icon/components')['IconAlignItemHorizontalCenterLine'];
+    IconAlignItemLeftFill: typeof import('birdpaper-icon/components')['IconAlignItemLeftFill'];
+    IconAlignItemLeftLine: typeof import('birdpaper-icon/components')['IconAlignItemLeftLine'];
+    IconAlignItemRightFill: typeof import('birdpaper-icon/components')['IconAlignItemRightFill'];
+    IconAlignItemRightLine: typeof import('birdpaper-icon/components')['IconAlignItemRightLine'];
+    IconAlignItemTopFill: typeof import('birdpaper-icon/components')['IconAlignItemTopFill'];
+    IconAlignItemTopLine: typeof import('birdpaper-icon/components')['IconAlignItemTopLine'];
+    IconAlignItemVerticalCenterFill: typeof import('birdpaper-icon/components')['IconAlignItemVerticalCenterFill'];
+    IconAlignItemVerticalCenterLine: typeof import('birdpaper-icon/components')['IconAlignItemVerticalCenterLine'];
     IconAnticlockwise2Fill: typeof import('birdpaper-icon/components')['IconAnticlockwise2Fill'];
     IconAnticlockwise2Line: typeof import('birdpaper-icon/components')['IconAnticlockwise2Line'];
     IconAnticlockwiseFill: typeof import('birdpaper-icon/components')['IconAnticlockwiseFill'];
@@ -512,6 +536,14 @@ declare module 'vue' {
     IconEditLine: typeof import('birdpaper-icon/components')['IconEditLine'];
     IconEraserFill: typeof import('birdpaper-icon/components')['IconEraserFill'];
     IconEraserLine: typeof import('birdpaper-icon/components')['IconEraserLine'];
+    IconFlipHorizontal2Fill: typeof import('birdpaper-icon/components')['IconFlipHorizontal2Fill'];
+    IconFlipHorizontal2Line: typeof import('birdpaper-icon/components')['IconFlipHorizontal2Line'];
+    IconFlipHorizontalFill: typeof import('birdpaper-icon/components')['IconFlipHorizontalFill'];
+    IconFlipHorizontalLine: typeof import('birdpaper-icon/components')['IconFlipHorizontalLine'];
+    IconFlipVertical2Fill: typeof import('birdpaper-icon/components')['IconFlipVertical2Fill'];
+    IconFlipVertical2Line: typeof import('birdpaper-icon/components')['IconFlipVertical2Line'];
+    IconFlipVerticalFill: typeof import('birdpaper-icon/components')['IconFlipVerticalFill'];
+    IconFlipVerticalLine: typeof import('birdpaper-icon/components')['IconFlipVerticalLine'];
     IconFocus2Fill: typeof import('birdpaper-icon/components')['IconFocus2Fill'];
     IconFocus2Line: typeof import('birdpaper-icon/components')['IconFocus2Line'];
     IconFocus3Fill: typeof import('birdpaper-icon/components')['IconFocus3Fill'];
@@ -545,8 +577,12 @@ declare module 'vue' {
     IconLayoutColumnFill: typeof import('birdpaper-icon/components')['IconLayoutColumnFill'];
     IconLayoutColumnLine: typeof import('birdpaper-icon/components')['IconLayoutColumnLine'];
     IconLayoutFill: typeof import('birdpaper-icon/components')['IconLayoutFill'];
+    IconLayoutGrid2Fill: typeof import('birdpaper-icon/components')['IconLayoutGrid2Fill'];
+    IconLayoutGrid2Line: typeof import('birdpaper-icon/components')['IconLayoutGrid2Line'];
     IconLayoutGridFill: typeof import('birdpaper-icon/components')['IconLayoutGridFill'];
     IconLayoutGridLine: typeof import('birdpaper-icon/components')['IconLayoutGridLine'];
+    IconLayoutHorizontalFill: typeof import('birdpaper-icon/components')['IconLayoutHorizontalFill'];
+    IconLayoutHorizontalLine: typeof import('birdpaper-icon/components')['IconLayoutHorizontalLine'];
     IconLayoutLeft2Fill: typeof import('birdpaper-icon/components')['IconLayoutLeft2Fill'];
     IconLayoutLeft2Line: typeof import('birdpaper-icon/components')['IconLayoutLeft2Line'];
     IconLayoutLeftFill: typeof import('birdpaper-icon/components')['IconLayoutLeftFill'];
@@ -564,6 +600,8 @@ declare module 'vue' {
     IconLayoutTop2Line: typeof import('birdpaper-icon/components')['IconLayoutTop2Line'];
     IconLayoutTopFill: typeof import('birdpaper-icon/components')['IconLayoutTopFill'];
     IconLayoutTopLine: typeof import('birdpaper-icon/components')['IconLayoutTopLine'];
+    IconLayoutVerticalFill: typeof import('birdpaper-icon/components')['IconLayoutVerticalFill'];
+    IconLayoutVerticalLine: typeof import('birdpaper-icon/components')['IconLayoutVerticalLine'];
     IconMagicFill: typeof import('birdpaper-icon/components')['IconMagicFill'];
     IconMagicLine: typeof import('birdpaper-icon/components')['IconMagicLine'];
     IconMarkPenFill: typeof import('birdpaper-icon/components')['IconMarkPenFill'];
@@ -706,6 +744,7 @@ declare module 'vue' {
     IconBatteryChargeLine: typeof import('birdpaper-icon/components')['IconBatteryChargeLine'];
     IconBatteryFill: typeof import('birdpaper-icon/components')['IconBatteryFill'];
     IconBatteryLine: typeof import('birdpaper-icon/components')['IconBatteryLine'];
+    IconBatteryLowFill2: typeof import('birdpaper-icon/components')['IconBatteryLowFill2'];
     IconBatteryLowFill: typeof import('birdpaper-icon/components')['IconBatteryLowFill'];
     IconBatteryLowLine: typeof import('birdpaper-icon/components')['IconBatteryLowLine'];
     IconBatterySaverFill: typeof import('birdpaper-icon/components')['IconBatterySaverFill'];
@@ -750,6 +789,7 @@ declare module 'vue' {
     IconGpsLine: typeof import('birdpaper-icon/components')['IconGpsLine'];
     IconGradienterFill: typeof import('birdpaper-icon/components')['IconGradienterFill'];
     IconGradienterLine: typeof import('birdpaper-icon/components')['IconGradienterLine'];
+    IconHardDrive2Fill2: typeof import('birdpaper-icon/components')['IconHardDrive2Fill2'];
     IconHardDrive2Fill: typeof import('birdpaper-icon/components')['IconHardDrive2Fill'];
     IconHardDrive2Line: typeof import('birdpaper-icon/components')['IconHardDrive2Line'];
     IconHardDrive3Fill: typeof import('birdpaper-icon/components')['IconHardDrive3Fill'];
@@ -770,6 +810,8 @@ declare module 'vue' {
     IconMacLine: typeof import('birdpaper-icon/components')['IconMacLine'];
     IconMacbookFill: typeof import('birdpaper-icon/components')['IconMacbookFill'];
     IconMacbookLine: typeof import('birdpaper-icon/components')['IconMacbookLine'];
+    IconMobileDownloadFill: typeof import('birdpaper-icon/components')['IconMobileDownloadFill'];
+    IconMobileDownloadLine: typeof import('birdpaper-icon/components')['IconMobileDownloadLine'];
     IconMouseFill: typeof import('birdpaper-icon/components')['IconMouseFill'];
     IconMouseLine: typeof import('birdpaper-icon/components')['IconMouseLine'];
     IconPhoneFill: typeof import('birdpaper-icon/components')['IconPhoneFill'];
@@ -893,6 +935,7 @@ declare module 'vue' {
     IconDraftFill: typeof import('birdpaper-icon/components')['IconDraftFill'];
     IconDraftLine: typeof import('birdpaper-icon/components')['IconDraftLine'];
     IconFile2Fill: typeof import('birdpaper-icon/components')['IconFile2Fill'];
+    IconFile2Line2: typeof import('birdpaper-icon/components')['IconFile2Line2'];
     IconFile2Line: typeof import('birdpaper-icon/components')['IconFile2Line'];
     IconFile3Fill: typeof import('birdpaper-icon/components')['IconFile3Fill'];
     IconFile3Line: typeof import('birdpaper-icon/components')['IconFile3Line'];
@@ -1080,6 +1123,7 @@ declare module 'vue' {
     IconPagesLine: typeof import('birdpaper-icon/components')['IconPagesLine'];
     IconReceiptFill: typeof import('birdpaper-icon/components')['IconReceiptFill'];
     IconReceiptLine: typeof import('birdpaper-icon/components')['IconReceiptLine'];
+    IconStickyNote2Fill2: typeof import('birdpaper-icon/components')['IconStickyNote2Fill2'];
     IconStickyNote2Fill: typeof import('birdpaper-icon/components')['IconStickyNote2Fill'];
     IconStickyNote2Line: typeof import('birdpaper-icon/components')['IconStickyNote2Line'];
     IconStickyNoteAddFill: typeof import('birdpaper-icon/components')['IconStickyNoteAddFill'];
@@ -1129,6 +1173,7 @@ declare module 'vue' {
     IconFontSize2: typeof import('birdpaper-icon/components')['IconFontSize2'];
     IconFontSize: typeof import('birdpaper-icon/components')['IconFontSize'];
     IconFormatClear: typeof import('birdpaper-icon/components')['IconFormatClear'];
+    IconFormula: typeof import('birdpaper-icon/components')['IconFormula'];
     IconFunctions: typeof import('birdpaper-icon/components')['IconFunctions'];
     IconGalleryView2: typeof import('birdpaper-icon/components')['IconGalleryView2'];
     IconGalleryView: typeof import('birdpaper-icon/components')['IconGalleryView'];
@@ -1140,6 +1185,7 @@ declare module 'vue' {
     IconH6: typeof import('birdpaper-icon/components')['IconH6'];
     IconHand: typeof import('birdpaper-icon/components')['IconHand'];
     IconHashtag: typeof import('birdpaper-icon/components')['IconHashtag'];
+    IconHeading2: typeof import('birdpaper-icon/components')['IconHeading2'];
     IconHeading: typeof import('birdpaper-icon/components')['IconHeading'];
     IconIndentDecrease: typeof import('birdpaper-icon/components')['IconIndentDecrease'];
     IconIndentIncrease: typeof import('birdpaper-icon/components')['IconIndentIncrease'];
@@ -1208,6 +1254,7 @@ declare module 'vue' {
     IconSpace: typeof import('birdpaper-icon/components')['IconSpace'];
     IconSplitCellsHorizontal: typeof import('birdpaper-icon/components')['IconSplitCellsHorizontal'];
     IconSplitCellsVertical: typeof import('birdpaper-icon/components')['IconSplitCellsVertical'];
+    IconSquareRoot: typeof import('birdpaper-icon/components')['IconSquareRoot'];
     IconStackedView: typeof import('birdpaper-icon/components')['IconStackedView'];
     IconStrikethrough2: typeof import('birdpaper-icon/components')['IconStrikethrough2'];
     IconStrikethrough: typeof import('birdpaper-icon/components')['IconStrikethrough'];
@@ -1342,6 +1389,8 @@ declare module 'vue' {
     IconShoppingBag2Line: typeof import('birdpaper-icon/components')['IconShoppingBag2Line'];
     IconShoppingBag3Fill: typeof import('birdpaper-icon/components')['IconShoppingBag3Fill'];
     IconShoppingBag3Line: typeof import('birdpaper-icon/components')['IconShoppingBag3Line'];
+    IconShoppingBag4Fill: typeof import('birdpaper-icon/components')['IconShoppingBag4Fill'];
+    IconShoppingBag4Line: typeof import('birdpaper-icon/components')['IconShoppingBag4Line'];
     IconShoppingBagFill: typeof import('birdpaper-icon/components')['IconShoppingBagFill'];
     IconShoppingBagLine: typeof import('birdpaper-icon/components')['IconShoppingBagLine'];
     IconShoppingBasket2Fill: typeof import('birdpaper-icon/components')['IconShoppingBasket2Fill'];
@@ -1408,6 +1457,8 @@ declare module 'vue' {
     IconDrinks2Line: typeof import('birdpaper-icon/components')['IconDrinks2Line'];
     IconDrinksFill: typeof import('birdpaper-icon/components')['IconDrinksFill'];
     IconDrinksLine: typeof import('birdpaper-icon/components')['IconDrinksLine'];
+    IconGoblet2Fill: typeof import('birdpaper-icon/components')['IconGoblet2Fill'];
+    IconGoblet2Line: typeof import('birdpaper-icon/components')['IconGoblet2Line'];
     IconGobletFill: typeof import('birdpaper-icon/components')['IconGobletFill'];
     IconGobletLine: typeof import('birdpaper-icon/components')['IconGobletLine'];
     IconKnifeBloodFill: typeof import('birdpaper-icon/components')['IconKnifeBloodFill'];
@@ -1418,6 +1469,10 @@ declare module 'vue' {
     IconRestaurant2Line: typeof import('birdpaper-icon/components')['IconRestaurant2Line'];
     IconRestaurantFill: typeof import('birdpaper-icon/components')['IconRestaurantFill'];
     IconRestaurantLine: typeof import('birdpaper-icon/components')['IconRestaurantLine'];
+    IconAedElectrodesFill: typeof import('birdpaper-icon/components')['IconAedElectrodesFill'];
+    IconAedElectrodesLine: typeof import('birdpaper-icon/components')['IconAedElectrodesLine'];
+    IconAedFill: typeof import('birdpaper-icon/components')['IconAedFill'];
+    IconAedLine: typeof import('birdpaper-icon/components')['IconAedLine'];
     IconBrainFill: typeof import('birdpaper-icon/components')['IconBrainFill'];
     IconBrainLine: typeof import('birdpaper-icon/components')['IconBrainLine'];
     IconCapsuleFill: typeof import('birdpaper-icon/components')['IconCapsuleFill'];
@@ -1440,6 +1495,8 @@ declare module 'vue' {
     IconHeart2Line: typeof import('birdpaper-icon/components')['IconHeart2Line'];
     IconHeart3Fill: typeof import('birdpaper-icon/components')['IconHeart3Fill'];
     IconHeart3Line: typeof import('birdpaper-icon/components')['IconHeart3Line'];
+    IconHeartAdd2Fill: typeof import('birdpaper-icon/components')['IconHeartAdd2Fill'];
+    IconHeartAdd2Line: typeof import('birdpaper-icon/components')['IconHeartAdd2Line'];
     IconHeartAddFill: typeof import('birdpaper-icon/components')['IconHeartAddFill'];
     IconHeartAddLine: typeof import('birdpaper-icon/components')['IconHeartAddLine'];
     IconHeartFill: typeof import('birdpaper-icon/components')['IconHeartFill'];
@@ -1480,6 +1537,8 @@ declare module 'vue' {
     IconVirusLine: typeof import('birdpaper-icon/components')['IconVirusLine'];
     IconZzzFill: typeof import('birdpaper-icon/components')['IconZzzFill'];
     IconZzzLine: typeof import('birdpaper-icon/components')['IconZzzLine'];
+    IconAlibabaCloudFill: typeof import('birdpaper-icon/components')['IconAlibabaCloudFill'];
+    IconAlibabaCloudLine: typeof import('birdpaper-icon/components')['IconAlibabaCloudLine'];
     IconAlipayFill: typeof import('birdpaper-icon/components')['IconAlipayFill'];
     IconAlipayLine: typeof import('birdpaper-icon/components')['IconAlipayLine'];
     IconAmazonFill: typeof import('birdpaper-icon/components')['IconAmazonFill'];
@@ -1546,6 +1605,8 @@ declare module 'vue' {
     IconFacebookLine: typeof import('birdpaper-icon/components')['IconFacebookLine'];
     IconFinderFill: typeof import('birdpaper-icon/components')['IconFinderFill'];
     IconFinderLine: typeof import('birdpaper-icon/components')['IconFinderLine'];
+    IconFirebaseFill: typeof import('birdpaper-icon/components')['IconFirebaseFill'];
+    IconFirebaseLine: typeof import('birdpaper-icon/components')['IconFirebaseLine'];
     IconFirefoxFill: typeof import('birdpaper-icon/components')['IconFirefoxFill'];
     IconFirefoxLine: typeof import('birdpaper-icon/components')['IconFirefoxLine'];
     IconFlickrFill: typeof import('birdpaper-icon/components')['IconFlickrFill'];
@@ -1572,6 +1633,8 @@ declare module 'vue' {
     IconInstagramLine: typeof import('birdpaper-icon/components')['IconInstagramLine'];
     IconInvisionFill: typeof import('birdpaper-icon/components')['IconInvisionFill'];
     IconInvisionLine: typeof import('birdpaper-icon/components')['IconInvisionLine'];
+    IconJavaFill: typeof import('birdpaper-icon/components')['IconJavaFill'];
+    IconJavaLine: typeof import('birdpaper-icon/components')['IconJavaLine'];
     IconKakaoTalkFill: typeof import('birdpaper-icon/components')['IconKakaoTalkFill'];
     IconKakaoTalkLine: typeof import('birdpaper-icon/components')['IconKakaoTalkLine'];
     IconKickFill: typeof import('birdpaper-icon/components')['IconKickFill'];
@@ -1602,6 +1665,10 @@ declare module 'vue' {
     IconNeteaseCloudMusicLine: typeof import('birdpaper-icon/components')['IconNeteaseCloudMusicLine'];
     IconNetflixFill: typeof import('birdpaper-icon/components')['IconNetflixFill'];
     IconNetflixLine: typeof import('birdpaper-icon/components')['IconNetflixLine'];
+    IconNextjsFill: typeof import('birdpaper-icon/components')['IconNextjsFill'];
+    IconNextjsLine: typeof import('birdpaper-icon/components')['IconNextjsLine'];
+    IconNodejsFill: typeof import('birdpaper-icon/components')['IconNodejsFill'];
+    IconNodejsLine: typeof import('birdpaper-icon/components')['IconNodejsLine'];
     IconNotionFill: typeof import('birdpaper-icon/components')['IconNotionFill'];
     IconNotionLine: typeof import('birdpaper-icon/components')['IconNotionLine'];
     IconNpmjsFill: typeof import('birdpaper-icon/components')['IconNpmjsFill'];
@@ -1662,6 +1729,8 @@ declare module 'vue' {
     IconSvelteLine: typeof import('birdpaper-icon/components')['IconSvelteLine'];
     IconSwitchFill: typeof import('birdpaper-icon/components')['IconSwitchFill'];
     IconSwitchLine: typeof import('birdpaper-icon/components')['IconSwitchLine'];
+    IconTailwindCssFill: typeof import('birdpaper-icon/components')['IconTailwindCssFill'];
+    IconTailwindCssLine: typeof import('birdpaper-icon/components')['IconTailwindCssLine'];
     IconTaobaoFill: typeof import('birdpaper-icon/components')['IconTaobaoFill'];
     IconTaobaoLine: typeof import('birdpaper-icon/components')['IconTaobaoLine'];
     IconTelegramFill: typeof import('birdpaper-icon/components')['IconTelegramFill'];
@@ -1692,6 +1761,8 @@ declare module 'vue' {
     IconVkLine: typeof import('birdpaper-icon/components')['IconVkLine'];
     IconVuejsFill: typeof import('birdpaper-icon/components')['IconVuejsFill'];
     IconVuejsLine: typeof import('birdpaper-icon/components')['IconVuejsLine'];
+    IconWebhookFill: typeof import('birdpaper-icon/components')['IconWebhookFill'];
+    IconWebhookLine: typeof import('birdpaper-icon/components')['IconWebhookLine'];
     IconWechat2Fill: typeof import('birdpaper-icon/components')['IconWechat2Fill'];
     IconWechat2Line: typeof import('birdpaper-icon/components')['IconWechat2Line'];
     IconWechatChannelsFill: typeof import('birdpaper-icon/components')['IconWechatChannelsFill'];
@@ -2003,6 +2074,8 @@ declare module 'vue' {
     IconPauseCircleFill: typeof import('birdpaper-icon/components')['IconPauseCircleFill'];
     IconPauseCircleLine: typeof import('birdpaper-icon/components')['IconPauseCircleLine'];
     IconPauseFill: typeof import('birdpaper-icon/components')['IconPauseFill'];
+    IconPauseLargeFill: typeof import('birdpaper-icon/components')['IconPauseLargeFill'];
+    IconPauseLargeLine: typeof import('birdpaper-icon/components')['IconPauseLargeLine'];
     IconPauseLine: typeof import('birdpaper-icon/components')['IconPauseLine'];
     IconPauseMiniFill: typeof import('birdpaper-icon/components')['IconPauseMiniFill'];
     IconPauseMiniLine: typeof import('birdpaper-icon/components')['IconPauseMiniLine'];
@@ -2017,6 +2090,8 @@ declare module 'vue' {
     IconPlayCircleFill: typeof import('birdpaper-icon/components')['IconPlayCircleFill'];
     IconPlayCircleLine: typeof import('birdpaper-icon/components')['IconPlayCircleLine'];
     IconPlayFill: typeof import('birdpaper-icon/components')['IconPlayFill'];
+    IconPlayLargeFill: typeof import('birdpaper-icon/components')['IconPlayLargeFill'];
+    IconPlayLargeLine: typeof import('birdpaper-icon/components')['IconPlayLargeLine'];
     IconPlayLine: typeof import('birdpaper-icon/components')['IconPlayLine'];
     IconPlayList2Fill: typeof import('birdpaper-icon/components')['IconPlayList2Fill'];
     IconPlayList2Line: typeof import('birdpaper-icon/components')['IconPlayList2Line'];
@@ -2027,6 +2102,8 @@ declare module 'vue' {
     IconPlayMiniFill: typeof import('birdpaper-icon/components')['IconPlayMiniFill'];
     IconPlayMiniLine: typeof import('birdpaper-icon/components')['IconPlayMiniLine'];
     IconPlayReverseFill: typeof import('birdpaper-icon/components')['IconPlayReverseFill'];
+    IconPlayReverseLargeFill: typeof import('birdpaper-icon/components')['IconPlayReverseLargeFill'];
+    IconPlayReverseLargeLine: typeof import('birdpaper-icon/components')['IconPlayReverseLargeLine'];
     IconPlayReverseLine: typeof import('birdpaper-icon/components')['IconPlayReverseLine'];
     IconPlayReverseMiniFill: typeof import('birdpaper-icon/components')['IconPlayReverseMiniFill'];
     IconPlayReverseMiniLine: typeof import('birdpaper-icon/components')['IconPlayReverseMiniLine'];
@@ -2093,6 +2170,8 @@ declare module 'vue' {
     IconStopCircleFill: typeof import('birdpaper-icon/components')['IconStopCircleFill'];
     IconStopCircleLine: typeof import('birdpaper-icon/components')['IconStopCircleLine'];
     IconStopFill: typeof import('birdpaper-icon/components')['IconStopFill'];
+    IconStopLargeFill: typeof import('birdpaper-icon/components')['IconStopLargeFill'];
+    IconStopLargeLine: typeof import('birdpaper-icon/components')['IconStopLargeLine'];
     IconStopLine: typeof import('birdpaper-icon/components')['IconStopLine'];
     IconStopMiniFill: typeof import('birdpaper-icon/components')['IconStopMiniFill'];
     IconStopMiniLine: typeof import('birdpaper-icon/components')['IconStopMiniLine'];
@@ -2106,6 +2185,10 @@ declare module 'vue' {
     IconVideoDownloadLine: typeof import('birdpaper-icon/components')['IconVideoDownloadLine'];
     IconVideoFill: typeof import('birdpaper-icon/components')['IconVideoFill'];
     IconVideoLine: typeof import('birdpaper-icon/components')['IconVideoLine'];
+    IconVideoOffFill: typeof import('birdpaper-icon/components')['IconVideoOffFill'];
+    IconVideoOffLine: typeof import('birdpaper-icon/components')['IconVideoOffLine'];
+    IconVideoOnFill: typeof import('birdpaper-icon/components')['IconVideoOnFill'];
+    IconVideoOnLine: typeof import('birdpaper-icon/components')['IconVideoOnLine'];
     IconVideoUploadFill: typeof import('birdpaper-icon/components')['IconVideoUploadFill'];
     IconVideoUploadLine: typeof import('birdpaper-icon/components')['IconVideoUploadLine'];
     IconVidicon2Fill: typeof import('birdpaper-icon/components')['IconVidicon2Fill'];
@@ -2188,6 +2271,8 @@ declare module 'vue' {
     IconGlassesLine: typeof import('birdpaper-icon/components')['IconGlassesLine'];
     IconGogglesFill: typeof import('birdpaper-icon/components')['IconGogglesFill'];
     IconGogglesLine: typeof import('birdpaper-icon/components')['IconGogglesLine'];
+    IconGolfBallFill: typeof import('birdpaper-icon/components')['IconGolfBallFill'];
+    IconGolfBallLine: typeof import('birdpaper-icon/components')['IconGolfBallLine'];
     IconGraduationCapFill: typeof import('birdpaper-icon/components')['IconGraduationCapFill'];
     IconGraduationCapLine: typeof import('birdpaper-icon/components')['IconGraduationCapLine'];
     IconHandbagFill: typeof import('birdpaper-icon/components')['IconHandbagFill'];
@@ -2216,6 +2301,8 @@ declare module 'vue' {
     IconPlug2Line: typeof import('birdpaper-icon/components')['IconPlug2Line'];
     IconPlugFill: typeof import('birdpaper-icon/components')['IconPlugFill'];
     IconPlugLine: typeof import('birdpaper-icon/components')['IconPlugLine'];
+    IconPoliceBadgeFill: typeof import('birdpaper-icon/components')['IconPoliceBadgeFill'];
+    IconPoliceBadgeLine: typeof import('birdpaper-icon/components')['IconPoliceBadgeLine'];
     IconRecycleFill: typeof import('birdpaper-icon/components')['IconRecycleFill'];
     IconRecycleLine: typeof import('birdpaper-icon/components')['IconRecycleLine'];
     IconReservedFill: typeof import('birdpaper-icon/components')['IconReservedFill'];
@@ -2240,12 +2327,16 @@ declare module 'vue' {
     IconTShirtAirLine: typeof import('birdpaper-icon/components')['IconTShirtAirLine'];
     IconTShirtFill: typeof import('birdpaper-icon/components')['IconTShirtFill'];
     IconTShirtLine: typeof import('birdpaper-icon/components')['IconTShirtLine'];
+    IconToothFill: typeof import('birdpaper-icon/components')['IconToothFill'];
+    IconToothLine: typeof import('birdpaper-icon/components')['IconToothLine'];
     IconTreeFill: typeof import('birdpaper-icon/components')['IconTreeFill'];
     IconTreeLine: typeof import('birdpaper-icon/components')['IconTreeLine'];
     IconUmbrellaFill: typeof import('birdpaper-icon/components')['IconUmbrellaFill'];
     IconUmbrellaLine: typeof import('birdpaper-icon/components')['IconUmbrellaLine'];
     IconVoiceRecognitionFill: typeof import('birdpaper-icon/components')['IconVoiceRecognitionFill'];
     IconVoiceRecognitionLine: typeof import('birdpaper-icon/components')['IconVoiceRecognitionLine'];
+    IconWeightFill: typeof import('birdpaper-icon/components')['IconWeightFill'];
+    IconWeightLine: typeof import('birdpaper-icon/components')['IconWeightLine'];
     IconWheelchairFill: typeof import('birdpaper-icon/components')['IconWheelchairFill'];
     IconWheelchairLine: typeof import('birdpaper-icon/components')['IconWheelchairLine'];
     IconAddBoxFill: typeof import('birdpaper-icon/components')['IconAddBoxFill'];
@@ -2253,6 +2344,8 @@ declare module 'vue' {
     IconAddCircleFill: typeof import('birdpaper-icon/components')['IconAddCircleFill'];
     IconAddCircleLine: typeof import('birdpaper-icon/components')['IconAddCircleLine'];
     IconAddFill: typeof import('birdpaper-icon/components')['IconAddFill'];
+    IconAddLargeFill: typeof import('birdpaper-icon/components')['IconAddLargeFill'];
+    IconAddLargeLine: typeof import('birdpaper-icon/components')['IconAddLargeLine'];
     IconAddLine: typeof import('birdpaper-icon/components')['IconAddLine'];
     IconAlarmFill: typeof import('birdpaper-icon/components')['IconAlarmFill'];
     IconAlarmLine: typeof import('birdpaper-icon/components')['IconAlarmLine'];
@@ -2260,6 +2353,8 @@ declare module 'vue' {
     IconAlarmWarningLine: typeof import('birdpaper-icon/components')['IconAlarmWarningLine'];
     IconAlertFill: typeof import('birdpaper-icon/components')['IconAlertFill'];
     IconAlertLine: typeof import('birdpaper-icon/components')['IconAlertLine'];
+    IconApps2AddFill: typeof import('birdpaper-icon/components')['IconApps2AddFill'];
+    IconApps2AddLine: typeof import('birdpaper-icon/components')['IconApps2AddLine'];
     IconApps2Fill: typeof import('birdpaper-icon/components')['IconApps2Fill'];
     IconApps2Line: typeof import('birdpaper-icon/components')['IconApps2Line'];
     IconAppsFill: typeof import('birdpaper-icon/components')['IconAppsFill'];
@@ -2285,8 +2380,12 @@ declare module 'vue' {
     IconCloseCircleFill: typeof import('birdpaper-icon/components')['IconCloseCircleFill'];
     IconCloseCircleLine: typeof import('birdpaper-icon/components')['IconCloseCircleLine'];
     IconCloseFill: typeof import('birdpaper-icon/components')['IconCloseFill'];
+    IconCloseLargeFill: typeof import('birdpaper-icon/components')['IconCloseLargeFill'];
+    IconCloseLargeLine: typeof import('birdpaper-icon/components')['IconCloseLargeLine'];
     IconCloseLine: typeof import('birdpaper-icon/components')['IconCloseLine'];
     IconDashboardFill: typeof import('birdpaper-icon/components')['IconDashboardFill'];
+    IconDashboardHorizontalFill: typeof import('birdpaper-icon/components')['IconDashboardHorizontalFill'];
+    IconDashboardHorizontalLine: typeof import('birdpaper-icon/components')['IconDashboardHorizontalLine'];
     IconDashboardLine: typeof import('birdpaper-icon/components')['IconDashboardLine'];
     IconDeleteBack2Fill: typeof import('birdpaper-icon/components')['IconDeleteBack2Fill'];
     IconDeleteBack2Line: typeof import('birdpaper-icon/components')['IconDeleteBack2Line'];
@@ -2346,6 +2445,8 @@ declare module 'vue' {
     IconForbid2Line: typeof import('birdpaper-icon/components')['IconForbid2Line'];
     IconForbidFill: typeof import('birdpaper-icon/components')['IconForbidFill'];
     IconForbidLine: typeof import('birdpaper-icon/components')['IconForbidLine'];
+    IconFunctionAddFill: typeof import('birdpaper-icon/components')['IconFunctionAddFill'];
+    IconFunctionAddLine: typeof import('birdpaper-icon/components')['IconFunctionAddLine'];
     IconFunctionFill: typeof import('birdpaper-icon/components')['IconFunctionFill'];
     IconFunctionLine: typeof import('birdpaper-icon/components')['IconFunctionLine'];
     IconHistoryFill: typeof import('birdpaper-icon/components')['IconHistoryFill'];
@@ -2362,6 +2463,8 @@ declare module 'vue' {
     IconInformation2Line: typeof import('birdpaper-icon/components')['IconInformation2Line'];
     IconInformationFill: typeof import('birdpaper-icon/components')['IconInformationFill'];
     IconInformationLine: typeof import('birdpaper-icon/components')['IconInformationLine'];
+    IconInformationOffFill: typeof import('birdpaper-icon/components')['IconInformationOffFill'];
+    IconInformationOffLine: typeof import('birdpaper-icon/components')['IconInformationOffLine'];
     IconListSettingsFill: typeof import('birdpaper-icon/components')['IconListSettingsFill'];
     IconListSettingsLine: typeof import('birdpaper-icon/components')['IconListSettingsLine'];
     IconLoader2Fill: typeof import('birdpaper-icon/components')['IconLoader2Fill'];
@@ -2411,11 +2514,26 @@ declare module 'vue' {
     IconMenuAddFill: typeof import('birdpaper-icon/components')['IconMenuAddFill'];
     IconMenuAddLine: typeof import('birdpaper-icon/components')['IconMenuAddLine'];
     IconMenuFill: typeof import('birdpaper-icon/components')['IconMenuFill'];
+    IconMenuFold2Fill: typeof import('birdpaper-icon/components')['IconMenuFold2Fill'];
+    IconMenuFold2Line: typeof import('birdpaper-icon/components')['IconMenuFold2Line'];
+    IconMenuFold3Fill: typeof import('birdpaper-icon/components')['IconMenuFold3Fill'];
+    IconMenuFold3Line2: typeof import('birdpaper-icon/components')['IconMenuFold3Line2'];
+    IconMenuFold3Line: typeof import('birdpaper-icon/components')['IconMenuFold3Line'];
+    IconMenuFold4Fill: typeof import('birdpaper-icon/components')['IconMenuFold4Fill'];
+    IconMenuFold4Line: typeof import('birdpaper-icon/components')['IconMenuFold4Line'];
     IconMenuFoldFill: typeof import('birdpaper-icon/components')['IconMenuFoldFill'];
     IconMenuFoldLine: typeof import('birdpaper-icon/components')['IconMenuFoldLine'];
     IconMenuLine: typeof import('birdpaper-icon/components')['IconMenuLine'];
     IconMenuSearchFill: typeof import('birdpaper-icon/components')['IconMenuSearchFill'];
     IconMenuSearchLine: typeof import('birdpaper-icon/components')['IconMenuSearchLine'];
+    IconMenuUnfold2Fill: typeof import('birdpaper-icon/components')['IconMenuUnfold2Fill'];
+    IconMenuUnfold2Line: typeof import('birdpaper-icon/components')['IconMenuUnfold2Line'];
+    IconMenuUnfold3Fill: typeof import('birdpaper-icon/components')['IconMenuUnfold3Fill'];
+    IconMenuUnfold3Line2: typeof import('birdpaper-icon/components')['IconMenuUnfold3Line2'];
+    IconMenuUnfold3Line: typeof import('birdpaper-icon/components')['IconMenuUnfold3Line'];
+    IconMenuUnfold4Fill: typeof import('birdpaper-icon/components')['IconMenuUnfold4Fill'];
+    IconMenuUnfold4Line2: typeof import('birdpaper-icon/components')['IconMenuUnfold4Line2'];
+    IconMenuUnfold4Line: typeof import('birdpaper-icon/components')['IconMenuUnfold4Line'];
     IconMenuUnfoldFill: typeof import('birdpaper-icon/components')['IconMenuUnfoldFill'];
     IconMenuUnfoldLine: typeof import('birdpaper-icon/components')['IconMenuUnfoldLine'];
     IconMore2Fill: typeof import('birdpaper-icon/components')['IconMore2Fill'];
@@ -2440,6 +2558,8 @@ declare module 'vue' {
     IconProgress7Line: typeof import('birdpaper-icon/components')['IconProgress7Line'];
     IconProgress8Fill: typeof import('birdpaper-icon/components')['IconProgress8Fill'];
     IconProgress8Line: typeof import('birdpaper-icon/components')['IconProgress8Line'];
+    IconProhibited2Fill: typeof import('birdpaper-icon/components')['IconProhibited2Fill'];
+    IconProhibited2Line: typeof import('birdpaper-icon/components')['IconProhibited2Line'];
     IconProhibitedFill: typeof import('birdpaper-icon/components')['IconProhibitedFill'];
     IconProhibitedLine: typeof import('birdpaper-icon/components')['IconProhibitedLine'];
     IconQuestionFill: typeof import('birdpaper-icon/components')['IconQuestionFill'];
@@ -2586,6 +2706,8 @@ declare module 'vue' {
     IconGhostSmileLine: typeof import('birdpaper-icon/components')['IconGhostSmileLine'];
     IconGroup2Fill: typeof import('birdpaper-icon/components')['IconGroup2Fill'];
     IconGroup2Line: typeof import('birdpaper-icon/components')['IconGroup2Line'];
+    IconGroup3Fill: typeof import('birdpaper-icon/components')['IconGroup3Fill'];
+    IconGroup3Line: typeof import('birdpaper-icon/components')['IconGroup3Line'];
     IconGroupFill: typeof import('birdpaper-icon/components')['IconGroupFill'];
     IconGroupLine: typeof import('birdpaper-icon/components')['IconGroupLine'];
     IconMenFill: typeof import('birdpaper-icon/components')['IconMenFill'];
@@ -2712,6 +2834,8 @@ declare module 'vue' {
     IconShiningLine: typeof import('birdpaper-icon/components')['IconShiningLine'];
     IconShowersFill: typeof import('birdpaper-icon/components')['IconShowersFill'];
     IconShowersLine: typeof import('birdpaper-icon/components')['IconShowersLine'];
+    IconSnowflakeFill: typeof import('birdpaper-icon/components')['IconSnowflakeFill'];
+    IconSnowflakeLine: typeof import('birdpaper-icon/components')['IconSnowflakeLine'];
     IconSnowyFill: typeof import('birdpaper-icon/components')['IconSnowyFill'];
     IconSnowyLine: typeof import('birdpaper-icon/components')['IconSnowyLine'];
     IconSparkling2Fill: typeof import('birdpaper-icon/components')['IconSparkling2Fill'];
