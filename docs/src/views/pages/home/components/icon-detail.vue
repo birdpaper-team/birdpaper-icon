@@ -1,8 +1,8 @@
 <template>
-  <bp-modal v-model="modalShow" title="ICON." width="800px">
+  <bp-modal v-model="modalShow" title="ICON." width="600px">
     <div class="icon-modal-body">
       <div class="icon-area">
-        <component :is="allIcons[`Icon${toPascalCase(icon)}`]" size="40" :fill="color"></component>
+        <component :is="allIcons[`Icon${toPascalCase(icon)}`]" size="40px" :fill="color"></component>
       </div>
       <div class="icon-info">
         <div class="icon-info-title">
@@ -22,8 +22,11 @@
     </div>
     <template #footer>
       <div class="icon-modal-footer">
-        <div>
-          <span>Design By Remix Icon</span>
+        <div class="footer-option">
+          <color-picker v-model:pureColor="color" format="hex" disableHistory />
+        </div>
+        <div class="footer-copyright">
+          <span class="footer-copyright-inner">Design By Remix Icon.</span>
         </div>
       </div>
     </template>
@@ -31,17 +34,20 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from "vue";
+import { ref, computed, watch } from "vue";
 import { toPascalCase } from "@/utils/helper";
 import * as allIcons from "birdpaper-icon";
 import { Message } from "birdpaper-ui";
 import * as useClipboard from "vue-clipboard3/dist/esm/index";
+import { ColorPicker } from "vue3-colorpicker";
+import "vue3-colorpicker/style.css";
+import { useScroll } from "@/hooks/useScroll";
 
 const icon = ref<string>("");
 const color = ref<string>("");
 
 const componentTag = computed<string>(() => {
-  return `<Icon${icon.value} ${color.value ? 'fill="' + color.value + '"' : ""} />`;
+  return `<Icon${toPascalCase(icon.value)} ${color.value ? 'fill="' + color.value + '"' : ""} />`;
 });
 
 /** 复制到剪贴板 */
@@ -60,6 +66,14 @@ const open = (str: string) => {
   icon.value = str;
   modalShow.value = true;
 };
+
+const { move, stop } = useScroll();
+watch(
+  () => modalShow.value,
+  () => {
+    modalShow.value ? stop() : move();
+  }
+);
 
 defineExpose({
   open,
