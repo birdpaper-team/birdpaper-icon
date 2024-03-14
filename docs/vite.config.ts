@@ -7,7 +7,11 @@ import viteCompression from "vite-plugin-compression";
 export default defineConfig({
   plugins: [
     VueSetupExtend(),
-    vue(),
+    vue({
+      script: {
+        defineModel: true,
+      },
+    }),
     viteCompression({
       verbose: true,
       disable: false,
