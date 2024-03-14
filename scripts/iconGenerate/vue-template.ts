@@ -72,7 +72,17 @@ const ${componentName} = Object.assign(_${componentName}, {
 export default ${componentName};`;
 };
 
-export const getBpVueIcon = ({ imports, components }: { imports: string[]; components: string[] }) =>
+export const getBpVueIcon = ({
+  imports,
+  components,
+  iconType,
+  iconInfo,
+}: {
+  imports: string[];
+  components: string[];
+  iconType: string[];
+  iconInfo: { name: string; list: string[] }[];
+}) =>
   // language=TypeScript
   // prettier-ignore
   `import type { App, Plugin } from 'vue';
@@ -90,18 +100,30 @@ const install = (app: App) => {
 
 const BpVueIcon = {
   ...icons,
+  iconType: [${iconType.map(item=>`"${item}"`)}],
+  iconInfo: ${JSON.stringify(iconInfo)},
   install
 };
 
 export default BpVueIcon;
 `;
 
-export const getIndex = ({ exports }: { exports: string[] }) =>
+export const getIndex = ({
+  exports,
+  iconType,
+  iconInfo,
+}: {
+  exports: string[];
+  iconType: string[];
+  iconInfo: { name: string; list: string[] }[];
+}) =>
   // language=TypeScript
   // prettier-ignore
   `export { default } from './birdpaper-icon';
 ${exports.join('\n')}
 export type {} from './icon-components';
+export const iconType = [${iconType.map(item=>`"${item}"`)}];
+export const iconInfo = ${JSON.stringify(iconInfo)};
 `;
 
 export const getType = ({ exports }: { exports: string[] }) =>

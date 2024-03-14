@@ -1,4 +1,5 @@
 import type { App, Plugin } from 'vue';
+import IconArrowDownCircleFill2 from './icon-arrow-down-circle-fill-2';
 import IconArrowDownCircleFill from './icon-arrow-down-circle-fill';
 import IconArrowDownCircleLine from './icon-arrow-down-circle-line';
 import IconArrowDownDoubleFill from './icon-arrow-down-double-fill';
@@ -7,6 +8,8 @@ import IconArrowDownFill from './icon-arrow-down-fill';
 import IconArrowDownLine from './icon-arrow-down-line';
 import IconArrowDownSFill from './icon-arrow-down-s-fill';
 import IconArrowDownSLine from './icon-arrow-down-s-line';
+import IconArrowDownWideFill from './icon-arrow-down-wide-fill';
+import IconArrowDownWideLine from './icon-arrow-down-wide-line';
 import IconArrowDropDownFill from './icon-arrow-drop-down-fill';
 import IconArrowDropDownLine from './icon-arrow-drop-down-line';
 import IconArrowDropLeftFill from './icon-arrow-drop-left-fill';
@@ -33,6 +36,8 @@ import IconArrowLeftSFill from './icon-arrow-left-s-fill';
 import IconArrowLeftSLine from './icon-arrow-left-s-line';
 import IconArrowLeftUpFill from './icon-arrow-left-up-fill';
 import IconArrowLeftUpLine from './icon-arrow-left-up-line';
+import IconArrowLeftWideFill from './icon-arrow-left-wide-fill';
+import IconArrowLeftWideLine from './icon-arrow-left-wide-line';
 import IconArrowRightCircleFill from './icon-arrow-right-circle-fill';
 import IconArrowRightCircleLine from './icon-arrow-right-circle-line';
 import IconArrowRightDoubleFill from './icon-arrow-right-double-fill';
@@ -45,6 +50,8 @@ import IconArrowRightSFill from './icon-arrow-right-s-fill';
 import IconArrowRightSLine from './icon-arrow-right-s-line';
 import IconArrowRightUpFill from './icon-arrow-right-up-fill';
 import IconArrowRightUpLine from './icon-arrow-right-up-line';
+import IconArrowRightWideFill from './icon-arrow-right-wide-fill';
+import IconArrowRightWideLine from './icon-arrow-right-wide-line';
 import IconArrowTurnBackFill from './icon-arrow-turn-back-fill';
 import IconArrowTurnBackLine from './icon-arrow-turn-back-line';
 import IconArrowTurnForwardFill from './icon-arrow-turn-forward-fill';
@@ -59,6 +66,12 @@ import IconArrowUpFill from './icon-arrow-up-fill';
 import IconArrowUpLine from './icon-arrow-up-line';
 import IconArrowUpSFill from './icon-arrow-up-s-fill';
 import IconArrowUpSLine from './icon-arrow-up-s-line';
+import IconArrowUpWideFill from './icon-arrow-up-wide-fill';
+import IconArrowUpWideLine from './icon-arrow-up-wide-line';
+import IconCollapseDiagonal2Fill from './icon-collapse-diagonal-2-fill';
+import IconCollapseDiagonal2Line from './icon-collapse-diagonal-2-line';
+import IconCollapseDiagonalFill from './icon-collapse-diagonal-fill';
+import IconCollapseDiagonalLine from './icon-collapse-diagonal-line';
 import IconContractLeftFill from './icon-contract-left-fill';
 import IconContractLeftLine from './icon-contract-left-line';
 import IconContractLeftRightFill from './icon-contract-left-right-fill';
@@ -91,6 +104,12 @@ import IconDragMove2Fill from './icon-drag-move-2-fill';
 import IconDragMove2Line from './icon-drag-move-2-line';
 import IconDragMoveFill from './icon-drag-move-fill';
 import IconDragMoveLine from './icon-drag-move-line';
+import IconExpandDiagonal2Fill from './icon-expand-diagonal-2-fill';
+import IconExpandDiagonal2Line from './icon-expand-diagonal-2-line';
+import IconExpandDiagonalFill from './icon-expand-diagonal-fill';
+import IconExpandDiagonalLine from './icon-expand-diagonal-line';
+import IconExpandHeightFill from './icon-expand-height-fill';
+import IconExpandHeightLine from './icon-expand-height-line';
 import IconExpandLeftFill from './icon-expand-left-fill';
 import IconExpandLeftLine from './icon-expand-left-line';
 import IconExpandLeftRightFill from './icon-expand-left-right-fill';
@@ -99,6 +118,10 @@ import IconExpandRightFill from './icon-expand-right-fill';
 import IconExpandRightLine from './icon-expand-right-line';
 import IconExpandUpDownFill from './icon-expand-up-down-fill';
 import IconExpandUpDownLine from './icon-expand-up-down-line';
+import IconExpandWidthFill from './icon-expand-width-fill';
+import IconExpandWidthLine from './icon-expand-width-line';
+import IconScrollToBottomFill from './icon-scroll-to-bottom-fill';
+import IconScrollToBottomLine from './icon-scroll-to-bottom-line';
 import IconSkipDownFill from './icon-skip-down-fill';
 import IconSkipDownLine from './icon-skip-down-line';
 import IconSkipLeftFill from './icon-skip-left-fill';
@@ -175,6 +198,8 @@ import IconArchiveDrawerFill from './icon-archive-drawer-fill';
 import IconArchiveDrawerLine from './icon-archive-drawer-line';
 import IconArchiveFill from './icon-archive-fill';
 import IconArchiveLine from './icon-archive-line';
+import IconArchiveStackFill from './icon-archive-stack-fill';
+import IconArchiveStackLine from './icon-archive-stack-line';
 import IconAtFill from './icon-at-fill';
 import IconAtLine from './icon-at-line';
 import IconAttachmentFill from './icon-attachment-fill';
@@ -259,6 +284,8 @@ import IconGlobalFill from './icon-global-fill';
 import IconGlobalLine from './icon-global-line';
 import IconHonourFill from './icon-honour-fill';
 import IconHonourLine from './icon-honour-line';
+import IconIdCardFill from './icon-id-card-fill';
+import IconIdCardLine from './icon-id-card-line';
 import IconInbox2Fill from './icon-inbox-2-fill';
 import IconInbox2Line from './icon-inbox-2-line';
 import IconInboxArchiveFill from './icon-inbox-archive-fill';
@@ -363,6 +390,7 @@ import IconWindow2Fill from './icon-window-2-fill';
 import IconWindow2Line from './icon-window-2-line';
 import IconWindowFill from './icon-window-fill';
 import IconWindowLine from './icon-window-line';
+import IconChat1Fill2 from './icon-chat-1-fill-2';
 import IconChat1Fill from './icon-chat-1-fill';
 import IconChat1Line from './icon-chat-1-line';
 import IconChat2Fill from './icon-chat-2-fill';
@@ -403,6 +431,8 @@ import IconChatSmile3Fill from './icon-chat-smile-3-fill';
 import IconChatSmile3Line from './icon-chat-smile-3-line';
 import IconChatSmileFill from './icon-chat-smile-fill';
 import IconChatSmileLine from './icon-chat-smile-line';
+import IconChatThreadFill from './icon-chat-thread-fill';
+import IconChatThreadLine from './icon-chat-thread-line';
 import IconChatUploadFill from './icon-chat-upload-fill';
 import IconChatUploadLine from './icon-chat-upload-line';
 import IconChatVoiceFill from './icon-chat-voice-fill';
@@ -427,6 +457,18 @@ import IconSpeakFill from './icon-speak-fill';
 import IconSpeakLine from './icon-speak-line';
 import IconVideoChatFill from './icon-video-chat-fill';
 import IconVideoChatLine from './icon-video-chat-line';
+import IconAlignItemBottomFill from './icon-align-item-bottom-fill';
+import IconAlignItemBottomLine from './icon-align-item-bottom-line';
+import IconAlignItemHorizontalCenterFill from './icon-align-item-horizontal-center-fill';
+import IconAlignItemHorizontalCenterLine from './icon-align-item-horizontal-center-line';
+import IconAlignItemLeftFill from './icon-align-item-left-fill';
+import IconAlignItemLeftLine from './icon-align-item-left-line';
+import IconAlignItemRightFill from './icon-align-item-right-fill';
+import IconAlignItemRightLine from './icon-align-item-right-line';
+import IconAlignItemTopFill from './icon-align-item-top-fill';
+import IconAlignItemTopLine from './icon-align-item-top-line';
+import IconAlignItemVerticalCenterFill from './icon-align-item-vertical-center-fill';
+import IconAlignItemVerticalCenterLine from './icon-align-item-vertical-center-line';
 import IconAnticlockwise2Fill from './icon-anticlockwise-2-fill';
 import IconAnticlockwise2Line from './icon-anticlockwise-2-line';
 import IconAnticlockwiseFill from './icon-anticlockwise-fill';
@@ -455,6 +497,8 @@ import IconClockwiseFill from './icon-clockwise-fill';
 import IconClockwiseLine from './icon-clockwise-line';
 import IconCollageFill from './icon-collage-fill';
 import IconCollageLine from './icon-collage-line';
+import IconColorFilterFill from './icon-color-filter-fill';
+import IconColorFilterLine from './icon-color-filter-line';
 import IconCompasses2Fill from './icon-compasses-2-fill';
 import IconCompasses2Line from './icon-compasses-2-line';
 import IconCompassesFill from './icon-compasses-fill';
@@ -489,6 +533,14 @@ import IconEditFill from './icon-edit-fill';
 import IconEditLine from './icon-edit-line';
 import IconEraserFill from './icon-eraser-fill';
 import IconEraserLine from './icon-eraser-line';
+import IconFlipHorizontal2Fill from './icon-flip-horizontal-2-fill';
+import IconFlipHorizontal2Line from './icon-flip-horizontal-2-line';
+import IconFlipHorizontalFill from './icon-flip-horizontal-fill';
+import IconFlipHorizontalLine from './icon-flip-horizontal-line';
+import IconFlipVertical2Fill from './icon-flip-vertical-2-fill';
+import IconFlipVertical2Line from './icon-flip-vertical-2-line';
+import IconFlipVerticalFill from './icon-flip-vertical-fill';
+import IconFlipVerticalLine from './icon-flip-vertical-line';
 import IconFocus2Fill from './icon-focus-2-fill';
 import IconFocus2Line from './icon-focus-2-line';
 import IconFocus3Fill from './icon-focus-3-fill';
@@ -522,8 +574,12 @@ import IconLayoutBottomLine from './icon-layout-bottom-line';
 import IconLayoutColumnFill from './icon-layout-column-fill';
 import IconLayoutColumnLine from './icon-layout-column-line';
 import IconLayoutFill from './icon-layout-fill';
+import IconLayoutGrid2Fill from './icon-layout-grid-2-fill';
+import IconLayoutGrid2Line from './icon-layout-grid-2-line';
 import IconLayoutGridFill from './icon-layout-grid-fill';
 import IconLayoutGridLine from './icon-layout-grid-line';
+import IconLayoutHorizontalFill from './icon-layout-horizontal-fill';
+import IconLayoutHorizontalLine from './icon-layout-horizontal-line';
 import IconLayoutLeft2Fill from './icon-layout-left-2-fill';
 import IconLayoutLeft2Line from './icon-layout-left-2-line';
 import IconLayoutLeftFill from './icon-layout-left-fill';
@@ -541,6 +597,8 @@ import IconLayoutTop2Fill from './icon-layout-top-2-fill';
 import IconLayoutTop2Line from './icon-layout-top-2-line';
 import IconLayoutTopFill from './icon-layout-top-fill';
 import IconLayoutTopLine from './icon-layout-top-line';
+import IconLayoutVerticalFill from './icon-layout-vertical-fill';
+import IconLayoutVerticalLine from './icon-layout-vertical-line';
 import IconMagicFill from './icon-magic-fill';
 import IconMagicLine from './icon-magic-line';
 import IconMarkPenFill from './icon-mark-pen-fill';
@@ -585,6 +643,8 @@ import IconScreenshot2Fill from './icon-screenshot-2-fill';
 import IconScreenshot2Line from './icon-screenshot-2-line';
 import IconScreenshotFill from './icon-screenshot-fill';
 import IconScreenshotLine from './icon-screenshot-line';
+import IconShadowFill from './icon-shadow-fill';
+import IconShadowLine from './icon-shadow-line';
 import IconShape2Fill from './icon-shape-2-fill';
 import IconShape2Line from './icon-shape-2-line';
 import IconShapeFill from './icon-shape-fill';
@@ -635,8 +695,12 @@ import IconGitClosePullRequestFill from './icon-git-close-pull-request-fill';
 import IconGitClosePullRequestLine from './icon-git-close-pull-request-line';
 import IconGitCommitFill from './icon-git-commit-fill';
 import IconGitCommitLine from './icon-git-commit-line';
+import IconGitForkFill from './icon-git-fork-fill';
+import IconGitForkLine from './icon-git-fork-line';
 import IconGitMergeFill from './icon-git-merge-fill';
 import IconGitMergeLine from './icon-git-merge-line';
+import IconGitPrDraftFill from './icon-git-pr-draft-fill';
+import IconGitPrDraftLine from './icon-git-pr-draft-line';
 import IconGitPullRequestFill from './icon-git-pull-request-fill';
 import IconGitPullRequestLine from './icon-git-pull-request-line';
 import IconGitRepositoryCommitsFill from './icon-git-repository-commits-fill';
@@ -651,6 +715,10 @@ import IconJavascriptFill from './icon-javascript-fill';
 import IconJavascriptLine from './icon-javascript-line';
 import IconParenthesesFill from './icon-parentheses-fill';
 import IconParenthesesLine from './icon-parentheses-line';
+import IconPuzzle2Fill from './icon-puzzle-2-fill';
+import IconPuzzle2Line from './icon-puzzle-2-line';
+import IconPuzzleFill from './icon-puzzle-fill';
+import IconPuzzleLine from './icon-puzzle-line';
 import IconTerminalBoxFill from './icon-terminal-box-fill';
 import IconTerminalBoxLine from './icon-terminal-box-line';
 import IconTerminalFill from './icon-terminal-fill';
@@ -673,6 +741,7 @@ import IconBatteryChargeFill from './icon-battery-charge-fill';
 import IconBatteryChargeLine from './icon-battery-charge-line';
 import IconBatteryFill from './icon-battery-fill';
 import IconBatteryLine from './icon-battery-line';
+import IconBatteryLowFill2 from './icon-battery-low-fill-2';
 import IconBatteryLowFill from './icon-battery-low-fill';
 import IconBatteryLowLine from './icon-battery-low-line';
 import IconBatterySaverFill from './icon-battery-saver-fill';
@@ -717,6 +786,7 @@ import IconGpsFill from './icon-gps-fill';
 import IconGpsLine from './icon-gps-line';
 import IconGradienterFill from './icon-gradienter-fill';
 import IconGradienterLine from './icon-gradienter-line';
+import IconHardDrive2Fill2 from './icon-hard-drive-2-fill-2';
 import IconHardDrive2Fill from './icon-hard-drive-2-fill';
 import IconHardDrive2Line from './icon-hard-drive-2-line';
 import IconHardDrive3Fill from './icon-hard-drive-3-fill';
@@ -737,6 +807,8 @@ import IconMacFill from './icon-mac-fill';
 import IconMacLine from './icon-mac-line';
 import IconMacbookFill from './icon-macbook-fill';
 import IconMacbookLine from './icon-macbook-line';
+import IconMobileDownloadFill from './icon-mobile-download-fill';
+import IconMobileDownloadLine from './icon-mobile-download-line';
 import IconMouseFill from './icon-mouse-fill';
 import IconMouseLine from './icon-mouse-line';
 import IconPhoneFill from './icon-phone-fill';
@@ -753,6 +825,10 @@ import IconQrScanFill from './icon-qr-scan-fill';
 import IconQrScanLine from './icon-qr-scan-line';
 import IconRadarFill from './icon-radar-fill';
 import IconRadarLine from './icon-radar-line';
+import IconRam2Fill from './icon-ram-2-fill';
+import IconRam2Line from './icon-ram-2-line';
+import IconRamFill from './icon-ram-fill';
+import IconRamLine from './icon-ram-line';
 import IconRemoteControl2Fill from './icon-remote-control-2-fill';
 import IconRemoteControl2Line from './icon-remote-control-2-line';
 import IconRemoteControlFill from './icon-remote-control-fill';
@@ -833,8 +909,8 @@ import IconBook3Fill from './icon-book-3-fill';
 import IconBook3Line from './icon-book-3-line';
 import IconBookFill from './icon-book-fill';
 import IconBookLine from './icon-book-line';
-import IconBookMarkFill from './icon-book-mark-fill';
-import IconBookMarkLine from './icon-book-mark-line';
+import IconBookMarkedFill from './icon-book-marked-fill';
+import IconBookMarkedLine from './icon-book-marked-line';
 import IconBookOpenFill from './icon-book-open-fill';
 import IconBookOpenLine from './icon-book-open-line';
 import IconBookReadFill from './icon-book-read-fill';
@@ -845,13 +921,18 @@ import IconClipboardFill from './icon-clipboard-fill';
 import IconClipboardLine from './icon-clipboard-line';
 import IconContactsBook2Fill from './icon-contacts-book-2-fill';
 import IconContactsBook2Line from './icon-contacts-book-2-line';
+import IconContactsBook3Fill from './icon-contacts-book-3-fill';
+import IconContactsBook3Line from './icon-contacts-book-3-line';
 import IconContactsBookFill from './icon-contacts-book-fill';
 import IconContactsBookLine from './icon-contacts-book-line';
 import IconContactsBookUploadFill from './icon-contacts-book-upload-fill';
 import IconContactsBookUploadLine from './icon-contacts-book-upload-line';
+import IconContractFill from './icon-contract-fill';
+import IconContractLine from './icon-contract-line';
 import IconDraftFill from './icon-draft-fill';
 import IconDraftLine from './icon-draft-line';
 import IconFile2Fill from './icon-file-2-fill';
+import IconFile2Line2 from './icon-file-2-line-2';
 import IconFile2Line from './icon-file-2-line';
 import IconFile3Fill from './icon-file-3-fill';
 import IconFile3Line from './icon-file-3-line';
@@ -863,6 +944,8 @@ import IconFileChart2Fill from './icon-file-chart-2-fill';
 import IconFileChart2Line from './icon-file-chart-2-line';
 import IconFileChartFill from './icon-file-chart-fill';
 import IconFileChartLine from './icon-file-chart-line';
+import IconFileCheckFill from './icon-file-check-fill';
+import IconFileCheckLine from './icon-file-check-line';
 import IconFileCloseFill from './icon-file-close-fill';
 import IconFileCloseLine from './icon-file-close-line';
 import IconFileCloudFill from './icon-file-cloud-fill';
@@ -905,8 +988,8 @@ import IconFileListFill from './icon-file-list-fill';
 import IconFileListLine from './icon-file-list-line';
 import IconFileLockFill from './icon-file-lock-fill';
 import IconFileLockLine from './icon-file-lock-line';
-import IconFileMarkFill from './icon-file-mark-fill';
-import IconFileMarkLine from './icon-file-mark-line';
+import IconFileMarkedFill from './icon-file-marked-fill';
+import IconFileMarkedLine from './icon-file-marked-line';
 import IconFileMusicFill from './icon-file-music-fill';
 import IconFileMusicLine from './icon-file-music-line';
 import IconFilePaper2Fill from './icon-file-paper-2-fill';
@@ -961,12 +1044,20 @@ import IconFolder4Fill from './icon-folder-4-fill';
 import IconFolder4Line from './icon-folder-4-line';
 import IconFolder5Fill from './icon-folder-5-fill';
 import IconFolder5Line from './icon-folder-5-line';
+import IconFolder6Fill from './icon-folder-6-fill';
+import IconFolder6Line from './icon-folder-6-line';
 import IconFolderAddFill from './icon-folder-add-fill';
 import IconFolderAddLine from './icon-folder-add-line';
 import IconFolderChart2Fill from './icon-folder-chart-2-fill';
 import IconFolderChart2Line from './icon-folder-chart-2-line';
 import IconFolderChartFill from './icon-folder-chart-fill';
 import IconFolderChartLine from './icon-folder-chart-line';
+import IconFolderCheckFill from './icon-folder-check-fill';
+import IconFolderCheckLine from './icon-folder-check-line';
+import IconFolderCloseFill from './icon-folder-close-fill';
+import IconFolderCloseLine from './icon-folder-close-line';
+import IconFolderCloudFill from './icon-folder-cloud-fill';
+import IconFolderCloudLine from './icon-folder-cloud-line';
 import IconFolderDownloadFill from './icon-folder-download-fill';
 import IconFolderDownloadLine from './icon-folder-download-line';
 import IconFolderFill from './icon-folder-fill';
@@ -1027,8 +1118,13 @@ import IconNumbersFill from './icon-numbers-fill';
 import IconNumbersLine from './icon-numbers-line';
 import IconPagesFill from './icon-pages-fill';
 import IconPagesLine from './icon-pages-line';
+import IconReceiptFill from './icon-receipt-fill';
+import IconReceiptLine from './icon-receipt-line';
+import IconStickyNote2Fill2 from './icon-sticky-note-2-fill-2';
 import IconStickyNote2Fill from './icon-sticky-note-2-fill';
 import IconStickyNote2Line from './icon-sticky-note-2-line';
+import IconStickyNoteAddFill from './icon-sticky-note-add-fill';
+import IconStickyNoteAddLine from './icon-sticky-note-add-line';
 import IconStickyNoteFill from './icon-sticky-note-fill';
 import IconStickyNoteLine from './icon-sticky-note-line';
 import IconSurveyFill from './icon-survey-fill';
@@ -1051,6 +1147,9 @@ import IconAttachment2 from './icon-attachment-2';
 import IconBold from './icon-bold';
 import IconBringForward from './icon-bring-forward';
 import IconBringToFront from './icon-bring-to-front';
+import IconCalendarView from './icon-calendar-view';
+import IconCarouselView from './icon-carousel-view';
+import IconCodeBlock from './icon-code-block';
 import IconCodeView from './icon-code-view';
 import IconDeleteColumn from './icon-delete-column';
 import IconDeleteRow from './icon-delete-row';
@@ -1062,6 +1161,7 @@ import IconEmphasisCn from './icon-emphasis-cn';
 import IconEmphasis from './icon-emphasis';
 import IconEnglishInput from './icon-english-input';
 import IconFlowChart from './icon-flow-chart';
+import IconFocusMode from './icon-focus-mode';
 import IconFontColor from './icon-font-color';
 import IconFontFamily from './icon-font-family';
 import IconFontMono from './icon-font-mono';
@@ -1070,24 +1170,32 @@ import IconFontSans from './icon-font-sans';
 import IconFontSize2 from './icon-font-size-2';
 import IconFontSize from './icon-font-size';
 import IconFormatClear from './icon-format-clear';
+import IconFormula from './icon-formula';
 import IconFunctions from './icon-functions';
+import IconGalleryView2 from './icon-gallery-view-2';
+import IconGalleryView from './icon-gallery-view';
 import IconH1 from './icon-h-1';
 import IconH2 from './icon-h-2';
 import IconH3 from './icon-h-3';
 import IconH4 from './icon-h-4';
 import IconH5 from './icon-h-5';
 import IconH6 from './icon-h-6';
+import IconHand from './icon-hand';
 import IconHashtag from './icon-hashtag';
+import IconHeading2 from './icon-heading-2';
 import IconHeading from './icon-heading';
 import IconIndentDecrease from './icon-indent-decrease';
 import IconIndentIncrease from './icon-indent-increase';
 import IconInfoI from './icon-info-i';
 import IconInputCursorMove from './icon-input-cursor-move';
+import IconInputField from './icon-input-field';
 import IconInsertColumnLeft from './icon-insert-column-left';
 import IconInsertColumnRight from './icon-insert-column-right';
 import IconInsertRowBottom from './icon-insert-row-bottom';
 import IconInsertRowTop from './icon-insert-row-top';
 import IconItalic from './icon-italic';
+import IconKanbanView2 from './icon-kanban-view-2';
+import IconKanbanView from './icon-kanban-view';
 import IconLineHeight from './icon-line-height';
 import IconLinkM from './icon-link-m';
 import IconLinkUnlinkM from './icon-link-unlink-m';
@@ -1101,6 +1209,7 @@ import IconListOrdered2 from './icon-list-ordered-2';
 import IconListOrdered from './icon-list-ordered';
 import IconListRadio from './icon-list-radio';
 import IconListUnordered from './icon-list-unordered';
+import IconListView from './icon-list-view';
 import IconMergeCellsHorizontal from './icon-merge-cells-horizontal';
 import IconMergeCellsVertical from './icon-merge-cells-vertical';
 import IconMindMap from './icon-mind-map';
@@ -1132,11 +1241,18 @@ import IconSingleQuotesR from './icon-single-quotes-r';
 import IconSketching from './icon-sketching';
 import IconSlashCommands2 from './icon-slash-commands-2';
 import IconSlashCommands from './icon-slash-commands';
+import IconSlideshowView from './icon-slideshow-view';
+import IconSortAlphabetAsc from './icon-sort-alphabet-asc';
+import IconSortAlphabetDesc from './icon-sort-alphabet-desc';
 import IconSortAsc from './icon-sort-asc';
 import IconSortDesc from './icon-sort-desc';
+import IconSortNumberAsc from './icon-sort-number-asc';
+import IconSortNumberDesc from './icon-sort-number-desc';
 import IconSpace from './icon-space';
 import IconSplitCellsHorizontal from './icon-split-cells-horizontal';
 import IconSplitCellsVertical from './icon-split-cells-vertical';
+import IconSquareRoot from './icon-square-root';
+import IconStackedView from './icon-stacked-view';
 import IconStrikethrough2 from './icon-strikethrough-2';
 import IconStrikethrough from './icon-strikethrough';
 import IconSubscript2 from './icon-subscript-2';
@@ -1144,11 +1260,16 @@ import IconSubscript from './icon-subscript';
 import IconSuperscript2 from './icon-superscript-2';
 import IconSuperscript from './icon-superscript';
 import IconTable2 from './icon-table-2';
+import IconTable3 from './icon-table-3';
+import IconTableView from './icon-table-view';
+import IconTextBlock from './icon-text-block';
 import IconTextDirectionL from './icon-text-direction-l';
 import IconTextDirectionR from './icon-text-direction-r';
+import IconTextSnippet from './icon-text-snippet';
 import IconTextSpacing from './icon-text-spacing';
 import IconTextWrap from './icon-text-wrap';
 import IconText from './icon-text';
+import IconTimelineView from './icon-timeline-view';
 import IconTranslate2 from './icon-translate-2';
 import IconTranslate from './icon-translate';
 import IconUnderline from './icon-underline';
@@ -1189,8 +1310,12 @@ import IconCouponFill from './icon-coupon-fill';
 import IconCouponLine from './icon-coupon-line';
 import IconCurrencyFill from './icon-currency-fill';
 import IconCurrencyLine from './icon-currency-line';
+import IconDiscountPercentFill from './icon-discount-percent-fill';
+import IconDiscountPercentLine from './icon-discount-percent-line';
 import IconEthFill from './icon-eth-fill';
 import IconEthLine from './icon-eth-line';
+import IconExchange2Fill from './icon-exchange-2-fill';
+import IconExchange2Line from './icon-exchange-2-line';
 import IconExchangeBoxFill from './icon-exchange-box-fill';
 import IconExchangeBoxLine from './icon-exchange-box-line';
 import IconExchangeCnyFill from './icon-exchange-cny-fill';
@@ -1261,6 +1386,8 @@ import IconShoppingBag2Fill from './icon-shopping-bag-2-fill';
 import IconShoppingBag2Line from './icon-shopping-bag-2-line';
 import IconShoppingBag3Fill from './icon-shopping-bag-3-fill';
 import IconShoppingBag3Line from './icon-shopping-bag-3-line';
+import IconShoppingBag4Fill from './icon-shopping-bag-4-fill';
+import IconShoppingBag4Line from './icon-shopping-bag-4-line';
 import IconShoppingBagFill from './icon-shopping-bag-fill';
 import IconShoppingBagLine from './icon-shopping-bag-line';
 import IconShoppingBasket2Fill from './icon-shopping-basket-2-fill';
@@ -1273,6 +1400,10 @@ import IconShoppingCartFill from './icon-shopping-cart-fill';
 import IconShoppingCartLine from './icon-shopping-cart-line';
 import IconStockFill from './icon-stock-fill';
 import IconStockLine from './icon-stock-line';
+import IconSwap2Fill from './icon-swap-2-fill';
+import IconSwap2Line from './icon-swap-2-line';
+import IconSwap3Fill from './icon-swap-3-fill';
+import IconSwap3Line from './icon-swap-3-line';
 import IconSwapBoxFill from './icon-swap-box-fill';
 import IconSwapBoxLine from './icon-swap-box-line';
 import IconSwapFill from './icon-swap-fill';
@@ -1307,6 +1438,8 @@ import IconXtzFill from './icon-xtz-fill';
 import IconXtzLine from './icon-xtz-line';
 import IconBeerFill from './icon-beer-fill';
 import IconBeerLine from './icon-beer-line';
+import IconBowlFill from './icon-bowl-fill';
+import IconBowlLine from './icon-bowl-line';
 import IconBreadFill from './icon-bread-fill';
 import IconBreadLine from './icon-bread-line';
 import IconCake2Fill from './icon-cake-2-fill';
@@ -1317,8 +1450,12 @@ import IconCakeFill from './icon-cake-fill';
 import IconCakeLine from './icon-cake-line';
 import IconCupFill from './icon-cup-fill';
 import IconCupLine from './icon-cup-line';
+import IconDrinks2Fill from './icon-drinks-2-fill';
+import IconDrinks2Line from './icon-drinks-2-line';
 import IconDrinksFill from './icon-drinks-fill';
 import IconDrinksLine from './icon-drinks-line';
+import IconGoblet2Fill from './icon-goblet-2-fill';
+import IconGoblet2Line from './icon-goblet-2-line';
 import IconGobletFill from './icon-goblet-fill';
 import IconGobletLine from './icon-goblet-line';
 import IconKnifeBloodFill from './icon-knife-blood-fill';
@@ -1329,6 +1466,10 @@ import IconRestaurant2Fill from './icon-restaurant-2-fill';
 import IconRestaurant2Line from './icon-restaurant-2-line';
 import IconRestaurantFill from './icon-restaurant-fill';
 import IconRestaurantLine from './icon-restaurant-line';
+import IconAedElectrodesFill from './icon-aed-electrodes-fill';
+import IconAedElectrodesLine from './icon-aed-electrodes-line';
+import IconAedFill from './icon-aed-fill';
+import IconAedLine from './icon-aed-line';
 import IconBrainFill from './icon-brain-fill';
 import IconBrainLine from './icon-brain-line';
 import IconCapsuleFill from './icon-capsule-fill';
@@ -1351,6 +1492,8 @@ import IconHeart2Fill from './icon-heart-2-fill';
 import IconHeart2Line from './icon-heart-2-line';
 import IconHeart3Fill from './icon-heart-3-fill';
 import IconHeart3Line from './icon-heart-3-line';
+import IconHeartAdd2Fill from './icon-heart-add-2-fill';
+import IconHeartAdd2Line from './icon-heart-add-2-line';
 import IconHeartAddFill from './icon-heart-add-fill';
 import IconHeartAddLine from './icon-heart-add-line';
 import IconHeartFill from './icon-heart-fill';
@@ -1391,6 +1534,8 @@ import IconVirusFill from './icon-virus-fill';
 import IconVirusLine from './icon-virus-line';
 import IconZzzFill from './icon-zzz-fill';
 import IconZzzLine from './icon-zzz-line';
+import IconAlibabaCloudFill from './icon-alibaba-cloud-fill';
+import IconAlibabaCloudLine from './icon-alibaba-cloud-line';
 import IconAlipayFill from './icon-alipay-fill';
 import IconAlipayLine from './icon-alipay-line';
 import IconAmazonFill from './icon-amazon-fill';
@@ -1413,6 +1558,10 @@ import IconBilibiliFill from './icon-bilibili-fill';
 import IconBilibiliLine from './icon-bilibili-line';
 import IconBlenderFill from './icon-blender-fill';
 import IconBlenderLine from './icon-blender-line';
+import IconBloggerFill from './icon-blogger-fill';
+import IconBloggerLine from './icon-blogger-line';
+import IconBlueskyFill from './icon-bluesky-fill';
+import IconBlueskyLine from './icon-bluesky-line';
 import IconBootstrapFill from './icon-bootstrap-fill';
 import IconBootstrapLine from './icon-bootstrap-line';
 import IconCentosFill from './icon-centos-fill';
@@ -1453,12 +1602,16 @@ import IconFacebookFill from './icon-facebook-fill';
 import IconFacebookLine from './icon-facebook-line';
 import IconFinderFill from './icon-finder-fill';
 import IconFinderLine from './icon-finder-line';
+import IconFirebaseFill from './icon-firebase-fill';
+import IconFirebaseLine from './icon-firebase-line';
 import IconFirefoxFill from './icon-firefox-fill';
 import IconFirefoxLine from './icon-firefox-line';
 import IconFlickrFill from './icon-flickr-fill';
 import IconFlickrLine from './icon-flickr-line';
 import IconFlutterFill from './icon-flutter-fill';
 import IconFlutterLine from './icon-flutter-line';
+import IconFriendicaFill from './icon-friendica-fill';
+import IconFriendicaLine from './icon-friendica-line';
 import IconGatsbyFill from './icon-gatsby-fill';
 import IconGatsbyLine from './icon-gatsby-line';
 import IconGithubFill from './icon-github-fill';
@@ -1477,6 +1630,8 @@ import IconInstagramFill from './icon-instagram-fill';
 import IconInstagramLine from './icon-instagram-line';
 import IconInvisionFill from './icon-invision-fill';
 import IconInvisionLine from './icon-invision-line';
+import IconJavaFill from './icon-java-fill';
+import IconJavaLine from './icon-java-line';
 import IconKakaoTalkFill from './icon-kakao-talk-fill';
 import IconKakaoTalkLine from './icon-kakao-talk-line';
 import IconKickFill from './icon-kick-fill';
@@ -1507,6 +1662,10 @@ import IconNeteaseCloudMusicFill from './icon-netease-cloud-music-fill';
 import IconNeteaseCloudMusicLine from './icon-netease-cloud-music-line';
 import IconNetflixFill from './icon-netflix-fill';
 import IconNetflixLine from './icon-netflix-line';
+import IconNextjsFill from './icon-nextjs-fill';
+import IconNextjsLine from './icon-nextjs-line';
+import IconNodejsFill from './icon-nodejs-fill';
+import IconNodejsLine from './icon-nodejs-line';
 import IconNotionFill from './icon-notion-fill';
 import IconNotionLine from './icon-notion-line';
 import IconNpmjsFill from './icon-npmjs-fill';
@@ -1537,6 +1696,8 @@ import IconReactjsFill from './icon-reactjs-fill';
 import IconReactjsLine from './icon-reactjs-line';
 import IconRedditFill from './icon-reddit-fill';
 import IconRedditLine from './icon-reddit-line';
+import IconRemixRunFill from './icon-remix-run-fill';
+import IconRemixRunLine from './icon-remix-run-line';
 import IconRemixiconFill from './icon-remixicon-fill';
 import IconRemixiconLine from './icon-remixicon-line';
 import IconSafariFill from './icon-safari-fill';
@@ -1565,6 +1726,8 @@ import IconSvelteFill from './icon-svelte-fill';
 import IconSvelteLine from './icon-svelte-line';
 import IconSwitchFill from './icon-switch-fill';
 import IconSwitchLine from './icon-switch-line';
+import IconTailwindCssFill from './icon-tailwind-css-fill';
+import IconTailwindCssLine from './icon-tailwind-css-line';
 import IconTaobaoFill from './icon-taobao-fill';
 import IconTaobaoLine from './icon-taobao-line';
 import IconTelegramFill from './icon-telegram-fill';
@@ -1595,6 +1758,8 @@ import IconVkFill from './icon-vk-fill';
 import IconVkLine from './icon-vk-line';
 import IconVuejsFill from './icon-vuejs-fill';
 import IconVuejsLine from './icon-vuejs-line';
+import IconWebhookFill from './icon-webhook-fill';
+import IconWebhookLine from './icon-webhook-line';
 import IconWechat2Fill from './icon-wechat-2-fill';
 import IconWechat2Line from './icon-wechat-2-line';
 import IconWechatChannelsFill from './icon-wechat-channels-fill';
@@ -1753,6 +1918,8 @@ import IconShipFill from './icon-ship-fill';
 import IconShipLine from './icon-ship-line';
 import IconSignalTowerFill from './icon-signal-tower-fill';
 import IconSignalTowerLine from './icon-signal-tower-line';
+import IconSignpostFill from './icon-signpost-fill';
+import IconSignpostLine from './icon-signpost-line';
 import IconSpaceShipFill from './icon-space-ship-fill';
 import IconSpaceShipLine from './icon-space-ship-line';
 import IconSteering2Fill from './icon-steering-2-fill';
@@ -1775,6 +1942,8 @@ import IconTaxiFill from './icon-taxi-fill';
 import IconTaxiLine from './icon-taxi-line';
 import IconTaxiWifiFill from './icon-taxi-wifi-fill';
 import IconTaxiWifiLine from './icon-taxi-wifi-line';
+import IconTimeZoneFill from './icon-time-zone-fill';
+import IconTimeZoneLine from './icon-time-zone-line';
 import IconTrafficLightFill from './icon-traffic-light-fill';
 import IconTrafficLightLine from './icon-traffic-light-line';
 import IconTrainFill from './icon-train-fill';
@@ -1837,6 +2006,10 @@ import IconForward30Fill from './icon-forward-30-fill';
 import IconForward30Line from './icon-forward-30-line';
 import IconForward5Fill from './icon-forward-5-fill';
 import IconForward5Line from './icon-forward-5-line';
+import IconForwardEndFill from './icon-forward-end-fill';
+import IconForwardEndLine from './icon-forward-end-line';
+import IconForwardEndMiniFill from './icon-forward-end-mini-fill';
+import IconForwardEndMiniLine from './icon-forward-end-mini-line';
 import IconFullscreenExitFill from './icon-fullscreen-exit-fill';
 import IconFullscreenExitLine from './icon-fullscreen-exit-line';
 import IconFullscreenFill from './icon-fullscreen-fill';
@@ -1898,6 +2071,8 @@ import IconOrderPlayLine from './icon-order-play-line';
 import IconPauseCircleFill from './icon-pause-circle-fill';
 import IconPauseCircleLine from './icon-pause-circle-line';
 import IconPauseFill from './icon-pause-fill';
+import IconPauseLargeFill from './icon-pause-large-fill';
+import IconPauseLargeLine from './icon-pause-large-line';
 import IconPauseLine from './icon-pause-line';
 import IconPauseMiniFill from './icon-pause-mini-fill';
 import IconPauseMiniLine from './icon-pause-mini-line';
@@ -1912,6 +2087,8 @@ import IconPictureInPictureLine from './icon-picture-in-picture-line';
 import IconPlayCircleFill from './icon-play-circle-fill';
 import IconPlayCircleLine from './icon-play-circle-line';
 import IconPlayFill from './icon-play-fill';
+import IconPlayLargeFill from './icon-play-large-fill';
+import IconPlayLargeLine from './icon-play-large-line';
 import IconPlayLine from './icon-play-line';
 import IconPlayList2Fill from './icon-play-list-2-fill';
 import IconPlayList2Line from './icon-play-list-2-line';
@@ -1921,6 +2098,12 @@ import IconPlayListFill from './icon-play-list-fill';
 import IconPlayListLine from './icon-play-list-line';
 import IconPlayMiniFill from './icon-play-mini-fill';
 import IconPlayMiniLine from './icon-play-mini-line';
+import IconPlayReverseFill from './icon-play-reverse-fill';
+import IconPlayReverseLargeFill from './icon-play-reverse-large-fill';
+import IconPlayReverseLargeLine from './icon-play-reverse-large-line';
+import IconPlayReverseLine from './icon-play-reverse-line';
+import IconPlayReverseMiniFill from './icon-play-reverse-mini-fill';
+import IconPlayReverseMiniLine from './icon-play-reverse-mini-line';
 import IconPolaroid2Fill from './icon-polaroid-2-fill';
 import IconPolaroid2Line from './icon-polaroid-2-line';
 import IconPolaroidFill from './icon-polaroid-fill';
@@ -1949,6 +2132,10 @@ import IconRewindFill from './icon-rewind-fill';
 import IconRewindLine from './icon-rewind-line';
 import IconRewindMiniFill from './icon-rewind-mini-fill';
 import IconRewindMiniLine from './icon-rewind-mini-line';
+import IconRewindStartFill from './icon-rewind-start-fill';
+import IconRewindStartLine from './icon-rewind-start-line';
+import IconRewindStartMiniFill from './icon-rewind-start-mini-fill';
+import IconRewindStartMiniLine from './icon-rewind-start-mini-line';
 import IconRhythmFill from './icon-rhythm-fill';
 import IconRhythmLine from './icon-rhythm-line';
 import IconShuffleFill from './icon-shuffle-fill';
@@ -1980,6 +2167,8 @@ import IconSpeedUpLine from './icon-speed-up-line';
 import IconStopCircleFill from './icon-stop-circle-fill';
 import IconStopCircleLine from './icon-stop-circle-line';
 import IconStopFill from './icon-stop-fill';
+import IconStopLargeFill from './icon-stop-large-fill';
+import IconStopLargeLine from './icon-stop-large-line';
 import IconStopLine from './icon-stop-line';
 import IconStopMiniFill from './icon-stop-mini-fill';
 import IconStopMiniLine from './icon-stop-mini-line';
@@ -1993,6 +2182,10 @@ import IconVideoDownloadFill from './icon-video-download-fill';
 import IconVideoDownloadLine from './icon-video-download-line';
 import IconVideoFill from './icon-video-fill';
 import IconVideoLine from './icon-video-line';
+import IconVideoOffFill from './icon-video-off-fill';
+import IconVideoOffLine from './icon-video-off-line';
+import IconVideoOnFill from './icon-video-on-fill';
+import IconVideoOnLine from './icon-video-on-line';
 import IconVideoUploadFill from './icon-video-upload-fill';
 import IconVideoUploadLine from './icon-video-upload-line';
 import IconVidicon2Fill from './icon-vidicon-2-fill';
@@ -2075,6 +2268,8 @@ import IconGlassesFill from './icon-glasses-fill';
 import IconGlassesLine from './icon-glasses-line';
 import IconGogglesFill from './icon-goggles-fill';
 import IconGogglesLine from './icon-goggles-line';
+import IconGolfBallFill from './icon-golf-ball-fill';
+import IconGolfBallLine from './icon-golf-ball-line';
 import IconGraduationCapFill from './icon-graduation-cap-fill';
 import IconGraduationCapLine from './icon-graduation-cap-line';
 import IconHandbagFill from './icon-handbag-fill';
@@ -2103,6 +2298,8 @@ import IconPlug2Fill from './icon-plug-2-fill';
 import IconPlug2Line from './icon-plug-2-line';
 import IconPlugFill from './icon-plug-fill';
 import IconPlugLine from './icon-plug-line';
+import IconPoliceBadgeFill from './icon-police-badge-fill';
+import IconPoliceBadgeLine from './icon-police-badge-line';
 import IconRecycleFill from './icon-recycle-fill';
 import IconRecycleLine from './icon-recycle-line';
 import IconReservedFill from './icon-reserved-fill';
@@ -2127,12 +2324,16 @@ import IconTShirtAirFill from './icon-t-shirt-air-fill';
 import IconTShirtAirLine from './icon-t-shirt-air-line';
 import IconTShirtFill from './icon-t-shirt-fill';
 import IconTShirtLine from './icon-t-shirt-line';
+import IconToothFill from './icon-tooth-fill';
+import IconToothLine from './icon-tooth-line';
 import IconTreeFill from './icon-tree-fill';
 import IconTreeLine from './icon-tree-line';
 import IconUmbrellaFill from './icon-umbrella-fill';
 import IconUmbrellaLine from './icon-umbrella-line';
 import IconVoiceRecognitionFill from './icon-voice-recognition-fill';
 import IconVoiceRecognitionLine from './icon-voice-recognition-line';
+import IconWeightFill from './icon-weight-fill';
+import IconWeightLine from './icon-weight-line';
 import IconWheelchairFill from './icon-wheelchair-fill';
 import IconWheelchairLine from './icon-wheelchair-line';
 import IconAddBoxFill from './icon-add-box-fill';
@@ -2140,6 +2341,8 @@ import IconAddBoxLine from './icon-add-box-line';
 import IconAddCircleFill from './icon-add-circle-fill';
 import IconAddCircleLine from './icon-add-circle-line';
 import IconAddFill from './icon-add-fill';
+import IconAddLargeFill from './icon-add-large-fill';
+import IconAddLargeLine from './icon-add-large-line';
 import IconAddLine from './icon-add-line';
 import IconAlarmFill from './icon-alarm-fill';
 import IconAlarmLine from './icon-alarm-line';
@@ -2147,6 +2350,8 @@ import IconAlarmWarningFill from './icon-alarm-warning-fill';
 import IconAlarmWarningLine from './icon-alarm-warning-line';
 import IconAlertFill from './icon-alert-fill';
 import IconAlertLine from './icon-alert-line';
+import IconApps2AddFill from './icon-apps-2-add-fill';
+import IconApps2AddLine from './icon-apps-2-add-line';
 import IconApps2Fill from './icon-apps-2-fill';
 import IconApps2Line from './icon-apps-2-line';
 import IconAppsFill from './icon-apps-fill';
@@ -2172,8 +2377,12 @@ import IconCheckboxMultipleLine from './icon-checkbox-multiple-line';
 import IconCloseCircleFill from './icon-close-circle-fill';
 import IconCloseCircleLine from './icon-close-circle-line';
 import IconCloseFill from './icon-close-fill';
+import IconCloseLargeFill from './icon-close-large-fill';
+import IconCloseLargeLine from './icon-close-large-line';
 import IconCloseLine from './icon-close-line';
 import IconDashboardFill from './icon-dashboard-fill';
+import IconDashboardHorizontalFill from './icon-dashboard-horizontal-fill';
+import IconDashboardHorizontalLine from './icon-dashboard-horizontal-line';
 import IconDashboardLine from './icon-dashboard-line';
 import IconDeleteBack2Fill from './icon-delete-back-2-fill';
 import IconDeleteBack2Line from './icon-delete-back-2-line';
@@ -2207,6 +2416,8 @@ import IconEqualFill from './icon-equal-fill';
 import IconEqualLine from './icon-equal-line';
 import IconErrorWarningFill from './icon-error-warning-fill';
 import IconErrorWarningLine from './icon-error-warning-line';
+import IconExportFill from './icon-export-fill';
+import IconExportLine from './icon-export-line';
 import IconExternalLinkFill from './icon-external-link-fill';
 import IconExternalLinkLine from './icon-external-link-line';
 import IconEye2Fill from './icon-eye-2-fill';
@@ -2231,6 +2442,8 @@ import IconForbid2Fill from './icon-forbid-2-fill';
 import IconForbid2Line from './icon-forbid-2-line';
 import IconForbidFill from './icon-forbid-fill';
 import IconForbidLine from './icon-forbid-line';
+import IconFunctionAddFill from './icon-function-add-fill';
+import IconFunctionAddLine from './icon-function-add-line';
 import IconFunctionFill from './icon-function-fill';
 import IconFunctionLine from './icon-function-line';
 import IconHistoryFill from './icon-history-fill';
@@ -2239,10 +2452,16 @@ import IconHourglass2Fill from './icon-hourglass-2-fill';
 import IconHourglass2Line from './icon-hourglass-2-line';
 import IconHourglassFill from './icon-hourglass-fill';
 import IconHourglassLine from './icon-hourglass-line';
+import IconImportFill from './icon-import-fill';
+import IconImportLine from './icon-import-line';
 import IconIndeterminateCircleFill from './icon-indeterminate-circle-fill';
 import IconIndeterminateCircleLine from './icon-indeterminate-circle-line';
+import IconInformation2Fill from './icon-information-2-fill';
+import IconInformation2Line from './icon-information-2-line';
 import IconInformationFill from './icon-information-fill';
 import IconInformationLine from './icon-information-line';
+import IconInformationOffFill from './icon-information-off-fill';
+import IconInformationOffLine from './icon-information-off-line';
 import IconListSettingsFill from './icon-list-settings-fill';
 import IconListSettingsLine from './icon-list-settings-line';
 import IconLoader2Fill from './icon-loader-2-fill';
@@ -2261,6 +2480,8 @@ import IconLockFill from './icon-lock-fill';
 import IconLockLine from './icon-lock-line';
 import IconLockPasswordFill from './icon-lock-password-fill';
 import IconLockPasswordLine from './icon-lock-password-line';
+import IconLockStarFill from './icon-lock-star-fill';
+import IconLockStarLine from './icon-lock-star-line';
 import IconLockUnlockFill from './icon-lock-unlock-fill';
 import IconLockUnlockLine from './icon-lock-unlock-line';
 import IconLoginBoxFill from './icon-login-box-fill';
@@ -2290,11 +2511,26 @@ import IconMenu5Line from './icon-menu-5-line';
 import IconMenuAddFill from './icon-menu-add-fill';
 import IconMenuAddLine from './icon-menu-add-line';
 import IconMenuFill from './icon-menu-fill';
+import IconMenuFold2Fill from './icon-menu-fold-2-fill';
+import IconMenuFold2Line from './icon-menu-fold-2-line';
+import IconMenuFold3Fill from './icon-menu-fold-3-fill';
+import IconMenuFold3Line2 from './icon-menu-fold-3-line-2';
+import IconMenuFold3Line from './icon-menu-fold-3-line';
+import IconMenuFold4Fill from './icon-menu-fold-4-fill';
+import IconMenuFold4Line from './icon-menu-fold-4-line';
 import IconMenuFoldFill from './icon-menu-fold-fill';
 import IconMenuFoldLine from './icon-menu-fold-line';
 import IconMenuLine from './icon-menu-line';
 import IconMenuSearchFill from './icon-menu-search-fill';
 import IconMenuSearchLine from './icon-menu-search-line';
+import IconMenuUnfold2Fill from './icon-menu-unfold-2-fill';
+import IconMenuUnfold2Line from './icon-menu-unfold-2-line';
+import IconMenuUnfold3Fill from './icon-menu-unfold-3-fill';
+import IconMenuUnfold3Line2 from './icon-menu-unfold-3-line-2';
+import IconMenuUnfold3Line from './icon-menu-unfold-3-line';
+import IconMenuUnfold4Fill from './icon-menu-unfold-4-fill';
+import IconMenuUnfold4Line2 from './icon-menu-unfold-4-line-2';
+import IconMenuUnfold4Line from './icon-menu-unfold-4-line';
 import IconMenuUnfoldFill from './icon-menu-unfold-fill';
 import IconMenuUnfoldLine from './icon-menu-unfold-line';
 import IconMore2Fill from './icon-more-2-fill';
@@ -2303,6 +2539,24 @@ import IconMoreFill from './icon-more-fill';
 import IconMoreLine from './icon-more-line';
 import IconNotificationBadgeFill from './icon-notification-badge-fill';
 import IconNotificationBadgeLine from './icon-notification-badge-line';
+import IconProgress1Fill from './icon-progress-1-fill';
+import IconProgress1Line from './icon-progress-1-line';
+import IconProgress2Fill from './icon-progress-2-fill';
+import IconProgress2Line from './icon-progress-2-line';
+import IconProgress3Fill from './icon-progress-3-fill';
+import IconProgress3Line from './icon-progress-3-line';
+import IconProgress4Fill from './icon-progress-4-fill';
+import IconProgress4Line from './icon-progress-4-line';
+import IconProgress5Fill from './icon-progress-5-fill';
+import IconProgress5Line from './icon-progress-5-line';
+import IconProgress6Fill from './icon-progress-6-fill';
+import IconProgress6Line from './icon-progress-6-line';
+import IconProgress7Fill from './icon-progress-7-fill';
+import IconProgress7Line from './icon-progress-7-line';
+import IconProgress8Fill from './icon-progress-8-fill';
+import IconProgress8Line from './icon-progress-8-line';
+import IconProhibited2Fill from './icon-prohibited-2-fill';
+import IconProhibited2Line from './icon-prohibited-2-line';
 import IconProhibitedFill from './icon-prohibited-fill';
 import IconProhibitedLine from './icon-prohibited-line';
 import IconQuestionFill from './icon-question-fill';
@@ -2359,6 +2613,10 @@ import IconShieldUserFill from './icon-shield-user-fill';
 import IconShieldUserLine from './icon-shield-user-line';
 import IconSideBarFill from './icon-side-bar-fill';
 import IconSideBarLine from './icon-side-bar-line';
+import IconSidebarFoldFill from './icon-sidebar-fold-fill';
+import IconSidebarFoldLine from './icon-sidebar-fold-line';
+import IconSidebarUnfoldFill from './icon-sidebar-unfold-fill';
+import IconSidebarUnfoldLine from './icon-sidebar-unfold-line';
 import IconSpam2Fill from './icon-spam-2-fill';
 import IconSpam2Line from './icon-spam-2-line';
 import IconSpam3Fill from './icon-spam-3-fill';
@@ -2445,6 +2703,8 @@ import IconGhostSmileFill from './icon-ghost-smile-fill';
 import IconGhostSmileLine from './icon-ghost-smile-line';
 import IconGroup2Fill from './icon-group-2-fill';
 import IconGroup2Line from './icon-group-2-line';
+import IconGroup3Fill from './icon-group-3-fill';
+import IconGroup3Line from './icon-group-3-line';
 import IconGroupFill from './icon-group-fill';
 import IconGroupLine from './icon-group-line';
 import IconMenFill from './icon-men-fill';
@@ -2571,6 +2831,8 @@ import IconShiningFill from './icon-shining-fill';
 import IconShiningLine from './icon-shining-line';
 import IconShowersFill from './icon-showers-fill';
 import IconShowersLine from './icon-showers-line';
+import IconSnowflakeFill from './icon-snowflake-fill';
+import IconSnowflakeLine from './icon-snowflake-line';
 import IconSnowyFill from './icon-snowy-fill';
 import IconSnowyLine from './icon-snowy-line';
 import IconSparkling2Fill from './icon-sparkling-2-fill';
@@ -2599,6 +2861,7 @@ import IconWindyFill from './icon-windy-fill';
 import IconWindyLine from './icon-windy-line';
 
 const icons: Record<string, Plugin> = {
+  IconArrowDownCircleFill2,
   IconArrowDownCircleFill,
   IconArrowDownCircleLine,
   IconArrowDownDoubleFill,
@@ -2607,6 +2870,8 @@ const icons: Record<string, Plugin> = {
   IconArrowDownLine,
   IconArrowDownSFill,
   IconArrowDownSLine,
+  IconArrowDownWideFill,
+  IconArrowDownWideLine,
   IconArrowDropDownFill,
   IconArrowDropDownLine,
   IconArrowDropLeftFill,
@@ -2633,6 +2898,8 @@ const icons: Record<string, Plugin> = {
   IconArrowLeftSLine,
   IconArrowLeftUpFill,
   IconArrowLeftUpLine,
+  IconArrowLeftWideFill,
+  IconArrowLeftWideLine,
   IconArrowRightCircleFill,
   IconArrowRightCircleLine,
   IconArrowRightDoubleFill,
@@ -2645,6 +2912,8 @@ const icons: Record<string, Plugin> = {
   IconArrowRightSLine,
   IconArrowRightUpFill,
   IconArrowRightUpLine,
+  IconArrowRightWideFill,
+  IconArrowRightWideLine,
   IconArrowTurnBackFill,
   IconArrowTurnBackLine,
   IconArrowTurnForwardFill,
@@ -2659,6 +2928,12 @@ const icons: Record<string, Plugin> = {
   IconArrowUpLine,
   IconArrowUpSFill,
   IconArrowUpSLine,
+  IconArrowUpWideFill,
+  IconArrowUpWideLine,
+  IconCollapseDiagonal2Fill,
+  IconCollapseDiagonal2Line,
+  IconCollapseDiagonalFill,
+  IconCollapseDiagonalLine,
   IconContractLeftFill,
   IconContractLeftLine,
   IconContractLeftRightFill,
@@ -2691,6 +2966,12 @@ const icons: Record<string, Plugin> = {
   IconDragMove2Line,
   IconDragMoveFill,
   IconDragMoveLine,
+  IconExpandDiagonal2Fill,
+  IconExpandDiagonal2Line,
+  IconExpandDiagonalFill,
+  IconExpandDiagonalLine,
+  IconExpandHeightFill,
+  IconExpandHeightLine,
   IconExpandLeftFill,
   IconExpandLeftLine,
   IconExpandLeftRightFill,
@@ -2699,6 +2980,10 @@ const icons: Record<string, Plugin> = {
   IconExpandRightLine,
   IconExpandUpDownFill,
   IconExpandUpDownLine,
+  IconExpandWidthFill,
+  IconExpandWidthLine,
+  IconScrollToBottomFill,
+  IconScrollToBottomLine,
   IconSkipDownFill,
   IconSkipDownLine,
   IconSkipLeftFill,
@@ -2775,6 +3060,8 @@ const icons: Record<string, Plugin> = {
   IconArchiveDrawerLine,
   IconArchiveFill,
   IconArchiveLine,
+  IconArchiveStackFill,
+  IconArchiveStackLine,
   IconAtFill,
   IconAtLine,
   IconAttachmentFill,
@@ -2859,6 +3146,8 @@ const icons: Record<string, Plugin> = {
   IconGlobalLine,
   IconHonourFill,
   IconHonourLine,
+  IconIdCardFill,
+  IconIdCardLine,
   IconInbox2Fill,
   IconInbox2Line,
   IconInboxArchiveFill,
@@ -2963,6 +3252,7 @@ const icons: Record<string, Plugin> = {
   IconWindow2Line,
   IconWindowFill,
   IconWindowLine,
+  IconChat1Fill2,
   IconChat1Fill,
   IconChat1Line,
   IconChat2Fill,
@@ -3003,6 +3293,8 @@ const icons: Record<string, Plugin> = {
   IconChatSmile3Line,
   IconChatSmileFill,
   IconChatSmileLine,
+  IconChatThreadFill,
+  IconChatThreadLine,
   IconChatUploadFill,
   IconChatUploadLine,
   IconChatVoiceFill,
@@ -3027,6 +3319,18 @@ const icons: Record<string, Plugin> = {
   IconSpeakLine,
   IconVideoChatFill,
   IconVideoChatLine,
+  IconAlignItemBottomFill,
+  IconAlignItemBottomLine,
+  IconAlignItemHorizontalCenterFill,
+  IconAlignItemHorizontalCenterLine,
+  IconAlignItemLeftFill,
+  IconAlignItemLeftLine,
+  IconAlignItemRightFill,
+  IconAlignItemRightLine,
+  IconAlignItemTopFill,
+  IconAlignItemTopLine,
+  IconAlignItemVerticalCenterFill,
+  IconAlignItemVerticalCenterLine,
   IconAnticlockwise2Fill,
   IconAnticlockwise2Line,
   IconAnticlockwiseFill,
@@ -3055,6 +3359,8 @@ const icons: Record<string, Plugin> = {
   IconClockwiseLine,
   IconCollageFill,
   IconCollageLine,
+  IconColorFilterFill,
+  IconColorFilterLine,
   IconCompasses2Fill,
   IconCompasses2Line,
   IconCompassesFill,
@@ -3089,6 +3395,14 @@ const icons: Record<string, Plugin> = {
   IconEditLine,
   IconEraserFill,
   IconEraserLine,
+  IconFlipHorizontal2Fill,
+  IconFlipHorizontal2Line,
+  IconFlipHorizontalFill,
+  IconFlipHorizontalLine,
+  IconFlipVertical2Fill,
+  IconFlipVertical2Line,
+  IconFlipVerticalFill,
+  IconFlipVerticalLine,
   IconFocus2Fill,
   IconFocus2Line,
   IconFocus3Fill,
@@ -3122,8 +3436,12 @@ const icons: Record<string, Plugin> = {
   IconLayoutColumnFill,
   IconLayoutColumnLine,
   IconLayoutFill,
+  IconLayoutGrid2Fill,
+  IconLayoutGrid2Line,
   IconLayoutGridFill,
   IconLayoutGridLine,
+  IconLayoutHorizontalFill,
+  IconLayoutHorizontalLine,
   IconLayoutLeft2Fill,
   IconLayoutLeft2Line,
   IconLayoutLeftFill,
@@ -3141,6 +3459,8 @@ const icons: Record<string, Plugin> = {
   IconLayoutTop2Line,
   IconLayoutTopFill,
   IconLayoutTopLine,
+  IconLayoutVerticalFill,
+  IconLayoutVerticalLine,
   IconMagicFill,
   IconMagicLine,
   IconMarkPenFill,
@@ -3185,6 +3505,8 @@ const icons: Record<string, Plugin> = {
   IconScreenshot2Line,
   IconScreenshotFill,
   IconScreenshotLine,
+  IconShadowFill,
+  IconShadowLine,
   IconShape2Fill,
   IconShape2Line,
   IconShapeFill,
@@ -3235,8 +3557,12 @@ const icons: Record<string, Plugin> = {
   IconGitClosePullRequestLine,
   IconGitCommitFill,
   IconGitCommitLine,
+  IconGitForkFill,
+  IconGitForkLine,
   IconGitMergeFill,
   IconGitMergeLine,
+  IconGitPrDraftFill,
+  IconGitPrDraftLine,
   IconGitPullRequestFill,
   IconGitPullRequestLine,
   IconGitRepositoryCommitsFill,
@@ -3251,6 +3577,10 @@ const icons: Record<string, Plugin> = {
   IconJavascriptLine,
   IconParenthesesFill,
   IconParenthesesLine,
+  IconPuzzle2Fill,
+  IconPuzzle2Line,
+  IconPuzzleFill,
+  IconPuzzleLine,
   IconTerminalBoxFill,
   IconTerminalBoxLine,
   IconTerminalFill,
@@ -3273,6 +3603,7 @@ const icons: Record<string, Plugin> = {
   IconBatteryChargeLine,
   IconBatteryFill,
   IconBatteryLine,
+  IconBatteryLowFill2,
   IconBatteryLowFill,
   IconBatteryLowLine,
   IconBatterySaverFill,
@@ -3317,6 +3648,7 @@ const icons: Record<string, Plugin> = {
   IconGpsLine,
   IconGradienterFill,
   IconGradienterLine,
+  IconHardDrive2Fill2,
   IconHardDrive2Fill,
   IconHardDrive2Line,
   IconHardDrive3Fill,
@@ -3337,6 +3669,8 @@ const icons: Record<string, Plugin> = {
   IconMacLine,
   IconMacbookFill,
   IconMacbookLine,
+  IconMobileDownloadFill,
+  IconMobileDownloadLine,
   IconMouseFill,
   IconMouseLine,
   IconPhoneFill,
@@ -3353,6 +3687,10 @@ const icons: Record<string, Plugin> = {
   IconQrScanLine,
   IconRadarFill,
   IconRadarLine,
+  IconRam2Fill,
+  IconRam2Line,
+  IconRamFill,
+  IconRamLine,
   IconRemoteControl2Fill,
   IconRemoteControl2Line,
   IconRemoteControlFill,
@@ -3433,8 +3771,8 @@ const icons: Record<string, Plugin> = {
   IconBook3Line,
   IconBookFill,
   IconBookLine,
-  IconBookMarkFill,
-  IconBookMarkLine,
+  IconBookMarkedFill,
+  IconBookMarkedLine,
   IconBookOpenFill,
   IconBookOpenLine,
   IconBookReadFill,
@@ -3445,13 +3783,18 @@ const icons: Record<string, Plugin> = {
   IconClipboardLine,
   IconContactsBook2Fill,
   IconContactsBook2Line,
+  IconContactsBook3Fill,
+  IconContactsBook3Line,
   IconContactsBookFill,
   IconContactsBookLine,
   IconContactsBookUploadFill,
   IconContactsBookUploadLine,
+  IconContractFill,
+  IconContractLine,
   IconDraftFill,
   IconDraftLine,
   IconFile2Fill,
+  IconFile2Line2,
   IconFile2Line,
   IconFile3Fill,
   IconFile3Line,
@@ -3463,6 +3806,8 @@ const icons: Record<string, Plugin> = {
   IconFileChart2Line,
   IconFileChartFill,
   IconFileChartLine,
+  IconFileCheckFill,
+  IconFileCheckLine,
   IconFileCloseFill,
   IconFileCloseLine,
   IconFileCloudFill,
@@ -3505,8 +3850,8 @@ const icons: Record<string, Plugin> = {
   IconFileListLine,
   IconFileLockFill,
   IconFileLockLine,
-  IconFileMarkFill,
-  IconFileMarkLine,
+  IconFileMarkedFill,
+  IconFileMarkedLine,
   IconFileMusicFill,
   IconFileMusicLine,
   IconFilePaper2Fill,
@@ -3561,12 +3906,20 @@ const icons: Record<string, Plugin> = {
   IconFolder4Line,
   IconFolder5Fill,
   IconFolder5Line,
+  IconFolder6Fill,
+  IconFolder6Line,
   IconFolderAddFill,
   IconFolderAddLine,
   IconFolderChart2Fill,
   IconFolderChart2Line,
   IconFolderChartFill,
   IconFolderChartLine,
+  IconFolderCheckFill,
+  IconFolderCheckLine,
+  IconFolderCloseFill,
+  IconFolderCloseLine,
+  IconFolderCloudFill,
+  IconFolderCloudLine,
   IconFolderDownloadFill,
   IconFolderDownloadLine,
   IconFolderFill,
@@ -3627,8 +3980,13 @@ const icons: Record<string, Plugin> = {
   IconNumbersLine,
   IconPagesFill,
   IconPagesLine,
+  IconReceiptFill,
+  IconReceiptLine,
+  IconStickyNote2Fill2,
   IconStickyNote2Fill,
   IconStickyNote2Line,
+  IconStickyNoteAddFill,
+  IconStickyNoteAddLine,
   IconStickyNoteFill,
   IconStickyNoteLine,
   IconSurveyFill,
@@ -3651,6 +4009,9 @@ const icons: Record<string, Plugin> = {
   IconBold,
   IconBringForward,
   IconBringToFront,
+  IconCalendarView,
+  IconCarouselView,
+  IconCodeBlock,
   IconCodeView,
   IconDeleteColumn,
   IconDeleteRow,
@@ -3662,6 +4023,7 @@ const icons: Record<string, Plugin> = {
   IconEmphasis,
   IconEnglishInput,
   IconFlowChart,
+  IconFocusMode,
   IconFontColor,
   IconFontFamily,
   IconFontMono,
@@ -3670,24 +4032,32 @@ const icons: Record<string, Plugin> = {
   IconFontSize2,
   IconFontSize,
   IconFormatClear,
+  IconFormula,
   IconFunctions,
+  IconGalleryView2,
+  IconGalleryView,
   IconH1,
   IconH2,
   IconH3,
   IconH4,
   IconH5,
   IconH6,
+  IconHand,
   IconHashtag,
+  IconHeading2,
   IconHeading,
   IconIndentDecrease,
   IconIndentIncrease,
   IconInfoI,
   IconInputCursorMove,
+  IconInputField,
   IconInsertColumnLeft,
   IconInsertColumnRight,
   IconInsertRowBottom,
   IconInsertRowTop,
   IconItalic,
+  IconKanbanView2,
+  IconKanbanView,
   IconLineHeight,
   IconLinkM,
   IconLinkUnlinkM,
@@ -3701,6 +4071,7 @@ const icons: Record<string, Plugin> = {
   IconListOrdered,
   IconListRadio,
   IconListUnordered,
+  IconListView,
   IconMergeCellsHorizontal,
   IconMergeCellsVertical,
   IconMindMap,
@@ -3732,11 +4103,18 @@ const icons: Record<string, Plugin> = {
   IconSketching,
   IconSlashCommands2,
   IconSlashCommands,
+  IconSlideshowView,
+  IconSortAlphabetAsc,
+  IconSortAlphabetDesc,
   IconSortAsc,
   IconSortDesc,
+  IconSortNumberAsc,
+  IconSortNumberDesc,
   IconSpace,
   IconSplitCellsHorizontal,
   IconSplitCellsVertical,
+  IconSquareRoot,
+  IconStackedView,
   IconStrikethrough2,
   IconStrikethrough,
   IconSubscript2,
@@ -3744,11 +4122,16 @@ const icons: Record<string, Plugin> = {
   IconSuperscript2,
   IconSuperscript,
   IconTable2,
+  IconTable3,
+  IconTableView,
+  IconTextBlock,
   IconTextDirectionL,
   IconTextDirectionR,
+  IconTextSnippet,
   IconTextSpacing,
   IconTextWrap,
   IconText,
+  IconTimelineView,
   IconTranslate2,
   IconTranslate,
   IconUnderline,
@@ -3789,8 +4172,12 @@ const icons: Record<string, Plugin> = {
   IconCouponLine,
   IconCurrencyFill,
   IconCurrencyLine,
+  IconDiscountPercentFill,
+  IconDiscountPercentLine,
   IconEthFill,
   IconEthLine,
+  IconExchange2Fill,
+  IconExchange2Line,
   IconExchangeBoxFill,
   IconExchangeBoxLine,
   IconExchangeCnyFill,
@@ -3861,6 +4248,8 @@ const icons: Record<string, Plugin> = {
   IconShoppingBag2Line,
   IconShoppingBag3Fill,
   IconShoppingBag3Line,
+  IconShoppingBag4Fill,
+  IconShoppingBag4Line,
   IconShoppingBagFill,
   IconShoppingBagLine,
   IconShoppingBasket2Fill,
@@ -3873,6 +4262,10 @@ const icons: Record<string, Plugin> = {
   IconShoppingCartLine,
   IconStockFill,
   IconStockLine,
+  IconSwap2Fill,
+  IconSwap2Line,
+  IconSwap3Fill,
+  IconSwap3Line,
   IconSwapBoxFill,
   IconSwapBoxLine,
   IconSwapFill,
@@ -3907,6 +4300,8 @@ const icons: Record<string, Plugin> = {
   IconXtzLine,
   IconBeerFill,
   IconBeerLine,
+  IconBowlFill,
+  IconBowlLine,
   IconBreadFill,
   IconBreadLine,
   IconCake2Fill,
@@ -3917,8 +4312,12 @@ const icons: Record<string, Plugin> = {
   IconCakeLine,
   IconCupFill,
   IconCupLine,
+  IconDrinks2Fill,
+  IconDrinks2Line,
   IconDrinksFill,
   IconDrinksLine,
+  IconGoblet2Fill,
+  IconGoblet2Line,
   IconGobletFill,
   IconGobletLine,
   IconKnifeBloodFill,
@@ -3929,6 +4328,10 @@ const icons: Record<string, Plugin> = {
   IconRestaurant2Line,
   IconRestaurantFill,
   IconRestaurantLine,
+  IconAedElectrodesFill,
+  IconAedElectrodesLine,
+  IconAedFill,
+  IconAedLine,
   IconBrainFill,
   IconBrainLine,
   IconCapsuleFill,
@@ -3951,6 +4354,8 @@ const icons: Record<string, Plugin> = {
   IconHeart2Line,
   IconHeart3Fill,
   IconHeart3Line,
+  IconHeartAdd2Fill,
+  IconHeartAdd2Line,
   IconHeartAddFill,
   IconHeartAddLine,
   IconHeartFill,
@@ -3991,6 +4396,8 @@ const icons: Record<string, Plugin> = {
   IconVirusLine,
   IconZzzFill,
   IconZzzLine,
+  IconAlibabaCloudFill,
+  IconAlibabaCloudLine,
   IconAlipayFill,
   IconAlipayLine,
   IconAmazonFill,
@@ -4013,6 +4420,10 @@ const icons: Record<string, Plugin> = {
   IconBilibiliLine,
   IconBlenderFill,
   IconBlenderLine,
+  IconBloggerFill,
+  IconBloggerLine,
+  IconBlueskyFill,
+  IconBlueskyLine,
   IconBootstrapFill,
   IconBootstrapLine,
   IconCentosFill,
@@ -4053,12 +4464,16 @@ const icons: Record<string, Plugin> = {
   IconFacebookLine,
   IconFinderFill,
   IconFinderLine,
+  IconFirebaseFill,
+  IconFirebaseLine,
   IconFirefoxFill,
   IconFirefoxLine,
   IconFlickrFill,
   IconFlickrLine,
   IconFlutterFill,
   IconFlutterLine,
+  IconFriendicaFill,
+  IconFriendicaLine,
   IconGatsbyFill,
   IconGatsbyLine,
   IconGithubFill,
@@ -4077,6 +4492,8 @@ const icons: Record<string, Plugin> = {
   IconInstagramLine,
   IconInvisionFill,
   IconInvisionLine,
+  IconJavaFill,
+  IconJavaLine,
   IconKakaoTalkFill,
   IconKakaoTalkLine,
   IconKickFill,
@@ -4107,6 +4524,10 @@ const icons: Record<string, Plugin> = {
   IconNeteaseCloudMusicLine,
   IconNetflixFill,
   IconNetflixLine,
+  IconNextjsFill,
+  IconNextjsLine,
+  IconNodejsFill,
+  IconNodejsLine,
   IconNotionFill,
   IconNotionLine,
   IconNpmjsFill,
@@ -4137,6 +4558,8 @@ const icons: Record<string, Plugin> = {
   IconReactjsLine,
   IconRedditFill,
   IconRedditLine,
+  IconRemixRunFill,
+  IconRemixRunLine,
   IconRemixiconFill,
   IconRemixiconLine,
   IconSafariFill,
@@ -4165,6 +4588,8 @@ const icons: Record<string, Plugin> = {
   IconSvelteLine,
   IconSwitchFill,
   IconSwitchLine,
+  IconTailwindCssFill,
+  IconTailwindCssLine,
   IconTaobaoFill,
   IconTaobaoLine,
   IconTelegramFill,
@@ -4195,6 +4620,8 @@ const icons: Record<string, Plugin> = {
   IconVkLine,
   IconVuejsFill,
   IconVuejsLine,
+  IconWebhookFill,
+  IconWebhookLine,
   IconWechat2Fill,
   IconWechat2Line,
   IconWechatChannelsFill,
@@ -4353,6 +4780,8 @@ const icons: Record<string, Plugin> = {
   IconShipLine,
   IconSignalTowerFill,
   IconSignalTowerLine,
+  IconSignpostFill,
+  IconSignpostLine,
   IconSpaceShipFill,
   IconSpaceShipLine,
   IconSteering2Fill,
@@ -4375,6 +4804,8 @@ const icons: Record<string, Plugin> = {
   IconTaxiLine,
   IconTaxiWifiFill,
   IconTaxiWifiLine,
+  IconTimeZoneFill,
+  IconTimeZoneLine,
   IconTrafficLightFill,
   IconTrafficLightLine,
   IconTrainFill,
@@ -4437,6 +4868,10 @@ const icons: Record<string, Plugin> = {
   IconForward30Line,
   IconForward5Fill,
   IconForward5Line,
+  IconForwardEndFill,
+  IconForwardEndLine,
+  IconForwardEndMiniFill,
+  IconForwardEndMiniLine,
   IconFullscreenExitFill,
   IconFullscreenExitLine,
   IconFullscreenFill,
@@ -4498,6 +4933,8 @@ const icons: Record<string, Plugin> = {
   IconPauseCircleFill,
   IconPauseCircleLine,
   IconPauseFill,
+  IconPauseLargeFill,
+  IconPauseLargeLine,
   IconPauseLine,
   IconPauseMiniFill,
   IconPauseMiniLine,
@@ -4512,6 +4949,8 @@ const icons: Record<string, Plugin> = {
   IconPlayCircleFill,
   IconPlayCircleLine,
   IconPlayFill,
+  IconPlayLargeFill,
+  IconPlayLargeLine,
   IconPlayLine,
   IconPlayList2Fill,
   IconPlayList2Line,
@@ -4521,6 +4960,12 @@ const icons: Record<string, Plugin> = {
   IconPlayListLine,
   IconPlayMiniFill,
   IconPlayMiniLine,
+  IconPlayReverseFill,
+  IconPlayReverseLargeFill,
+  IconPlayReverseLargeLine,
+  IconPlayReverseLine,
+  IconPlayReverseMiniFill,
+  IconPlayReverseMiniLine,
   IconPolaroid2Fill,
   IconPolaroid2Line,
   IconPolaroidFill,
@@ -4549,6 +4994,10 @@ const icons: Record<string, Plugin> = {
   IconRewindLine,
   IconRewindMiniFill,
   IconRewindMiniLine,
+  IconRewindStartFill,
+  IconRewindStartLine,
+  IconRewindStartMiniFill,
+  IconRewindStartMiniLine,
   IconRhythmFill,
   IconRhythmLine,
   IconShuffleFill,
@@ -4580,6 +5029,8 @@ const icons: Record<string, Plugin> = {
   IconStopCircleFill,
   IconStopCircleLine,
   IconStopFill,
+  IconStopLargeFill,
+  IconStopLargeLine,
   IconStopLine,
   IconStopMiniFill,
   IconStopMiniLine,
@@ -4593,6 +5044,10 @@ const icons: Record<string, Plugin> = {
   IconVideoDownloadLine,
   IconVideoFill,
   IconVideoLine,
+  IconVideoOffFill,
+  IconVideoOffLine,
+  IconVideoOnFill,
+  IconVideoOnLine,
   IconVideoUploadFill,
   IconVideoUploadLine,
   IconVidicon2Fill,
@@ -4675,6 +5130,8 @@ const icons: Record<string, Plugin> = {
   IconGlassesLine,
   IconGogglesFill,
   IconGogglesLine,
+  IconGolfBallFill,
+  IconGolfBallLine,
   IconGraduationCapFill,
   IconGraduationCapLine,
   IconHandbagFill,
@@ -4703,6 +5160,8 @@ const icons: Record<string, Plugin> = {
   IconPlug2Line,
   IconPlugFill,
   IconPlugLine,
+  IconPoliceBadgeFill,
+  IconPoliceBadgeLine,
   IconRecycleFill,
   IconRecycleLine,
   IconReservedFill,
@@ -4727,12 +5186,16 @@ const icons: Record<string, Plugin> = {
   IconTShirtAirLine,
   IconTShirtFill,
   IconTShirtLine,
+  IconToothFill,
+  IconToothLine,
   IconTreeFill,
   IconTreeLine,
   IconUmbrellaFill,
   IconUmbrellaLine,
   IconVoiceRecognitionFill,
   IconVoiceRecognitionLine,
+  IconWeightFill,
+  IconWeightLine,
   IconWheelchairFill,
   IconWheelchairLine,
   IconAddBoxFill,
@@ -4740,6 +5203,8 @@ const icons: Record<string, Plugin> = {
   IconAddCircleFill,
   IconAddCircleLine,
   IconAddFill,
+  IconAddLargeFill,
+  IconAddLargeLine,
   IconAddLine,
   IconAlarmFill,
   IconAlarmLine,
@@ -4747,6 +5212,8 @@ const icons: Record<string, Plugin> = {
   IconAlarmWarningLine,
   IconAlertFill,
   IconAlertLine,
+  IconApps2AddFill,
+  IconApps2AddLine,
   IconApps2Fill,
   IconApps2Line,
   IconAppsFill,
@@ -4772,8 +5239,12 @@ const icons: Record<string, Plugin> = {
   IconCloseCircleFill,
   IconCloseCircleLine,
   IconCloseFill,
+  IconCloseLargeFill,
+  IconCloseLargeLine,
   IconCloseLine,
   IconDashboardFill,
+  IconDashboardHorizontalFill,
+  IconDashboardHorizontalLine,
   IconDashboardLine,
   IconDeleteBack2Fill,
   IconDeleteBack2Line,
@@ -4807,6 +5278,8 @@ const icons: Record<string, Plugin> = {
   IconEqualLine,
   IconErrorWarningFill,
   IconErrorWarningLine,
+  IconExportFill,
+  IconExportLine,
   IconExternalLinkFill,
   IconExternalLinkLine,
   IconEye2Fill,
@@ -4831,6 +5304,8 @@ const icons: Record<string, Plugin> = {
   IconForbid2Line,
   IconForbidFill,
   IconForbidLine,
+  IconFunctionAddFill,
+  IconFunctionAddLine,
   IconFunctionFill,
   IconFunctionLine,
   IconHistoryFill,
@@ -4839,10 +5314,16 @@ const icons: Record<string, Plugin> = {
   IconHourglass2Line,
   IconHourglassFill,
   IconHourglassLine,
+  IconImportFill,
+  IconImportLine,
   IconIndeterminateCircleFill,
   IconIndeterminateCircleLine,
+  IconInformation2Fill,
+  IconInformation2Line,
   IconInformationFill,
   IconInformationLine,
+  IconInformationOffFill,
+  IconInformationOffLine,
   IconListSettingsFill,
   IconListSettingsLine,
   IconLoader2Fill,
@@ -4861,6 +5342,8 @@ const icons: Record<string, Plugin> = {
   IconLockLine,
   IconLockPasswordFill,
   IconLockPasswordLine,
+  IconLockStarFill,
+  IconLockStarLine,
   IconLockUnlockFill,
   IconLockUnlockLine,
   IconLoginBoxFill,
@@ -4890,11 +5373,26 @@ const icons: Record<string, Plugin> = {
   IconMenuAddFill,
   IconMenuAddLine,
   IconMenuFill,
+  IconMenuFold2Fill,
+  IconMenuFold2Line,
+  IconMenuFold3Fill,
+  IconMenuFold3Line2,
+  IconMenuFold3Line,
+  IconMenuFold4Fill,
+  IconMenuFold4Line,
   IconMenuFoldFill,
   IconMenuFoldLine,
   IconMenuLine,
   IconMenuSearchFill,
   IconMenuSearchLine,
+  IconMenuUnfold2Fill,
+  IconMenuUnfold2Line,
+  IconMenuUnfold3Fill,
+  IconMenuUnfold3Line2,
+  IconMenuUnfold3Line,
+  IconMenuUnfold4Fill,
+  IconMenuUnfold4Line2,
+  IconMenuUnfold4Line,
   IconMenuUnfoldFill,
   IconMenuUnfoldLine,
   IconMore2Fill,
@@ -4903,6 +5401,24 @@ const icons: Record<string, Plugin> = {
   IconMoreLine,
   IconNotificationBadgeFill,
   IconNotificationBadgeLine,
+  IconProgress1Fill,
+  IconProgress1Line,
+  IconProgress2Fill,
+  IconProgress2Line,
+  IconProgress3Fill,
+  IconProgress3Line,
+  IconProgress4Fill,
+  IconProgress4Line,
+  IconProgress5Fill,
+  IconProgress5Line,
+  IconProgress6Fill,
+  IconProgress6Line,
+  IconProgress7Fill,
+  IconProgress7Line,
+  IconProgress8Fill,
+  IconProgress8Line,
+  IconProhibited2Fill,
+  IconProhibited2Line,
   IconProhibitedFill,
   IconProhibitedLine,
   IconQuestionFill,
@@ -4959,6 +5475,10 @@ const icons: Record<string, Plugin> = {
   IconShieldUserLine,
   IconSideBarFill,
   IconSideBarLine,
+  IconSidebarFoldFill,
+  IconSidebarFoldLine,
+  IconSidebarUnfoldFill,
+  IconSidebarUnfoldLine,
   IconSpam2Fill,
   IconSpam2Line,
   IconSpam3Fill,
@@ -5045,6 +5565,8 @@ const icons: Record<string, Plugin> = {
   IconGhostSmileLine,
   IconGroup2Fill,
   IconGroup2Line,
+  IconGroup3Fill,
+  IconGroup3Line,
   IconGroupFill,
   IconGroupLine,
   IconMenFill,
@@ -5171,6 +5693,8 @@ const icons: Record<string, Plugin> = {
   IconShiningLine,
   IconShowersFill,
   IconShowersLine,
+  IconSnowflakeFill,
+  IconSnowflakeLine,
   IconSnowyFill,
   IconSnowyLine,
   IconSparkling2Fill,
@@ -5207,6 +5731,8 @@ const install = (app: App) => {
 
 const BpVueIcon = {
   ...icons,
+  iconType: ["Arrows","Buildings","Business","Communication","Design","Development","Device","Document","Editor","Finance","Food","Health & Medical","Logos","Map","Media","Others","System","User & Faces","Weather"],
+  iconInfo: [{"name":"Arrows","list":["arrow-down-circle-fill-2","arrow-down-circle-fill","arrow-down-circle-line","arrow-down-double-fill","arrow-down-double-line","arrow-down-fill","arrow-down-line","arrow-down-s-fill","arrow-down-s-line","arrow-down-wide-fill","arrow-down-wide-line","arrow-drop-down-fill","arrow-drop-down-line","arrow-drop-left-fill","arrow-drop-left-line","arrow-drop-right-fill","arrow-drop-right-line","arrow-drop-up-fill","arrow-drop-up-line","arrow-go-back-fill","arrow-go-back-line","arrow-go-forward-fill","arrow-go-forward-line","arrow-left-circle-fill","arrow-left-circle-line","arrow-left-double-fill","arrow-left-double-line","arrow-left-down-fill","arrow-left-down-line","arrow-left-fill","arrow-left-line","arrow-left-right-fill","arrow-left-right-line","arrow-left-s-fill","arrow-left-s-line","arrow-left-up-fill","arrow-left-up-line","arrow-left-wide-fill","arrow-left-wide-line","arrow-right-circle-fill","arrow-right-circle-line","arrow-right-double-fill","arrow-right-double-line","arrow-right-down-fill","arrow-right-down-line","arrow-right-fill","arrow-right-line","arrow-right-s-fill","arrow-right-s-line","arrow-right-up-fill","arrow-right-up-line","arrow-right-wide-fill","arrow-right-wide-line","arrow-turn-back-fill","arrow-turn-back-line","arrow-turn-forward-fill","arrow-turn-forward-line","arrow-up-circle-fill","arrow-up-circle-line","arrow-up-double-fill","arrow-up-double-line","arrow-up-down-fill","arrow-up-down-line","arrow-up-fill","arrow-up-line","arrow-up-s-fill","arrow-up-s-line","arrow-up-wide-fill","arrow-up-wide-line","collapse-diagonal-2-fill","collapse-diagonal-2-line","collapse-diagonal-fill","collapse-diagonal-line","contract-left-fill","contract-left-line","contract-left-right-fill","contract-left-right-line","contract-right-fill","contract-right-line","contract-up-down-fill","contract-up-down-line","corner-down-left-fill","corner-down-left-line","corner-down-right-fill","corner-down-right-line","corner-left-down-fill","corner-left-down-line","corner-left-up-fill","corner-left-up-line","corner-right-down-fill","corner-right-down-line","corner-right-up-fill","corner-right-up-line","corner-up-left-double-fill","corner-up-left-double-line","corner-up-left-fill","corner-up-left-line","corner-up-right-double-fill","corner-up-right-double-line","corner-up-right-fill","corner-up-right-line","drag-move-2-fill","drag-move-2-line","drag-move-fill","drag-move-line","expand-diagonal-2-fill","expand-diagonal-2-line","expand-diagonal-fill","expand-diagonal-line","expand-height-fill","expand-height-line","expand-left-fill","expand-left-line","expand-left-right-fill","expand-left-right-line","expand-right-fill","expand-right-line","expand-up-down-fill","expand-up-down-line","expand-width-fill","expand-width-line","scroll-to-bottom-fill","scroll-to-bottom-line","skip-down-fill","skip-down-line","skip-left-fill","skip-left-line","skip-right-fill","skip-right-line","skip-up-fill","skip-up-line"]},{"name":"Buildings","list":["ancient-gate-fill","ancient-gate-line","ancient-pavilion-fill","ancient-pavilion-line","bank-fill","bank-line","building-2-fill","building-2-line","building-3-fill","building-3-line","building-4-fill","building-4-line","building-fill","building-line","community-fill","community-line","government-fill","government-line","home-2-fill","home-2-line","home-3-fill","home-3-line","home-4-fill","home-4-line","home-5-fill","home-5-line","home-6-fill","home-6-line","home-7-fill","home-7-line","home-8-fill","home-8-line","home-fill","home-gear-fill","home-gear-line","home-heart-fill","home-heart-line","home-line","home-office-fill","home-office-line","home-smile-2-fill","home-smile-2-line","home-smile-fill","home-smile-line","home-wifi-fill","home-wifi-line","hospital-fill","hospital-line","hotel-fill","hotel-line","school-fill","school-line","store-2-fill","store-2-line","store-3-fill","store-3-line","store-fill","store-line","tent-fill","tent-line"]},{"name":"Business","list":["advertisement-fill","advertisement-line","archive-2-fill","archive-2-line","archive-drawer-fill","archive-drawer-line","archive-fill","archive-line","archive-stack-fill","archive-stack-line","at-fill","at-line","attachment-fill","attachment-line","award-fill","award-line","bar-chart-2-fill","bar-chart-2-line","bar-chart-box-fill","bar-chart-box-line","bar-chart-fill","bar-chart-grouped-fill","bar-chart-grouped-line","bar-chart-horizontal-fill","bar-chart-horizontal-line","bar-chart-line","bookmark-2-fill","bookmark-2-line","bookmark-3-fill","bookmark-3-line","bookmark-fill","bookmark-line","briefcase-2-fill","briefcase-2-line","briefcase-3-fill","briefcase-3-line","briefcase-4-fill","briefcase-4-line","briefcase-5-fill","briefcase-5-line","briefcase-fill","briefcase-line","bubble-chart-fill","bubble-chart-line","calculator-fill","calculator-line","calendar-2-fill","calendar-2-line","calendar-check-fill","calendar-check-line","calendar-close-fill","calendar-close-line","calendar-event-fill","calendar-event-line","calendar-fill","calendar-line","calendar-schedule-fill","calendar-schedule-line","calendar-todo-fill","calendar-todo-line","cloud-fill","cloud-line","cloud-off-fill","cloud-off-line","copyleft-fill","copyleft-line","copyright-fill","copyright-line","creative-commons-by-fill","creative-commons-by-line","creative-commons-fill","creative-commons-line","creative-commons-nc-fill","creative-commons-nc-line","creative-commons-nd-fill","creative-commons-nd-line","creative-commons-sa-fill","creative-commons-sa-line","creative-commons-zero-fill","creative-commons-zero-line","customer-service-2-fill","customer-service-2-line","customer-service-fill","customer-service-line","donut-chart-fill","donut-chart-line","flag-2-fill","flag-2-line","flag-fill","flag-line","global-fill","global-line","honour-fill","honour-line","id-card-fill","id-card-line","inbox-2-fill","inbox-2-line","inbox-archive-fill","inbox-archive-line","inbox-fill","inbox-line","inbox-unarchive-fill","inbox-unarchive-line","line-chart-fill","line-chart-line","links-fill","links-line","mail-add-fill","mail-add-line","mail-check-fill","mail-check-line","mail-close-fill","mail-close-line","mail-download-fill","mail-download-line","mail-fill","mail-forbid-fill","mail-forbid-line","mail-line","mail-lock-fill","mail-lock-line","mail-open-fill","mail-open-line","mail-send-fill","mail-send-line","mail-settings-fill","mail-settings-line","mail-star-fill","mail-star-line","mail-unread-fill","mail-unread-line","mail-volume-fill","mail-volume-line","medal-2-fill","medal-2-line","medal-fill","medal-line","megaphone-fill","megaphone-line","pass-expired-fill","pass-expired-line","pass-pending-fill","pass-pending-line","pass-valid-fill","pass-valid-line","pie-chart-2-fill","pie-chart-2-line","pie-chart-box-fill","pie-chart-box-line","pie-chart-fill","pie-chart-line","presentation-fill","presentation-line","printer-cloud-fill","printer-cloud-line","printer-fill","printer-line","profile-fill","profile-line","projector-2-fill","projector-2-line","projector-fill","projector-line","record-mail-fill","record-mail-line","registered-fill","registered-line","reply-all-fill","reply-all-line","reply-fill","reply-line","send-plane-2-fill","send-plane-2-line","send-plane-fill","send-plane-line","seo-fill","seo-line","service-fill","service-line","shake-hands-fill","shake-hands-line","slideshow-2-fill","slideshow-2-line","slideshow-3-fill","slideshow-3-line","slideshow-4-fill","slideshow-4-line","slideshow-fill","slideshow-line","stack-fill","stack-line","trademark-fill","trademark-line","verified-badge-fill","verified-badge-line","window-2-fill","window-2-line","window-fill","window-line"]},{"name":"Communication","list":["chat-1-fill-2","chat-1-fill","chat-1-line","chat-2-fill","chat-2-line","chat-3-fill","chat-3-line","chat-4-fill","chat-4-line","chat-check-fill","chat-check-line","chat-delete-fill","chat-delete-line","chat-download-fill","chat-download-line","chat-follow-up-fill","chat-follow-up-line","chat-forward-fill","chat-forward-line","chat-heart-fill","chat-heart-line","chat-history-fill","chat-history-line","chat-new-fill","chat-new-line","chat-off-fill","chat-off-line","chat-poll-fill","chat-poll-line","chat-private-fill","chat-private-line","chat-quote-fill","chat-quote-line","chat-settings-fill","chat-settings-line","chat-smile-2-fill","chat-smile-2-line","chat-smile-3-fill","chat-smile-3-line","chat-smile-fill","chat-smile-line","chat-thread-fill","chat-thread-line","chat-upload-fill","chat-upload-line","chat-voice-fill","chat-voice-line","discuss-fill","discuss-line","emoji-sticker-fill","emoji-sticker-line","feedback-fill","feedback-line","message-2-fill","message-2-line","message-3-fill","message-3-line","message-fill","message-line","question-answer-fill","question-answer-line","questionnaire-fill","questionnaire-line","speak-fill","speak-line","video-chat-fill","video-chat-line"]},{"name":"Design","list":["align-item-bottom-fill","align-item-bottom-line","align-item-horizontal-center-fill","align-item-horizontal-center-line","align-item-left-fill","align-item-left-line","align-item-right-fill","align-item-right-line","align-item-top-fill","align-item-top-line","align-item-vertical-center-fill","align-item-vertical-center-line","anticlockwise-2-fill","anticlockwise-2-line","anticlockwise-fill","anticlockwise-line","artboard-2-fill","artboard-2-line","artboard-fill","artboard-line","ball-pen-fill","ball-pen-line","blur-off-fill","blur-off-line","brush-2-fill","brush-2-line","brush-3-fill","brush-3-line","brush-4-fill","brush-4-line","brush-fill","brush-line","circle-fill","circle-line","clockwise-2-fill","clockwise-2-line","clockwise-fill","clockwise-line","collage-fill","collage-line","color-filter-fill","color-filter-line","compasses-2-fill","compasses-2-line","compasses-fill","compasses-line","contrast-2-fill","contrast-2-line","contrast-drop-2-fill","contrast-drop-2-line","contrast-drop-fill","contrast-drop-line","contrast-fill","contrast-line","crop-2-fill","crop-2-line","crop-fill","crop-line","crosshair-2-fill","crosshair-2-line","crosshair-fill","crosshair-line","drag-drop-fill","drag-drop-line","drop-fill","drop-line","edit-2-fill","edit-2-line","edit-box-fill","edit-box-line","edit-circle-fill","edit-circle-line","edit-fill","edit-line","eraser-fill","eraser-line","flip-horizontal-2-fill","flip-horizontal-2-line","flip-horizontal-fill","flip-horizontal-line","flip-vertical-2-fill","flip-vertical-2-line","flip-vertical-fill","flip-vertical-line","focus-2-fill","focus-2-line","focus-3-fill","focus-3-line","focus-fill","focus-line","grid-fill","grid-line","hammer-fill","hammer-line","hexagon-fill","hexagon-line","ink-bottle-fill","ink-bottle-line","input-method-fill","input-method-line","layout-2-fill","layout-2-line","layout-3-fill","layout-3-line","layout-4-fill","layout-4-line","layout-5-fill","layout-5-line","layout-6-fill","layout-6-line","layout-bottom-2-fill","layout-bottom-2-line","layout-bottom-fill","layout-bottom-line","layout-column-fill","layout-column-line","layout-fill","layout-grid-2-fill","layout-grid-2-line","layout-grid-fill","layout-grid-line","layout-horizontal-fill","layout-horizontal-line","layout-left-2-fill","layout-left-2-line","layout-left-fill","layout-left-line","layout-line","layout-masonry-fill","layout-masonry-line","layout-right-2-fill","layout-right-2-line","layout-right-fill","layout-right-line","layout-row-fill","layout-row-line","layout-top-2-fill","layout-top-2-line","layout-top-fill","layout-top-line","layout-vertical-fill","layout-vertical-line","magic-fill","magic-line","mark-pen-fill","mark-pen-line","markup-fill","markup-line","octagon-fill","octagon-line","paint-brush-fill","paint-brush-line","paint-fill","paint-line","palette-fill","palette-line","pantone-fill","pantone-line","pen-nib-fill","pen-nib-line","pencil-fill","pencil-line","pencil-ruler-2-fill","pencil-ruler-2-line","pencil-ruler-fill","pencil-ruler-line","pentagon-fill","pentagon-line","quill-pen-fill","quill-pen-line","rectangle-fill","rectangle-line","ruler-2-fill","ruler-2-line","ruler-fill","ruler-line","scissors-2-fill","scissors-2-line","scissors-cut-fill","scissors-cut-line","scissors-fill","scissors-line","screenshot-2-fill","screenshot-2-line","screenshot-fill","screenshot-line","shadow-fill","shadow-line","shape-2-fill","shape-2-line","shape-fill","shape-line","shapes-fill","shapes-line","sip-fill","sip-line","slice-fill","slice-line","square-fill","square-line","t-box-fill","t-box-line","table-alt-fill","table-alt-line","table-fill","table-line","tools-fill","tools-line","triangle-fill","triangle-line"]},{"name":"Development","list":["braces-fill","braces-line","brackets-fill","brackets-line","bug-2-fill","bug-2-line","bug-fill","bug-line","code-box-fill","code-box-line","code-fill","code-line","code-s-fill","code-s-line","code-s-slash-fill","code-s-slash-line","command-fill","command-line","css3-fill","css3-line","cursor-fill","cursor-line","git-branch-fill","git-branch-line","git-close-pull-request-fill","git-close-pull-request-line","git-commit-fill","git-commit-line","git-fork-fill","git-fork-line","git-merge-fill","git-merge-line","git-pr-draft-fill","git-pr-draft-line","git-pull-request-fill","git-pull-request-line","git-repository-commits-fill","git-repository-commits-line","git-repository-fill","git-repository-line","git-repository-private-fill","git-repository-private-line","html5-fill","html5-line","javascript-fill","javascript-line","parentheses-fill","parentheses-line","puzzle-2-fill","puzzle-2-line","puzzle-fill","puzzle-line","terminal-box-fill","terminal-box-line","terminal-fill","terminal-line","terminal-window-fill","terminal-window-line"]},{"name":"Device","list":["airplay-fill","airplay-line","barcode-box-fill","barcode-box-line","barcode-fill","barcode-line","base-station-fill","base-station-line","battery-2-charge-fill","battery-2-charge-line","battery-2-fill","battery-2-line","battery-charge-fill","battery-charge-line","battery-fill","battery-line","battery-low-fill-2","battery-low-fill","battery-low-line","battery-saver-fill","battery-saver-line","battery-share-fill","battery-share-line","bluetooth-connect-fill","bluetooth-connect-line","bluetooth-fill","bluetooth-line","cast-fill","cast-line","cellphone-fill","cellphone-line","computer-fill","computer-line","cpu-fill","cpu-line","dashboard-2-fill","dashboard-2-line","dashboard-3-fill","dashboard-3-line","database-2-fill","database-2-line","database-fill","database-line","device-fill","device-line","device-recover-fill","device-recover-line","dual-sim-1-fill","dual-sim-1-line","dual-sim-2-fill","dual-sim-2-line","fingerprint-2-fill","fingerprint-2-line","fingerprint-fill","fingerprint-line","gamepad-fill","gamepad-line","gps-fill","gps-line","gradienter-fill","gradienter-line","hard-drive-2-fill-2","hard-drive-2-fill","hard-drive-2-line","hard-drive-3-fill","hard-drive-3-line","hard-drive-fill","hard-drive-line","hotspot-fill","hotspot-line","install-fill","install-line","instance-fill","instance-line","keyboard-box-fill","keyboard-box-line","keyboard-fill","keyboard-line","mac-fill","mac-line","macbook-fill","macbook-line","mobile-download-fill","mobile-download-line","mouse-fill","mouse-line","phone-fill","phone-find-fill","phone-find-line","phone-line","phone-lock-fill","phone-lock-line","qr-code-fill","qr-code-line","qr-scan-2-fill","qr-scan-2-line","qr-scan-fill","qr-scan-line","radar-fill","radar-line","ram-2-fill","ram-2-line","ram-fill","ram-line","remote-control-2-fill","remote-control-2-line","remote-control-fill","remote-control-line","restart-fill","restart-line","rfid-fill","rfid-line","rotate-lock-fill","rotate-lock-line","router-fill","router-line","rss-fill","rss-line","save-2-fill","save-2-line","save-3-fill","save-3-line","save-fill","save-line","scan-2-fill","scan-2-line","scan-fill","scan-line","sd-card-fill","sd-card-line","sd-card-mini-fill","sd-card-mini-line","sensor-fill","sensor-line","server-fill","server-line","shut-down-fill","shut-down-line","signal-wifi-1-fill","signal-wifi-1-line","signal-wifi-2-fill","signal-wifi-2-line","signal-wifi-3-fill","signal-wifi-3-line","signal-wifi-error-fill","signal-wifi-error-line","signal-wifi-fill","signal-wifi-line","signal-wifi-off-fill","signal-wifi-off-line","sim-card-2-fill","sim-card-2-line","sim-card-fill","sim-card-line","smartphone-fill","smartphone-line","tablet-fill","tablet-line","tv-2-fill","tv-2-line","tv-fill","tv-line","u-disk-fill","u-disk-line","uninstall-fill","uninstall-line","usb-fill","usb-line","wifi-fill","wifi-line","wifi-off-fill","wifi-off-line","wireless-charging-fill","wireless-charging-line"]},{"name":"Document","list":["article-fill","article-line","bill-fill","bill-line","book-2-fill","book-2-line","book-3-fill","book-3-line","book-fill","book-line","book-marked-fill","book-marked-line","book-open-fill","book-open-line","book-read-fill","book-read-line","booklet-fill","booklet-line","clipboard-fill","clipboard-line","contacts-book-2-fill","contacts-book-2-line","contacts-book-3-fill","contacts-book-3-line","contacts-book-fill","contacts-book-line","contacts-book-upload-fill","contacts-book-upload-line","contract-fill","contract-line","draft-fill","draft-line","file-2-fill","file-2-line-2","file-2-line","file-3-fill","file-3-line","file-4-fill","file-4-line","file-add-fill","file-add-line","file-chart-2-fill","file-chart-2-line","file-chart-fill","file-chart-line","file-check-fill","file-check-line","file-close-fill","file-close-line","file-cloud-fill","file-cloud-line","file-code-fill","file-code-line","file-copy-2-fill","file-copy-2-line","file-copy-fill","file-copy-line","file-damage-fill","file-damage-line","file-download-fill","file-download-line","file-edit-fill","file-edit-line","file-excel-2-fill","file-excel-2-line","file-excel-fill","file-excel-line","file-fill","file-forbid-fill","file-forbid-line","file-gif-fill","file-gif-line","file-history-fill","file-history-line","file-hwp-fill","file-hwp-line","file-image-fill","file-image-line","file-info-fill","file-info-line","file-line","file-list-2-fill","file-list-2-line","file-list-3-fill","file-list-3-line","file-list-fill","file-list-line","file-lock-fill","file-lock-line","file-marked-fill","file-marked-line","file-music-fill","file-music-line","file-paper-2-fill","file-paper-2-line","file-paper-fill","file-paper-line","file-pdf-2-fill","file-pdf-2-line","file-pdf-fill","file-pdf-line","file-ppt-2-fill","file-ppt-2-line","file-ppt-fill","file-ppt-line","file-reduce-fill","file-reduce-line","file-search-fill","file-search-line","file-settings-fill","file-settings-line","file-shield-2-fill","file-shield-2-line","file-shield-fill","file-shield-line","file-shred-fill","file-shred-line","file-text-fill","file-text-line","file-transfer-fill","file-transfer-line","file-unknow-fill","file-unknow-line","file-upload-fill","file-upload-line","file-user-fill","file-user-line","file-video-fill","file-video-line","file-warning-fill","file-warning-line","file-word-2-fill","file-word-2-line","file-word-fill","file-word-line","file-zip-fill","file-zip-line","folder-2-fill","folder-2-line","folder-3-fill","folder-3-line","folder-4-fill","folder-4-line","folder-5-fill","folder-5-line","folder-6-fill","folder-6-line","folder-add-fill","folder-add-line","folder-chart-2-fill","folder-chart-2-line","folder-chart-fill","folder-chart-line","folder-check-fill","folder-check-line","folder-close-fill","folder-close-line","folder-cloud-fill","folder-cloud-line","folder-download-fill","folder-download-line","folder-fill","folder-forbid-fill","folder-forbid-line","folder-history-fill","folder-history-line","folder-image-fill","folder-image-line","folder-info-fill","folder-info-line","folder-keyhole-fill","folder-keyhole-line","folder-line","folder-lock-fill","folder-lock-line","folder-music-fill","folder-music-line","folder-open-fill","folder-open-line","folder-received-fill","folder-received-line","folder-reduce-fill","folder-reduce-line","folder-settings-fill","folder-settings-line","folder-shared-fill","folder-shared-line","folder-shield-2-fill","folder-shield-2-line","folder-shield-fill","folder-shield-line","folder-transfer-fill","folder-transfer-line","folder-unknow-fill","folder-unknow-line","folder-upload-fill","folder-upload-line","folder-user-fill","folder-user-line","folder-video-fill","folder-video-line","folder-warning-fill","folder-warning-line","folder-zip-fill","folder-zip-line","folders-fill","folders-line","keynote-fill","keynote-line","markdown-fill","markdown-line","news-fill","news-line","newspaper-fill","newspaper-line","numbers-fill","numbers-line","pages-fill","pages-line","receipt-fill","receipt-line","sticky-note-2-fill-2","sticky-note-2-fill","sticky-note-2-line","sticky-note-add-fill","sticky-note-add-line","sticky-note-fill","sticky-note-line","survey-fill","survey-line","task-fill","task-line","todo-fill","todo-line"]},{"name":"Editor","list":["a-b","ai-generate","align-bottom","align-center","align-justify","align-left","align-right","align-top","align-vertically","asterisk","attachment-2","bold","bring-forward","bring-to-front","calendar-view","carousel-view","code-block","code-view","delete-column","delete-row","double-quotes-l","double-quotes-r","draggable","dropdown-list","emphasis-cn","emphasis","english-input","flow-chart","focus-mode","font-color","font-family","font-mono","font-sans-serif","font-sans","font-size-2","font-size","format-clear","formula","functions","gallery-view-2","gallery-view","h-1","h-2","h-3","h-4","h-5","h-6","hand","hashtag","heading-2","heading","indent-decrease","indent-increase","info-i","input-cursor-move","input-field","insert-column-left","insert-column-right","insert-row-bottom","insert-row-top","italic","kanban-view-2","kanban-view","line-height","link-m","link-unlink-m","link-unlink","link","list-check-2","list-check-3","list-check","list-indefinite","list-ordered-2","list-ordered","list-radio","list-unordered","list-view","merge-cells-horizontal","merge-cells-vertical","mind-map","node-tree","number-0","number-1","number-2","number-3","number-4","number-5","number-6","number-7","number-8","number-9","omega","organization-chart","overline","page-separator","paragraph","pinyin-input","question-mark","quote-text","rounded-corner","send-backward","send-to-back","separator","single-quotes-l","single-quotes-r","sketching","slash-commands-2","slash-commands","slideshow-view","sort-alphabet-asc","sort-alphabet-desc","sort-asc","sort-desc","sort-number-asc","sort-number-desc","space","split-cells-horizontal","split-cells-vertical","square-root","stacked-view","strikethrough-2","strikethrough","subscript-2","subscript","superscript-2","superscript","table-2","table-3","table-view","text-block","text-direction-l","text-direction-r","text-snippet","text-spacing","text-wrap","text","timeline-view","translate-2","translate","underline","wubi-input"]},{"name":"Finance","list":["24-hours-fill","24-hours-line","auction-fill","auction-line","bank-card-2-fill","bank-card-2-line","bank-card-fill","bank-card-line","bit-coin-fill","bit-coin-line","bnb-fill","bnb-line","btc-fill","btc-line","cash-fill","cash-line","coin-fill","coin-line","coins-fill","coins-line","copper-coin-fill","copper-coin-line","copper-diamond-fill","copper-diamond-line","coupon-2-fill","coupon-2-line","coupon-3-fill","coupon-3-line","coupon-4-fill","coupon-4-line","coupon-5-fill","coupon-5-line","coupon-fill","coupon-line","currency-fill","currency-line","discount-percent-fill","discount-percent-line","eth-fill","eth-line","exchange-2-fill","exchange-2-line","exchange-box-fill","exchange-box-line","exchange-cny-fill","exchange-cny-line","exchange-dollar-fill","exchange-dollar-line","exchange-fill","exchange-funds-fill","exchange-funds-line","exchange-line","funds-box-fill","funds-box-line","funds-fill","funds-line","gift-2-fill","gift-2-line","gift-fill","gift-line","hand-coin-fill","hand-coin-line","hand-heart-fill","hand-heart-line","increase-decrease-fill","increase-decrease-line","money-cny-box-fill","money-cny-box-line","money-cny-circle-fill","money-cny-circle-line","money-dollar-box-fill","money-dollar-box-line","money-dollar-circle-fill","money-dollar-circle-line","money-euro-box-fill","money-euro-box-line","money-euro-circle-fill","money-euro-circle-line","money-pound-box-fill","money-pound-box-line","money-pound-circle-fill","money-pound-circle-line","money-rupee-circle-fill","money-rupee-circle-line","nft-fill","nft-line","p2p-fill","p2p-line","percent-fill","percent-line","price-tag-2-fill","price-tag-2-line","price-tag-3-fill","price-tag-3-line","price-tag-fill","price-tag-line","red-packet-fill","red-packet-line","refund-2-fill","refund-2-line","refund-fill","refund-line","safe-2-fill","safe-2-line","safe-fill","safe-line","secure-payment-fill","secure-payment-line","shopping-bag-2-fill","shopping-bag-2-line","shopping-bag-3-fill","shopping-bag-3-line","shopping-bag-4-fill","shopping-bag-4-line","shopping-bag-fill","shopping-bag-line","shopping-basket-2-fill","shopping-basket-2-line","shopping-basket-fill","shopping-basket-line","shopping-cart-2-fill","shopping-cart-2-line","shopping-cart-fill","shopping-cart-line","stock-fill","stock-line","swap-2-fill","swap-2-line","swap-3-fill","swap-3-line","swap-box-fill","swap-box-line","swap-fill","swap-line","ticket-2-fill","ticket-2-line","ticket-fill","ticket-line","token-swap-fill","token-swap-line","trophy-fill","trophy-line","vip-crown-2-fill","vip-crown-2-line","vip-crown-fill","vip-crown-line","vip-diamond-fill","vip-diamond-line","vip-fill","vip-line","wallet-2-fill","wallet-2-line","wallet-3-fill","wallet-3-line","wallet-fill","wallet-line","water-flash-fill","water-flash-line","xrp-fill","xrp-line","xtz-fill","xtz-line"]},{"name":"Food","list":["beer-fill","beer-line","bowl-fill","bowl-line","bread-fill","bread-line","cake-2-fill","cake-2-line","cake-3-fill","cake-3-line","cake-fill","cake-line","cup-fill","cup-line","drinks-2-fill","drinks-2-line","drinks-fill","drinks-line","goblet-2-fill","goblet-2-line","goblet-fill","goblet-line","knife-blood-fill","knife-blood-line","knife-fill","knife-line","restaurant-2-fill","restaurant-2-line","restaurant-fill","restaurant-line"]},{"name":"Health & Medical","list":["aed-electrodes-fill","aed-electrodes-line","aed-fill","aed-line","brain-fill","brain-line","capsule-fill","capsule-line","dislike-fill","dislike-line","dossier-fill","dossier-line","empathize-fill","empathize-line","first-aid-kit-fill","first-aid-kit-line","flask-fill","flask-line","hand-sanitizer-fill","hand-sanitizer-line","health-book-fill","health-book-line","heart-2-fill","heart-2-line","heart-3-fill","heart-3-line","heart-add-2-fill","heart-add-2-line","heart-add-fill","heart-add-line","heart-fill","heart-line","heart-pulse-fill","heart-pulse-line","hearts-fill","hearts-line","infrared-thermometer-fill","infrared-thermometer-line","lungs-fill","lungs-line","medicine-bottle-fill","medicine-bottle-line","mental-health-fill","mental-health-line","microscope-fill","microscope-line","nurse-fill","nurse-line","psychotherapy-fill","psychotherapy-line","pulse-fill","pulse-line","rest-time-fill","rest-time-line","stethoscope-fill","stethoscope-line","surgical-mask-fill","surgical-mask-line","syringe-fill","syringe-line","test-tube-fill","test-tube-line","thermometer-fill","thermometer-line","virus-fill","virus-line","zzz-fill","zzz-line"]},{"name":"Logos","list":["alibaba-cloud-fill","alibaba-cloud-line","alipay-fill","alipay-line","amazon-fill","amazon-line","android-fill","android-line","angularjs-fill","angularjs-line","app-store-fill","app-store-line","apple-fill","apple-line","baidu-fill","baidu-line","bard-fill","bard-line","behance-fill","behance-line","bilibili-fill","bilibili-line","blender-fill","blender-line","blogger-fill","blogger-line","bluesky-fill","bluesky-line","bootstrap-fill","bootstrap-line","centos-fill","centos-line","chrome-fill","chrome-line","codepen-fill","codepen-line","copilot-fill","copilot-line","coreos-fill","coreos-line","dingding-fill","dingding-line","discord-fill","discord-line","disqus-fill","disqus-line","douban-fill","douban-line","dribbble-fill","dribbble-line","drive-fill","drive-line","dropbox-fill","dropbox-line","edge-fill","edge-line","edge-new-fill","edge-new-line","evernote-fill","evernote-line","facebook-box-fill","facebook-box-line","facebook-circle-fill","facebook-circle-line","facebook-fill","facebook-line","finder-fill","finder-line","firebase-fill","firebase-line","firefox-fill","firefox-line","flickr-fill","flickr-line","flutter-fill","flutter-line","friendica-fill","friendica-line","gatsby-fill","gatsby-line","github-fill","github-line","gitlab-fill","gitlab-line","google-fill","google-line","google-play-fill","google-play-line","honor-of-kings-fill","honor-of-kings-line","ie-fill","ie-line","instagram-fill","instagram-line","invision-fill","invision-line","java-fill","java-line","kakao-talk-fill","kakao-talk-line","kick-fill","kick-line","line-fill","line-line","linkedin-box-fill","linkedin-box-line","linkedin-fill","linkedin-line","mastercard-fill","mastercard-line","mastodon-fill","mastodon-line","medium-fill","medium-line","messenger-fill","messenger-line","meta-fill","meta-line","microsoft-fill","microsoft-line","microsoft-loop-fill","microsoft-loop-line","mini-program-fill","mini-program-line","netease-cloud-music-fill","netease-cloud-music-line","netflix-fill","netflix-line","nextjs-fill","nextjs-line","nodejs-fill","nodejs-line","notion-fill","notion-line","npmjs-fill","npmjs-line","open-source-fill","open-source-line","openai-fill","openai-line","openbase-fill","openbase-line","opera-fill","opera-line","patreon-fill","patreon-line","paypal-fill","paypal-line","pinterest-fill","pinterest-line","pixelfed-fill","pixelfed-line","playstation-fill","playstation-line","product-hunt-fill","product-hunt-line","qq-fill","qq-line","reactjs-fill","reactjs-line","reddit-fill","reddit-line","remix-run-fill","remix-run-line","remixicon-fill","remixicon-line","safari-fill","safari-line","skype-fill","skype-line","slack-fill","slack-line","snapchat-fill","snapchat-line","soundcloud-fill","soundcloud-line","spectrum-fill","spectrum-line","spotify-fill","spotify-line","stack-overflow-fill","stack-overflow-line","stackshare-fill","stackshare-line","steam-fill","steam-line","supabase-fill","supabase-line","svelte-fill","svelte-line","switch-fill","switch-line","tailwind-css-fill","tailwind-css-line","taobao-fill","taobao-line","telegram-fill","telegram-line","threads-fill","threads-line","tiktok-fill","tiktok-line","trello-fill","trello-line","tumblr-fill","tumblr-line","twitch-fill","twitch-line","twitter-fill","twitter-line","twitter-x-fill","twitter-x-line","ubuntu-fill","ubuntu-line","unsplash-fill","unsplash-line","vimeo-fill","vimeo-line","visa-fill","visa-line","vk-fill","vk-line","vuejs-fill","vuejs-line","webhook-fill","webhook-line","wechat-2-fill","wechat-2-line","wechat-channels-fill","wechat-channels-line","wechat-fill","wechat-line","wechat-pay-fill","wechat-pay-line","weibo-fill","weibo-line","whatsapp-fill","whatsapp-line","windows-fill","windows-line","wordpress-fill","wordpress-line","xbox-fill","xbox-line","xing-fill","xing-line","youtube-fill","youtube-line","yuque-fill","yuque-line","zcool-fill","zcool-line","zhihu-fill","zhihu-line"]},{"name":"Map","list":["anchor-fill","anchor-line","barricade-fill","barricade-line","bike-fill","bike-line","bus-2-fill","bus-2-line","bus-fill","bus-line","bus-wifi-fill","bus-wifi-line","car-fill","car-line","car-washing-fill","car-washing-line","caravan-fill","caravan-line","charging-pile-2-fill","charging-pile-2-line","charging-pile-fill","charging-pile-line","china-railway-fill","china-railway-line","compass-2-fill","compass-2-line","compass-3-fill","compass-3-line","compass-4-fill","compass-4-line","compass-discover-fill","compass-discover-line","compass-fill","compass-line","direction-fill","direction-line","e-bike-2-fill","e-bike-2-line","e-bike-fill","e-bike-line","earth-fill","earth-line","flight-land-fill","flight-land-line","flight-takeoff-fill","flight-takeoff-line","footprint-fill","footprint-line","gas-station-fill","gas-station-line","globe-fill","globe-line","guide-fill","guide-line","hotel-bed-fill","hotel-bed-line","lifebuoy-fill","lifebuoy-line","luggage-cart-fill","luggage-cart-line","luggage-deposit-fill","luggage-deposit-line","map-2-fill","map-2-line","map-fill","map-line","map-pin-2-fill","map-pin-2-line","map-pin-3-fill","map-pin-3-line","map-pin-4-fill","map-pin-4-line","map-pin-5-fill","map-pin-5-line","map-pin-add-fill","map-pin-add-line","map-pin-fill","map-pin-line","map-pin-range-fill","map-pin-range-line","map-pin-time-fill","map-pin-time-line","map-pin-user-fill","map-pin-user-line","motorbike-fill","motorbike-line","navigation-fill","navigation-line","oil-fill","oil-line","parking-box-fill","parking-box-line","parking-fill","parking-line","passport-fill","passport-line","pin-distance-fill","pin-distance-line","plane-fill","plane-line","planet-fill","planet-line","police-car-fill","police-car-line","pushpin-2-fill","pushpin-2-line","pushpin-fill","pushpin-line","riding-fill","riding-line","road-map-fill","road-map-line","roadster-fill","roadster-line","rocket-2-fill","rocket-2-line","rocket-fill","rocket-line","route-fill","route-line","run-fill","run-line","sailboat-fill","sailboat-line","ship-2-fill","ship-2-line","ship-fill","ship-line","signal-tower-fill","signal-tower-line","signpost-fill","signpost-line","space-ship-fill","space-ship-line","steering-2-fill","steering-2-line","steering-fill","steering-line","subway-fill","subway-line","subway-wifi-fill","subway-wifi-line","suitcase-2-fill","suitcase-2-line","suitcase-3-fill","suitcase-3-line","suitcase-fill","suitcase-line","takeaway-fill","takeaway-line","taxi-fill","taxi-line","taxi-wifi-fill","taxi-wifi-line","time-zone-fill","time-zone-line","traffic-light-fill","traffic-light-line","train-fill","train-line","train-wifi-fill","train-wifi-line","treasure-map-fill","treasure-map-line","truck-fill","truck-line","unpin-fill","unpin-line","walk-fill","walk-line"]},{"name":"Media","list":["4k-fill","4k-line","album-fill","album-line","aspect-ratio-fill","aspect-ratio-line","broadcast-fill","broadcast-line","camera-2-fill","camera-2-line","camera-3-fill","camera-3-line","camera-fill","camera-lens-fill","camera-lens-line","camera-line","camera-off-fill","camera-off-line","camera-switch-fill","camera-switch-line","clapperboard-fill","clapperboard-line","closed-captioning-fill","closed-captioning-line","disc-fill","disc-line","dv-fill","dv-line","dvd-fill","dvd-line","eject-fill","eject-line","equalizer-2-fill","equalizer-2-line","equalizer-3-fill","equalizer-3-line","equalizer-fill","equalizer-line","film-fill","film-line","forward-10-fill","forward-10-line","forward-15-fill","forward-15-line","forward-30-fill","forward-30-line","forward-5-fill","forward-5-line","forward-end-fill","forward-end-line","forward-end-mini-fill","forward-end-mini-line","fullscreen-exit-fill","fullscreen-exit-line","fullscreen-fill","fullscreen-line","gallery-fill","gallery-line","gallery-upload-fill","gallery-upload-line","hd-fill","hd-line","headphone-fill","headphone-line","hq-fill","hq-line","image-2-fill","image-2-line","image-add-fill","image-add-line","image-circle-fill","image-circle-line","image-edit-fill","image-edit-line","image-fill","image-line","landscape-fill","landscape-line","live-fill","live-line","memories-fill","memories-line","mic-2-fill","mic-2-line","mic-fill","mic-line","mic-off-fill","mic-off-line","movie-2-fill","movie-2-line","movie-fill","movie-line","music-2-fill","music-2-line","music-fill","music-line","mv-fill","mv-line","notification-2-fill","notification-2-line","notification-3-fill","notification-3-line","notification-4-fill","notification-4-line","notification-fill","notification-line","notification-off-fill","notification-off-line","order-play-fill","order-play-line","pause-circle-fill","pause-circle-line","pause-fill","pause-large-fill","pause-large-line","pause-line","pause-mini-fill","pause-mini-line","phone-camera-fill","phone-camera-line","picture-in-picture-2-fill","picture-in-picture-2-line","picture-in-picture-exit-fill","picture-in-picture-exit-line","picture-in-picture-fill","picture-in-picture-line","play-circle-fill","play-circle-line","play-fill","play-large-fill","play-large-line","play-line","play-list-2-fill","play-list-2-line","play-list-add-fill","play-list-add-line","play-list-fill","play-list-line","play-mini-fill","play-mini-line","play-reverse-fill","play-reverse-large-fill","play-reverse-large-line","play-reverse-line","play-reverse-mini-fill","play-reverse-mini-line","polaroid-2-fill","polaroid-2-line","polaroid-fill","polaroid-line","radio-2-fill","radio-2-line","radio-fill","radio-line","record-circle-fill","record-circle-line","repeat-2-fill","repeat-2-line","repeat-fill","repeat-line","repeat-one-fill","repeat-one-line","replay-10-fill","replay-10-line","replay-15-fill","replay-15-line","replay-30-fill","replay-30-line","replay-5-fill","replay-5-line","rewind-fill","rewind-line","rewind-mini-fill","rewind-mini-line","rewind-start-fill","rewind-start-line","rewind-start-mini-fill","rewind-start-mini-line","rhythm-fill","rhythm-line","shuffle-fill","shuffle-line","skip-back-fill","skip-back-line","skip-back-mini-fill","skip-back-mini-line","skip-forward-fill","skip-forward-line","skip-forward-mini-fill","skip-forward-mini-line","slow-down-fill","slow-down-line","sound-module-fill","sound-module-line","speaker-2-fill","speaker-2-line","speaker-3-fill","speaker-3-line","speaker-fill","speaker-line","speed-fill","speed-line","speed-mini-fill","speed-mini-line","speed-up-fill","speed-up-line","stop-circle-fill","stop-circle-line","stop-fill","stop-large-fill","stop-large-line","stop-line","stop-mini-fill","stop-mini-line","surround-sound-fill","surround-sound-line","tape-fill","tape-line","video-add-fill","video-add-line","video-download-fill","video-download-line","video-fill","video-line","video-off-fill","video-off-line","video-on-fill","video-on-line","video-upload-fill","video-upload-line","vidicon-2-fill","vidicon-2-line","vidicon-fill","vidicon-line","voiceprint-fill","voiceprint-line","volume-down-fill","volume-down-line","volume-mute-fill","volume-mute-line","volume-off-vibrate-fill","volume-off-vibrate-line","volume-up-fill","volume-up-line","volume-vibrate-fill","volume-vibrate-line","webcam-fill","webcam-line"]},{"name":"Others","list":["armchair-fill","armchair-line","basketball-fill","basketball-line","bell-fill","bell-line","billiards-fill","billiards-line","box-1-fill","box-1-line","box-2-fill","box-2-line","box-3-fill","box-3-line","boxing-fill","boxing-line","cactus-fill","cactus-line","candle-fill","candle-line","character-recognition-fill","character-recognition-line","cross-fill","cross-line","dice-1-fill","dice-1-line","dice-2-fill","dice-2-line","dice-3-fill","dice-3-line","dice-4-fill","dice-4-line","dice-5-fill","dice-5-line","dice-6-fill","dice-6-line","dice-fill","dice-line","door-closed-fill","door-closed-line","door-fill","door-line","door-lock-box-fill","door-lock-box-line","door-lock-fill","door-lock-line","door-open-fill","door-open-line","flower-fill","flower-line","football-fill","football-line","fridge-fill","fridge-line","game-fill","game-line","glasses-2-fill","glasses-2-line","glasses-fill","glasses-line","goggles-fill","goggles-line","golf-ball-fill","golf-ball-line","graduation-cap-fill","graduation-cap-line","handbag-fill","handbag-line","infinity-fill","infinity-line","key-2-fill","key-2-line","key-fill","key-line","leaf-fill","leaf-line","lightbulb-fill","lightbulb-flash-fill","lightbulb-flash-line","lightbulb-line","outlet-2-fill","outlet-2-line","outlet-fill","outlet-line","ping-pong-fill","ping-pong-line","plant-fill","plant-line","plug-2-fill","plug-2-line","plug-fill","plug-line","police-badge-fill","police-badge-line","recycle-fill","recycle-line","reserved-fill","reserved-line","scales-2-fill","scales-2-line","scales-3-fill","scales-3-line","scales-fill","scales-line","seedling-fill","seedling-line","shirt-fill","shirt-line","sofa-fill","sofa-line","sword-fill","sword-line","t-shirt-2-fill","t-shirt-2-line","t-shirt-air-fill","t-shirt-air-line","t-shirt-fill","t-shirt-line","tooth-fill","tooth-line","tree-fill","tree-line","umbrella-fill","umbrella-line","voice-recognition-fill","voice-recognition-line","weight-fill","weight-line","wheelchair-fill","wheelchair-line"]},{"name":"System","list":["add-box-fill","add-box-line","add-circle-fill","add-circle-line","add-fill","add-large-fill","add-large-line","add-line","alarm-fill","alarm-line","alarm-warning-fill","alarm-warning-line","alert-fill","alert-line","apps-2-add-fill","apps-2-add-line","apps-2-fill","apps-2-line","apps-fill","apps-line","check-double-fill","check-double-line","check-fill","check-line","checkbox-blank-circle-fill","checkbox-blank-circle-line","checkbox-blank-fill","checkbox-blank-line","checkbox-circle-fill","checkbox-circle-line","checkbox-fill","checkbox-indeterminate-fill","checkbox-indeterminate-line","checkbox-line","checkbox-multiple-blank-fill","checkbox-multiple-blank-line","checkbox-multiple-fill","checkbox-multiple-line","close-circle-fill","close-circle-line","close-fill","close-large-fill","close-large-line","close-line","dashboard-fill","dashboard-horizontal-fill","dashboard-horizontal-line","dashboard-line","delete-back-2-fill","delete-back-2-line","delete-back-fill","delete-back-line","delete-bin-2-fill","delete-bin-2-line","delete-bin-3-fill","delete-bin-3-line","delete-bin-4-fill","delete-bin-4-line","delete-bin-5-fill","delete-bin-5-line","delete-bin-6-fill","delete-bin-6-line","delete-bin-7-fill","delete-bin-7-line","delete-bin-fill","delete-bin-line","divide-fill","divide-line","download-2-fill","download-2-line","download-cloud-2-fill","download-cloud-2-line","download-cloud-fill","download-cloud-line","download-fill","download-line","equal-fill","equal-line","error-warning-fill","error-warning-line","export-fill","export-line","external-link-fill","external-link-line","eye-2-fill","eye-2-line","eye-close-fill","eye-close-line","eye-fill","eye-line","eye-off-fill","eye-off-line","filter-2-fill","filter-2-line","filter-3-fill","filter-3-line","filter-fill","filter-line","filter-off-fill","filter-off-line","find-replace-fill","find-replace-line","forbid-2-fill","forbid-2-line","forbid-fill","forbid-line","function-add-fill","function-add-line","function-fill","function-line","history-fill","history-line","hourglass-2-fill","hourglass-2-line","hourglass-fill","hourglass-line","import-fill","import-line","indeterminate-circle-fill","indeterminate-circle-line","information-2-fill","information-2-line","information-fill","information-line","information-off-fill","information-off-line","list-settings-fill","list-settings-line","loader-2-fill","loader-2-line","loader-3-fill","loader-3-line","loader-4-fill","loader-4-line","loader-5-fill","loader-5-line","loader-fill","loader-line","lock-2-fill","lock-2-line","lock-fill","lock-line","lock-password-fill","lock-password-line","lock-star-fill","lock-star-line","lock-unlock-fill","lock-unlock-line","login-box-fill","login-box-line","login-circle-fill","login-circle-line","logout-box-fill","logout-box-line","logout-box-r-fill","logout-box-r-line","logout-circle-fill","logout-circle-line","logout-circle-r-fill","logout-circle-r-line","loop-left-fill","loop-left-line","loop-right-fill","loop-right-line","menu-2-fill","menu-2-line","menu-3-fill","menu-3-line","menu-4-fill","menu-4-line","menu-5-fill","menu-5-line","menu-add-fill","menu-add-line","menu-fill","menu-fold-2-fill","menu-fold-2-line","menu-fold-3-fill","menu-fold-3-line-2","menu-fold-3-line","menu-fold-4-fill","menu-fold-4-line","menu-fold-fill","menu-fold-line","menu-line","menu-search-fill","menu-search-line","menu-unfold-2-fill","menu-unfold-2-line","menu-unfold-3-fill","menu-unfold-3-line-2","menu-unfold-3-line","menu-unfold-4-fill","menu-unfold-4-line-2","menu-unfold-4-line","menu-unfold-fill","menu-unfold-line","more-2-fill","more-2-line","more-fill","more-line","notification-badge-fill","notification-badge-line","progress-1-fill","progress-1-line","progress-2-fill","progress-2-line","progress-3-fill","progress-3-line","progress-4-fill","progress-4-line","progress-5-fill","progress-5-line","progress-6-fill","progress-6-line","progress-7-fill","progress-7-line","progress-8-fill","progress-8-line","prohibited-2-fill","prohibited-2-line","prohibited-fill","prohibited-line","question-fill","question-line","radio-button-fill","radio-button-line","refresh-fill","refresh-line","search-2-fill","search-2-line","search-eye-fill","search-eye-line","search-fill","search-line","settings-2-fill","settings-2-line","settings-3-fill","settings-3-line","settings-4-fill","settings-4-line","settings-5-fill","settings-5-line","settings-6-fill","settings-6-line","settings-fill","settings-line","share-2-fill","share-2-line","share-box-fill","share-box-line","share-circle-fill","share-circle-line","share-fill","share-forward-2-fill","share-forward-2-line","share-forward-box-fill","share-forward-box-line","share-forward-fill","share-forward-line","share-line","shield-check-fill","shield-check-line","shield-cross-fill","shield-cross-line","shield-fill","shield-flash-fill","shield-flash-line","shield-keyhole-fill","shield-keyhole-line","shield-line","shield-star-fill","shield-star-line","shield-user-fill","shield-user-line","side-bar-fill","side-bar-line","sidebar-fold-fill","sidebar-fold-line","sidebar-unfold-fill","sidebar-unfold-line","spam-2-fill","spam-2-line","spam-3-fill","spam-3-line","spam-fill","spam-line","star-fill","star-half-fill","star-half-line","star-half-s-fill","star-half-s-line","star-line","star-s-fill","star-s-line","subtract-fill","subtract-line","thumb-down-fill","thumb-down-line","thumb-up-fill","thumb-up-line","time-fill","time-line","timer-2-fill","timer-2-line","timer-fill","timer-flash-fill","timer-flash-line","timer-line","toggle-fill","toggle-line","upload-2-fill","upload-2-line","upload-cloud-2-fill","upload-cloud-2-line","upload-cloud-fill","upload-cloud-line","upload-fill","upload-line","zoom-in-fill","zoom-in-line","zoom-out-fill","zoom-out-line"]},{"name":"User & Faces","list":["account-box-fill","account-box-line","account-circle-fill","account-circle-line","account-pin-box-fill","account-pin-box-line","account-pin-circle-fill","account-pin-circle-line","admin-fill","admin-line","aliens-fill","aliens-line","bear-smile-fill","bear-smile-line","body-scan-fill","body-scan-line","contacts-fill","contacts-line","criminal-fill","criminal-line","emotion-2-fill","emotion-2-line","emotion-fill","emotion-happy-fill","emotion-happy-line","emotion-laugh-fill","emotion-laugh-line","emotion-line","emotion-normal-fill","emotion-normal-line","emotion-sad-fill","emotion-sad-line","emotion-unhappy-fill","emotion-unhappy-line","genderless-fill","genderless-line","ghost-2-fill","ghost-2-line","ghost-fill","ghost-line","ghost-smile-fill","ghost-smile-line","group-2-fill","group-2-line","group-3-fill","group-3-line","group-fill","group-line","men-fill","men-line","mickey-fill","mickey-line","open-arm-fill","open-arm-line","parent-fill","parent-line","robot-2-fill","robot-2-line","robot-3-fill","robot-3-line","robot-fill","robot-line","skull-2-fill","skull-2-line","skull-fill","skull-line","spy-fill","spy-line","star-smile-fill","star-smile-line","team-fill","team-line","travesti-fill","travesti-line","user-2-fill","user-2-line","user-3-fill","user-3-line","user-4-fill","user-4-line","user-5-fill","user-5-line","user-6-fill","user-6-line","user-add-fill","user-add-line","user-fill","user-follow-fill","user-follow-line","user-forbid-fill","user-forbid-line","user-heart-fill","user-heart-line","user-line","user-location-fill","user-location-line","user-received-2-fill","user-received-2-line","user-received-fill","user-received-line","user-search-fill","user-search-line","user-settings-fill","user-settings-line","user-shared-2-fill","user-shared-2-line","user-shared-fill","user-shared-line","user-smile-fill","user-smile-line","user-star-fill","user-star-line","user-unfollow-fill","user-unfollow-line","user-voice-fill","user-voice-line","women-fill","women-line"]},{"name":"Weather","list":["blaze-fill","blaze-line","celsius-fill","celsius-line","cloud-windy-fill","cloud-windy-line","cloudy-2-fill","cloudy-2-line","cloudy-fill","cloudy-line","drizzle-fill","drizzle-line","earthquake-fill","earthquake-line","fahrenheit-fill","fahrenheit-line","fire-fill","fire-line","flashlight-fill","flashlight-line","flood-fill","flood-line","foggy-fill","foggy-line","hail-fill","hail-line","haze-2-fill","haze-2-line","haze-fill","haze-line","heavy-showers-fill","heavy-showers-line","meteor-fill","meteor-line","mist-fill","mist-line","moon-clear-fill","moon-clear-line","moon-cloudy-fill","moon-cloudy-line","moon-fill","moon-foggy-fill","moon-foggy-line","moon-line","rainbow-fill","rainbow-line","rainy-fill","rainy-line","shining-2-fill","shining-2-line","shining-fill","shining-line","showers-fill","showers-line","snowflake-fill","snowflake-line","snowy-fill","snowy-line","sparkling-2-fill","sparkling-2-line","sparkling-fill","sparkling-line","sun-cloudy-fill","sun-cloudy-line","sun-fill","sun-foggy-fill","sun-foggy-line","sun-line","temp-cold-fill","temp-cold-line","temp-hot-fill","temp-hot-line","thunderstorms-fill","thunderstorms-line","tornado-fill","tornado-line","typhoon-fill","typhoon-line","water-percent-fill","water-percent-line","windy-fill","windy-line"]}],
   install
 };
 

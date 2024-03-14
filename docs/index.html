@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="“Content-Language”" content="“zh_CN”" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, viewport-fit=cover"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <link
+      rel="shortcut icon"
+      href="https://cos.birdpaper.design/birdpaper-ui/v2/public/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="https://cos.birdpaper.design/birdpaper-ui/v2/public/favicon.ico" type="image/x-icon" />
+    <title>Birdpaper Icon</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/entry-client"></script>
+    <script>
+      !(function (p) {
+        "use strict";
+        !(function (t) {
+          if (window.location.href.includes("birdpaper")) {
+            var s = window,
+              e = document,
+              i = p,
+              c = "".concat("https:" === e.location.protocol ? "https://" : "http://", "sdk.51.la/js-sdk-pro.min.js"),
+              n = e.createElement("script"),
+              r = e.getElementsByTagName("script")[0];
+            (n.type = "text/javascript"),
+              n.setAttribute("charset", "UTF-8"),
+              (n.async = !0),
+              (n.src = c),
+              (n.id = "LA_COLLECT"),
+              (i.d = n);
+            var o = function () {
+              s.LA.ids.push(i);
+            };
+            s.LA ? s.LA.ids && o() : ((s.LA = p), (s.LA.ids = []), o()), r.parentNode.insertBefore(n, r);
+          }
+        })();
+      })({ id: "3HmmkAPccQrl0rCR", ck: "3HmmkAPccQrl0rCR", autoTrack: true, hashMode: true });
+      !(function (c, i, e, b) {
+        if (window.location.href.includes("birdpaper")) {
+          var h = i.createElement("script");
+          var f = i.getElementsByTagName("script")[0];
+          h.type = "text/javascript";
+          h.crossorigin = true;
+          h.onload = function () {
+            new c[b]["Monitor"]().init({ id: "3HmmkAPccQrl0rCR", sendSuspicious: true, sendSpaPv: true });
+          };
+          f.parentNode.insertBefore(h, f);
+          h.src = e;
+        }
+      })(window, document, "https://sdk.51.la/perf/js-sdk-perf.min.js", "LingQue");
+    </script>
+  </body>
+</html>
