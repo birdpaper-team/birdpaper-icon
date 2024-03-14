@@ -7,7 +7,7 @@
           src="https://cos.birdpaper.design/birdpaper-icon/public/birdpaper-icon_logo_text.png"
           alt="BirdpaperICON"
         />
-        <span :class="`${name}-logo-version`">v0.1.0-beat</span>
+        <span :class="`${name}-logo-version`">v0.1.0</span>
       </div>
       <!-- <div :class="`${name}-route`">
         <ul :class="`${name}-route-inner`">
@@ -23,7 +23,7 @@
 </template>
 
 <script setup lang="ts">
-import { IconGithubFill } from "birdpaper-icon";
+// import { IconGithubFill } from "birdpaper-icon";
 
 const name = "top-bar";
 
