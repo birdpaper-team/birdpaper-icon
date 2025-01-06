@@ -9,13 +9,13 @@
     "sourceMap": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
+    "types": ["node", "birdpaper-ui/global"],
+    "typeRoots": ["./node_modules/@types/"],
     "noImplicitAny": false,
     "baseUrl": ".",
     "lib": ["es2020", "dom"],
-    "skipLibCheck": true,
-    "types": ["birdpaper-ui/global"],
-    "paths": {
-      "@/*": ["src/*"]
-    }
-  }
+    "skipLibCheck": true
+  },
+  "include": ["docs/**/*.ts", "docs/**/*.d.ts", "docs/**/*.tsx", "docs/**/*.vue"],
+  "exclude": ["node_modules", "dist", "**/*.js"]
 }

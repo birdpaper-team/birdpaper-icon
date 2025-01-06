@@ -1,6 +1,6 @@
 {
   "name": "birdpaper-icon",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "基于 Remix icon 生成的 Vue3 图标组件库",
   "scripts": {
     "docs:dev": "pnpm run -C docs dev",
@@ -12,6 +12,36 @@
     "build:components": "pnpm run -C packages build:components",
     "build:style": "pnpm run -C packages build:style",
     "build": "npm run build:components && npm run build:style"
+  },
+  "dependencies": {
+    "@vueuse/components": "^11.1.0",
+    "@vueuse/core": "^10.11.0",
+    "radash": "^12.1.0",
+    "birdpaper-icon": "workspace:packages@*",
+    "birdpaper-ui": "^3.0.0-alpha.26"
+  },
+  "devDependencies": {
+    "@pnpm/find-workspace-packages": "^4.0.16",
+    "@pnpm/types": "^8.4.0",
+    "@types/fs-extra": "^9.0.13",
+    "@types/node": "^18.19.25",
+    "@unocss/reset": "^0.61.7",
+    "@vitejs/plugin-vue": "^5.1.3",
+    "@vitejs/plugin-vue-jsx": "^4.0.0",
+    "@vitest/coverage-v8": "^1.6.0",
+    "@vitest/ui": "1.6.0",
+    "@vue/test-utils": "^2.0.0",
+    "@vue/tsconfig": "^0.1.3",
+    "oxlint": "^0.6.1",
+    "prettier": "^2.7.1",
+    "vite": "^5.1.3",
+    "vue": "^3.5.3",
+    "sass": "^1.77.8",
+    "tsx": "^4.7.1",
+    "typescript": "^4.7.4",
+    "unocss": "^0.61.7",
+    "unplugin-vue-macros": "^2.7.11",
+    "vitest": "1.6.0"
   },
   "keywords": [
     "Remix icon",
@@ -40,5 +70,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/birdpaper-team/birdpaper-icon"
+  },
+  "lint-staged": {
+    "*.{vue,js,ts,jsx,tsx,md,json}": "oxlint --fix"
   }
 }
