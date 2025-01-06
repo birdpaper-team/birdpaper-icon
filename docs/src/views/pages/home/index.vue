@@ -8,17 +8,13 @@
         <div :class="`${name}-banner-content-remark`">
           <p>
             This is an open source Vue3 component based on the excellent Icon library -
-            <img :src="remixLogo" @click="linkTo('remix')" /> second development, for learning and reference use only,
-            thanks to the Remix Design team.
+            <img :src="remixLogo" @click="linkTo('remix')" /> second development, for learning and reference use only, thanks to the Remix
+            Design team.
           </p>
         </div>
         <div :class="`${name}-banner-content-option`">
-          <bp-space>
-            <bp-button type="primary" status="primary" :icon="IconGithubFill" @click="linkTo('github')">
-              Github
-            </bp-button>
-            <bp-button :icon="IconNpmjsFill" @click="linkTo('npm')">npm</bp-button>
-          </bp-space>
+          <bp-button :icon="IconGithubFill" @click="linkTo('github')"> Github </bp-button>
+          <bp-button :icon="IconNpmjsFill" type="plain" status="gary" @click="linkTo('npm')">npm</bp-button>
         </div>
       </div>
     </div>
@@ -58,7 +54,7 @@ const searchIcons = computed(() => {
   const rawIcons = deepClone(iconInfo);
 
   for (let i = 0; i < rawIcons.length; i++) {
-    rawIcons[i].list = rawIcons[i].list.filter(item => item.includes(searchKey.value));
+    rawIcons[i].list = rawIcons[i].list.filter((item) => item.includes(searchKey.value));
   }
   return rawIcons;
 });

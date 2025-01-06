@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "基于 Remix icon 生成的 Vue3 图标组件库",
   "scripts": {
-    "docs": "pnpm run -C docs dev",
+    "docs:dev": "pnpm run -C docs dev",
     "docs:build": "pnpm run -C docs build",
     "docs:preview": "pnpm run -C docs preview",
     "generate": "pnpm run -C packages generate",

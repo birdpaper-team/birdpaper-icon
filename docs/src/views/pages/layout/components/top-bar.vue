@@ -2,12 +2,8 @@
   <div :class="name">
     <div :class="`${name}-inner`">
       <div :class="`${name}-logo`">
-        <img
-          :class="`${name}-logo-inner`"
-          src="https://cos.birdpaper.design/birdpaper-icon/public/birdpaper-icon_logo_text.png"
-          alt="BirdpaperICON"
-        />
-        <span :class="`${name}-logo-version`">v0.1.0</span>
+        <img :class="`${name}-logo-inner`" src="https://cos.birdpaper.design/birdpaper-icon/v1/logo/logo-black.svg" alt="BirdpaperICON" />
+        <span :class="`${name}-logo-version`">v1.0.0</span>
       </div>
       <!-- <div :class="`${name}-route`">
         <ul :class="`${name}-route-inner`">

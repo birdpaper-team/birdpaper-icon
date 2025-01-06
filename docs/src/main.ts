@@ -5,7 +5,7 @@ import App from "./App.vue";
 import "./style/index.less";
 
 import BirdpaperUI from "birdpaper-ui";
-import "birdpaper-ui/dist/index.css";
+import "birdpaper-ui/theme/src/index.css";
 
 import VueWechatTitle from "vue-wechat-title";
 
