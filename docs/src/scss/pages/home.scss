@@ -1,14 +1,10 @@
 .home-page {
+  @include flex(row, center, center);
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
 
   &-banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(row, center, center);
     width: 100%;
     background-color: var(--gary-2);
     height: 320px;
@@ -20,10 +16,11 @@
       padding: 0 20px;
 
       &-title {
-        font-size: 34px;
+        font-size: 36px;
         color: var(--gary-10);
         letter-spacing: 1px;
         font-weight: 500;
+        @extend .font-quick !optional;
       }
 
       &-remark {
@@ -34,14 +31,15 @@
         font-weight: 500;
         color: var(--gary-8);
         letter-spacing: 0.4px;
+        @extend .font-quick !optional;
 
         img {
           position: relative;
           top: 5px;
           height: 20px;
           opacity: 1;
-          transition: all 0.2s ease;
           cursor: pointer;
+          transition: all 0.2s ease;
 
           &:hover {
             opacity: 0.6;
@@ -49,19 +47,13 @@
           }
         }
       }
-
-      &-option {
-        margin-top: 20px;
-      }
     }
   }
 
   &-search {
+    @include flex(row, center, center);
     position: sticky;
     top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     margin-top: -36px;
     z-index: 99;
@@ -74,10 +66,11 @@
     &-inner {
       display: flex;
       height: 66px;
-      border: $borderSize solid var(--gary-3);
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      border: $borderSize solid var(--gary-4);
+      border-radius: 10px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
       background-color: var(--gary-1);
+      @extend .font-quick !optional;
     }
 
     &-select {
@@ -91,9 +84,7 @@
       }
 
       &-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flex(row, space-between, center);
         width: 100%;
         height: 100%;
         background-color: var(--gary-3);
@@ -148,10 +139,8 @@
     }
 
     &-input {
+      @include flex(row, flex-start, center);
       flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
       padding: 10px;
 
       &-icon {
@@ -184,6 +173,7 @@
           color: var(--gary-10);
           font-weight: 500;
           letter-spacing: 0.4px;
+          @extend .font-quick !optional;
         }
 
         .bp-input-placeholder {
@@ -195,9 +185,7 @@
   }
 
   &-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(row, center, center);
     width: 100%;
     padding-top: 36px;
     padding-bottom: 200px;
@@ -231,6 +219,7 @@
     padding: 0 24px;
     border-radius: 4px;
     cursor: pointer;
+    @extend .font-quick !optional;
 
     &-inner {
       display: flex;
@@ -280,10 +269,10 @@
   }
 
   &-title {
-    display: flex;
-    align-items: center;
+    @include flex(row, flex-start, center);
     padding: 0 28px;
     margin-bottom: 20px;
+    @extend .font-quick !optional;
 
     p {
       color: var(--gary-9);
@@ -348,6 +337,7 @@
       color: var(--gary-7);
       margin-top: 10px;
       text-align: center;
+      @extend .font-quick !optional;
     }
   }
 }
@@ -358,29 +348,25 @@
   margin-bottom: 20px;
 
   .icon-area {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(row, center, center);
     width: 76px;
     height: 76px;
     border-radius: 10px;
-    border: $borderSize solid var(--gary-4);
+    border: $borderSize solid var(--gary-5);
   }
 
   .icon-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    @include flex(column, space-between, flex-start);
     flex: 1;
     margin-left: 20px;
 
     &-title {
-      display: flex;
-      align-items: center;
+      @include flex(row, center, center);
       font-size: 20px;
       font-weight: bold;
       color: var(--gary-10);
       letter-spacing: 0.4px;
+      @extend .font-quick !optional;
 
       .bp-icon {
         margin-left: 4px;
@@ -398,39 +384,38 @@
     }
 
     &-component {
-      display: flex;
-      align-items: center;
+      @include flex(row, center, center);
       width: max-content;
       height: 34px;
-      padding: 0 0 0 14px;
-      border: $borderSize solid var(--gary-4);
+      padding: 0 0 0 10px;
+      border: $borderSize solid var(--gary-5);
       border-radius: 6px;
 
       &-left {
         display: flex;
         align-items: center;
-
+        
         .bp-icon {
           fill: var(--gary-6);
         }
-
+        
         .component-tag-inner {
           font-size: 13px;
           height: 16px;
           color: var(--gary-9);
+          font-weight: 500;
           letter-spacing: 0.8px;
-          margin: 0 10px;
+          margin: 0 4px;
           line-height: 1;
+          @extend .font-quick !optional;
         }
       }
 
       &-right {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex(row, center, center);
         width: 34px;
-        height: 34px;
-        background-color: var(--gary-4);
+        height: 33px;
+        background-color: var(--gary-1);
         border-top-right-radius: 6px;
         border-bottom-right-radius: 6px;
         cursor: pointer;
@@ -447,9 +432,7 @@
   border-top: 1px solid var(--gary-4);
 
   .icon-modal-footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flex(row, space-between, center);
     width: 100%;
     height: 24px;
 
@@ -464,6 +447,7 @@
         color: var(--gary-6);
         font-size: 12px;
         letter-spacing: 0.2px;
+        @extend .font-quick !optional;
       }
     }
   }

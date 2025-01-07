@@ -11,7 +11,6 @@
         </div>
         <div class="icon-info-component">
           <div class="icon-info-component-left">
-            <component :is="allIcons[`IconCodeSLine`]" size="16"></component>
             <span class="component-tag-inner">{{ componentTag }}</span>
           </div>
           <div class="icon-info-component-right">

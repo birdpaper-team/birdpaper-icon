@@ -12,7 +12,7 @@
             Design team.
           </p>
         </div>
-        <div :class="`${name}-banner-content-option`">
+        <div :class="`${name}-banner-content-option mt-20px`">
           <bp-button :icon="IconGithubFill" @click="linkTo('github')"> Github </bp-button>
           <bp-button :icon="IconNpmjsFill" type="plain" status="gary" @click="linkTo('npm')">npm</bp-button>
         </div>
@@ -21,9 +21,7 @@
     <div :class="`${name}-search`">
       <div :class="`${name}-search-cotainer`">
         <div :class="`${name}-search-inner`">
-          <!-- 类型选择器 -->
           <type-selector v-model="currentType"></type-selector>
-          <!-- 查询框 -->
           <search-input v-model="searchKey"></search-input>
         </div>
       </div>
