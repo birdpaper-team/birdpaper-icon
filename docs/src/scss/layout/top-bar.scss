@@ -1,24 +1,18 @@
 .top-bar {
+  @include flex(row, center, center);
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 60px;
-  padding: 0 20px;
-  border-bottom: 1px solid @gary-4;
-  background-color: @gary-2;
-  .no-select;
+  border-bottom: 1px solid var(--gary-4);
+  background-color: var(--gary-2);
 
   &-inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flex(row, flex-start, center);
     width: 1200px;
+    padding: 0 20px;
   }
 
   &-logo {
-    display: flex;
-    align-items: center;
+    @include flex(row, flex-start, center);
 
     &-inner {
       height: 20px;
@@ -26,14 +20,16 @@
 
     &-version {
       margin-left: 8px;
-      background-color: @gary-1;
-      border: 1px solid @gary-4;
+      background-color: var(--gary-1);
+      border: $borderSize solid var(--gary-5);
       padding: 4px 10px;
+      letter-spacing: 0.5px;
       border-radius: 6px;
-      color: @gary-10;
+      font-weight: bold;
+      color: var(--gary-10);
       font-size: 12px;
       line-height: 1;
-      font-weight: normal;
+      @extend .font-quick !optional;
     }
   }
 
@@ -52,7 +48,7 @@
     }
 
     .separator {
-      border-left: 0.5px solid @gary-6;
+      border-left: 0.5px solid var(--gary-6);
       height: 18px;
     }
 
@@ -63,19 +59,19 @@
     }
 
     .text-link {
-      color: @gary-9;
+      color: var(--gary-9);
       font-size: 13px;
       font-weight: 500;
-      transition: all .2s ease;
+      transition: all 0.2s ease;
 
       &:hover {
-        color: @primary-6;
-        transition: all .2s ease;
+        color: var(--primary-6);
+        transition: all 0.2s ease;
       }
     }
 
     .icon-link {
-      fill: @gary-8;
+      fill: var(--gary-8);
     }
   }
 }

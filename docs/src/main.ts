@@ -2,7 +2,8 @@ import { createApp } from "vue";
 import { router } from "./router/index";
 import App from "./App.vue";
 
-import "./style/index.less";
+import "uno.css";
+import "./scss/index.scss";
 
 import BirdpaperUI from "birdpaper-ui";
 import "birdpaper-ui/theme/src/index.css";
