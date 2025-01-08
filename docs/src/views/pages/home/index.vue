@@ -13,8 +13,8 @@
           </p>
         </div>
         <div :class="`${name}-banner-content-option mt-20px`">
-          <bp-button :icon="IconGithubFill" @click="linkTo('github')"> Github </bp-button>
-          <bp-button :icon="IconNpmjsFill" type="plain" status="gary" @click="linkTo('npm')">npm</bp-button>
+          <bp-button> 快速上手 </bp-button>
+          <bp-button :icon="IconGithubFill" type="plain" status="gary" @click="linkTo('github')">Github</bp-button>
         </div>
       </div>
     </div>
@@ -29,10 +29,12 @@
     <div :class="`${name}-icons`">
       <div :class="`${name}-icons-container`">
         <div id="All Icons"></div>
-        <icon-group v-for="v in searchIcons" :all-icons="allIcons" :group-info="v"></icon-group>
+        <icon-group v-for="v in searchIcons" :all-icons="allIcons" :group-info="v" @on-detail="onDetail"></icon-group>
       </div>
     </div>
   </div>
+
+  <icon-detail ref="iconDetailRef"></icon-detail>
 </template>
 
 <script setup lang="ts">
@@ -40,6 +42,7 @@ import allIcons, { iconInfo, IconGithubFill, IconNpmjsFill } from "birdpaper-ico
 import iconGroup from "./components/icon-group.vue";
 import typeSelector from "./components/type-selector.vue";
 import searchInput from "./components/search-input.vue";
+import iconDetail from "./components/icon-detail.vue";
 import { ref, computed } from "vue";
 import { deepClone } from "@/utils/helper";
 import remixLogo from "@/assets/remix-logo.svg";
@@ -56,6 +59,11 @@ const searchIcons = computed(() => {
   }
   return rawIcons;
 });
+
+const iconDetailRef = ref();
+const onDetail = (icon: string) => {
+  iconDetailRef.value.open(icon);
+};
 
 const homeUrlMap = {
   remix: "https://remixicon.cn",

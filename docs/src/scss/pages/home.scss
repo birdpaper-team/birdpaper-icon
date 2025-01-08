@@ -304,19 +304,17 @@
     flex-direction: column;
     flex-wrap: nowrap;
     width: 128px;
-    height: 100px;
+    height: 110px;
     box-sizing: border-box;
     background-color: var(--gary-0);
     border-radius: 10px;
     border: $borderSize solid var(--gary-0);
     padding: 16px;
-    transition: all 0.2s ease;
     cursor: pointer;
     transition: all 0.2s ease;
 
     &:hover {
       background-color: var(--gary-2);
-      border: $borderSize solid var(--gary-3);
       transition: all 0.2s ease;
 
       .bp-icon {

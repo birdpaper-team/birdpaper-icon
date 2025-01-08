@@ -12,19 +12,17 @@
       </div>
     </div>
   </div>
-
-  <icon-detail ref="iconDetailRef"></icon-detail>
 </template>
 
 <script setup lang="ts">
 import { toPascalCase } from "@/utils/helper";
-import { PropType, ref } from "vue";
-import iconDetail from "./icon-detail.vue";
+import { PropType } from "vue";
 
 const props = defineProps({
   allIcons: { type: Object, default: () => {} },
   groupInfo: { type: Object as PropType<{ name: string; list: string[] }>, default: () => {} },
 });
+const emits = defineEmits(["on-detail"]);
 
 const name = "home-icon-group";
 
@@ -35,8 +33,7 @@ const splitIconName = (name: string) => {
   return strArr.join("-");
 };
 
-const iconDetailRef = ref();
 const handleClick = (icon: string) => {
-  iconDetailRef.value.open(icon);
+  emits("on-detail", icon);
 };
 </script>
