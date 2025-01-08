@@ -19,7 +19,7 @@
       </div>
     </div>
     <div :class="`${name}-search`">
-      <div :class="`${name}-search-cotainer`">
+      <div :class="`${name}-search-container`">
         <div :class="`${name}-search-inner`">
           <type-selector v-model="currentType"></type-selector>
           <search-input v-model="searchKey"></search-input>

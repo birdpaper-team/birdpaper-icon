@@ -1,6 +1,8 @@
 @use "./var";
 
 .VPNav {
+  position: relative !important;
+
   .text,
   .VPLink {
     font-size: 13px;
@@ -103,4 +105,8 @@
   .divider {
     display: none;
   }
+}
+
+.VPContent{
+  padding-top: 0 !important;
 }

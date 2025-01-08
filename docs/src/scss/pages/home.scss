@@ -7,13 +7,13 @@
     @include flex(row, center, center);
     width: 100%;
     background-color: var(--gary-2);
-    height: 320px;
+    min-height: 320px;
     border-bottom: $borderSize solid var(--gary-4);
     padding-bottom: 40px;
 
     &-content {
       width: 1376px;
-      padding: 0 20px;
+      padding: 40px 20px;
 
       &-title {
         font-size: 36px;
@@ -34,6 +34,7 @@
         @extend .font-quick !optional;
 
         img {
+          display: inline;
           position: relative;
           top: 5px;
           height: 20px;
@@ -56,9 +57,9 @@
     top: 0;
     width: 100%;
     margin-top: -36px;
-    z-index: 99;
+    z-index: 9;
 
-    &-cotainer {
+    &-container {
       width: 1376px;
       padding: 0 20px;
     }
@@ -99,6 +100,7 @@
           color: var(--gary-8);
           letter-spacing: 0.4px;
           transition: all 0.2s ease;
+          @extend .text-ellipsis !optional;
         }
 
         .bp-icon {
@@ -191,9 +193,8 @@
     padding-bottom: 200px;
     background-color: var(--gary-1);
 
-    &-cotainer {
+    &-container {
       width: 1376px;
-      padding: 0 20px;
     }
   }
 }
@@ -293,8 +294,7 @@
 
   &-container {
     display: block;
-    width: 1376px;
-    padding: 0 20px;
+    width: 100%;
   }
 
   &-item {
@@ -303,7 +303,7 @@
     justify-content: center;
     flex-direction: column;
     flex-wrap: nowrap;
-    width: 128px;
+    width: calc(1376px / 10);
     height: 110px;
     box-sizing: border-box;
     background-color: var(--gary-0);
@@ -392,11 +392,11 @@
       &-left {
         display: flex;
         align-items: center;
-        
+
         .bp-icon {
           fill: var(--gary-6);
         }
-        
+
         .component-tag-inner {
           font-size: 13px;
           height: 16px;
@@ -446,6 +446,71 @@
         font-size: 12px;
         letter-spacing: 0.2px;
         @extend .font-quick !optional;
+      }
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .home-page {
+    &-banner {
+      &-content {
+        width: 100%;
+
+        &-title {
+          font-size: 36px;
+        }
+
+        &-remark {
+          width: 100%;
+          font-size: 14px;
+        }
+      }
+    }
+
+    &-search {
+      &-container {
+        width: 100%;
+        padding: 0 20px;
+      }
+
+      &-inner {
+        display: flex;
+        height: 52px;
+        border-radius: 6px;
+      }
+
+      &-select {
+        display: flex;
+        width: 140px;
+        padding: 6px 8px;
+
+        &-container {
+          span {
+            font-size: 14px;
+          }
+        }
+      }
+
+      &-input {
+        &-icon {
+          width: 30px;
+        }
+        &-inner {
+          input {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    .home-icon-group {
+      &-container {
+        width: 100%;
+        padding: 0 20px;
+      }
+      &-item {
+        width: 33%;
       }
     }
   }
