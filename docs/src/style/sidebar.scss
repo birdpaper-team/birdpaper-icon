@@ -1,0 +1,50 @@
+@use "./var";
+
+.VPSidebar {
+  border-right: 0.5px solid var(--bp-gary-2);
+  background: var(--bp-gary-0) !important;
+
+  .curtain {
+    background-color: var(--bp-gary-0);
+  }
+
+  .VPSidebarItem.level-0 > .item > .text,
+  .VPSidebarItem.level-0.has-active > .item > .text {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--bp-gary-4);
+  }
+
+  .VPSidebarItem.level-1 {
+    .text {
+      color: var(--bp-gary-7);
+      font-size: 13px;
+
+      span {
+        font-family: var(--font-quick);
+        font-weight: 800;
+        margin-left: 8px;
+        color: var(--bp-gary-6);
+      }
+
+      &:hover {
+        color: var(--bp-gary-9) !important;
+
+        span {
+          color: var(--bp-gary-9);
+          transition: all 0.4s ease;
+        }
+      }
+    }
+  }
+}
+
+.VPSidebarItem.level-1.is-active > .item .link > .text {
+  &:hover {
+    color: var(--bp-primary-6) !important;
+  }
+}
+
+.VPSidebarItem.level-1.is-active > .item .link > .text > span {
+  color: var(--bp-primary-6);
+}
