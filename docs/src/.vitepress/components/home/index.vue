@@ -3,20 +3,17 @@
     <div :class="`${name}-banner`">
       <div :class="`${name}-banner-content`">
         <div :class="`${name}-banner-content-title`">
-          <p>
-            Vue3 Icon <br />
-            Component Library.
-          </p>
+          <p v-html="inrto[lang].title"></p>
         </div>
         <div :class="`${name}-banner-content-remark`">
           <p>
-            This is an open source Vue3 component based on the excellent Icon library -
-            <img :src="remixLogo" @click="linkTo('remix')" /> second development, for learning and reference use only, thanks to the Remix
-            Design team.
+            <span v-html="inrto[lang].remark[0]" />
+            <img :src="remixLogo" @click="linkTo('remix')" />
+            <span v-html="inrto[lang].remark[1]" />
           </p>
         </div>
         <div :class="`${name}-banner-content-option mt-20px`">
-          <bp-button> 快速上手 </bp-button>
+          <bp-button>{{ inrto[lang].btn.quickStart }}</bp-button>
           <bp-button :icon="IconGithubFill" type="plain" status="gary" @click="linkTo('github')">Github</bp-button>
         </div>
       </div>
@@ -32,7 +29,7 @@
     <div :class="`${name}-icons`">
       <div :class="`${name}-icons-container`">
         <div id="All Icons"></div>
-        <template  v-for="(v, i) in searchIcons" :key="i">
+        <template v-for="(v, i) in searchIcons" :key="i">
           <icon-group :group-info="v" @on-detail="onDetail"></icon-group>
         </template>
       </div>
@@ -49,11 +46,38 @@ import typeSelector from "./components/type-selector.vue";
 import searchInput from "./components/search-input.vue";
 import iconDetail from "./components/icon-detail.vue";
 import { ref, computed } from "vue";
-import remixLogo from "../../../assets/remix-logo.svg"
+import remixLogo from "../../../assets/remix-logo.svg";
 
 const name = "home-page";
-const currentType = ref<string>("All Icons");
 
+const props = defineProps({
+  lang: { type: String, default: "zh-CN" },
+});
+
+const inrto = {
+  "zh-CN": {
+    title: `Vue3 图标组件库`,
+    remark: [
+      `这是一个基于优秀的开源图标 - `,
+      `二次开发的 Vue3 组件库，仅供学习和参考使用, 感谢 Remix 设计团队。`,
+    ],
+    btn: {
+      quickStart: "快速上手",
+    },
+  },
+  en: {
+    title: `Vue3 Icon <br />Component Library.`,
+    remark: [
+      `This is an open source Vue3 component based on the excellent Icon library - `,
+      ` second development, for learning and reference use only, thanks to the Remix Design team.`,
+    ],
+    btn: {
+      quickStart: "QuickStart",
+    },
+  },
+};
+
+const currentType = ref<string>("All Icons");
 const searchKey = ref<string>("");
 const searchIcons = computed(() => {
   const rawIcons = JSON.parse(JSON.stringify(iconInfo));
