@@ -1,0 +1,18 @@
+.bp-icon-spin {
+  display: inline-block;
+  line-height: 1;
+  animation: rotating 1s linear infinite;
+  -webkit-animation: rotating 1s linear infinite;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(365deg);
+  }
+}
