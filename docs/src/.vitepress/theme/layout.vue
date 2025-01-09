@@ -1,7 +1,7 @@
 <template>
   <DefaultTheme.Layout>
     <template #home-features-after>
-      <home-page :lang></home-page>
+      <home-page></home-page>
     </template>
     <template #nav-bar-content-after>
       <NolebaseEnhancedReadabilitiesMenu />
@@ -21,7 +21,4 @@ import DefaultTheme from "vitepress/theme";
 import HomePage from "../components/home/index.vue";
 
 import "@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css";
-import { useData } from "vitepress";
-
-const { lang } = useData();
 </script>

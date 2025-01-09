@@ -8,7 +8,7 @@
         <div :class="`${name}-banner-content-remark`">
           <p>
             <span v-html="inrto[lang].remark[0]" />
-            <img :src="remixLogo" @click="linkTo('remix')" />
+            <img :src="isDark ? remixLogoWhite : remixLogo" @click="linkTo('remix')" />
             <span v-html="inrto[lang].remark[1]" />
           </p>
         </div>
@@ -45,22 +45,20 @@ import iconGroup from "./components/icon-group.vue";
 import typeSelector from "./components/type-selector.vue";
 import searchInput from "./components/search-input.vue";
 import iconDetail from "./components/icon-detail.vue";
+import { useData } from "vitepress";
 import { ref, computed } from "vue";
+// @ts-ignore
 import remixLogo from "../../../assets/remix-logo.svg";
+// @ts-ignore
+import remixLogoWhite from "../../../assets/remix-logo-white.svg";
 
 const name = "home-page";
-
-const props = defineProps({
-  lang: { type: String, default: "zh-CN" },
-});
+const { lang, isDark } = useData();
 
 const inrto = {
   "zh-CN": {
     title: `Vue3 图标组件库`,
-    remark: [
-      `这是一个基于优秀的开源图标 - `,
-      `二次开发的 Vue3 组件库，仅供学习和参考使用, 感谢 Remix 设计团队。`,
-    ],
+    remark: [`这是一个基于优秀的开源图标 - `, `二次开发的 Vue3 组件库，仅供学习和参考使用, 感谢 Remix 设计团队。`],
     btn: {
       quickStart: "快速上手",
     },
