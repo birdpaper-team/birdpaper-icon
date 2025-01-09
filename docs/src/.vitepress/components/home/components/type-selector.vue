@@ -25,7 +25,7 @@
 <script setup lang="ts">
 import { onBeforeMount, onMounted, ref } from "vue";
 import { iconInfo, IconArrowDownSLine, IconSubtractLine } from "birdpaper-icon";
-// import { isInViewport, throttle } from "../../../../utils/helper";
+import { useThrottleFn } from "@vueuse/core";
 
 const model = defineModel({ type: String, default: "" });
 
@@ -40,7 +40,7 @@ const typeList = [
 ];
 
 const handleSelect = (name: string) => {
-  // cancelListenScroll();
+  cancelListenScroll();
   model.value = name;
   var targetElement = document.getElementById(name);
 
@@ -54,9 +54,9 @@ const handleSelect = (name: string) => {
   }
   triggerVisible.value = false;
 
-  // setTimeout(() => {
-  //   listenScroll();
-  // }, 800);
+  setTimeout(() => {
+    listenScroll();
+  }, 200);
 };
 
 const setCurrentType = () => {
@@ -69,28 +69,38 @@ const setCurrentType = () => {
     const element = typeList[i];
     const el = document.getElementById(`${element.name}-container`);
     if (el) {
-      // if (isInViewport(el)) {
-      //   model.value = element.name;
-      //   return;
-      // }
+      if (isInViewport(el)) {
+        model.value = element.name;
+        return;
+      }
     }
   }
 };
 
-// const throttleFn = throttle(setCurrentType, 100);
-// const listenScroll = () => {
-//   window.addEventListener("scroll", throttleFn);
-// };
+const isInViewport = (element: Element | any) => {
+  var rect = element.getBoundingClientRect();
 
-// const cancelListenScroll = () => {
-//   window.removeEventListener("scroll", throttleFn);
-// };
+  const viewPortHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+  const offsetTop = element.offsetTop;
+  const scollTop = document.documentElement.scrollTop;
+  const top = offsetTop - scollTop;
+  return top <= viewPortHeight && rect.bottom > 0;
+};
 
-// onMounted(() => {
-//   listenScroll();
-// });
+const throttleFn = useThrottleFn(setCurrentType, 100);
+const listenScroll = () => {
+  window.addEventListener("scroll", throttleFn);
+};
 
-// onBeforeMount(() => {
-//   cancelListenScroll;
-// });
+const cancelListenScroll = () => {
+  window.removeEventListener("scroll", throttleFn);
+};
+
+onMounted(() => {
+  listenScroll();
+});
+
+onBeforeMount(() => {
+  cancelListenScroll;
+});
 </script>

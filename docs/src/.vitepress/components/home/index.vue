@@ -32,7 +32,9 @@
     <div :class="`${name}-icons`">
       <div :class="`${name}-icons-container`">
         <div id="All Icons"></div>
-        <icon-group v-for="v in searchIcons" :all-icons="allIcons" :group-info="v" @on-detail="onDetail"></icon-group>
+        <template  v-for="(v, i) in searchIcons" :key="i">
+          <icon-group :group-info="v" @on-detail="onDetail"></icon-group>
+        </template>
       </div>
     </div>
   </div>
@@ -41,13 +43,13 @@
 </template>
 
 <script setup lang="ts">
-import allIcons, { iconInfo, IconGithubFill } from "birdpaper-icon";
+import { iconInfo, IconGithubFill } from "birdpaper-icon";
 import iconGroup from "./components/icon-group.vue";
 import typeSelector from "./components/type-selector.vue";
 import searchInput from "./components/search-input.vue";
 import iconDetail from "./components/icon-detail.vue";
 import { ref, computed } from "vue";
-import remixLogo from "../../../assets/remix-logo.svg";
+import remixLogo from "../../../assets/remix-logo.svg"
 
 const name = "home-page";
 const currentType = ref<string>("All Icons");
