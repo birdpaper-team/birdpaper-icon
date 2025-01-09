@@ -1,5 +1,5 @@
 packages:
-- 'packages'
-- 'scripts'
+- 'packages/*'
+- 'scripts/*'
 - 'docs'
 - 'docs-old'

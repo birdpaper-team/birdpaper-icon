@@ -1,12 +1,4 @@
-export const getIconVueComponent = ({
-  name,
-  componentName,
-  svgHtml,
-}: {
-  name: string;
-  componentName: string;
-  svgHtml: string;
-}) =>
+export const getIconVueComponent = ({ name, componentName, svgHtml }: { name: string; componentName: string; svgHtml: string }) =>
   // language=Vue
   // prettier-ignore
   `<template>
@@ -72,6 +64,15 @@ const ${componentName} = Object.assign(_${componentName}, {
 export default ${componentName};`;
 };
 
+export const getNewComponentIndex = ({ name, componentName }: { name: string; componentName: string }) => {
+  return `import _${componentName} from './${name}.vue';
+  
+  export const ${componentName} = _${componentName}
+  
+  export type ${componentName}Instance = InstanceType<typeof ${componentName}>;
+  export default ${componentName};`;
+};
+
 export const getBpVueIcon = ({
   imports,
   components,
@@ -131,9 +132,23 @@ export const getType = ({ exports }: { exports: string[] }) =>
 
 declare module 'vue' {
   export interface GlobalComponents {
-${exports.map(item => `${" ".repeat(4)}${item}`).join("\n")}
+${exports.map((item) => `${" ".repeat(4)}${item}`).join("\n")}
   }
 }
 
 export {};
+`;
+
+export const getNewIndex = ({
+  exports,
+  iconType,
+  iconInfo,
+}: {
+  exports: string[];
+  iconType: string[];
+  iconInfo: { name: string; list: string[] }[];
+}) => `
+${exports.join("\n")}
+export const iconType = [${iconType.map((item) => `"${item}"`)}];
+export const iconInfo = ${JSON.stringify(iconInfo)};
 `;

@@ -3,7 +3,7 @@
 import path from "path";
 import fs from "fs-extra";
 import { Command } from "commander";
-import { getIconComponents, generateIconComponent, buildIconIndex, buildType } from "./iconGenerate";
+import { getIconComponents, generateIconComponent, buildIconIndex, buildType, newBuildIndex } from "./iconGenerate";
 import buildComponent from "./buildComponent";
 import buildStyle from "./buildStyle";
 
@@ -17,10 +17,11 @@ program
   .command("icon:generate")
   .description("icon:generate...")
   .action(async () => {
-    const { iconList, iconType,iconInfo } = getIconComponents();
+    const { iconList, iconType, iconInfo } = getIconComponents();
     await generateIconComponent(iconList);
-    buildIconIndex(iconList, iconType, iconInfo);
-    buildType(iconList);
+    newBuildIndex(iconList, iconType, iconInfo);
+    // buildIconIndex(iconList, iconType, iconInfo);
+    // buildType(iconList);
   });
 
 program

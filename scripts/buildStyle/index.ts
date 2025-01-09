@@ -17,7 +17,7 @@ const run = async () => {
     fs.copySync(absolute, resolvePath(`../es/${filename}`));
     fs.copySync(absolute, resolvePath(`../lib/${filename}`));
 
-    if (/index\.less$/.test(filename)) {
+    if (/index\.scss$/.test(filename)) {
       console.log(`building ${filename}`);
 
       const lessContent = fs.readFileSync(absolute, "utf8");
@@ -31,7 +31,7 @@ const run = async () => {
           if (err) {
             console.log(err);
           } else if (result && result.css) {
-            const cssFilename = filename.replace(".less", ".css");
+            const cssFilename = filename.replace(".scss", ".css");
             fs.writeFileSync(resolvePath(`../es/${cssFilename}`), result.css);
             fs.writeFileSync(resolvePath(`../lib/${cssFilename}`), result.css);
             console.log(`${filename} build success`);
@@ -41,12 +41,12 @@ const run = async () => {
     }
   }
 
-  const indexLessPath = resolvePath("style/index.less");
-  fs.copySync(indexLessPath, resolvePath("../es/index.less"));
-  fs.copySync(indexLessPath, resolvePath("../lib/index.less"));
+  const indexSassPath = resolvePath("style/index.scss");
+  fs.copySync(indexSassPath, resolvePath("../es/index.scss"));
+  fs.copySync(indexSassPath, resolvePath("../lib/index.scss"));
 
-  const indexLess = fs.readFileSync(indexLessPath, "utf8");
-  const result = await less.render(indexLess, {
+  const indexSass = fs.readFileSync(indexSassPath, "utf8");
+  const result = await less.render(indexSass, {
     paths: [resolvePath("./style")],
   });
 
