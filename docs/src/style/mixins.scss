@@ -1,4 +1,4 @@
-@use "../common/animation.scss" as *;
+@use "./animation.scss" as *;
 
 @mixin b($block) {
   $B: $block !global;

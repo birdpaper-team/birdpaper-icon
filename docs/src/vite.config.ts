@@ -6,6 +6,13 @@ export default async () => {
 
   return defineConfig({
     plugins: [vueJsx(), UnoCSS() as PluginOption],
+    css: {
+      preprocessorOptions: {
+        scss: {
+          api: 'modern-compiler'
+        }
+      }
+    },
     optimizeDeps: {
       exclude: [
         "@nolebase/vitepress-plugin-enhanced-readabilities/client",

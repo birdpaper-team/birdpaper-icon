@@ -22,7 +22,7 @@
     <template #footer>
       <div class="icon-modal-footer">
         <div class="footer-option">
-          <color-picker v-model:pureColor="color" format="hex" disableHistory />
+          <color-picker v-model="color" />
         </div>
         <div class="footer-copyright">
           <span class="footer-copyright-inner">Design By Remix Icon.</span>
@@ -33,21 +33,26 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, watch } from "vue";
-import { toPascalCase } from "../../../../utils/helper";
+import { ref, computed } from "vue";
 import * as allIcons from "birdpaper-icon";
 import { Message } from "birdpaper-ui";
+import ColorPicker from "./color-picker.vue";
 import * as useClipboard from "vue-clipboard3/dist/esm/index";
-import { ColorPicker } from "vue3-colorpicker";
-import "vue3-colorpicker/style.css";
-import { useScroll } from "../../../../hooks/useScroll";
 
 const icon = ref<string>("");
-const color = ref<string>("");
+const color = ref<string>("#17171a");
 
 const componentTag = computed<string>(() => {
   return `<Icon${toPascalCase(icon.value)} ${color.value ? 'fill="' + color.value + '"' : ""} />`;
 });
+
+const toPascalCase = (string: string): string => {
+  return string
+    .replace(/^./, (match) => match.toLocaleUpperCase())
+    .replace(/-(.)/g, (match, p1: string) => {
+      return p1.toLocaleUpperCase();
+    });
+};
 
 /** 复制到剪贴板 */
 const { toClipboard } = useClipboard.default();
@@ -65,14 +70,6 @@ const open = (str: string) => {
   icon.value = str;
   modalShow.value = true;
 };
-
-const { move, stop } = useScroll();
-watch(
-  () => modalShow.value,
-  () => {
-    modalShow.value ? stop() : move();
-  }
-);
 
 defineExpose({
   open,

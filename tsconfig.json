@@ -9,13 +9,13 @@
     "sourceMap": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "types": ["node", "birdpaper-ui/global"],
-    "typeRoots": ["./node_modules/@types/"],
+    "types": ["node"],
+    "typeRoots": ["./node_modules/@types/", "./docs/types"],
     "noImplicitAny": false,
     "baseUrl": ".",
     "lib": ["es2020", "dom"],
     "skipLibCheck": true
   },
-  "include": ["docs/**/*.ts", "docs/**/*.d.ts", "docs/**/*.tsx", "docs/**/*.vue"],
+  "include": ["docs/**/*.ts", "docs/**/*.d.ts", "docs/**/*.tsx", "docs/**/*.vue", "docs/src/types/svg.d.ts", "docs/src/.vitepress/components/home/svg.d.ts"],
   "exclude": ["node_modules", "dist", "**/*.js"]
 }

@@ -3,7 +3,10 @@
     <div :class="`${name}-banner`">
       <div :class="`${name}-banner-content`">
         <div :class="`${name}-banner-content-title`">
-          <p>Vue3 Icon Component Library.</p>
+          <p>
+            Vue3 Icon <br />
+            Component Library.
+          </p>
         </div>
         <div :class="`${name}-banner-content-remark`">
           <p>
@@ -44,7 +47,6 @@ import typeSelector from "./components/type-selector.vue";
 import searchInput from "./components/search-input.vue";
 import iconDetail from "./components/icon-detail.vue";
 import { ref, computed } from "vue";
-import { deepClone } from "../../../utils/helper";
 import remixLogo from "../../../assets/remix-logo.svg";
 
 const name = "home-page";
@@ -52,7 +54,7 @@ const currentType = ref<string>("All Icons");
 
 const searchKey = ref<string>("");
 const searchIcons = computed(() => {
-  const rawIcons = deepClone(iconInfo);
+  const rawIcons = JSON.parse(JSON.stringify(iconInfo));
 
   for (let i = 0; i < rawIcons.length; i++) {
     rawIcons[i].list = rawIcons[i].list.filter((item) => item.includes(searchKey.value));

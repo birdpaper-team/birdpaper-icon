@@ -15,7 +15,7 @@
 </template>
 
 <script setup lang="ts">
-import { toPascalCase } from "../../../../utils/helper";
+// import { toPascalCase } from "../../../../utils/helper";
 import { PropType } from "vue";
 
 const props = defineProps({
@@ -33,6 +33,13 @@ const splitIconName = (name: string) => {
   return strArr.join("-");
 };
 
+const toPascalCase = (string: string): string => {
+  return string
+    .replace(/^./, (match) => match.toLocaleUpperCase())
+    .replace(/-(.)/g, (match, p1: string) => {
+      return p1.toLocaleUpperCase();
+    });
+};
 const handleClick = (icon: string) => {
   emits("on-detail", icon);
 };

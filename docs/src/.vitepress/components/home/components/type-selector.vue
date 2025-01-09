@@ -9,11 +9,7 @@
       <template #content>
         <div class="icon-select-trigger">
           <ul>
-            <li
-              v-for="v in typeList"
-              :class="['icon-select-trigger-item', { active: model === v.name }]"
-              @click="handleSelect(v.name)"
-            >
+            <li v-for="v in typeList" :class="['icon-select-trigger-item', { active: model === v.name }]" @click="handleSelect(v.name)">
               <p class="icon-select-trigger-item-inner">
                 <span>{{ v.name }}</span>
                 <span v-if="v.list.length" class="icons-length">{{ v.list.length }}</span>
@@ -29,7 +25,7 @@
 <script setup lang="ts">
 import { onBeforeMount, onMounted, ref } from "vue";
 import { iconInfo, IconArrowDownSLine, IconSubtractLine } from "birdpaper-icon";
-import { isInViewport, throttle } from "../../../../utils/helper";
+// import { isInViewport, throttle } from "../../../../utils/helper";
 
 const model = defineModel({ type: String, default: "" });
 
@@ -44,7 +40,7 @@ const typeList = [
 ];
 
 const handleSelect = (name: string) => {
-  cancelListenScroll();
+  // cancelListenScroll();
   model.value = name;
   var targetElement = document.getElementById(name);
 
@@ -58,14 +54,14 @@ const handleSelect = (name: string) => {
   }
   triggerVisible.value = false;
 
-  setTimeout(() => {
-    listenScroll();
-  }, 800);
+  // setTimeout(() => {
+  //   listenScroll();
+  // }, 800);
 };
 
 const setCurrentType = () => {
-  const rect = document.getElementById("All Icons").getBoundingClientRect();
-  if (rect.top >= 0) {
+  const rect = document.getElementById("All Icons")?.getBoundingClientRect() || null;
+  if (rect && rect.top >= 0) {
     model.value = "All Icons";
     return;
   }
@@ -73,28 +69,28 @@ const setCurrentType = () => {
     const element = typeList[i];
     const el = document.getElementById(`${element.name}-container`);
     if (el) {
-      if (isInViewport(el)) {
-        model.value = element.name;
-        return;
-      }
+      // if (isInViewport(el)) {
+      //   model.value = element.name;
+      //   return;
+      // }
     }
   }
 };
 
-const throttleFn = throttle(setCurrentType, 100);
-const listenScroll = () => {
-  window.addEventListener("scroll", throttleFn);
-};
+// const throttleFn = throttle(setCurrentType, 100);
+// const listenScroll = () => {
+//   window.addEventListener("scroll", throttleFn);
+// };
 
-const cancelListenScroll = () => {
-  window.removeEventListener("scroll", throttleFn);
-};
+// const cancelListenScroll = () => {
+//   window.removeEventListener("scroll", throttleFn);
+// };
 
-onMounted(() => {
-  listenScroll();
-});
+// onMounted(() => {
+//   listenScroll();
+// });
 
-onBeforeMount(() => {
-  cancelListenScroll;
-});
+// onBeforeMount(() => {
+//   cancelListenScroll;
+// });
 </script>

@@ -10,7 +10,6 @@ import BirdpaperIcon from "birdpaper-icon";
 
 import "uno.css";
 import "../../style/index.scss";
-import "../../scss/index.scss";
 
 export default {
   ...Theme,
