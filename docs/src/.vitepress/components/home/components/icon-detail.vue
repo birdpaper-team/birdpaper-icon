@@ -34,7 +34,7 @@
 
 <script setup lang="ts">
 import { ref, computed } from "vue";
-import * as allIcons from "birdpaper-icon";
+import * as allIcons from "birdpaper-icon/index.ts";
 import { Message } from "birdpaper-ui";
 import ColorPicker from "./color-picker.vue";
 import * as useClipboard from "vue-clipboard3/dist/esm/index";

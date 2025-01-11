@@ -169,15 +169,31 @@ export function newBuildIndex(data: IconData[], iconType: string[], iconInfo: { 
     exports.push(`export * from './${item.name}';`);
   }
 
-  const indexContent = getNewIndex({ exports, iconType, iconInfo });
+  const indexContent = getNewIndex({ exports });
 
-  fs.outputFile(path.resolve(paths.icon, "index.ts"), indexContent, (err) => {
+  // export const iconType = [${iconType.map((item) => `"${item}"`)}];
+  // export const iconInfo = ${JSON.stringify(iconInfo)};
+
+  fs.outputFile(path.resolve(paths.icon, "info.ts"), indexContent, (err) => {
     if (err) {
       console.log(`Build Index Failed: ${err}`);
       return;
     }
     console.log("Build Index Success!");
   });
+
+  fs.outputFile(
+    path.resolve(paths.icon, "index.ts"),
+    `export const iconType = [${iconType.map((item) => `"${item}"`)}];
+     export const iconInfo = ${JSON.stringify(iconInfo)};`,
+    (err) => {
+      if (err) {
+        console.log(`Build Index Failed: ${err}`);
+        return;
+      }
+      console.log("Build Index Success!");
+    }
+  );
 }
 
 /**

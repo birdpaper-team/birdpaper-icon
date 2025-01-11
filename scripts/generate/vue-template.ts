@@ -139,16 +139,6 @@ ${exports.map((item) => `${" ".repeat(4)}${item}`).join("\n")}
 export {};
 `;
 
-export const getNewIndex = ({
-  exports,
-  iconType,
-  iconInfo,
-}: {
-  exports: string[];
-  iconType: string[];
-  iconInfo: { name: string; list: string[] }[];
-}) => `
+export const getNewIndex = ({ exports }: { exports: string[] }) => `
 ${exports.join("\n")}
-export const iconType = [${iconType.map((item) => `"${item}"`)}];
-export const iconInfo = ${JSON.stringify(iconInfo)};
 `;

@@ -16,7 +16,7 @@
 
 <script setup lang="ts">
 import { PropType } from "vue";
-import allIcons from "birdpaper-icon";
+import allIcons from "birdpaper-icon/index.ts";
 
 const props = defineProps({
   groupInfo: { type: Object as PropType<{ name: string; list: string[] }>, default: () => {} },

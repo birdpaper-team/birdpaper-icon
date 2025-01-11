@@ -24,7 +24,7 @@
 
 <script setup lang="ts">
 import { onBeforeMount, onMounted, ref } from "vue";
-import { iconInfo, IconArrowDownSLine, IconSubtractLine } from "birdpaper-icon";
+import { iconInfo, IconArrowDownSLine, IconSubtractLine } from "birdpaper-icon/index.ts";
 import { useThrottleFn } from "@vueuse/core";
 
 const model = defineModel({ type: String, default: "" });

@@ -40,7 +40,7 @@
 </template>
 
 <script setup lang="ts">
-import { iconInfo, IconGithubFill } from "birdpaper-icon";
+import { iconInfo, IconGithubFill } from "birdpaper-icon/index.ts";
 import iconGroup from "./components/icon-group.vue";
 import typeSelector from "./components/type-selector.vue";
 import searchInput from "./components/search-input.vue";

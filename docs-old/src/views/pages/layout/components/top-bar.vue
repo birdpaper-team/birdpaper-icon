@@ -19,7 +19,7 @@
 </template>
 
 <script setup lang="ts">
-import { IconGithubFill } from "birdpaper-icon";
+import { IconGithubFill } from "birdpaper-icon/index.ts";
 
 const name = "top-bar";
 

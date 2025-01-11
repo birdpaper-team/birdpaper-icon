@@ -3,9 +3,7 @@
 import path from "path";
 import fs from "fs-extra";
 import { Command } from "commander";
-import { getIconComponents, generateIconComponent, buildIconIndex, buildType, newBuildIndex } from "./iconGenerate";
-import buildComponent from "./buildComponent";
-import buildStyle from "./buildStyle";
+import { getIconComponents, generateIconComponent, buildIconIndex, buildType, newBuildIndex } from "./generate";
 
 const program = new Command();
 const packageContent = fs.readFileSync(path.resolve(__dirname, "../package.json"), "utf8");
@@ -23,20 +21,4 @@ program
     // buildIconIndex(iconList, iconType, iconInfo);
     // buildType(iconList);
   });
-
-program
-  .command("build:style")
-  .description("build:style...")
-  .action(async () => {
-    await buildStyle();
-  });
-
-program
-  .command("build:components")
-  .description("build:components...")
-  .option("-u, --umd", "build with UMD file")
-  .action(async () => {
-    await buildComponent();
-  });
-
 program.parse(process.argv);

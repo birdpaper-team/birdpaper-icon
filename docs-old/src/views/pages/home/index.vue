@@ -38,7 +38,7 @@
 </template>
 
 <script setup lang="ts">
-import allIcons, { iconInfo, IconGithubFill, IconNpmjsFill } from "birdpaper-icon";
+import allIcons, { iconInfo, IconGithubFill } from "birdpaper-icon/index.ts";
 import iconGroup from "./components/icon-group.vue";
 import typeSelector from "./components/type-selector.vue";
 import searchInput from "./components/search-input.vue";
