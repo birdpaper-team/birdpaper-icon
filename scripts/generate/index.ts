@@ -3,7 +3,7 @@
 import path from "path";
 import fs from "fs-extra";
 import { Command } from "commander";
-import { getIcons, generateIconComponent, buildType, buildIndex } from "./core";
+import { getIcons, generateIconComponent, buildType, buildIndex, buildComponents } from "./core";
 
 const program = new Command();
 const packageContent = fs.readFileSync(path.resolve(__dirname, "../../../package.json"), "utf8");
@@ -19,5 +19,6 @@ program
     await generateIconComponent(iconList);
     await buildIndex(iconList, iconType, iconInfo);
     buildType(iconList);
+    buildComponents();
   });
 program.parse(process.argv);

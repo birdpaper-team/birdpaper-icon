@@ -8,9 +8,9 @@ import { getVue3Component, getType, getComponentIndex } from "./vue-template";
 import { resolvePath, toPascalCase } from "./helper";
 
 const root = process.cwd();
-/** SVG 资源路径 */
 const svgIconCwd = resolvePath(root, "../svg");
 const paths = {
+  root: resolvePath("../birdpaper-icon"),
   icon: resolvePath("../components/src"),
 };
 
@@ -157,5 +157,24 @@ export function buildType(data: IconData[]) {
       return;
     }
     console.log("Built Successfully!: global.d.ts");
+  });
+}
+
+/**
+ * 构建 components.ts
+ */
+export async function buildComponents() {
+  let files = (await fs.readdir(paths.icon, { withFileTypes: true }))
+    .filter(dirent => dirent.isDirectory())
+    .map(dirent => dirent.name);
+  files = files.map((item) => (item = toPascalCase(item)));
+
+  fs.outputFile(path.resolve(paths.root, "components.ts"), `import { ${files.join(",\n")} } from "@birdpaper-icon/components/src";
+export default [${files.join(",\n")}];`, (err) => {
+    if (err) {
+      console.log(`Build Type Failed: ${err}`);
+      return;
+    }
+    console.log("Built Successfully!: components.ts");
   });
 }

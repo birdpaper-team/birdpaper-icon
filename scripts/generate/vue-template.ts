@@ -39,10 +39,10 @@ const onClick = (ev: MouseEvent) => emits("click", ev);
 export const getComponentIndex = ({ name, componentName }: { name: string; componentName: string }) => {
   return `import _${componentName} from './${name}.vue';
   
-  export const ${componentName} = _${componentName}
-  
-  export type ${componentName}Instance = InstanceType<typeof ${componentName}>;
-  export default ${componentName};`;
+export const ${componentName} = _${componentName}
+
+export type ${componentName}Instance = InstanceType<typeof ${componentName}>;
+export default ${componentName};`;
 };
 
 export const getType = ({ exports }: { exports: string[] }) =>
