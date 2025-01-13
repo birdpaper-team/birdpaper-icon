@@ -10,11 +10,11 @@
 </template>
 
 <script setup lang="ts">
-import allIcons, { IconSearch2Line } from "birdpaper-icon/index.ts";
+import { iconNumbers, IconSearch2Line } from "birdpaper-icon/index.ts";
 import { ref } from "vue";
 
 const name = "home-page-search-input";
-const placeholder = `Search ${Object.keys(allIcons).length - 3} Icons.`;
+const placeholder = `Search ${iconNumbers} Icons.`;
 const isFocus = ref<boolean>(false);
 
 const model = defineModel({ type: String, default: "" });

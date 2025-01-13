@@ -17,7 +17,7 @@ program
   .action(async () => {
     const { iconList, iconType, iconInfo } = getIcons();
     await generateIconComponent(iconList);
-    buildIndex(iconList, iconType, iconInfo);
+    await buildIndex(iconList, iconType, iconInfo);
     buildType(iconList);
   });
 program.parse(process.argv);

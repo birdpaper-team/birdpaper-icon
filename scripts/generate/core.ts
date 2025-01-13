@@ -117,15 +117,17 @@ export async function generateIconComponent(iconList: IconData[]) {
  * @param iconType
  * @param iconInfo
  */
-export function buildIndex(data: IconData[], iconType: string[], iconInfo: { name: string; list: string[] }[]) {
+export async function buildIndex(data: IconData[], iconType: string[], iconInfo: { name: string; list: string[] }[]) {
   const exports: string[] = [];
 
   for (const item of data) {
     exports.push(`export * from './${item.name}';`);
   }
 
+  const fileCount = (await fs.readdir(paths.icon)).length;
   const infoContent = `\n\nexport const iconType = [${iconType.map((item) => `"${item}"`)}];
-export const iconInfo = ${JSON.stringify(iconInfo)};`;
+export const iconInfo = ${JSON.stringify(iconInfo)};
+export const iconNumbers = ${fileCount};`;
 
   fs.outputFile(path.resolve(paths.icon, "index.ts"), exports.join("\n") + infoContent, (err) => {
     if (err) {
