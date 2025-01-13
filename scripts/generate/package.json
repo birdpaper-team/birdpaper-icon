@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "图标生成脚本",
   "scripts": {
-    "dev": "tsc --watch",
+    "dev": "tsc -w",
     "build": "tsc"
   },
   "main": "dist/index.js",

@@ -5,7 +5,7 @@ import { JSDOM } from "jsdom";
 import { optimize } from "svgo";
 import svgoConfig from "./svgo.config";
 import { getIconVueComponent, getBpVueIcon, getIndex, getType, getNewIndex, getNewComponentIndex } from "./vue-template";
-import { resolvePath, toPascalCase } from "../utils/helper";
+import { resolvePath, toPascalCase } from "./helper";
 
 const root = process.cwd();
 /** SVG 资源路径 */
@@ -201,7 +201,7 @@ export function newBuildIndex(data: IconData[], iconType: string[], iconInfo: { 
  * @param data IconData[]
  */
 export function buildType(data: IconData[]) {
-  const exports = [];
+  const exports: string[] = [];
   for (const item of data) {
     exports.push(`${item.componentName}: typeof import('birdpaper-icon/components')['${item.componentName}'];`);
   }

@@ -12,8 +12,8 @@ const packageData: any = JSON.parse(packageContent);
 program.version(packageData.version).name("icon-scripts").usage("command [options]");
 
 program
-  .command("icon:generate")
-  .description("icon:generate...")
+  .command("generate")
+  .description("Icon generate...")
   .action(async () => {
     const { iconList, iconType, iconInfo } = getIconComponents();
     await generateIconComponent(iconList);

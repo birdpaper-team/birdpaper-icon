@@ -6,7 +6,7 @@
     "target": "ES2015",
     "allowJs": true,
     "moduleResolution": "node",
-    "baseUrl": ".",
+    "baseUrl": "./",
     "strict": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,

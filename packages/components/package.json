@@ -2,9 +2,9 @@
   "name": "@birdpaper-icon/components",
   "version": "1.0.0",
   "scripts": {
-    "generate": "icon-scripts icon:generate"
+    "generate": "icon-scripts generate"
   },
   "dependencies": {
-    "@birdpaper-icon/generate": "workspace:*"
+    "icon-scripts": "workspace:@birdpaper-icon/generate@*"
   }
 }

@@ -165,8 +165,8 @@ importers:
 
   packages/components:
     dependencies:
-      '@birdpaper-icon/generate':
-        specifier: workspace:*
+      icon-scripts:
+        specifier: workspace:@birdpaper-icon/generate@*
         version: link:../../scripts/generate
 
   scripts/build:
