@@ -2,47 +2,32 @@
   <svg viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" :class="iconClass" :style="innerStyle" :fill="fill" @click="onClick"><path d="M11.505 3.043a.917.917 0 0 1 .795-.46c1.547 0 3.09.05 4.637.154 2.51.171 3.7 1.59 4.18 2.43.596.092 1.388.088 1.571.807.14.552-.217.833-.554 1.148-.483.45-1.133 1.176-.954 1.888.055.222.159.437.316.765l.002.003c.318.667.684 1.51.742 3.115.156 4.34-3.596 6.896-7.252 7.08-2.41 1.815-6.345 3.025-12.557 1.957a1.328 1.328 0 0 1-.945-.709 1.245 1.245 0 0 1-.12-.735c.039-.275.165-.511.33-.7 3.228-3.675 6.635-7.246 9.654-11.098.526-.67.96-1.28 1.15-1.648.309-.919-.009-1.444-.625-2.463-.282-.467-.69-.978-.37-1.534Zm1.989 5.843c.874.005 1.85.249 2.885.875 2.124 1.288 2.334 3.996 1.625 6.157a7.62 7.62 0 0 1-.836 1.727c1.936-.797 3.319-2.484 3.24-4.686-.047-1.28-.317-1.871-.564-2.389l-.03-.06c-.132-.277-.31-.647-.412-1.054-.271-1.08.175-2.04.614-2.678a.917.917 0 0 1-.387-.493v-.001a2.578 2.578 0 0 0-.58-.817c-.407-.393-1.094-.823-2.236-.901a65.3 65.3 0 0 0-2.89-.13c.452.878.758 1.94.289 3.267-.151.426-.46.82-.718 1.183Zm-.832 1.945c-.719.202-1.214.63-1.378.815-2.717 3.057-5.881 6.689-7.576 8.627 5.45.747 8.601-.49 10.378-1.922 1.295-1.043 1.925-2.24 2.176-3.004.434-1.323.537-3.187-.834-4.018-1.153-.699-2.088-.69-2.766-.498Z"></path></svg>
 </template>
 
-<script lang="ts">
-import { defineComponent, computed, CSSProperties } from 'vue';
+<script lang="ts" setup>
+import { computed, CSSProperties } from "vue";
 
-export default defineComponent({
-  name: 'IconYuqueLine',
-  props: {
-    /** 图标尺寸 */
-    size: { type: String, default: "18px" },
-    /** 颜色 */
-    fill: { type: String, default: "#595959" },
-    /** 旋转角度 */
-    rotate: { type: Number },
-    /** 是否旋转 */
-    spin: { type: Boolean },
-  },
-  emits: {
-    click: (ev: MouseEvent) => true,
-  },
-  setup(props, { emit }) {
-    const name = 'bp-icon';
-
-    const iconClass = computed(() => [name, `${name}-yuque-line`, { [`${name}-spin`]: props.spin }]);
-
-    const innerStyle = computed(() => {
-      const styles: CSSProperties = {};
-        props.size && (styles.width = props.size);
-        props.size && (styles.height = props.size);
-        props.rotate && (styles.transform = `rotate(${props.rotate}deg)`);
-
-        return styles;
-    });
-
-    const onClick = (ev: MouseEvent) => {
-      emit('click', ev);
-    };
-
-    return {
-      iconClass,
-      innerStyle,
-      onClick,
-    };
-  }
+defineOptions({
+  name: "IconYuqueLine",
 });
+const props = defineProps({
+  size: { type: String, default: "18px" },
+  fill: { type: String, default: "#595959" },
+  rotate: { type: Number },
+  spin: { type: Boolean },
+});
+const emits = defineEmits(["click"]);
+
+const name = "bp-icon";
+const cls = computed(() => [name, `${name}-zcool-line`, { [`${name}-spin`]: props.spin }]);
+
+const innerStyle = computed(() => {
+  const styles: CSSProperties = {};
+  props.size && (styles.width = props.size);
+  props.size && (styles.height = props.size);
+  props.rotate && (styles.transform = `rotate(${props.rotate}deg)`);
+
+  return styles;
+});
+
+const onClick = (ev: MouseEvent) => emits("click", ev);
 </script>
+

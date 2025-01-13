@@ -2,47 +2,32 @@
   <svg viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" :class="iconClass" :style="innerStyle" :fill="fill" @click="onClick"><path d="M12 3a3 3 0 0 0-3 3v6a3 3 0 1 0 6 0V6a3 3 0 0 0-3-3Zm0-2a5 5 0 0 1 5 5v6a5 5 0 0 1-10 0V6a5 5 0 0 1 5-5ZM2.192 13.961l1.962-.392a8.003 8.003 0 0 0 15.692 0l1.962.392C20.896 18.545 16.852 22 12 22c-4.851 0-8.896-3.455-9.808-8.039Z"></path></svg>
 </template>
 
-<script lang="ts">
-import { defineComponent, computed, CSSProperties } from 'vue';
+<script lang="ts" setup>
+import { computed, CSSProperties } from "vue";
 
-export default defineComponent({
-  name: 'IconMic2Line',
-  props: {
-    /** 图标尺寸 */
-    size: { type: String, default: "18px" },
-    /** 颜色 */
-    fill: { type: String, default: "#595959" },
-    /** 旋转角度 */
-    rotate: { type: Number },
-    /** 是否旋转 */
-    spin: { type: Boolean },
-  },
-  emits: {
-    click: (ev: MouseEvent) => true,
-  },
-  setup(props, { emit }) {
-    const name = 'bp-icon';
-
-    const iconClass = computed(() => [name, `${name}-mic-2-line`, { [`${name}-spin`]: props.spin }]);
-
-    const innerStyle = computed(() => {
-      const styles: CSSProperties = {};
-        props.size && (styles.width = props.size);
-        props.size && (styles.height = props.size);
-        props.rotate && (styles.transform = `rotate(${props.rotate}deg)`);
-
-        return styles;
-    });
-
-    const onClick = (ev: MouseEvent) => {
-      emit('click', ev);
-    };
-
-    return {
-      iconClass,
-      innerStyle,
-      onClick,
-    };
-  }
+defineOptions({
+  name: "IconMic2Line",
 });
+const props = defineProps({
+  size: { type: String, default: "18px" },
+  fill: { type: String, default: "#595959" },
+  rotate: { type: Number },
+  spin: { type: Boolean },
+});
+const emits = defineEmits(["click"]);
+
+const name = "bp-icon";
+const cls = computed(() => [name, `${name}-zcool-line`, { [`${name}-spin`]: props.spin }]);
+
+const innerStyle = computed(() => {
+  const styles: CSSProperties = {};
+  props.size && (styles.width = props.size);
+  props.size && (styles.height = props.size);
+  props.rotate && (styles.transform = `rotate(${props.rotate}deg)`);
+
+  return styles;
+});
+
+const onClick = (ev: MouseEvent) => emits("click", ev);
 </script>
+

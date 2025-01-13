@@ -2,47 +2,32 @@
   <svg viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" :class="iconClass" :style="innerStyle" :fill="fill" @click="onClick"><path d="M12 17c3.662 0 6.865 1.575 8.607 3.925l-1.842.871C17.347 20.116 14.847 19 12 19c-2.848 0-5.347 1.116-6.765 2.796l-1.841-.872C5.136 18.574 8.338 17 12 17Zm0-15a5 5 0 0 1 5 5v3a5 5 0 0 1-4.783 4.995L12 15a5 5 0 0 1-5-5V7a5 5 0 0 1 4.783-4.995L12 2Zm0 2a3 3 0 0 0-2.995 2.824L9 7v3a3 3 0 0 0 5.995.176L15 10V7a3 3 0 0 0-3-3Z"></path></svg>
 </template>
 
-<script lang="ts">
-import { defineComponent, computed, CSSProperties } from 'vue';
+<script lang="ts" setup>
+import { computed, CSSProperties } from "vue";
 
-export default defineComponent({
-  name: 'IconUser6Line',
-  props: {
-    /** 图标尺寸 */
-    size: { type: String, default: "18px" },
-    /** 颜色 */
-    fill: { type: String, default: "#595959" },
-    /** 旋转角度 */
-    rotate: { type: Number },
-    /** 是否旋转 */
-    spin: { type: Boolean },
-  },
-  emits: {
-    click: (ev: MouseEvent) => true,
-  },
-  setup(props, { emit }) {
-    const name = 'bp-icon';
-
-    const iconClass = computed(() => [name, `${name}-user-6-line`, { [`${name}-spin`]: props.spin }]);
-
-    const innerStyle = computed(() => {
-      const styles: CSSProperties = {};
-        props.size && (styles.width = props.size);
-        props.size && (styles.height = props.size);
-        props.rotate && (styles.transform = `rotate(${props.rotate}deg)`);
-
-        return styles;
-    });
-
-    const onClick = (ev: MouseEvent) => {
-      emit('click', ev);
-    };
-
-    return {
-      iconClass,
-      innerStyle,
-      onClick,
-    };
-  }
+defineOptions({
+  name: "IconUser6Line",
 });
+const props = defineProps({
+  size: { type: String, default: "18px" },
+  fill: { type: String, default: "#595959" },
+  rotate: { type: Number },
+  spin: { type: Boolean },
+});
+const emits = defineEmits(["click"]);
+
+const name = "bp-icon";
+const cls = computed(() => [name, `${name}-zcool-line`, { [`${name}-spin`]: props.spin }]);
+
+const innerStyle = computed(() => {
+  const styles: CSSProperties = {};
+  props.size && (styles.width = props.size);
+  props.size && (styles.height = props.size);
+  props.rotate && (styles.transform = `rotate(${props.rotate}deg)`);
+
+  return styles;
+});
+
+const onClick = (ev: MouseEvent) => emits("click", ev);
 </script>
+

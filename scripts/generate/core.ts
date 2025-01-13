@@ -4,7 +4,7 @@ import fs from "fs-extra";
 import { JSDOM } from "jsdom";
 import { optimize } from "svgo";
 import svgoConfig from "./svgo.config";
-import { getIconVueComponent, getType, getComponentIndex } from "./vue-template";
+import { getVue3Component, getType, getComponentIndex } from "./vue-template";
 import { resolvePath, toPascalCase } from "./helper";
 
 const root = process.cwd();
@@ -93,7 +93,7 @@ export async function generateIconComponent(iconList: IconData[]) {
 
         await fs.outputFile(
           path.resolve(paths.icon, `${item.name}/${item.name}.vue`),
-          getIconVueComponent({
+          getVue3Component({
             name: item.name,
             componentName: item.componentName,
             svgHtml: str,
