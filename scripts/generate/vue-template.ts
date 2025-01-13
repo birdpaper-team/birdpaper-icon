@@ -52,19 +52,6 @@ export default defineComponent({
 `;
 
 export const getComponentIndex = ({ name, componentName }: { name: string; componentName: string }) => {
-  return `import type { App } from 'vue';
-import _${componentName} from './${name}.vue';
-
-const ${componentName} = Object.assign(_${componentName}, {
-  install: (app: App) => {
-    app.component(_${componentName}.name, _${componentName});
-  }
-});
-
-export default ${componentName};`;
-};
-
-export const getNewComponentIndex = ({ name, componentName }: { name: string; componentName: string }) => {
   return `import _${componentName} from './${name}.vue';
   
   export const ${componentName} = _${componentName}
@@ -72,60 +59,6 @@ export const getNewComponentIndex = ({ name, componentName }: { name: string; co
   export type ${componentName}Instance = InstanceType<typeof ${componentName}>;
   export default ${componentName};`;
 };
-
-export const getBpVueIcon = ({
-  imports,
-  components,
-  iconType,
-  iconInfo,
-}: {
-  imports: string[];
-  components: string[];
-  iconType: string[];
-  iconInfo: { name: string; list: string[] }[];
-}) =>
-  // language=TypeScript
-  // prettier-ignore
-  `import type { App, Plugin } from 'vue';
-${imports.join('\n')}
-
-const icons: Record<string, Plugin> = {
-  ${components.join(',\n  ')}
-};
-
-const install = (app: App) => {
-  for (const key of Object.keys(icons)) {
-    app.use(icons[key]);
-  }
-};
-
-const BpVueIcon = {
-  ...icons,
-  iconType: [${iconType.map(item=>`"${item}"`)}],
-  iconInfo: ${JSON.stringify(iconInfo)},
-  install
-};
-
-export default BpVueIcon;
-`;
-
-export const getIndex = ({
-  exports,
-  iconType,
-  iconInfo,
-}: {
-  exports: string[];
-  iconType: string[];
-  iconInfo: { name: string; list: string[] }[];
-}) =>
-  // language=TypeScript
-  // prettier-ignore
-  `export { default } from './birdpaper-icon';
-${exports.join('\n')}
-export type {} from './icon-components';
-export const iconType = [${iconType.map(item=>`"${item}"`)}];
-export const iconInfo = ${JSON.stringify(iconInfo)};
-`;
 
 export const getType = ({ exports }: { exports: string[] }) =>
   `// @ts-nocheck
@@ -137,8 +70,4 @@ ${exports.map((item) => `${" ".repeat(4)}${item}`).join("\n")}
 }
 
 export {};
-`;
-
-export const getNewIndex = ({ exports }: { exports: string[] }) => `
-${exports.join("\n")}
 `;

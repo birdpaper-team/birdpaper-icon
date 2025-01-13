@@ -6,7 +6,7 @@
     "dev": "tsc -w",
     "build": "tsc"
   },
-  "main": "dist/index.js",
+  "main": "index.ts",
   "bin": "dist/index.js",
   "dependencies": {
     "@babel/preset-env": "^7.14.7",
