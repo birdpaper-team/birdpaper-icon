@@ -24,7 +24,7 @@ const options: OptimizeOptions = {
       // @ts-ignore
       params: {
         attributes: [
-          { ":class": "iconClass" },
+          { ":class": "cls" },
           { ":style": "innerStyle" },
           { ":fill": "fill" },
           { "@click": "onClick" },
