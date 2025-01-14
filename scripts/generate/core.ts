@@ -121,7 +121,7 @@ export async function buildIndex(data: IconData[], iconType: string[], iconInfo:
   const exports: string[] = [];
 
   for (const item of data) {
-    exports.push(`export * from './${item.name}';`);
+    exports.push(`export * from './src/${item.name}';`);
   }
 
   const fileCount = (await fs.readdir(paths.icon)).length;
@@ -129,7 +129,7 @@ export async function buildIndex(data: IconData[], iconType: string[], iconInfo:
 export const iconInfo = ${JSON.stringify(iconInfo)};
 export const iconNumbers = ${fileCount};`;
 
-  fs.outputFile(path.resolve(paths.icon, "index.ts"), exports.join("\n") + infoContent, (err) => {
+  fs.outputFile(path.resolve(paths.icon, "../index.ts"), exports.join("\n") + infoContent, (err) => {
     if (err) {
       console.log(`Built Failed: ${err}`);
       return;
@@ -151,7 +151,7 @@ export function buildType(data: IconData[]) {
 
   const typeContent = getType({ exports });
 
-  fs.outputFile(path.resolve(paths.icon, "global.d.ts"), typeContent, (err) => {
+  fs.outputFile(path.resolve(paths.icon, "../global.d.ts"), typeContent, (err) => {
     if (err) {
       console.log(`Build Type Failed: ${err}`);
       return;
@@ -169,7 +169,7 @@ export async function buildComponents() {
     .map(dirent => dirent.name);
   files = files.map((item) => (item = toPascalCase(item)));
 
-  fs.outputFile(path.resolve(paths.root, "components.ts"), `import { ${files.join(",\n")} } from "@birdpaper-icon/components/src";
+  fs.outputFile(path.resolve(paths.root, "components.ts"), `import { ${files.join(",\n")} } from "@birdpaper-icon/components";
 export default [${files.join(",\n")}];`, (err) => {
     if (err) {
       console.log(`Build Type Failed: ${err}`);

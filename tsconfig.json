@@ -18,26 +18,12 @@
     "removeComments": false,
     "lib": ["DOM", "ES2020"],
     "rootDir": ".",
-    "typeRoots": ["./node_modules/@types/", "./docs/types"],
-  },
-  "paths": {
-    "@birdpaper-icon/*": ["packages/*"]
+    "paths": {
+      "@birdpaper-icon/*": ["packages/*"]
+    },
   },
   "include": [
-    "packages/birdpaper-icon/**/*.ts",
-    "packages/birdpaper-icon/**/*.d.ts",
-    "packages/birdpaper-icon/**/*.tsx",
-    "packages/birdpaper-icon/**/*.vue",
-    "packages/components/**/*.ts",
-    "packages/components/**/*.d.ts",
-    "packages/components/**/*.tsx",
-    "packages/components/**/*.vue",
-    "docs/**/*.ts",
-    "docs/**/*.d.ts",
-    "docs/**/*.tsx",
-    "docs/**/*.vue",
-    "docs/src/types/svg.d.ts",
-    "docs/src/.vitepress/components/home/svg.d.ts"
+    "packages/**/*",
   ],
   "exclude": ["node_modules", "dist", "**/*.js"]
 }

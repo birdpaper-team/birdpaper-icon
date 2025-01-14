@@ -2857,7 +2857,7 @@ IconZoomInLine,
 IconZoomOutFill,
 IconZoomOutLine,
 IconZzzFill,
-IconZzzLine } from "@birdpaper-icon/components/src";
+IconZzzLine } from "@birdpaper-icon/components";
 export default [Icon24HoursFill,
 Icon24HoursLine,
 Icon4kFill,
