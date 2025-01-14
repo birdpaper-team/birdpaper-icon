@@ -2,7 +2,7 @@ import vue from "@vitejs/plugin-vue";
 import vueJsx from "@vitejs/plugin-vue-jsx";
 import glob from "fast-glob";
 import { join } from "path";
-import { bpIconRoot, distPkgRoot, compRoot, projRoot } from "../paths";
+import { bpIconRoot, distPkgRoot } from "../paths";
 import { build } from "vite";
 import dts from "vite-plugin-dts";
 
