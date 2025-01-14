@@ -1,4 +1,4 @@
 import { series, parallel } from "gulp";
-import { buildModules, buildBundle } from "./src/tasks";
+import { buildModules, buildBundle, copyFiles } from "./src/tasks";
 
-export default series(parallel(buildModules), buildBundle);
+export default series(parallel(buildModules, buildBundle), copyFiles);
