@@ -8,7 +8,6 @@ export const copyFiles = async () => {
     [join(bpIconRoot, "package.json"), join(distPkgRoot, "package.json")],
     [join(compRoot, "global.d.ts"), join(distPkgRoot, "global.d.ts")],
     [join(projRoot, "README.md"), join(distPkgRoot, "README.md")],
-    [join(projRoot, ".npmrc"), join(distPkgRoot, ".npmrc")],
   ];
 
   /** Folders to be copied. */
