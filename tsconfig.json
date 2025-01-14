@@ -1,20 +1,27 @@
 {
   "compilerOptions": {
-    "target": "esnext",
+   
+    "jsx": "react",
+    "jsxFactory": "h",
+    "outDir": "dist",
+    "target": "es2018",
     "module": "esnext",
-    "strict": false,
-    "jsx": "preserve",
     "moduleResolution": "node",
-    "useDefineForClassFields": true,
-    "sourceMap": true,
+    "baseUrl": ".",
+    "sourceMap": false,
+    "noImplicitAny": false,
+    "allowJs": false,
+    "strict": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "types": ["node"],
+    "skipLibCheck": true,
+    "removeComments": false,
+    "lib": ["DOM", "ES2020"],
+    "rootDir": ".",
     "typeRoots": ["./node_modules/@types/", "./docs/types"],
-    "noImplicitAny": false,
-    "baseUrl": ".",
-    "lib": ["es2020", "dom"],
-    "skipLibCheck": true
+  },
+  "paths": {
+    "@birdpaper-icon/*": ["packages/*"]
   },
   "include": [
     "packages/birdpaper-icon/**/*.ts",

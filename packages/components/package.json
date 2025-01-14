@@ -5,6 +5,6 @@
     "generate": "icon-scripts generate"
   },
   "dependencies": {
-    "icon-scripts": "workspace:@birdpaper-icon/generate@*"
+    "icon-scripts": "workspace:icon-scripts@*"
   }
 }
