@@ -5,25 +5,24 @@
 <script lang="ts" setup>
 import { computed, CSSProperties } from "vue";
 
-defineOptions({
-  name: "IconContactsBook2Fill",
-});
+defineOptions({ name: "IconContactsBook2Fill"});
 const props = defineProps({
   size: { type: String, default: "18px" },
   fill: { type: String, default: "#595959" },
+  spin: { type: Boolean, default: false },
   rotate: { type: Number },
-  spin: { type: Boolean },
 });
 const emits = defineEmits(["click"]);
 
 const name = "bp-icon";
-const cls = computed(() => [name, `${name}-zcool-line`, { [`${name}-spin`]: props.spin }]);
+const cls = computed(() => [name, `${name}-icon-contacts-book2fill`, { [`${name}-spin`]: props.spin }]);
 
 const innerStyle = computed(() => {
-  const styles: CSSProperties = {};
-  props.size && (styles.width = props.size);
-  props.size && (styles.height = props.size);
-  props.rotate && (styles.transform = `rotate(${props.rotate}deg)`);
+  const styles: CSSProperties = {
+    width: props.size,
+    height: props.size,
+    transform: props.rotate ? `rotate(${props.rotate}deg)` : undefined,
+  };
 
   return styles;
 });
