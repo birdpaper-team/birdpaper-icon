@@ -18,8 +18,8 @@ importers:
         specifier: ^10.11.0
         version: 10.11.1(vue@3.5.13)
       birdpaper-ui:
-        specifier: ^3.0.0-alpha.28
-        version: 3.0.0-alpha.28(vue@3.5.13)
+        specifier: ^3.0.0-alpha.30
+        version: 3.0.0-alpha.30(vue@3.5.13)
       radash:
         specifier: ^12.1.0
         version: 12.1.0
@@ -419,7 +419,7 @@ packages:
     dev: true
 
   /@babel/code-frame@7.12.11:
-    resolution: {integrity: sha512-Zt1yodBx1UcyiePMSkWnU4hPqhwq7hGi2nFL1LeA3EUl+q2LQx16MISgJ0+z7dnmgvP9QtIleuETGOiOH1RcIw==}
+    resolution: {integrity: sha512-Zt1yodBx1UcyiePMSkWnU4hPqhwq7hGi2nFL1LeA3EUl+q2LQx16MISgJ0+z7dnmgvP9QtIleuETGOiOH1RcIw==, tarball: https://birdpaper-npm.pkg.coding.net/bp-design/birdpaper-icon/@babel/code-frame/-/code-frame-7.12.11.tgz}
     dependencies:
       '@babel/highlight': 7.25.9
     dev: true
@@ -6536,16 +6536,22 @@ packages:
     dev: true
     optional: true
 
-  /birdpaper-icon@0.1.0:
-    resolution: {integrity: sha512-IamnGbmG6d762t3YKRZg78q1aEu8Att6MmzrdSnT+8Lq6jH7bkXWiyK4sKRaUF5f1UGgADagG45qAgFdFo49kQ==}
-    dev: false
-
-  /birdpaper-ui@3.0.0-alpha.28(vue@3.5.13):
-    resolution: {integrity: sha512-DH0ajY23SMEZf2f6uKhbZQvlgm6GRzmYLRyZTm6mMjggZpICwjrteKvyn0pBxVMio8EFy7Ki0pIcoKGr4FoH/Q==}
+  /birdpaper-icon@1.0.0-beat.3(vue@3.5.13):
+    resolution: {integrity: sha512-pacbDnqeOi1Tpc+NrB8+y7jRv0f7A7yh1kno0xnUyFxiKJdiRTTPgeUlVjQS2fhwGuMa8/ivT0RR/uMSa9p1SA==, tarball: https://birdpaper-npm.pkg.coding.net/bp-design/birdpaper-icon/birdpaper-icon/-/birdpaper-icon-1.0.0-beat.3.tgz}
     dependencies:
       '@vueuse/components': 11.3.0(vue@3.5.13)
       '@vueuse/core': 10.11.1(vue@3.5.13)
-      birdpaper-icon: 0.1.0
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - vue
+    dev: false
+
+  /birdpaper-ui@3.0.0-alpha.30(vue@3.5.13):
+    resolution: {integrity: sha512-9AFwqykQAwXhEcS0kPMkHrMC8r1wwnl90VMNkzSJZQGM5zhvU0QBpdjGkseKG0S/LuIw/05h7dFocqI/QoyvJw==}
+    dependencies:
+      '@vueuse/components': 11.3.0(vue@3.5.13)
+      '@vueuse/core': 10.11.1(vue@3.5.13)
+      birdpaper-icon: 1.0.0-beat.3(vue@3.5.13)
       dayjs: 1.11.13
       radash: 12.1.0
     transitivePeerDependencies:
@@ -7109,7 +7115,7 @@ packages:
       color-name: 1.1.4
 
   /color-name@1.1.3:
-    resolution: {integrity: sha512-72fSenhMw2HZMTVHeCA9KCmpEIbzWiQsjN+BHcBbS9vr1mtt+vJjPdksIBNUmKAW8TFUDPJK5SUU3QhE9NEXDw==}
+    resolution: {integrity: sha512-72fSenhMw2HZMTVHeCA9KCmpEIbzWiQsjN+BHcBbS9vr1mtt+vJjPdksIBNUmKAW8TFUDPJK5SUU3QhE9NEXDw==, tarball: https://birdpaper-npm.pkg.coding.net/bp-design/birdpaper-icon/color-name/-/color-name-1.1.3.tgz}
     dev: true
 
   /color-name@1.1.4:
