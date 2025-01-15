@@ -11,6 +11,9 @@ importers:
       '@birdpaper-icon/components':
         specifier: workspace:*
         version: link:packages/components
+      '@birdpaper-icon/theme':
+        specifier: workspace:*
+        version: link:packages/theme
       '@vueuse/components':
         specifier: ^11.1.0
         version: 11.3.0(vue@3.5.13)
@@ -137,6 +140,8 @@ importers:
       icon-scripts:
         specifier: workspace:icon-scripts@*
         version: link:../../scripts/generate
+
+  packages/theme: {}
 
   scripts/build:
     devDependencies:

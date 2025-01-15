@@ -7,6 +7,7 @@ import BirdpaperUI from "birdpaper-ui";
 import "birdpaper-ui/theme/src/index.css";
 
 import BirdpaperIcon from "birdpaper-icon/index.ts";
+import "@birdpaper-icon/theme/index.scss";
 
 import "uno.css";
 import "../../style/index.scss";
