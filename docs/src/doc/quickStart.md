@@ -67,8 +67,26 @@ const props: PropItem[] = [
   { name: "spin", remark: "是否持续旋转", type: ["Boolean"], default: "false" },
   { name: "rotate", remark: "旋转角度", type: ["Number"] },
 ]
+
+const appends: PropItem[] = [
+  {
+    name: "iconType",
+    remark: "图标类型数组",
+    type: ["String[]"],
+  },
+  { name: "iconInfo", remark: "图标枚举", type: ["Array<{name:string, list:string[]}>"] },
+  { name: "iconNumbers", remark: "图标数量", type: ["Number"] },
+]
 </script>
 
 ## Icon 属性
 
 <api-block type="prop" :data="props" />
+
+## 附加
+
+```js
+import { iconType, iconInfo, iconNumbers } from "birdpaper-icon";
+```
+
+<api-block type="prop" :data="appends" />

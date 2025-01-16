@@ -13,7 +13,7 @@
           <span class="remark-inner">{{ record.remark }}</span>
         </template>
       </bp-table-column>
-      <bp-table-column :title="locales[lang].PROPS_TABLE.TYPE" data-index="type" width="200">
+      <bp-table-column :title="locales[lang].PROPS_TABLE.TYPE" data-index="type" width="220">
         <template #cell="{ record }">
           <div class="type-inner-wrap">
             <span class="type-inner" v-for="v in record.type">

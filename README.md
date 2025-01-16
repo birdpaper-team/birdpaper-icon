@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://www.birdpaper.design">
-    <img class="logo" src="https://cos.birdpaper.com/assets/bp%2Bremix.png"/>
+  <a href="https://icon.birdpaper.design">
+    <img class="logo" src="https://cos.birdpaper.design/birdpaper-icon/v1/logo/%E7%BB%84%205%404x.png"/>
   </a>
 </p>
 
@@ -26,7 +26,22 @@ This is an open source Vue3 component based on the excellent Icon library - [Rem
 You need install first it.
 
 ```
-npm i birdpaper-icon
+npm install birdpaper-icon
+```
+
+## Use
+
+In your `main.js` file.
+
+```js
+import { createApp } from "vue";
+import App from "./App.vue";
+
+import BirdpaperIcon from "birdpaper-icon";
+import "birdpaper-icon/dist/index.css";
+
+const app = createApp(App);
+app.use(BirdpaperIcon).mount("#app");
 ```
 
 For more information, you need to visit the [官方文档](https://icon.birdpaper.design)
