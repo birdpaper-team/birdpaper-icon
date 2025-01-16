@@ -10,7 +10,7 @@
 </template>
 
 <script setup lang="ts">
-import { iconNumbers, IconSearch2Line } from "birdpaper-icon/index.ts";
+import { iconNumbers, IconSearch2Line } from "birdpaper-icon";
 import { ref } from "vue";
 
 const name = "home-page-search-input";

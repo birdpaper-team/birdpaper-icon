@@ -6,8 +6,8 @@ import type { EnhanceAppContext } from "vitepress";
 import BirdpaperUI from "birdpaper-ui";
 import "birdpaper-ui/theme/src/index.css";
 
-import BirdpaperIcon from "birdpaper-icon/index.ts";
-import "@birdpaper-icon/theme/index.scss";
+import BirdpaperIcon from "birdpaper-icon";
+import "birdpaper-icon/dist/index.css";
 
 import ApiBlock from "../components/api-block";
 
