@@ -40,7 +40,7 @@ import ColorPicker from "./color-picker.vue";
 import * as useClipboard from "vue-clipboard3/dist/esm/index";
 
 const icon = ref<string>("");
-const color = ref<string>("#17171a");
+const color = ref<string>("#595959");
 
 const componentTag = computed<string>(() => {
   return `<Icon${toPascalCase(icon.value)} ${color.value ? 'fill="' + color.value + '"' : ""} />`;

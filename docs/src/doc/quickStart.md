@@ -21,7 +21,9 @@ pnpm add birdpaper-icon
 :::
 
 ## 引入
+
 在你的 `main.js` 或者其他入口文件中引入。
+
 ```js
 import { createApp } from "vue";
 import App from "./App.vue";
@@ -52,3 +54,21 @@ app.use(BirdpaperIcon).mount("#app");
 import { IconShareFill } from "birdpaper-icon";
 </script>
 ```
+
+<script setup lang="ts">
+const props: PropItem[] = [
+  {
+    name: "size",
+    remark: "图标尺寸",
+    type: ["String"],
+    default: "18px",
+  },
+  { name: "fill", remark: "填充颜色", type: ["String"],default:"#595959" },
+  { name: "spin", remark: "是否持续旋转", type: ["Boolean"], default: "false" },
+  { name: "rotate", remark: "旋转角度", type: ["Number"] },
+]
+</script>
+
+## Icon 属性
+
+<api-block type="prop" :data="props" />
