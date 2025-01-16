@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://icon.birdpaper.design">
-    <img class="logo" src="https://cos.birdpaper.design/birdpaper-icon/v1/logo/%E7%BB%84%205%404x.png"/>
+    <img class="logo" src="https://cos.birdpaper.design/birdpaper-icon/v1/logo/bp%2Bremix%404x.png"/>
   </a>
 </p>
 
