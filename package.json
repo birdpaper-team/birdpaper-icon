@@ -11,7 +11,8 @@
     "scripts:dev": "pnpm run -C scripts/generate dev",
     "scripts:build": "pnpm run -C scripts/generate build",
     "clean": "rimraf dist && pnpm run -r --parallel clean",
-    "build": "pnpm run clean && pnpm run -C scripts/build start"
+    "build": "pnpm run clean && pnpm run -C scripts/build start",
+    "fix-memory-limit": "cross-env LIMIT=10240 increase-memory-limit"
   },
   "dependencies": {
     "@birdpaper-icon/components": "workspace:*",
