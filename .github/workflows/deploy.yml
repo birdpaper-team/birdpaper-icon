@@ -2,7 +2,7 @@ name: Deploy birdpaper-icon site to Pages
 
 on:
   push:
-    branches: [v3]
+    branches: [next]
 
   # 允许你从 Actions 选项卡手动运行此工作流程
   workflow_dispatch:
