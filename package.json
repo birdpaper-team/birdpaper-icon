@@ -1,6 +1,7 @@
 {
   "version": "1.0.0",
   "description": "BirdpaperIcon Workspaces",
+  "packageManager": "pnpm@8.10.4",
   "scripts": {
     "docs:dev": "pnpm run -C docs dev",
     "docs:build": "pnpm run -C docs build",
