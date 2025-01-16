@@ -1,12 +1,12 @@
 <template>
-  <bp-modal v-model="modalShow" title="ICON." width="600px">
+  <bp-modal v-model="modalShow" :title="icon" width="600px">
     <div class="icon-modal-body">
       <div class="icon-area">
         <component :is="allIcons[`Icon${toPascalCase(icon)}`]" size="40px" :fill="color"></component>
       </div>
       <div class="icon-info">
         <div class="icon-info-title">
-          <p>{{ icon }}</p>
+          <p>{{ toPascalCase(icon) }}</p>
           <component :is="allIcons[`IconFileCopyLine`]" size="18" @click="handleCopy(icon)"></component>
         </div>
         <div class="icon-info-component">

@@ -10,6 +10,8 @@
       <NolebaseEnhancedReadabilitiesScreenMenu />
     </template>
   </DefaultTheme.Layout>
+
+  <the-float />
 </template>
 
 <script setup lang="ts">
@@ -19,6 +21,7 @@ import {
 } from "@nolebase/vitepress-plugin-enhanced-readabilities/client";
 import DefaultTheme from "vitepress/theme";
 import HomePage from "../components/home/index.vue";
+import theFloat from "../components/the-float/index.vue";
 
 import "@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css";
 </script>

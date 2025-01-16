@@ -1,6 +1,14 @@
 export const nav = [
   {
     text: "文档",
-    items: [],
+    link: "/doc/introduction",
+  },
+  {
+    text: "赞助",
+    link: "/donate",
+  },
+  {
+    text: "UI 组件库",
+    link: "https://www.birdpaper.design",
   },
 ];

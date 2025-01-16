@@ -4,5 +4,6 @@
 @use "./nav.scss";
 @use "./sidebar.scss";
 @use "./content.scss";
-@use "./pages/index.scss";
+@use "./components/index.scss" as *;
+@use "./pages/index.scss" as *;
 @use "./fonts/font.scss";
