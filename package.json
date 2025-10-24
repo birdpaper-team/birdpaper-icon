@@ -20,7 +20,7 @@
     "@vueuse/components": "^11.1.0",
     "@vueuse/core": "^10.11.0",
     "radash": "^12.1.0",
-    "birdpaper-ui": "^3.0.0-alpha.35"
+    "birdpaper-ui": "^3.0.0-alpha.66"
   },
   "devDependencies": {
     "@pnpm/find-workspace-packages": "^4.0.16",
