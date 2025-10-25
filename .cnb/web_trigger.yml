@@ -11,6 +11,8 @@ branch:
             required: true
             type: input
             default: 1.0.0
+
+  - reg: "next|main"
     buttons:
       - name: Docs publish
         description: 发布文档
