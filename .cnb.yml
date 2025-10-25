@@ -42,16 +42,17 @@ $:
             folder: ./dist/birdpaper-icon
             fail_on_version_conflict: true
   web_trigger_two: # 发布文档
-    - stages:
-        - name: show version
-          image: node:18.19
-          script: node -v
-        - name: install
-          image: node:18.19
-          script: npm install -g pnpm && pnpm install --no-frozen-lockfile --verbose
-        - name: build
-          image: node:18.19
-          script: pnpm run docs:build
+     - stages:
+        - name: 安装与构建
+          jobs:
+            - name: execute-pnpm-command
+              image: node:18.19
+              script:
+                - npm install -g pnpm
+                - pnpm config set store-dir /lib/pnpm
+                - pnpm --version
+                - pnpm install --no-frozen-lockfile --verbose
+                - pnpm run docs:build
         - name: 上传指定文件夹到COS
           image: tencentcom/coscli
           imports: https://cnb.cool/birdpaper-design/bp-env/-/blob/main/envs.yml
