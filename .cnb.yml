@@ -41,3 +41,18 @@ $:
             email: $NPM_EMAIL
             folder: ./dist/birdpaper-icon
             fail_on_version_conflict: true
+  web_trigger_two: # 发布文档
+    - stages:
+        - name: show version
+          script: node -v
+        - name: install
+          script: npm install -g pnpm && pnpm install --no-frozen-lockfile --verbose
+        - name: build
+          script: pnpm run docs:build
+        - name: 上传指定文件夹到COS
+          image: tencentcom/coscli
+          imports: https://cnb.cool/birdpaper-design/bp-env/-/blob/main/envs.yml
+          commands: |
+            coscli config set --secret_id ${TX_APP_SECRET_ID} --secret_key ${TX_APP_SECRET_KEY}
+            coscli config add --init-skip=true -b birdpaper-icon-1251999712 -r ap-guangzhou
+            coscli cp ./docs/dist cos://birdpaper-icon-1251999712 -r

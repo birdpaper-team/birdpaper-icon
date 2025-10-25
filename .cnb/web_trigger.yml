@@ -11,3 +11,7 @@ branch:
             required: true
             type: input
             default: 1.0.0
+    buttons:
+      - name: Docs publish
+        description: 发布文档
+        event: web_trigger_two
