@@ -1,0 +1,6 @@
+branch:
+  - reg: "next|main"
+    buttons:
+      - name: npm publish
+        description: 发布到 npm 仓库
+        event: web_trigger_one
