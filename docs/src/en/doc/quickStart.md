@@ -1,8 +1,8 @@
-# 快速上手
+# Quick Start
 
-该文档提供快速安装并使用的步骤。
+This guide provides quick installation and usage steps.
 
-## 安装
+## Installation
 
 ::: code-group
 
@@ -20,21 +20,26 @@ pnpm add birdpaper-icon
 
 :::
 
-## 全量引入
+## Import
 
-在你的 `main.js` 或者其他入口文件中引入。
+Import in your `main.js` or other entry file:
 
 ```js
 import { createApp } from "vue";
 import App from "./App.vue";
 
 import BirdpaperIcon from "birdpaper-icon";
+import "birdpaper-icon/dist/index.css";
 
 const app = createApp(App);
 app.use(BirdpaperIcon).mount("#app");
 ```
 
-全量注册后，所有图标组件已全局注册，可直接在模板中使用：
+## Usage
+
+### Global Registration
+
+After using `app.use(BirdpaperIcon)`, all icon components are globally registered and can be used directly in templates:
 
 ```vue
 <template>
@@ -42,9 +47,9 @@ app.use(BirdpaperIcon).mount("#app");
 </template>
 ```
 
-## 按需引入
+### On-demand Import
 
-按需引入特定图标，支持 tree-shaking：
+Import specific icons to enable tree-shaking:
 
 ```vue
 <template>
@@ -56,7 +61,7 @@ import { IconShareFill } from "birdpaper-icon";
 </script>
 ```
 
-## 动态组件
+### Dynamic Component
 
 ```vue
 <template>
@@ -69,36 +74,36 @@ import { IconShareFill } from "birdpaper-icon";
 ```
 
 <script setup lang="ts">
-import { PropItem } from "../.vitepress/components/api-block/src/types";
+import { PropItem } from "../../.vitepress/components/api-block/src/types";
 
 const props: PropItem[] = [
   {
     name: "size",
-    remark: "图标尺寸",
+    remark: "Icon size",
     type: ["String"],
     default: "18px",
   },
-  { name: "fill", remark: "填充颜色", type: ["String"], default: "#595959" },
-  { name: "spin", remark: "是否持续旋转", type: ["Boolean"], default: "false" },
-  { name: "rotate", remark: "旋转角度", type: ["Number"] },
+  { name: "fill", remark: "Fill color", type: ["String"], default: "#595959" },
+  { name: "spin", remark: "Continuous rotation", type: ["Boolean"], default: "false" },
+  { name: "rotate", remark: "Rotation angle", type: ["Number"] },
 ]
 
 const appends: PropItem[] = [
   {
     name: "iconType",
-    remark: "图标类型数组",
+    remark: "Icon category array",
     type: ["String[]"],
   },
-  { name: "iconInfo", remark: "图标枚举", type: ["Array<{name:string, list:string[]}>"] },
-  { name: "iconNumbers", remark: "图标数量", type: ["Number"] },
+  { name: "iconInfo", remark: "Icon enumeration", type: ["Array<{name:string, list:string[]}>"] },
+  { name: "iconNumbers", remark: "Total icon count", type: ["Number"] },
 ]
 </script>
 
-## Icon 属性
+## Icon Properties
 
 <api-block type="prop" :data="props" />
 
-## 附加导出
+## Additional Exports
 
 ```js
 import { iconType, iconInfo, iconNumbers } from "birdpaper-icon";

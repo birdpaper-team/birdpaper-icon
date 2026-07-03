@@ -13,8 +13,8 @@
           </p>
         </div>
         <div :class="`${name}-banner-content-option mt-20px`">
-          <bp-button>{{ inrto[locale].btn.quickStart }}</bp-button>
-          <bp-button :icon="IconGithubFill" type="plain" status="primary" @click="linkTo('github')">Github</bp-button>
+          <bp-button @click="goQuickStart">{{ inrto[locale].btn.quickStart }}</bp-button>
+          <bp-button :icon="IconGithubFill" type="plain" status="gray" @click="linkTo('github')">Github</bp-button>
         </div>
       </div>
     </div>
@@ -100,4 +100,8 @@ const homeUrlMap = {
   npm: "https://www.npmjs.com/package/birdpaper-icon",
 };
 const linkTo = (type: keyof typeof homeUrlMap) => window.open(homeUrlMap[type]);
+const goQuickStart = () => {
+  const base = locale.value === "en" ? "/en" : "";
+  window.location.href = `${base}/doc/quickStart`;
+};
 </script>

@@ -22,7 +22,7 @@
     <template #footer>
       <div class="icon-modal-footer">
         <div class="footer-option">
-          <color-picker v-model="color" />
+          <bp-color-picker v-model="color"></bp-color-picker>
         </div>
         <div class="footer-copyright">
           <span class="footer-copyright-inner">Design By Remix Icon.</span>

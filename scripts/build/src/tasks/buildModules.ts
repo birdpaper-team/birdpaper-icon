@@ -309,6 +309,14 @@ async function generateTypes(files: string[], compSrc: string) {
     })
     .join("\n");
 
-  await fs.outputFile(path.join(typesOut, "index.d.ts"), exports + "\n");
+  const metadataTypes = `
+export const iconType: string[];
+export const iconInfo: { name: string; list: string[] }[];
+export const iconNumbers: number;
+export const installer: (components: any[]) => { version: string; install: (app: any) => void };
+export const install: (app: any) => void;
+`;
+
+  await fs.outputFile(path.join(typesOut, "index.d.ts"), exports + "\n" + metadataTypes);
   console.log(`[buildModules] Generated ${files.length} type declarations.`);
 }
