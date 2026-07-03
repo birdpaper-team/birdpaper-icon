@@ -96,22 +96,24 @@ export async function buildModules() {
   const vueFiles = files.filter((f) => f.endsWith(".vue"));
   const componentNames = vueFiles.map((f) => toPascal(path.basename(f, ".vue")));
 
-  // ES index：named exports + installer + default
-  const esLines = vueFiles.map((f) => {
+  // ES index：import + export + installer + default
+  // 不能用 `export { default as X } from '...'`（纯转发，不创建本地变量）
+  const esImports = vueFiles.map((f) => {
     const name = toPascal(path.basename(f, ".vue"));
     const rel = path.relative(compSrc, f).replace(/\.vue$/, "");
-    return `export { default as ${name} } from './${rel}.mjs';`;
+    return `import _${name} from './${rel}.mjs';`;
   });
+  const esExports = componentNames.map((name) => `export { _${name} as ${name} };`);
 
   const esIndex = [
-    ...esLines,
+    ...esImports,
+    ...esExports,
     "",
-    "// installer",
-    `import { installer } from './installer.mjs';`,
-    `export { installer };`,
-    `const Components = [${componentNames.join(", ")}];`,
-    `export const install = installer(Components).install;`,
-    `export default installer(Components);`,
+    "import { installer } from './installer.mjs';",
+    "export { installer };",
+    `const Components = [${componentNames.map((n) => "_" + n).join(", ")}];`,
+    "export const install = installer(Components).install;",
+    "export default installer(Components);",
   ].join("\n");
 
   await fs.writeFile(path.join(esOut, "index.mjs"), esIndex);
@@ -128,18 +130,20 @@ export async function buildModules() {
 `;
   await fs.writeFile(path.join(esOut, "installer.mjs"), installerCode);
 
-  // CJS index
-  const cjsLines = componentNames.map((name) => {
+  // CJS index：require 创建本地变量，再挂到 exports
+  const cjsRequires = componentNames.map((name) => {
     const f = vueFiles[componentNames.indexOf(name)];
     const rel = path.relative(compSrc, f).replace(/\.vue$/, "");
-    return `exports.${name} = require('./${rel}.cjs').default;`;
+    return `var _${name} = require('./${rel}.cjs').default;`;
   });
+  const cjsExports = componentNames.map((name) => `exports.${name} = _${name};`);
 
   const cjsIndex = [
-    ...cjsLines,
+    ...cjsRequires,
+    ...cjsExports,
     "",
-    "const { installer } = require('./installer.cjs');",
-    `const Components = [${componentNames.join(", ")}];`,
+    "var { installer } = require('./installer.cjs');",
+    `var Components = [${componentNames.map((n) => "_" + n).join(", ")}];`,
     "exports.installer = installer;",
     "exports.install = installer(Components).install;",
     "exports.default = installer(Components);",
