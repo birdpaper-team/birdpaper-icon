@@ -4,8 +4,7 @@
     "outDir": "dist",
     "target": "ES2020",
     "module": "ESNext",
-    "moduleResolution": "node",
-    "baseUrl": ".",
+    "moduleResolution": "bundler",
     "sourceMap": false,
     "noImplicitAny": false,
     "allowJs": false,
@@ -17,11 +16,9 @@
     "lib": ["DOM", "ES2020"],
     "rootDir": ".",
     "paths": {
-      "@birdpaper-icon/*": ["packages/*"]
+      "@birdpaper-icon/*": ["./packages/*"]
     }
   },
-  "include": [
-    "packages/**/*"
-  ],
+  "include": ["packages/**/*"],
   "exclude": ["node_modules", "dist", "**/*.js"]
 }
