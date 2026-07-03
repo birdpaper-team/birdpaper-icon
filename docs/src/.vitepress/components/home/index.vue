@@ -14,7 +14,7 @@
         </div>
         <div :class="`${name}-banner-content-option mt-20px`">
           <bp-button>{{ inrto[lang].btn.quickStart }}</bp-button>
-          <bp-button :icon="IconGithubFill" type="plain" status="gary" @click="linkTo('github')">Github</bp-button>
+          <bp-button :icon="IconGithubFill" type="plain" status="primary" @click="linkTo('github')">Github</bp-button>
         </div>
       </div>
     </div>

@@ -1,0 +1,32 @@
+<template>
+  <svg viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" :class="cls" :style="innerStyle" :fill="fill" @click="onClick"><path d="M17 22H7v-2h10v2ZM10 5h4V2h2v3h4a1 1 0 0 1 1 1v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V6a1 1 0 0 1 1-1h4V2h2v3ZM5 15a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7H5v8Z"></path></svg>
+</template>
+
+<script lang="ts" setup>
+import { computed, CSSProperties } from "vue";
+
+defineOptions({ name: "IconPlug3Line"});
+const props = defineProps({
+  size: { type: String, default: "18px" },
+  fill: { type: String, default: "#595959" },
+  spin: { type: Boolean, default: false },
+  rotate: { type: Number },
+});
+const emits = defineEmits(["click"]);
+
+const name = "bp-icon";
+const cls = computed(() => [name, `${name}-icon-plug3line`, { [`${name}-spin`]: props.spin }]);
+
+const innerStyle = computed(() => {
+  const styles: CSSProperties = {
+    width: props.size,
+    height: props.size,
+    transform: props.rotate ? `rotate(${props.rotate}deg)` : undefined,
+  };
+
+  return styles;
+});
+
+const onClick = (ev: MouseEvent) => emits("click", ev);
+</script>
+

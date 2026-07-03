@@ -1,0 +1,32 @@
+<template>
+  <svg viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" :class="cls" :style="innerStyle" :fill="fill" @click="onClick"><path d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2Zm-.207 3.784c-1.843 0-3.086 1.157-3.086 2.828v.644H7.25v2.142h1.457v5.744h2.528v-5.744h2.444v5.744h2.528V9.256h-4.972v-.472c0-.514.387-.857.944-.857h1.5V5.784h-1.886Z"></path></svg>
+</template>
+
+<script lang="ts" setup>
+import { computed, CSSProperties } from "vue";
+
+defineOptions({ name: "IconFiverrFill"});
+const props = defineProps({
+  size: { type: String, default: "18px" },
+  fill: { type: String, default: "#595959" },
+  spin: { type: Boolean, default: false },
+  rotate: { type: Number },
+});
+const emits = defineEmits(["click"]);
+
+const name = "bp-icon";
+const cls = computed(() => [name, `${name}-icon-fiverr-fill`, { [`${name}-spin`]: props.spin }]);
+
+const innerStyle = computed(() => {
+  const styles: CSSProperties = {
+    width: props.size,
+    height: props.size,
+    transform: props.rotate ? `rotate(${props.rotate}deg)` : undefined,
+  };
+
+  return styles;
+});
+
+const onClick = (ev: MouseEvent) => emits("click", ev);
+</script>
+
