@@ -1,8 +1,21 @@
-export const getVue3Component = ({ name, componentName, svgHtml }: { name: string; componentName: string; svgHtml: string }) =>
+/**
+ * @description 将 <svg> 开标签注入 Vue 动态属性
+ * SVGO 优化后的 SVG 不含 Vue 指令，由模板层统一注入
+ */
+function injectSvgDirectives(svgHtml: string): string {
+  return svgHtml.replace(
+    /<svg\b([^>]*)>/,
+    (_match, attrs: string) => `<svg${attrs} :class="cls" :style="innerStyle" :fill="fill" @click="onClick">`
+  );
+}
+
+export const getVue3Component = ({ name, componentName, svgHtml }: { name: string; componentName: string; svgHtml: string }) => {
+  const templateSvg = injectSvgDirectives(svgHtml);
+
   // language=Vue
   // prettier-ignore
-  `<template>
-  ${svgHtml}
+  return `<template>
+  ${templateSvg}
 </template>
 
 <script lang="ts" setup>
@@ -34,6 +47,7 @@ const onClick = (ev: MouseEvent) => emits("click", ev);
 </script>
 
 `;
+};
 
 export const getComponentIndex = ({ name, componentName }: { name: string; componentName: string }) => {
   return `import _${componentName} from './${name}.vue';

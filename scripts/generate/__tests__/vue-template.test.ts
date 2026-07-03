@@ -11,7 +11,11 @@ describe("getVue3Component", () => {
 
     expect(result).toContain("<template>");
     expect(result).toContain("</template>");
-    expect(result).toContain('<svg viewBox="0 0 24 24">');
+    expect(result).toContain('viewBox="0 0 24 24"');
+    expect(result).toContain(':class="cls"');
+    expect(result).toContain(':style="innerStyle"');
+    expect(result).toContain(':fill="fill"');
+    expect(result).toContain('@click="onClick"');
     expect(result).toContain('<path d="M12 4v16"/>');
   });
 

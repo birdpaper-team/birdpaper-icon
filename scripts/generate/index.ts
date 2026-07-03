@@ -15,10 +15,10 @@ program
   .command("generate")
   .description("Icon generate...")
   .action(async () => {
-    const { iconList, iconType, iconInfo } = getIcons();
+    const { iconList, iconType, iconInfo } = await getIcons();
     await generateIconComponent(iconList);
     await buildIndex(iconList, iconType, iconInfo);
-    buildType(iconList);
-    buildComponents();
+    await buildType(iconList);
+    await buildComponents();
   });
 program.parse(process.argv);

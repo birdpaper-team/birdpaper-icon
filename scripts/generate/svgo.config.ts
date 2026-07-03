@@ -19,18 +19,6 @@ const options: OptimizeOptions = {
         attrs: ["class", "style"],
       },
     },
-    {
-      name: "addAttributesToSVGElement",
-      // @ts-ignore
-      params: {
-        attributes: [
-          { ":class": "cls" },
-          { ":style": "innerStyle" },
-          { ":fill": "fill" },
-          { "@click": "onClick" },
-        ],
-      },
-    },
   ],
 };
 
