@@ -1,6 +1,6 @@
 {
   "name": "birdpaper-icon",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "基于 Remix icon 生成的 Vue3 图标组件库",
   "keywords": [
     "Vue3",
