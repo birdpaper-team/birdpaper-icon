@@ -2,11 +2,12 @@
   "name": "@birdpaper-icon/build",
   "version": "1.0.0",
   "scripts": {
-    "start": "gulp --require @esbuild-kit/cjs-loader -f gulpfile.ts"
+    "start": "NODE_OPTIONS='--max-old-space-size=4096' gulp --require @esbuild-kit/cjs-loader -f gulpfile.ts"
   },
   "devDependencies": {
     "@types/gulp": "^4.0.17",
     "@esbuild-kit/cjs-loader": "^2.2.1",
+    "esbuild": "^0.18.20",
     "fast-glob": "^3.3.2",
     "gulp": "^4.0.2",
     "gulp-sass": "^5.1.0",
