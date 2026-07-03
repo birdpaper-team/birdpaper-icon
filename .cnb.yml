@@ -46,7 +46,7 @@ $:
         - name: 安装与构建
           jobs:
             - name: execute-pnpm-command
-              image: node:18.19
+              image: node:22.13
               script:
                 - npm install -g pnpm
                 - pnpm config set store-dir /lib/pnpm
