@@ -1,6 +1,6 @@
 <template>
   <div :class="`${name}`">
-    <bp-trigger v-model:popupVisible="triggerVisible" position="bottom" :popup-offset="20">
+    <bp-trigger v-model:popupVisible="triggerVisible" position="bottom" :popup-offset="10" :auto-fix-position="false">
       <div :class="[`${name}-container`, { 'trigger-active': triggerVisible }]">
         <span>{{ model }}</span>
         <IconArrowDownSLine v-if="!triggerVisible" size="20" />

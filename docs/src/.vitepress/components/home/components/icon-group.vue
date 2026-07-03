@@ -29,7 +29,7 @@ const splitIconName = (name: string) => {
   let strArr = name.split("-");
   strArr.splice(strArr.length - 1, 1);
 
-  return strArr.join("-");
+  return strArr.join("-") || name;
 };
 
 const toPascalCase = (string: string): string => {

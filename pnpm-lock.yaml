@@ -112,8 +112,8 @@ importers:
   docs:
     dependencies:
       birdpaper-icon:
-        specifier: ^0.9.9
-        version: 0.9.9(vue@3.5.13(typescript@5.7.2))
+        specifier: ^0.9.10
+        version: 0.9.10(vue@3.5.13(typescript@5.7.2))
       shiki:
         specifier: ^0.14.1
         version: 0.14.7
@@ -3323,8 +3323,8 @@ packages:
   bindings@1.5.0:
     resolution: {integrity: sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ==}
 
-  birdpaper-icon@0.9.9:
-    resolution: {integrity: sha512-9wIoi5KElliwtyfa1G2MP45CslNHSjrdlSm+z0XsaJIcVxoGHE1DNHcPHGlNZ/FsYG0ZXv3cwzgxsABfidYboQ==}
+  birdpaper-icon@0.9.10:
+    resolution: {integrity: sha512-F95kVK46RnvP8W383jVr54A4wPYWxAA5oj1FO+2D1D5iGkrWFLhcqQZs9CNyqGdd5mbG3MMWJE+sAztdE/E+Yw==}
 
   birdpaper-ui@3.0.0-alpha.89:
     resolution: {integrity: sha512-cXAQK5ZoNXzVgtoYZpP61Awooc2iw5X8tpXbE4ggAM+tGte8IaE5/GrG9uqAFNmKcQkjBdbthe9g50wDR5oHeA==}
@@ -11290,7 +11290,7 @@ snapshots:
       file-uri-to-path: 1.0.0
     optional: true
 
-  birdpaper-icon@0.9.9(vue@3.5.13(typescript@5.7.2)):
+  birdpaper-icon@0.9.10(vue@3.5.13(typescript@5.7.2)):
     dependencies:
       '@vueuse/components': 11.3.0(vue@3.5.13(typescript@5.7.2))
       '@vueuse/core': 11.3.0(vue@3.5.13(typescript@5.7.2))
@@ -11303,7 +11303,7 @@ snapshots:
       '@vueuse/components': 11.3.0(vue@3.5.13(typescript@5.7.2))
       '@vueuse/core': 11.3.0(vue@3.5.13(typescript@5.7.2))
       async-validator: 4.2.5
-      birdpaper-icon: 0.9.9(vue@3.5.13(typescript@5.7.2))
+      birdpaper-icon: 0.9.10(vue@3.5.13(typescript@5.7.2))
       dayjs: 1.11.13
       radash: 12.1.0
     transitivePeerDependencies:

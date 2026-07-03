@@ -24,4 +24,6 @@ In early 2024, I proposed to the Remix Icon author **_Jimmy Cheung_** the idea o
 
 With the author's permission, this project has now officially released its first `v1` version, hoping to help developers better use this excellent icon library.
 
-Once again, this project is for learning and reference only, not for commercial use. Contributions are welcome — let's maintain this project together.
+Now, the RemixIcon team has provided an official way to use Vue3 components, which may be a better choice.
+
+Once again, this project is for learning and reference only, not for commercial use.

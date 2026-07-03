@@ -20,7 +20,7 @@ pnpm add birdpaper-icon
 
 :::
 
-## Import
+## Full Import
 
 Import in your `main.js` or other entry file:
 
@@ -35,11 +35,7 @@ const app = createApp(App);
 app.use(BirdpaperIcon).mount("#app");
 ```
 
-## Usage
-
-### Global Registration
-
-After using `app.use(BirdpaperIcon)`, all icon components are globally registered and can be used directly in templates:
+After full registration, all icon components are globally registered and can be used directly in templates:
 
 ```vue
 <template>
@@ -47,7 +43,7 @@ After using `app.use(BirdpaperIcon)`, all icon components are globally registere
 </template>
 ```
 
-### On-demand Import
+## On-demand Import
 
 Import specific icons to enable tree-shaking:
 
@@ -61,7 +57,7 @@ import { IconShareFill } from "birdpaper-icon";
 </script>
 ```
 
-### Dynamic Component
+## Dynamic Component
 
 ```vue
 <template>

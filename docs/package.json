@@ -9,7 +9,7 @@
     "preview": "vitepress preview src --port 8081"
   },
   "dependencies": {
-    "birdpaper-icon": "^0.9.9",
+    "birdpaper-icon": "^0.9.10",
     "shiki": "^0.14.1",
     "vue-clipboard3": "^2.0.0"
   },
