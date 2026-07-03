@@ -5,7 +5,7 @@ export const nav = [
   },
   {
     text: "赞助",
-    link: "/donate",
+    link: "/doc/support",
   },
   {
     text: "UI 组件库",

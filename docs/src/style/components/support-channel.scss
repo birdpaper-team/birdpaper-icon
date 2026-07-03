@@ -1,0 +1,413 @@
+@use "../design.scss" as *;
+@use "../mixins.scss" as *;
+@use "../extend.scss" as *;
+
+.support-channel {
+  &-selector {
+    @include flex(row, flex-start, center);
+    width: max-content;
+    max-width: 100%;
+    background-color: var(--bp-gray-2);
+    height: 42px;
+    border: 1px solid var(--bp-gray-2);
+    border-radius: 50px;
+    padding: 0 8px;
+    overflow-y: auto;
+    @extend .no-select;
+
+    &-item {
+      @include flex(row, center, center);
+      font-size: 13px;
+      font-weight: 500;
+      min-width: max-content;
+      border-radius: 50px;
+      padding: 6px 12px;
+      color: var(--bp-gray-8);
+      cursor: pointer;
+
+      &:not(:last-child) {
+        margin-right: 4px;
+      }
+
+      &:hover {
+        background-color: var(--bp-gray-2);
+        transition: all 0.2s;
+      }
+
+      .item-image {
+        width: 10px;
+        border: none;
+      }
+
+      .item-image,
+      .bp-icon {
+        fill: var(--bp-gray-6);
+        margin-right: 3px;
+      }
+    }
+
+    .active {
+      background-color: var(--bp-primary-6);
+      color: var(--bp-gray-0);
+
+      .bp-icon {
+        fill: var(--bp-gray-0);
+      }
+    }
+  }
+
+  &-content {
+    margin-top: 10px;
+    background-color: var(--bp-gray-0);
+    border-radius: 16px;
+    border: 1px solid var(--bp-gray-2);
+    padding: 32px 30px;
+  }
+}
+
+.tip-box {
+  width: 90%;
+  border: $borderSize solid var(--bp-gray-2);
+  background-color: var(--bp-gray-1);
+  border-radius: 12px;
+  color: var(--bp-gray-7);
+  line-height: 1.4;
+  padding: 12px 14px;
+  text-align: justify;
+  opacity: 0.8;
+  @extend .no-select;
+
+  ul {
+    margin: 0;
+    padding-left: 10px;
+
+    li {
+      list-style: disc;
+      font-size: 13px;
+
+      &:not(:last-child) {
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
+
+.support-bmac {
+  @include flex(column, center, center);
+  @extend .no-select;
+
+  .qr-code {
+    width: 100px;
+    border: none;
+    box-shadow: none;
+  }
+
+  .bmc-button {
+    @include flex(row, center, center);
+    width: 160px;
+    height: 32px;
+    padding: 0 14px 0 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #ffdd00;
+    border-radius: 8px;
+    font-size: 13px;
+    color: var(--bp-gray-10) !important;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none !important;
+    @extend .font-quick;
+    @extend .no-select;
+
+    img {
+      height: 20px;
+      margin-right: 4px;
+      border: none;
+      box-shadow: none;
+    }
+
+    &:hover {
+      background: #ffd700;
+    }
+  }
+
+  .bmc-input {
+    width: 320px;
+    margin-bottom: 20px;
+  }
+}
+
+.support-wx,
+.support-ali {
+  @include flex(column, flex-start, center);
+
+  &-content {
+    width: 100%;
+    @include flex(row, space-around, flex-end);
+    @extend .no-select;
+  }
+
+  &-qr-code {
+    text-align: center;
+
+    img {
+      width: 200px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+
+    &-inner {
+      font-size: 12px;
+      color: var(--bp-gray-6);
+    }
+  }
+
+  .tip-box {
+    margin-top: 20px;
+  }
+}
+
+.bank-transfer {
+  @include flex(column, center, center);
+
+  .bank-section {
+    width: 100%;
+
+    &:not(:first-child) {
+      margin-top: 40px;
+    }
+
+    .bank-title {
+      @include flex(row, space-between, center);
+      font-size: 15px;
+      font-weight: bold;
+      color: var(--bp-gray-9);
+      margin: 0 0 0 0;
+
+      .bank-tip {
+        font-size: 12px;
+        color: var(--bp-gray-5);
+        margin-left: 4px;
+        font-weight: 400;
+      }
+    }
+
+    .bank-desc {
+      font-size: 12px;
+      color: var(--bp-gray-6);
+      margin: 6px 0 10px 0;
+      line-height: 1.4;
+    }
+
+    .bank-info-list {
+      padding: 4px 0;
+      border: $borderSize solid var(--bp-gray-2);
+      border-radius: 12px;
+
+      li {
+        @include flex(row, space-between, flex-start);
+        padding: 10px 12px;
+
+        &:not(:last-child) {
+          border-bottom: $borderSize dashed var(--bp-gray-2);
+        }
+
+        .bank-label {
+          line-height: 1.2;
+          font-size: 13px;
+          color: var(--bp-gray-7);
+          @extend .no-select;
+        }
+
+        .bank-value {
+          @include flex(column, flex-start, flex-end);
+          gap: 6px;
+          font-size: 13px;
+          margin-left: 6px;
+          color: var(--bp-gray-7);
+          letter-spacing: 0.4px;
+          font-weight: 600;
+          line-height: 1.2;
+          max-width: calc(100% - 100px);
+          text-align: right;
+          cursor: pointer;
+          @extend .font-quick;
+
+          &:hover {
+            color: var(--brand-6);
+            text-decoration: dashed underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+.github-sponsors {
+  @include flex(column, center, center);
+  gap: 20px;
+  @extend .no-select;
+
+  .support-text {
+    font-size: 16px;
+    color: var(--bp-gray-8);
+    text-align: center;
+    line-height: 1.4;
+    font-weight: bold;
+    @extend .font-quick;
+  }
+
+  .bp-button {
+    border-radius: 8px;
+
+    .bp-icon {
+      fill: var(--danger-6) !important;
+    }
+  }
+}
+
+.crypto-coin {
+  width: 100%;
+  @include flex(column, flex-start, center);
+  gap: 24px;
+
+  &-title {
+    width: 80%;
+    @include flex(column, center, center);
+
+    &-inner {
+      @include flex(row, center, center);
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--bp-gray-8);
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      letter-spacing: 0.5px;
+      @extend .font-quick;
+
+      img {
+        width: 28px;
+        box-shadow: none;
+        border: none;
+      }
+    }
+
+    .sub-title {
+      margin-top: 10px;
+      font-size: 12px;
+      color: var(--bp-gray-6);
+      line-height: 1.6;
+      text-align: center;
+      @extend .no-select;
+    }
+  }
+
+  .crypto-address-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 8px;
+  }
+
+  .crypto-address-item {
+    @include flex(row, space-between, center);
+    background: var(--bp-gray-0);
+    border-radius: 12px;
+    border: $borderSize solid var(--bp-gray-2);
+    padding: 10px 12px;
+
+    .chain-info {
+      @include flex(row, flex-start, center);
+      gap: 8px;
+
+      .crypto-logo {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background: #fff;
+        border: none;
+        object-fit: contain;
+        flex-shrink: 0;
+      }
+
+      .crypto-chain {
+        font-weight: 600;
+        color: var(--bp-gray-8);
+        font-size: 13px;
+        margin-right: 2px;
+        @extend .font-quick;
+      }
+
+      .recommend-tag {
+        font-size: 13px;
+        border-radius: 6px;
+        background-color: var(--brand-6);
+        color: var(--bp-gray-0);
+        padding: 0 8px;
+        transform: scale(0.8);
+        margin-left: -4px;
+      }
+    }
+
+    .crypto-addr {
+      color: var(--bp-gray-8);
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      @extend .font-quick;
+
+      &:hover {
+        color: var(--brand-6);
+        text-decoration: dashed underline;
+      }
+    }
+  }
+}
+
+@include mobile {
+  .tip-box {
+    width: 100%;
+    padding: 10px 12px;
+
+    ul {
+      li {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .support-bmac {
+    .bmc-input {
+      width: 300px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .support-wx {
+    &-content {
+      @include flex(column, center, center);
+      gap: 20px;
+    }
+  }
+
+  .crypto-coin {
+    &-title {
+      width: 100%;
+    }
+
+    .crypto-address-item {
+      @include flex(column, flex-start, center);
+      gap: 20px;
+
+      .crypto-addr {
+        text-align: center;
+        line-height: 1.4;
+        word-break: break-all;
+      }
+    }
+  }
+}
