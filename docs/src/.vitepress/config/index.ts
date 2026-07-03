@@ -5,6 +5,7 @@ const config: import("vitepress").UserConfig = {
   lastUpdated: false,
   cleanUrls: true,
   appearance: true,
+  outDir: "../dist",
   locales,
   head,
   themeConfig: {
@@ -29,6 +30,17 @@ const config: import("vitepress").UserConfig = {
     theme: {
       light: "min-light",
       dark: "min-dark",
+    },
+  },
+  vite: {
+    resolve: {
+      alias: {
+        "@vue/composition-api": "vue",
+        "dayjs": "dayjs",
+      },
+    },
+    ssr: {
+      noExternal: ["birdpaper-ui"],
     },
   },
 };
