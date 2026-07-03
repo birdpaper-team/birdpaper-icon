@@ -86,7 +86,7 @@ export async function buildModules() {
     format: "cjs",
   });
 
-  // 生成 index 入口文件（re-export 所有组件）
+  // 生成 index 入口文件（re-export 所有组件 + installer + default export）
   const toPascal = (s: string) =>
     s
       .split("-")
@@ -94,24 +94,70 @@ export async function buildModules() {
       .join("");
 
   const vueFiles = files.filter((f) => f.endsWith(".vue"));
-  const esIndex = vueFiles
-    .map((f) => {
-      const name = toPascal(path.basename(f, ".vue"));
-      const rel = path.relative(compSrc, f).replace(/\.vue$/, "");
-      return `export { default as ${name} } from './${rel}.mjs';`;
-    })
-    .join("\n");
+  const componentNames = vueFiles.map((f) => toPascal(path.basename(f, ".vue")));
+
+  // ES index：named exports + installer + default
+  const esLines = vueFiles.map((f) => {
+    const name = toPascal(path.basename(f, ".vue"));
+    const rel = path.relative(compSrc, f).replace(/\.vue$/, "");
+    return `export { default as ${name} } from './${rel}.mjs';`;
+  });
+
+  const esIndex = [
+    ...esLines,
+    "",
+    "// installer",
+    `import { installer } from './installer.mjs';`,
+    `export { installer };`,
+    `const Components = [${componentNames.join(", ")}];`,
+    `export const install = installer(Components).install;`,
+    `export default installer(Components);`,
+  ].join("\n");
 
   await fs.writeFile(path.join(esOut, "index.mjs"), esIndex);
 
-  const cjsIndex = vueFiles
-    .map((f) => {
-      const name = toPascal(path.basename(f, ".vue"));
-      const rel = path.relative(compSrc, f).replace(/\.vue$/, "");
-      return `exports.${name} = require('./${rel}.cjs').default;`;
-    })
-    .join("\n");
+  // 生成 installer 模块
+  const installerCode = `export const installer = (components) => {
+  const install = (app) => {
+    components.forEach((c) => {
+      if (c.name) app.component(c.name, c);
+    });
+  };
+  return { version: "1.0.0", install };
+};
+`;
+  await fs.writeFile(path.join(esOut, "installer.mjs"), installerCode);
+
+  // CJS index
+  const cjsLines = componentNames.map((name) => {
+    const f = vueFiles[componentNames.indexOf(name)];
+    const rel = path.relative(compSrc, f).replace(/\.vue$/, "");
+    return `exports.${name} = require('./${rel}.cjs').default;`;
+  });
+
+  const cjsIndex = [
+    ...cjsLines,
+    "",
+    "const { installer } = require('./installer.cjs');",
+    `const Components = [${componentNames.join(", ")}];`,
+    "exports.installer = installer;",
+    "exports.install = installer(Components).install;",
+    "exports.default = installer(Components);",
+  ].join("\n");
+
   await fs.writeFile(path.join(cjsOut, "index.cjs"), cjsIndex);
+
+  // CJS installer
+  const cjsInstaller = `exports.installer = function(components) {
+  var install = function(app) {
+    components.forEach(function(c) {
+      if (c.name) app.component(c.name, c);
+    });
+  };
+  return { version: "1.0.0", install: install };
+};
+`;
+  await fs.writeFile(path.join(cjsOut, "installer.cjs"), cjsInstaller);
 
   // 手动生成 .d.ts 类型声明
   await generateTypes(files, compSrc);
