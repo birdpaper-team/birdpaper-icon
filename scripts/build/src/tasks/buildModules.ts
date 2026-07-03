@@ -22,21 +22,56 @@ const vuePlugin: esbuild.Plugin = {
 
 function transformVueSfc(filename: string, source: string): string {
   const { descriptor } = parse(source, { filename });
+  const id = filename;
 
-  // compileScript 生成完整的组件模块代码（含 import + defineComponent + setup + render）
-  if (descriptor.scriptSetup) {
-    return compileScript(descriptor, { id: filename, filename }).content;
-  }
-
-  // 纯 template 的 SFC（无 script 块）
+  // 编译模板 → render 函数代码
+  let renderHelpers = "";
+  let renderBody = "";
   if (descriptor.template) {
     const tpl = compileTemplate({
       source: descriptor.template.content.trim(),
       filename,
-      id: filename,
+      id,
       compilerOptions: { mode: "function" },
     });
-    return `import { defineComponent } from "vue";\n${tpl.code}\nexport default defineComponent({ render });`;
+    // tpl.code 形如:
+    //   const { h1, h2 } = Vue
+    //   const _hoisted = ...
+    //   return function render(_ctx, _cache) { ... }
+    const lines = tpl.code.split("\n");
+    renderHelpers = lines
+      .filter((l) => l.startsWith("const ") || l.startsWith("import "))
+      .map((l) =>
+        // compileTemplate 用 `const { ... } = Vue`，需转为 ESM import
+        l
+          .replace(/^const\s+\{([^}]+)\}\s*=\s*Vue\s*;?$/, "import {$1} from 'vue';")
+          // 对象解构 `x: y` → import 别名 `x as y`
+          .replace(/(\w+)\s*:\s*(\w+)/g, "$1 as $2")
+      )
+      .join("\n");
+    const returnMatch = tpl.code.match(/return\s+function\s+render\s*\([\s\S]*?\)\s*\{([\s\S]*)\}/);
+    renderBody = returnMatch ? returnMatch[1].trim() : "";
+  }
+
+  if (descriptor.scriptSetup) {
+    // 编译 <script setup>，生成 defineComponent 调用
+    const compiled = compileScript(descriptor, { id, filename });
+    let code = compiled.content;
+
+    // 把 render 函数注入到 defineComponent 调用中
+    if (renderBody) {
+      const renderFunc = `const render = function render(_ctx, _cache) {\n  ${renderBody}\n};\n`;
+      code = code.replace(
+        /export\s+default\s+\/\*@__PURE__\*\/\s*_defineComponent\(\{/,
+        (match) => `${renderHelpers}\n${renderFunc}\n${match}\n  render,`
+      );
+    }
+    return code;
+  }
+
+  // 纯 template 的 SFC（无 script 块）
+  if (descriptor.template) {
+    return `import { defineComponent } from "vue";\n${renderCode}\nexport default defineComponent({ render });`;
   }
 
   return "";
