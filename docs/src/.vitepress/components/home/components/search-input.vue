@@ -10,8 +10,8 @@
 </template>
 
 <script setup lang="ts">
-import { iconNumbers, IconSearch2Line } from "birdpaper-icon";
 import { ref } from "vue";
+import { iconNumbers, IconSearch2Line } from "birdpaper-icon";
 
 const name = "home-page-search-input";
 const placeholder = `Search ${iconNumbers} Icons.`;

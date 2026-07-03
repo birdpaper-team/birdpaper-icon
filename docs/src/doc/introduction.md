@@ -16,11 +16,11 @@
 
 ## 什么是 `BirdpaperICON`
 
-这是一个基于开源图标 - [RemixIcon](https://remixicon.cn/) 生成的 `Vue3` 图标组件库，方便开发者在 `Vue` 组件中使用，并支持一些常用属性和操作，具体可以查看 [API 属性](/doc/quickStart#icon-属性)。
+这是一个基于开源图标 - [RemixIcon](https://remixicon.com/) 生成的 `Vue3` 图标组件库，方便开发者在 `Vue` 组件中使用，并支持一些常用属性和操作，具体可以查看 [API 属性](/doc/quickStart#icon-属性)。
 
 ![](https://cos.birdpaper.design/birdpaper-icon/v1/assets/icon-bg.png)
 
-在 2024 年初，我向 Remix Icon 的作者 ***Jimmy Cheung*** 提出了能否基于一些开发者的习惯，将 `svg` 图标进一步封装成 `Vue3` 组件进行使用。
+在 2024 年初，我向 Remix Icon 的作者 **_Jimmy Cheung_** 提出了能否基于一些开发者的习惯，将 `svg` 图标进一步封装成 `Vue3` 组件进行使用。
 
 征得作者允许后，这个项目现在正式发布第一个 `v1` 版本，希望可以给一部分开发者更好的使用这个优秀的图标库。
 

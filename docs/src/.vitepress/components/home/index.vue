@@ -92,7 +92,7 @@ const onDetail = (icon: string) => {
 };
 
 const homeUrlMap = {
-  remix: "https://remixicon.cn",
+  remix: "https://remixicon.com",
   github: "https://github.com/birdpaper-team/birdpaper-icon",
   npm: "https://www.npmjs.com/package/birdpaper-icon",
 };

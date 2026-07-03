@@ -4,7 +4,7 @@
   </a>
 </p>
 
-This is an open source Vue3 component based on the excellent Icon library - [RemixIcon](https://remixicon.cn/) second development, for learning and reference use only, thanks to the Remix Design team.
+This is an open source Vue3 component based on the excellent Icon library - [RemixIcon](https://remixicon.com/) second development, for learning and reference use only, thanks to the Remix Design team.
 
 <p align="center">
   <a href="https://www.npmjs.com/package/birdpaper-icon" target="_blank">
