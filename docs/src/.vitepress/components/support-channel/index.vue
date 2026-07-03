@@ -13,13 +13,14 @@
       </div>
     </div>
     <div :class="`${clsBlockName}-content`">
-      <component :is="_componentsMap[currentChannel]"></component>
+      <component :is="_componentsMap[currentChannel]" :locale="locale"></component>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref, computed } from "vue";
+import { useData } from "vitepress";
 import * as allIcons from "birdpaper-icon";
 import bmac from "./components/bmac.vue";
 import wxPay from "./components/wx-pay.vue";
@@ -28,6 +29,9 @@ import cryptoCoin from "./components/crypto-coin.vue";
 import githubSponsors from "./components/github-sponsors.vue";
 
 const clsBlockName = "support-channel";
+const { lang } = useData();
+const locale = computed(() => (lang.value === "zh-CN" ? "zh-CN" : "en"));
+
 const _componentsMap: Record<string, any> = {
   bmac,
   "wx-pay": wxPay,
@@ -36,35 +40,38 @@ const _componentsMap: Record<string, any> = {
   "github-sponsors": githubSponsors,
 };
 
-const channelList = [
-  {
-    name: "Buymeacoffee",
-    value: "bmac",
-    logo: "https://cos.fpo.email/logo/bmc-logo.svg",
-  },
-  {
-    name: "Github Sponsors",
-    value: "github-sponsors",
-    icon: "IconGithubFill",
-  },
-  {
-    name: "微信",
-    value: "wx-pay",
-    icon: "IconWechatPayLine",
-  },
-  {
-    name: "支付宝",
-    value: "ali-pay",
-    icon: "IconAlipayLine",
-  },
-  {
-    name: "USDT 支付",
-    value: "crypto-coin",
-    icon: "IconBtcLine",
-  },
-];
+const channelList = computed(() => {
+  const isZh = locale.value === "zh-CN";
+  return [
+    {
+      name: "Buymeacoffee",
+      value: "bmac",
+      logo: "https://cos.fpo.email/logo/bmc-logo.svg",
+    },
+    {
+      name: "Github Sponsors",
+      value: "github-sponsors",
+      icon: "IconGithubFill",
+    },
+    {
+      name: isZh ? "微信" : "WeChat",
+      value: "wx-pay",
+      icon: "IconWechatPayLine",
+    },
+    {
+      name: isZh ? "支付宝" : "Alipay",
+      value: "ali-pay",
+      icon: "IconAlipayLine",
+    },
+    {
+      name: isZh ? "USDT 支付" : "USDT",
+      value: "crypto-coin",
+      icon: "IconBtcLine",
+    },
+  ];
+});
 
-const currentChannel = ref(channelList[0].value);
+const currentChannel = ref(channelList.value[0].value);
 const handleSelectChannel = (value: string) => {
   currentChannel.value = value;
 };
