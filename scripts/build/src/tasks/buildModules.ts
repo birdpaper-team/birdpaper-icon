@@ -173,7 +173,15 @@ export async function buildModules() {
     format: "cjs",
   });
 
-  // 生成 index 入口文件（re-export 所有组件 + installer + default export）
+  // 从源 index.ts 提取元数据（iconType / iconInfo / iconNumbers）
+  const srcIndex = await fs.readFile(path.join(compRoot, "index.ts"), "utf8");
+  const metaExports: string[] = [];
+  const metaMatch = srcIndex.match(/(export const iconType\s*=\s*\[[\s\S]*?\];)\s*\n(export const iconInfo\s*=\s*\[[\s\S]*?\];)\s*\n(export const iconNumbers\s*=\s*\d+;)/);
+  if (metaMatch) {
+    metaExports.push(metaMatch[1], metaMatch[2], metaMatch[3]);
+  }
+
+  // 生成 index 入口文件（re-export 所有组件 + installer + default export + 元数据）
   const toPascal = (s: string) =>
     s
       .split("-")
@@ -201,6 +209,9 @@ export async function buildModules() {
     `const Components = [${componentNames.map((n) => "_" + n).join(", ")}];`,
     "export const install = installer(Components).install;",
     "export default installer(Components);",
+    "",
+    "// icon metadata",
+    ...metaExports,
   ].join("\n");
 
   await fs.writeFile(path.join(esOut, "index.mjs"), esIndex);
@@ -234,6 +245,11 @@ export async function buildModules() {
     "exports.installer = installer;",
     "exports.install = installer(Components).install;",
     "exports.default = installer(Components);",
+    "",
+    "// icon metadata",
+    ...metaExports.map((line) =>
+      line.replace(/export const (\w+)\s*=/, "exports.$1 =")
+    ),
   ].join("\n");
 
   await fs.writeFile(path.join(cjsOut, "index.cjs"), cjsIndex);

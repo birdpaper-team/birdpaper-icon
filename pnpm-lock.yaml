@@ -54,12 +54,18 @@ importers:
       '@vitest/ui':
         specifier: 1.6.0
         version: 1.6.0(vitest@1.6.0)
+      '@vue/compiler-sfc':
+        specifier: ^3.5.13
+        version: 3.5.13
       '@vue/test-utils':
         specifier: ^2.0.0
         version: 2.4.6
       '@vue/tsconfig':
         specifier: ^0.1.3
         version: 0.1.3(@types/node@18.19.70)
+      esbuild:
+        specifier: ^0.18.20
+        version: 0.18.20
       gulp-autoprefixer:
         specifier: ^9.0.0
         version: 9.0.0(gulp@4.0.2)
@@ -92,7 +98,7 @@ importers:
         version: 0.61.9(postcss@8.5.0)(rollup@4.30.1)(vite@5.4.11(@types/node@18.19.70)(less@4.2.1)(sass@1.83.4))
       unplugin-vue-macros:
         specifier: ^2.7.11
-        version: 2.13.8(@vueuse/core@11.3.0(vue@3.5.13(typescript@5.7.2)))(esbuild@0.24.2)(rollup@4.30.1)(typescript@5.7.2)(vite@5.4.11(@types/node@18.19.70)(less@4.2.1)(sass@1.83.4))(vue@3.5.13(typescript@5.7.2))
+        version: 2.13.8(@vueuse/core@11.3.0(vue@3.5.13(typescript@5.7.2)))(esbuild@0.18.20)(rollup@4.30.1)(typescript@5.7.2)(vite@5.4.11(@types/node@18.19.70)(less@4.2.1)(sass@1.83.4))(vue@3.5.13(typescript@5.7.2))
       vite:
         specifier: ^5.3.5
         version: 5.4.11(@types/node@18.19.70)(less@4.2.1)(sass@1.83.4)
@@ -106,8 +112,8 @@ importers:
   docs:
     dependencies:
       birdpaper-icon:
-        specifier: 0.9.2
-        version: 0.9.2(vue@3.5.13(typescript@5.7.2))
+        specifier: ^0.9.8
+        version: 0.9.8(vue@3.5.13(typescript@5.7.2))
       shiki:
         specifier: ^0.14.1
         version: 0.14.7
@@ -154,6 +160,9 @@ importers:
       '@types/gulp':
         specifier: ^4.0.17
         version: 4.0.17
+      esbuild:
+        specifier: ^0.18.20
+        version: 0.18.20
       fast-glob:
         specifier: ^3.3.2
         version: 3.3.3
@@ -2844,9 +2853,6 @@ packages:
   '@vueuse/components@11.3.0':
     resolution: {integrity: sha512-sqaGtWPgobXvZmv3atcjW8YW0ypecFuB286OEKFXaPrLsA5b2Y+xAvHvq5V7d+VJRKt705gCK3BNBjxu3g1PdQ==}
 
-  '@vueuse/core@10.11.1':
-    resolution: {integrity: sha512-guoy26JQktXPcz+0n3GukWIy/JDNKti9v6VEMu6kV2sYBsWuGiTU8OWdg+ADfUbHg3/3DlqySDe7JmdHrktiww==}
-
   '@vueuse/core@11.3.0':
     resolution: {integrity: sha512-7OC4Rl1f9G8IT6rUfi9JrKiXy4bfmHhZ5x2Ceojy0jnd3mHNEvV4JaRygH362ror6/NZ+Nl+n13LPzGiPN8cKA==}
 
@@ -2891,14 +2897,8 @@ packages:
       universal-cookie:
         optional: true
 
-  '@vueuse/metadata@10.11.1':
-    resolution: {integrity: sha512-IGa5FXd003Ug1qAZmyE8wF3sJ81xGLSqTqtQ6jaVfkeZ4i5kS2mwQF61yhVqojRnenVew5PldLyRgvdl4YYuSw==}
-
   '@vueuse/metadata@11.3.0':
     resolution: {integrity: sha512-pwDnDspTqtTo2HwfLw4Rp6yywuuBdYnPYDq+mO38ZYKGebCUQC/nVj/PXSiK9HX5otxLz8Fn7ECPbjiRz2CC3g==}
-
-  '@vueuse/shared@10.11.1':
-    resolution: {integrity: sha512-LHpC8711VFZlDaYUXEBbFBCQ7GS3dVU9mjOhhMhXP6txTV4EhYQg/KGnQuvt/sPAtoUKq7VVUnL6mVtFoL42sA==}
 
   '@vueuse/shared@11.3.0':
     resolution: {integrity: sha512-P8gSSWQeucH5821ek2mn/ciCk+MS/zoRKqdQIM3bHq6p7GXDAJLmnRRKmF5F65sAVJIfzQlwR3aDzwCn10s8hA==}
@@ -3323,8 +3323,8 @@ packages:
   bindings@1.5.0:
     resolution: {integrity: sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ==}
 
-  birdpaper-icon@0.9.2:
-    resolution: {integrity: sha512-AELa7XEnSvg/Di1vwREeNRJDoqTY82YUL5uuS9VFl6wwsjfEvAUq6abf8nBw5eJOKJrmwKnocgiVl5H72Kb50g==}
+  birdpaper-icon@0.9.8:
+    resolution: {integrity: sha512-r+eaJ60LIcxF4u7Bt78lGqDGfK8vDiRC1LYkUh45JmeMNgw3TZAQhY5aCeUWt/TUmJO2W5OqlPj/IMC2QzJGbw==}
 
   birdpaper-ui@3.0.0-alpha.88:
     resolution: {integrity: sha512-YhWmuvMUphy5QWy5YU7QyhlAdzOnwQffTgwM/+Y59FfigwbfL7o6dUyJPhro0p349TPnuUUrhc0mtzwzM6enVA==}
@@ -10749,16 +10749,6 @@ snapshots:
       - '@vue/composition-api'
       - vue
 
-  '@vueuse/core@10.11.1(vue@3.5.13(typescript@5.7.2))':
-    dependencies:
-      '@types/web-bluetooth': 0.0.20
-      '@vueuse/metadata': 10.11.1
-      '@vueuse/shared': 10.11.1(vue@3.5.13(typescript@5.7.2))
-      vue-demi: 0.14.10(vue@3.5.13(typescript@5.7.2))
-    transitivePeerDependencies:
-      - '@vue/composition-api'
-      - vue
-
   '@vueuse/core@11.3.0(vue@3.5.13(typescript@5.7.2))':
     dependencies:
       '@types/web-bluetooth': 0.0.20
@@ -10781,16 +10771,7 @@ snapshots:
       - '@vue/composition-api'
       - vue
 
-  '@vueuse/metadata@10.11.1': {}
-
   '@vueuse/metadata@11.3.0': {}
-
-  '@vueuse/shared@10.11.1(vue@3.5.13(typescript@5.7.2))':
-    dependencies:
-      vue-demi: 0.14.10(vue@3.5.13(typescript@5.7.2))
-    transitivePeerDependencies:
-      - '@vue/composition-api'
-      - vue
 
   '@vueuse/shared@11.3.0(vue@3.5.13(typescript@5.7.2))':
     dependencies:
@@ -11309,10 +11290,10 @@ snapshots:
       file-uri-to-path: 1.0.0
     optional: true
 
-  birdpaper-icon@0.9.2(vue@3.5.13(typescript@5.7.2)):
+  birdpaper-icon@0.9.8(vue@3.5.13(typescript@5.7.2)):
     dependencies:
       '@vueuse/components': 11.3.0(vue@3.5.13(typescript@5.7.2))
-      '@vueuse/core': 10.11.1(vue@3.5.13(typescript@5.7.2))
+      '@vueuse/core': 11.3.0(vue@3.5.13(typescript@5.7.2))
     transitivePeerDependencies:
       - '@vue/composition-api'
       - vue
@@ -11322,7 +11303,7 @@ snapshots:
       '@vueuse/components': 11.3.0(vue@3.5.13(typescript@5.7.2))
       '@vueuse/core': 11.3.0(vue@3.5.13(typescript@5.7.2))
       async-validator: 4.2.5
-      birdpaper-icon: 0.9.2(vue@3.5.13(typescript@5.7.2))
+      birdpaper-icon: 0.9.8(vue@3.5.13(typescript@5.7.2))
       dayjs: 1.11.13
       radash: 12.1.0
     transitivePeerDependencies:
@@ -15594,11 +15575,11 @@ snapshots:
       - rollup
       - supports-color
 
-  unplugin-combine@1.1.0(esbuild@0.24.2)(rollup@4.30.1)(unplugin@1.16.1)(vite@5.4.11(@types/node@18.19.70)(less@4.2.1)(sass@1.83.4)):
+  unplugin-combine@1.1.0(esbuild@0.18.20)(rollup@4.30.1)(unplugin@1.16.1)(vite@5.4.11(@types/node@18.19.70)(less@4.2.1)(sass@1.83.4)):
     dependencies:
       '@antfu/utils': 0.7.10
     optionalDependencies:
-      esbuild: 0.24.2
+      esbuild: 0.18.20
       rollup: 4.30.1
       unplugin: 1.16.1
       vite: 5.4.11(@types/node@18.19.70)(less@4.2.1)(sass@1.83.4)
@@ -15612,7 +15593,7 @@ snapshots:
       - rollup
       - vue
 
-  unplugin-vue-macros@2.13.8(@vueuse/core@11.3.0(vue@3.5.13(typescript@5.7.2)))(esbuild@0.24.2)(rollup@4.30.1)(typescript@5.7.2)(vite@5.4.11(@types/node@18.19.70)(less@4.2.1)(sass@1.83.4))(vue@3.5.13(typescript@5.7.2)):
+  unplugin-vue-macros@2.13.8(@vueuse/core@11.3.0(vue@3.5.13(typescript@5.7.2)))(esbuild@0.18.20)(rollup@4.30.1)(typescript@5.7.2)(vite@5.4.11(@types/node@18.19.70)(less@4.2.1)(sass@1.83.4))(vue@3.5.13(typescript@5.7.2)):
     dependencies:
       '@vue-macros/better-define': 1.11.1(rollup@4.30.1)(vue@3.5.13(typescript@5.7.2))
       '@vue-macros/boolean-prop': 0.5.3(rollup@4.30.1)(vue@3.5.13(typescript@5.7.2))
@@ -15644,7 +15625,7 @@ snapshots:
       '@vue-macros/short-vmodel': 1.5.3(rollup@4.30.1)(vue@3.5.13(typescript@5.7.2))
       '@vue-macros/volar': 0.30.10(rollup@4.30.1)(typescript@5.7.2)(vue@3.5.13(typescript@5.7.2))
       unplugin: 1.16.1
-      unplugin-combine: 1.1.0(esbuild@0.24.2)(rollup@4.30.1)(unplugin@1.16.1)(vite@5.4.11(@types/node@18.19.70)(less@4.2.1)(sass@1.83.4))
+      unplugin-combine: 1.1.0(esbuild@0.18.20)(rollup@4.30.1)(unplugin@1.16.1)(vite@5.4.11(@types/node@18.19.70)(less@4.2.1)(sass@1.83.4))
       unplugin-vue-define-options: 1.5.3(rollup@4.30.1)(vue@3.5.13(typescript@5.7.2))
       vue: 3.5.13(typescript@5.7.2)
     transitivePeerDependencies:
