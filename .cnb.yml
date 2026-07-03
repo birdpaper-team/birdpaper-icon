@@ -17,7 +17,7 @@ $:
             username: $CNB_TOKEN_USER_NAME
             token: $CNB_TOKEN
             email: $CNB_COMMITTER_EMAIL
-            registry: https://npm.cnb.cool/birdpaper-design/birdpaper-icon-preview/-/packages/
+            registry: https://npm.cnb.cool/birdpaper-design/birdpaper-ui-preview/-/packages/
             folder: ./dist/birdpaper-icon
             fail_on_version_conflict: true
   web_trigger_one: # 发布到 npm 仓库
@@ -42,7 +42,7 @@ $:
             folder: ./dist/birdpaper-icon
             fail_on_version_conflict: true
   web_trigger_two: # 发布文档
-     - stages:
+    - stages:
         - name: 安装与构建
           jobs:
             - name: execute-pnpm-command
