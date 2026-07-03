@@ -1,0 +1,4 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "vue.server.tsdk": "node_modules/typescript/lib"
+}

@@ -17,7 +17,7 @@ export async function buildBundle() {
       outDir: join(distPkgRoot, "dist"),
       emptyOutDir: true,
       sourcemap: false,
-      minify: false,
+      minify: "esbuild",
       lib: {
         entry: compRoot,
         formats: ["es", "cjs", "iife"],

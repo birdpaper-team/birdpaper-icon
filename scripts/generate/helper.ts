@@ -43,6 +43,10 @@ export const isArray = (obj: any) => {
  * @returns
  */
 export const deepClone = <T>(tSource: T, tTarget?: any | T): T => {
+  if (typeof tSource !== "object" || tSource === null) {
+    return tSource;
+  }
+
   if (isArray(tSource)) {
     tTarget = tTarget || [];
   } else {
@@ -50,8 +54,7 @@ export const deepClone = <T>(tSource: T, tTarget?: any | T): T => {
   }
   for (const key in tSource) {
     if (Object.prototype.hasOwnProperty.call(tSource, key)) {
-      // eslint-disable-next-line no-constant-binary-expression
-      if (typeof tSource[key] === "object" && typeof tSource[key] !== null) {
+      if (typeof tSource[key] === "object" && tSource[key] !== null) {
         tTarget[key] = isArray(tSource[key]) ? [] : {};
         deepClone(tSource[key], tTarget[key]);
       } else {

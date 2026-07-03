@@ -12,18 +12,16 @@ export const copyFiles = async () => {
     [join(projRoot, "README.md"), join(distPkgRoot, "README.md")],
   ];
 
-  /** Folders to be copied. */
-  return new Promise<void>((resolve, reject) => {
+  const results = await Promise.allSettled(
     files.map(async ([from, to]: string[]) => {
-      return await cpFile(from, to)
-        .then(() => {
-          console.log("File copied successfully.");
-          resolve();
-        })
-        .catch((err) => {
-          console.error("Error copying file:", err);
-          reject();
-        });
-    });
-  });
+      await cpFile(from, to);
+      console.log("File copied successfully.");
+    })
+  );
+
+  const failures = results.filter((r): r is PromiseRejectedResult => r.status === "rejected");
+  if (failures.length > 0) {
+    failures.forEach((f) => console.error("Error copying file:", f.reason));
+    throw new Error(`Failed to copy ${failures.length} file(s)`);
+  }
 };

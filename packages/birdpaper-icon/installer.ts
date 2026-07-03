@@ -1,9 +1,11 @@
-import type { App } from "vue";
+import type { App, Component } from "vue";
 
-export const installer = (components: any[] = []) => {
+export const installer = (components: Component[] = []) => {
   const install = (app: App) => {
-    components.forEach((c: any) => {
-      app.component(c?.name, c);
+    components.forEach((c) => {
+      if (c.name) {
+        app.component(c.name, c);
+      }
     });
   };
 

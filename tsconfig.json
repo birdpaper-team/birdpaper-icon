@@ -1,10 +1,9 @@
 {
   "compilerOptions": {
-    "jsx": "react",
-    "jsxFactory": "h",
+    "jsx": "preserve",
     "outDir": "dist",
-    "target": "es2018",
-    "module": "esnext",
+    "target": "ES2020",
+    "module": "ESNext",
     "moduleResolution": "node",
     "baseUrl": ".",
     "sourceMap": false,
@@ -19,10 +18,10 @@
     "rootDir": ".",
     "paths": {
       "@birdpaper-icon/*": ["packages/*"]
-    },
+    }
   },
   "include": [
-    "packages/**/*",
+    "packages/**/*"
   ],
   "exclude": ["node_modules", "dist", "**/*.js"]
 }

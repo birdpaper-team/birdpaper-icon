@@ -11,13 +11,16 @@
     "scripts:build": "pnpm run -C scripts/generate build",
     "clean": "rimraf dist && pnpm run -r --parallel clean",
     "build": "pnpm run clean && pnpm run -C scripts/build start",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
     "fix-memory-limit": "cross-env LIMIT=10240 increase-memory-limit"
   },
   "dependencies": {
     "@birdpaper-icon/components": "workspace:*",
     "@birdpaper-icon/theme": "workspace:*",
     "@vueuse/components": "^11.1.0",
-    "@vueuse/core": "^10.11.0",
+    "@vueuse/core": "^11.1.0",
     "radash": "^12.1.0",
     "birdpaper-ui": "^3.0.0-alpha.88"
   },
@@ -43,7 +46,7 @@
     "vue": "^3.5.3",
     "sass": "^1.77.8",
     "tsx": "^4.7.1",
-    "typescript": "^4.7.4",
+    "typescript": "^5.5.0",
     "unocss": "^0.61.7",
     "unplugin-vue-macros": "^2.7.11",
     "vitest": "1.6.0"
@@ -56,9 +59,9 @@
   ],
   "author": "木亦Sam",
   "license": "MIT",
-  "main": "es/index.js",
-  "module": "es/index.js",
-  "types": "dist/index.d.ts",
+  "main": "packages/birdpaper-icon/lib/index.cjs",
+  "module": "packages/birdpaper-icon/es/index.mjs",
+  "types": "packages/birdpaper-icon/types/index.d.ts",
   "type": "module",
   "sideEffects": [
     "dist/*",
