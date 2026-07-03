@@ -83,5 +83,10 @@
   },
   "lint-staged": {
     "*.{vue,js,ts,jsx,tsx,md,json}": "oxlint --fix"
+  },
+  "pnpm": {
+    "overrides": {
+      "dayjs": "1.11.21"
+    }
   }
 }
