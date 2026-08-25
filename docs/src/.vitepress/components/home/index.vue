@@ -96,7 +96,7 @@ const onDetail = (icon: string) => {
 
 const homeUrlMap = {
   remix: "https://remixicon.com",
-  github: "https://github.com/birdpaper-team/birdpaper-icon",
+  github: "https://github.com/liluanhui/birdpaper-icon",
   npm: "https://www.npmjs.com/package/birdpaper-icon",
 };
 const linkTo = (type: keyof typeof homeUrlMap) => window.open(homeUrlMap[type]);

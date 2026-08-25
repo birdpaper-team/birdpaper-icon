@@ -79,7 +79,7 @@
   "homepage": "https://www.birdpaper.design/guide/icon",
   "repository": {
     "type": "git",
-    "url": "https://github.com/birdpaper-team/birdpaper-icon"
+    "url": "https://github.com/liluanhui/birdpaper-icon"
   },
   "lint-staged": {
     "*.{vue,js,ts,jsx,tsx,md,json}": "oxlint --fix"

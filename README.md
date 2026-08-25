@@ -48,4 +48,4 @@ For more information, you need to visit the [官方文档](https://icon.birdpape
 
 ## License
 
-birdpaper-icon use at [MIT](https://github.com/birdpaper-team/birdpaper-icon/LICENSE) open source licenses.
+birdpaper-icon use at [MIT](https://github.com/liluanhui/birdpaper-icon/LICENSE) open source licenses.
